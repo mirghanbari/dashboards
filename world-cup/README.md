@@ -17,6 +17,7 @@ real data pulled from ESPN's public API**, refreshed on a schedule.
 | **Player detail** (`/players/:id`) | Bio + per-player stats |
 | **Stats** (`/stats`) | Every tracked metric (basic → elite), each linked to its leading players/teams, with data-source labels |
 | **Friendlies** (`/friendlies`) | International friendlies (POC): live scores, goal scorers, assists, cards, and team records from ESPN's `fifa.friendly` feed |
+| **Bracket** (`/bracket`) | ESPN-style Group Stage Challenge: drag-and-drop group ordering, pick 8 of 12 third-place teams to advance, submit to a shared pool, and a live-scored leaderboard |
 
 Routing uses `HashRouter` so deep links work on GitHub Pages without server config.
 
@@ -88,6 +89,27 @@ The **elite/tracking** metrics come from optical/positional tracking data and
 require a paid provider feed. The schema and UI are ready for them; wire a
 provider into the ingestion and they populate automatically. Until then they're
 shown empty rather than invented.
+
+## Bracket Challenge (`/bracket`)
+
+An ESPN-style Group Stage Challenge:
+- **Step 1** — drag-and-drop each group's four teams into predicted 1st–4th order
+  (`@dnd-kit`), with a per-group reset and "reset all to standings".
+- **Step 2** — pick 8 of your 12 third-place teams to advance.
+- **Submit** — enter a name + the pool password; the entry is stored in a shared
+  Google Sheet and the **leaderboard** scores every entry live against the real
+  standings as the group stage plays.
+
+**Backend:** a Google Apps Script Web App fronting a Google Sheet (no server, no
+secrets in the client). Config lives in `src/config.ts`:
+
+- `BRACKET_API_URL` — the Apps Script `/exec` URL (public endpoint).
+- `LOCK_ISO` — when picks lock (kept in sync with the Apps Script `LOCK_ISO`).
+- `SCORING` — points per correct position, perfect-group bonus, per correct
+  third-place pick. Tweak freely; the leaderboard recomputes.
+
+The pool password is **not** in the repo — it lives only in the Apps Script and
+is typed by each player at submit time. The Apps Script also enforces the lock.
 
 ## Optional LLM agent — `scripts/fetch-data.mjs`
 

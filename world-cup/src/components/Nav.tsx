@@ -8,6 +8,7 @@ const LINKS = [
   { to: "/players", label: "Players", end: false },
   { to: "/stats", label: "Stats", end: false },
   { to: "/friendlies", label: "Friendlies", end: false },
+  { to: "/bracket", label: "Bracket", end: false },
 ];
 
 export function Nav() {
