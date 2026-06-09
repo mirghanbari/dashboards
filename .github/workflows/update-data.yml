@@ -1,6 +1,6 @@
-# Refreshes the dataset from ESPN's public API on a schedule during the
-# tournament, commits any changed JSON, and lets the deploy workflow pick it up.
-# No API key required — ESPN's endpoints are public.
+# Refreshes the World Cup dataset from ESPN's public API on a schedule, commits
+# any changed JSON, and lets the deploy workflow redeploy. No API key required.
+# Lives at the repo root because GitHub only runs workflows from /.github/workflows.
 name: Update World Cup data
 
 on:

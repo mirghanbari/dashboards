@@ -1,10 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Relative base ("./") so the build works whether it is served from the
-// domain root or a GitHub Pages project subpath (e.g. /dashboards/world-cup/).
+// Served from the GitHub Pages project subpath https://<user>.github.io/dashboards/,
+// so assets are referenced under /dashboards/. (Override with `vite build --base`
+// if the repo is ever renamed or served elsewhere.)
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/dashboards/",
   plugins: [react()],
 });

@@ -1,13 +1,13 @@
-# Builds the World Cup dashboard and deploys it to GitHub Pages.
-# NOTE: GitHub Actions only runs workflows from `.github/workflows/` at the REPO
-# ROOT. If this project lives in a subfolder, copy this file (and update-data.yml)
-# to <repo>/.github/workflows/ for them to run. See world-cup/README.md.
+# Builds the World Cup dashboard (in world-cup/) and deploys it to GitHub Pages.
+# Lives at the repo root because GitHub only runs workflows from /.github/workflows.
 name: Deploy World Cup dashboard
 
 on:
   push:
     branches: [main]
-    paths: ["world-cup/**"]
+    paths:
+      - "world-cup/**"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
@@ -35,6 +35,7 @@ jobs:
           cache-dependency-path: world-cup/package-lock.json
       - run: npm ci
       - run: npm run build
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: world-cup/dist

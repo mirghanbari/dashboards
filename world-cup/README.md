@@ -100,15 +100,15 @@ npm run fetch-data
 
 ## Deploying to GitHub Pages
 
-Two workflows live in `.github/workflows/`:
+Two workflows live at the **repository root** in `.github/workflows/` (GitHub only
+runs workflows from there, not from subfolders):
 
-- **`deploy.yml`** — builds and publishes `dist/` to Pages on every push to `main`.
+- **`deploy.yml`** — builds `world-cup/` and publishes `dist/` to Pages on every
+  push to `main` that touches `world-cup/**`.
 - **`update-data.yml`** — runs `npm run ingest` (ESPN) every 30 minutes, commits
   refreshed JSON, which then triggers a redeploy. No secret required.
 
-Because GitHub only runs workflows from the **repository root** `.github/workflows/`,
-copy both files there if this project sits in a subfolder, then set repo
-**Settings → Pages → Source: GitHub Actions**.
+Pages is configured to build from **GitHub Actions** (Settings → Pages → Source).
+The Vite `base` is `"/dashboards/"`, matching the project-page URL:
 
-The Vite `base` is set to `"./"`, so the build works whether it's served from a
-domain root or a project subpath.
+**Live:** https://mirghanbari.github.io/dashboards/
