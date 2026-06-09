@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T21:43:03.973Z",
+  "lastUpdated": "2026-06-09T23:13:42.552Z",
   "date": "20260609",
   "source": "ESPN (fifa.friendly)",
   "teams": [
@@ -1465,21 +1465,21 @@
     {
       "id": "401871362",
       "date": "2026-06-09T23:00Z",
-      "status": "scheduled",
-      "minute": null,
+      "status": "live",
+      "minute": "6'",
       "home": {
         "id": "655",
         "name": "Saudi Arabia",
         "abbr": "KSA",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "654",
         "name": "Senegal",
         "abbr": "SEN",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-        "score": null
+        "score": 0
       },
       "timeline": [],
       "assists": []
