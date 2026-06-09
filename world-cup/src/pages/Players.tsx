@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PLAYERS, TEAMS, getTeam } from "../data";
 import type { Player, Position } from "../types";
 
-type SortKey = "goals" | "assists" | "appearances" | "minutes" | "yellowCards" | "name";
+type SortKey = "goals" | "assists" | "appearances" | "minutes" | "yellowCards" | "name" | "jersey";
 
 const SORTS: { value: SortKey; label: string }[] = [
   { value: "goals", label: "Goals" },
@@ -11,6 +11,7 @@ const SORTS: { value: SortKey; label: string }[] = [
   { value: "appearances", label: "Apps" },
   { value: "minutes", label: "Minutes" },
   { value: "yellowCards", label: "Cards" },
+  { value: "jersey", label: "Jersey #" },
   { value: "name", label: "Name" },
 ];
 
@@ -38,6 +39,7 @@ export function Players() {
     });
     const cmp = (a: Player, b: Player) => {
       if (sort === "name") return a.name.localeCompare(b.name);
+      if (sort === "jersey") return a.number - b.number; // ascending, like a squad list
       return (b[sort] as number) - (a[sort] as number) || b.goals - a.goals;
     };
     return filtered.sort(cmp).slice(0, 300);
@@ -74,7 +76,16 @@ export function Players() {
         <div className="filter-selects">
           <label>
             Team
-            <select value={team} onChange={(e) => setTeam(e.target.value)}>
+            <select
+              value={team}
+              onChange={(e) => {
+                const next = e.target.value;
+                setTeam(next);
+                // A single-team view reads like a squad list; the all-players
+                // view reads like a leaderboard. Default the sort to match.
+                setSort(next === "all" ? "goals" : "jersey");
+              }}
+            >
               <option value="all">All teams</option>
               {teamOptions.map((t) => (
                 <option key={t.id} value={t.id}>
@@ -100,6 +111,7 @@ export function Players() {
         <thead>
           <tr>
             <th className="col-rank">#</th>
+            <th className="col-num">No.</th>
             <th className="col-player">Player</th>
             <th className="col-team">Team</th>
             <th>Pos</th>
@@ -117,6 +129,7 @@ export function Players() {
             return (
               <tr key={p.id}>
                 <td className="col-rank">{i + 1}</td>
+                <td className="col-num">{p.number || "—"}</td>
                 <td className="col-player">
                   <Link to={`/players/${p.id}`} className="player-name player-link">
                     {p.name}
