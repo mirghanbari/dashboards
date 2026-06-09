@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T12:56:42.798Z",
+  "lastUpdated": "2026-06-09T14:31:00.156Z",
   "date": "20260609",
   "source": "ESPN (fifa.friendly)",
   "teams": [
@@ -8,11 +8,23 @@
       "name": "Philippines",
       "abbr": "PHI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/phi.png",
-      "played": 0,
-      "won": 0,
+      "played": 1,
+      "won": 1,
       "drawn": 0,
       "lost": 0,
-      "goalsFor": 0,
+      "goalsFor": 5,
+      "goalsAgainst": 1
+    },
+    {
+      "id": "5518",
+      "name": "Cambodia",
+      "abbr": "CAM",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cam.png",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 2,
       "goalsAgainst": 0
     },
     {
@@ -20,21 +32,21 @@
       "name": "Myanmar",
       "abbr": "MYA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mya.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
       "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
+      "lost": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 5
     },
     {
       "id": "658",
       "name": "China",
       "abbr": "CHN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -44,21 +56,9 @@
       "name": "Thailand",
       "abbr": "THA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "5518",
-      "name": "Cambodia",
-      "abbr": "CAM",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cam.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -68,21 +68,21 @@
       "name": "Hong Kong",
       "abbr": "HKG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hkg.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
       "drawn": 0,
-      "lost": 0,
+      "lost": 1,
       "goalsFor": 0,
-      "goalsAgainst": 0
+      "goalsAgainst": 2
     },
     {
       "id": "2841",
       "name": "Oman",
       "abbr": "OMA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/oma.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -92,9 +92,9 @@
       "name": "Kuwait",
       "abbr": "KUW",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -486,6 +486,24 @@
   ],
   "players": [
     {
+      "id": "269541",
+      "name": "Ole Romeny",
+      "teamId": "4895",
+      "goals": 1,
+      "assists": 0,
+      "yellowCards": 0,
+      "redCards": 0
+    },
+    {
+      "id": "260808",
+      "name": "Ragnar Oratmangoen",
+      "teamId": "4895",
+      "goals": 0,
+      "assists": 1,
+      "yellowCards": 0,
+      "redCards": 0
+    },
+    {
       "id": "233666",
       "name": "Zhang Yuning",
       "teamId": "658",
@@ -502,27 +520,36 @@
       "assists": 0,
       "yellowCards": 1,
       "redCards": 0
+    },
+    {
+      "id": "319457",
+      "name": "Rizky Ridho",
+      "teamId": "4895",
+      "goals": 0,
+      "assists": 0,
+      "yellowCards": 1,
+      "redCards": 0
     }
   ],
   "matches": [
     {
       "id": "401873736",
       "date": "2026-06-09T11:30Z",
-      "status": "scheduled",
+      "status": "finished",
       "minute": null,
       "home": {
         "id": "7347",
         "name": "Philippines",
         "abbr": "PHI",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/phi.png",
-        "score": null
+        "score": 5
       },
       "away": {
         "id": "6770",
         "name": "Myanmar",
         "abbr": "MYA",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mya.png",
-        "score": null
+        "score": 1
       },
       "timeline": [],
       "assists": []
@@ -530,8 +557,8 @@
     {
       "id": "401873247",
       "date": "2026-06-09T11:35Z",
-      "status": "live",
-      "minute": "62'",
+      "status": "finished",
+      "minute": null,
       "home": {
         "id": "658",
         "name": "China",
@@ -565,21 +592,21 @@
     {
       "id": "401873742",
       "date": "2026-06-09T12:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "minute": null,
       "home": {
         "id": "5518",
         "name": "Cambodia",
         "abbr": "CAM",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cam.png",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "1928",
         "name": "Hong Kong",
         "abbr": "HKG",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hkg.png",
-        "score": null
+        "score": 0
       },
       "timeline": [],
       "assists": []
@@ -587,21 +614,21 @@
     {
       "id": "401873743",
       "date": "2026-06-09T12:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "minute": null,
       "home": {
         "id": "2841",
         "name": "Oman",
         "abbr": "OMA",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/oma.png",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "841",
         "name": "Kuwait",
         "abbr": "KUW",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
-        "score": null
+        "score": 0
       },
       "timeline": [],
       "assists": []
@@ -609,24 +636,42 @@
     {
       "id": "401873677",
       "date": "2026-06-09T13:00Z",
-      "status": "scheduled",
-      "minute": null,
+      "status": "live",
+      "minute": "68'",
       "home": {
         "id": "4895",
         "name": "Indonesia",
         "abbr": "IDN",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/idn.png",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "8939",
         "name": "Mozambique",
         "abbr": "MOZ",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
-        "score": null
+        "score": 0
       },
-      "timeline": [],
-      "assists": []
+      "timeline": [
+        {
+          "type": "goal",
+          "teamId": "4895",
+          "player": "Ole Romeny",
+          "minute": "12'"
+        },
+        {
+          "type": "yellow",
+          "teamId": "4895",
+          "player": "Rizky Ridho",
+          "minute": "60'"
+        }
+      ],
+      "assists": [
+        {
+          "teamId": "4895",
+          "player": "Ragnar Oratmangoen"
+        }
+      ]
     },
     {
       "id": "401873744",
