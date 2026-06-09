@@ -1,0 +1,41 @@
+# Refreshes the dataset from ESPN's public API on a schedule during the
+# tournament, commits any changed JSON, and lets the deploy workflow pick it up.
+# No API key required — ESPN's endpoints are public.
+name: Update World Cup data
+
+on:
+  schedule:
+    # Every 30 minutes (UTC). Tighten/loosen as the schedule demands.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: world-cup
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: world-cup/package-lock.json
+      - run: npm ci
+      - name: Refresh data from ESPN
+        run: npm run ingest
+      - name: Commit updated data
+        run: |
+          git config user.name "world-cup-bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain src/data)" ]; then
+            git add src/data
+            git commit -m "data: refresh World Cup data [skip ci]"
+            git push
+          else
+            echo "No data changes."
+          fi
