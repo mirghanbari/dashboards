@@ -14,6 +14,7 @@ import {
   loadName,
   saveName,
   entryId,
+  clearLocalEntry,
   fetchEntries,
   submitEntry,
 } from "../bracket";
@@ -50,6 +51,15 @@ export function Bracket() {
   const resetGroup = (g: string) =>
     setGroup(g, standingsForGroup(g).map((t) => t.id));
   const resetAll = () => update(defaultPicks());
+  const newEntry = () => {
+    const ok = window.confirm(
+      "Start a fresh bracket in this browser? Your current picks here are cleared so you can submit another entry. Anything you've already submitted stays on the leaderboard.",
+    );
+    if (!ok) return;
+    clearLocalEntry();
+    setPicks(defaultPicks());
+    setStep("step1");
+  };
 
   const candidates = thirdCandidates(picks);
   const toggleThird = (id: string) => {
@@ -69,6 +79,11 @@ export function Bracket() {
           </p>
         </div>
         <div className="view-toggle">
+          {view === "picks" && !locked && (
+            <button className="chip" onClick={newEntry} title="Start another bracket from scratch">
+              + New entry
+            </button>
+          )}
           <button className={"chip" + (view === "picks" ? " is-active" : "")} onClick={() => setView("picks")}>
             Make picks
           </button>
@@ -89,6 +104,7 @@ export function Bracket() {
         <Leaderboard />
       ) : (
         <>
+          {step === "step1" && <InviteBox />}
           <Steps step={step} />
           {step === "step1" && (
             <Step1
@@ -128,6 +144,37 @@ function bestThirds(picks: Picks): string[] {
     .map((id) => getTeam(id))
     .sort((a, b) => a.fifaRank - b.fifaRank)
     .map((t) => t.id);
+}
+
+function InviteBox() {
+  const url = typeof window !== "undefined" ? window.location.href : "";
+  const [copied, setCopied] = useState(false);
+  const copy = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      /* clipboard may be unavailable */
+    }
+  };
+  return (
+    <div className="invite-box">
+      <div className="invite-text">
+        <strong>Invite your pool</strong> — share this page and the password. Everyone
+        enters from their own device, before the first kickoff.
+        <div className="invite-row">
+          <code className="invite-link">{url}</code>
+          <button className="chip" onClick={() => copy(url)}>
+            {copied ? "Copied ✓" : "Copy link"}
+          </button>
+        </div>
+        <div className="invite-pw">
+          Pool password: <code>kabob</code>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Steps({ step }: { step: Step }) {

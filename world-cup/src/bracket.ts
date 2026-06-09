@@ -109,6 +109,14 @@ export function entryId(): string {
   return id;
 }
 
+/** Forget this browser's working entry so the next submit creates a new bracket.
+ *  Already-submitted entries stay on the leaderboard (they keep their own ids). */
+export function clearLocalEntry() {
+  localStorage.removeItem(LS.entryId);
+  localStorage.removeItem(LS.picks);
+  localStorage.removeItem(LS.name);
+}
+
 // ---------------- Remote pool (Google Apps Script Web App) ------------------
 export interface RemoteEntry {
   timestamp: string;
