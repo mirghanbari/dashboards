@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T19:33:15.955Z",
+  "lastUpdated": "2026-06-09T21:43:03.973Z",
   "date": "20260609",
   "source": "ESPN (fifa.friendly)",
   "teams": [
@@ -8,6 +8,18 @@
       "name": "Philippines",
       "abbr": "PHI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/phi.png",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 5,
+      "goalsAgainst": 1
+    },
+    {
+      "id": "4356",
+      "name": "Togo",
+      "abbr": "TOG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tog.png",
       "played": 1,
       "won": 1,
       "drawn": 0,
@@ -52,6 +64,18 @@
       "goalsAgainst": 0
     },
     {
+      "id": "4205",
+      "name": "Liberia",
+      "abbr": "LBR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lbr.png",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 3,
+      "goalsAgainst": 1
+    },
+    {
       "id": "5518",
       "name": "Cambodia",
       "abbr": "CAM",
@@ -68,6 +92,18 @@
       "name": "Chile",
       "abbr": "CHI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 2,
+      "goalsAgainst": 1
+    },
+    {
+      "id": "581",
+      "name": "Azerbaijan",
+      "abbr": "AZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
       "played": 1,
       "won": 1,
       "drawn": 0,
@@ -200,6 +236,42 @@
       "name": "Kazakhstan",
       "abbr": "KAZ",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 3
+    },
+    {
+      "id": "588",
+      "name": "San Marino",
+      "abbr": "SMR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 2
+    },
+    {
+      "id": "2844",
+      "name": "Benin",
+      "abbr": "BEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 5
+    },
+    {
+      "id": "8600",
+      "name": "Sierra Leone",
+      "abbr": "SLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sle.png",
       "played": 1,
       "won": 0,
       "drawn": 0,
@@ -386,30 +458,6 @@
       "lost": 1,
       "goalsFor": 0,
       "goalsAgainst": 3
-    },
-    {
-      "id": "581",
-      "name": "Azerbaijan",
-      "abbr": "AZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "588",
-      "name": "San Marino",
-      "abbr": "SMR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
     },
     {
       "id": "655",
@@ -1351,8 +1399,8 @@
     {
       "id": "401871580",
       "date": "2026-06-09T18:00Z",
-      "status": "live",
-      "minute": "74'",
+      "status": "finished",
+      "minute": null,
       "home": {
         "id": "581",
         "name": "Azerbaijan",
@@ -1365,6 +1413,50 @@
         "name": "San Marino",
         "abbr": "SMR",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
+        "score": 1
+      },
+      "timeline": [],
+      "assists": []
+    },
+    {
+      "id": "401875460",
+      "date": "2026-06-09T18:00Z",
+      "status": "finished",
+      "minute": null,
+      "home": {
+        "id": "4356",
+        "name": "Togo",
+        "abbr": "TOG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tog.png",
+        "score": 5
+      },
+      "away": {
+        "id": "2844",
+        "name": "Benin",
+        "abbr": "BEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
+        "score": 1
+      },
+      "timeline": [],
+      "assists": []
+    },
+    {
+      "id": "401875461",
+      "date": "2026-06-09T18:30Z",
+      "status": "finished",
+      "minute": null,
+      "home": {
+        "id": "4205",
+        "name": "Liberia",
+        "abbr": "LBR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lbr.png",
+        "score": 3
+      },
+      "away": {
+        "id": "8600",
+        "name": "Sierra Leone",
+        "abbr": "SLE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sle.png",
         "score": 1
       },
       "timeline": [],
