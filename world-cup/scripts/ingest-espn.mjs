@@ -124,12 +124,13 @@ async function main() {
 
   console.log("Fetching squads…");
   const players = [];
+  const playerByEspnId = new Map(); // ESPN athlete id → player object
   await pool(teams, 6, async (team) => {
     const roster = await getJson(
       `${BASE}/site/v2/sports/soccer/fifa.world/teams/${team.espnId}/roster`,
     );
     for (const a of roster.athletes ?? []) {
-      players.push({
+      const player = {
         id: `${team.id}-${a.id}`,
         name: a.fullName ?? a.displayName,
         teamId: team.id,
@@ -140,7 +141,9 @@ async function main() {
         height: a.displayHeight ?? "",
         weight: a.displayWeight ?? "",
         ...zeroPlayerStats(),
-      });
+      };
+      players.push(player);
+      playerByEspnId.set(String(a.id), player);
     }
     process.stdout.write(`  ${team.code} (${(roster.athletes ?? []).length})  `);
   });
@@ -187,6 +190,7 @@ async function main() {
       const status = mapStatus(ev.status?.type?.name);
       matches.push({
         id: `M${String(mid++).padStart(3, "0")}`,
+        espnEventId: ev.id,
         stage,
         group: sameGroup ? homeTeam.group : null,
         matchday: null,
@@ -203,6 +207,73 @@ async function main() {
     }
   }
   console.log(`  ${matches.length} fixtures.`);
+
+  // ---- Aggregate per-player and per-team stats from finished matches --------
+  const finished = matches.filter(
+    (m) => m.status === "finished" && m.espnEventId && m.homeTeamId !== "tbd" && m.awayTeamId !== "tbd",
+  );
+  const teamById = new Map(teams.map((t) => [t.id, t]));
+  const espnTeamToId = new Map(teams.map((t) => [t.espnId, t.id]));
+  const possAcc = new Map(); // teamId → { poss, pass, n }
+
+  // ESPN puts player stats in `value`, team stats in `displayValue` (a string,
+  // sometimes with a "%"). Read whichever is present, robustly.
+  const readStat = (arr, name) => {
+    const s = (arr ?? []).find((x) => x.name === name);
+    if (!s) return 0;
+    const raw = s.value != null ? s.value : String(s.displayValue ?? "").replace(/[^0-9.\-]/g, "");
+    const n = Number(raw);
+    return Number.isFinite(n) ? n : 0;
+  };
+
+  if (finished.length) {
+    console.log(`Aggregating stats from ${finished.length} finished matches…`);
+    const summaries = await pool(finished, 6, (m) =>
+      getJson(`${BASE}/site/v2/sports/soccer/fifa.world/summary?event=${m.espnEventId}`).catch(() => null),
+    );
+    for (const sum of summaries) {
+      // Per-player stats from the match rosters.
+      for (const r of sum?.rosters ?? []) {
+        for (const entry of r.roster ?? []) {
+          const player = playerByEspnId.get(String(entry.athlete?.id));
+          if (!player || !entry.stats) continue;
+          player.goals += readStat(entry.stats, "totalGoals");
+          player.assists += readStat(entry.stats, "goalAssists");
+          player.shots += readStat(entry.stats, "totalShots");
+          player.shotsOnTarget += readStat(entry.stats, "shotsOnTarget");
+          player.yellowCards += readStat(entry.stats, "yellowCards");
+          player.redCards += readStat(entry.stats, "redCards");
+          player.appearances += readStat(entry.stats, "appearances");
+        }
+      }
+      // Per-team possession / pass completion from the boxscore.
+      for (const t of sum?.boxscore?.teams ?? []) {
+        const teamId = espnTeamToId.get(t.team?.id);
+        if (!teamId) continue;
+        const acc = possAcc.get(teamId) ?? { poss: 0, pass: 0, n: 0 };
+        const ap = readStat(t.statistics, "accuratePasses");
+        const tp = readStat(t.statistics, "totalPasses");
+        acc.poss += readStat(t.statistics, "possessionPct");
+        acc.pass += tp > 0 ? (ap / tp) * 100 : 0; // passPct field is unreliable
+        acc.n += 1;
+        possAcc.set(teamId, acc);
+      }
+    }
+    for (const [teamId, acc] of possAcc) {
+      const team = teamById.get(teamId);
+      if (acc.n) {
+        team.possession = Math.round((acc.poss / acc.n) * 10) / 10;
+        team.passCompletion = Math.round((acc.pass / acc.n) * 10) / 10;
+      }
+    }
+  }
+
+  // Clean sheets — derived from finished group/knockout results.
+  for (const m of finished) {
+    if (m.homeScore == null || m.awayScore == null) continue;
+    if (m.awayScore === 0) teamById.get(m.homeTeamId).cleanSheets += 1;
+    if (m.homeScore === 0) teamById.get(m.awayTeamId).cleanSheets += 1;
+  }
 
   const meta = {
     tournament: "FIFA World Cup 2026",

@@ -20,7 +20,7 @@ export const STAT_CATALOG: StatDef[] = [
     derive: (p) => (p.shots > 0 ? (p.shotsOnTarget / p.shots) * 100 : 0),
   },
   { key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player", source: "fbref", unit: "%", decimals: 1 },
-  { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "fbref", unit: "%", decimals: 1 },
+  { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1 },
   { key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fbref" },
   { key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fbref" },
   { key: "interceptions", label: "Interceptions", tier: "basic", scope: "player", source: "fbref" },

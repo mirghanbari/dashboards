@@ -49,6 +49,7 @@ export interface Team {
 
 export interface Match {
   id: string;
+  espnEventId?: string; // ESPN event id, for pulling per-match player stats
   stage: Stage;
   group: string | null; // group letter for group-stage games, else null
   matchday: number | null;
