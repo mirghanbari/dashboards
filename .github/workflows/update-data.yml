@@ -36,7 +36,7 @@ jobs:
           git config user.email "actions@github.com"
           if [ -n "$(git status --porcelain src/data)" ]; then
             git add src/data
-            git commit -m "data: refresh World Cup data [skip ci]"
+            git commit -m "data: refresh World Cup + friendlies data"
             git push
           else
             echo "No data changes."

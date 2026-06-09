@@ -8,6 +8,11 @@ on:
     paths:
       - "world-cup/**"
       - ".github/workflows/deploy.yml"
+  # Redeploy after a scheduled data refresh — commits made by the Actions bot
+  # with GITHUB_TOKEN don't trigger `push`, so we chain off the data workflow.
+  workflow_run:
+    workflows: ["Update World Cup data"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
