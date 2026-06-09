@@ -16,6 +16,7 @@ real data pulled from ESPN's public API**, refreshed on a schedule.
 | **Players** (`/players`) | All ~1,245 players, searchable and sortable |
 | **Player detail** (`/players/:id`) | Bio + per-player stats |
 | **Stats** (`/stats`) | Every tracked metric (basic → elite), each linked to its leading players/teams, with data-source labels |
+| **Friendlies** (`/friendlies`) | International friendlies (POC): live scores, goal scorers, assists, cards, and team records from ESPN's `fifa.friendly` feed |
 
 Routing uses `HashRouter` so deep links work on GitHub Pages without server config.
 
@@ -32,8 +33,9 @@ Other scripts:
 ```bash
 npm run build        # type-check + production build into dist/
 npm run preview      # serve the production build
-npm run ingest       # rebuild src/data/ from ESPN's live API (no key needed)
-npm run fetch-data   # optional: LLM agent for stats ESPN doesn't expose (needs ANTHROPIC_API_KEY)
+npm run ingest             # rebuild src/data/ from ESPN's live API (no key needed)
+npm run ingest:friendlies  # rebuild friendlies.json from ESPN's fifa.friendly feed
+npm run fetch-data         # optional: LLM agent for stats ESPN doesn't expose (needs ANTHROPIC_API_KEY)
 ```
 
 ## Where the data lives

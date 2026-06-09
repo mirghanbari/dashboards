@@ -9,6 +9,7 @@ import { TeamDetail } from "./pages/TeamDetail";
 import { Players } from "./pages/Players";
 import { PlayerDetail } from "./pages/PlayerDetail";
 import { Stats } from "./pages/Stats";
+import { Friendlies } from "./pages/Friendlies";
 import "./index.css";
 
 const rootEl = document.getElementById("root");
@@ -27,6 +28,7 @@ createRoot(rootEl).render(
           <Route path="players" element={<Players />} />
           <Route path="players/:playerId" element={<PlayerDetail />} />
           <Route path="stats" element={<Stats />} />
+          <Route path="friendlies" element={<Friendlies />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

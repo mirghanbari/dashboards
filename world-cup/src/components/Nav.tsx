@@ -7,6 +7,7 @@ const LINKS = [
   { to: "/teams", label: "Teams", end: false },
   { to: "/players", label: "Players", end: false },
   { to: "/stats", label: "Stats", end: false },
+  { to: "/friendlies", label: "Friendlies", end: false },
 ];
 
 export function Nav() {

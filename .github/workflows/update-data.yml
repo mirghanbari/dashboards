@@ -26,8 +26,10 @@ jobs:
           cache: npm
           cache-dependency-path: world-cup/package-lock.json
       - run: npm ci
-      - name: Refresh data from ESPN
+      - name: Refresh World Cup data from ESPN
         run: npm run ingest
+      - name: Refresh International Friendlies from ESPN
+        run: npm run ingest:friendlies
       - name: Commit updated data
         run: |
           git config user.name "world-cup-bot"

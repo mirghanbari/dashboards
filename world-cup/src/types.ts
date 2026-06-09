@@ -140,3 +140,66 @@ export interface Standing extends Team {
   goalDiff: number;
   rank: number; // position within the group
 }
+
+// ---------- International Friendlies (proof-of-concept data flow) ----------
+// A lighter, self-contained dataset sourced from ESPN's fifa.friendly feed.
+
+export interface FriendlyTeam {
+  id: string;
+  name: string;
+  abbr: string;
+  logo: string; // ESPN country crest URL
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  goalsFor: number;
+  goalsAgainst: number;
+}
+
+export interface FriendlyPlayer {
+  id: string;
+  name: string;
+  teamId: string;
+  goals: number;
+  assists: number;
+  yellowCards: number;
+  redCards: number;
+}
+
+export type FriendlyEventType = "goal" | "yellow" | "red";
+
+export interface FriendlyEvent {
+  type: FriendlyEventType;
+  teamId: string;
+  player: string;
+  minute: string; // e.g. "55'"
+}
+
+export interface FriendlyMatchSide {
+  id: string;
+  name: string;
+  abbr: string;
+  logo: string;
+  score: number | null;
+}
+
+export interface FriendlyMatch {
+  id: string; // ESPN event id
+  date: string;
+  status: MatchStatus;
+  minute: string | null;
+  home: FriendlyMatchSide;
+  away: FriendlyMatchSide;
+  timeline: FriendlyEvent[]; // goals + cards, with minute, from the scoreboard
+  assists: { teamId: string; player: string }[]; // from the boxscore
+}
+
+export interface Friendlies {
+  lastUpdated: string;
+  date: string;
+  source: string;
+  teams: FriendlyTeam[];
+  players: FriendlyPlayer[];
+  matches: FriendlyMatch[];
+}
