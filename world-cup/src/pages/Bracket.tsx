@@ -7,7 +7,6 @@ import {
   defaultPicks,
   thirdCandidates,
   scoreEntry,
-  actualResults,
   isLocked,
   loadPicks,
   savePicks,
@@ -403,7 +402,6 @@ function Leaderboard() {
       .sort((a, b) => b.score.total - a.score.total || a.name.localeCompare(b.name));
   }, [entries]);
 
-  const { advancingThirds } = actualResults();
   const anyResults = useMemo(
     () => groupLetters.some((g) => standingsForGroup(g).some((t) => t.played > 0)),
     [],
@@ -418,8 +416,8 @@ function Leaderboard() {
       <p className="bc-hint">
         Scoring: {SCORING.position.join("/")} pts for a correct 1st/2nd/3rd/4th ·{" "}
         {SCORING.perfectGroup} perfect-group bonus · {SCORING.correctThird} pts per correct
-        3rd-place advance.
-        {!anyResults && " No matches played yet — scores stay 0 until the group stage begins."}
+        3rd-place advance. Everyone starts at 0; scores update live as each match finishes.
+        {!anyResults && " No matches have finished yet."}
       </p>
 
       {err && <p className="bc-error">{err}</p>}
@@ -435,7 +433,7 @@ function Leaderboard() {
               <th className="col-rank">#</th>
               <th className="col-player">Entry</th>
               <th>Pos pts</th>
-              <th>Perfect</th>
+              <th>Perfect ×10</th>
               <th>3rd</th>
               <th>Total</th>
             </tr>
@@ -450,7 +448,7 @@ function Leaderboard() {
                 </td>
                 <td>{e.score.positionPoints}</td>
                 <td>{e.score.perfectGroups || ""}</td>
-                <td>{e.score.thirdsCorrect}/{advancingThirds.size}</td>
+                <td>{e.score.thirdsCorrect}/{THIRDS_ADVANCING}</td>
                 <td className="num-strong">{e.score.total}</td>
               </tr>
             ))}

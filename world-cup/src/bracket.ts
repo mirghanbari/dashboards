@@ -26,20 +26,24 @@ const strength = (a: { points: number; goalDiff: number; goalsFor: number; fifaR
   b: { points: number; goalDiff: number; goalsFor: number; fifaRank: number }) =>
   b.points - a.points || b.goalDiff - a.goalDiff || b.goalsFor - a.goalsFor || a.fifaRank - b.fifaRank;
 
-/** Actual results from live standings: order per group + the 8 advancing thirds. */
-export function actualResults() {
-  const positions: Record<string, string[]> = {};
+/** The 8 third-place teams currently advancing, by live standings. */
+export function advancingThirds(): Set<string> {
   const thirds: ReturnType<typeof standingsForGroup> = [];
   for (const g of groupLetters) {
     const rows = standingsForGroup(g);
-    positions[g] = rows.map((t) => t.id);
     if (rows[2]) thirds.push(rows[2]);
   }
-  const advancingThirds = new Set(
+  return new Set(
     [...thirds].sort(strength).slice(0, THIRDS_ADVANCING).map((t) => t.id),
   );
-  return { positions, advancingThirds };
 }
+
+/** A group is decided once all four teams have played their three matches. */
+const groupComplete = (g: string) => {
+  const rows = standingsForGroup(g);
+  return rows.length === 4 && rows.every((t) => t.played >= 3);
+};
+export const groupStageComplete = () => groupLetters.every(groupComplete);
 
 export interface ScoreBreakdown {
   total: number;
@@ -50,24 +54,34 @@ export interface ScoreBreakdown {
   thirdsPoints: number;
 }
 
-/** Score an entry's picks against the current actual results. */
+/**
+ * Live scoring — everything starts at 0 and updates as games finish:
+ * - Position points are provisional against the current live standings; a slot
+ *   only scores once the team sitting in it has actually played a match.
+ * - The Perfect-Group bonus locks in only once a group is fully played.
+ * - Third-place points are awarded once the whole group stage is decided.
+ */
 export function scoreEntry(picks: Picks): ScoreBreakdown {
-  const { positions, advancingThirds } = actualResults();
   let positionPoints = 0;
   let perfectGroups = 0;
   for (const g of groupLetters) {
+    const rows = standingsForGroup(g);
     const pred = picks.groups[g] ?? [];
-    const actual = positions[g] ?? [];
     let groupCorrect = 0;
     for (let i = 0; i < 4; i++) {
-      if (pred[i] && pred[i] === actual[i]) {
+      const actual = rows[i];
+      if (actual && actual.played > 0 && pred[i] === actual.id) {
         positionPoints += SCORING.position[i]; // 25 / 15 / 10 / 5 by slot
         groupCorrect++;
       }
     }
-    if (groupCorrect === 4) perfectGroups++;
+    if (groupCorrect === 4 && groupComplete(g)) perfectGroups++;
   }
-  const thirdsCorrect = (picks.thirds ?? []).filter((id) => advancingThirds.has(id)).length;
+  let thirdsCorrect = 0;
+  if (groupStageComplete()) {
+    const advancing = advancingThirds();
+    thirdsCorrect = (picks.thirds ?? []).filter((id) => advancing.has(id)).length;
+  }
   const perfectBonus = perfectGroups * SCORING.perfectGroup;
   const thirdsPoints = thirdsCorrect * SCORING.correctThird;
   return {
