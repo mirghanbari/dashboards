@@ -91,11 +91,11 @@ export function Stats() {
 
       {tier === "elite" && (
         <p className="tier-note">
-          Elite tracking metrics (OBV, xT, VAEP, high-speed running, sprint counts,
-          etc.) come from optical/positional tracking data. They require a provider
-          feed such as StatsBomb, Opta, or SkillCorner — wire one into{" "}
-          <code>fetch-data.mjs</code> and these populate automatically. Until then
-          they're shown empty rather than faked.
+          xT and VAEP come from open models computed on event data — no paid feed
+          needed, and they fill in once matches are played. Set-piece xG comes free
+          from FotMob's shotmap. The rest (OBV, high-speed running, sprint counts,
+          space creation) need optical tracking data from a paid provider such as
+          StatsBomb or SkillCorner. Until then those are shown empty rather than faked.
         </p>
       )}
 

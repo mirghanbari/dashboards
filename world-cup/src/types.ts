@@ -113,7 +113,7 @@ export interface Player {
 // Stat metadata for the Stats page: groups each metric and records where the
 // value can actually be sourced (so the UI never implies fake data is real).
 export type StatTier = "basic" | "advanced" | "elite";
-export type StatSource = "espn" | "derived" | "fbref" | "provider";
+export type StatSource = "espn" | "fotmob" | "derived" | "fbref" | "model" | "provider";
 
 export interface StatDef {
   key: string; // Player/Team field, or a derived id

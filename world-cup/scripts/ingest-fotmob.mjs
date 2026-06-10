@@ -1,0 +1,231 @@
+// ---------------------------------------------------------------------------
+// ingest-fotmob.mjs — enriches the dataset with advanced stats from FotMob.
+//
+// Why FotMob and not FBref? FBref (the obvious free source for Opta-derived
+// numbers) now sits behind Cloudflare's managed challenge, which a CI runner on
+// a datacenter IP can't reliably pass. FotMob exposes the same class of data —
+// xG, xA, xGOT, chances created, tackles/interceptions/clearances, final-third
+// passes, plus a shot-level shotmap — over a plain public JSON API with no
+// Cloudflare. So we use it for everything ESPN doesn't carry.
+//
+// This runs AFTER ingest-espn.mjs. ESPN builds teams/players/matches and fills
+// goals/assists/shots; this script reads those JSON files back and fills in the
+// advanced fields (which ESPN leaves at 0), then writes them out again.
+//
+//   node scripts/ingest-espn.mjs   # base data + ESPN stats
+//   node scripts/ingest-fotmob.mjs # advanced stats on top
+// ---------------------------------------------------------------------------
+import { readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const DATA_DIR = join(__dirname, "..", "src", "data");
+
+// FotMob's public data API. No key, no Cloudflare — but it does reject the
+// default fetch UA, so we send a browser UA + Referer like the website does.
+const FOTMOB = "https://www.fotmob.com/api/data";
+const WORLD_CUP_LEAGUE_ID = 77; // FotMob's id for the men's World Cup
+const HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  Referer: "https://www.fotmob.com/",
+  Accept: "application/json",
+};
+const PAUSE_MS = 1500; // be polite between match requests
+
+async function getJson(url, tries = 3) {
+  for (let i = 0; i < tries; i++) {
+    try {
+      const res = await fetch(url, { headers: HEADERS });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      if (i === tries - 1) throw err;
+      await new Promise((r) => setTimeout(r, 800 * (i + 1)));
+    }
+  }
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// ---- name matching -------------------------------------------------------
+// Strip accents, punctuation and case so "Türkiye" === "Turkiye", etc.
+const norm = (s) =>
+  (s ?? "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+// FotMob team name → our team name, where normalization alone isn't enough.
+const TEAM_ALIASES = {
+  "bosnia and herzegovina": "bosnia herzegovina",
+  "dr congo": "congo dr",
+  usa: "united states",
+};
+const teamKey = (name) => {
+  const n = norm(name);
+  return TEAM_ALIASES[n] ?? n;
+};
+
+// FotMob shot `situation` values we count as set-piece xG (dead-ball origin).
+const SET_PIECE_SITUATIONS = new Set([
+  "SetPiece",
+  "FromCorner",
+  "FreeKick",
+  "Penalty",
+  "ThrowInSetPiece",
+]);
+
+// Pull the numeric value out of a FotMob player-stat cell. Cells are either
+// { value } or { value, total } (a fraction, e.g. accurate passes).
+const val = (cell) => (cell && typeof cell.value === "number" ? cell.value : 0);
+const total = (cell) => (cell && typeof cell.total === "number" ? cell.total : 0);
+
+// Find a named stat inside a player's grouped stat blocks.
+function playerStat(p, label) {
+  for (const group of p.stats ?? []) {
+    const cell = group.stats?.[label];
+    if (cell) return cell;
+  }
+  return null;
+}
+
+async function main() {
+  // ---- load the base data ESPN already produced --------------------------
+  const read = (f) => JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
+  const teams = read("teams.json");
+  const players = read("players.json");
+
+  // teamKey → teamId, and teamId → (normalized player name → player object)
+  const teamIdByKey = new Map(teams.map((t) => [teamKey(t.name), t.id]));
+  const playersByTeam = new Map(); // teamId → Map(normName → player)
+  for (const p of players) {
+    if (!playersByTeam.has(p.teamId)) playersByTeam.set(p.teamId, new Map());
+    playersByTeam.get(p.teamId).set(norm(p.name), p);
+  }
+
+  const resolvePlayer = (teamId, fmName) => {
+    const byName = playersByTeam.get(teamId);
+    if (!byName) return null;
+    const n = norm(fmName);
+    if (byName.has(n)) return byName.get(n);
+    // loose fallback: match on last name if unique within the squad
+    const last = n.split(" ").pop();
+    const hits = [...byName.entries()].filter(([k]) => k.split(" ").pop() === last);
+    return hits.length === 1 ? hits[0][1] : null;
+  };
+
+  // ---- enumerate WC matches ---------------------------------------------
+  console.log("Fetching FotMob World Cup fixtures…");
+  const league = await getJson(
+    `${FOTMOB}/leagues?id=${WORLD_CUP_LEAGUE_ID}`,
+  );
+  const all = league.fixtures?.allMatches ?? [];
+  const finished = all.filter((m) => m.status?.finished);
+  console.log(`  ${all.length} fixtures, ${finished.length} finished.`);
+
+  // Track what matched so name-mismatches are visible and fixable.
+  const unmatchedTeams = new Set();
+  const unmatchedPlayers = new Set();
+  let matchedPlayerRows = 0;
+
+  // ---- pull each finished match and fold its stats into our players ------
+  for (const fx of finished) {
+    let detail;
+    try {
+      detail = await getJson(`${FOTMOB}/matchDetails?matchId=${fx.id}`);
+    } catch (err) {
+      console.warn(`  ! match ${fx.id} failed: ${err.message}`);
+      continue;
+    }
+    await sleep(PAUSE_MS);
+
+    const ps = detail.content?.playerStats ?? {};
+    const shotmap = detail.content?.shotmap?.shots ?? [];
+
+    // Per-player set-piece xG, summed from the shotmap (keyed by FotMob id).
+    const setPieceByFmId = new Map();
+    for (const s of shotmap) {
+      if (SET_PIECE_SITUATIONS.has(s.situation)) {
+        const prev = setPieceByFmId.get(s.playerId) ?? 0;
+        setPieceByFmId.set(s.playerId, prev + (s.expectedGoals ?? 0));
+      }
+    }
+
+    for (const fmId of Object.keys(ps)) {
+      const fp = ps[fmId];
+      const teamId = teamIdByKey.get(teamKey(fp.teamName));
+      if (!teamId) {
+        unmatchedTeams.add(fp.teamName);
+        continue;
+      }
+      const player = resolvePlayer(teamId, fp.name);
+      if (!player) {
+        unmatchedPlayers.add(`${fp.name} (${fp.teamName})`);
+        continue;
+      }
+      if (!(fp.stats?.length)) continue; // didn't feature
+      matchedPlayerRows++;
+
+      // --- advanced fields ESPN doesn't provide ---
+      player.minutes += val(playerStat(fp, "Minutes played"));
+      player.xg += val(playerStat(fp, "Expected goals (xG)"));
+      player.xa += val(playerStat(fp, "Expected assists (xA)"));
+      player.xgot += val(playerStat(fp, "Expected goals on target (xGOT)"));
+      player.chancesCreated += val(playerStat(fp, "Chances created"));
+      player.finalThirdEntries += val(playerStat(fp, "Passes into final third"));
+      player.tackles += val(playerStat(fp, "Tackles"));
+      player.interceptions += val(playerStat(fp, "Interceptions"));
+      player.clearances += val(playerStat(fp, "Clearances"));
+      player.setPieceXg += setPieceByFmId.get(fp.id) ?? 0;
+
+      // Pass completion: accumulate as a fraction, average at the end.
+      const passCell = playerStat(fp, "Accurate passes");
+      const acc = val(passCell);
+      const att = total(passCell);
+      if (att > 0) {
+        player._passAcc = (player._passAcc ?? 0) + acc;
+        player._passAtt = (player._passAtt ?? 0) + att;
+      }
+    }
+    process.stdout.write(".");
+  }
+  console.log();
+
+  // Finalize pass completion (% across all matches played).
+  for (const p of players) {
+    if (p._passAtt > 0) {
+      p.passCompletion = Math.round((p._passAcc / p._passAtt) * 1000) / 10;
+    }
+    delete p._passAcc;
+    delete p._passAtt;
+    // round the float-y expected-value fields
+    for (const k of ["xg", "xa", "xgot", "setPieceXg"]) {
+      p[k] = Math.round(p[k] * 100) / 100;
+    }
+  }
+
+  // ---- report ------------------------------------------------------------
+  console.log(`Matched ${matchedPlayerRows} player-match rows.`);
+  if (unmatchedTeams.size)
+    console.log("Unmatched teams (add to TEAM_ALIASES):", [...unmatchedTeams].join(", "));
+  if (unmatchedPlayers.size)
+    console.log(`Unmatched players (${unmatchedPlayers.size}):`, [...unmatchedPlayers].slice(0, 30).join(", "));
+
+  // ---- write back --------------------------------------------------------
+  const write = (f, o) => writeFileSync(join(DATA_DIR, f), JSON.stringify(o, null, 2) + "\n");
+  write("players.json", players);
+  console.log("Wrote advanced stats into src/data/players.json.");
+
+  // NOTE: still unfilled (FotMob doesn't expose these) — candidates for the
+  // worldfootballR_data CSV fallback later: progressivePasses, progressiveCarries,
+  // highTurnovers, lineBreakingPasses (provider), and team ppda.
+}
+
+main().catch((err) => {
+  console.error("FotMob ingestion failed:", err);
+  process.exit(1);
+});

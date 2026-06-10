@@ -5,9 +5,11 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 // The full stat catalog. Every metric the dashboard tracks, tagged with the
 // player/team it attaches to and where its value actually comes from:
 //   espn     — live now from ESPN's match feed
+//   fotmob   — free FotMob public API (xG, xGOT, per-player advanced stats)
 //   derived  — computed from other tracked stats (no external source needed)
-//   fbref    — available from FBref/Opta event data (added during the tournament)
-//   provider — needs a tracking-data provider (StatsBomb / SkillCorner / etc.)
+//   fbref    — Opta event data via the worldfootballR open dataset
+//   model    — open model computed from event data, no paid feed (xT, VAEP)
+//   provider — needs a paid tracking-data provider (StatsBomb / SkillCorner / etc.)
 // ---------------------------------------------------------------------------
 export const STAT_CATALOG: StatDef[] = [
   // ---------------- BASIC ----------------
@@ -19,47 +21,49 @@ export const STAT_CATALOG: StatDef[] = [
     source: "derived", unit: "%", decimals: 1,
     derive: (p) => (p.shots > 0 ? (p.shotsOnTarget / p.shots) * 100 : 0),
   },
-  { key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player", source: "fbref", unit: "%", decimals: 1 },
+  { key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player", source: "fotmob", unit: "%", decimals: 1 },
   { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1 },
-  { key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fbref" },
-  { key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fbref" },
-  { key: "interceptions", label: "Interceptions", tier: "basic", scope: "player", source: "fbref" },
-  { key: "clearances", label: "Clearances", tier: "basic", scope: "player", source: "fbref" },
+  { key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fotmob" },
+  { key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fotmob" },
+  { key: "interceptions", label: "Interceptions", tier: "basic", scope: "player", source: "fotmob" },
+  { key: "clearances", label: "Clearances", tier: "basic", scope: "player", source: "fotmob" },
   { key: "cleanSheets", label: "Clean sheets", tier: "basic", scope: "team", source: "espn" },
 
   // ---------------- ADVANCED ----------------
-  { key: "xg", label: "xG (expected goals)", tier: "advanced", scope: "player", source: "fbref", decimals: 2 },
-  { key: "xa", label: "xA (expected assists)", tier: "advanced", scope: "player", source: "fbref", decimals: 2 },
+  { key: "xg", label: "xG (expected goals)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
+  { key: "xa", label: "xA (expected assists)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
   {
     key: "xgOver", label: "xG overperformance", tier: "advanced", scope: "player",
     source: "derived", decimals: 2,
     derive: (p) => p.goals - p.xg,
   },
-  { key: "xgot", label: "xGot (xG on target)", tier: "advanced", scope: "player", source: "provider", decimals: 2 },
+  { key: "xgot", label: "xGot (xG on target)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
   { key: "ppda", label: "PPDA", tier: "advanced", scope: "team", source: "fbref", decimals: 1 },
   { key: "pressSuccess", label: "Press success", tier: "advanced", scope: "player", source: "provider", unit: "%", decimals: 1 },
   { key: "highTurnovers", label: "High turnovers", tier: "advanced", scope: "player", source: "fbref" },
   { key: "progressivePasses", label: "Progressive passes", tier: "advanced", scope: "player", source: "fbref" },
   { key: "progressiveCarries", label: "Progressive carries", tier: "advanced", scope: "player", source: "fbref" },
-  { key: "finalThirdEntries", label: "Final-third entries", tier: "advanced", scope: "player", source: "fbref" },
+  { key: "finalThirdEntries", label: "Final-third entries", tier: "advanced", scope: "player", source: "fotmob" },
   { key: "lineBreakingPasses", label: "Line-breaking passes", tier: "advanced", scope: "player", source: "provider" },
 
   // ---------------- ELITE / TRACKING ----------------
   { key: "obv", label: "OBV (on-ball value)", tier: "elite", scope: "player", source: "provider", decimals: 2 },
   { key: "offBallRuns", label: "Off-ball runs", tier: "elite", scope: "player", source: "provider" },
-  { key: "xt", label: "xT (expected threat)", tier: "elite", scope: "player", source: "provider", decimals: 2 },
-  { key: "vaep", label: "VAEP", tier: "elite", scope: "player", source: "provider", decimals: 2 },
+  { key: "xt", label: "xT (expected threat)", tier: "elite", scope: "player", source: "model", decimals: 2 },
+  { key: "vaep", label: "VAEP", tier: "elite", scope: "player", source: "model", decimals: 2 },
   { key: "highSpeedRunning", label: "High-speed running", tier: "elite", scope: "player", source: "provider", unit: " m" },
   { key: "sprintCount", label: "Sprint count", tier: "elite", scope: "player", source: "provider" },
   { key: "spaceCreation", label: "Space creation", tier: "elite", scope: "player", source: "provider", decimals: 2 },
-  { key: "setPieceXg", label: "Set-piece xG", tier: "elite", scope: "player", source: "provider", decimals: 2 },
+  { key: "setPieceXg", label: "Set-piece xG", tier: "elite", scope: "player", source: "fotmob", decimals: 2 },
 ];
 
 export const SOURCE_META: Record<StatDef["source"], { label: string; hint: string }> = {
   espn: { label: "ESPN · live", hint: "Pulled live from ESPN's match feed." },
+  fotmob: { label: "FotMob · free", hint: "Free FotMob public API — xG, xGOT, set-piece xG and per-player advanced stats." },
   derived: { label: "Derived", hint: "Computed from other tracked stats." },
-  fbref: { label: "FBref/Opta", hint: "Event data, added as matches are played." },
-  provider: { label: "Tracking provider", hint: "Needs StatsBomb / Opta / SkillCorner data." },
+  fbref: { label: "FBref/Opta", hint: "Opta event data via the worldfootballR open dataset." },
+  model: { label: "Open model", hint: "Computed from event data with open models (xT, VAEP) — no paid feed." },
+  provider: { label: "Tracking provider", hint: "Needs a paid tracking feed (StatsBomb / SkillCorner / Second Spectrum)." },
 };
 
 export const TIERS: { value: StatDef["tier"]; label: string }[] = [

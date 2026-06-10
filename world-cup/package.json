@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "ingest": "node scripts/ingest-espn.mjs",
+    "ingest:fotmob": "node scripts/ingest-fotmob.mjs",
     "ingest:friendlies": "node scripts/ingest-friendlies.mjs",
     "fetch-data": "node scripts/fetch-data.mjs"
   },

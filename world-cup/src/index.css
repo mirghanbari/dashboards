@@ -899,8 +899,10 @@ tr.qualifies {
   display: inline-block;
 }
 .src-dot.src-espn, .src-badge.src-espn { --c: var(--pitch-1); }
+.src-dot.src-fotmob, .src-badge.src-fotmob { --c: var(--pitch-2); }
 .src-dot.src-derived, .src-badge.src-derived { --c: var(--blue); }
 .src-dot.src-fbref, .src-badge.src-fbref { --c: var(--gold); }
+.src-dot.src-model, .src-badge.src-model { --c: #7c5cdb; }
 .src-dot.src-provider, .src-badge.src-provider { --c: var(--ink-faint); }
 .src-dot { background: var(--c); }
 

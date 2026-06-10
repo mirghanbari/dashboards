@@ -30,6 +30,11 @@ jobs:
       - run: npm ci
       - name: Refresh World Cup data from ESPN
         run: npm run ingest
+      - name: Enrich with advanced stats from FotMob
+        # Runs after the ESPN step (it enriches the players.json ESPN builds).
+        # Non-fatal: if FotMob's API hiccups, still commit the ESPN refresh.
+        continue-on-error: true
+        run: npm run ingest:fotmob
       - name: Refresh International Friendlies from ESPN
         run: npm run ingest:friendlies
       - name: Commit updated data
