@@ -5,8 +5,10 @@ name: Update World Cup data
 
 on:
   schedule:
-    # Every 30 minutes (UTC). Tighten/loosen as the schedule demands.
-    - cron: "*/30 * * * *"
+    # Only during the tournament (UTC): Jun 11–30 and Jul 1–19, 2026. Before
+    # opening day there's nothing to refresh, so the job stays idle.
+    - cron: "*/30 * 11-30 6 *"
+    - cron: "*/30 * 1-19 7 *"
   workflow_dispatch:
 
 permissions:
