@@ -32,10 +32,10 @@ jobs:
       run:
         working-directory: world-cup
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           cache-dependency-path: world-cup/package-lock.json
       - run: npm ci
