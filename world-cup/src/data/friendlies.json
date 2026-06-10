@@ -1,469 +1,13 @@
 {
-  "lastUpdated": "2026-06-09T23:13:42.552Z",
-  "date": "20260609",
+  "lastUpdated": "2026-06-10T01:35:26.633Z",
+  "date": "20260610",
   "source": "ESPN (fifa.friendly)",
   "teams": [
     {
-      "id": "7347",
-      "name": "Philippines",
-      "abbr": "PHI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/phi.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 5,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "4356",
-      "name": "Togo",
-      "abbr": "TOG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tog.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 5,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "653",
-      "name": "Angola",
-      "abbr": "ANG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ang.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "480",
-      "name": "Hungary",
-      "abbr": "HUN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "454",
-      "name": "Russia",
-      "abbr": "RUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "4205",
-      "name": "Liberia",
-      "abbr": "LBR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lbr.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "5518",
-      "name": "Cambodia",
-      "abbr": "CAM",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cam.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "207",
-      "name": "Chile",
-      "abbr": "CHI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "581",
-      "name": "Azerbaijan",
-      "abbr": "AZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "4895",
-      "name": "Indonesia",
-      "abbr": "IDN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/idn.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "8601",
-      "name": "Comoros",
-      "abbr": "COM",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "583",
-      "name": "Belarus",
-      "abbr": "BLR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 2
-    },
-    {
-      "id": "2845",
-      "name": "Burkina Faso",
-      "abbr": "BKA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 2
-    },
-    {
-      "id": "6770",
-      "name": "Myanmar",
-      "abbr": "MYA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mya.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 5
-    },
-    {
-      "id": "579",
-      "name": "Armenia",
-      "abbr": "ARM",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "483",
-      "name": "Moldova",
-      "abbr": "MDA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mda.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "5777",
-      "name": "Ethiopia",
-      "abbr": "ETH",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eth.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "4325",
-      "name": "Malawi",
-      "abbr": "MWI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mwi.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 1,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 2
-    },
-    {
-      "id": "2619",
-      "name": "Kazakhstan",
-      "abbr": "KAZ",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 3
-    },
-    {
-      "id": "588",
-      "name": "San Marino",
-      "abbr": "SMR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 2
-    },
-    {
-      "id": "2844",
-      "name": "Benin",
-      "abbr": "BEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 5
-    },
-    {
-      "id": "8600",
-      "name": "Sierra Leone",
-      "abbr": "SLE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sle.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 3
-    },
-    {
-      "id": "658",
-      "name": "China",
-      "abbr": "CHN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "4396",
-      "name": "Thailand",
-      "abbr": "THA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "1928",
-      "name": "Hong Kong",
-      "abbr": "HKG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hkg.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 2
-    },
-    {
-      "id": "2841",
-      "name": "Oman",
-      "abbr": "OMA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/oma.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "841",
-      "name": "Kuwait",
-      "abbr": "KUW",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "8939",
-      "name": "Mozambique",
-      "abbr": "MOZ",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "4381",
-      "name": "Bahrain",
-      "abbr": "BHR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bhr.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "4380",
-      "name": "Syria",
-      "abbr": "SYR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "6724",
-      "name": "Kyrgyz Republic",
-      "abbr": "KGZ",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "6167",
-      "name": "Palestine",
-      "abbr": "PLE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "8938",
-      "name": "Equatorial Guinea",
-      "abbr": "EQG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eqg.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 1
-    },
-    {
-      "id": "5778",
-      "name": "Tanzania",
-      "abbr": "TAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tan.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "2851",
-      "name": "Rwanda",
-      "abbr": "RWA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rwa.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "10528",
-      "name": "Central African Republic",
-      "abbr": "CTA",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10528.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 3
-    },
-    {
-      "id": "2627",
-      "name": "Trinidad and Tobago",
-      "abbr": "TRI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tri.png",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 3
-    },
-    {
-      "id": "655",
-      "name": "Saudi Arabia",
-      "abbr": "KSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+      "id": "5781",
+      "name": "Pakistan",
+      "abbr": "PAK",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pak.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -472,10 +16,10 @@
       "goalsAgainst": 0
     },
     {
-      "id": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "id": "5780",
+      "name": "Afghanistan",
+      "abbr": "AFG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/afg.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -484,10 +28,10 @@
       "goalsAgainst": 0
     },
     {
-      "id": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "id": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -496,10 +40,10 @@
       "goalsAgainst": 0
     },
     {
-      "id": "470",
-      "name": "Iceland",
-      "abbr": "ISL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/isl.png",
+      "id": "657",
+      "name": "Nigeria",
+      "abbr": "NGA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -508,10 +52,10 @@
       "goalsAgainst": 0
     },
     {
-      "id": "4375",
-      "name": "Iraq",
-      "abbr": "IRQ",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "id": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -520,10 +64,34 @@
       "goalsAgainst": 0
     },
     {
-      "id": "213",
-      "name": "Venezuela",
-      "abbr": "VEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+      "id": "214",
+      "name": "Costa Rica",
+      "abbr": "CRC",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    {
+      "id": "204",
+      "name": "Bolivia",
+      "abbr": "BOL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    {
+      "id": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -532,997 +100,91 @@
       "goalsAgainst": 0
     }
   ],
-  "players": [
-    {
-      "id": "257206",
-      "name": "Dominik Szoboszlai",
-      "teamId": "480",
-      "goals": 1,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "269541",
-      "name": "Ole Romeny",
-      "teamId": "4895",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "204329",
-      "name": "Joris Kayembe",
-      "teamId": "2850",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "315668",
-      "name": "Darío Osorio",
-      "teamId": "207",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "179904",
-      "name": "Matías Sepúlveda",
-      "teamId": "207",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "284702",
-      "name": "András Schäfer",
-      "teamId": "480",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "396075",
-      "name": "Rajmund Tóth",
-      "teamId": "480",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "194146",
-      "name": "Sergiy Malyi",
-      "teamId": "2619",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "304368",
-      "name": "Aleksandr Silyanov",
-      "teamId": "454",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "270107",
-      "name": "Mingiyan Beveev",
-      "teamId": "454",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "355113",
-      "name": "Alexey Batrakov",
-      "teamId": "454",
-      "goals": 1,
-      "assists": 0,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "343966",
-      "name": "Tamás Szücs",
-      "teamId": "480",
-      "goals": 0,
-      "assists": 2,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "260808",
-      "name": "Ragnar Oratmangoen",
-      "teamId": "4895",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "352285",
-      "name": "Brian Cipenga",
-      "teamId": "2850",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "297128",
-      "name": "Gonzalo Tapia",
-      "teamId": "207",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "316610",
-      "name": "Maksim Samorodov",
-      "teamId": "2619",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 1
-    },
-    {
-      "id": "273827",
-      "name": "Ivan Sergeev",
-      "teamId": "454",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "283896",
-      "name": "Lechii Sadulaev",
-      "teamId": "454",
-      "goals": 0,
-      "assists": 1,
-      "yellowCards": 0,
-      "redCards": 0
-    },
-    {
-      "id": "233666",
-      "name": "Zhang Yuning",
-      "teamId": "658",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "313636",
-      "name": "Kritsada Kaman",
-      "teamId": "4396",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "319457",
-      "name": "Rizky Ridho",
-      "teamId": "4895",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "147193",
-      "name": "Cédric Bakambu",
-      "teamId": "2850",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "200562",
-      "name": "Guillermo Maripán",
-      "teamId": "207",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "320648",
-      "name": "Lucas Cepeda",
-      "teamId": "207",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "385889",
-      "name": "Ákos Markgráf",
-      "teamId": "480",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "289830",
-      "name": "Ramazan Orazov",
-      "teamId": "2619",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "220175",
-      "name": "Islambek Kuat",
-      "teamId": "2619",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "402242",
-      "name": "Dastan Satpaev",
-      "teamId": "2619",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "322541",
-      "name": "Galymzhan Kenzhebek",
-      "teamId": "2619",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "325053",
-      "name": "Nikita Krivtsov",
-      "teamId": "454",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "299501",
-      "name": "Anthony Herbert",
-      "teamId": "2627",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    },
-    {
-      "id": "307307",
-      "name": "Daniel Phillips",
-      "teamId": "2627",
-      "goals": 0,
-      "assists": 0,
-      "yellowCards": 1,
-      "redCards": 0
-    }
-  ],
+  "players": [],
   "matches": [
     {
-      "id": "401873736",
-      "date": "2026-06-09T11:30Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "7347",
-        "name": "Philippines",
-        "abbr": "PHI",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/phi.png",
-        "score": 5
-      },
-      "away": {
-        "id": "6770",
-        "name": "Myanmar",
-        "abbr": "MYA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mya.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873247",
-      "date": "2026-06-09T11:35Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "658",
-        "name": "China",
-        "abbr": "CHN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
-        "score": 0
-      },
-      "away": {
-        "id": "4396",
-        "name": "Thailand",
-        "abbr": "THA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
-        "score": 0
-      },
-      "timeline": [
-        {
-          "type": "yellow",
-          "teamId": "4396",
-          "player": "Kritsada Kaman",
-          "minute": "34'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "658",
-          "player": "Zhang Yuning",
-          "minute": "46'"
-        }
-      ],
-      "assists": []
-    },
-    {
-      "id": "401873742",
-      "date": "2026-06-09T12:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "5518",
-        "name": "Cambodia",
-        "abbr": "CAM",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cam.png",
-        "score": 2
-      },
-      "away": {
-        "id": "1928",
-        "name": "Hong Kong",
-        "abbr": "HKG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hkg.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873743",
-      "date": "2026-06-09T12:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "2841",
-        "name": "Oman",
-        "abbr": "OMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/oma.png",
-        "score": 0
-      },
-      "away": {
-        "id": "841",
-        "name": "Kuwait",
-        "abbr": "KUW",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873677",
-      "date": "2026-06-09T13:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "4895",
-        "name": "Indonesia",
-        "abbr": "IDN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/idn.png",
-        "score": 1
-      },
-      "away": {
-        "id": "8939",
-        "name": "Mozambique",
-        "abbr": "MOZ",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
-        "score": 0
-      },
-      "timeline": [
-        {
-          "type": "goal",
-          "teamId": "4895",
-          "player": "Ole Romeny",
-          "minute": "12'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "4895",
-          "player": "Rizky Ridho",
-          "minute": "60'"
-        }
-      ],
-      "assists": [
-        {
-          "teamId": "4895",
-          "player": "Ragnar Oratmangoen"
-        }
-      ]
-    },
-    {
-      "id": "401873744",
-      "date": "2026-06-09T14:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "4381",
-        "name": "Bahrain",
-        "abbr": "BHR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bhr.png",
-        "score": 0
-      },
-      "away": {
-        "id": "4380",
-        "name": "Syria",
-        "abbr": "SYR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873508",
-      "date": "2026-06-09T14:30Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "6724",
-        "name": "Kyrgyz Republic",
-        "abbr": "KGZ",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
-        "score": 0
-      },
-      "away": {
-        "id": "6167",
-        "name": "Palestine",
-        "abbr": "PLE",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401866138",
-      "date": "2026-06-09T15:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "579",
-        "name": "Armenia",
-        "abbr": "ARM",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
-        "score": 1
-      },
-      "away": {
-        "id": "483",
-        "name": "Moldova",
-        "abbr": "MDA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mda.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873738",
-      "date": "2026-06-09T15:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "5777",
-        "name": "Ethiopia",
-        "abbr": "ETH",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eth.png",
-        "score": 1
-      },
-      "away": {
-        "id": "4325",
-        "name": "Malawi",
-        "abbr": "MWI",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mwi.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401871171",
-      "date": "2026-06-09T16:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "2850",
-        "name": "Congo DR",
-        "abbr": "COD",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-        "score": 1
-      },
-      "away": {
-        "id": "207",
-        "name": "Chile",
-        "abbr": "CHI",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
-        "score": 2
-      },
-      "timeline": [
-        {
-          "type": "yellow",
-          "teamId": "207",
-          "player": "Darío Osorio",
-          "minute": "38'"
-        },
-        {
-          "type": "goal",
-          "teamId": "207",
-          "player": "Darío Osorio",
-          "minute": "51'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "207",
-          "player": "Lucas Cepeda",
-          "minute": "63'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "207",
-          "player": "Guillermo Maripán",
-          "minute": "77'"
-        },
-        {
-          "type": "goal",
-          "teamId": "207",
-          "player": "Matías Sepúlveda",
-          "minute": "86'"
-        },
-        {
-          "type": "goal",
-          "teamId": "2850",
-          "player": "Joris Kayembe",
-          "minute": "88'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2850",
-          "player": "Cédric Bakambu",
-          "minute": "90'"
-        }
-      ],
-      "assists": [
-        {
-          "teamId": "2850",
-          "player": "Brian Cipenga"
-        },
-        {
-          "teamId": "207",
-          "player": "Gonzalo Tapia"
-        }
-      ]
-    },
-    {
-      "id": "401873676",
-      "date": "2026-06-09T16:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "8938",
-        "name": "Equatorial Guinea",
-        "abbr": "EQG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eqg.png",
-        "score": 0
-      },
-      "away": {
-        "id": "8601",
-        "name": "Comoros",
-        "abbr": "COM",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401874100",
-      "date": "2026-06-09T16:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "5778",
-        "name": "Tanzania",
-        "abbr": "TAN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tan.png",
-        "score": 0
-      },
-      "away": {
-        "id": "2851",
-        "name": "Rwanda",
-        "abbr": "RWA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rwa.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401871492",
-      "date": "2026-06-09T16:30Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "583",
-        "name": "Belarus",
-        "abbr": "BLR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
-        "score": 2
-      },
-      "away": {
-        "id": "2845",
-        "name": "Burkina Faso",
-        "abbr": "BKA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
-        "score": 2
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401873740",
-      "date": "2026-06-09T17:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "653",
-        "name": "Angola",
-        "abbr": "ANG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ang.png",
-        "score": 3
-      },
-      "away": {
-        "id": "10528",
-        "name": "Central African Republic",
-        "abbr": "CTA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10528.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401861661",
-      "date": "2026-06-09T17:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "480",
-        "name": "Hungary",
-        "abbr": "HUN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
-        "score": 3
-      },
-      "away": {
-        "id": "2619",
-        "name": "Kazakhstan",
-        "abbr": "KAZ",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png",
-        "score": 1
-      },
-      "timeline": [
-        {
-          "type": "goal",
-          "teamId": "2619",
-          "player": "Sergiy Malyi",
-          "minute": "9'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Galymzhan Kenzhebek",
-          "minute": "17'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Maksim Samorodov",
-          "minute": "28'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Dastan Satpaev",
-          "minute": "33'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Ramazan Orazov",
-          "minute": "40'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Islambek Kuat",
-          "minute": "45'+2'"
-        },
-        {
-          "type": "goal",
-          "teamId": "480",
-          "player": "Dominik Szoboszlai",
-          "minute": "52'"
-        },
-        {
-          "type": "red",
-          "teamId": "2619",
-          "player": "Maksim Samorodov",
-          "minute": "63'"
-        },
-        {
-          "type": "goal",
-          "teamId": "480",
-          "player": "András Schäfer",
-          "minute": "67'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "480",
-          "player": "Tamás Szücs",
-          "minute": "74'"
-        },
-        {
-          "type": "goal",
-          "teamId": "480",
-          "player": "Rajmund Tóth",
-          "minute": "90'+2'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "480",
-          "player": "Ákos Markgráf",
-          "minute": "90'+5'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2619",
-          "player": "Sergiy Malyi",
-          "minute": "90'+5'"
-        }
-      ],
-      "assists": [
-        {
-          "teamId": "480",
-          "player": "Dominik Szoboszlai"
-        },
-        {
-          "teamId": "480",
-          "player": "Tamás Szücs"
-        },
-        {
-          "teamId": "2619",
-          "player": "Maksim Samorodov"
-        }
-      ]
-    },
-    {
-      "id": "401870855",
-      "date": "2026-06-09T17:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "454",
-        "name": "Russia",
-        "abbr": "RUS",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
-        "score": 3
-      },
-      "away": {
-        "id": "2627",
-        "name": "Trinidad and Tobago",
-        "abbr": "TRI",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tri.png",
-        "score": 0
-      },
-      "timeline": [
-        {
-          "type": "goal",
-          "teamId": "454",
-          "player": "Mingiyan Beveev",
-          "minute": "7'"
-        },
-        {
-          "type": "goal",
-          "teamId": "454",
-          "player": "Aleksandr Silyanov",
-          "minute": "15'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "454",
-          "player": "Nikita Krivtsov",
-          "minute": "45'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2627",
-          "player": "Daniel Phillips",
-          "minute": "45'"
-        },
-        {
-          "type": "yellow",
-          "teamId": "2627",
-          "player": "Anthony Herbert",
-          "minute": "57'"
-        },
-        {
-          "type": "goal",
-          "teamId": "454",
-          "player": "Alexey Batrakov",
-          "minute": "60'"
-        }
-      ],
-      "assists": [
-        {
-          "teamId": "454",
-          "player": "Ivan Sergeev"
-        },
-        {
-          "teamId": "454",
-          "player": "Lechii Sadulaev"
-        }
-      ]
-    },
-    {
-      "id": "401871580",
-      "date": "2026-06-09T18:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "581",
-        "name": "Azerbaijan",
-        "abbr": "AZE",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
-        "score": 2
-      },
-      "away": {
-        "id": "588",
-        "name": "San Marino",
-        "abbr": "SMR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401875460",
-      "date": "2026-06-09T18:00Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "4356",
-        "name": "Togo",
-        "abbr": "TOG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tog.png",
-        "score": 5
-      },
-      "away": {
-        "id": "2844",
-        "name": "Benin",
-        "abbr": "BEN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401875461",
-      "date": "2026-06-09T18:30Z",
-      "status": "finished",
-      "minute": null,
-      "home": {
-        "id": "4205",
-        "name": "Liberia",
-        "abbr": "LBR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lbr.png",
-        "score": 3
-      },
-      "away": {
-        "id": "8600",
-        "name": "Sierra Leone",
-        "abbr": "SLE",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sle.png",
-        "score": 1
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401871362",
-      "date": "2026-06-09T23:00Z",
-      "status": "live",
-      "minute": "6'",
-      "home": {
-        "id": "655",
-        "name": "Saudi Arabia",
-        "abbr": "KSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-        "score": 0
-      },
-      "away": {
-        "id": "654",
-        "name": "Senegal",
-        "abbr": "SEN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-        "score": 0
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401867950",
-      "date": "2026-06-10T01:00Z",
+      "id": "401875463",
+      "date": "2026-06-10T16:00Z",
       "status": "scheduled",
       "minute": null,
       "home": {
-        "id": "202",
-        "name": "Argentina",
-        "abbr": "ARG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+        "id": "5781",
+        "name": "Pakistan",
+        "abbr": "PAK",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pak.png",
         "score": null
       },
       "away": {
-        "id": "470",
-        "name": "Iceland",
-        "abbr": "ISL",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/isl.png",
+        "id": "5780",
+        "name": "Afghanistan",
+        "abbr": "AFG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/afg.png",
         "score": null
       },
       "timeline": [],
       "assists": []
     },
     {
-      "id": "401873603",
-      "date": "2026-06-10T01:00Z",
+      "id": "401867372",
+      "date": "2026-06-10T19:45Z",
       "status": "scheduled",
       "minute": null,
       "home": {
-        "id": "4375",
-        "name": "Iraq",
-        "abbr": "IRQ",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+        "id": "482",
+        "name": "Portugal",
+        "abbr": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
         "score": null
       },
       "away": {
-        "id": "213",
-        "name": "Venezuela",
-        "abbr": "VEN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+        "id": "657",
+        "name": "Nigeria",
+        "abbr": "NGA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
+        "score": null
+      },
+      "timeline": [],
+      "assists": []
+    },
+    {
+      "id": "401860829",
+      "date": "2026-06-10T20:00Z",
+      "status": "scheduled",
+      "minute": null,
+      "home": {
+        "id": "448",
+        "name": "England",
+        "abbr": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "score": null
+      },
+      "away": {
+        "id": "214",
+        "name": "Costa Rica",
+        "abbr": "CRC",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
+        "score": null
+      },
+      "timeline": [],
+      "assists": []
+    },
+    {
+      "id": "401874117",
+      "date": "2026-06-11T00:00Z",
+      "status": "scheduled",
+      "minute": null,
+      "home": {
+        "id": "204",
+        "name": "Bolivia",
+        "abbr": "BOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+        "score": null
+      },
+      "away": {
+        "id": "624",
+        "name": "Algeria",
+        "abbr": "ALG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
         "score": null
       },
       "timeline": [],
