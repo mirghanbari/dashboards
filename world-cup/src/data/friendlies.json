@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T02:11:01.674Z",
+  "lastUpdated": "2026-06-11T03:51:23.596Z",
   "date": "20260611",
   "source": "ESPN (fifa.friendly)",
   "teams": [
@@ -8,9 +8,9 @@
       "name": "Austria",
       "abbr": "AUT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -20,9 +20,9 @@
       "name": "Guatemala",
       "abbr": "GUA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gua.png",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goalsFor": 0,
       "goalsAgainst": 0
@@ -33,21 +33,21 @@
     {
       "id": "401869744",
       "date": "2026-06-11T04:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "minute": null,
       "home": {
         "id": "474",
         "name": "Austria",
         "abbr": "AUT",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "2652",
         "name": "Guatemala",
         "abbr": "GUA",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gua.png",
-        "score": null
+        "score": 0
       },
       "timeline": [],
       "assists": []
