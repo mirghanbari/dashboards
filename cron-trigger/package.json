@@ -1,0 +1,14 @@
+{
+  "name": "wc-data-trigger",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cloudflare Worker: 1-min cron that triggers the World Cup data GitHub Actions workflow (works around GitHub schedule throttling).",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
