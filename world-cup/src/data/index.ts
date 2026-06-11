@@ -1,13 +1,69 @@
-import type { Team, Match, Player, Meta, Standing, Stage } from "../types";
+import type {
+  Team,
+  Match,
+  Player,
+  Meta,
+  Standing,
+  Stage,
+  Predictions,
+  TeamPrediction,
+  HeadToHead,
+  GameOdds,
+} from "../types";
 import teamsJson from "./teams.json";
 import matchesJson from "./matches.json";
 import playersJson from "./players.json";
 import metaJson from "./meta.json";
+import predictionsJson from "./predictions.json";
+import headToHeadJson from "./headtohead.json";
 
 export const TEAMS = teamsJson as Team[];
 export const MATCHES = matchesJson as Match[];
 export const PLAYERS = playersJson as Player[];
 export const META = metaJson as Meta;
+export const PREDICTIONS = predictionsJson as Predictions;
+export const HEAD_TO_HEAD = headToHeadJson as HeadToHead;
+
+/** Title-odds-ranked predictions (highest champion probability first). */
+export function predictionsByOdds(): TeamPrediction[] {
+  return [...PREDICTIONS.teams].sort(
+    (a, b) => b.champion - a.champion || b.final - a.final,
+  );
+}
+
+const PREDICTION_BY_TEAM = new Map(
+  PREDICTIONS.teams.filter((t) => t.teamId).map((t) => [t.teamId as string, t]),
+);
+
+/** The DTAI prediction row (stage odds + strength rating) for one of our teams. */
+export function predictionForTeam(teamId: string): TeamPrediction | undefined {
+  return PREDICTION_BY_TEAM.get(teamId);
+}
+
+/** A team's Elo rank (1 = strongest) among the 48 rated WC teams, or null. */
+export function eloRank(teamId: string): number | null {
+  const rated = PREDICTIONS.teams
+    .filter((t) => t.elo != null)
+    .sort((a, b) => (b.elo as number) - (a.elo as number));
+  const i = rated.findIndex((t) => t.teamId === teamId);
+  return i === -1 ? null : i + 1;
+}
+
+/** Strength-rated teams, strongest Elo first. */
+export function teamsByRating(): TeamPrediction[] {
+  return PREDICTIONS.teams
+    .filter((t) => t.elo != null)
+    .sort((a, b) => (b.elo as number) - (a.elo as number));
+}
+
+/**
+ * DTAI's single-game win/tie/loss odds for a fixture, from the home team's
+ * perspective. Returns null when either team isn't in the matrix (e.g. an
+ * undecided knockout slot).
+ */
+export function gameOdds(homeTeamId: string, awayTeamId: string): GameOdds | null {
+  return HEAD_TO_HEAD.matrix[homeTeamId]?.[awayTeamId] ?? null;
+}
 
 const TEAM_BY_ID = new Map(TEAMS.map((t) => [t.id, t]));
 

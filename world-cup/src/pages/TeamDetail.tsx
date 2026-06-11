@@ -4,11 +4,16 @@ import {
   playersForTeam,
   matchesForTeam,
   standingsForGroup,
+  predictionForTeam,
+  eloRank,
   TEAMS,
 } from "../data";
 import { MatchCard } from "../components/MatchCard";
 import { StatCard } from "../components/StatCard";
+import { RatingBars } from "../components/RatingBars";
 import type { Position } from "../types";
+
+const fmtPct = (n: number) => Math.round(n * 100) + "%";
 
 const POSITION_ORDER: Position[] = ["GK", "DEF", "MID", "FWD"];
 const POSITION_LABEL: Record<Position, string> = {
@@ -40,6 +45,8 @@ export function TeamDetail() {
   );
   const standing = standingsForGroup(team.group).find((t) => t.id === teamId);
   const teamGoals = squad.reduce((s, p) => s + p.goals, 0);
+  const pred = predictionForTeam(teamId);
+  const rank = eloRank(teamId);
 
   return (
     <>
@@ -54,6 +61,7 @@ export function TeamDetail() {
           <p className="team-hero-meta">
             Group {team.group} · {team.confederation}
             {team.fifaRank > 0 && ` · FIFA rank #${team.fifaRank}`}
+            {pred?.elo != null && ` · Elo ${pred.elo}${rank ? ` (#${rank})` : ""}`}
           </p>
         </div>
       </header>
@@ -62,8 +70,35 @@ export function TeamDetail() {
         <StatCard label="Group position" value={standing ? `${standing.rank}${standing.rank <= 2 ? " ▲" : ""}` : "—"} sub={`Group ${team.group}`} />
         <StatCard label="Points" value={team.points} sub={`${team.won}W ${team.drawn}D ${team.lost}L`} />
         <StatCard label="Goals" value={`${team.goalsFor}:${team.goalsAgainst}`} sub="for : against" />
-        <StatCard label="Squad goals" value={teamGoals} sub={`${squad.length} players`} />
+        {pred ? (
+          <StatCard label="Title odds" value={fmtPct(pred.champion)} sub={`reach final ${fmtPct(pred.final)}`} />
+        ) : (
+          <StatCard label="Squad goals" value={teamGoals} sub={`${squad.length} players`} />
+        )}
       </section>
+
+      {pred && pred.attack != null && (
+        <section className="rating-panel">
+          <div className="rating-panel-main">
+            <h2 className="rating-panel-title">Strength rating</h2>
+            <RatingBars attack={pred.attack} defense={pred.defense} />
+          </div>
+          <div className="rating-panel-odds">
+            <span>
+              Win group <strong>{fmtPct(pred.winGroup)}</strong>
+            </span>
+            <span>
+              Reach last 16 <strong>{fmtPct(pred.round16)}</strong>
+            </span>
+            <span>
+              Win it all <strong>{fmtPct(pred.champion)}</strong>
+            </span>
+            <Link to="/predictions" className="rating-panel-link">
+              Full model →
+            </Link>
+          </div>
+        </section>
+      )}
 
       <div className="two-col">
         <section className="section">

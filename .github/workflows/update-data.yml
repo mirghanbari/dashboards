@@ -37,6 +37,11 @@ jobs:
         run: npm run ingest:fotmob
       - name: Refresh International Friendlies from ESPN
         run: npm run ingest:friendlies
+      - name: Refresh title-odds predictions from DTAI (KU Leuven)
+        # Pulls the latest Monte-Carlo tournament simulation. Non-fatal: if the
+        # DTAI host is unreachable, keep the last committed predictions.
+        continue-on-error: true
+        run: npm run ingest:predictions
       - name: Commit updated data
         run: |
           git config user.name "world-cup-bot"
