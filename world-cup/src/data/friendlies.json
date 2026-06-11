@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-06-10T15:50:30.119Z",
-  "date": "20260610",
+  "lastUpdated": "2026-06-11T02:11:01.674Z",
+  "date": "20260611",
   "source": "ESPN (fifa.friendly)",
   "teams": [
     {
-      "id": "5781",
-      "name": "Pakistan",
-      "abbr": "PAK",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pak.png",
+      "id": "474",
+      "name": "Austria",
+      "abbr": "AUT",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -16,82 +16,10 @@
       "goalsAgainst": 0
     },
     {
-      "id": "5780",
-      "name": "Afghanistan",
-      "abbr": "AFG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/afg.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "482",
-      "name": "Portugal",
-      "abbr": "POR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "657",
-      "name": "Nigeria",
-      "abbr": "NGA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "214",
-      "name": "Costa Rica",
-      "abbr": "CRC",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "204",
-      "name": "Bolivia",
-      "abbr": "BOL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0
-    },
-    {
-      "id": "624",
-      "name": "Algeria",
-      "abbr": "ALG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "id": "2652",
+      "name": "Guatemala",
+      "abbr": "GUA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gua.png",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -103,88 +31,22 @@
   "players": [],
   "matches": [
     {
-      "id": "401875463",
-      "date": "2026-06-10T16:00Z",
+      "id": "401869744",
+      "date": "2026-06-11T04:00Z",
       "status": "scheduled",
       "minute": null,
       "home": {
-        "id": "5781",
-        "name": "Pakistan",
-        "abbr": "PAK",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pak.png",
+        "id": "474",
+        "name": "Austria",
+        "abbr": "AUT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
         "score": null
       },
       "away": {
-        "id": "5780",
-        "name": "Afghanistan",
-        "abbr": "AFG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/afg.png",
-        "score": null
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401867372",
-      "date": "2026-06-10T19:45Z",
-      "status": "scheduled",
-      "minute": null,
-      "home": {
-        "id": "482",
-        "name": "Portugal",
-        "abbr": "POR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-        "score": null
-      },
-      "away": {
-        "id": "657",
-        "name": "Nigeria",
-        "abbr": "NGA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
-        "score": null
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401860829",
-      "date": "2026-06-10T20:00Z",
-      "status": "scheduled",
-      "minute": null,
-      "home": {
-        "id": "448",
-        "name": "England",
-        "abbr": "ENG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-        "score": null
-      },
-      "away": {
-        "id": "214",
-        "name": "Costa Rica",
-        "abbr": "CRC",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/crc.png",
-        "score": null
-      },
-      "timeline": [],
-      "assists": []
-    },
-    {
-      "id": "401874117",
-      "date": "2026-06-11T00:00Z",
-      "status": "scheduled",
-      "minute": null,
-      "home": {
-        "id": "204",
-        "name": "Bolivia",
-        "abbr": "BOL",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
-        "score": null
-      },
-      "away": {
-        "id": "624",
-        "name": "Algeria",
-        "abbr": "ALG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+        "id": "2652",
+        "name": "Guatemala",
+        "abbr": "GUA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gua.png",
         "score": null
       },
       "timeline": [],
