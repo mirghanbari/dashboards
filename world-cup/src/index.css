@@ -1744,3 +1744,12 @@ tr.is-me .player-name {
   font-weight: 700;
   color: var(--pitch-1);
 }
+
+/* "as of {date}" qualifier next to the title-odds heading */
+.as-of {
+  margin-left: 10px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}

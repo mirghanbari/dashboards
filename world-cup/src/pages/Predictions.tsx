@@ -43,6 +43,10 @@ export function Predictions() {
     timeStyle: "short",
   });
 
+  const asOf = new Date(PREDICTIONS.fetchedAt).toLocaleDateString(undefined, {
+    dateStyle: "medium",
+  });
+
   // Title race: the dozen most likely champions, as bars.
   const race = ranked.slice(0, 12);
   const raceMax = Math.max(...race.map((t) => t.champion), 0.01);
@@ -67,7 +71,12 @@ export function Predictions() {
       </header>
 
       <section className="section">
-        <h2 className="section-title">Title race — who wins the World Cup?</h2>
+        <h2 className="section-title">
+          Title race — who wins the World Cup?
+          <span className="as-of" title="These odds re-run after each game, so they drift from any one-off published snapshot.">
+            as of {asOf}
+          </span>
+        </h2>
         <div className="bar-chart pred-race">
           {race.map((t) => (
             <div className="bar-row" key={t.code}>
