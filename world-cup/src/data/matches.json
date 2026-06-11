@@ -10,10 +10,10 @@
     "city": "Mexico City",
     "homeTeamId": "mex",
     "awayTeamId": "rsa",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "live",
+    "minute": 29
   },
   {
     "id": "M002",
