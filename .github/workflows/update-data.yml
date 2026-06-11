@@ -1,22 +1,38 @@
-# Refreshes the World Cup dataset from ESPN's public API on a schedule, commits
-# any changed JSON, and lets the deploy workflow redeploy. No API key required.
+# Refreshes the World Cup dataset from ESPN's public API, commits any changed
+# JSON, and lets the deploy workflow redeploy. No API key required.
 # Lives at the repo root because GitHub only runs workflows from /.github/workflows.
+#
+# Cadence: GitHub's scheduled cron is best-effort and won't reliably fire more
+# often than ~5 min, so we can't get minute-level updates from `schedule:` alone.
+# Instead the job polls in a loop *while a match is live* (every 60s), and falls
+# back to a single pass when nothing is being played. The */5 cron just needs to
+# catch a kickoff within a few minutes; the in-job loop does the fast updates.
 name: Update World Cup data
 
 on:
   schedule:
-    # Only during the tournament (UTC): Jun 11–30 and Jul 1–19, 2026. Before
-    # opening day there's nothing to refresh, so the job stays idle.
-    - cron: "*/30 * 11-30 6 *"
-    - cron: "*/30 * 1-19 7 *"
+    # Only during the tournament (UTC): Jun 11–30 and Jul 1–19, 2026. The */5
+    # cadence is just to notice a kickoff; live scoring is handled by the in-job
+    # poll loop below. Before opening day there's nothing to refresh.
+    - cron: "*/5 * 11-30 6 *"
+    - cron: "*/5 * 1-19 7 *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write # to dispatch the deploy workflow during a live game
+
+# Let an active live-poller run to completion; a new scheduled trigger queues
+# behind it (at most one) instead of starting a second job that double-commits.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # Safety cap above the 3h live-poll cap, well under the 6h hard job limit.
+    timeout-minutes: 200
     defaults:
       run:
         working-directory: world-cup
@@ -28,11 +44,14 @@ jobs:
           cache: npm
           cache-dependency-path: world-cup/package-lock.json
       - run: npm ci
+
+      # ---- Initial full refresh (runs once per invocation) ----
       - name: Refresh World Cup data from ESPN
         run: npm run ingest
       - name: Enrich with advanced stats from FotMob
         # Runs after the ESPN step (it enriches the players.json ESPN builds).
         # Non-fatal: if FotMob's API hiccups, still commit the ESPN refresh.
+        # Only runs on the initial pass, not on every live-poll tick.
         continue-on-error: true
         run: npm run ingest:fotmob
       - name: Refresh International Friendlies from ESPN
@@ -42,14 +61,52 @@ jobs:
         # DTAI host is unreachable, keep the last committed predictions.
         continue-on-error: true
         run: npm run ingest:predictions
-      - name: Commit updated data
+
+      # ---- Commit the initial pass, then fast-poll while a match is live ----
+      - name: Commit data and poll live scores
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -uo pipefail
           git config user.name "world-cup-bot"
           git config user.email "actions@github.com"
-          if [ -n "$(git status --porcelain src/data)" ]; then
+
+          DEPLOY_INTERVAL=120          # throttle Pages deploys to ~every 2 min
+          DEADLINE=$(( $(date +%s) + 3 * 60 * 60 ))   # 3h live-poll cap
+          last_deploy=0
+
+          # Commit any data changes and (throttled) ask the deploy workflow to
+          # publish. Bot commits via GITHUB_TOKEN don't trigger the deploy's
+          # `push` event, so we dispatch it explicitly. The final state is also
+          # published by deploy's `workflow_run` trigger when this job ends.
+          commit_and_deploy() {
+            if [ -z "$(git status --porcelain src/data)" ]; then
+              echo "No data changes."
+              return
+            fi
             git add src/data
-            git commit -m "data: refresh World Cup + friendlies data"
-            git push
-          else
-            echo "No data changes."
-          fi
+            git commit -m "data: refresh World Cup scores"
+            git push || { git fetch origin main && git rebase origin/main && git push; } \
+              || echo "push failed (non-fatal; next tick retries)"
+            now=$(date +%s)
+            if [ $(( now - last_deploy )) -ge "$DEPLOY_INTERVAL" ]; then
+              gh workflow run "Deploy World Cup dashboard" \
+                && last_deploy=$now \
+                || echo "deploy dispatch failed (non-fatal)"
+            fi
+          }
+
+          # Commit the initial full refresh.
+          commit_and_deploy
+
+          # Poll while any match is live. has-live-match.mjs exits 0 if live.
+          while node scripts/has-live-match.mjs; do
+            if [ "$(date +%s)" -ge "$DEADLINE" ]; then
+              echo "Reached 3h live-poll cap; exiting (next scheduled run resumes)."
+              break
+            fi
+            sleep 60
+            npm run ingest || echo "ESPN ingest failed (non-fatal; retrying next tick)"
+            commit_and_deploy
+          done
+          echo "No live match; done."
