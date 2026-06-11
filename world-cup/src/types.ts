@@ -203,3 +203,53 @@ export interface Friendlies {
   players: FriendlyPlayer[];
   matches: FriendlyMatch[];
 }
+
+// ---------- Tournament predictions (DTAI Sports Analytics Lab) ----------
+// Per-team probabilities of reaching each stage, derived from DTAI's 20,000
+// Monte-Carlo simulations. All values are fractions in [0, 1]. Produced by
+// scripts/ingest-predictions.mjs.
+export interface TeamPrediction {
+  code: string; // 3-letter FIFA code
+  teamId: string | null; // joined to teams.json, or null if unmatched
+  name: string;
+  flag: string;
+  group: string;
+  winGroup: number; // finish 1st in the group
+  advance: number; // reach the Round of 32 (knockouts)
+  round16: number;
+  quarter: number;
+  semi: number;
+  final: number;
+  champion: number; // win the tournament
+  // Strength ratings that feed the simulation (null if unmatched in ratings.csv).
+  elo: number | null; // overall ELO-style rating
+  off: number | null; // raw attack rating (higher = better)
+  def: number | null; // raw defense rating (NEGATIVE; more negative = better)
+  attack: number | null; // attack normalized 0..1 across the 48 WC teams
+  defense: number | null; // defensive strength normalized 0..1 (1 = best)
+}
+
+export interface Predictions {
+  source: string;
+  sourceUrl: string;
+  blogUrl: string;
+  method: string;
+  fetchedAt: string;
+  teams: TeamPrediction[];
+}
+
+// ---------- Head-to-head single-game odds (DTAI) ----------
+// matrix[homeTeamId][awayTeamId] = chance of each single-game result, from the
+// home team's perspective. Keyed by our team ids. From scripts/ingest-predictions.mjs.
+export interface GameOdds {
+  win: number; // home team wins
+  tie: number;
+  loss: number; // away team wins
+}
+
+export interface HeadToHead {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  matrix: Record<string, Record<string, GameOdds>>;
+}

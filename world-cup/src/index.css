@@ -539,6 +539,7 @@ select:disabled {
 }
 .standings .col-team {
   text-align: left;
+  white-space: nowrap;
 }
 .standings .col-pts {
   font-weight: 800;
@@ -1495,4 +1496,251 @@ tr.is-me .player-name {
   .player-table {
     font-size: 0.82rem;
   }
+}
+
+/* ---------- Predictions page (DTAI title odds) ---------- */
+.pred-race {
+  margin-top: 4px;
+}
+.pred-team-link {
+  color: inherit;
+  text-decoration: none;
+}
+.pred-team-link:hover {
+  color: var(--pitch-1);
+  text-decoration: underline;
+}
+.pred-sort-label {
+  align-self: center;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-right: 2px;
+}
+
+/* Horizontal scroll keeps the 9-column matrix usable on narrow screens. */
+.pred-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.pred-table {
+  min-width: 640px;
+}
+.pred-table th {
+  text-align: center;
+  white-space: nowrap;
+}
+.pred-table th.col-player {
+  text-align: left;
+}
+.pred-table th.is-sorted {
+  color: var(--pitch-1);
+}
+.pred-group {
+  text-align: center;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+/* Probability cell, shaded green by likelihood via the inline --p (0..1). */
+.prob-cell {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  background: rgba(11, 191, 91, calc(var(--p, 0) * 0.5));
+}
+.prob-cell.prob-strong {
+  font-weight: 700;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 9999px rgba(244, 183, 64, 0.12);
+}
+
+.pred-credit {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.pred-credit a {
+  color: var(--pitch-1);
+}
+
+/* ---------- Match-card single-game forecast (DTAI h2h) ---------- */
+.match-pred {
+  margin: 10px 0 2px;
+}
+.pred-bar {
+  display: flex;
+  height: 7px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--line);
+}
+.pred-seg {
+  height: 100%;
+}
+.pred-seg.pred-win {
+  background: var(--pitch-2);
+}
+.pred-seg.pred-tie {
+  background: var(--ink-faint);
+}
+.pred-seg.pred-loss {
+  background: var(--gold);
+}
+.pred-key {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.pred-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.pred-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex: none;
+}
+.pred-dot.pred-win {
+  background: var(--pitch-2);
+}
+.pred-dot.pred-tie {
+  background: var(--ink-faint);
+}
+.pred-dot.pred-loss {
+  background: var(--gold);
+}
+
+/* ---------- Team strength ratings (DTAI) ---------- */
+.rating-bars {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+.rating-bars.is-compact {
+  gap: 4px;
+  margin-top: 6px;
+}
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating-cap {
+  width: 30px;
+  flex: none;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+.rating-track {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+}
+.is-compact .rating-track {
+  height: 6px;
+}
+.rating-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+.rating-fill.rating-att {
+  background: var(--pitch-2);
+}
+.rating-fill.rating-def {
+  background: var(--blue);
+}
+
+/* Team-detail strength + odds panel */
+.rating-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 16px 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.rating-panel-main {
+  flex: 1 1 280px;
+  min-width: 240px;
+}
+.rating-panel-title {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+}
+.rating-panel-odds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+.rating-panel-odds strong {
+  color: var(--ink);
+}
+.rating-panel-link {
+  color: var(--pitch-1);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Predictions "strength model" grid */
+.rating-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.rating-card {
+  padding: 12px 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.rating-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating-rank {
+  width: 20px;
+  flex: none;
+  font-weight: 700;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.rating-name {
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rating-name:hover {
+  color: var(--pitch-1);
+}
+.rating-elo {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--pitch-1);
 }

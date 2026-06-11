@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { groupLetters, standingsForGroup } from "../data";
 
+// A couple of full names overflow the narrow group-standings column; show a
+// compact label (the FIFA code) there instead. Falls back to the full name.
+const STANDINGS_LABEL: Record<string, string> = { bih: "BIH" };
+
 export function Teams() {
   return (
     <>
@@ -37,7 +41,9 @@ export function Teams() {
                       <td className="col-team">
                         <Link to={`/teams/${t.id}`} className="team-cell">
                           <span className="team-flag">{t.flag}</span>
-                          <span className="team-name">{t.name}</span>
+                          <span className="team-name">
+                            {STANDINGS_LABEL[t.id] ?? t.name}
+                          </span>
                         </Link>
                       </td>
                       <td>{t.played}</td>

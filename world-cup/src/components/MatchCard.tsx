@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Match } from "../types";
-import { getTeam } from "../data";
+import { getTeam, gameOdds } from "../data";
 
 const STAGE_LABEL: Record<string, string> = {
   group: "Group",
@@ -37,6 +37,39 @@ function TeamLine({ teamId, score, winner }: { teamId: string; score: number | n
         </Link>
       )}
       <span className="match-score">{score ?? "–"}</span>
+    </div>
+  );
+}
+
+const pct = (n: number) => Math.round(n * 100) + "%";
+
+/** DTAI single-game win/draw/loss forecast, shown for upcoming fixtures. */
+function MatchPrediction({ match }: { match: Match }) {
+  const odds = gameOdds(match.homeTeamId, match.awayTeamId);
+  if (!odds) return null; // undecided knockout slot, or team not in the model
+  const home = getTeam(match.homeTeamId);
+  const away = getTeam(match.awayTeamId);
+  return (
+    <div className="match-pred" title="Single-game forecast — DTAI (KU Leuven)">
+      <div className="pred-bar">
+        <span className="pred-seg pred-win" style={{ width: pct(odds.win) }} />
+        <span className="pred-seg pred-tie" style={{ width: pct(odds.tie) }} />
+        <span className="pred-seg pred-loss" style={{ width: pct(odds.loss) }} />
+      </div>
+      <div className="pred-key">
+        <span>
+          <i className="pred-dot pred-win" />
+          {home.code} {pct(odds.win)}
+        </span>
+        <span>
+          <i className="pred-dot pred-tie" />
+          Draw {pct(odds.tie)}
+        </span>
+        <span>
+          <i className="pred-dot pred-loss" />
+          {away.code} {pct(odds.loss)}
+        </span>
+      </div>
     </div>
   );
 }
@@ -81,6 +114,7 @@ export function MatchCard({ match }: { match: Match }) {
         <TeamLine teamId={match.homeTeamId} score={match.homeScore} winner={homeWin} />
         <TeamLine teamId={match.awayTeamId} score={match.awayScore} winner={awayWin} />
       </div>
+      {match.status === "scheduled" && <MatchPrediction match={match} />}
       <footer className="match-foot">
         {match.venue}, {match.city}
       </footer>

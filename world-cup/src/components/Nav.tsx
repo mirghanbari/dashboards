@@ -10,6 +10,7 @@ const LINKS = [
   { to: "/stats", label: "Stats", end: false },
   { to: "/friendlies", label: "Friendlies", end: false },
   { to: "/bracket", label: "Bracket", end: false },
+  { to: "/predictions", label: "Predictions", end: false },
 ];
 
 export function Nav() {
