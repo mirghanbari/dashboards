@@ -1,0 +1,23 @@
+# Cloudflare Worker that triggers the "Update World Cup data" GitHub Actions
+# workflow every minute. GitHub throttles its own `schedule:` cron heavily
+# (runs landed ~3-4h apart instead of every 5 min), but workflow_dispatch via
+# the REST API is not throttled — so this Worker fires a reliable 1-min trigger.
+#
+# Deploy:  see README.md  (needs the GH_TOKEN secret set first)
+name = "wc-data-trigger"
+main = "src/index.js"
+compatibility_date = "2026-06-11"
+
+# Every minute. The workflow's concurrency guard + in-job 60s live-poll loop
+# mean extra triggers just queue harmlessly; this only needs to *start* a run
+# near kickoff.
+[triggers]
+crons = ["* * * * *"]
+
+# Non-secret config (override here without touching code). The GitHub token is
+# NOT here — it's a secret, set with `wrangler secret put GH_TOKEN`.
+[vars]
+OWNER = "mirghanbari"
+REPO = "dashboards"
+WORKFLOW = "update-data.yml"
+REF = "main"
