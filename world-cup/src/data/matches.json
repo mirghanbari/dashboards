@@ -43,9 +43,9 @@
     "homeTeamId": "can",
     "awayTeamId": "bih",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 21
+    "minute": 22
   },
   {
     "id": "M004",
