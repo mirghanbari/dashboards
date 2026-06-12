@@ -8,9 +8,9 @@ name = "wc-data-trigger"
 main = "src/index.js"
 compatibility_date = "2026-06-11"
 
-# Every minute. The workflow's concurrency guard + in-job 60s live-poll loop
-# mean extra triggers just queue harmlessly; this only needs to *start* a run
-# near kickoff.
+# The Worker wakes every minute, but only *dispatches a run* every minute while
+# a match is in progress, and every IDLE_EVERY_MIN minutes otherwise (see
+# src/index.js). Waking every minute is free; this just decides when to trigger.
 [triggers]
 crons = ["* * * * *"]
 
@@ -21,3 +21,7 @@ OWNER = "mirghanbari"
 REPO = "dashboards"
 WORKFLOW = "update-data.yml"
 REF = "main"
+MATCHES_URL = "https://raw.githubusercontent.com/mirghanbari/dashboards/main/world-cup/src/data/matches.json"
+IDLE_EVERY_MIN = "30"     # dispatch cadence when no match is on
+PRE_KICKOFF_MIN = "5"     # switch to 1/min this long before kickoff
+MATCH_WINDOW_MIN = "165"  # treat as in-progress up to 2h45m after kickoff

@@ -1,29 +1,40 @@
-// Fires a workflow_dispatch for the "Update World Cup data" GitHub Actions
-// workflow. Runs on a 1-minute Cloudflare cron (see wrangler.toml) to work
-// around GitHub throttling its `schedule:` cron — workflow_dispatch via the
-// REST API is not throttled.
+// Triggers the "Update World Cup data" GitHub Actions workflow via
+// workflow_dispatch. GitHub throttles its own `schedule:` cron heavily, so this
+// Worker drives the cadence instead (workflow_dispatch is not throttled).
+//
+// The Worker wakes every minute (free, well under the Workers limit) but only
+// *dispatches a run* when warranted:
+//   - while a match is in progress  -> every minute
+//   - otherwise (idle)              -> every IDLE_EVERY_MIN minutes (default 30)
+// "In progress" is decided from the published matches.json: any match flagged
+// live, or any match whose kickoff is within [kickoff - PRE_KICKOFF, kickoff +
+// MATCH_WINDOW]. Schedule-based detection means we switch to 1/min right at
+// kickoff without waiting to notice a committed `live` status.
 //
 // Required secret:  GH_TOKEN  — fine-grained PAT, repo mirghanbari/dashboards,
 //                               permission: Actions Read and write.
-//   wrangler secret put GH_TOKEN
-//
-// Optional secret:  TRIGGER_KEY — if set, the manual GET endpoint requires
-//                                 ?key=<value>; otherwise GET is open.
+// Optional secret:  TRIGGER_KEY — if set, the manual GET endpoint needs ?key=.
 
 const DEFAULTS = {
   OWNER: "mirghanbari",
   REPO: "dashboards",
   WORKFLOW: "update-data.yml",
   REF: "main",
+  MATCHES_URL:
+    "https://raw.githubusercontent.com/mirghanbari/dashboards/main/world-cup/src/data/matches.json",
+  IDLE_EVERY_MIN: "30", // dispatch this often when no match is on
+  PRE_KICKOFF_MIN: "5", // start the 1/min cadence this long before kickoff
+  MATCH_WINDOW_MIN: "165", // treat as in-progress up to 2h45m after kickoff
 };
+
+const cfg = (env, key) => env[key] ?? DEFAULTS[key];
 
 async function dispatch(env) {
   if (!env.GH_TOKEN) throw new Error("GH_TOKEN secret is not set");
-
-  const owner = env.OWNER ?? DEFAULTS.OWNER;
-  const repo = env.REPO ?? DEFAULTS.REPO;
-  const workflow = env.WORKFLOW ?? DEFAULTS.WORKFLOW;
-  const ref = env.REF ?? DEFAULTS.REF;
+  const owner = cfg(env, "OWNER");
+  const repo = cfg(env, "REPO");
+  const workflow = cfg(env, "WORKFLOW");
+  const ref = cfg(env, "REF");
 
   const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`;
   const res = await fetch(url, {
@@ -37,32 +48,86 @@ async function dispatch(env) {
     },
     body: JSON.stringify({ ref }),
   });
-
-  // GitHub returns 204 No Content on a successful dispatch.
   if (res.status !== 204) {
     throw new Error(`dispatch failed: ${res.status} ${await res.text()}`);
   }
   return `dispatched ${workflow} on ${owner}/${repo}@${ref}`;
 }
 
+// True if a match is live now or within its kickoff window. `now` is ms epoch.
+async function isGameOn(env, now) {
+  const res = await fetch(cfg(env, "MATCHES_URL"), {
+    headers: { "User-Agent": "wc-data-trigger" },
+    cf: { cacheTtl: 60 }, // kickoff times are static; a short cache is fine
+  });
+  if (!res.ok) throw new Error(`matches fetch ${res.status}`);
+  const matches = await res.json();
+
+  const pre = Number(cfg(env, "PRE_KICKOFF_MIN")) * 60_000;
+  const win = Number(cfg(env, "MATCH_WINDOW_MIN")) * 60_000;
+  return matches.some((m) => {
+    if (m.status === "live") return true;
+    const t = m.date ? Date.parse(m.date) : NaN;
+    if (Number.isNaN(t)) return false;
+    return now >= t - pre && now <= t + win;
+  });
+}
+
+// Decide whether to dispatch this tick. Returns { gameOn, dispatch, reason }.
+async function decide(env, now) {
+  const idle = Number(cfg(env, "IDLE_EVERY_MIN"));
+  let gameOn = false;
+  let reason;
+  try {
+    gameOn = await isGameOn(env, now);
+  } catch (err) {
+    // If we can't read the schedule, stay quiet (idle cadence) — GitHub's own
+    // cron remains a backup — but log it.
+    reason = `live-check failed: ${err.message}`;
+  }
+  const minute = new Date(now).getUTCMinutes();
+  const onIdleTick = minute % idle === 0;
+  return {
+    gameOn,
+    dispatch: gameOn || onIdleTick,
+    reason: reason ?? (gameOn ? "match in progress" : `idle (min=${minute})`),
+  };
+}
+
 export default {
-  // Cloudflare cron trigger — the 1-minute heartbeat.
-  async scheduled(_event, env, ctx) {
+  // Per-minute cron heartbeat (see wrangler.toml).
+  async scheduled(event, env, ctx) {
     ctx.waitUntil(
-      dispatch(env)
-        .then((msg) => console.log(msg))
-        .catch((err) => console.error(err.message)),
+      (async () => {
+        const now = event.scheduledTime ?? Date.now();
+        const d = await decide(env, now);
+        if (!d.dispatch) {
+          console.log(`skip — ${d.reason}`);
+          return;
+        }
+        try {
+          console.log(`${d.reason} → ${await dispatch(env)}`);
+        } catch (err) {
+          console.error(err.message);
+        }
+      })(),
     );
   },
 
-  // Manual trigger for testing: open the Worker's URL in a browser/curl.
+  // Manual endpoint. `?dry=1` reports the decision without dispatching;
+  // otherwise it forces a dispatch (handy for testing).
   async fetch(request, env) {
     if (env.TRIGGER_KEY) {
       const key = new URL(request.url).searchParams.get("key");
       if (key !== env.TRIGGER_KEY) return new Response("not found\n", { status: 404 });
     }
+    const dry = new URL(request.url).searchParams.get("dry");
+    const d = await decide(env, Date.now());
+    if (dry) {
+      return new Response(`gameOn=${d.gameOn} wouldDispatch=${d.dispatch} (${d.reason})\n`);
+    }
     try {
-      return new Response(`${await dispatch(env)}\n`, { status: 200 });
+      return new Response(`${await dispatch(env)} [${d.reason}]\n`, { status: 200 });
     } catch (err) {
       return new Response(`${err.message}\n`, { status: 502 });
     }
