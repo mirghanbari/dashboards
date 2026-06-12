@@ -27,9 +27,9 @@
     "homeTeamId": "kor",
     "awayTeamId": "cze",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 58
+    "minute": 59
   },
   {
     "id": "M003",
