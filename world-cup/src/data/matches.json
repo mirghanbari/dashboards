@@ -26,10 +26,10 @@
     "city": "Guadalajara",
     "homeTeamId": "kor",
     "awayTeamId": "cze",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 68
+    "minute": 69
   },
   {
     "id": "M003",
