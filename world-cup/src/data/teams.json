@@ -36,10 +36,10 @@
     "goalsFor": 1,
     "goalsAgainst": 2,
     "points": 0,
-    "possession": 38.3,
+    "possession": 38.5,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 70.7
+    "passCompletion": 70.3
   },
   {
     "id": "kor",
@@ -57,10 +57,10 @@
     "goalsFor": 2,
     "goalsAgainst": 1,
     "points": 3,
-    "possession": 61.7,
+    "possession": 61.5,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 86.5
+    "passCompletion": 86.7
   },
   {
     "id": "rsa",
