@@ -64,6 +64,8 @@ const TEAM_ALIASES = {
   "bosnia and herzegovina": "bosnia herzegovina",
   "dr congo": "congo dr",
   usa: "united states",
+  "korea republic": "south korea",
+  "czech republic": "czechia",
 };
 const teamKey = (name) => {
   const n = norm(name);
@@ -79,10 +81,19 @@ const SET_PIECE_SITUATIONS = new Set([
   "ThrowInSetPiece",
 ]);
 
-// Pull the numeric value out of a FotMob player-stat cell. Cells are either
-// { value } or { value, total } (a fraction, e.g. accurate passes).
-const val = (cell) => (cell && typeof cell.value === "number" ? cell.value : 0);
-const total = (cell) => (cell && typeof cell.total === "number" ? cell.total : 0);
+// Pull the numeric value out of a FotMob player-stat cell. FotMob now nests the
+// numbers under `stat`: { key, stat: { value, total, type } } (a fraction like
+// "Accurate passes" carries both value and total). Older payloads put them flat
+// on the cell, so read either shape.
+const num = (cell) => (cell && typeof cell.stat === "object" ? cell.stat : cell) ?? {};
+const val = (cell) => {
+  const v = num(cell).value;
+  return typeof v === "number" ? v : 0;
+};
+const total = (cell) => {
+  const t = num(cell).total;
+  return typeof t === "number" ? t : 0;
+};
 
 // Find a named stat inside a player's grouped stat blocks.
 function playerStat(p, label) {
@@ -107,11 +118,20 @@ async function main() {
     playersByTeam.get(p.teamId).set(norm(p.name), p);
   }
 
+  // Order-independent token signature so "Kim Seung-Gyu" (ESPN, family-given)
+  // matches "Seung-Gyu Kim" (FotMob, given-family). Sorted token set.
+  const tokenSig = (n) => n.split(" ").filter(Boolean).sort().join(" ");
+
   const resolvePlayer = (teamId, fmName) => {
     const byName = playersByTeam.get(teamId);
     if (!byName) return null;
     const n = norm(fmName);
     if (byName.has(n)) return byName.get(n);
+    // reversed/reordered name parts (e.g. Korean family-given vs given-family):
+    // match if the sorted token set is unique within the squad.
+    const sig = tokenSig(n);
+    const sigHits = [...byName.entries()].filter(([k]) => tokenSig(k) === sig);
+    if (sigHits.length === 1) return sigHits[0][1];
     // loose fallback: match on last name if unique within the squad
     const last = n.split(" ").pop();
     const hits = [...byName.entries()].filter(([k]) => k.split(" ").pop() === last);
