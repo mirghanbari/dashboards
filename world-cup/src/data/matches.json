@@ -61,7 +61,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": 90
+    "minute": null
   },
   {
     "id": "M005",
