@@ -59,9 +59,9 @@
     "homeTeamId": "usa",
     "awayTeamId": "par",
     "homeScore": 3,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 74
+    "minute": 75
   },
   {
     "id": "M005",
