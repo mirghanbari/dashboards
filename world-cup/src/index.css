@@ -382,7 +382,30 @@ main.container {
   color: var(--ink-faint);
 }
 .scorer-flag {
+  width: 22px;
+  text-align: center;
   font-size: 1.25rem;
+}
+.scorer-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.scorer-head .scorer-name {
+  font-weight: 700;
+}
+.scorer-head .scorer-goals,
+.scorer-head .scorer-assists {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--ink-faint);
 }
 .scorer-name {
   flex: 1;
@@ -403,18 +426,13 @@ main.container {
 }
 .scorer-goals,
 .scorer-assists {
+  width: 28px;
+  text-align: right;
   font-weight: 800;
   font-size: 1.05rem;
 }
 .scorer-assists {
   color: var(--ink-soft);
-}
-.scorer-goals small,
-.scorer-assists small {
-  font-size: 0.65rem;
-  font-weight: 600;
-  margin-left: 2px;
-  color: var(--ink-faint);
 }
 
 /* ---------------- Filters ---------------- */

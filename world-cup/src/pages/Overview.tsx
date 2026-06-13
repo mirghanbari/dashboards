@@ -65,7 +65,6 @@ export function Overview() {
           <div className="chart-card">
             {hasGoals ? (
               <BarChart
-                unit="G"
                 data={scorers.slice(0, 6).map((p) => ({
                   label: p.name,
                   value: p.goals,
@@ -114,29 +113,32 @@ export function Overview() {
               No goals yet — top scorers appear once matches kick off.
             </p>
           )}
-          <ol className="scorer-list">
-            {scorers.map((p, i) => {
-              const team = getTeam(p.teamId);
-              return (
-                <li key={p.id} className="scorer-row">
-                  <span className="scorer-rank">{i + 1}</span>
-                  <span className="scorer-flag">{team.flag}</span>
-                  <span className="scorer-name">
-                    <Link to={`/players/${p.id}`}>{p.name}</Link>
-                    <small>{team.name}</small>
-                  </span>
-                  <span className="scorer-goals">
-                    {p.goals}
-                    <small>G</small>
-                  </span>
-                  <span className="scorer-assists">
-                    {p.assists}
-                    <small>A</small>
-                  </span>
-                </li>
-              );
-            })}
-          </ol>
+          {hasGoals && (
+            <ol className="scorer-list">
+              <li className="scorer-head" aria-hidden="true">
+                <span className="scorer-rank" />
+                <span className="scorer-flag" />
+                <span className="scorer-name">Player</span>
+                <span className="scorer-goals">G</span>
+                <span className="scorer-assists">A</span>
+              </li>
+              {scorers.map((p, i) => {
+                const team = getTeam(p.teamId);
+                return (
+                  <li key={p.id} className="scorer-row">
+                    <span className="scorer-rank">{i + 1}</span>
+                    <span className="scorer-flag">{team.flag}</span>
+                    <span className="scorer-name">
+                      <Link to={`/players/${p.id}`}>{p.name}</Link>
+                      <small>{team.name}</small>
+                    </span>
+                    <span className="scorer-goals">{p.goals}</span>
+                    <span className="scorer-assists">{p.assists}</span>
+                  </li>
+                );
+              })}
+            </ol>
+          )}
         </section>
 
         <section className="section">
