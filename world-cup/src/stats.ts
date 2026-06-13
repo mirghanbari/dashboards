@@ -56,7 +56,7 @@ export const STAT_CATALOG: StatDef[] = [
     source: "derived", decimals: 2,
     derive: (p) => p.xgot - p.xg,
   },
-  { key: "ppda", label: "PPDA", tier: "advanced", scope: "team", source: "fbref", decimals: 1 },
+  { key: "ppda", label: "PPDA (pressing, approx)", tier: "advanced", scope: "team", source: "fotmob", decimals: 1, asc: true },
   { key: "pressSuccess", label: "Press success", tier: "advanced", scope: "player", source: "provider", unit: "%", decimals: 1 },
   { key: "highTurnovers", label: "High turnovers", tier: "advanced", scope: "player", source: "fbref" },
   { key: "progressivePasses", label: "Progressive passes", tier: "advanced", scope: "player", source: "fbref" },
@@ -133,7 +133,7 @@ export function leaders(def: StatDef, n = 5): Leader[] {
       value: teamValue(t, def),
     }))
       .filter((r) => r.value > 0)
-      .sort((a, b) => b.value - a.value)
+      .sort((a, b) => (def.asc ? a.value - b.value : b.value - a.value))
       .slice(0, n);
   }
   return PLAYERS.map((p) => {

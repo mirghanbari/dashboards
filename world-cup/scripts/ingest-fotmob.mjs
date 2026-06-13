@@ -124,6 +124,30 @@ function playerStat(p, label) {
   return null;
 }
 
+// A match's team-stat rows live under content.stats.Periods.All.stats as groups
+// of { title, stats: [home, away] }. Values come as numbers, "N (x%)" strings,
+// or null placeholders. Return the [home, away] integer pair for a title,
+// skipping null/header rows (e.g. "Passes" appears once as [null,null]).
+function teamStatPair(periods, title) {
+  const num = (v) => {
+    if (typeof v === "number") return v;
+    if (typeof v === "string") {
+      const m = v.match(/-?\d+/);
+      return m ? Number(m[0]) : null;
+    }
+    return null;
+  };
+  for (const grp of periods) {
+    for (const s of grp.stats ?? []) {
+      if (s.title !== title) continue;
+      const h = num(s.stats?.[0]);
+      const a = num(s.stats?.[1]);
+      if (h != null && a != null) return [h, a];
+    }
+  }
+  return null;
+}
+
 async function main() {
   // ---- load the base data ESPN already produced --------------------------
   const read = (f) => JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
@@ -190,10 +214,13 @@ async function main() {
     delete p._passAcc;
     delete p._passAtt;
   }
-  // Team xG for/against are likewise owned + re-summed here.
+  // Team xG for/against and approximate PPDA are likewise owned + re-summed.
   for (const t of teams) {
     t.xgFor = 0;
     t.xgAgainst = 0;
+    t.ppda = 0;
+    t._oppPasses = 0; // opponent passes (PPDA numerator), accumulated
+    t._defActions = 0; // own tackles + interceptions + fouls (denominator)
   }
 
   // ---- pull each finished match and fold its stats into our players ------
@@ -275,6 +302,32 @@ async function main() {
       teamById.get(b).xgFor += xb;
       teamById.get(b).xgAgainst += xa;
     }
+
+    // Approximate PPDA from whole-match team totals (FotMob has no pitch zones,
+    // so this can't restrict to the attacking 60% the textbook metric uses —
+    // hence "approx"). A side's PPDA = opponent passes / own defensive actions
+    // (tackles + interceptions + fouls); accumulate numerator/denominator across
+    // matches and divide at the end. Lower = more aggressive pressing.
+    const periods = detail.content?.stats?.Periods?.All?.stats ?? [];
+    const homeId = teamIdByKey.get(teamKey(fx.home?.name));
+    const awayId = teamIdByKey.get(teamKey(fx.away?.name));
+    const passes = teamStatPair(periods, "Passes");
+    const tackles = teamStatPair(periods, "Tackles");
+    const interceptions = teamStatPair(periods, "Interceptions");
+    const fouls = teamStatPair(periods, "Fouls committed");
+    if (homeId && awayId && passes && tackles && interceptions) {
+      const f = fouls ?? [0, 0];
+      const defActions = [
+        tackles[0] + interceptions[0] + f[0],
+        tackles[1] + interceptions[1] + f[1],
+      ];
+      const home = teamById.get(homeId);
+      const away = teamById.get(awayId);
+      home._oppPasses += passes[1]; // opponent (away) passes
+      home._defActions += defActions[0];
+      away._oppPasses += passes[0]; // opponent (home) passes
+      away._defActions += defActions[1];
+    }
     process.stdout.write(".");
   }
   console.log();
@@ -292,10 +345,15 @@ async function main() {
     }
   }
 
-  // Round team xG totals.
+  // Round team xG totals and finalize approximate PPDA.
   for (const t of teams) {
     t.xgFor = Math.round(t.xgFor * 100) / 100;
     t.xgAgainst = Math.round(t.xgAgainst * 100) / 100;
+    if (t._defActions > 0) {
+      t.ppda = Math.round((t._oppPasses / t._defActions) * 10) / 10;
+    }
+    delete t._oppPasses;
+    delete t._defActions;
   }
 
   // ---- report ------------------------------------------------------------

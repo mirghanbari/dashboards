@@ -125,6 +125,7 @@ export interface StatDef {
   source: StatSource;
   unit?: string;
   decimals?: number;
+  asc?: boolean; // leaderboard ranks ascending (lower is better, e.g. PPDA)
   derive?: (p: Player) => number; // for computed player metrics
   deriveTeam?: (t: Team) => number; // for computed team metrics
 }
