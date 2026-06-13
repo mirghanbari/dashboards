@@ -31,6 +31,7 @@ export function StatDetail() {
         <p className="page-sub">
           {def.scope === "team" ? "Team" : "Player"} ranking · {rows.length} ranked
           {def.asc ? " · lower is better" : ""}
+          {def.qualifier ? ` · ${def.qualifier}` : ""}
         </p>
         <span className={"src-badge src-" + def.source} title={meta.hint}>
           {meta.label}

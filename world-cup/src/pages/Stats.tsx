@@ -29,6 +29,7 @@ function StatCard({ def }: { def: StatDef }) {
           </h3>
           <span className="statcard-scope">
             {def.scope === "team" ? "Team stat" : "Player stat"}
+            {def.qualifier ? ` · ${def.qualifier}` : ""}
           </span>
         </div>
         <SourceBadge source={def.source} />

@@ -12,15 +12,20 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 //              and no free feed covers the live 2026 World Cup (see note below)
 //   provider — needs a paid tracking-data provider (StatsBomb / SkillCorner / etc.)
 // ---------------------------------------------------------------------------
-// Minimum shots before a player qualifies for the Shot-accuracy leaderboard,
-// so a lone 1/1 = 100% doesn't outrank a high-volume marksman. Bump as the
-// tournament progresses and shot counts climb.
-export const MIN_SHOTS_FOR_ACCURACY = 4;
-
-// Minimum passes attempted before a player qualifies for the Pass-completion
-// leaderboard, so a sub who went 2/2 = 100% doesn't outrank a midfielder who
-// sprayed 80. Bump as the tournament progresses and pass volumes climb.
-export const MIN_PASSES_FOR_COMPLETION = 30;
+// Volume gate for the efficiency leaderboards (Shot accuracy, Pass completion):
+// a player must have attempted at least the tournament-wide AVERAGE before a
+// small-sample 100% can top the board. Computing it from live data instead of a
+// fixed number keeps the bar relevant — it rises on its own as shot and pass
+// volumes climb through the tournament. Averaged over players who've attempted
+// any (so the ~1200 who never featured don't drag it to ~0); floor of 1 so a
+// pre-tournament empty feed still yields a sane threshold.
+function avgAttempts(field: keyof Player): number {
+  const vals = PLAYERS.map((p) => p[field] as number).filter((v) => v > 0);
+  if (!vals.length) return 1;
+  return Math.max(1, Math.round(vals.reduce((a, b) => a + b, 0) / vals.length));
+}
+export const MIN_SHOTS_FOR_ACCURACY = avgAttempts("shots");
+export const MIN_PASSES_FOR_COMPLETION = avgAttempts("passes");
 
 export const STAT_CATALOG: StatDef[] = [
   // ---------------- BASIC ----------------
@@ -30,6 +35,7 @@ export const STAT_CATALOG: StatDef[] = [
   {
     key: "shotAccuracy", label: "Shot accuracy", tier: "basic", scope: "player",
     source: "derived", unit: "%", decimals: 1,
+    qualifier: `min ${MIN_SHOTS_FOR_ACCURACY} att`,
     // Returns 0 below the shot minimum so leaders() (which filters value > 0)
     // drops unqualified players from the leaderboard.
     derive: (p) =>
@@ -38,6 +44,7 @@ export const STAT_CATALOG: StatDef[] = [
   {
     key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player",
     source: "fotmob", unit: "%", decimals: 1,
+    qualifier: `min ${MIN_PASSES_FOR_COMPLETION} att`,
     // Returns 0 below the pass minimum so leaders() (which filters value > 0)
     // drops low-volume passers from the leaderboard; profiles never show this
     // stat raw, so gating here has no other effect.

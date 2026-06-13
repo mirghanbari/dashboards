@@ -127,6 +127,7 @@ export interface StatDef {
   unit?: string;
   decimals?: number;
   asc?: boolean; // leaderboard ranks ascending (lower is better, e.g. PPDA)
+  qualifier?: string; // short note shown on the card, e.g. a min-volume gate
   derive?: (p: Player) => number; // for computed player metrics
   deriveTeam?: (t: Team) => number; // for computed team metrics
 }
