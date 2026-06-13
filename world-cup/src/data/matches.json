@@ -58,10 +58,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "usa",
     "awayTeamId": "par",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": 1
   },
   {
     "id": "M005",
