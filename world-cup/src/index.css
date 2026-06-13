@@ -239,6 +239,16 @@ main.container {
   padding: 20px;
   box-shadow: var(--shadow);
 }
+.stat-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.12s, box-shadow 0.15s;
+}
+.stat-card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
 .stat-value {
   font-size: 2rem;
   font-weight: 800;

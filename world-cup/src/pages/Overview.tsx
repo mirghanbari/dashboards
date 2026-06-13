@@ -53,11 +53,24 @@ export function Overview() {
       </section>
 
       <section className="stat-grid">
-        <StatCard label="Teams" value={TEAMS.length} sub="12 groups" />
-        <StatCard label="Matches played" value={finished.length} sub={`${MATCHES.length} total`} />
-        <StatCard label="Goals scored" value={goals} sub={finished.length ? `${(goals / finished.length).toFixed(1)} / match` : "—"} />
-        <StatCard label="Players tracked" value={PLAYERS.length} />
+        <StatCard label="Teams" value={TEAMS.length} sub="12 groups" to="/teams" />
+        <StatCard label="Matches played" value={finished.length} sub={`${MATCHES.length} total`} to="/matches" />
+        <StatCard label="Goals scored" value={goals} sub={finished.length ? `${(goals / finished.length).toFixed(1)} / match` : "—"} to="/stats/goals" />
+        <StatCard label="Players tracked" value={PLAYERS.length} to="/players" />
       </section>
+
+      {live.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">
+            <span className="dot-live" /> Live now
+          </h2>
+          <div className="match-grid">
+            {live.map((m) => (
+              <MatchCard key={m.id} match={m} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="two-col">
         <section className="section">
@@ -86,19 +99,6 @@ export function Overview() {
           </div>
         </section>
       </div>
-
-      {live.length > 0 && (
-        <section className="section">
-          <h2 className="section-title">
-            <span className="dot-live" /> Live now
-          </h2>
-          <div className="match-grid">
-            {live.map((m) => (
-              <MatchCard key={m.id} match={m} />
-            ))}
-          </div>
-        </section>
-      )}
 
       <div className="two-col">
         <section className="section">
