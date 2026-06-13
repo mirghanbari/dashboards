@@ -161,9 +161,9 @@
     "homeTeamId": "bra",
     "awayTeamId": "mar",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 20,
+    "minute": 21,
     "broadcasts": [
       {
         "name": "FOX",
