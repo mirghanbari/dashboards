@@ -34,8 +34,30 @@ function ProbCell({ value, strong }: { value: number; strong?: boolean }) {
   );
 }
 
+type SortKey = keyof TeamPrediction;
+type SortDir = "asc" | "desc";
+
 export function Predictions() {
-  const [sortKey, setSortKey] = useState<keyof TeamPrediction>("champion");
+  const [sortKey, setSortKey] = useState<SortKey>("champion");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
+
+  // Click a header to sort by it. Same column → flip direction; a new column
+  // starts descending for the numeric odds (most likely first) and ascending
+  // for the text columns (A→Z).
+  function sortBy(key: SortKey, numeric: boolean) {
+    if (key === sortKey) {
+      setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setSortKey(key);
+      setSortDir(numeric ? "desc" : "asc");
+    }
+  }
+
+  // Small ▲/▼ caret on the active column.
+  function Caret({ for: key }: { for: SortKey }) {
+    if (key !== sortKey) return null;
+    return <span className="sort-caret">{sortDir === "asc" ? "▲" : "▼"}</span>;
+  }
 
   const ranked = predictionsByOdds();
   const updated = new Date(PREDICTIONS.fetchedAt).toLocaleString(undefined, {
@@ -54,12 +76,19 @@ export function Predictions() {
   // Strength model behind the odds: the ten highest-rated teams.
   const rated = teamsByRating().slice(0, 10);
 
-  // Full table, re-sorted by the chosen stage.
-  const table = [...PREDICTIONS.teams].sort(
-    (a, b) =>
-      (b[sortKey] as number) - (a[sortKey] as number) ||
-      b.champion - a.champion,
-  );
+  // Full table, re-sorted by the chosen column + direction. Strings compare
+  // alphabetically, numbers numerically; champion odds break any tie.
+  const dir = sortDir === "asc" ? 1 : -1;
+  const table = [...PREDICTIONS.teams].sort((a, b) => {
+    const av = a[sortKey];
+    const bv = b[sortKey];
+    let cmp =
+      typeof av === "string" && typeof bv === "string"
+        ? av.localeCompare(bv)
+        : (av as number) - (bv as number);
+    if (cmp !== 0) return cmp * dir;
+    return b.champion - a.champion;
+  });
 
   return (
     <>
@@ -139,7 +168,7 @@ export function Predictions() {
             <button
               key={s.key as string}
               className={"chip" + (sortKey === s.key ? " is-active" : "")}
-              onClick={() => setSortKey(s.key)}
+              onClick={() => sortBy(s.key, true)}
             >
               {s.short}
             </button>
@@ -150,15 +179,38 @@ export function Predictions() {
           <table className="player-table pred-table">
             <thead>
               <tr>
-                <th className="col-player">Team</th>
-                <th>Grp</th>
+                <th
+                  className={
+                    "col-player pred-th" +
+                    (sortKey === "name" ? " is-sorted" : "")
+                  }
+                  onClick={() => sortBy("name", false)}
+                  title="Sort by team name"
+                >
+                  Team
+                  <Caret for="name" />
+                </th>
+                <th
+                  className={
+                    "pred-th" + (sortKey === "group" ? " is-sorted" : "")
+                  }
+                  onClick={() => sortBy("group", false)}
+                  title="Sort by group"
+                >
+                  Grp
+                  <Caret for="group" />
+                </th>
                 {STAGES.map((s) => (
                   <th
                     key={s.key as string}
                     title={s.label}
-                    className={sortKey === s.key ? "is-sorted" : ""}
+                    className={
+                      "pred-th" + (sortKey === s.key ? " is-sorted" : "")
+                    }
+                    onClick={() => sortBy(s.key, true)}
                   >
                     {s.short}
+                    <Caret for={s.key} />
                   </th>
                 ))}
               </tr>

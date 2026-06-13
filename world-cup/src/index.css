@@ -1532,8 +1532,20 @@ tr.is-me .player-name {
 .pred-table th.col-player {
   text-align: left;
 }
-.pred-table th.is-sorted {
+.player-table th.is-sorted {
   color: var(--pitch-1);
+}
+.player-table th.pred-th {
+  cursor: pointer;
+  user-select: none;
+}
+.player-table th.pred-th:hover {
+  color: var(--ink);
+}
+.sort-caret {
+  margin-left: 3px;
+  font-size: 0.62rem;
+  vertical-align: middle;
 }
 .pred-group {
   text-align: center;
