@@ -8,7 +8,8 @@ const LINKS = [
   { to: "/teams", label: "Teams", end: false },
   { to: "/players", label: "Players", end: false },
   { to: "/stats", label: "Stats", end: false },
-  { to: "/friendlies", label: "Friendlies", end: false },
+  // Friendlies hidden during the World Cup — route still works at /friendlies.
+  // { to: "/friendlies", label: "Friendlies", end: false },
   { to: "/bracket", label: "Bracket", end: false },
   { to: "/predictions", label: "Predictions", end: false },
 ];
