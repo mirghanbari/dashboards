@@ -160,10 +160,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "bra",
     "awayTeamId": "mar",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 32,
+    "minute": 33,
     "broadcasts": [
       {
         "name": "FOX",
