@@ -12,6 +12,11 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 //              and no free feed covers the live 2026 World Cup (see note below)
 //   provider — needs a paid tracking-data provider (StatsBomb / SkillCorner / etc.)
 // ---------------------------------------------------------------------------
+// Minimum shots before a player qualifies for the Shot-accuracy leaderboard,
+// so a lone 1/1 = 100% doesn't outrank a high-volume marksman. Bump as the
+// tournament progresses and shot counts climb.
+export const MIN_SHOTS_FOR_ACCURACY = 4;
+
 export const STAT_CATALOG: StatDef[] = [
   // ---------------- BASIC ----------------
   { key: "goals", label: "Goals", tier: "basic", scope: "player", source: "espn" },
@@ -20,7 +25,10 @@ export const STAT_CATALOG: StatDef[] = [
   {
     key: "shotAccuracy", label: "Shot accuracy", tier: "basic", scope: "player",
     source: "derived", unit: "%", decimals: 1,
-    derive: (p) => (p.shots > 0 ? (p.shotsOnTarget / p.shots) * 100 : 0),
+    // Returns 0 below the shot minimum so leaders() (which filters value > 0)
+    // drops unqualified players from the leaderboard.
+    derive: (p) =>
+      p.shots >= MIN_SHOTS_FOR_ACCURACY ? (p.shotsOnTarget / p.shots) * 100 : 0,
   },
   { key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player", source: "fotmob", unit: "%", decimals: 1 },
   { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1 },
