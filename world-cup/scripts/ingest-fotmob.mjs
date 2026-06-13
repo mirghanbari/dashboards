@@ -130,8 +130,9 @@ async function main() {
   const teams = read("teams.json");
   const players = read("players.json");
 
-  // teamKey → teamId, and teamId → (normalized player name → player object)
+  // teamKey → teamId, teamId → team object, and teamId → (normName → player)
   const teamIdByKey = new Map(teams.map((t) => [teamKey(t.name), t.id]));
+  const teamById = new Map(teams.map((t) => [t.id, t]));
   const playersByTeam = new Map(); // teamId → Map(normName → player)
   for (const p of players) {
     if (!playersByTeam.has(p.teamId)) playersByTeam.set(p.teamId, new Map());
@@ -189,6 +190,11 @@ async function main() {
     delete p._passAcc;
     delete p._passAtt;
   }
+  // Team xG for/against are likewise owned + re-summed here.
+  for (const t of teams) {
+    t.xgFor = 0;
+    t.xgAgainst = 0;
+  }
 
   // ---- pull each finished match and fold its stats into our players ------
   for (const fx of finished) {
@@ -213,6 +219,11 @@ async function main() {
       }
     }
 
+    // Team xG for this match, summed per side from every player's xG (including
+    // unmatched ones, so the team total is complete). Attributed for/against
+    // after the loop.
+    const matchXgByTeam = new Map();
+
     for (const fmId of Object.keys(ps)) {
       const fp = ps[fmId];
       const teamId = teamIdByKey.get(teamKey(fp.teamName));
@@ -220,6 +231,9 @@ async function main() {
         unmatchedTeams.add(fp.teamName);
         continue;
       }
+      const fpXg = val(playerStat(fp, "Expected goals (xG)"));
+      matchXgByTeam.set(teamId, (matchXgByTeam.get(teamId) ?? 0) + fpXg);
+
       const player = resolvePlayer(teamId, fp.name);
       if (!player) {
         unmatchedPlayers.add(`${fp.name} (${fp.teamName})`);
@@ -230,7 +244,7 @@ async function main() {
 
       // --- advanced fields ESPN doesn't provide ---
       player.minutes += val(playerStat(fp, "Minutes played"));
-      player.xg += val(playerStat(fp, "Expected goals (xG)"));
+      player.xg += fpXg;
       player.xa += val(playerStat(fp, "Expected assists (xA)"));
       player.xgot += val(playerStat(fp, "Expected goals on target (xGOT)"));
       player.chancesCreated += val(playerStat(fp, "Chances created"));
@@ -249,6 +263,18 @@ async function main() {
         player._passAtt = (player._passAtt ?? 0) + att;
       }
     }
+
+    // Attribute team xG for/against (exactly two sides per match).
+    const sides = [...matchXgByTeam.keys()];
+    if (sides.length === 2) {
+      const [a, b] = sides;
+      const xa = matchXgByTeam.get(a);
+      const xb = matchXgByTeam.get(b);
+      teamById.get(a).xgFor += xa;
+      teamById.get(a).xgAgainst += xb;
+      teamById.get(b).xgFor += xb;
+      teamById.get(b).xgAgainst += xa;
+    }
     process.stdout.write(".");
   }
   console.log();
@@ -266,6 +292,12 @@ async function main() {
     }
   }
 
+  // Round team xG totals.
+  for (const t of teams) {
+    t.xgFor = Math.round(t.xgFor * 100) / 100;
+    t.xgAgainst = Math.round(t.xgAgainst * 100) / 100;
+  }
+
   // ---- report ------------------------------------------------------------
   console.log(`Matched ${matchedPlayerRows} player-match rows.`);
   if (unmatchedTeams.size)
@@ -276,7 +308,8 @@ async function main() {
   // ---- write back --------------------------------------------------------
   const write = (f, o) => writeFileSync(join(DATA_DIR, f), JSON.stringify(o, null, 2) + "\n");
   write("players.json", players);
-  console.log("Wrote advanced stats into src/data/players.json.");
+  write("teams.json", teams);
+  console.log("Wrote advanced stats into src/data/players.json + teams.json.");
 
   // NOTE: still unfilled (FotMob doesn't expose these) — candidates for the
   // worldfootballR_data CSV fallback later: progressivePasses, progressiveCarries,

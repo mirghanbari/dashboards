@@ -31,6 +31,15 @@ export const STAT_CATALOG: StatDef[] = [
   { key: "cleanSheets", label: "Clean sheets", tier: "basic", scope: "team", source: "espn" },
 
   // ---------------- ADVANCED ----------------
+  {
+    // Adjusted goal difference: blends expected and actual output, 70% xG /
+    // 30% goals, so a team isn't judged purely on finishing variance over a
+    // short tournament. = 0.7·(xGF − xGA) + 0.3·(GF − GA).
+    key: "adjGoalDiff", label: "Adjusted goal difference", tier: "advanced", scope: "team",
+    source: "derived", decimals: 1,
+    deriveTeam: (t) =>
+      0.7 * (t.xgFor - t.xgAgainst) + 0.3 * (t.goalsFor - t.goalsAgainst),
+  },
   { key: "xg", label: "xG (expected goals)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
   { key: "xa", label: "xA (expected assists)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
   {
@@ -87,8 +96,18 @@ export function playerValue(p: Player, def: StatDef): number {
 }
 
 export function teamValue(t: Team, def: StatDef): number {
+  if (def.deriveTeam) return def.deriveTeam(t);
   return (t[def.key as keyof Team] as number) ?? 0;
 }
+
+// Sources with no data feed available for the live 2026 World Cup (FBref is
+// Cloudflare-blocked; xT/VAEP need a full event stream no free feed provides;
+// tracking metrics need a paid provider). Their stat cards are kept in the
+// catalog but hidden from the UI until a source materializes. See the project
+// "Dead ends" note before trying to wire any of these.
+const UNAVAILABLE_SOURCES = new Set<StatDef["source"]>(["fbref", "model", "provider"]);
+export const isAvailable = (def: StatDef): boolean => !UNAVAILABLE_SOURCES.has(def.source);
+export const VISIBLE_CATALOG = STAT_CATALOG.filter(isAvailable);
 
 export function formatValue(v: number, def: StatDef): string {
   const n = def.decimals ? v.toFixed(def.decimals) : Math.round(v).toString();

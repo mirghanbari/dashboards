@@ -1,6 +1,6 @@
 import { Link, useSearchParams } from "react-router-dom";
 import {
-  STAT_CATALOG,
+  VISIBLE_CATALOG,
   SOURCE_META,
   TIERS,
   leaders,
@@ -57,14 +57,15 @@ export function Stats() {
   const raw = params.get("tier") as StatDef["tier"] | null;
   const tier: StatDef["tier"] = raw && TIER_VALUES.includes(raw) ? raw : "basic";
   const setTier = (t: StatDef["tier"]) => setParams({ tier: t }, { replace: true });
-  const defs = STAT_CATALOG.filter((d) => d.tier === tier);
+  const defs = VISIBLE_CATALOG.filter((d) => d.tier === tier);
+  const shownSources = new Set(VISIBLE_CATALOG.map((d) => d.source));
 
   return (
     <>
       <header className="page-head">
         <h1 className="page-title">Stats</h1>
         <p className="page-sub">
-          {STAT_CATALOG.length} metrics tracked, each linked to its players and teams
+          {VISIBLE_CATALOG.length} metrics tracked, each linked to its players and teams
         </p>
       </header>
 
@@ -81,23 +82,15 @@ export function Stats() {
       </div>
 
       <div className="source-legend">
-        {Object.entries(SOURCE_META).map(([key, m]) => (
-          <span key={key} className="legend-item">
-            <span className={"src-dot src-" + key} />
-            {m.label} — {m.hint}
-          </span>
-        ))}
+        {Object.entries(SOURCE_META)
+          .filter(([key]) => shownSources.has(key as StatDef["source"]))
+          .map(([key, m]) => (
+            <span key={key} className="legend-item">
+              <span className={"src-dot src-" + key} />
+              {m.label} — {m.hint}
+            </span>
+          ))}
       </div>
-
-      {tier === "elite" && (
-        <p className="tier-note">
-          xT and VAEP come from open models computed on event data — no paid feed
-          needed, and they fill in once matches are played. Set-piece xG comes free
-          from FotMob's shotmap. The rest (OBV, high-speed running, sprint counts,
-          space creation) need optical tracking data from a paid provider such as
-          StatsBomb or SkillCorner. Until then those are shown empty rather than faked.
-        </p>
-      )}
 
       <div className="statcard-grid">
         {defs.map((d) => (

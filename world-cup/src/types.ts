@@ -45,6 +45,8 @@ export interface Team {
   ppda: number; // passes per defensive action
   cleanSheets: number;
   passCompletion: number; // team avg %
+  xgFor: number; // cumulative team xG (sum of own players', from FotMob)
+  xgAgainst: number; // cumulative xG conceded (sum of opponents')
 }
 
 export interface Match {
@@ -123,7 +125,8 @@ export interface StatDef {
   source: StatSource;
   unit?: string;
   decimals?: number;
-  derive?: (p: Player) => number; // for computed metrics
+  derive?: (p: Player) => number; // for computed player metrics
+  deriveTeam?: (t: Team) => number; // for computed team metrics
 }
 
 export interface Meta {

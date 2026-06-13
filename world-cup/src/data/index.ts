@@ -90,6 +90,8 @@ export function getTeam(id: string): Team {
       ppda: 0,
       cleanSheets: 0,
       passCompletion: 0,
+      xgFor: 0,
+      xgAgainst: 0,
     }
   );
 }

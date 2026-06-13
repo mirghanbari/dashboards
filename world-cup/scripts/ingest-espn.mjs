@@ -117,6 +117,7 @@ async function main() {
         goalsAgainst: stat(e, "pointsAgainst"),
         points: stat(e, "points"),
         possession: 0, ppda: 0, cleanSheets: 0, passCompletion: 0,
+        xgFor: 0, xgAgainst: 0, // filled by ingest-fotmob.mjs
       });
     }
   }

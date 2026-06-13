@@ -18,7 +18,9 @@
     "possession": 60.5,
     "ppda": 0,
     "cleanSheets": 1,
-    "passCompletion": 89.8
+    "passCompletion": 89.8,
+    "xgFor": 1.45,
+    "xgAgainst": 0.07
   },
   {
     "id": "cze",
@@ -39,7 +41,9 @@
     "possession": 38.5,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 70.3
+    "passCompletion": 70.3,
+    "xgFor": 0.83,
+    "xgAgainst": 2.31
   },
   {
     "id": "kor",
@@ -60,7 +64,9 @@
     "possession": 61.5,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 86.7
+    "passCompletion": 86.7,
+    "xgFor": 2.31,
+    "xgAgainst": 0.83
   },
   {
     "id": "rsa",
@@ -81,7 +87,9 @@
     "possession": 39.5,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 81.4
+    "passCompletion": 81.4,
+    "xgFor": 0.07,
+    "xgAgainst": 1.45
   },
   {
     "id": "can",
@@ -102,7 +110,9 @@
     "possession": 61.1,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 73.6
+    "passCompletion": 73.6,
+    "xgFor": 1.24,
+    "xgAgainst": 0.97
   },
   {
     "id": "bih",
@@ -123,7 +133,9 @@
     "possession": 38.9,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 63.5
+    "passCompletion": 63.5,
+    "xgFor": 0.97,
+    "xgAgainst": 1.24
   },
   {
     "id": "sui",
@@ -144,7 +156,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "qat",
@@ -165,7 +179,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "bra",
@@ -186,7 +202,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "sco",
@@ -207,7 +225,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "hai",
@@ -228,7 +248,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "mar",
@@ -249,7 +271,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "par",
@@ -270,7 +294,9 @@
     "possession": 34.7,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 72.7
+    "passCompletion": 72.7,
+    "xgFor": 0.54,
+    "xgAgainst": 1.42
   },
   {
     "id": "tur",
@@ -291,7 +317,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "aus",
@@ -312,7 +340,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "usa",
@@ -333,7 +363,9 @@
     "possession": 65.3,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 85.1
+    "passCompletion": 85.1,
+    "xgFor": 1.42,
+    "xgAgainst": 0.54
   },
   {
     "id": "ecu",
@@ -354,7 +386,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ger",
@@ -375,7 +409,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "civ",
@@ -396,7 +432,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cuw",
@@ -417,7 +455,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ned",
@@ -438,7 +478,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "swe",
@@ -459,7 +501,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "jpn",
@@ -480,7 +524,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "tun",
@@ -501,7 +547,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "bel",
@@ -522,7 +570,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "irn",
@@ -543,7 +593,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "egy",
@@ -564,7 +616,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "nzl",
@@ -585,7 +639,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "esp",
@@ -606,7 +662,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "uru",
@@ -627,7 +685,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ksa",
@@ -648,7 +708,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cpv",
@@ -669,7 +731,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "nor",
@@ -690,7 +754,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "fra",
@@ -711,7 +777,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "sen",
@@ -732,7 +800,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "irq",
@@ -753,7 +823,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "arg",
@@ -774,7 +846,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "aut",
@@ -795,7 +869,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "alg",
@@ -816,7 +892,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "jor",
@@ -837,7 +915,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "col",
@@ -858,7 +938,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "por",
@@ -879,7 +961,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "uzb",
@@ -900,7 +984,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cod",
@@ -921,7 +1007,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "eng",
@@ -942,7 +1030,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cro",
@@ -963,7 +1053,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "pan",
@@ -984,7 +1076,9 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "gha",
@@ -1005,6 +1099,8 @@
     "possession": 0,
     "ppda": 0,
     "cleanSheets": 0,
-    "passCompletion": 0
+    "passCompletion": 0,
+    "xgFor": 0,
+    "xgAgainst": 0
   }
 ]
