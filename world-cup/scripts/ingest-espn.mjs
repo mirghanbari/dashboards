@@ -178,6 +178,21 @@ async function main() {
         ? "live"
         : "finished";
 
+  // US TV / streaming carriers for a fixture, from ESPN's geoBroadcasts. ESPN
+  // uses terse media short names; expand the ambiguous ones for display.
+  const BROADCAST_NAMES = { Tele: "Telemundo" };
+  const extractBroadcasts = (c) => {
+    const seen = new Map();
+    for (const g of c.geoBroadcasts ?? []) {
+      const raw = g.media?.shortName;
+      if (!raw) continue;
+      const name = BROADCAST_NAMES[raw] ?? raw;
+      const type = g.type?.shortName === "STREAMING" ? "stream" : "tv";
+      if (!seen.has(name)) seen.set(name, { name, type });
+    }
+    return [...seen.values()];
+  };
+
   const matches = [];
   let mid = 1;
   const dayResults = await pool(dates, 6, (date) =>
@@ -210,6 +225,7 @@ async function main() {
         awayScore: status === "scheduled" ? null : Number(away?.score ?? 0),
         status,
         minute: status === "live" ? Number(ev.status?.displayClock?.replace?.("'", "") ?? 0) || null : null,
+        broadcasts: extractBroadcasts(c),
       });
     }
   }

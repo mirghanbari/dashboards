@@ -115,6 +115,15 @@ export function MatchCard({ match }: { match: Match }) {
         <TeamLine teamId={match.awayTeamId} score={match.awayScore} winner={awayWin} />
       </div>
       {match.status === "scheduled" && <MatchPrediction match={match} />}
+      {match.status !== "finished" && match.broadcasts && match.broadcasts.length > 0 && (
+        <div className="match-bcast" title="US TV / streaming">
+          {match.broadcasts.map((b) => (
+            <span key={b.name} className={"bcast bcast-" + b.type}>
+              {b.type === "stream" ? "▶" : "📺"} {b.name}
+            </span>
+          ))}
+        </div>
+      )}
       <footer className="match-foot">
         {match.venue}, {match.city}
       </footer>

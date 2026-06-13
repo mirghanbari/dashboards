@@ -64,6 +64,12 @@ export interface Match {
   awayScore: number | null;
   status: MatchStatus;
   minute: number | null; // current minute when live
+  broadcasts?: Broadcast[]; // US TV / streaming carriers (ESPN geoBroadcasts)
+}
+
+export interface Broadcast {
+  name: string;
+  type: "tv" | "stream";
 }
 
 export interface Player {

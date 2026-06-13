@@ -356,6 +356,27 @@ main.container {
   color: var(--ink-faint);
 }
 
+.match-bcast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.bcast {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  background: var(--line);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.bcast-stream {
+  color: var(--pitch-2);
+}
+
 /* ---------------- Scorer list ---------------- */
 .scorer-list {
   list-style: none;
