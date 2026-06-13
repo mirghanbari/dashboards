@@ -132,7 +132,13 @@ async function main() {
     for (const a of roster.athletes ?? []) {
       const player = {
         id: `${team.id}-${a.id}`,
-        name: a.fullName ?? a.displayName,
+        // ESPN builds fullName as "first last"; for mononym players (Casemiro,
+        // Endrick, Zizo…) the missing surname comes through as the literal
+        // token "null" — strip it. displayName is the clean fallback.
+        name: ((a.fullName ?? a.displayName ?? "")
+          .replace(/\bnull\b/gi, "")
+          .replace(/\s+/g, " ")
+          .trim()) || a.displayName,
         teamId: team.id,
         position: POS[a.position?.abbreviation] ?? "MID",
         number: a.jersey ? Number(a.jersey) : 0,

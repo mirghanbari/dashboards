@@ -17,3 +17,6 @@ dist-ssr
 
 # Local env (API keys for the data-fetch agent)
 .env
+
+# local working notes (not for the repo)
+World Cup dashboard notes

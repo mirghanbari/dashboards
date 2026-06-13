@@ -72,6 +72,26 @@ const teamKey = (name) => {
   return TEAM_ALIASES[n] ?? n;
 };
 
+// FotMob player name → our (ESPN) player name, keyed by teamId, for the cases
+// the automatic matcher (exact / reordered tokens / unique last name) can't
+// reach: cross-provider romanization or surname differences. Keys/values are
+// raw names — both sides are run through norm() at lookup. Only add an entry
+// when you've confirmed the FotMob player and the ESPN target are the same
+// person; a wrong alias misattributes stats, which is worse than Min=0.
+// (Bosnia's "Arjan Malic" is intentionally absent: an unused sub with no stats
+// and no ESPN squad entry — nothing to attach, no target to attach to.)
+const PLAYER_ALIASES = {
+  kor: {
+    "Jin-Seob Park": "Park Jin-Seop",
+    "Hyun-Gyu Oh": "Oh Hyeon-Gyu",
+  },
+  par: {
+    "Alejandro Romero": "Alejandro Romero Gamarra",
+    Mauricio: "Maurício",
+    "Orlando Gill": "Orlando Gil",
+  },
+};
+
 // FotMob shot `situation` values we count as set-piece xG (dead-ball origin).
 const SET_PIECE_SITUATIONS = new Set([
   "SetPiece",
@@ -125,6 +145,9 @@ async function main() {
   const resolvePlayer = (teamId, fmName) => {
     const byName = playersByTeam.get(teamId);
     if (!byName) return null;
+    // hand-curated alias first (overrides the heuristics below).
+    const alias = PLAYER_ALIASES[teamId]?.[fmName];
+    if (alias && byName.has(norm(alias))) return byName.get(norm(alias));
     const n = norm(fmName);
     if (byName.has(n)) return byName.get(n);
     // reversed/reordered name parts (e.g. Korean family-given vs given-family):
