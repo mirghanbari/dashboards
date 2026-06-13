@@ -8,7 +8,8 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 //   fotmob   — free FotMob public API (xG, xGOT, per-player advanced stats)
 //   derived  — computed from other tracked stats (no external source needed)
 //   fbref    — Opta event data via the worldfootballR open dataset
-//   model    — open model computed from event data, no paid feed (xT, VAEP)
+//   model    — open model (xT, VAEP), but needs a full event stream as input,
+//              and no free feed covers the live 2026 World Cup (see note below)
 //   provider — needs a paid tracking-data provider (StatsBomb / SkillCorner / etc.)
 // ---------------------------------------------------------------------------
 export const STAT_CATALOG: StatDef[] = [
@@ -38,6 +39,14 @@ export const STAT_CATALOG: StatDef[] = [
     derive: (p) => p.goals - p.xg,
   },
   { key: "xgot", label: "xGot (xG on target)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
+  {
+    // Placement value added: how much better a player's on-target shots end up
+    // than the chance was worth (xGOT lifts above xG only via shot placement).
+    // Distinct from xgOver (goals − xg): this isolates finishing technique, not luck.
+    key: "xgPlacement", label: "Shot placement (xGOT−xG)", tier: "advanced", scope: "player",
+    source: "derived", decimals: 2,
+    derive: (p) => p.xgot - p.xg,
+  },
   { key: "ppda", label: "PPDA", tier: "advanced", scope: "team", source: "fbref", decimals: 1 },
   { key: "pressSuccess", label: "Press success", tier: "advanced", scope: "player", source: "provider", unit: "%", decimals: 1 },
   { key: "highTurnovers", label: "High turnovers", tier: "advanced", scope: "player", source: "fbref" },
@@ -62,7 +71,7 @@ export const SOURCE_META: Record<StatDef["source"], { label: string; hint: strin
   fotmob: { label: "FotMob · free", hint: "Free FotMob public API — xG, xGOT, set-piece xG and per-player advanced stats." },
   derived: { label: "Derived", hint: "Computed from other tracked stats." },
   fbref: { label: "FBref/Opta", hint: "Opta event data via the worldfootballR open dataset." },
-  model: { label: "Open model", hint: "Computed from event data with open models (xT, VAEP) — no paid feed." },
+  model: { label: "Open model · needs events", hint: "xT and VAEP use open models, but require a full event stream (every pass and carry). No free feed covers the live 2026 World Cup — FotMob is shots-only and FBref is blocked — so these stay unpopulated." },
   provider: { label: "Tracking provider", hint: "Needs a paid tracking feed (StatsBomb / SkillCorner / Second Spectrum)." },
 };
 
