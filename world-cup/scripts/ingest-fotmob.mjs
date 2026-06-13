@@ -90,6 +90,12 @@ const PLAYER_ALIASES = {
     Mauricio: "Maurício",
     "Orlando Gill": "Orlando Gil",
   },
+  qat: {
+    "Hassan Al Haidos": "Hassan Al-Haydos",
+    "Ahmed Fathi": "Ahmed Fathy",
+    "Homam Elamin": "Homam Ahmed", // ESPN keys on the middle name; only one Homam
+    "Mohamed Al Mannai": "Mohamed Manai",
+  },
 };
 
 // FotMob shot `situation` values we count as set-piece xG (dead-ball origin).
