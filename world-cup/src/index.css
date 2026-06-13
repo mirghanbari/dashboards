@@ -176,6 +176,7 @@ main.container {
   font-size: 200px;
   opacity: 0.12;
   transform: rotate(-12deg);
+  pointer-events: none; /* decorative — never intercept taps on the CTAs */
 }
 .hero-kicker {
   text-transform: uppercase;
