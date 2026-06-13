@@ -74,7 +74,7 @@ const POS = { G: "GK", D: "DEF", M: "MID", F: "FWD" };
 function zeroPlayerStats() {
   return {
     appearances: 0, minutes: 0, yellowCards: 0, redCards: 0,
-    goals: 0, assists: 0, shots: 0, shotsOnTarget: 0, passCompletion: 0,
+    goals: 0, assists: 0, shots: 0, shotsOnTarget: 0, passCompletion: 0, passes: 0,
     chancesCreated: 0, tackles: 0, interceptions: 0, clearances: 0,
     xg: 0, xa: 0, xgot: 0, progressivePasses: 0, progressiveCarries: 0,
     finalThirdEntries: 0, lineBreakingPasses: 0, pressSuccess: 0, highTurnovers: 0,

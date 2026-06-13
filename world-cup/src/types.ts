@@ -87,6 +87,7 @@ export interface Player {
   shots: number;
   shotsOnTarget: number;
   passCompletion: number; // %
+  passes: number; // total passes attempted (denominator behind passCompletion)
   chancesCreated: number;
   tackles: number;
   interceptions: number;

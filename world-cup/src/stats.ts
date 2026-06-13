@@ -17,6 +17,11 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 // tournament progresses and shot counts climb.
 export const MIN_SHOTS_FOR_ACCURACY = 4;
 
+// Minimum passes attempted before a player qualifies for the Pass-completion
+// leaderboard, so a sub who went 2/2 = 100% doesn't outrank a midfielder who
+// sprayed 80. Bump as the tournament progresses and pass volumes climb.
+export const MIN_PASSES_FOR_COMPLETION = 30;
+
 export const STAT_CATALOG: StatDef[] = [
   // ---------------- BASIC ----------------
   { key: "goals", label: "Goals", tier: "basic", scope: "player", source: "espn" },
@@ -30,7 +35,15 @@ export const STAT_CATALOG: StatDef[] = [
     derive: (p) =>
       p.shots >= MIN_SHOTS_FOR_ACCURACY ? (p.shotsOnTarget / p.shots) * 100 : 0,
   },
-  { key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player", source: "fotmob", unit: "%", decimals: 1 },
+  {
+    key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player",
+    source: "fotmob", unit: "%", decimals: 1,
+    // Returns 0 below the pass minimum so leaders() (which filters value > 0)
+    // drops low-volume passers from the leaderboard; profiles never show this
+    // stat raw, so gating here has no other effect.
+    derive: (p) =>
+      p.passes >= MIN_PASSES_FOR_COMPLETION ? p.passCompletion : 0,
+  },
   { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1 },
   { key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fotmob" },
   { key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fotmob" },

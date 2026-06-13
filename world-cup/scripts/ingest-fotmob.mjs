@@ -207,7 +207,7 @@ async function main() {
   // (ESPN owns goals/assists/shots/cards/appearances — left untouched.)
   const OWNED_FIELDS = [
     "minutes", "xg", "xa", "xgot", "chancesCreated", "finalThirdEntries",
-    "tackles", "interceptions", "clearances", "setPieceXg", "passCompletion",
+    "tackles", "interceptions", "clearances", "setPieceXg", "passCompletion", "passes",
   ];
   for (const p of players) {
     for (const f of OWNED_FIELDS) p[f] = 0;
@@ -336,6 +336,7 @@ async function main() {
   for (const p of players) {
     if (p._passAtt > 0) {
       p.passCompletion = Math.round((p._passAcc / p._passAtt) * 1000) / 10;
+      p.passes = p._passAtt; // attempts kept as the leaderboard volume gate
     }
     delete p._passAcc;
     delete p._passAtt;
