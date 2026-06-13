@@ -152,6 +152,21 @@ async function main() {
   const unmatchedPlayers = new Set();
   let matchedPlayerRows = 0;
 
+  // Reset the fields THIS script owns before re-summing, so the script is
+  // idempotent: running it twice (or on a non-fresh players.json) can never
+  // double-count. ESPN already zeroes these and runs first in the pipeline, so
+  // this is a no-op there — it only guards standalone / repeated invocations.
+  // (ESPN owns goals/assists/shots/cards/appearances — left untouched.)
+  const OWNED_FIELDS = [
+    "minutes", "xg", "xa", "xgot", "chancesCreated", "finalThirdEntries",
+    "tackles", "interceptions", "clearances", "setPieceXg", "passCompletion",
+  ];
+  for (const p of players) {
+    for (const f of OWNED_FIELDS) p[f] = 0;
+    delete p._passAcc;
+    delete p._passAtt;
+  }
+
   // ---- pull each finished match and fold its stats into our players ------
   for (const fx of finished) {
     let detail;
