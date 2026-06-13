@@ -74,7 +74,7 @@
     "city": "Santa Clara, California",
     "homeTeamId": "qat",
     "awayTeamId": "sui",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
     "minute": null
