@@ -9,6 +9,7 @@ import { TeamDetail } from "./pages/TeamDetail";
 import { Players } from "./pages/Players";
 import { PlayerDetail } from "./pages/PlayerDetail";
 import { Stats } from "./pages/Stats";
+import { StatDetail } from "./pages/StatDetail";
 import { Friendlies } from "./pages/Friendlies";
 import { Bracket } from "./pages/Bracket";
 import { Predictions } from "./pages/Predictions";
@@ -30,6 +31,7 @@ createRoot(rootEl).render(
           <Route path="players" element={<Players />} />
           <Route path="players/:playerId" element={<PlayerDetail />} />
           <Route path="stats" element={<Stats />} />
+          <Route path="stats/:statKey" element={<StatDetail />} />
           <Route path="friendlies" element={<Friendlies />} />
           <Route path="bracket" element={<Bracket />} />
           <Route path="predictions" element={<Predictions />} />

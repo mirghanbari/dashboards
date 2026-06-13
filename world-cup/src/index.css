@@ -1024,6 +1024,35 @@ tr.qualifies {
 .lead-value {
   font-weight: 800;
 }
+.statcard-title a {
+  color: inherit;
+}
+.statcard-title a:hover {
+  color: var(--pitch-1);
+}
+.statcard-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pitch-1);
+}
+.statcard-more:hover {
+  text-decoration: underline;
+}
+/* Full single-stat ranking page (/stats/<key>) */
+.rank-card {
+  margin-top: 16px;
+  max-width: 560px;
+}
+.rank-card .statcard-leaders li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+}
+.page-head .src-badge {
+  display: inline-block;
+  margin-top: 10px;
+}
 
 /* ---------------- International Friendlies ---------------- */
 .fr-match {

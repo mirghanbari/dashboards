@@ -18,12 +18,15 @@ function SourceBadge({ source }: { source: StatDef["source"] }) {
 }
 
 function StatCard({ def }: { def: StatDef }) {
-  const rows = leaders(def, 5);
+  const all = leaders(def, Infinity);
+  const rows = all.slice(0, 5);
   return (
     <article className="statcard">
       <header className="statcard-head">
         <div>
-          <h3 className="statcard-title">{def.label}</h3>
+          <h3 className="statcard-title">
+            <Link to={`/stats/${def.key}`}>{def.label}</Link>
+          </h3>
           <span className="statcard-scope">
             {def.scope === "team" ? "Team stat" : "Player stat"}
           </span>
@@ -45,6 +48,11 @@ function StatCard({ def }: { def: StatDef }) {
             </li>
           ))}
         </ol>
+      )}
+      {all.length > 5 && (
+        <Link to={`/stats/${def.key}`} className="statcard-more">
+          View all {all.length} →
+        </Link>
       )}
     </article>
   );
