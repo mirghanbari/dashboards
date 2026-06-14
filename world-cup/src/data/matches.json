@@ -27,7 +27,89 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "9'",
+        "teamId": "mex",
+        "player": "Julián Quiñones",
+        "text": "Julián Quiñones Goal",
+        "assist": "Érik Lira"
+      },
+      {
+        "type": "yellow",
+        "minute": "17'",
+        "teamId": "rsa",
+        "player": "Teboho Mokoena",
+        "text": "Teboho Mokoena Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "23'",
+        "teamId": "mex",
+        "player": "Brian Gutiérrez",
+        "text": "Brian Gutiérrez Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "49'",
+        "teamId": "rsa",
+        "player": "Sphephelo Sithole",
+        "text": "Sphephelo Sithole Red Card"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "mex",
+        "player": "Raúl Jiménez",
+        "text": "Raúl Jiménez Goal - Header",
+        "assist": "Roberto Alvarado"
+      },
+      {
+        "type": "yellow",
+        "minute": "74'",
+        "teamId": "rsa",
+        "player": "Nkosinathi Sibisi",
+        "text": "Nkosinathi Sibisi Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "84'",
+        "teamId": "rsa",
+        "player": "Themba Zwane",
+        "text": "Themba Zwane Red Card"
+      },
+      {
+        "type": "red",
+        "minute": "90'+2'",
+        "teamId": "mex",
+        "player": "César Montes",
+        "text": "César Montes Red Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 60.5,
+        "shots": 16,
+        "shotsOnTarget": 4,
+        "passAccuracy": 89.8,
+        "fouls": 12,
+        "corners": 3,
+        "offsides": 1,
+        "saves": 2
+      },
+      "away": {
+        "possession": 39.5,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 81.4,
+        "fouls": 11,
+        "corners": 1,
+        "offsides": 1,
+        "saves": 2
+      }
+    }
   },
   {
     "id": "M002",
@@ -57,7 +139,62 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "59'",
+        "teamId": "cze",
+        "player": "Ladislav Krejcí",
+        "text": "Ladislav Krejcí Goal - Header",
+        "assist": "Vladimír Coufal"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "kor",
+        "player": "Hwang In-Beom",
+        "text": "Hwang In-Beom Goal",
+        "assist": "Lee Kang-In"
+      },
+      {
+        "type": "goal",
+        "minute": "80'",
+        "teamId": "kor",
+        "player": "Oh Hyeon-Gyu",
+        "text": "Oh Hyeon-Gyu Goal",
+        "assist": "Hwang In-Beom"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+6'",
+        "teamId": "kor",
+        "player": "Lee Gi-Hyuk",
+        "text": "Lee Gi-Hyuk Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 61.5,
+        "shots": 15,
+        "shotsOnTarget": 6,
+        "passAccuracy": 86.7,
+        "fouls": 9,
+        "corners": 4,
+        "offsides": 2,
+        "saves": 3
+      },
+      "away": {
+        "possession": 38.5,
+        "shots": 7,
+        "shotsOnTarget": 4,
+        "passAccuracy": 70.3,
+        "fouls": 16,
+        "corners": 5,
+        "offsides": 2,
+        "saves": 4
+      }
+    }
   },
   {
     "id": "M003",
@@ -87,7 +224,82 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "11'",
+        "teamId": "can",
+        "player": "Alistair Johnston",
+        "text": "Alistair Johnston Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "21'",
+        "teamId": "bih",
+        "player": "Jovo Lukic",
+        "text": "Jovo Lukic Goal - Header",
+        "assist": "Sead Kolasinac"
+      },
+      {
+        "type": "yellow",
+        "minute": "45'",
+        "teamId": "bih",
+        "player": "Ermedin Demirovic",
+        "text": "Ermedin Demirovic Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "45'+1'",
+        "teamId": "bih",
+        "player": "Jovo Lukic",
+        "text": "Jovo Lukic Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "53'",
+        "teamId": "can",
+        "player": "Luc de Fougerolles",
+        "text": "Luc de Fougerolles Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "78'",
+        "teamId": "can",
+        "player": "Cyle Larin",
+        "text": "Cyle Larin Goal",
+        "assist": "Promise David"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "bih",
+        "player": "Nikola Katic",
+        "text": "Nikola Katic Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 61.1,
+        "shots": 13,
+        "shotsOnTarget": 4,
+        "passAccuracy": 73.6,
+        "fouls": 10,
+        "corners": 9,
+        "offsides": 1,
+        "saves": 2
+      },
+      "away": {
+        "possession": 38.9,
+        "shots": 8,
+        "shotsOnTarget": 3,
+        "passAccuracy": 63.5,
+        "fouls": 20,
+        "corners": 4,
+        "offsides": 0,
+        "saves": 1
+      }
+    }
   },
   {
     "id": "M004",
@@ -117,7 +329,119 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "7'",
+        "teamId": "usa",
+        "player": "Damián Bobadilla",
+        "text": "Damián Bobadilla Own Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "10'",
+        "teamId": "par",
+        "player": "Juan Jose Cáceres",
+        "text": "Juan Jose Cáceres Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "31'",
+        "teamId": "usa",
+        "player": "Folarin Balogun",
+        "text": "Folarin Balogun Goal",
+        "assist": "Christian Pulisic"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+5'",
+        "teamId": "usa",
+        "player": "Folarin Balogun",
+        "text": "Folarin Balogun Goal",
+        "assist": "Malik Tillman"
+      },
+      {
+        "type": "red",
+        "minute": "52'",
+        "teamId": "usa",
+        "player": "Tim Ream",
+        "text": "Tim Ream VAR - (Red) Card Upgrad"
+      },
+      {
+        "type": "yellow",
+        "minute": "53'",
+        "teamId": "par",
+        "player": "Miguel Almirón",
+        "text": "Miguel Almirón Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "59'",
+        "teamId": "usa",
+        "player": "Tyler Adams",
+        "text": "Tyler Adams Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "73'",
+        "teamId": "par",
+        "player": "Maurício",
+        "text": "Maurício Goal",
+        "assist": "Julio Enciso"
+      },
+      {
+        "type": "yellow",
+        "minute": "79'",
+        "teamId": "par",
+        "player": "Diego Gómez",
+        "text": "Diego Gómez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "88'",
+        "teamId": "par",
+        "player": "Alex Arce",
+        "text": "Alex Arce Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "par",
+        "player": "Júnior Alonso",
+        "text": "Júnior Alonso Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+8'",
+        "teamId": "usa",
+        "player": "Giovanni Reyna",
+        "text": "Giovanni Reyna Goal",
+        "assist": "Alex Freeman"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 65.3,
+        "shots": 16,
+        "shotsOnTarget": 6,
+        "passAccuracy": 85.1,
+        "fouls": 13,
+        "corners": 3,
+        "offsides": 2,
+        "saves": 1
+      },
+      "away": {
+        "possession": 34.7,
+        "shots": 9,
+        "shotsOnTarget": 1,
+        "passAccuracy": 72.7,
+        "fouls": 17,
+        "corners": 1,
+        "offsides": 1,
+        "saves": 3
+      }
+    }
   },
   {
     "id": "M005",
@@ -147,7 +471,67 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "16'",
+        "teamId": "qat",
+        "player": "Mahmoud Abunada",
+        "text": "Mahmoud Abunada Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "17'",
+        "teamId": "sui",
+        "player": "Breel Embolo",
+        "text": "Breel Embolo Penalty - Scored"
+      },
+      {
+        "type": "yellow",
+        "minute": "23'",
+        "teamId": "qat",
+        "player": "Jassem Gaber",
+        "text": "Jassem Gaber Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "42'",
+        "teamId": "sui",
+        "player": "Denis Zakaria",
+        "text": "Denis Zakaria Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+4'",
+        "teamId": "qat",
+        "player": "Miro Muheim",
+        "text": "Miro Muheim Own Goal",
+        "assist": "Homam Ahmed"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 32,
+        "shots": 6,
+        "shotsOnTarget": 3,
+        "passAccuracy": 71.9,
+        "fouls": 12,
+        "corners": 3,
+        "offsides": 0,
+        "saves": 5
+      },
+      "away": {
+        "possession": 68,
+        "shots": 26,
+        "shotsOnTarget": 7,
+        "passAccuracy": 91.5,
+        "fouls": 11,
+        "corners": 10,
+        "offsides": 1,
+        "saves": 3
+      }
+    }
   },
   {
     "id": "M006",
@@ -177,7 +561,61 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "21'",
+        "teamId": "mar",
+        "player": "Ismael Saibari",
+        "text": "Ismael Saibari Goal",
+        "assist": "Brahim Díaz"
+      },
+      {
+        "type": "goal",
+        "minute": "32'",
+        "teamId": "bra",
+        "player": "Vinícius Júnior",
+        "text": "Vinícius Júnior Goal",
+        "assist": "Bruno Guimarães"
+      },
+      {
+        "type": "yellow",
+        "minute": "37'",
+        "teamId": "bra",
+        "player": "Casemiro",
+        "text": "Casemiro Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "43'",
+        "teamId": "bra",
+        "player": "Roger Ibañez",
+        "text": "Roger Ibañez Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 51.4,
+        "shots": 12,
+        "shotsOnTarget": 5,
+        "passAccuracy": 87.4,
+        "fouls": 16,
+        "corners": 6,
+        "offsides": 0,
+        "saves": 2
+      },
+      "away": {
+        "possession": 48.6,
+        "shots": 14,
+        "shotsOnTarget": 3,
+        "passAccuracy": 86.2,
+        "fouls": 14,
+        "corners": 2,
+        "offsides": 1,
+        "saves": 4
+      }
+    }
   },
   {
     "id": "M007",
@@ -207,7 +645,66 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "28'",
+        "teamId": "sco",
+        "player": "John McGinn",
+        "text": "John McGinn Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "39'",
+        "teamId": "hai",
+        "player": "Jean-Ricner Bellegarde",
+        "text": "Jean-Ricner Bellegarde Yellow Ca"
+      },
+      {
+        "type": "yellow",
+        "minute": "46'",
+        "teamId": "sco",
+        "player": "Aaron Hickey",
+        "text": "Aaron Hickey Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+1'",
+        "teamId": "sco",
+        "player": "Findlay Curtis",
+        "text": "Findlay Curtis Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+5'",
+        "teamId": "sco",
+        "player": "Kenny McLean",
+        "text": "Kenny McLean Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 53.7,
+        "shots": 15,
+        "shotsOnTarget": 2,
+        "passAccuracy": 85.2,
+        "fouls": 23,
+        "corners": 4,
+        "offsides": 3,
+        "saves": 1
+      },
+      "away": {
+        "possession": 46.3,
+        "shots": 9,
+        "shotsOnTarget": 2,
+        "passAccuracy": 82.1,
+        "fouls": 21,
+        "corners": 3,
+        "offsides": 1,
+        "saves": 2
+      }
+    }
   },
   {
     "id": "M008",
@@ -237,7 +734,53 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "27'",
+        "teamId": "aus",
+        "player": "Nestory Irankunda",
+        "text": "Nestory Irankunda Goal",
+        "assist": "Paul Okon-Engstler"
+      },
+      {
+        "type": "goal",
+        "minute": "75'",
+        "teamId": "aus",
+        "player": "Connor Metcalfe",
+        "text": "Connor Metcalfe Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "86'",
+        "teamId": "tur",
+        "player": "Yunus Akgün",
+        "text": "Yunus Akgün Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 28.4,
+        "shots": 9,
+        "shotsOnTarget": 4,
+        "passAccuracy": 74.2,
+        "fouls": 12,
+        "corners": 5,
+        "offsides": 1,
+        "saves": 8
+      },
+      "away": {
+        "possession": 71.6,
+        "shots": 30,
+        "shotsOnTarget": 8,
+        "passAccuracy": 90.2,
+        "fouls": 4,
+        "corners": 8,
+        "offsides": 3,
+        "saves": 2
+      }
+    }
   },
   {
     "id": "M009",
@@ -267,7 +810,93 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "6'",
+        "teamId": "ger",
+        "player": "Felix Nmecha",
+        "text": "Felix Nmecha Goal",
+        "assist": "Florian Wirtz"
+      },
+      {
+        "type": "goal",
+        "minute": "21'",
+        "teamId": "cuw",
+        "player": "Livano Comenencia",
+        "text": "Livano Comenencia Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "38'",
+        "teamId": "ger",
+        "player": "Nico Schlotterbeck",
+        "text": "Nico Schlotterbeck Goal - Header",
+        "assist": "Nathaniel Brown"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+5'",
+        "teamId": "ger",
+        "player": "Kai Havertz",
+        "text": "Kai Havertz Penalty - Scored"
+      },
+      {
+        "type": "goal",
+        "minute": "47'",
+        "teamId": "ger",
+        "player": "Jamal Musiala",
+        "text": "Jamal Musiala Goal",
+        "assist": "Joshua Kimmich"
+      },
+      {
+        "type": "goal",
+        "minute": "68'",
+        "teamId": "ger",
+        "player": "Nathaniel Brown",
+        "text": "Nathaniel Brown Goal - Volley",
+        "assist": "Deniz Undav"
+      },
+      {
+        "type": "goal",
+        "minute": "78'",
+        "teamId": "ger",
+        "player": "Deniz Undav",
+        "text": "Deniz Undav Goal",
+        "assist": "Joshua Kimmich"
+      },
+      {
+        "type": "goal",
+        "minute": "88'",
+        "teamId": "ger",
+        "player": "Kai Havertz",
+        "text": "Kai Havertz Goal",
+        "assist": "Deniz Undav"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 64.7,
+        "shots": 26,
+        "shotsOnTarget": 12,
+        "passAccuracy": 86.8,
+        "fouls": 18,
+        "corners": 8,
+        "offsides": 0,
+        "saves": 1
+      },
+      "away": {
+        "possession": 35.3,
+        "shots": 8,
+        "shotsOnTarget": 2,
+        "passAccuracy": 82.1,
+        "fouls": 11,
+        "corners": 1,
+        "offsides": 1,
+        "saves": 4
+      }
+    }
   },
   {
     "id": "M010",
@@ -283,7 +912,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 35,
+    "minute": 36,
     "broadcasts": [
       {
         "name": "FOX",
@@ -297,7 +926,29 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 68,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 89.6,
+        "fouls": 2,
+        "corners": 2,
+        "offsides": 0,
+        "saves": 0
+      },
+      "away": {
+        "possession": 32,
+        "shots": 1,
+        "shotsOnTarget": 0,
+        "passAccuracy": 86.1,
+        "fouls": 1,
+        "corners": 1,
+        "offsides": 0,
+        "saves": 2
+      }
+    }
   },
   {
     "id": "M011",
