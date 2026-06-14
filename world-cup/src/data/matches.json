@@ -910,9 +910,9 @@
     "homeTeamId": "ned",
     "awayTeamId": "jpn",
     "homeScore": 2,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": 87,
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -965,26 +965,41 @@
         "teamId": "ned",
         "player": "Memphis Depay",
         "text": "Memphis Depay Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "88'",
+        "teamId": "jpn",
+        "player": "Daichi Kamada",
+        "text": "Daichi Kamada Goal - Header",
+        "assist": "Koki Ogawa"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+1'",
+        "teamId": "ned",
+        "player": "Micky van de Ven",
+        "text": "Micky van de Ven Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.8,
+        "possession": 59.1,
         "shots": 9,
         "shotsOnTarget": 6,
-        "passAccuracy": 88.7,
-        "fouls": 6,
+        "passAccuracy": 88.3,
+        "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 1
       },
       "away": {
-        "possession": 39.2,
-        "shots": 8,
-        "shotsOnTarget": 2,
-        "passAccuracy": 84.2,
+        "possession": 40.9,
+        "shots": 10,
+        "shotsOnTarget": 3,
+        "passAccuracy": 84.6,
         "fouls": 7,
-        "corners": 2,
+        "corners": 4,
         "offsides": 0,
         "saves": 4
       }
