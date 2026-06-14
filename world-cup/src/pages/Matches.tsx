@@ -33,10 +33,15 @@ export function Matches() {
     }).sort((a, b) => +new Date(a.date) - +new Date(b.date));
   }, [stage, group, status]);
 
-  // Group the visible matches by calendar day for readability.
+  // Live matches float to a pinned block at the top (like the Overview page),
+  // so they're excluded from the day groups below to avoid showing twice.
+  const live = useMemo(() => visible.filter((m) => m.status === "live"), [visible]);
+
+  // Group the remaining (non-live) visible matches by calendar day for readability.
   const byDay = useMemo(() => {
     const map = new Map<string, typeof visible>();
     for (const m of visible) {
+      if (m.status === "live") continue;
       const key = new Date(m.date).toLocaleDateString(undefined, {
         weekday: "short",
         month: "short",
@@ -82,6 +87,7 @@ export function Matches() {
           setGroup={setGroup}
           status={status}
           setStatus={setStatus}
+          live={live}
           byDay={byDay}
         />
       )}
@@ -96,6 +102,7 @@ function MatchList({
   setGroup,
   status,
   setStatus,
+  live,
   byDay,
 }: {
   stage: Stage | "all";
@@ -104,6 +111,7 @@ function MatchList({
   setGroup: (g: string) => void;
   status: "all" | "live" | "finished" | "scheduled";
   setStatus: (s: "all" | "live" | "finished" | "scheduled") => void;
+  live: typeof MATCHES;
   byDay: [string, typeof MATCHES][];
 }) {
   return (
@@ -148,7 +156,22 @@ function MatchList({
         </div>
       </div>
 
-      {byDay.length === 0 && <p className="empty">No matches match these filters.</p>}
+      {live.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">
+            <span className="dot-live" /> Live now
+          </h2>
+          <div className="match-grid">
+            {live.map((m) => (
+              <MatchCard key={m.id} match={m} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {live.length === 0 && byDay.length === 0 && (
+        <p className="empty">No matches match these filters.</p>
+      )}
 
       {byDay.map(([day, dayMatches]) => (
         <section key={day} className="day-group">
