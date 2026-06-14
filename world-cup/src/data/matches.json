@@ -250,10 +250,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "ger",
     "awayTeamId": "cuw",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 5,
+    "minute": 6,
     "broadcasts": [
       {
         "name": "FOX",
