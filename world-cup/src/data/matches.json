@@ -911,7 +911,7 @@
     "awayTeamId": "jpn",
     "homeScore": 2,
     "awayScore": 2,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -984,20 +984,20 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.7,
+        "possession": 59.8,
         "shots": 10,
         "shotsOnTarget": 6,
-        "passAccuracy": 88.6,
+        "passAccuracy": 88.4,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 1
       },
       "away": {
-        "possession": 40.3,
+        "possession": 40.2,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 84.1,
+        "passAccuracy": 83.9,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
