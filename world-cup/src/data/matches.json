@@ -969,11 +969,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.1,
+        "possession": 60.8,
         "shots": 9,
         "shotsOnTarget": 6,
         "passAccuracy": 88.7,
-        "fouls": 5,
+        "fouls": 6,
         "corners": 5,
         "offsides": 1,
         "saves": 1
