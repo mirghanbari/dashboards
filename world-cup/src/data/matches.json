@@ -1019,7 +1019,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 28,
+    "minute": 29,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1032,6 +1032,15 @@
       {
         "name": "Peacock",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "28'",
+        "teamId": "civ",
+        "player": "Seko Fofana",
+        "text": "Seko Fofana Yellow Card"
       }
     ],
     "stats": {
