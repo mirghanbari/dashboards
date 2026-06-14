@@ -912,7 +912,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 44,
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
