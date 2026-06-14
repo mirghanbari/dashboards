@@ -48,7 +48,10 @@ jobs:
 
       # ---- Initial full refresh (runs once per invocation) ----
       - name: Refresh World Cup data from ESPN
-        run: npm run ingest
+        # Non-fatal (matches the in-loop call below): a transient ESPN outage
+        # should leave the data unchanged for this tick, not red the whole run.
+        # The script itself already tolerates a single team's roster 404.
+        run: npm run ingest || echo "ESPN ingest failed (non-fatal; data unchanged this run)"
       - name: Enrich with advanced stats from FotMob
         # Runs after the ESPN step (it enriches the players.json ESPN builds).
         # Non-fatal: if FotMob's API hiccups, still commit the ESPN refresh.

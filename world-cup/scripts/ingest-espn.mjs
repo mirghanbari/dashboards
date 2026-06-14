@@ -11,7 +11,7 @@
 //
 //   node scripts/ingest-espn.mjs
 // ---------------------------------------------------------------------------
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, readFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -126,11 +126,41 @@ async function main() {
   console.log("Fetching squads…");
   const players = [];
   const playerByEspnId = new Map(); // ESPN athlete id → player object
+
+  // Prior committed roster, indexed by teamId. ESPN occasionally 404s a single
+  // team's roster endpoint; rather than abort the whole ingest (and the run),
+  // we reuse that team's cached players so the dataset stays complete.
+  const priorByTeam = new Map();
+  try {
+    const prior = JSON.parse(readFileSync(join(DATA_DIR, "players.json"), "utf8"));
+    for (const p of prior) {
+      if (!priorByTeam.has(p.teamId)) priorByTeam.set(p.teamId, []);
+      priorByTeam.get(p.teamId).push(p);
+    }
+  } catch {
+    /* no prior players.json (first run) — nothing to fall back to */
+  }
+
   await pool(teams, 6, async (team) => {
-    const roster = await getJson(
-      `${BASE}/site/v2/sports/soccer/fifa.world/teams/${team.espnId}/roster`,
-    );
-    for (const a of roster.athletes ?? []) {
+    let athletes;
+    try {
+      const roster = await getJson(
+        `${BASE}/site/v2/sports/soccer/fifa.world/teams/${team.espnId}/roster`,
+      );
+      athletes = roster.athletes ?? [];
+    } catch (err) {
+      // Reuse the cached squad with stats reset to 0 (the loop below re-derives
+      // stats from finished matches, so a zeroed base stays idempotent).
+      const cached = priorByTeam.get(team.id) ?? [];
+      for (const prev of cached) {
+        const player = { ...prev, ...zeroPlayerStats() };
+        players.push(player);
+        playerByEspnId.set(player.id.slice(team.id.length + 1), player);
+      }
+      process.stdout.write(`  ${team.code} (cached ${cached.length}, ${err.message})  `);
+      return;
+    }
+    for (const a of athletes) {
       const player = {
         id: `${team.id}-${a.id}`,
         // ESPN builds fullName as "first last"; for mononym players (Casemiro,
@@ -152,7 +182,7 @@ async function main() {
       players.push(player);
       playerByEspnId.set(String(a.id), player);
     }
-    process.stdout.write(`  ${team.code} (${(roster.athletes ?? []).length})  `);
+    process.stdout.write(`  ${team.code} (${athletes.length})  `);
   });
   console.log(`\n  ${players.length} players.`);
 
