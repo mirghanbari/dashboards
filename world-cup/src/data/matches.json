@@ -912,7 +912,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": 83,
+    "minute": 84,
     "broadcasts": [
       {
         "name": "FOX",
@@ -958,24 +958,31 @@
         "player": "Crysencio Summerville",
         "text": "Crysencio Summerville Goal",
         "assist": "Ryan Gravenberch"
+      },
+      {
+        "type": "yellow",
+        "minute": "83'",
+        "teamId": "ned",
+        "player": "Memphis Depay",
+        "text": "Memphis Depay Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.6,
+        "possession": 62.2,
         "shots": 8,
         "shotsOnTarget": 6,
-        "passAccuracy": 88.6,
+        "passAccuracy": 88.7,
         "fouls": 4,
         "corners": 5,
         "offsides": 1,
         "saves": 1
       },
       "away": {
-        "possession": 37.4,
+        "possession": 37.8,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.6,
+        "passAccuracy": 84.8,
         "fouls": 6,
         "corners": 2,
         "offsides": 0,
