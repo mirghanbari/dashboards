@@ -199,11 +199,11 @@
     "goalsFor": 1,
     "goalsAgainst": 1,
     "points": 1,
-    "possession": 51.2,
+    "possession": 51.3,
     "ppda": 11.1,
     "cleanSheets": 0,
-    "passCompletion": 87.5,
-    "xgFor": 1.26,
+    "passCompletion": 87.3,
+    "xgFor": 1.22,
     "xgAgainst": 1.53
   },
   {
@@ -268,12 +268,12 @@
     "goalsFor": 1,
     "goalsAgainst": 1,
     "points": 1,
-    "possession": 48.8,
+    "possession": 48.7,
     "ppda": 12.2,
     "cleanSheets": 0,
     "passCompletion": 86.4,
     "xgFor": 1.53,
-    "xgAgainst": 1.26
+    "xgAgainst": 1.22
   },
   {
     "id": "par",
