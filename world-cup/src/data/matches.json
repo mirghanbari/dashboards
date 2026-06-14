@@ -220,10 +220,10 @@
     "city": "Vancouver",
     "homeTeamId": "aus",
     "awayTeamId": "tur",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 27,
+    "minute": 28,
     "broadcasts": [
       {
         "name": "FS1",
