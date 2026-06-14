@@ -410,7 +410,7 @@
     "ppda": 7.3,
     "cleanSheets": 0,
     "passCompletion": 86.8,
-    "xgFor": 3.91,
+    "xgFor": 4,
     "xgAgainst": 0.41
   },
   {
@@ -457,7 +457,7 @@
     "cleanSheets": 0,
     "passCompletion": 82.1,
     "xgFor": 0.41,
-    "xgAgainst": 3.91
+    "xgAgainst": 4
   },
   {
     "id": "ned",
