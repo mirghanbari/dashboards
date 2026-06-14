@@ -1019,7 +1019,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 40,
+    "minute": 41,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1048,6 +1048,13 @@
         "teamId": "civ",
         "player": "Franck Kessié",
         "text": "Franck Kessié Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "40'",
+        "teamId": "civ",
+        "player": "Guela Doué",
+        "text": "Guela Doué Yellow Card"
       }
     ],
     "stats": {
