@@ -134,6 +134,10 @@ export function getPlayer(id: string): Player | undefined {
   return PLAYERS.find((p) => p.id === id);
 }
 
+export function getMatch(id: string): Match | undefined {
+  return MATCHES.find((m) => m.id === id);
+}
+
 const byStrength = (a: Standing, b: Standing) =>
   b.points - a.points || b.goalDiff - a.goalDiff || b.goalsFor - a.goalsFor || a.fifaRank - b.fifaRank;
 

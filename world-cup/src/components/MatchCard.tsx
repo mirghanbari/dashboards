@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { Match } from "../types";
 import { getTeam, gameOdds } from "../data";
 
@@ -32,7 +32,12 @@ function TeamLine({ teamId, score, winner }: { teamId: string; score: number | n
       {isTbd ? (
         <span className="team-id-wrap">{inner}</span>
       ) : (
-        <Link to={`/teams/${team.id}`} className="team-id-wrap">
+        // Stop the click from bubbling to the card's match-detail navigation.
+        <Link
+          to={`/teams/${team.id}`}
+          className="team-id-wrap"
+          onClick={(e) => e.stopPropagation()}
+        >
           {inner}
         </Link>
       )}
@@ -75,6 +80,7 @@ function MatchPrediction({ match }: { match: Match }) {
 }
 
 export function MatchCard({ match }: { match: Match }) {
+  const navigate = useNavigate();
   const date = new Date(match.date);
   const dateStr = date.toLocaleDateString(undefined, {
     month: "short",
@@ -96,8 +102,22 @@ export function MatchCard({ match }: { match: Match }) {
     match.awayScore !== null &&
     match.awayScore > match.homeScore;
 
+  const open = () => navigate(`/matches/${match.id}`);
+
   return (
-    <article className={"match-card status-" + match.status}>
+    <article
+      className={"match-card status-" + match.status + " is-clickable"}
+      onClick={open}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          open();
+        }
+      }}
+      role="link"
+      tabIndex={0}
+      aria-label={`Match details: ${getTeam(match.homeTeamId).name} vs ${getTeam(match.awayTeamId).name}`}
+    >
       <header className="match-head">
         <span className="match-stage">{stageLabel(match)}</span>
         {match.status === "live" ? (

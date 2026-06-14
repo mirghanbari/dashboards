@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
 import { Overview } from "./pages/Overview";
 import { Matches } from "./pages/Matches";
+import { MatchDetail } from "./pages/MatchDetail";
 import { Teams } from "./pages/Teams";
 import { TeamDetail } from "./pages/TeamDetail";
 import { Players } from "./pages/Players";
@@ -26,6 +27,7 @@ createRoot(rootEl).render(
         <Route element={<App />}>
           <Route index element={<Overview />} />
           <Route path="matches" element={<Matches />} />
+          <Route path="matches/:matchId" element={<MatchDetail />} />
           <Route path="teams" element={<Teams />} />
           <Route path="teams/:teamId" element={<TeamDetail />} />
           <Route path="players" element={<Players />} />

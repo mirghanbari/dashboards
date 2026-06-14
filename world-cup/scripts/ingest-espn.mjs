@@ -261,10 +261,19 @@ async function main() {
   }
   console.log(`  ${matches.length} fixtures.`);
 
-  // ---- Aggregate per-player and per-team stats from finished matches --------
-  const finished = matches.filter(
-    (m) => m.status === "finished" && m.espnEventId && m.homeTeamId !== "tbd" && m.awayTeamId !== "tbd",
+  // ---- Per-match detail + aggregate per-player/per-team stats ---------------
+  // Pull the ESPN summary for every live OR finished match. The per-match
+  // timeline + team stats (for the match detail page) come from all of them;
+  // the season aggregation (player/team running totals) uses finished only, so
+  // a live game's partial numbers never pollute the cumulative tallies.
+  const detailed = matches.filter(
+    (m) =>
+      (m.status === "finished" || m.status === "live") &&
+      m.espnEventId &&
+      m.homeTeamId !== "tbd" &&
+      m.awayTeamId !== "tbd",
   );
+  const finished = detailed.filter((m) => m.status === "finished");
   const teamById = new Map(teams.map((t) => [t.id, t]));
   const espnTeamToId = new Map(teams.map((t) => [t.espnId, t.id]));
   const possAcc = new Map(); // teamId → { poss, pass, n }
@@ -279,14 +288,71 @@ async function main() {
     return Number.isFinite(n) ? n : 0;
   };
 
-  if (finished.length) {
-    console.log(`Aggregating stats from ${finished.length} finished matches…`);
-    const summaries = await pool(finished, 6, (m) =>
-      getJson(`${BASE}/site/v2/sports/soccer/fifa.world/summary?event=${m.espnEventId}`).catch(() => null),
+  // Goal + card timeline from the summary's keyEvents (in clock order).
+  const buildTimeline = (sum) => {
+    const out = [];
+    for (const e of sum?.keyEvents ?? []) {
+      const text = e.type?.text ?? "";
+      const isGoal =
+        (e.scoringPlay === true || e.type?.type === "goal") && !/disallow|no goal|cancel/i.test(text);
+      const isRed = /red/i.test(text);
+      const isYellow = !isRed && /yellow/i.test(text);
+      if (!isGoal && !isRed && !isYellow) continue;
+      const ev = {
+        type: isGoal ? "goal" : isRed ? "red" : "yellow",
+        minute: e.clock?.displayValue ?? "",
+        teamId: espnTeamToId.get(String(e.team?.id ?? "")) ?? "",
+        player: e.participants?.[0]?.athlete?.displayName ?? "",
+        text: e.shortText ?? text,
+      };
+      const assist = isGoal ? e.participants?.[1]?.athlete?.displayName : undefined;
+      if (assist) ev.assist = assist;
+      out.push(ev);
+    }
+    return out;
+  };
+
+  // The curated team-comparison stat set for the match detail page.
+  const sideStats = (t) => {
+    if (!t) return {};
+    const ap = readStat(t.statistics, "accuratePasses");
+    const tp = readStat(t.statistics, "totalPasses");
+    return {
+      possession: readStat(t.statistics, "possessionPct"),
+      shots: readStat(t.statistics, "totalShots"),
+      shotsOnTarget: readStat(t.statistics, "shotsOnTarget"),
+      passAccuracy: tp > 0 ? Math.round((ap / tp) * 1000) / 10 : 0,
+      fouls: readStat(t.statistics, "foulsCommitted"),
+      corners: readStat(t.statistics, "wonCorners"),
+      offsides: readStat(t.statistics, "offsides"),
+      saves: readStat(t.statistics, "saves"),
+    };
+  };
+
+  if (detailed.length) {
+    console.log(`Fetching summaries for ${detailed.length} live/finished matches…`);
+    const summaries = await pool(detailed, 6, (m) =>
+      getJson(`${BASE}/site/v2/sports/soccer/fifa.world/summary?event=${m.espnEventId}`)
+        .then((s) => ({ m, s }))
+        .catch(() => ({ m, s: null })),
     );
-    for (const sum of summaries) {
+    for (const { m, s: sum } of summaries) {
+      if (!sum) continue;
+
+      // Per-match detail (live + finished): timeline + team comparison stats.
+      const timeline = buildTimeline(sum);
+      if (timeline.length) m.timeline = timeline;
+      const boxTeams = sum.boxscore?.teams ?? [];
+      const sideFor = (teamId) =>
+        boxTeams.find((t) => espnTeamToId.get(String(t.team?.id)) === teamId);
+      const home = sideFor(m.homeTeamId);
+      const away = sideFor(m.awayTeamId);
+      if (home || away) m.stats = { home: sideStats(home), away: sideStats(away) };
+
+      // Season aggregation: finished matches only.
+      if (m.status !== "finished") continue;
       // Per-player stats from the match rosters.
-      for (const r of sum?.rosters ?? []) {
+      for (const r of sum.rosters ?? []) {
         for (const entry of r.roster ?? []) {
           const player = playerByEspnId.get(String(entry.athlete?.id));
           if (!player || !entry.stats) continue;
@@ -300,7 +366,7 @@ async function main() {
         }
       }
       // Per-team possession / pass completion from the boxscore.
-      for (const t of sum?.boxscore?.teams ?? []) {
+      for (const t of boxTeams) {
         const teamId = espnTeamToId.get(t.team?.id);
         if (!teamId) continue;
         const acc = possAcc.get(teamId) ?? { poss: 0, pass: 0, n: 0 };

@@ -65,11 +65,44 @@ export interface Match {
   status: MatchStatus;
   minute: number | null; // current minute when live
   broadcasts?: Broadcast[]; // US TV / streaming carriers (ESPN geoBroadcasts)
+  // Per-match detail, populated for live/finished games (from the ESPN summary).
+  timeline?: MatchEvent[]; // goals + cards, in order, with minute & scorer
+  stats?: MatchStats; // home/away team comparison stats
 }
 
 export interface Broadcast {
   name: string;
   type: "tv" | "stream";
+}
+
+// A goal or card on the match timeline. `minute` is the display clock ("9'",
+// "90'+2'"); `teamId` is our team id (or "" if unmapped). `assist` is the
+// assisting player for goals. `text` is ESPN's short description.
+export interface MatchEvent {
+  type: "goal" | "yellow" | "red";
+  minute: string;
+  teamId: string;
+  player: string;
+  assist?: string;
+  text?: string;
+}
+
+// Per-match team stats, one value per side. All optional — a given feed may
+// omit some. Possession/passAccuracy are percentages.
+export interface MatchTeamStats {
+  possession?: number;
+  shots?: number;
+  shotsOnTarget?: number;
+  passAccuracy?: number;
+  fouls?: number;
+  corners?: number;
+  offsides?: number;
+  saves?: number;
+}
+
+export interface MatchStats {
+  home: MatchTeamStats;
+  away: MatchTeamStats;
 }
 
 export interface Player {
