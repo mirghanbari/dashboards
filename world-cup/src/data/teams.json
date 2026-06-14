@@ -406,11 +406,11 @@
     "goalsFor": 7,
     "goalsAgainst": 1,
     "points": 3,
-    "possession": 64.9,
-    "ppda": 7.2,
+    "possession": 64.8,
+    "ppda": 7.3,
     "cleanSheets": 0,
-    "passCompletion": 86.9,
-    "xgFor": 3.99,
+    "passCompletion": 86.8,
+    "xgFor": 3.91,
     "xgAgainst": 0.41
   },
   {
@@ -452,12 +452,12 @@
     "goalsFor": 1,
     "goalsAgainst": 7,
     "points": 0,
-    "possession": 35.1,
+    "possession": 35.2,
     "ppda": 14.8,
     "cleanSheets": 0,
-    "passCompletion": 82.2,
+    "passCompletion": 82.3,
     "xgFor": 0.41,
-    "xgAgainst": 3.99
+    "xgAgainst": 3.91
   },
   {
     "id": "ned",
