@@ -984,20 +984,20 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.1,
+        "possession": 58.9,
         "shots": 9,
         "shotsOnTarget": 6,
-        "passAccuracy": 88.3,
+        "passAccuracy": 88.4,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 1
       },
       "away": {
-        "possession": 40.9,
+        "possession": 41.1,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 84.6,
+        "passAccuracy": 84.5,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
