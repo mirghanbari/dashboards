@@ -44,6 +44,27 @@ const DEFAULT_DIR: Record<SortKey, SortDir> = {
 
 const POSITIONS: (Position | "all")[] = ["all", "GK", "DEF", "MID", "FWD"];
 
+// A player "shows" once they've actually featured. We hide squad members with a
+// clean zero line across every counting stat (no apps, minutes, goals, cards,
+// defensive actions or xG) to keep the table to players with something to show.
+// A defender with minutes but no goals still qualifies (minutes > 0).
+const ACTIVITY_FIELDS: (keyof Player)[] = [
+  "appearances",
+  "minutes",
+  "goals",
+  "assists",
+  "shots",
+  "yellowCards",
+  "redCards",
+  "chancesCreated",
+  "tackles",
+  "interceptions",
+  "clearances",
+  "xg",
+  "xa",
+];
+const hasFeatured = (p: Player) => ACTIVITY_FIELDS.some((f) => (p[f] as number) > 0);
+
 export function Players() {
   const [search, setSearch] = useState("");
   const [position, setPosition] = useState<Position | "all">("all");
@@ -55,6 +76,10 @@ export function Players() {
     () => [...TEAMS].sort((a, b) => a.name.localeCompare(b.name)),
     [],
   );
+
+  // Base pool: only players who've featured. Everything else (search, position,
+  // team, sort) works off this so the "of N" count reflects active players.
+  const activePlayers = useMemo(() => PLAYERS.filter(hasFeatured), []);
 
   // Pick a column: same one flips direction, a new one starts in its natural
   // direction. Used by both the header clicks and the "Sort by" dropdown.
@@ -75,7 +100,7 @@ export function Players() {
 
   const visible = useMemo(() => {
     const q = search.trim().toLowerCase();
-    const filtered = PLAYERS.filter((p) => {
+    const filtered = activePlayers.filter((p) => {
       if (position !== "all" && p.position !== position) return false;
       if (team !== "all" && p.teamId !== team) return false;
       if (q && !p.name.toLowerCase().includes(q) && !p.club.toLowerCase().includes(q))
@@ -103,14 +128,14 @@ export function Players() {
       return b.goals - a.goals; // stable tiebreak: most goals first
     };
     return filtered.sort(cmp).slice(0, 300);
-  }, [search, position, team, sort, sortDir]);
+  }, [activePlayers, search, position, team, sort, sortDir]);
 
   return (
     <>
       <header className="page-head">
         <h1 className="page-title">Players</h1>
         <p className="page-sub">
-          Showing {visible.length} of {PLAYERS.length} players
+          Showing {visible.length} of {activePlayers.length} players
         </p>
       </header>
 
