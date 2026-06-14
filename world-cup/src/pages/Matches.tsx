@@ -33,15 +33,14 @@ export function Matches() {
     }).sort((a, b) => +new Date(a.date) - +new Date(b.date));
   }, [stage, group, status]);
 
-  // Live matches float to a pinned block at the top (like the Overview page),
-  // so they're excluded from the day groups below to avoid showing twice.
+  // Live matches also float to a pinned block at the top (like the Overview
+  // page); they intentionally still appear in their own day section below too.
   const live = useMemo(() => visible.filter((m) => m.status === "live"), [visible]);
 
-  // Group the remaining (non-live) visible matches by calendar day for readability.
+  // Group all visible matches by calendar day for readability.
   const byDay = useMemo(() => {
     const map = new Map<string, typeof visible>();
     for (const m of visible) {
-      if (m.status === "live") continue;
       const key = new Date(m.date).toLocaleDateString(undefined, {
         weekday: "short",
         month: "short",
@@ -169,9 +168,7 @@ function MatchList({
         </section>
       )}
 
-      {live.length === 0 && byDay.length === 0 && (
-        <p className="empty">No matches match these filters.</p>
-      )}
+      {byDay.length === 0 && <p className="empty">No matches match these filters.</p>}
 
       {byDay.map(([day, dayMatches]) => (
         <section key={day} className="day-group">
