@@ -1019,7 +1019,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 38,
+    "minute": 39,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1041,6 +1041,13 @@
         "teamId": "civ",
         "player": "Seko Fofana",
         "text": "Seko Fofana Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "38'",
+        "teamId": "civ",
+        "player": "Franck Kessié",
+        "text": "Franck Kessié Yellow Card"
       }
     ],
     "stats": {
