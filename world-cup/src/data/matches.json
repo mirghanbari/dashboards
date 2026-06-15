@@ -1173,9 +1173,9 @@
     "homeTeamId": "swe",
     "awayTeamId": "tun",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 43,
+    "minute": 44,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1205,14 +1205,22 @@
         "player": "Alexander Isak",
         "text": "Alexander Isak Goal",
         "assist": "Viktor Gyökeres"
+      },
+      {
+        "type": "goal",
+        "minute": "43'",
+        "teamId": "tun",
+        "player": "Omar Rekik",
+        "text": "Omar Rekik Goal - Header",
+        "assist": "Hannibal Mejbri"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58.6,
+        "possession": 58.4,
         "shots": 5,
         "shotsOnTarget": 3,
-        "passAccuracy": 81.6,
+        "passAccuracy": 81.2,
         "accuratePasses": 160,
         "fouls": 4,
         "corners": 2,
@@ -1222,17 +1230,17 @@
         "duelsWon": 21
       },
       "away": {
-        "possession": 41.4,
-        "shots": 2,
-        "shotsOnTarget": 0,
-        "passAccuracy": 73,
-        "accuratePasses": 100,
+        "possession": 41.6,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 73.2,
+        "accuratePasses": 101,
         "fouls": 2,
         "corners": 0,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.06,
-        "duelsWon": 19
+        "xg": 0.09,
+        "duelsWon": 20
       }
     }
   },
