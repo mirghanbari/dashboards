@@ -1175,7 +1175,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 8,
+    "minute": 9,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1196,29 +1196,29 @@
         "minute": "7'",
         "teamId": "swe",
         "player": "Yasin Ayari",
-        "text": "Yasin Ayari Goal"
+        "text": "Yasin Ayari Goal - Volley"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.9,
-        "shots": 1,
-        "shotsOnTarget": 0,
+        "possession": 62.1,
+        "shots": 3,
+        "shotsOnTarget": 2,
         "passAccuracy": 75,
-        "accuratePasses": 21,
+        "accuratePasses": 27,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.05,
+        "xg": 0.17,
         "duelsWon": 7
       },
       "away": {
-        "possession": 39.1,
+        "possession": 37.9,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 50,
-        "accuratePasses": 8,
+        "accuratePasses": 10,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
