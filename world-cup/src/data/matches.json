@@ -98,7 +98,9 @@
         "fouls": 12,
         "corners": 3,
         "offsides": 1,
-        "saves": 2
+        "saves": 2,
+        "xg": 1.46,
+        "duelsWon": 47
       },
       "away": {
         "possession": 39.5,
@@ -109,7 +111,9 @@
         "fouls": 11,
         "corners": 1,
         "offsides": 1,
-        "saves": 2
+        "saves": 2,
+        "xg": 0.07,
+        "duelsWon": 33
       }
     }
   },
@@ -185,7 +189,9 @@
         "fouls": 9,
         "corners": 4,
         "offsides": 2,
-        "saves": 3
+        "saves": 3,
+        "xg": 2.3,
+        "duelsWon": 56
       },
       "away": {
         "possession": 38.5,
@@ -196,7 +202,9 @@
         "fouls": 16,
         "corners": 5,
         "offsides": 2,
-        "saves": 4
+        "saves": 4,
+        "xg": 0.83,
+        "duelsWon": 38
       }
     }
   },
@@ -292,7 +300,9 @@
         "fouls": 10,
         "corners": 9,
         "offsides": 1,
-        "saves": 2
+        "saves": 2,
+        "xg": 1.23,
+        "duelsWon": 71
       },
       "away": {
         "possession": 38.9,
@@ -303,7 +313,9 @@
         "fouls": 20,
         "corners": 4,
         "offsides": 0,
-        "saves": 1
+        "saves": 1,
+        "xg": 0.96,
+        "duelsWon": 79
       }
     }
   },
@@ -436,7 +448,9 @@
         "fouls": 13,
         "corners": 3,
         "offsides": 2,
-        "saves": 1
+        "saves": 1,
+        "xg": 1.42,
+        "duelsWon": 65
       },
       "away": {
         "possession": 34.7,
@@ -447,7 +461,9 @@
         "fouls": 17,
         "corners": 1,
         "offsides": 1,
-        "saves": 3
+        "saves": 3,
+        "xg": 0.54,
+        "duelsWon": 55
       }
     }
   },
@@ -528,7 +544,9 @@
         "fouls": 12,
         "corners": 3,
         "offsides": 0,
-        "saves": 5
+        "saves": 5,
+        "xg": 0.6,
+        "duelsWon": 36
       },
       "away": {
         "possession": 68,
@@ -539,7 +557,9 @@
         "fouls": 11,
         "corners": 10,
         "offsides": 1,
-        "saves": 3
+        "saves": 3,
+        "xg": 3.2,
+        "duelsWon": 37
       }
     }
   },
@@ -614,7 +634,9 @@
         "fouls": 16,
         "corners": 6,
         "offsides": 0,
-        "saves": 2
+        "saves": 2,
+        "xg": 1.26,
+        "duelsWon": 53
       },
       "away": {
         "possession": 48.6,
@@ -625,7 +647,9 @@
         "fouls": 14,
         "corners": 2,
         "offsides": 1,
-        "saves": 4
+        "saves": 4,
+        "xg": 1.37,
+        "duelsWon": 62
       }
     }
   },
@@ -705,7 +729,9 @@
         "fouls": 23,
         "corners": 4,
         "offsides": 3,
-        "saves": 1
+        "saves": 1,
+        "xg": 1.05,
+        "duelsWon": 51
       },
       "away": {
         "possession": 46.3,
@@ -716,7 +742,9 @@
         "fouls": 21,
         "corners": 3,
         "offsides": 1,
-        "saves": 2
+        "saves": 2,
+        "xg": 1.05,
+        "duelsWon": 59
       }
     }
   },
@@ -783,7 +811,9 @@
         "fouls": 12,
         "corners": 5,
         "offsides": 1,
-        "saves": 8
+        "saves": 8,
+        "xg": 1.18,
+        "duelsWon": 42
       },
       "away": {
         "possession": 71.6,
@@ -794,7 +824,9 @@
         "fouls": 4,
         "corners": 8,
         "offsides": 3,
-        "saves": 2
+        "saves": 2,
+        "xg": 1.36,
+        "duelsWon": 46
       }
     }
   },
@@ -901,7 +933,9 @@
         "fouls": 18,
         "corners": 8,
         "offsides": 0,
-        "saves": 1
+        "saves": 1,
+        "xg": 4.22,
+        "duelsWon": 47
       },
       "away": {
         "possession": 35.4,
@@ -912,7 +946,9 @@
         "fouls": 11,
         "corners": 1,
         "offsides": 1,
-        "saves": 4
+        "saves": 4,
+        "xg": 0.41,
+        "duelsWon": 50
       }
     }
   },
@@ -1010,7 +1046,9 @@
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
-        "saves": 1
+        "saves": 1,
+        "xg": 0.78,
+        "duelsWon": 46
       },
       "away": {
         "possession": 40.2,
@@ -1021,7 +1059,9 @@
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
-        "saves": 4
+        "saves": 4,
+        "xg": 0.59,
+        "duelsWon": 28
       }
     }
   },
@@ -1102,18 +1142,22 @@
         "fouls": 10,
         "corners": 3,
         "offsides": 0,
-        "saves": 1
+        "saves": 1,
+        "xg": 1.68,
+        "duelsWon": 57
       },
       "away": {
         "possession": 51.8,
-        "shots": 11,
+        "shots": 12,
         "shotsOnTarget": 1,
         "passAccuracy": 85,
         "accuratePasses": 420,
         "fouls": 13,
         "corners": 6,
         "offsides": 0,
-        "saves": 3
+        "saves": 3,
+        "xg": 1.01,
+        "duelsWon": 45
       }
     }
   },
