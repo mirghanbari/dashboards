@@ -91,9 +91,12 @@ export interface MatchEvent {
 // omit some. Possession/passAccuracy are percentages.
 export interface MatchTeamStats {
   possession?: number;
+  xg?: number; // expected goals (FotMob)
   shots?: number;
   shotsOnTarget?: number;
   passAccuracy?: number;
+  accuratePasses?: number; // count of completed passes (ESPN)
+  duelsWon?: number; // ground + aerial duels won (FotMob)
   fouls?: number;
   corners?: number;
   offsides?: number;

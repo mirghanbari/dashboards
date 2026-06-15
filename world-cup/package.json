@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "ingest": "node scripts/ingest-espn.mjs",
     "ingest:fotmob": "node scripts/ingest-fotmob.mjs",
+    "ingest:fotmob:live": "node scripts/ingest-fotmob.mjs --live",
     "ingest:friendlies": "node scripts/ingest-friendlies.mjs",
     "ingest:predictions": "node scripts/ingest-predictions.mjs",
     "fetch-data": "node scripts/fetch-data.mjs"

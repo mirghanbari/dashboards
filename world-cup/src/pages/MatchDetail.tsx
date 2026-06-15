@@ -9,12 +9,21 @@ const EVENT_ICON: Record<MatchEvent["type"], string> = {
   red: "🟥",
 };
 
-// The team-comparison stats to show, in display order. `suffix` for percentages.
-const STAT_ROWS: { key: keyof MatchTeamStats; label: string; suffix?: string }[] = [
+// The team-comparison stats to show, in display order. `suffix` for percentages,
+// `decimals` for fractional values (xG).
+const STAT_ROWS: {
+  key: keyof MatchTeamStats;
+  label: string;
+  suffix?: string;
+  decimals?: number;
+}[] = [
+  { key: "xg", label: "Expected goals (xG)", decimals: 2 },
   { key: "possession", label: "Possession", suffix: "%" },
   { key: "shots", label: "Shots" },
   { key: "shotsOnTarget", label: "Shots on target" },
   { key: "passAccuracy", label: "Pass accuracy", suffix: "%" },
+  { key: "accuratePasses", label: "Accurate passes" },
+  { key: "duelsWon", label: "Duels won" },
   { key: "corners", label: "Corners" },
   { key: "offsides", label: "Offsides" },
   { key: "fouls", label: "Fouls" },
@@ -84,16 +93,17 @@ function StatBars({ match }: { match: Match }) {
         {rows.map((r) => {
           const total = r.home + r.away;
           const homeShare = total > 0 ? r.home / total : 0.5;
+          const fmt = (n: number) => (r.decimals != null ? n.toFixed(r.decimals) : n);
           return (
             <div key={r.key} className="md-stat">
               <div className="md-stat-row">
                 <span className="md-stat-val">
-                  {r.home}
+                  {fmt(r.home)}
                   {r.suffix}
                 </span>
                 <span className="md-stat-label">{r.label}</span>
                 <span className="md-stat-val">
-                  {r.away}
+                  {fmt(r.away)}
                   {r.suffix}
                 </span>
               </div>

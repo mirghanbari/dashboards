@@ -141,6 +141,21 @@ async function main() {
     /* no prior players.json (first run) — nothing to fall back to */
   }
 
+  // Prior committed matches, indexed by ESPN event id. ESPN rebuilds matches
+  // from scratch every run, but xG and duels-won come from FotMob (and from the
+  // fast live-only FotMob pass in the live-poll loop). Carry those FotMob-owned
+  // match.stats fields forward so an ESPN-only tick doesn't wipe them; the next
+  // FotMob pass refreshes them.
+  const priorStatsByEvent = new Map();
+  try {
+    const prior = JSON.parse(readFileSync(join(DATA_DIR, "matches.json"), "utf8"));
+    for (const m of prior) {
+      if (m.espnEventId && m.stats) priorStatsByEvent.set(m.espnEventId, m.stats);
+    }
+  } catch {
+    /* no prior matches.json (first run) */
+  }
+
   await pool(teams, 6, async (team) => {
     let athletes;
     try {
@@ -322,6 +337,7 @@ async function main() {
       shots: readStat(t.statistics, "totalShots"),
       shotsOnTarget: readStat(t.statistics, "shotsOnTarget"),
       passAccuracy: tp > 0 ? Math.round((ap / tp) * 1000) / 10 : 0,
+      accuratePasses: ap,
       fouls: readStat(t.statistics, "foulsCommitted"),
       corners: readStat(t.statistics, "wonCorners"),
       offsides: readStat(t.statistics, "offsides"),
@@ -347,7 +363,17 @@ async function main() {
         boxTeams.find((t) => espnTeamToId.get(String(t.team?.id)) === teamId);
       const home = sideFor(m.homeTeamId);
       const away = sideFor(m.awayTeamId);
-      if (home || away) m.stats = { home: sideStats(home), away: sideStats(away) };
+      if (home || away) {
+        m.stats = { home: sideStats(home), away: sideStats(away) };
+        // Preserve FotMob-owned fields (xG, duels won) from the last commit so an
+        // ESPN-only refresh doesn't drop them; FotMob refreshes them next pass.
+        const prev = priorStatsByEvent.get(m.espnEventId);
+        for (const side of ["home", "away"]) {
+          for (const f of ["xg", "duelsWon"]) {
+            if (prev?.[side]?.[f] != null) m.stats[side][f] = prev[side][f];
+          }
+        }
+      }
 
       // Season aggregation: finished matches only.
       if (m.status !== "finished") continue;

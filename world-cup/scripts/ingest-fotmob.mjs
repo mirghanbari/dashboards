@@ -33,6 +33,10 @@ const HEADERS = {
   Accept: "application/json",
 };
 const PAUSE_MS = 1500; // be polite between match requests
+// --live: fast pass for the live-poll loop — only refreshes in-progress matches'
+// per-match xG/duels into matches.json, skipping the (static) finished-match
+// season aggregation and the players/teams writes. Keeps each loop tick cheap.
+const LIVE_ONLY = process.argv.includes("--live");
 
 async function getJson(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
@@ -138,7 +142,8 @@ function teamStatPair(periods, title) {
   const num = (v) => {
     if (typeof v === "number") return v;
     if (typeof v === "string") {
-      const m = v.match(/-?\d+/);
+      // first number in the cell — handles "467 (90%)" and decimals like "1.46"
+      const m = v.match(/-?\d+(?:\.\d+)?/);
       return m ? Number(m[0]) : null;
     }
     return null;
@@ -159,10 +164,21 @@ async function main() {
   const read = (f) => JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
   const teams = read("teams.json");
   const players = read("players.json");
+  const matches = read("matches.json");
 
   // teamKey → teamId, teamId → team object, and teamId → (normName → player)
   const teamIdByKey = new Map(teams.map((t) => [teamKey(t.name), t.id]));
   const teamById = new Map(teams.map((t) => [t.id, t]));
+
+  // Unordered team-pair → our match(es), so a FotMob fixture can be joined to
+  // ours by its two teams (date-disambiguated below if a pair recurs).
+  const matchesByPair = new Map();
+  const pairKey = (a, b) => [a, b].sort().join("|");
+  for (const m of matches) {
+    const k = pairKey(m.homeTeamId, m.awayTeamId);
+    if (!matchesByPair.has(k)) matchesByPair.set(k, []);
+    matchesByPair.get(k).push(m);
+  }
   const playersByTeam = new Map(); // teamId → Map(normName → player)
   for (const p of players) {
     if (!playersByTeam.has(p.teamId)) playersByTeam.set(p.teamId, new Map());
@@ -199,7 +215,21 @@ async function main() {
   );
   const all = league.fixtures?.allMatches ?? [];
   const finished = all.filter((m) => m.status?.finished);
-  console.log(`  ${all.length} fixtures, ${finished.length} finished.`);
+  const live = all.filter(
+    (m) => m.status?.started && !m.status?.finished && !m.status?.cancelled,
+  );
+  // Finished matches feed the season aggregation; live matches only get their
+  // per-match xG/duels refreshed. --live skips the finished set entirely.
+  const targets = LIVE_ONLY ? live : [...finished, ...live];
+  console.log(
+    `  ${all.length} fixtures, ${finished.length} finished, ${live.length} live` +
+      (LIVE_ONLY ? " (live-only pass)" : "") +
+      ".",
+  );
+  if (LIVE_ONLY && !live.length) {
+    console.log("No live match — nothing to refresh.");
+    return;
+  }
 
   // Track what matched so name-mismatches are visible and fixable.
   const unmatchedTeams = new Set();
@@ -215,22 +245,27 @@ async function main() {
     "minutes", "xg", "xa", "xgot", "chancesCreated", "finalThirdEntries",
     "tackles", "interceptions", "clearances", "setPieceXg", "passCompletion", "passes",
   ];
-  for (const p of players) {
-    for (const f of OWNED_FIELDS) p[f] = 0;
-    delete p._passAcc;
-    delete p._passAtt;
-  }
-  // Team xG for/against and approximate PPDA are likewise owned + re-summed.
-  for (const t of teams) {
-    t.xgFor = 0;
-    t.xgAgainst = 0;
-    t.ppda = 0;
-    t._oppPasses = 0; // opponent passes (PPDA numerator), accumulated
-    t._defActions = 0; // own tackles + interceptions + fouls (denominator)
+  // Skipped in --live: it doesn't touch the season aggregation or players/teams,
+  // so zeroing those owned fields would wipe real data without re-summing it.
+  if (!LIVE_ONLY) {
+    for (const p of players) {
+      for (const f of OWNED_FIELDS) p[f] = 0;
+      delete p._passAcc;
+      delete p._passAtt;
+    }
+    // Team xG for/against and approximate PPDA are likewise owned + re-summed.
+    for (const t of teams) {
+      t.xgFor = 0;
+      t.xgAgainst = 0;
+      t.ppda = 0;
+      t._oppPasses = 0; // opponent passes (PPDA numerator), accumulated
+      t._defActions = 0; // own tackles + interceptions + fouls (denominator)
+    }
   }
 
-  // ---- pull each finished match and fold its stats into our players ------
-  for (const fx of finished) {
+  // ---- pull each match: refresh per-match xG/duels, then (finished only) fold
+  // its player/team stats into the season aggregation ----------------------
+  for (const fx of targets) {
     let detail;
     try {
       detail = await getJson(`${FOTMOB}/matchDetails?matchId=${fx.id}`);
@@ -239,6 +274,44 @@ async function main() {
       continue;
     }
     await sleep(PAUSE_MS);
+
+    const periods = detail.content?.stats?.Periods?.All?.stats ?? [];
+    const homeId = teamIdByKey.get(teamKey(fx.home?.name));
+    const awayId = teamIdByKey.get(teamKey(fx.away?.name));
+
+    // Per-match xG + duels won onto our match.stats (ESPN has neither), for live
+    // AND finished games. Join the FotMob fixture to our match by team pair; if a
+    // pair recurs, pick the match whose date is closest to the fixture's kickoff.
+    if (homeId && awayId) {
+      const candidates = matchesByPair.get(pairKey(homeId, awayId)) ?? [];
+      let ourMatch = candidates[0];
+      if (candidates.length > 1) {
+        const t = Date.parse(fx.status?.utcTime ?? "");
+        ourMatch = candidates.reduce((best, c) =>
+          Math.abs(Date.parse(c.date) - t) < Math.abs(Date.parse(best.date) - t) ? c : best,
+        );
+      }
+      const xg = teamStatPair(periods, "Expected goals (xG)"); // [home, away]
+      const duels = teamStatPair(periods, "Duels won");
+      if (ourMatch && (xg || duels)) {
+        ourMatch.stats ??= { home: {}, away: {} };
+        // FotMob's [0]/[1] are its home/away; map to our home/away by team id.
+        const idx = (teamId) => (teamId === homeId ? 0 : 1);
+        for (const side of ["home", "away"]) {
+          const teamId = side === "home" ? ourMatch.homeTeamId : ourMatch.awayTeamId;
+          const i = idx(teamId);
+          if (xg) ourMatch.stats[side].xg = Math.round(xg[i] * 100) / 100;
+          if (duels) ourMatch.stats[side].duelsWon = duels[i];
+        }
+      }
+    }
+
+    // The season aggregation below folds only completed matches (live partials
+    // would pollute cumulative totals); --live also stops here.
+    if (LIVE_ONLY || !fx.status?.finished) {
+      process.stdout.write(LIVE_ONLY ? "•" : ".");
+      continue;
+    }
 
     const ps = detail.content?.playerStats ?? {};
     const shotmap = detail.content?.shotmap?.shots ?? [];
@@ -314,9 +387,7 @@ async function main() {
     // hence "approx"). A side's PPDA = opponent passes / own defensive actions
     // (tackles + interceptions + fouls); accumulate numerator/denominator across
     // matches and divide at the end. Lower = more aggressive pressing.
-    const periods = detail.content?.stats?.Periods?.All?.stats ?? [];
-    const homeId = teamIdByKey.get(teamKey(fx.home?.name));
-    const awayId = teamIdByKey.get(teamKey(fx.away?.name));
+    // (periods/homeId/awayId computed at the top of the loop.)
     const passes = teamStatPair(periods, "Passes");
     const tackles = teamStatPair(periods, "Tackles");
     const interceptions = teamStatPair(periods, "Interceptions");
@@ -337,6 +408,16 @@ async function main() {
     process.stdout.write(".");
   }
   console.log();
+
+  // --live only refreshed match.stats — write that and stop (no season totals).
+  if (LIVE_ONLY) {
+    writeFileSync(
+      join(DATA_DIR, "matches.json"),
+      JSON.stringify(matches, null, 2) + "\n",
+    );
+    console.log(`Refreshed live xG/duels for ${live.length} match(es) → matches.json.`);
+    return;
+  }
 
   // Finalize pass completion (% across all matches played).
   for (const p of players) {
@@ -374,7 +455,8 @@ async function main() {
   const write = (f, o) => writeFileSync(join(DATA_DIR, f), JSON.stringify(o, null, 2) + "\n");
   write("players.json", players);
   write("teams.json", teams);
-  console.log("Wrote advanced stats into src/data/players.json + teams.json.");
+  write("matches.json", matches);
+  console.log("Wrote advanced stats into src/data/players.json + teams.json + matches.json.");
 
   // NOTE: still unfilled (FotMob doesn't expose these) — candidates for the
   // worldfootballR_data CSV fallback later: progressivePasses, progressiveCarries,

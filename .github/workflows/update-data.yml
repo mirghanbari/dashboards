@@ -111,6 +111,10 @@ jobs:
             fi
             sleep 60
             npm run ingest || echo "ESPN ingest failed (non-fatal; retrying next tick)"
+            # Refresh in-progress matches' xG / duels won (live-only FotMob pass —
+            # only fetches the live match(es), so it stays cheap each tick). ESPN
+            # preserves the prior values, so this just keeps them current.
+            npm run ingest:fotmob:live || echo "FotMob live refresh failed (non-fatal)"
             commit_and_deploy
           done
           echo "No live match; done."
