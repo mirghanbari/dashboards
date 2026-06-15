@@ -1174,7 +1174,7 @@
     "awayTeamId": "tun",
     "homeScore": 5,
     "awayScore": 1,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -1264,7 +1264,7 @@
         "possession": 50.9,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.3,
+        "passAccuracy": 79.1,
         "accuratePasses": 287,
         "fouls": 8,
         "corners": 2,
