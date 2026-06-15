@@ -498,12 +498,12 @@
     "goalsFor": 5,
     "goalsAgainst": 1,
     "points": 3,
-    "possession": 49.1,
-    "ppda": 11.4,
+    "possession": 48.7,
+    "ppda": 12.4,
     "cleanSheets": 0,
-    "passCompletion": 78.6,
-    "xgFor": 1.37,
-    "xgAgainst": 0.28
+    "passCompletion": 78.1,
+    "xgFor": 1.34,
+    "xgAgainst": 0.27
   },
   {
     "id": "jpn",
@@ -544,12 +544,12 @@
     "goalsFor": 1,
     "goalsAgainst": 5,
     "points": 0,
-    "possession": 50.9,
-    "ppda": 10.8,
+    "possession": 51.3,
+    "ppda": 10.5,
     "cleanSheets": 0,
-    "passCompletion": 79.1,
-    "xgFor": 0.28,
-    "xgAgainst": 1.37
+    "passCompletion": 78.7,
+    "xgFor": 0.27,
+    "xgAgainst": 1.34
   },
   {
     "id": "bel",

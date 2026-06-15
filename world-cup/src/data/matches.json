@@ -1196,7 +1196,7 @@
         "minute": "7'",
         "teamId": "swe",
         "player": "Yasin Ayari",
-        "text": "Yasin Ayari Goal"
+        "text": "Yasin Ayari Goal - Volley"
       },
       {
         "type": "goal",
@@ -1248,30 +1248,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.1,
+        "possession": 48.7,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 78.6,
-        "accuratePasses": 279,
+        "passAccuracy": 78.1,
+        "accuratePasses": 278,
         "fouls": 10,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.37,
-        "duelsWon": 42
+        "xg": 1.33,
+        "duelsWon": 41
       },
       "away": {
-        "possession": 50.9,
+        "possession": 51.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.1,
-        "accuratePasses": 288,
+        "passAccuracy": 78.7,
+        "accuratePasses": 292,
         "fouls": 8,
         "corners": 2,
         "offsides": 6,
         "saves": 1,
-        "xg": 0.29,
-        "duelsWon": 46
+        "xg": 0.28,
+        "duelsWon": 51
       }
     }
   },
