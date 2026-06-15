@@ -1172,7 +1172,7 @@
     "city": "Guadalupe",
     "homeTeamId": "swe",
     "awayTeamId": "tun",
-    "homeScore": 4,
+    "homeScore": 5,
     "awayScore": 1,
     "status": "live",
     "minute": null,
@@ -1236,34 +1236,42 @@
         "player": "Mattias Svanberg",
         "text": "Mattias Svanberg Goal",
         "assist": "Alexander Isak"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+6'",
+        "teamId": "swe",
+        "player": "Yasin Ayari",
+        "text": "Yasin Ayari Goal",
+        "assist": "Lucas Bergvall"
       }
     ],
     "stats": {
       "home": {
         "possession": 49.1,
-        "shots": 12,
-        "shotsOnTarget": 6,
-        "passAccuracy": 79.2,
-        "accuratePasses": 278,
+        "shots": 13,
+        "shotsOnTarget": 7,
+        "passAccuracy": 79.3,
+        "accuratePasses": 280,
         "fouls": 10,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.26,
-        "duelsWon": 41
+        "xg": 1.28,
+        "duelsWon": 42
       },
       "away": {
         "possession": 50.9,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.4,
-        "accuratePasses": 286,
+        "passAccuracy": 79.3,
+        "accuratePasses": 287,
         "fouls": 8,
         "corners": 2,
         "offsides": 6,
         "saves": 1,
         "xg": 0.2,
-        "duelsWon": 45
+        "duelsWon": 46
       }
     }
   },
