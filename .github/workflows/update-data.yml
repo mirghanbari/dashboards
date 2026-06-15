@@ -65,6 +65,13 @@ jobs:
         # DTAI host is unreachable, keep the last committed predictions.
         continue-on-error: true
         run: npm run ingest:predictions
+      - name: Refresh FIFA world ranking
+        # Fills teams.json fifaRank (ESPN has none). FIFA publishes only a few
+        # times a year and not during the tournament, so this rarely changes;
+        # runs on the initial pass only (not the live loop). Non-fatal: if
+        # inside.fifa.com hiccups, ingest-espn carries the prior ranks forward.
+        continue-on-error: true
+        run: npm run ingest:fifa
 
       # ---- Commit the initial pass, then fast-poll while a match is live ----
       - name: Commit data and poll live scores

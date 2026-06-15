@@ -92,6 +92,17 @@ async function main() {
   console.log("Fetching standings (groups + records)…");
   const standings = await getJson(`${BASE}/v2/sports/soccer/fifa.world/standings`);
 
+  // FIFA ranking is owned by ingest-fifa-rankings.mjs; ESPN doesn't expose it.
+  // Carry forward any previously-committed fifaRank so an ESPN rebuild (incl.
+  // the per-minute live loop) doesn't zero it between FIFA refreshes.
+  const priorFifaRank = new Map();
+  try {
+    const prior = JSON.parse(readFileSync(join(DATA_DIR, "teams.json"), "utf8"));
+    for (const t of prior) if (t.fifaRank) priorFifaRank.set(t.id, t.fifaRank);
+  } catch {
+    /* no prior teams.json (first run) */
+  }
+
   const teams = [];
   const espnIdToTeamId = new Map();
   for (const group of standings.children) {
@@ -108,7 +119,7 @@ async function main() {
         flag: FLAG[abbr] ?? "🏳️",
         group: letter,
         confederation: confOf(abbr),
-        fifaRank: 0, // ESPN does not expose FIFA ranking here
+        fifaRank: priorFifaRank.get(id) ?? 0, // ESPN has none; ingest-fifa-rankings.mjs fills it
         played: stat(e, "gamesPlayed"),
         won: stat(e, "wins"),
         drawn: stat(e, "ties"),

@@ -49,6 +49,34 @@ export function eloRank(teamId: string): number | null {
   return i === -1 ? null : i + 1;
 }
 
+export interface TeamRanking {
+  team: Team;
+  fifaRank: number; // 0 if not yet ingested
+  elo: number | null;
+  eloRank: number | null; // 1 = strongest among the 48 rated WC teams
+}
+
+/**
+ * The 48 WC teams with both ranking systems attached: FIFA world ranking (from
+ * teams.json, via ingest-fifa-rankings.mjs) and the DTAI Elo rating + its rank
+ * within the field. Unsorted — callers order by whichever column they show.
+ */
+export function teamRankings(): TeamRanking[] {
+  const eloSorted = PREDICTIONS.teams
+    .filter((t) => t.elo != null)
+    .sort((a, b) => (b.elo as number) - (a.elo as number));
+  const eloRankByTeam = new Map(eloSorted.map((t, i) => [t.teamId, i + 1]));
+  return TEAMS.map((t) => {
+    const pred = predictionForTeam(t.id);
+    return {
+      team: t,
+      fifaRank: t.fifaRank,
+      elo: pred?.elo ?? null,
+      eloRank: eloRankByTeam.get(t.id) ?? null,
+    };
+  });
+}
+
 /** Strength-rated teams, strongest Elo first. */
 export function teamsByRating(): TeamPrediction[] {
   return PREDICTIONS.teams

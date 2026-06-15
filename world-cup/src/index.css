@@ -610,6 +610,87 @@ tr.qualifies {
   background: linear-gradient(90deg, rgba(11, 191, 91, 0.08), transparent);
 }
 
+/* ---------------- World rankings (Teams page) ---------------- */
+.rankings-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.rankings-toggle {
+  display: flex;
+  gap: 6px;
+}
+.rankings-tab {
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink-soft);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.13s;
+}
+.rankings-tab:hover {
+  border-color: var(--pitch-2);
+}
+.rankings-tab.is-active {
+  background: var(--pitch-1);
+  color: #fff;
+  border-color: var(--pitch-1);
+}
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.ranking-table th {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  font-weight: 600;
+  padding: 4px 8px;
+}
+.ranking-table td {
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid var(--line);
+}
+.ranking-table .col-pos {
+  width: 48px;
+  color: var(--ink-faint);
+  font-weight: 700;
+}
+.ranking-table .col-team {
+  text-align: left;
+  white-space: nowrap;
+}
+.ranking-table .col-num {
+  width: 56px;
+  color: var(--ink-faint);
+}
+.ranking-table .col-pts {
+  width: 72px;
+  font-weight: 800;
+}
+.rankings-more {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pitch-1);
+  cursor: pointer;
+}
+.rankings-more:hover {
+  text-decoration: underline;
+}
+
 /* ---------------- Team detail ---------------- */
 .back-link {
   display: inline-block;
