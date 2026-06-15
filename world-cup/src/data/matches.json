@@ -1019,7 +1019,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 89,
+    "minute": 90,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1062,14 +1062,22 @@
         "teamId": "ecu",
         "player": "Jackson Porozo",
         "text": "Jackson Porozo Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'",
+        "teamId": "civ",
+        "player": "Amad Diallo",
+        "text": "Amad Diallo Goal",
+        "assist": "Wilfried Singo"
       }
     ],
     "stats": {
       "home": {
         "possession": 48.9,
-        "shots": 11,
-        "shotsOnTarget": 2,
-        "passAccuracy": 84.5,
+        "shots": 12,
+        "shotsOnTarget": 3,
+        "passAccuracy": 84.1,
         "fouls": 10,
         "corners": 3,
         "offsides": 0,
@@ -1079,7 +1087,7 @@
         "possession": 51.1,
         "shots": 11,
         "shotsOnTarget": 1,
-        "passAccuracy": 86.2,
+        "passAccuracy": 85.5,
         "fouls": 11,
         "corners": 2,
         "offsides": 0,
