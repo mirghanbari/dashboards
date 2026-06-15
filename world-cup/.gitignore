@@ -5,6 +5,9 @@ node_modules
 dist
 dist-ssr
 
+# Generated each build by scripts/gen-live.mjs (slim live-scores poll target)
+public/live.json
+
 # Logs
 *.log
 

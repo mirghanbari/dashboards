@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { MATCHES, groupLetters } from "../data";
+import { MATCHES, groupLetters, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
 import { Bracket } from "../components/Bracket";
 import type { Stage } from "../types";
@@ -24,14 +24,18 @@ export function Matches() {
   const [group, setGroup] = useState<string>("all");
   const [status, setStatus] = useState<"all" | "live" | "finished" | "scheduled">("all");
 
+  // Overlay live score/status updates polled since the page loaded.
+  const livePatches = useLiveMatches();
+  const allMatches = useMemo(() => applyLive(MATCHES, livePatches), [livePatches]);
+
   const visible = useMemo(() => {
-    return MATCHES.filter((m) => {
+    return allMatches.filter((m) => {
       if (stage !== "all" && m.stage !== stage) return false;
       if (group !== "all" && m.group !== group) return false;
       if (status !== "all" && m.status !== status) return false;
       return true;
     }).sort((a, b) => +new Date(a.date) - +new Date(b.date));
-  }, [stage, group, status]);
+  }, [allMatches, stage, group, status]);
 
   // Live matches also float to a pinned block at the top (like the Overview
   // page); they intentionally still appear in their own day section below too.

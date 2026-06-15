@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-import { MATCHES, TEAMS, PLAYERS, META, topScorers, getTeam, goalsByGroup } from "../data";
+import { MATCHES, TEAMS, PLAYERS, META, topScorers, getTeam, goalsByGroup, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
 import { StatCard } from "../components/StatCard";
 import { BarChart } from "../components/BarChart";
 
 export function Overview() {
-  const finished = MATCHES.filter((m) => m.status === "finished");
-  const live = MATCHES.filter((m) => m.status === "live");
-  const upcoming = MATCHES.filter((m) => m.status === "scheduled")
+  // Overlay live score/status updates polled since the page loaded.
+  const matches = applyLive(MATCHES, useLiveMatches());
+  const finished = matches.filter((m) => m.status === "finished");
+  const live = matches.filter((m) => m.status === "live");
+  const upcoming = matches.filter((m) => m.status === "scheduled")
     .sort((a, b) => +new Date(a.date) - +new Date(b.date))
     .slice(0, 6);
   const goals = finished.reduce(

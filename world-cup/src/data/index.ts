@@ -219,3 +219,5 @@ export function goalsByGroup(): { label: string; value: number }[] {
     value: TEAMS.filter((t) => t.group === g).reduce((s, t) => s + t.goalsFor, 0),
   }));
 }
+
+export { useLiveMatches, applyLive } from "./live";

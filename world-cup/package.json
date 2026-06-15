@@ -5,8 +5,9 @@
   "type": "module",
   "description": "FIFA World Cup 2026 dashboard — games, teams, players & stats (React + TypeScript + Vite)",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "dev": "node scripts/gen-live.mjs && vite",
+    "build": "node scripts/gen-live.mjs && tsc --noEmit && vite build",
+    "gen:live": "node scripts/gen-live.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "ingest": "node scripts/ingest-espn.mjs",
