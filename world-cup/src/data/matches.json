@@ -1363,7 +1363,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": 34,
+    "minute": 35,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1400,11 +1400,18 @@
         "player": "Emam Ashour",
         "text": "Emam Ashour Goal",
         "assist": "Mohamed Salah"
+      },
+      {
+        "type": "yellow",
+        "minute": "34'",
+        "teamId": "egy",
+        "player": "Ahmed Fatouh",
+        "text": "Ahmed Fatouh Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 55.8,
+        "possession": 55.6,
         "shots": 3,
         "shotsOnTarget": 0,
         "passAccuracy": 85.2,
@@ -1414,20 +1421,20 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.12,
-        "duelsWon": 15
+        "duelsWon": 16
       },
       "away": {
-        "possession": 44.2,
-        "shots": 1,
-        "shotsOnTarget": 1,
-        "passAccuracy": 82.6,
+        "possession": 44.4,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "passAccuracy": 82,
         "accuratePasses": 109,
-        "fouls": 2,
+        "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.07,
-        "duelsWon": 19
+        "xg": 0.1,
+        "duelsWon": 20
       }
     }
   },
