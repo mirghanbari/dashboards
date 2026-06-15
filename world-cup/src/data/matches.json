@@ -1360,10 +1360,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bel",
     "awayTeamId": "egy",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 66,
+    "minute": 68,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1407,15 +1407,22 @@
         "teamId": "egy",
         "player": "Ahmed Fatouh",
         "text": "Ahmed Fatouh Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "66'",
+        "teamId": "bel",
+        "player": "Mohamed Hany",
+        "text": "Mohamed Hany Own Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.4,
+        "possession": 56.7,
         "shots": 10,
         "shotsOnTarget": 1,
-        "passAccuracy": 86.6,
-        "accuratePasses": 292,
+        "passAccuracy": 86.5,
+        "accuratePasses": 296,
         "fouls": 11,
         "corners": 2,
         "offsides": 0,
@@ -1424,7 +1431,7 @@
         "duelsWon": 45
       },
       "away": {
-        "possession": 43.6,
+        "possession": 43.3,
         "shots": 11,
         "shotsOnTarget": 4,
         "passAccuracy": 80.1,
