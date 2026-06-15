@@ -20,27 +20,25 @@ export function stageLabel(m: Match): string {
 function TeamLine({ teamId, score, winner }: { teamId: string; score: number | null; winner: boolean }) {
   const team = getTeam(teamId);
   const isTbd = team.id === "tbd";
-  const inner = (
-    <>
-      <span className="team-flag">{team.flag}</span>
-      <span className="team-name">{team.name}</span>
-      <span className="team-code">{team.code}</span>
-    </>
-  );
   return (
     <div className={"match-team" + (winner ? " is-winner" : "")}>
-      {isTbd ? (
-        <span className="team-id-wrap">{inner}</span>
-      ) : (
-        // Stop the click from bubbling to the card's match-detail navigation.
-        <Link
-          to={`/teams/${team.id}`}
-          className="team-id-wrap"
-          onClick={(e) => e.stopPropagation()}
-        >
-          {inner}
-        </Link>
-      )}
+      <span className="team-id-wrap">
+        <span className="team-flag">{team.flag}</span>
+        {isTbd ? (
+          <span className="team-name">{team.name}</span>
+        ) : (
+          // Only the country name links to the team page; the rest of the card
+          // clicks through to the match detail. Stop the bubble so this wins.
+          <Link
+            to={`/teams/${team.id}`}
+            className="team-name"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {team.name}
+          </Link>
+        )}
+        <span className="team-code">{team.code}</span>
+      </span>
       <span className="match-score">{score ?? "–"}</span>
     </div>
   );

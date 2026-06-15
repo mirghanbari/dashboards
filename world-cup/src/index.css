@@ -327,8 +327,9 @@ main.container {
   flex: 1;
   min-width: 0;
 }
-.team-id-wrap:hover .team-name {
+a.team-name:hover {
   color: var(--pitch-1);
+  text-decoration: underline;
 }
 .team-flag {
   font-size: 1.25rem;
