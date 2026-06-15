@@ -1288,7 +1288,7 @@
     "awayTeamId": "cpv",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
