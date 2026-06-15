@@ -1463,10 +1463,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "ksa",
     "awayTeamId": "uru",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 41,
+    "minute": 42,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1479,6 +1479,15 @@
       {
         "name": "Peacock",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "41'",
+        "teamId": "ksa",
+        "player": "Abdulelah Al-Amri",
+        "text": "Abdulelah Al-Amri Goal"
       }
     ],
     "stats": {
