@@ -1172,10 +1172,10 @@
     "city": "Guadalupe",
     "homeTeamId": "swe",
     "awayTeamId": "tun",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 1,
     "status": "live",
-    "minute": 87,
+    "minute": 88,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1228,28 +1228,35 @@
         "player": "Viktor Gyökeres",
         "text": "Viktor Gyökeres Goal",
         "assist": "Alexander Isak"
+      },
+      {
+        "type": "goal",
+        "minute": "84'",
+        "teamId": "swe",
+        "player": "Mattias Svanberg",
+        "text": "Mattias Svanberg Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 49.1,
-        "shots": 9,
-        "shotsOnTarget": 4,
+        "possession": 48.8,
+        "shots": 10,
+        "shotsOnTarget": 5,
         "passAccuracy": 79.3,
         "accuratePasses": 261,
         "fouls": 9,
         "corners": 3,
-        "offsides": 4,
+        "offsides": 3,
         "saves": 0,
         "xg": 0.93,
         "duelsWon": 39
       },
       "away": {
-        "possession": 50.9,
+        "possession": 51.2,
         "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 79.3,
-        "accuratePasses": 268,
+        "accuratePasses": 272,
         "fouls": 7,
         "corners": 2,
         "offsides": 4,
