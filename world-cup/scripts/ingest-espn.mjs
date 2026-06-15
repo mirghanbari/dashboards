@@ -19,10 +19,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "src", "data");
 const BASE = "https://site.api.espn.com/apis";
 
+// Per-request timeout. The live-poll loop in update-data.yml calls this on every
+// tick; without a timeout a single hung ESPN connection blocks the whole job
+// forever (it never commits, never exits, and holds the workflow's concurrency
+// slot for the full 200-min cap — freezing live scores for hours).
+const FETCH_TIMEOUT_MS = 15000;
+
 async function getJson(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {

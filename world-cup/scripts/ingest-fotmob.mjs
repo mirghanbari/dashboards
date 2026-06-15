@@ -38,10 +38,14 @@ const PAUSE_MS = 1500; // be polite between match requests
 // season aggregation and the players/teams writes. Keeps each loop tick cheap.
 const LIVE_ONLY = process.argv.includes("--live");
 
+// Per-request timeout — the live (`--live`) pass runs on every poll-loop tick,
+// so a hung FotMob connection must not stall the whole job (see ingest-espn.mjs).
+const FETCH_TIMEOUT_MS = 15000;
+
 async function getJson(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url, { headers: HEADERS });
+      const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {
