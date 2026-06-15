@@ -3,7 +3,7 @@
   "sourceUrl": "https://dtai.cs.kuleuven.be/sports/worldcup2026/",
   "blogUrl": "https://dtai.cs.kuleuven.be/sports/blog/predicting-the-2026-world-cup:-can-anyone-stop-spain/",
   "method": "20,000 Monte-Carlo tournament simulations, updated after each game",
-  "fetchedAt": "2026-06-15T21:46:15.912Z",
+  "fetchedAt": "2026-06-15T21:55:55.941Z",
   "teams": [
     {
       "code": "ESP",
@@ -66,7 +66,7 @@
       "code": "ENG",
       "teamId": "eng",
       "name": "England",
-      "flag": "🏴",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "group": "L",
       "winGroup": 0.6476,
       "advance": 0.9704,
@@ -541,7 +541,7 @@
       "code": "SCO",
       "teamId": "sco",
       "name": "Scotland",
-      "flag": "🏴",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "group": "C",
       "winGroup": 0.1515,
       "advance": 0.8191,
