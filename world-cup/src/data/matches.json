@@ -1289,7 +1289,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 23,
+    "minute": 25,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1328,7 +1328,7 @@
         "duelsWon": 7
       },
       "away": {
-        "possession": 32,
+        "possession": 30.7,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 74.5,
