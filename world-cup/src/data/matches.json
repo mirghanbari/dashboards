@@ -1172,10 +1172,10 @@
     "city": "Guadalupe",
     "homeTeamId": "swe",
     "awayTeamId": "tun",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": 29,
+    "minute": 31,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1196,35 +1196,43 @@
         "minute": "7'",
         "teamId": "swe",
         "player": "Yasin Ayari",
-        "text": "Yasin Ayari Goal - Volley"
+        "text": "Yasin Ayari Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "30'",
+        "teamId": "swe",
+        "player": "Alexander Isak",
+        "text": "Alexander Isak Goal",
+        "assist": "Viktor Gyökeres"
       }
     ],
     "stats": {
       "home": {
-        "possession": 69.1,
-        "shots": 3,
-        "shotsOnTarget": 2,
-        "passAccuracy": 83,
-        "accuratePasses": 117,
+        "possession": 58.3,
+        "shots": 4,
+        "shotsOnTarget": 3,
+        "passAccuracy": 82.2,
+        "accuratePasses": 120,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.17,
-        "duelsWon": 11
+        "duelsWon": 14
       },
       "away": {
-        "possession": 30.9,
+        "possession": 41.7,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 62.3,
-        "accuratePasses": 38,
+        "passAccuracy": 72.5,
+        "accuratePasses": 74,
         "fouls": 2,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0.03,
-        "duelsWon": 9
+        "duelsWon": 10
       }
     }
   },
