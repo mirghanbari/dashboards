@@ -1175,7 +1175,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": 60,
+    "minute": 61,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1220,6 +1220,14 @@
         "teamId": "tun",
         "player": "Rani Khedira",
         "text": "Rani Khedira Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "59'",
+        "teamId": "swe",
+        "player": "Viktor Gyökeres",
+        "text": "Viktor Gyökeres Goal",
+        "assist": "Alexander Isak"
       }
     ],
     "stats": {
@@ -1227,27 +1235,27 @@
         "possession": 49.4,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 79.5,
+        "passAccuracy": 79.2,
         "accuratePasses": 202,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 0,
         "xg": 0.4,
-        "duelsWon": 28
+        "duelsWon": 29
       },
       "away": {
         "possession": 50.6,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.9,
-        "accuratePasses": 202,
+        "passAccuracy": 79,
+        "accuratePasses": 203,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 0,
         "xg": 0.19,
-        "duelsWon": 34
+        "duelsWon": 35
       }
     }
   },
