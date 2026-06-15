@@ -1016,10 +1016,10 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "civ",
     "awayTeamId": "ecu",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 90,
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
