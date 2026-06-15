@@ -1466,7 +1466,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 79,
+    "minute": 80,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1495,15 +1495,22 @@
         "teamId": "ksa",
         "player": "Abdulelah Al-Amri",
         "text": "Abdulelah Al-Amri Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "80'",
+        "teamId": "uru",
+        "player": "Maxi Araújo",
+        "text": "Maxi Araújo Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 35.5,
+        "possession": 34.9,
         "shots": 5,
         "shotsOnTarget": 3,
         "passAccuracy": 74.4,
-        "accuratePasses": 203,
+        "accuratePasses": 206,
         "fouls": 9,
         "corners": 4,
         "offsides": 0,
@@ -1512,16 +1519,16 @@
         "duelsWon": 32
       },
       "away": {
-        "possession": 64.5,
+        "possession": 65.1,
         "shots": 14,
         "shotsOnTarget": 5,
-        "passAccuracy": 88.3,
-        "accuratePasses": 424,
+        "passAccuracy": 88.2,
+        "accuratePasses": 439,
         "fouls": 6,
         "corners": 6,
         "offsides": 5,
         "saves": 2,
-        "xg": 0.7,
+        "xg": 0.75,
         "duelsWon": 34
       }
     }
