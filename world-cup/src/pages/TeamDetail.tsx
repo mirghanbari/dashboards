@@ -11,6 +11,8 @@ import {
 import { MatchCard } from "../components/MatchCard";
 import { StatCard } from "../components/StatCard";
 import { RatingBars } from "../components/RatingBars";
+import { useJsonLd } from "../seo/jsonLd";
+import { teamSchema } from "../seo/schema";
 import type { Position } from "../types";
 
 const fmtPct = (n: number) => Math.round(n * 100) + "%";
@@ -27,6 +29,7 @@ export function TeamDetail() {
   const { teamId = "" } = useParams();
   const exists = TEAMS.some((t) => t.id === teamId);
   const team = getTeam(teamId);
+  useJsonLd(exists ? teamSchema(team) : null);
 
   if (!exists) {
     return (

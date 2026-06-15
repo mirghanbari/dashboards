@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import { getPlayer, getTeam, playersForTeam, PLAYERS } from "../data";
 import { StatCard } from "../components/StatCard";
+import { useJsonLd } from "../seo/jsonLd";
+import { playerSchema } from "../seo/schema";
 import type { Position } from "../types";
 
 const POSITION_LABEL: Record<Position, string> = {
@@ -13,6 +15,7 @@ const POSITION_LABEL: Record<Position, string> = {
 export function PlayerDetail() {
   const { playerId = "" } = useParams();
   const player = getPlayer(playerId);
+  useJsonLd(player ? playerSchema(player) : null);
 
   if (!player) {
     return (

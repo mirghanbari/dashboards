@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import { getMatch, getTeam, gameOdds } from "../data";
 import { stageLabel } from "../components/MatchCard";
+import { useJsonLd } from "../seo/jsonLd";
+import { matchSchema } from "../seo/schema";
 import type { Match, MatchEvent, MatchTeamStats } from "../types";
 
 const EVENT_ICON: Record<MatchEvent["type"], string> = {
@@ -151,6 +153,7 @@ function Forecast({ match }: { match: Match }) {
 export function MatchDetail() {
   const { matchId = "" } = useParams();
   const match = getMatch(matchId);
+  useJsonLd(match ? matchSchema(match) : null);
 
   if (!match) {
     return (
