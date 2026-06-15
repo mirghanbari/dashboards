@@ -1311,28 +1311,35 @@
         "teamId": "cpv",
         "player": "Sidny Lopes Cabral",
         "text": "Sidny Lopes Cabral Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "esp",
+        "player": "Pedri",
+        "text": "Pedri Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 74.2,
-        "shots": 24,
+        "possession": 74.1,
+        "shots": 25,
         "shotsOnTarget": 7,
-        "passAccuracy": 91.7,
-        "accuratePasses": 710,
+        "passAccuracy": 91.8,
+        "accuratePasses": 718,
         "fouls": 9,
-        "corners": 9,
+        "corners": 10,
         "offsides": 2,
         "saves": 1,
-        "xg": 2.15,
+        "xg": 2.16,
         "duelsWon": 38
       },
       "away": {
-        "possession": 25.8,
-        "shots": 4,
-        "shotsOnTarget": 0,
-        "passAccuracy": 74,
-        "accuratePasses": 199,
+        "possession": 25.9,
+        "shots": 5,
+        "shotsOnTarget": 1,
+        "passAccuracy": 73.7,
+        "accuratePasses": 202,
         "fouls": 1,
         "corners": 1,
         "offsides": 3,
