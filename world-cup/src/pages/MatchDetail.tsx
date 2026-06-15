@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { getMatch, getTeam, gameOdds } from "../data";
+import { getMatch, getTeam, gameOdds, useLiveMatches } from "../data";
 import { stageLabel } from "../components/MatchCard";
 import { useJsonLd } from "../seo/jsonLd";
 import { matchSchema } from "../seo/schema";
@@ -152,7 +152,11 @@ function Forecast({ match }: { match: Match }) {
 
 export function MatchDetail() {
   const { matchId = "" } = useParams();
-  const match = getMatch(matchId);
+  const base = getMatch(matchId);
+  // Overlay live updates polled since load — score/status/minute, plus a live
+  // match's fresh timeline + stats — so the page updates in place (no reload).
+  const livePatch = useLiveMatches().get(matchId);
+  const match = base && livePatch ? { ...base, ...livePatch } : base;
   useJsonLd(match ? matchSchema(match) : null);
 
   if (!match) {

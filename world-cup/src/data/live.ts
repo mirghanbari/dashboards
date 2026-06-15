@@ -11,10 +11,13 @@ import { useEffect, useRef, useState } from "react";
 import { MATCHES } from ".";
 import type { Match } from "../types";
 
-/** The fields the slim live.json carries — enough to refresh a match card. */
+/**
+ * The fields live.json carries. Every entry has the slim card fields; live and
+ * recently-finished matches also carry `timeline`/`stats` for the detail page.
+ */
 export type LiveMatch = Pick<
   Match,
-  "id" | "status" | "homeScore" | "awayScore" | "minute"
+  "id" | "status" | "homeScore" | "awayScore" | "minute" | "timeline" | "stats"
 >;
 
 const LIVE_URL = `${import.meta.env.BASE_URL}live.json`;
