@@ -1175,7 +1175,7 @@
     "homeScore": 4,
     "awayScore": 1,
     "status": "live",
-    "minute": 88,
+    "minute": 89,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1234,12 +1234,13 @@
         "minute": "84'",
         "teamId": "swe",
         "player": "Mattias Svanberg",
-        "text": "Mattias Svanberg Goal"
+        "text": "Mattias Svanberg Goal",
+        "assist": "Alexander Isak"
       }
     ],
     "stats": {
       "home": {
-        "possession": 48.8,
+        "possession": 48.7,
         "shots": 10,
         "shotsOnTarget": 5,
         "passAccuracy": 79.3,
@@ -1248,19 +1249,19 @@
         "corners": 3,
         "offsides": 3,
         "saves": 0,
-        "xg": 0.93,
-        "duelsWon": 39
+        "xg": 1,
+        "duelsWon": 40
       },
       "away": {
-        "possession": 51.2,
+        "possession": 51.3,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.3,
+        "passAccuracy": 79.1,
         "accuratePasses": 272,
         "fouls": 7,
         "corners": 2,
         "offsides": 4,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.19,
         "duelsWon": 41
       }
