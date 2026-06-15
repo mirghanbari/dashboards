@@ -1363,7 +1363,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 13,
+    "minute": 14,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1385,34 +1385,41 @@
         "teamId": "egy",
         "player": "Marawan Attia",
         "text": "Marawan Attia Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "14'",
+        "teamId": "bel",
+        "player": "Timothy Castagne",
+        "text": "Timothy Castagne Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 36.6,
+        "possession": 43.8,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 84.1,
-        "accuratePasses": 37,
+        "passAccuracy": 85.5,
+        "accuratePasses": 53,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.08,
-        "duelsWon": 4
+        "duelsWon": 6
       },
       "away": {
-        "possession": 63.4,
+        "possession": 56.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 85.5,
-        "accuratePasses": 65,
-        "fouls": 1,
+        "passAccuracy": 83.5,
+        "accuratePasses": 66,
+        "fouls": 2,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 10
+        "duelsWon": 11
       }
     }
   },
