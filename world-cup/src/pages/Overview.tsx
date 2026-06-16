@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MATCHES, TEAMS, PLAYERS, META, topScorers, getTeam, goalsByGroup, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
+import { ScoreBoard } from "../components/ScoreBoard";
 import { StatCard } from "../components/StatCard";
 import { BarChart } from "../components/BarChart";
 
@@ -25,6 +26,8 @@ export function Overview() {
 
   return (
     <>
+      <ScoreBoard matches={matches} />
+
       <section className="hero">
         <p className="hero-kicker">
           {new Date(META.startDate).toLocaleDateString(undefined, {

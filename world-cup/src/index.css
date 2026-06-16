@@ -267,6 +267,117 @@ main.container {
 }
 
 /* ---------------- Match cards ---------------- */
+/* ---------------- Scoreboard (ESPN-style strip) ---------------- */
+.scoreboard {
+  margin: 4px 0 26px;
+}
+.scoreboard-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.scoreboard-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-soft);
+}
+.scoreboard-count {
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+}
+.scoreboard-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.score-tile {
+  flex: 0 0 auto;
+  width: 168px;
+  scroll-snap-align: start;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px 11px 10px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.15s;
+}
+.score-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+.score-tile.status-live {
+  border-color: rgba(255, 45, 85, 0.4);
+  box-shadow: 0 0 0 1px rgba(255, 45, 85, 0.25), var(--shadow);
+}
+.score-tile-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.66rem;
+  margin-bottom: 7px;
+  color: var(--ink-faint);
+}
+.score-tile-stage {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.score-tile-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--live);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.score-tile-ft {
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.score-tile-time {
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+}
+.score-row.is-dim {
+  color: var(--ink-faint);
+}
+.score-flag {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.score-code {
+  font-weight: 600;
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+}
+.score-num {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.score-row.is-winner .score-code {
+  font-weight: 700;
+}
+
 .match-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
