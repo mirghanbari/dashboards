@@ -1546,7 +1546,7 @@
     "awayTeamId": "nzl",
     "homeScore": 2,
     "awayScore": 2,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -1604,25 +1604,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 47.7,
+        "possession": 48.3,
         "shots": 17,
         "shotsOnTarget": 4,
         "passAccuracy": 77,
-        "accuratePasses": 305,
-        "fouls": 9,
-        "corners": 3,
+        "accuratePasses": 312,
+        "fouls": 10,
+        "corners": 4,
         "offsides": 2,
         "saves": 6,
         "xg": 1.54,
         "duelsWon": 51
       },
       "away": {
-        "possession": 52.3,
+        "possession": 51.7,
         "shots": 14,
         "shotsOnTarget": 8,
-        "passAccuracy": 84.7,
+        "passAccuracy": 84.5,
         "accuratePasses": 377,
-        "fouls": 7,
+        "fouls": 8,
         "corners": 1,
         "offsides": 0,
         "saves": 2,
