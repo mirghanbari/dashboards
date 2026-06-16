@@ -1545,9 +1545,9 @@
     "homeTeamId": "irn",
     "awayTeamId": "nzl",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": 54,
+    "minute": 55,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1577,16 +1577,24 @@
         "teamId": "irn",
         "player": "Ramin Rezaeian",
         "text": "Ramin Rezaeian Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "nzl",
+        "player": "Elijah Just",
+        "text": "Elijah Just Goal",
+        "assist": "Chris Wood"
       }
     ],
     "stats": {
       "home": {
-        "possession": 47.8,
+        "possession": 46.8,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.9,
+        "passAccuracy": 79.6,
         "accuratePasses": 215,
-        "fouls": 2,
+        "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
@@ -1594,11 +1602,11 @@
         "duelsWon": 30
       },
       "away": {
-        "possession": 52.2,
-        "shots": 10,
-        "shotsOnTarget": 5,
-        "passAccuracy": 87.2,
-        "accuratePasses": 259,
+        "possession": 53.2,
+        "shots": 11,
+        "shotsOnTarget": 6,
+        "passAccuracy": 87.8,
+        "accuratePasses": 273,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
