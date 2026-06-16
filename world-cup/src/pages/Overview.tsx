@@ -42,8 +42,8 @@ export function Overview() {
         </p>
         <h1 className="hero-title">{META.tournament}</h1>
         <p className="hero-sub">
-          48 nations · {META.hosts.join(" · ")}. Live games, standings, squads
-          and the players lighting up the tournament.
+          Live games, standings, squads and the players lighting up the
+          tournament.
         </p>
         <div className="hero-cta">
           <Link to="/matches" className="btn btn-primary">
