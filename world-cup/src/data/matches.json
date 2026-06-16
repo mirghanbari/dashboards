@@ -1770,7 +1770,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": 70,
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
