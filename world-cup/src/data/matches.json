@@ -100,7 +100,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.46,
-        "duelsWon": 47
+        "duelsWon": 47,
+        "boxTouches": 20
       },
       "away": {
         "possession": 39.5,
@@ -113,7 +114,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 0.07,
-        "duelsWon": 33
+        "duelsWon": 33,
+        "boxTouches": 2
       }
     }
   },
@@ -191,7 +193,8 @@
         "offsides": 2,
         "saves": 3,
         "xg": 2.3,
-        "duelsWon": 56
+        "duelsWon": 56,
+        "boxTouches": 24
       },
       "away": {
         "possession": 38.5,
@@ -204,7 +207,8 @@
         "offsides": 2,
         "saves": 4,
         "xg": 0.83,
-        "duelsWon": 38
+        "duelsWon": 38,
+        "boxTouches": 12
       }
     }
   },
@@ -302,7 +306,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.23,
-        "duelsWon": 71
+        "duelsWon": 71,
+        "boxTouches": 37
       },
       "away": {
         "possession": 38.9,
@@ -315,7 +320,8 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.96,
-        "duelsWon": 79
+        "duelsWon": 79,
+        "boxTouches": 15
       }
     }
   },
@@ -450,7 +456,8 @@
         "offsides": 2,
         "saves": 1,
         "xg": 1.42,
-        "duelsWon": 65
+        "duelsWon": 65,
+        "boxTouches": 53
       },
       "away": {
         "possession": 34.7,
@@ -463,7 +470,8 @@
         "offsides": 1,
         "saves": 3,
         "xg": 0.54,
-        "duelsWon": 55
+        "duelsWon": 55,
+        "boxTouches": 11
       }
     }
   },
@@ -546,7 +554,8 @@
         "offsides": 0,
         "saves": 5,
         "xg": 0.6,
-        "duelsWon": 36
+        "duelsWon": 36,
+        "boxTouches": 8
       },
       "away": {
         "possession": 68,
@@ -559,7 +568,8 @@
         "offsides": 1,
         "saves": 3,
         "xg": 3.2,
-        "duelsWon": 37
+        "duelsWon": 37,
+        "boxTouches": 42
       }
     }
   },
@@ -636,7 +646,8 @@
         "offsides": 0,
         "saves": 2,
         "xg": 1.26,
-        "duelsWon": 53
+        "duelsWon": 53,
+        "boxTouches": 22
       },
       "away": {
         "possession": 48.6,
@@ -649,7 +660,8 @@
         "offsides": 1,
         "saves": 4,
         "xg": 1.37,
-        "duelsWon": 62
+        "duelsWon": 62,
+        "boxTouches": 13
       }
     }
   },
@@ -731,7 +743,8 @@
         "offsides": 3,
         "saves": 1,
         "xg": 1.05,
-        "duelsWon": 51
+        "duelsWon": 51,
+        "boxTouches": 22
       },
       "away": {
         "possession": 46.3,
@@ -744,7 +757,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.05,
-        "duelsWon": 59
+        "duelsWon": 59,
+        "boxTouches": 21
       }
     }
   },
@@ -813,7 +827,8 @@
         "offsides": 1,
         "saves": 8,
         "xg": 1.18,
-        "duelsWon": 42
+        "duelsWon": 42,
+        "boxTouches": 18
       },
       "away": {
         "possession": 71.6,
@@ -826,7 +841,8 @@
         "offsides": 3,
         "saves": 2,
         "xg": 1.36,
-        "duelsWon": 46
+        "duelsWon": 46,
+        "boxTouches": 51
       }
     }
   },
@@ -935,7 +951,8 @@
         "offsides": 0,
         "saves": 1,
         "xg": 4.22,
-        "duelsWon": 47
+        "duelsWon": 47,
+        "boxTouches": 63
       },
       "away": {
         "possession": 35.4,
@@ -948,7 +965,8 @@
         "offsides": 1,
         "saves": 4,
         "xg": 0.41,
-        "duelsWon": 50
+        "duelsWon": 50,
+        "boxTouches": 10
       }
     }
   },
@@ -1048,7 +1066,8 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.78,
-        "duelsWon": 46
+        "duelsWon": 46,
+        "boxTouches": 33
       },
       "away": {
         "possession": 40.2,
@@ -1061,7 +1080,8 @@
         "offsides": 0,
         "saves": 4,
         "xg": 0.59,
-        "duelsWon": 28
+        "duelsWon": 28,
+        "boxTouches": 19
       }
     }
   },
@@ -1144,7 +1164,8 @@
         "offsides": 0,
         "saves": 1,
         "xg": 1.52,
-        "duelsWon": 58
+        "duelsWon": 58,
+        "boxTouches": 39
       },
       "away": {
         "possession": 51.6,
@@ -1157,7 +1178,8 @@
         "offsides": 0,
         "saves": 3,
         "xg": 1.01,
-        "duelsWon": 44
+        "duelsWon": 44,
+        "boxTouches": 16
       }
     }
   },
@@ -1258,7 +1280,8 @@
         "offsides": 3,
         "saves": 1,
         "xg": 1.33,
-        "duelsWon": 41
+        "duelsWon": 41,
+        "boxTouches": 22
       },
       "away": {
         "possession": 51.3,
@@ -1271,7 +1294,8 @@
         "offsides": 6,
         "saves": 1,
         "xg": 0.28,
-        "duelsWon": 51
+        "duelsWon": 51,
+        "boxTouches": 10
       }
     }
   },
@@ -1332,7 +1356,8 @@
         "offsides": 2,
         "saves": 1,
         "xg": 2.1,
-        "duelsWon": 40
+        "duelsWon": 40,
+        "boxTouches": 51
       },
       "away": {
         "possession": 25.7,
@@ -1345,7 +1370,8 @@
         "offsides": 3,
         "saves": 7,
         "xg": 0.2,
-        "duelsWon": 40
+        "duelsWon": 40,
+        "boxTouches": 6
       }
     }
   },
@@ -1435,7 +1461,8 @@
         "offsides": 0,
         "saves": 2,
         "xg": 1.35,
-        "duelsWon": 58
+        "duelsWon": 58,
+        "boxTouches": 31
       },
       "away": {
         "possession": 46.4,
@@ -1448,7 +1475,8 @@
         "offsides": 1,
         "saves": 3,
         "xg": 1.08,
-        "duelsWon": 59
+        "duelsWon": 59,
+        "boxTouches": 27
       }
     }
   },
@@ -1516,7 +1544,8 @@
         "offsides": 0,
         "saves": 9,
         "xg": 0.66,
-        "duelsWon": 40
+        "duelsWon": 40,
+        "boxTouches": 10
       },
       "away": {
         "possession": 66.8,
@@ -1529,7 +1558,8 @@
         "offsides": 6,
         "saves": 2,
         "xg": 1.72,
-        "duelsWon": 42
+        "duelsWon": 42,
+        "boxTouches": 41
       }
     }
   },
@@ -1614,7 +1644,8 @@
         "offsides": 2,
         "saves": 6,
         "xg": 1.5,
-        "duelsWon": 54
+        "duelsWon": 54,
+        "boxTouches": 25
       },
       "away": {
         "possession": 51.5,
@@ -1627,7 +1658,8 @@
         "offsides": 0,
         "saves": 2,
         "xg": 1.24,
-        "duelsWon": 43
+        "duelsWon": 43,
+        "boxTouches": 21
       }
     }
   },
