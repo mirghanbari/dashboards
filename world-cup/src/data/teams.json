@@ -594,8 +594,8 @@
     "ppda": 11.7,
     "cleanSheets": 0,
     "passCompletion": 76.8,
-    "xgFor": 1.49,
-    "xgAgainst": 1.23
+    "xgFor": 1.5,
+    "xgAgainst": 1.24
   },
   {
     "id": "egy",
@@ -639,9 +639,9 @@
     "possession": 51.5,
     "ppda": 11.7,
     "cleanSheets": 0,
-    "passCompletion": 84.5,
-    "xgFor": 1.23,
-    "xgAgainst": 1.49
+    "passCompletion": 84.3,
+    "xgFor": 1.24,
+    "xgAgainst": 1.5
   },
   {
     "id": "esp",
