@@ -1768,9 +1768,9 @@
     "homeTeamId": "irq",
     "awayTeamId": "nor",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": 28,
+    "minute": 30,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1785,34 +1785,43 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "29'",
+        "teamId": "nor",
+        "player": "Erling Haaland",
+        "text": "Erling Haaland Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 39.8,
-        "shots": 2,
+        "possession": 38.7,
+        "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 73.1,
-        "accuratePasses": 68,
+        "passAccuracy": 72.6,
+        "accuratePasses": 69,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.12,
+        "xg": 0.13,
         "duelsWon": 17,
         "boxTouches": 4
       },
       "away": {
-        "possession": 60.2,
+        "possession": 61.3,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 85.5,
-        "accuratePasses": 124,
+        "passAccuracy": 86.5,
+        "accuratePasses": 134,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.25,
         "duelsWon": 13,
-        "boxTouches": 4
+        "boxTouches": 6
       }
     }
   },
