@@ -1768,9 +1768,9 @@
     "homeTeamId": "irq",
     "awayTeamId": "nor",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": 43,
+    "minute": 44,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1812,11 +1812,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 37.6,
+        "possession": 38.3,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.9,
-        "accuratePasses": 101,
+        "passAccuracy": 75.2,
+        "accuratePasses": 103,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
@@ -1826,17 +1826,17 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 62.4,
-        "shots": 6,
-        "shotsOnTarget": 2,
+        "possession": 62.2,
+        "shots": 7,
+        "shotsOnTarget": 3,
         "passAccuracy": 87.7,
-        "accuratePasses": 200,
+        "accuratePasses": 206,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.23,
-        "duelsWon": 22,
+        "xg": 1.9,
+        "duelsWon": 24,
         "boxTouches": 9
       }
     }
