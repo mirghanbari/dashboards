@@ -686,7 +686,7 @@
     "ppda": 16.8,
     "cleanSheets": 0,
     "passCompletion": 88.4,
-    "xgFor": 1.6,
+    "xgFor": 1.59,
     "xgAgainst": 1.07
   },
   {
@@ -710,7 +710,7 @@
     "cleanSheets": 0,
     "passCompletion": 73.1,
     "xgFor": 1.07,
-    "xgAgainst": 1.6
+    "xgAgainst": 1.59
   },
   {
     "id": "cpv",
