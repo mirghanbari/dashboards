@@ -1644,7 +1644,7 @@
     "awayTeamId": "sen",
     "homeScore": 3,
     "awayScore": 1,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -1695,25 +1695,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.5,
+        "possession": 53.7,
         "shots": 11,
         "shotsOnTarget": 8,
-        "passAccuracy": 87.9,
-        "accuratePasses": 500,
+        "passAccuracy": 87.7,
+        "accuratePasses": 505,
         "fouls": 5,
         "corners": 6,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 1.89,
         "duelsWon": 43,
         "boxTouches": 19
       },
       "away": {
-        "possession": 46.5,
+        "possession": 46.3,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 85.9,
-        "accuratePasses": 426,
+        "accuratePasses": 427,
         "fouls": 9,
         "corners": 4,
         "offsides": 3,
