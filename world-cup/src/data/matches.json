@@ -1767,10 +1767,10 @@
     "city": "Foxborough, Massachusetts",
     "homeTeamId": "irq",
     "awayTeamId": "nor",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": 3,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1787,9 +1787,27 @@
     ],
     "stats": {
       "home": {
-        "duelsWon": 0
+        "possession": 47.1,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 50,
+        "accuratePasses": 4,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
       },
       "away": {
+        "possession": 52.9,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 62.5,
+        "accuratePasses": 5,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
         "duelsWon": 0
       }
     }
