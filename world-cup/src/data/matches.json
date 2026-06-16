@@ -1801,27 +1801,34 @@
         "player": "Aymen Hussein",
         "text": "Aymen Hussein Goal - Header",
         "assist": "Amir Al-Ammari"
+      },
+      {
+        "type": "goal",
+        "minute": "43'",
+        "teamId": "nor",
+        "player": "Erling Haaland",
+        "text": "Erling Haaland Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 37,
+        "possession": 37.6,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 76,
-        "accuratePasses": 98,
+        "passAccuracy": 75.9,
+        "accuratePasses": 101,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.22,
         "duelsWon": 25,
         "boxTouches": 6
       },
       "away": {
-        "possession": 63,
-        "shots": 5,
-        "shotsOnTarget": 1,
+        "possession": 62.4,
+        "shots": 6,
+        "shotsOnTarget": 2,
         "passAccuracy": 87.7,
         "accuratePasses": 200,
         "fouls": 7,
@@ -1829,8 +1836,8 @@
         "offsides": 0,
         "saves": 0,
         "xg": 1.23,
-        "duelsWon": 21,
-        "boxTouches": 7
+        "duelsWon": 22,
+        "boxTouches": 9
       }
     }
   },
