@@ -1791,15 +1791,16 @@
         "minute": "29'",
         "teamId": "nor",
         "player": "Erling Haaland",
-        "text": "Erling Haaland Goal"
+        "text": "Erling Haaland Goal",
+        "assist": "David Møller Wolfe"
       }
     ],
     "stats": {
       "home": {
-        "possession": 38.7,
+        "possession": 37.9,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 72.6,
+        "passAccuracy": 71.9,
         "accuratePasses": 69,
         "fouls": 3,
         "corners": 0,
@@ -1810,16 +1811,16 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 61.3,
-        "shots": 2,
-        "shotsOnTarget": 0,
-        "passAccuracy": 86.5,
-        "accuratePasses": 134,
+        "possession": 62.1,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 87,
+        "accuratePasses": 140,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.25,
+        "xg": 1.09,
         "duelsWon": 13,
         "boxTouches": 6
       }
