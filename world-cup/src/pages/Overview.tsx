@@ -9,9 +9,10 @@ export function Overview() {
   const matches = applyLive(MATCHES, useLiveMatches());
   const finished = matches.filter((m) => m.status === "finished");
   const live = matches.filter((m) => m.status === "live");
-  const upcoming = matches.filter((m) => m.status === "scheduled")
-    .sort((a, b) => +new Date(a.date) - +new Date(b.date))
-    .slice(0, 6);
+  const todayKey = new Date().toLocaleDateString();
+  const todayUpcoming = matches.filter(
+    (m) => m.status === "scheduled" && new Date(m.date).toLocaleDateString() === todayKey,
+  ).sort((a, b) => +new Date(a.date) - +new Date(b.date));
   const goals = finished.reduce(
     (sum, m) => sum + (m.homeScore ?? 0) + (m.awayScore ?? 0),
     0,
@@ -68,6 +69,22 @@ export function Overview() {
           </h2>
           <div className="match-grid">
             {live.map((m) => (
+              <MatchCard key={m.id} match={m} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {todayUpcoming.length > 0 && (
+        <section className="section">
+          <div className="section-head">
+            <h2 className="section-title">Upcoming today</h2>
+            <Link to="/matches" className="see-all">
+              Full schedule →
+            </Link>
+          </div>
+          <div className="match-grid">
+            {todayUpcoming.map((m) => (
               <MatchCard key={m.id} match={m} />
             ))}
           </div>
@@ -158,19 +175,6 @@ export function Overview() {
         </section>
       </div>
 
-      <section className="section">
-        <div className="section-head">
-          <h2 className="section-title">Upcoming</h2>
-          <Link to="/matches" className="see-all">
-            Full schedule →
-          </Link>
-        </div>
-        <div className="match-grid">
-          {upcoming.map((m) => (
-            <MatchCard key={m.id} match={m} />
-          ))}
-        </div>
-      </section>
     </>
   );
 }

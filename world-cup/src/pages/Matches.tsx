@@ -41,6 +41,15 @@ export function Matches() {
   // page); they intentionally still appear in their own day section below too.
   const live = useMemo(() => visible.filter((m) => m.status === "live"), [visible]);
 
+  // Today's still-to-come kickoffs get pinned just under the live block (they
+  // also remain in their own day section below, like the live cards).
+  const todayUpcoming = useMemo(() => {
+    const todayKey = new Date().toLocaleDateString();
+    return visible.filter(
+      (m) => m.status === "scheduled" && new Date(m.date).toLocaleDateString() === todayKey,
+    );
+  }, [visible]);
+
   // Group all visible matches by calendar day for readability.
   const byDay = useMemo(() => {
     const map = new Map<string, typeof visible>();
@@ -91,6 +100,7 @@ export function Matches() {
           status={status}
           setStatus={setStatus}
           live={live}
+          todayUpcoming={todayUpcoming}
           byDay={byDay}
         />
       )}
@@ -106,6 +116,7 @@ function MatchList({
   status,
   setStatus,
   live,
+  todayUpcoming,
   byDay,
 }: {
   stage: Stage | "all";
@@ -115,6 +126,7 @@ function MatchList({
   status: "all" | "live" | "finished" | "scheduled";
   setStatus: (s: "all" | "live" | "finished" | "scheduled") => void;
   live: typeof MATCHES;
+  todayUpcoming: typeof MATCHES;
   byDay: [string, typeof MATCHES][];
 }) {
   return (
@@ -166,6 +178,17 @@ function MatchList({
           </h2>
           <div className="match-grid">
             {live.map((m) => (
+              <MatchCard key={m.id} match={m} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {todayUpcoming.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">Upcoming today</h2>
+          <div className="match-grid">
+            {todayUpcoming.map((m) => (
               <MatchCard key={m.id} match={m} />
             ))}
           </div>
