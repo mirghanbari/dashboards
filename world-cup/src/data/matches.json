@@ -1465,7 +1465,7 @@
     "awayTeamId": "uru",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -1506,7 +1506,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 33.4,
+        "possession": 33.2,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 73,
@@ -1519,13 +1519,13 @@
         "duelsWon": 39
       },
       "away": {
-        "possession": 66.6,
-        "shots": 27,
+        "possession": 66.8,
+        "shots": 28,
         "shotsOnTarget": 10,
-        "passAccuracy": 88.4,
-        "accuratePasses": 536,
+        "passAccuracy": 88.5,
+        "accuratePasses": 540,
         "fouls": 6,
-        "corners": 13,
+        "corners": 14,
         "offsides": 6,
         "saves": 2,
         "xg": 1.57,
