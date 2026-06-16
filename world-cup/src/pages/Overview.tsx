@@ -56,9 +56,9 @@ export function Overview() {
       </section>
 
       <section className="stat-grid">
-        <StatCard label="Teams" value={TEAMS.length} sub="12 groups" to="/teams" />
         <StatCard label="Matches played" value={finished.length} sub={`${MATCHES.length} total`} to="/matches" />
         <StatCard label="Goals scored" value={goals} sub={finished.length ? `${(goals / finished.length).toFixed(1)} / match` : "—"} to="/stats/goals" />
+        <StatCard label="Teams" value={TEAMS.length} sub="12 groups" to="/teams" />
         <StatCard label="Players tracked" value={PLAYERS.length} to="/players" />
       </section>
 
