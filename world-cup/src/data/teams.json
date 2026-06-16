@@ -686,7 +686,7 @@
     "ppda": 16.8,
     "cleanSheets": 0,
     "passCompletion": 88.4,
-    "xgFor": 1.66,
+    "xgFor": 1.6,
     "xgAgainst": 1.07
   },
   {
@@ -706,11 +706,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 33.2,
-    "ppda": 20.3,
+    "ppda": 20.4,
     "cleanSheets": 0,
     "passCompletion": 73.1,
     "xgFor": 1.07,
-    "xgAgainst": 1.66
+    "xgAgainst": 1.6
   },
   {
     "id": "cpv",
