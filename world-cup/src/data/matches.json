@@ -1770,7 +1770,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": 84,
+    "minute": 86,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1816,16 +1816,23 @@
         "player": "Leo Østigard",
         "text": "Leo Østigard Goal - Header",
         "assist": "Martin Ødegaard"
+      },
+      {
+        "type": "yellow",
+        "minute": "86'",
+        "teamId": "irq",
+        "player": "Zaid Tahseen",
+        "text": "Zaid Tahseen Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 40.1,
+        "possession": 40.2,
         "shots": 11,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.2,
-        "accuratePasses": 227,
-        "fouls": 9,
+        "passAccuracy": 80.3,
+        "accuratePasses": 236,
+        "fouls": 10,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
@@ -1834,17 +1841,17 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 59.9,
+        "possession": 59.8,
         "shots": 11,
         "shotsOnTarget": 5,
-        "passAccuracy": 87.9,
-        "accuratePasses": 377,
+        "passAccuracy": 88,
+        "accuratePasses": 389,
         "fouls": 12,
         "corners": 5,
         "offsides": 0,
         "saves": 0,
         "xg": 2.47,
-        "duelsWon": 41,
+        "duelsWon": 42,
         "boxTouches": 20
       }
     }
