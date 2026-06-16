@@ -1643,7 +1643,7 @@
     "homeTeamId": "fra",
     "awayTeamId": "sen",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
     "minute": null,
     "broadcasts": [
@@ -1676,15 +1676,22 @@
         "player": "Bradley Barcola",
         "text": "Bradley Barcola Goal",
         "assist": "Adrien Rabiot"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+5'",
+        "teamId": "sen",
+        "player": "Ibrahim Mbaye",
+        "text": "Ibrahim Mbaye Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.1,
+        "possession": 54.2,
         "shots": 10,
         "shotsOnTarget": 7,
-        "passAccuracy": 88.3,
-        "accuratePasses": 482,
+        "passAccuracy": 87.9,
+        "accuratePasses": 493,
         "fouls": 4,
         "corners": 6,
         "offsides": 1,
@@ -1694,18 +1701,18 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 45.9,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 86,
-        "accuratePasses": 400,
+        "possession": 45.8,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 85.9,
+        "accuratePasses": 409,
         "fouls": 9,
         "corners": 4,
         "offsides": 3,
         "saves": 5,
         "xg": 0.44,
-        "duelsWon": 32,
-        "boxTouches": 13
+        "duelsWon": 33,
+        "boxTouches": 14
       }
     }
   },
