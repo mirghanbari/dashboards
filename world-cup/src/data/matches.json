@@ -1520,9 +1520,9 @@
       },
       "away": {
         "possession": 66.8,
-        "shots": 28,
+        "shots": 27,
         "shotsOnTarget": 10,
-        "passAccuracy": 88.5,
+        "passAccuracy": 88.4,
         "accuratePasses": 540,
         "fouls": 6,
         "corners": 14,
