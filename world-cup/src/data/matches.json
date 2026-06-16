@@ -1645,7 +1645,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": 64,
+    "minute": 66,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1660,27 +1660,36 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "66'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 54.9,
-        "shots": 4,
-        "shotsOnTarget": 2,
-        "passAccuracy": 87.1,
-        "accuratePasses": 351,
+        "possession": 55.5,
+        "shots": 6,
+        "shotsOnTarget": 3,
+        "passAccuracy": 87.8,
+        "accuratePasses": 380,
         "fouls": 3,
         "corners": 5,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.81,
+        "xg": 0.93,
         "duelsWon": 30,
-        "boxTouches": 10
+        "boxTouches": 12
       },
       "away": {
-        "possession": 45.1,
+        "possession": 44.5,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.9,
-        "accuratePasses": 287,
+        "passAccuracy": 85.2,
+        "accuratePasses": 300,
         "fouls": 6,
         "corners": 2,
         "offsides": 1,
