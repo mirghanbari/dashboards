@@ -1547,7 +1547,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": 88,
+    "minute": 90,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1593,16 +1593,23 @@
         "player": "Mohammad Mohebbi",
         "text": "Mohammad Mohebbi Goal - Header",
         "assist": "Ramin Rezaeian"
+      },
+      {
+        "type": "yellow",
+        "minute": "89'",
+        "teamId": "irn",
+        "player": "Ehsan Hajsafi",
+        "text": "Ehsan Hajsafi Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 47.1,
+        "possession": 47.3,
         "shots": 16,
         "shotsOnTarget": 4,
-        "passAccuracy": 76.5,
-        "accuratePasses": 287,
-        "fouls": 8,
+        "passAccuracy": 76.4,
+        "accuratePasses": 288,
+        "fouls": 9,
         "corners": 3,
         "offsides": 2,
         "saves": 5,
@@ -1610,17 +1617,17 @@
         "duelsWon": 46
       },
       "away": {
-        "possession": 52.9,
+        "possession": 52.7,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 84.6,
-        "accuratePasses": 363,
+        "passAccuracy": 84.7,
+        "accuratePasses": 365,
         "fouls": 7,
         "corners": 1,
         "offsides": 0,
         "saves": 2,
         "xg": 1.19,
-        "duelsWon": 39
+        "duelsWon": 40
       }
     }
   },
