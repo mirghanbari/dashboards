@@ -97,6 +97,7 @@ export interface MatchTeamStats {
   passAccuracy?: number;
   accuratePasses?: number; // count of completed passes (ESPN)
   duelsWon?: number; // ground + aerial duels won (FotMob)
+  boxTouches?: number; // touches in the opposition box (FotMob) — drives field tilt
   fouls?: number;
   corners?: number;
   offsides?: number;

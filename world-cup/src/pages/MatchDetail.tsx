@@ -12,15 +12,19 @@ const EVENT_ICON: Record<MatchEvent["type"], string> = {
 };
 
 // The team-comparison stats to show, in display order. `suffix` for percentages,
-// `decimals` for fractional values (xG).
+// `decimals` for fractional values (xG). `asShare` renders the value as each
+// side's % of the pair (the underlying raw counts drive the split) — used for
+// field tilt, an approximate territorial-dominance share of opposition-box touches.
 const STAT_ROWS: {
   key: keyof MatchTeamStats;
   label: string;
   suffix?: string;
   decimals?: number;
+  asShare?: boolean;
 }[] = [
   { key: "xg", label: "Expected goals (xG)", decimals: 2 },
   { key: "possession", label: "Possession", suffix: "%" },
+  { key: "boxTouches", label: "Field tilt (approx)", asShare: true },
   { key: "shots", label: "Shots" },
   { key: "shotsOnTarget", label: "Shots on target" },
   { key: "passAccuracy", label: "Pass accuracy", suffix: "%" },
@@ -96,18 +100,15 @@ function StatBars({ match }: { match: Match }) {
           const total = r.home + r.away;
           const homeShare = total > 0 ? r.home / total : 0.5;
           const fmt = (n: number) => (r.decimals != null ? n.toFixed(r.decimals) : n);
+          // Field tilt shows each side's % of the pair, not the raw touch counts.
+          const homeVal = r.asShare ? Math.round(homeShare * 100) + "%" : `${fmt(r.home)}${r.suffix ?? ""}`;
+          const awayVal = r.asShare ? Math.round((1 - homeShare) * 100) + "%" : `${fmt(r.away)}${r.suffix ?? ""}`;
           return (
             <div key={r.key} className="md-stat">
               <div className="md-stat-row">
-                <span className="md-stat-val">
-                  {fmt(r.home)}
-                  {r.suffix}
-                </span>
+                <span className="md-stat-val">{homeVal}</span>
                 <span className="md-stat-label">{r.label}</span>
-                <span className="md-stat-val">
-                  {fmt(r.away)}
-                  {r.suffix}
-                </span>
+                <span className="md-stat-val">{awayVal}</span>
               </div>
               <div className="md-stat-bar">
                 <span className="md-stat-seg md-stat-home" style={{ width: pct(homeShare) }} />

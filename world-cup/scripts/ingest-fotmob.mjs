@@ -74,6 +74,9 @@ const TEAM_ALIASES = {
   usa: "united states",
   "korea republic": "south korea",
   "czech republic": "czechia",
+  turkey: "turkiye",
+  "cote d ivoire": "ivory coast",
+  "cape verde islands": "cape verde",
 };
 const teamKey = (name) => {
   const n = norm(name);
@@ -297,7 +300,11 @@ async function main() {
       }
       const xg = teamStatPair(periods, "Expected goals (xG)"); // [home, away]
       const duels = teamStatPair(periods, "Duels won");
-      if (ourMatch && (xg || duels)) {
+      // Touches in the opposition box — the territorial-dominance source we derive
+      // an approximate "field tilt" from in the UI (ESPN has none; FotMob lacks a
+      // true final-third touch count, so the box is the tightest available zone).
+      const boxTouches = teamStatPair(periods, "Touches in opposition box");
+      if (ourMatch && (xg || duels || boxTouches)) {
         ourMatch.stats ??= { home: {}, away: {} };
         // FotMob's [0]/[1] are its home/away; map to our home/away by team id.
         const idx = (teamId) => (teamId === homeId ? 0 : 1);
@@ -306,6 +313,7 @@ async function main() {
           const i = idx(teamId);
           if (xg) ourMatch.stats[side].xg = Math.round(xg[i] * 100) / 100;
           if (duels) ourMatch.stats[side].duelsWon = duels[i];
+          if (boxTouches) ourMatch.stats[side].boxTouches = boxTouches[i];
         }
       }
     }

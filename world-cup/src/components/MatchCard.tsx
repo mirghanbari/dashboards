@@ -77,6 +77,36 @@ function MatchPrediction({ match }: { match: Match }) {
   );
 }
 
+/**
+ * Field tilt (approx) — each team's share of touches in the opposition box, a
+ * territorial-dominance proxy. Shown on live/finished cards once FotMob has data.
+ */
+function FieldTilt({ match }: { match: Match }) {
+  const h = match.stats?.home.boxTouches;
+  const a = match.stats?.away.boxTouches;
+  if (h == null || a == null || h + a === 0) return null;
+  const homeShare = h / (h + a);
+  const home = getTeam(match.homeTeamId);
+  const away = getTeam(match.awayTeamId);
+  return (
+    <div className="match-tilt" title="Field tilt (approx) — share of touches in the opposition box">
+      <div className="tilt-bar">
+        <span className="tilt-seg tilt-home" style={{ width: pct(homeShare) }} />
+        <span className="tilt-seg tilt-away" style={{ width: pct(1 - homeShare) }} />
+      </div>
+      <div className="tilt-key">
+        <span>
+          {home.code} {pct(homeShare)}
+        </span>
+        <span className="tilt-label">Field tilt</span>
+        <span>
+          {pct(1 - homeShare)} {away.code}
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export function MatchCard({ match }: { match: Match }) {
   const navigate = useNavigate();
   const date = new Date(match.date);
@@ -133,6 +163,7 @@ export function MatchCard({ match }: { match: Match }) {
         <TeamLine teamId={match.awayTeamId} score={match.awayScore} winner={awayWin} />
       </div>
       {match.status === "scheduled" && <MatchPrediction match={match} />}
+      {match.status !== "scheduled" && <FieldTilt match={match} />}
       {match.status !== "finished" && match.broadcasts && match.broadcasts.length > 0 && (
         <div className="match-bcast" title="US TV / streaming">
           {match.broadcasts.map((b) => (

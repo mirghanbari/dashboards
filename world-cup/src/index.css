@@ -1790,6 +1790,40 @@ tr.is-me .player-name {
   background: var(--gold);
 }
 
+/* ---------- Field tilt bar (match card) ---------- */
+.match-tilt {
+  margin: 10px 0 2px;
+}
+.tilt-bar {
+  display: flex;
+  height: 7px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--line);
+}
+.tilt-seg {
+  height: 100%;
+}
+.tilt-seg.tilt-home {
+  background: var(--pitch-2);
+}
+.tilt-seg.tilt-away {
+  background: var(--gold);
+}
+.tilt-key {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.tilt-key .tilt-label {
+  color: var(--ink-faint);
+}
+
 /* ---------- Team strength ratings (DTAI) ---------- */
 .rating-bars {
   display: grid;

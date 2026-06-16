@@ -382,11 +382,12 @@ async function main() {
       const away = sideFor(m.awayTeamId);
       if (home || away) {
         m.stats = { home: sideStats(home), away: sideStats(away) };
-        // Preserve FotMob-owned fields (xG, duels won) from the last commit so an
-        // ESPN-only refresh doesn't drop them; FotMob refreshes them next pass.
+        // Preserve FotMob-owned fields (xG, duels won, box touches) from the last
+        // commit so an ESPN-only refresh doesn't drop them; FotMob refreshes them
+        // next pass.
         const prev = priorStatsByEvent.get(m.espnEventId);
         for (const side of ["home", "away"]) {
-          for (const f of ["xg", "duelsWon"]) {
+          for (const f of ["xg", "duelsWon", "boxTouches"]) {
             if (prev?.[side]?.[f] != null) m.stats[side][f] = prev[side][f];
           }
         }
