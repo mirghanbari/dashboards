@@ -1547,7 +1547,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": null,
+    "minute": 46,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1581,11 +1581,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 48.8,
+        "possession": 48.9,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 80.3,
-        "accuratePasses": 191,
+        "accuratePasses": 192,
         "fouls": 2,
         "corners": 0,
         "offsides": 1,
@@ -1594,7 +1594,7 @@
         "duelsWon": 27
       },
       "away": {
-        "possession": 51.2,
+        "possession": 51.1,
         "shots": 9,
         "shotsOnTarget": 5,
         "passAccuracy": 87.2,
