@@ -1642,7 +1642,7 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "fra",
     "awayTeamId": "sen",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 1,
     "status": "live",
     "minute": null,
@@ -1682,16 +1682,24 @@
         "minute": "90'+5'",
         "teamId": "sen",
         "player": "Ibrahim Mbaye",
-        "text": "Ibrahim Mbaye Goal"
+        "text": "Ibrahim Mbaye Goal",
+        "assist": "Iliman Ndiaye"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+6'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.2,
-        "shots": 10,
-        "shotsOnTarget": 7,
-        "passAccuracy": 87.9,
-        "accuratePasses": 493,
+        "possession": 54.4,
+        "shots": 11,
+        "shotsOnTarget": 8,
+        "passAccuracy": 88,
+        "accuratePasses": 498,
         "fouls": 4,
         "corners": 6,
         "offsides": 1,
@@ -1701,7 +1709,7 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 45.8,
+        "possession": 45.6,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 85.9,
@@ -1710,8 +1718,8 @@
         "corners": 4,
         "offsides": 3,
         "saves": 5,
-        "xg": 0.44,
-        "duelsWon": 33,
+        "xg": 0.5,
+        "duelsWon": 34,
         "boxTouches": 14
       }
     }
