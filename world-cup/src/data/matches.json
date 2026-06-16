@@ -1544,10 +1544,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "irn",
     "awayTeamId": "nzl",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": 63,
+    "minute": 64,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1585,6 +1585,14 @@
         "player": "Elijah Just",
         "text": "Elijah Just Goal",
         "assist": "Chris Wood"
+      },
+      {
+        "type": "goal",
+        "minute": "64'",
+        "teamId": "irn",
+        "player": "Mohammad Mohebbi",
+        "text": "Mohammad Mohebbi Goal - Header",
+        "assist": "Ramin Rezaeian"
       }
     ],
     "stats": {
@@ -1599,7 +1607,7 @@
         "offsides": 2,
         "saves": 5,
         "xg": 0.88,
-        "duelsWon": 33
+        "duelsWon": 34
       },
       "away": {
         "possession": 53.5,
@@ -1612,7 +1620,7 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.74,
-        "duelsWon": 27
+        "duelsWon": 28
       }
     }
   },
