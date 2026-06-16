@@ -1799,7 +1799,8 @@
         "minute": "39'",
         "teamId": "irq",
         "player": "Aymen Hussein",
-        "text": "Aymen Hussein Goal - Header"
+        "text": "Aymen Hussein Goal - Header",
+        "assist": "Amir Al-Ammari"
       }
     ],
     "stats": {
@@ -1813,7 +1814,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.13,
+        "xg": 0.22,
         "duelsWon": 23,
         "boxTouches": 6
       },
