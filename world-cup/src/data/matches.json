@@ -1962,7 +1962,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 76,
+    "minute": 77,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1993,17 +1993,24 @@
         "player": "Ali Olwan",
         "text": "Ali Olwan Goal",
         "assist": "Noor Al-Rawabdeh"
+      },
+      {
+        "type": "goal",
+        "minute": "76'",
+        "teamId": "aut",
+        "player": "Yazan Al-Arab",
+        "text": "Yazan Al-Arab Own Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.6,
+        "possession": 65.7,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.3,
-        "accuratePasses": 388,
+        "passAccuracy": 84.9,
+        "accuratePasses": 389,
         "fouls": 9,
-        "corners": 2,
+        "corners": 3,
         "offsides": 2,
         "saves": 3,
         "xg": 0.54,
@@ -2011,10 +2018,10 @@
         "boxTouches": 24
       },
       "away": {
-        "possession": 34.4,
+        "possession": 34.3,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 74.4,
+        "passAccuracy": 74,
         "accuratePasses": 174,
         "fouls": 6,
         "corners": 3,
