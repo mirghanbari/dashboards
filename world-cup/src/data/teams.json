@@ -870,8 +870,8 @@
     "ppda": 7.5,
     "cleanSheets": 0,
     "passCompletion": 84,
-    "xgFor": 1.65,
-    "xgAgainst": 0.54
+    "xgFor": 1.69,
+    "xgAgainst": 0.47
   },
   {
     "id": "alg",
@@ -916,8 +916,8 @@
     "ppda": 17.1,
     "cleanSheets": 0,
     "passCompletion": 72.6,
-    "xgFor": 0.54,
-    "xgAgainst": 1.65
+    "xgFor": 0.47,
+    "xgAgainst": 1.69
   },
   {
     "id": "col",
