@@ -2060,8 +2060,8 @@
     "awayTeamId": "cod",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
