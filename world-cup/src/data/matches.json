@@ -2164,10 +2164,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "eng",
     "awayTeamId": "cro",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "11",
+    "minute": "12",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2182,6 +2182,15 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "12'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Penalty - Scored"
+      }
+    ],
     "stats": {
       "home": {
         "possession": 75.6,
@@ -2190,11 +2199,11 @@
         "passAccuracy": 80.3,
         "accuratePasses": 49,
         "fouls": 0,
-        "corners": 2,
+        "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.06,
-        "duelsWon": 2,
+        "duelsWon": 1,
         "boxTouches": 6
       },
       "away": {
