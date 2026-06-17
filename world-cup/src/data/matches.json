@@ -1877,7 +1877,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": 75,
+    "minute": 76,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1907,25 +1907,32 @@
         "teamId": "arg",
         "player": "Lionel Messi",
         "text": "Lionel Messi Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "76'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 49.1,
+        "possession": 49.9,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 90.2,
-        "accuratePasses": 405,
+        "passAccuracy": 90.5,
+        "accuratePasses": 420,
         "fouls": 9,
         "corners": 2,
         "offsides": 3,
         "saves": 0,
         "xg": 1.1,
         "duelsWon": 28,
-        "boxTouches": 9
+        "boxTouches": 10
       },
       "away": {
-        "possession": 50.9,
+        "possession": 50.1,
         "shots": 6,
         "shotsOnTarget": 1,
         "passAccuracy": 92.6,
