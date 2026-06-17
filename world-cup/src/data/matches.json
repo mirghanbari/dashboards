@@ -2272,7 +2272,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "16",
+    "minute": "17",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2283,14 +2283,23 @@
         "type": "tv"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "16'",
+        "teamId": "gha",
+        "player": "Caleb Yirenkyi",
+        "text": "Caleb Yirenkyi Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 25.8,
+        "possession": 32.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 75.6,
-        "accuratePasses": 31,
-        "fouls": 1,
+        "passAccuracy": 78.9,
+        "accuratePasses": 45,
+        "fouls": 2,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
@@ -2299,12 +2308,12 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 74.2,
+        "possession": 67.8,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 89,
-        "accuratePasses": 105,
-        "fouls": 0,
+        "passAccuracy": 89.1,
+        "accuratePasses": 106,
+        "fouls": 1,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
