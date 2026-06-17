@@ -3,6 +3,7 @@ import { getMatch, getTeam, gameOdds, useLiveMatches } from "../data";
 import { stageLabel } from "../components/MatchCard";
 import { useJsonLd } from "../seo/jsonLd";
 import { matchSchema } from "../seo/schema";
+import { liveClock } from "../clock";
 import type { Match, MatchEvent, MatchTeamStats } from "../types";
 
 const EVENT_ICON: Record<MatchEvent["type"], string> = {
@@ -179,7 +180,7 @@ export function MatchDetail() {
 
   const status =
     match.status === "live" ? (
-      <span className="md-status md-live">● LIVE {match.minute}'</span>
+      <span className="md-status md-live">● LIVE {liveClock(match.minute)}</span>
     ) : match.status === "finished" ? (
       <span className="md-status md-ft">Full time</span>
     ) : (

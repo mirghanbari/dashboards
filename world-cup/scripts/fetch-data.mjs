@@ -52,7 +52,7 @@ Return ONLY a JSON object (no prose, no markdown fences) of this exact shape:
     {
       "homeCode": "3-letter FIFA code", "awayCode": "3-letter FIFA code",
       "homeScore": int|null, "awayScore": int|null,
-      "status": "scheduled"|"live"|"finished", "minute": int|null,
+      "status": "scheduled"|"live"|"finished", "minute": "clock token like \"23\", \"45+2\", or \"HT\""|null,
       "stage": "group"|"round32"|"round16"|"quarter"|"semi"|"third"|"final"
     }
   ],
@@ -151,7 +151,7 @@ for (const u of payload.matches ?? []) {
   m.homeScore = flipped ? u.awayScore ?? null : u.homeScore ?? null;
   m.awayScore = flipped ? u.homeScore ?? null : u.awayScore ?? null;
   m.status = u.status ?? m.status;
-  m.minute = u.status === "live" ? u.minute ?? null : null;
+  m.minute = u.status === "live" && u.minute != null ? String(u.minute) : null;
   matchUpdates++;
 }
 

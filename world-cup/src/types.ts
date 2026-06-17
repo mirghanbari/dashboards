@@ -63,7 +63,7 @@ export interface Match {
   homeScore: number | null;
   awayScore: number | null;
   status: MatchStatus;
-  minute: number | null; // current minute when live
+  minute: string | null; // live clock token: "23", injury "45+2", or label "HT"
   broadcasts?: Broadcast[]; // US TV / streaming carriers (ESPN geoBroadcasts)
   // Per-match detail, populated for live/finished games (from the ESPN summary).
   timeline?: MatchEvent[]; // goals + cards, in order, with minute & scorer

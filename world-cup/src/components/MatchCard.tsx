@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import type { Match } from "../types";
 import { getTeam, gameOdds } from "../data";
+import { liveClock } from "../clock";
 
 const STAGE_LABEL: Record<string, string> = {
   group: "Group",
@@ -149,7 +150,7 @@ export function MatchCard({ match }: { match: Match }) {
       <header className="match-head">
         <span className="match-stage">{stageLabel(match)}</span>
         {match.status === "live" ? (
-          <span className="match-live">● LIVE {match.minute}'</span>
+          <span className="match-live">● LIVE {liveClock(match.minute)}</span>
         ) : match.status === "finished" ? (
           <span className="match-ft">FT</span>
         ) : (

@@ -45,6 +45,13 @@ async function pool(items, limit, fn) {
 }
 
 const mapStatus = (state) => (state === "pre" ? "scheduled" : state === "in" ? "live" : "finished");
+// Clean clock token for a live match: "HT" at the break, else ESPN's displayClock
+// with the apostrophes stripped ("45'+2'" → "45+2"). The UI re-adds the apostrophe.
+const liveMinute = (st) => {
+  if (st?.type?.name === "STATUS_HALFTIME") return "HT";
+  const clock = String(st?.displayClock ?? "").replace(/'/g, "").trim();
+  return clock || null;
+};
 const logoOf = (team) => team.logo || team.logos?.[0]?.href || "";
 const num = (v) => {
   const n = Number(v);
@@ -104,7 +111,7 @@ async function main() {
       id: ev.id,
       date: ev.date,
       status,
-      minute: status === "live" ? ev.status?.displayClock ?? null : null,
+      minute: status === "live" ? liveMinute(ev.status) : null,
       home: side(home),
       away: side(away),
       timeline,

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import type { Match } from "../types";
 import { getTeam } from "../data";
 import { stageLabel } from "./MatchCard";
+import { liveClock } from "../clock";
 
 /**
  * ESPN-style horizontal scoreboard strip for the top of the home page.
@@ -88,7 +89,7 @@ function ScoreTile({ match }: { match: Match }) {
         <span className="score-tile-stage">{stageLabel(match)}</span>
         {match.status === "live" ? (
           <span className="score-tile-live">
-            <span className="dot-live" /> {match.minute}'
+            <span className="dot-live" /> {liveClock(match.minute)}
           </span>
         ) : finished ? (
           <span className="score-tile-ft">FT</span>

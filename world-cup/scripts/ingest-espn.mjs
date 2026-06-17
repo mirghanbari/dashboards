@@ -233,6 +233,15 @@ async function main() {
     if (day === "2026-07-18") return "third";
     return "final";
   };
+  // The clock token for a live match. At the break ESPN reports STATUS_HALFTIME,
+  // which we surface as "HT". Otherwise we keep ESPN's displayClock but strip the
+  // apostrophes ("45'+2'" → "45+2") — the old Number() parse dropped injury time
+  // entirely (NaN → null), leaving the card showing a bare "'".
+  const liveMinute = (st) => {
+    if (st?.type?.name === "STATUS_HALFTIME") return "HT";
+    const clock = String(st?.displayClock ?? "").replace(/'/g, "").trim();
+    return clock || null;
+  };
   const mapStatus = (name) =>
     name === "STATUS_SCHEDULED" || name === "STATUS_PRE"
       ? "scheduled"
@@ -286,7 +295,7 @@ async function main() {
         homeScore: status === "scheduled" ? null : Number(home?.score ?? 0),
         awayScore: status === "scheduled" ? null : Number(away?.score ?? 0),
         status,
-        minute: status === "live" ? Number(ev.status?.displayClock?.replace?.("'", "") ?? 0) || null : null,
+        minute: status === "live" ? liveMinute(ev.status) : null,
         broadcasts: extractBroadcasts(c),
       });
     }

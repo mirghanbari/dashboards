@@ -1,6 +1,7 @@
 import { FRIENDLIES } from "../data/friendlies";
 import { StatCard } from "../components/StatCard";
 import type { FriendlyMatch, FriendlyMatchSide } from "../types";
+import { liveClock } from "../clock";
 
 function Side({ side, won }: { side: FriendlyMatchSide; won: boolean }) {
   return (
@@ -34,7 +35,7 @@ function MatchCard({ m }: { m: FriendlyMatch }) {
     <article className={"fr-match status-" + m.status}>
       <header className="fr-match-head">
         {m.status === "live" ? (
-          <span className="match-live">● LIVE {m.minute}</span>
+          <span className="match-live">● LIVE {liveClock(m.minute)}</span>
         ) : m.status === "finished" ? (
           <span className="match-ft">FT</span>
         ) : (
