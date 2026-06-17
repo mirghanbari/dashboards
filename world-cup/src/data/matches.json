@@ -2167,7 +2167,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "80",
+    "minute": "81",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2219,16 +2219,17 @@
         "minute": "47'",
         "teamId": "eng",
         "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal"
+        "text": "Jude Bellingham Goal",
+        "assist": "Elliot Anderson"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54,
+        "possession": 53.3,
         "shots": 19,
         "shotsOnTarget": 9,
-        "passAccuracy": 85.3,
-        "accuratePasses": 336,
+        "passAccuracy": 85.5,
+        "accuratePasses": 341,
         "fouls": 8,
         "corners": 8,
         "offsides": 0,
@@ -2238,12 +2239,12 @@
         "boxTouches": 32
       },
       "away": {
-        "possession": 46,
+        "possession": 46.7,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.5,
-        "accuratePasses": 289,
-        "fouls": 9,
+        "passAccuracy": 84.8,
+        "accuratePasses": 302,
+        "fouls": 10,
         "corners": 1,
         "offsides": 1,
         "saves": 6,
