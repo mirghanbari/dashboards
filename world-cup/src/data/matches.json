@@ -2058,10 +2058,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "cod",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "live",
+    "minute": 42,
     "broadcasts": [
       {
         "name": "FOX",
@@ -2075,7 +2075,61 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "6'",
+        "teamId": "por",
+        "player": "João Neves",
+        "text": "João Neves Goal - Header",
+        "assist": "Pedro Neto"
+      },
+      {
+        "type": "yellow",
+        "minute": "13'",
+        "teamId": "por",
+        "player": "Bernardo Silva",
+        "text": "Bernardo Silva Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "cod",
+        "player": "Chancel Mbemba",
+        "text": "Chancel Mbemba Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 79.6,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 94.1,
+        "accuratePasses": 385,
+        "fouls": 3,
+        "corners": 1,
+        "offsides": 1,
+        "saves": 1,
+        "xg": 0.07,
+        "duelsWon": 12,
+        "boxTouches": 11
+      },
+      "away": {
+        "possession": 20.4,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 81.7,
+        "accuratePasses": 85,
+        "fouls": 3,
+        "corners": 1,
+        "offsides": 1,
+        "saves": 0,
+        "xg": 0.07,
+        "duelsWon": 16,
+        "boxTouches": 3
+      }
+    }
   },
   {
     "id": "M022",
