@@ -1962,7 +1962,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 53,
+    "minute": 54,
     "broadcasts": [
       {
         "name": "FS1",
@@ -2020,7 +2020,7 @@
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.47,
+        "xg": 0.45,
         "duelsWon": 27,
         "boxTouches": 17
       }
