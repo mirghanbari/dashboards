@@ -2195,26 +2195,27 @@
         "minute": "36'",
         "teamId": "cro",
         "player": "Martin Baturina",
-        "text": "Martin Baturina Goal"
+        "text": "Martin Baturina Goal",
+        "assist": "Petar Sucic"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53,
+        "possession": 53.1,
         "shots": 7,
         "shotsOnTarget": 1,
         "passAccuracy": 84.4,
-        "accuratePasses": 151,
+        "accuratePasses": 152,
         "fouls": 3,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 1.28,
-        "duelsWon": 13,
+        "duelsWon": 14,
         "boxTouches": 14
       },
       "away": {
-        "possession": 47,
+        "possession": 46.9,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 86,
@@ -2223,7 +2224,7 @@
         "corners": 1,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.17,
+        "xg": 0.22,
         "duelsWon": 13,
         "boxTouches": 6
       }
