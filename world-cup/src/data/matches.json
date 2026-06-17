@@ -2167,7 +2167,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "84",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2182,73 +2182,32 @@
         "type": "stream"
       }
     ],
-    "timeline": [
-      {
-        "type": "goal",
-        "minute": "12'",
-        "teamId": "eng",
-        "player": "Harry Kane",
-        "text": "Harry Kane Penalty - Scored"
-      },
-      {
-        "type": "goal",
-        "minute": "36'",
-        "teamId": "cro",
-        "player": "Martin Baturina",
-        "text": "Martin Baturina Goal",
-        "assist": "Petar Sucic"
-      },
-      {
-        "type": "goal",
-        "minute": "42'",
-        "teamId": "eng",
-        "player": "Harry Kane",
-        "text": "Harry Kane Goal - Header",
-        "assist": "Declan Rice"
-      },
-      {
-        "type": "goal",
-        "minute": "45'+5'",
-        "teamId": "cro",
-        "player": "Petar Musa",
-        "text": "Petar Musa Goal",
-        "assist": "Ivan Perisic"
-      },
-      {
-        "type": "goal",
-        "minute": "47'",
-        "teamId": "eng",
-        "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal",
-        "assist": "Elliot Anderson"
-      }
-    ],
     "stats": {
       "home": {
-        "possession": 52.8,
-        "shots": 20,
-        "shotsOnTarget": 10,
-        "passAccuracy": 85.4,
-        "accuratePasses": 356,
-        "fouls": 9,
-        "corners": 8,
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
         "offsides": 0,
-        "saves": 2,
+        "saves": 0,
         "xg": 2.78,
-        "duelsWon": 30,
-        "boxTouches": 33
+        "duelsWon": 31,
+        "boxTouches": 34
       },
       "away": {
-        "possession": 47.2,
-        "shots": 7,
-        "shotsOnTarget": 4,
-        "passAccuracy": 84.9,
-        "accuratePasses": 320,
-        "fouls": 10,
-        "corners": 1,
-        "offsides": 1,
-        "saves": 7,
-        "xg": 0.5,
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.53,
         "duelsWon": 34,
         "boxTouches": 14
       }
