@@ -1959,7 +1959,7 @@
     "city": "Santa Clara, California",
     "homeTeamId": "aut",
     "awayTeamId": "jor",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
     "minute": 21,
@@ -1977,13 +1977,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "20'",
+        "teamId": "aut",
+        "player": "Romano Schmid",
+        "text": "Romano Schmid Goal",
+        "assist": "Xaver Schlager"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 75.4,
-        "shots": 2,
-        "shotsOnTarget": 0,
-        "passAccuracy": 85.5,
-        "accuratePasses": 142,
+        "possession": 76.3,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 86.2,
+        "accuratePasses": 150,
         "fouls": 3,
         "corners": 1,
         "offsides": 2,
@@ -1993,11 +2003,11 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 24.6,
+        "possession": 23.7,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 68.5,
-        "accuratePasses": 37,
+        "passAccuracy": 70.4,
+        "accuratePasses": 38,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
