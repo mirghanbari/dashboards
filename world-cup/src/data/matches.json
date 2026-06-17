@@ -1598,7 +1598,7 @@
         "minute": "7'",
         "teamId": "nzl",
         "player": "Elijah Just",
-        "text": "Elijah Just Goal - Volley",
+        "text": "Elijah Just Goal",
         "assist": "Chris Wood"
       },
       {
@@ -1962,7 +1962,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": 88,
+    "minute": 89,
     "broadcasts": [
       {
         "name": "FS1",
@@ -2028,8 +2028,8 @@
         "possession": 35.6,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 75,
-        "accuratePasses": 210,
+        "passAccuracy": 74.6,
+        "accuratePasses": 209,
         "fouls": 6,
         "corners": 3,
         "offsides": 1,
