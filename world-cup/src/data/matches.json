@@ -1874,10 +1874,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "arg",
     "awayTeamId": "alg",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": 59,
+    "minute": 61,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1900,22 +1900,29 @@
         "player": "Lionel Messi",
         "text": "Lionel Messi Goal",
         "assist": "Rodrigo De Paul"
+      },
+      {
+        "type": "goal",
+        "minute": "60'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal"
       }
     ],
     "stats": {
       "home": {
         "possession": 51.6,
-        "shots": 7,
-        "shotsOnTarget": 2,
+        "shots": 9,
+        "shotsOnTarget": 4,
         "passAccuracy": 89.7,
         "accuratePasses": 349,
         "fouls": 9,
         "corners": 1,
         "offsides": 3,
         "saves": 0,
-        "xg": 0.4,
+        "xg": 0.47,
         "duelsWon": 21,
-        "boxTouches": 7
+        "boxTouches": 8
       },
       "away": {
         "possession": 48.4,
@@ -1926,7 +1933,7 @@
         "fouls": 4,
         "corners": 2,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.16,
         "duelsWon": 29,
         "boxTouches": 9
