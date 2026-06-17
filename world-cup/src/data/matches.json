@@ -2178,31 +2178,80 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "12'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Penalty - Scored"
+      },
+      {
+        "type": "goal",
+        "minute": "36'",
+        "teamId": "cro",
+        "player": "Martin Baturina",
+        "text": "Martin Baturina Goal",
+        "assist": "Petar Sucic"
+      },
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Goal - Header",
+        "assist": "Declan Rice"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+5'",
+        "teamId": "cro",
+        "player": "Petar Musa",
+        "text": "Petar Musa Goal",
+        "assist": "Ivan Perisic"
+      },
+      {
+        "type": "goal",
+        "minute": "47'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal",
+        "assist": "Elliot Anderson"
+      },
+      {
+        "type": "goal",
+        "minute": "85'",
+        "teamId": "eng",
+        "player": "Marcus Rashford",
+        "text": "Marcus Rashford Goal",
+        "assist": "Bukayo Saka"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 0,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
-        "fouls": 0,
-        "corners": 0,
+        "possession": 51.7,
+        "shots": 22,
+        "shotsOnTarget": 11,
+        "passAccuracy": 85.8,
+        "accuratePasses": 406,
+        "fouls": 10,
+        "corners": 8,
         "offsides": 0,
-        "saves": 0,
+        "saves": 3,
         "xg": 2.8,
         "duelsWon": 38,
         "boxTouches": 36
       },
       "away": {
-        "possession": 0,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
-        "fouls": 0,
-        "corners": 0,
-        "offsides": 0,
-        "saves": 0,
+        "possession": 48.3,
+        "shots": 10,
+        "shotsOnTarget": 5,
+        "passAccuracy": 86,
+        "accuratePasses": 380,
+        "fouls": 12,
+        "corners": 2,
+        "offsides": 1,
+        "saves": 7,
         "xg": 0.71,
         "duelsWon": 41,
         "boxTouches": 17
@@ -2223,7 +2272,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+4",
+    "minute": "45+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2249,11 +2298,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 35.3,
+        "possession": 34.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 81,
-        "accuratePasses": 132,
+        "passAccuracy": 80.7,
+        "accuratePasses": 134,
         "fouls": 3,
         "corners": 0,
         "offsides": 2,
@@ -2263,11 +2312,11 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 64.7,
+        "possession": 65.5,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 87.6,
-        "accuratePasses": 262,
+        "accuratePasses": 276,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
