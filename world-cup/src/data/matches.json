@@ -1877,7 +1877,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 18,
+    "minute": 19,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1898,12 +1898,13 @@
         "minute": "17'",
         "teamId": "arg",
         "player": "Lionel Messi",
-        "text": "Lionel Messi Goal"
+        "text": "Lionel Messi Goal",
+        "assist": "Rodrigo De Paul"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.1,
+        "possession": 62.6,
         "shots": 1,
         "shotsOnTarget": 1,
         "passAccuracy": 90.1,
@@ -1912,15 +1913,15 @@
         "corners": 0,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.04,
-        "duelsWon": 5
+        "xg": 0.09,
+        "duelsWon": 6
       },
       "away": {
-        "possession": 34.9,
+        "possession": 37.4,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.3,
-        "accuratePasses": 67,
+        "passAccuracy": 90.5,
+        "accuratePasses": 76,
         "fouls": 0,
         "corners": 0,
         "offsides": 1,
