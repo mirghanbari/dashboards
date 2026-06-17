@@ -2059,7 +2059,7 @@
     "homeTeamId": "por",
     "awayTeamId": "cod",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
     "minute": null,
     "broadcasts": [
@@ -2098,15 +2098,23 @@
         "teamId": "cod",
         "player": "Chancel Mbemba",
         "text": "Chancel Mbemba Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+5'",
+        "teamId": "cod",
+        "player": "Yoane Wissa",
+        "text": "Yoane Wissa Goal - Header",
+        "assist": "Arthur Masuaku"
       }
     ],
     "stats": {
       "home": {
-        "possession": 80,
+        "possession": 79.7,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 94.1,
-        "accuratePasses": 459,
+        "accuratePasses": 460,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
@@ -2116,16 +2124,16 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 20,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 81.4,
-        "accuratePasses": 96,
+        "possession": 20.3,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 81.7,
+        "accuratePasses": 98,
         "fouls": 5,
         "corners": 3,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.14,
+        "xg": 0.49,
         "duelsWon": 18,
         "boxTouches": 5
       }
