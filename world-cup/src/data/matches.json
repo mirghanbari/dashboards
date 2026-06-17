@@ -1999,7 +1999,8 @@
         "minute": "67'",
         "teamId": "aut",
         "player": "Marko Arnautovic",
-        "text": "Marko Arnautovic Goal"
+        "text": "Marko Arnautovic Goal",
+        "assist": "Stefan Posch"
       }
     ],
     "stats": {
@@ -2013,7 +2014,7 @@
         "corners": 2,
         "offsides": 2,
         "saves": 3,
-        "xg": 0.58,
+        "xg": 0.98,
         "duelsWon": 31,
         "boxTouches": 25
       },
