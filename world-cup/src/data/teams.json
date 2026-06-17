@@ -962,7 +962,7 @@
     "ppda": 11.4,
     "cleanSheets": 0,
     "passCompletion": 92.3,
-    "xgFor": 0.68,
+    "xgFor": 0.64,
     "xgAgainst": 0.82
   },
   {
@@ -1009,7 +1009,7 @@
     "cleanSheets": 0,
     "passCompletion": 78.5,
     "xgFor": 0.82,
-    "xgAgainst": 0.68
+    "xgAgainst": 0.64
   },
   {
     "id": "eng",
