@@ -1959,10 +1959,10 @@
     "city": "Santa Clara, California",
     "homeTeamId": "aut",
     "awayTeamId": "jor",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": 77,
+    "minute": 78,
     "broadcasts": [
       {
         "name": "FS1",
@@ -2000,14 +2000,21 @@
         "teamId": "aut",
         "player": "Yazan Al-Arab",
         "text": "Yazan Al-Arab Own Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "77'",
+        "teamId": "aut",
+        "player": "Marcel Sabitzer",
+        "text": "Marcel Sabitzer Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.7,
+        "possession": 65.8,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.9,
+        "passAccuracy": 84.7,
         "accuratePasses": 389,
         "fouls": 9,
         "corners": 3,
@@ -2018,7 +2025,7 @@
         "boxTouches": 24
       },
       "away": {
-        "possession": 34.3,
+        "possession": 34.2,
         "shots": 10,
         "shotsOnTarget": 4,
         "passAccuracy": 74,
