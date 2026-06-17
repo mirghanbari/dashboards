@@ -2165,9 +2165,9 @@
     "homeTeamId": "eng",
     "awayTeamId": "cro",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2189,15 +2189,22 @@
         "teamId": "eng",
         "player": "Harry Kane",
         "text": "Harry Kane Penalty - Scored"
+      },
+      {
+        "type": "goal",
+        "minute": "36'",
+        "teamId": "cro",
+        "player": "Martin Baturina",
+        "text": "Martin Baturina Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.4,
+        "possession": 53,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.9,
-        "accuratePasses": 136,
+        "passAccuracy": 84.4,
+        "accuratePasses": 151,
         "fouls": 3,
         "corners": 2,
         "offsides": 0,
@@ -2207,18 +2214,18 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 48.6,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 85.7,
-        "accuratePasses": 132,
+        "possession": 47,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 86,
+        "accuratePasses": 135,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.17,
-        "duelsWon": 12,
-        "boxTouches": 4
+        "duelsWon": 13,
+        "boxTouches": 6
       }
     }
   },
