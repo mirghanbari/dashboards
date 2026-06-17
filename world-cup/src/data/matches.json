@@ -2272,7 +2272,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "24",
+    "minute": "25",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2281,6 +2281,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ],
     "timeline": [
@@ -2294,11 +2298,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 36.5,
+        "possession": 34.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 84.3,
-        "accuratePasses": 75,
+        "passAccuracy": 85.7,
+        "accuratePasses": 78,
         "fouls": 2,
         "corners": 0,
         "offsides": 2,
@@ -2308,11 +2312,11 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 63.5,
+        "possession": 65.9,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 89,
-        "accuratePasses": 137,
+        "passAccuracy": 88.6,
+        "accuratePasses": 156,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
@@ -2346,6 +2350,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2372,6 +2380,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2398,6 +2410,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2424,6 +2440,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2450,6 +2470,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2476,6 +2500,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2502,6 +2530,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2528,6 +2560,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2554,6 +2590,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2580,6 +2620,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2606,6 +2650,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2632,6 +2680,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2658,6 +2710,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2684,6 +2740,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2710,6 +2770,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2736,6 +2800,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2762,6 +2830,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2788,6 +2860,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2814,6 +2890,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2840,6 +2920,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2866,6 +2950,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2892,6 +2980,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2918,6 +3010,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2944,6 +3040,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2970,6 +3070,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -2996,6 +3100,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3022,6 +3130,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3048,6 +3160,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3074,6 +3190,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3100,6 +3220,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3126,6 +3250,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3152,6 +3280,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3178,6 +3310,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3204,6 +3340,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3230,6 +3370,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3256,6 +3400,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3282,6 +3430,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3308,6 +3460,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3334,6 +3490,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3360,6 +3520,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3386,6 +3550,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3412,6 +3580,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3438,6 +3610,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3464,6 +3640,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3490,6 +3670,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3516,6 +3700,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3542,6 +3730,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3568,6 +3760,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3594,6 +3790,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3620,6 +3820,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3646,6 +3850,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3672,6 +3880,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3698,6 +3910,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3724,6 +3940,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3750,6 +3970,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3776,6 +4000,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3802,6 +4030,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3828,6 +4060,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3854,6 +4090,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3880,6 +4120,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3906,6 +4150,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3932,6 +4180,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3958,6 +4210,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -3984,6 +4240,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4010,6 +4270,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4036,6 +4300,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4062,6 +4330,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4088,6 +4360,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4114,6 +4390,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4140,6 +4420,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4166,6 +4450,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4192,6 +4480,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4218,6 +4510,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4244,6 +4540,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4270,6 +4570,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4296,6 +4600,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4322,6 +4630,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4348,6 +4660,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4374,6 +4690,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4400,6 +4720,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   },
@@ -4426,6 +4750,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ]
   }
