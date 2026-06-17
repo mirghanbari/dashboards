@@ -2167,7 +2167,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2203,7 +2203,8 @@
         "minute": "42'",
         "teamId": "eng",
         "player": "Harry Kane",
-        "text": "Harry Kane Goal - Header"
+        "text": "Harry Kane Goal - Header",
+        "assist": "Declan Rice"
       }
     ],
     "stats": {
@@ -2217,7 +2218,7 @@
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.28,
+        "xg": 1.32,
         "duelsWon": 13,
         "boxTouches": 15
       },
