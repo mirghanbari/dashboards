@@ -1874,10 +1874,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "arg",
     "awayTeamId": "alg",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": 17,
+    "minute": 18,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1892,32 +1892,41 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "17'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 62.8,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 88.8,
-        "accuratePasses": 111,
+        "possession": 65.1,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 90.1,
+        "accuratePasses": 128,
         "fouls": 3,
         "corners": 0,
         "offsides": 2,
         "saves": 0,
-        "xg": 0,
+        "xg": 0.04,
         "duelsWon": 5
       },
       "away": {
-        "possession": 37.2,
+        "possession": 34.9,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 89,
-        "accuratePasses": 65,
+        "passAccuracy": 89.3,
+        "accuratePasses": 67,
         "fouls": 0,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.05,
-        "duelsWon": 11
+        "xg": 0,
+        "duelsWon": 12
       }
     }
   },
