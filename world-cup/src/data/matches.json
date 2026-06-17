@@ -1961,7 +1961,7 @@
     "awayTeamId": "jor",
     "homeScore": 3,
     "awayScore": 1,
-    "status": "live",
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -2018,7 +2018,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 63.4,
+        "possession": 63.3,
         "shots": 11,
         "shotsOnTarget": 4,
         "passAccuracy": 84.1,
@@ -2032,11 +2032,11 @@
         "boxTouches": 28
       },
       "away": {
-        "possession": 36.6,
+        "possession": 36.7,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 73.2,
-        "accuratePasses": 240,
+        "passAccuracy": 73.3,
+        "accuratePasses": 242,
         "fouls": 7,
         "corners": 3,
         "offsides": 1,
