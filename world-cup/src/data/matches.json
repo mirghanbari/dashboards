@@ -1874,10 +1874,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "arg",
     "awayTeamId": "alg",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": 76,
+    "minute": 77,
     "broadcasts": [
       {
         "name": "FOX",
@@ -1913,23 +1913,24 @@
         "minute": "76'",
         "teamId": "arg",
         "player": "Lionel Messi",
-        "text": "Lionel Messi Goal"
+        "text": "Lionel Messi Goal",
+        "assist": "Nico González"
       }
     ],
     "stats": {
       "home": {
         "possession": 49.9,
-        "shots": 9,
-        "shotsOnTarget": 5,
+        "shots": 10,
+        "shotsOnTarget": 6,
         "passAccuracy": 90.5,
         "accuratePasses": 420,
         "fouls": 9,
         "corners": 2,
         "offsides": 3,
         "saves": 0,
-        "xg": 1.1,
+        "xg": 1.23,
         "duelsWon": 28,
-        "boxTouches": 10
+        "boxTouches": 9
       },
       "away": {
         "possession": 50.1,
