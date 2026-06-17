@@ -1768,8 +1768,8 @@
     "homeTeamId": "irq",
     "awayTeamId": "nor",
     "homeScore": 1,
-    "awayScore": 3,
-    "status": "live",
+    "awayScore": 4,
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -1823,6 +1823,13 @@
         "teamId": "irq",
         "player": "Zaid Tahseen",
         "text": "Zaid Tahseen Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+6'",
+        "teamId": "nor",
+        "player": "Aymen Hussein",
+        "text": "Aymen Hussein Own Goal"
       }
     ],
     "stats": {
@@ -1830,7 +1837,7 @@
         "possession": 38.7,
         "shots": 11,
         "shotsOnTarget": 1,
-        "passAccuracy": 81.3,
+        "passAccuracy": 81.1,
         "accuratePasses": 270,
         "fouls": 12,
         "corners": 2,
@@ -1842,7 +1849,7 @@
       },
       "away": {
         "possession": 61.3,
-        "shots": 12,
+        "shots": 13,
         "shotsOnTarget": 5,
         "passAccuracy": 89,
         "accuratePasses": 476,
