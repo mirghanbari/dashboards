@@ -82,6 +82,12 @@ jobs:
           git config user.name "world-cup-bot"
           git config user.email "actions@github.com"
 
+          # Clear any stale rebase state up front. A leftover .git/rebase-merge
+          # (from an earlier interrupted rebase) detaches HEAD and makes every
+          # push in this run fail — which once froze live scores for a whole run
+          # while this job needlessly held the concurrency slot.
+          git rebase --abort 2>/dev/null || true
+
           DEPLOY_INTERVAL=120          # throttle Pages deploys to ~every 2 min
           DEADLINE=$(( $(date +%s) + 3 * 60 * 60 ))   # 3h live-poll cap
           last_deploy=0
@@ -97,8 +103,25 @@ jobs:
             fi
             git add src/data
             git commit -m "data: refresh World Cup scores"
-            git push || { git fetch origin main && git rebase origin/main && git push; } \
-              || echo "push failed (non-fatal; next tick retries)"
+
+            # Push to main, recovering from races WITHOUT ever leaving a
+            # half-finished rebase behind. We push HEAD:main (works even if a
+            # prior rebase detached HEAD), clear any stale rebase state before
+            # each retry, and resolve data conflicts in OUR favour: in a rebase
+            # `-X theirs` keeps the replayed commits — i.e. this run's freshly
+            # regenerated src/data — while still preserving any non-data change
+            # that landed on origin. (Plain `git rebase` or `-X ours` would
+            # leave our commit empty on conflict, STOP the rebase, and wedge.)
+            local pushed=""
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then pushed=1; break; fi
+              echo "push race (attempt $attempt); rebasing onto origin/main…"
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main || true
+              git rebase -X theirs origin/main || git rebase --abort 2>/dev/null || true
+            done
+            [ -n "$pushed" ] || { echo "push failed after retries (non-fatal; next tick retries)"; return; }
+
             now=$(date +%s)
             if [ $(( now - last_deploy )) -ge "$DEPLOY_INTERVAL" ]; then
               gh workflow run "Deploy World Cup dashboard" \
