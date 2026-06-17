@@ -2164,10 +2164,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "eng",
     "awayTeamId": "cro",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2197,29 +2197,36 @@
         "player": "Martin Baturina",
         "text": "Martin Baturina Goal",
         "assist": "Petar Sucic"
+      },
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Goal - Header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.4,
-        "shots": 7,
-        "shotsOnTarget": 1,
-        "passAccuracy": 84.4,
-        "accuratePasses": 162,
+        "possession": 52.4,
+        "shots": 8,
+        "shotsOnTarget": 2,
+        "passAccuracy": 84.6,
+        "accuratePasses": 170,
         "fouls": 5,
-        "corners": 2,
+        "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 1.28,
         "duelsWon": 13,
-        "boxTouches": 14
+        "boxTouches": 15
       },
       "away": {
-        "possession": 48.6,
+        "possession": 47.6,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.2,
-        "accuratePasses": 156,
+        "passAccuracy": 86.7,
+        "accuratePasses": 157,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
