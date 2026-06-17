@@ -2061,7 +2061,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2113,35 +2113,42 @@
         "teamId": "por",
         "player": "Nélson Semedo",
         "text": "Nélson Semedo Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+2'",
+        "teamId": "por",
+        "player": "Tomás Araújo",
+        "text": "Tomás Araújo Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 75.4,
-        "shots": 6,
+        "possession": 75.3,
+        "shots": 7,
         "shotsOnTarget": 1,
         "passAccuracy": 92.5,
-        "accuratePasses": 712,
-        "fouls": 8,
+        "accuratePasses": 713,
+        "fouls": 9,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
-        "xg": 0.51,
+        "xg": 0.62,
         "duelsWon": 30,
-        "boxTouches": 28
+        "boxTouches": 29
       },
       "away": {
-        "possession": 24.6,
+        "possession": 24.7,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 78.9,
-        "accuratePasses": 194,
+        "passAccuracy": 79,
+        "accuratePasses": 196,
         "fouls": 10,
         "corners": 4,
         "offsides": 2,
         "saves": 0,
         "xg": 0.82,
-        "duelsWon": 41,
+        "duelsWon": 43,
         "boxTouches": 11
       }
     }
