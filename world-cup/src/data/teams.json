@@ -16,11 +16,11 @@
     "goalsAgainst": 0,
     "points": 3,
     "possession": 60.5,
-    "ppda": 10.4,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 89.8,
-    "xgFor": 1.45,
-    "xgAgainst": 0.07
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cze",
@@ -39,11 +39,11 @@
     "goalsAgainst": 2,
     "points": 0,
     "possession": 38.5,
-    "ppda": 17.5,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 70.3,
-    "xgFor": 0.83,
-    "xgAgainst": 2.31
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "kor",
@@ -62,11 +62,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 61.5,
-    "ppda": 13.1,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 86.7,
-    "xgFor": 2.31,
-    "xgAgainst": 0.83
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "rsa",
@@ -85,11 +85,11 @@
     "goalsAgainst": 2,
     "points": 0,
     "possession": 39.5,
-    "ppda": 16.3,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 81.4,
-    "xgFor": 0.07,
-    "xgAgainst": 1.45
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "can",
@@ -108,11 +108,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 61.1,
-    "ppda": 7.3,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 73.6,
-    "xgFor": 1.24,
-    "xgAgainst": 0.97
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "bih",
@@ -131,11 +131,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 38.9,
-    "ppda": 8.3,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 63.5,
-    "xgFor": 0.97,
-    "xgAgainst": 1.24
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "sui",
@@ -154,11 +154,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 68,
-    "ppda": 10.7,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 91.5,
-    "xgFor": 3.19,
-    "xgAgainst": 0.61
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "qat",
@@ -177,11 +177,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 32,
-    "ppda": 15.6,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 71.9,
-    "xgFor": 0.61,
-    "xgAgainst": 3.19
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "bra",
@@ -200,11 +200,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 51.4,
-    "ppda": 11,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 87.4,
-    "xgFor": 1.26,
-    "xgAgainst": 1.37
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "sco",
@@ -223,11 +223,11 @@
     "goalsAgainst": 0,
     "points": 3,
     "possession": 46.3,
-    "ppda": 11.1,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 82.1,
-    "xgFor": 1.14,
-    "xgAgainst": 1.06
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "hai",
@@ -246,11 +246,11 @@
     "goalsAgainst": 1,
     "points": 0,
     "possession": 53.7,
-    "ppda": 9.1,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 85.2,
-    "xgFor": 1.06,
-    "xgAgainst": 1.14
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "mar",
@@ -269,11 +269,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 48.6,
-    "ppda": 11.4,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 86.2,
-    "xgFor": 1.37,
-    "xgAgainst": 1.26
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "par",
@@ -292,11 +292,11 @@
     "goalsAgainst": 4,
     "points": 0,
     "possession": 34.7,
-    "ppda": 12.5,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 72.7,
-    "xgFor": 0.54,
-    "xgAgainst": 1.42
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "tur",
@@ -315,11 +315,11 @@
     "goalsAgainst": 2,
     "points": 0,
     "possession": 71.6,
-    "ppda": 13.6,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 90.2,
-    "xgFor": 1.36,
-    "xgAgainst": 1.18
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "aus",
@@ -338,11 +338,11 @@
     "goalsAgainst": 0,
     "points": 3,
     "possession": 28.4,
-    "ppda": 20.7,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 74.2,
-    "xgFor": 1.18,
-    "xgAgainst": 1.36
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "usa",
@@ -361,11 +361,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 65.3,
-    "ppda": 10.3,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 85.1,
-    "xgFor": 1.42,
-    "xgAgainst": 0.54
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ecu",
@@ -384,11 +384,11 @@
     "goalsAgainst": 1,
     "points": 0,
     "possession": 51.6,
-    "ppda": 10,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 85.2,
-    "xgFor": 1.02,
-    "xgAgainst": 1.51
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ger",
@@ -407,11 +407,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 64.6,
-    "ppda": 7,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 87,
-    "xgFor": 4.22,
-    "xgAgainst": 0.42
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "civ",
@@ -430,11 +430,11 @@
     "goalsAgainst": 0,
     "points": 3,
     "possession": 48.4,
-    "ppda": 14.1,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 84.5,
-    "xgFor": 1.51,
-    "xgAgainst": 1.02
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cuw",
@@ -453,11 +453,11 @@
     "goalsAgainst": 7,
     "points": 0,
     "possession": 35.4,
-    "ppda": 14.8,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 82.2,
-    "xgFor": 0.42,
-    "xgAgainst": 4.22
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ned",
@@ -476,11 +476,11 @@
     "goalsAgainst": 2,
     "points": 1,
     "possession": 59.8,
-    "ppda": 13.6,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 88.4,
-    "xgFor": 0.79,
-    "xgAgainst": 0.59
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "swe",
@@ -499,11 +499,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 48.7,
-    "ppda": 12.4,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 78.1,
-    "xgFor": 1.34,
-    "xgAgainst": 0.27
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "jpn",
@@ -522,11 +522,11 @@
     "goalsAgainst": 2,
     "points": 1,
     "possession": 40.2,
-    "ppda": 23.8,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 83.9,
-    "xgFor": 0.59,
-    "xgAgainst": 0.79
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "tun",
@@ -545,11 +545,11 @@
     "goalsAgainst": 5,
     "points": 0,
     "possession": 51.3,
-    "ppda": 10.2,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 78.7,
-    "xgFor": 0.27,
-    "xgAgainst": 1.34
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "bel",
@@ -568,11 +568,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 53.6,
-    "ppda": 9.5,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 85.9,
-    "xgFor": 1.35,
-    "xgAgainst": 1.11
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "irn",
@@ -591,11 +591,11 @@
     "goalsAgainst": 2,
     "points": 1,
     "possession": 48.5,
-    "ppda": 11.7,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 76.8,
-    "xgFor": 1.5,
-    "xgAgainst": 1.24
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "egy",
@@ -614,11 +614,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 46.4,
-    "ppda": 7.7,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 81.2,
-    "xgFor": 1.11,
-    "xgAgainst": 1.35
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "nzl",
@@ -637,11 +637,11 @@
     "goalsAgainst": 2,
     "points": 1,
     "possession": 51.5,
-    "ppda": 11.4,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 84.3,
-    "xgFor": 1.24,
-    "xgAgainst": 1.5
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "esp",
@@ -660,11 +660,11 @@
     "goalsAgainst": 0,
     "points": 1,
     "possession": 74.3,
-    "ppda": 9.6,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 91.8,
-    "xgFor": 2.09,
-    "xgAgainst": 0.2
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "uru",
@@ -683,11 +683,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 66.8,
-    "ppda": 16.9,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 88.2,
-    "xgFor": 1.79,
-    "xgAgainst": 0.7
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "ksa",
@@ -706,11 +706,11 @@
     "goalsAgainst": 1,
     "points": 1,
     "possession": 33.2,
-    "ppda": 19.7,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 73.3,
-    "xgFor": 0.7,
-    "xgAgainst": 1.79
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "cpv",
@@ -729,11 +729,11 @@
     "goalsAgainst": 0,
     "points": 1,
     "possession": 25.7,
-    "ppda": 23.5,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 73.7,
-    "xgFor": 0.2,
-    "xgAgainst": 2.09
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "nor",
@@ -752,11 +752,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 61.3,
-    "ppda": 11.1,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 88.8,
-    "xgFor": 2.53,
-    "xgAgainst": 0.8
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "fra",
@@ -775,11 +775,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 53.4,
-    "ppda": 16.2,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 87.8,
-    "xgFor": 1.78,
-    "xgAgainst": 0.53
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "sen",
@@ -798,11 +798,11 @@
     "goalsAgainst": 3,
     "points": 0,
     "possession": 46.6,
-    "ppda": 18.5,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 85.7,
-    "xgFor": 0.53,
-    "xgAgainst": 1.78
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "irq",
@@ -821,11 +821,11 @@
     "goalsAgainst": 4,
     "points": 0,
     "possession": 38.7,
-    "ppda": 14.9,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 81.1,
-    "xgFor": 0.8,
-    "xgAgainst": 2.53
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "arg",
@@ -844,11 +844,11 @@
     "goalsAgainst": 0,
     "points": 3,
     "possession": 47.8,
-    "ppda": 12.2,
+    "ppda": 0,
     "cleanSheets": 1,
     "passCompletion": 89.8,
-    "xgFor": 1.27,
-    "xgAgainst": 0.33
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "aut",
@@ -867,11 +867,11 @@
     "goalsAgainst": 1,
     "points": 3,
     "possession": 63.2,
-    "ppda": 7.5,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 84,
-    "xgFor": 1.69,
-    "xgAgainst": 0.47
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "alg",
@@ -890,11 +890,11 @@
     "goalsAgainst": 3,
     "points": 0,
     "possession": 52.2,
-    "ppda": 17,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 92.4,
-    "xgFor": 0.33,
-    "xgAgainst": 1.27
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "jor",
@@ -913,11 +913,11 @@
     "goalsAgainst": 3,
     "points": 0,
     "possession": 36.8,
-    "ppda": 17.1,
+    "ppda": 0,
     "cleanSheets": 0,
     "passCompletion": 72.6,
-    "xgFor": 0.47,
-    "xgAgainst": 1.69
+    "xgFor": 0,
+    "xgAgainst": 0
   },
   {
     "id": "col",
