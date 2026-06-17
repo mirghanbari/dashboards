@@ -2011,31 +2011,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 64.4,
-        "shots": 9,
+        "possession": 63.9,
+        "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 85,
-        "accuratePasses": 463,
+        "passAccuracy": 84.6,
+        "accuratePasses": 466,
         "fouls": 11,
-        "corners": 3,
+        "corners": 4,
         "offsides": 3,
         "saves": 3,
         "xg": 0.83,
-        "duelsWon": 39,
+        "duelsWon": 41,
         "boxTouches": 25
       },
       "away": {
-        "possession": 35.6,
+        "possession": 36.1,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 73.7,
-        "accuratePasses": 216,
+        "passAccuracy": 74.3,
+        "accuratePasses": 226,
         "fouls": 6,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
         "xg": 0.53,
-        "duelsWon": 45,
+        "duelsWon": 47,
         "boxTouches": 21
       }
     }
