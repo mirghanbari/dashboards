@@ -2290,7 +2290,15 @@
         "name": "Peacock",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "duelsWon": 1
+      },
+      "away": {
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M024",
