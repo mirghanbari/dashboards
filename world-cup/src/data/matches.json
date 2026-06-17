@@ -1962,7 +1962,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": 64,
+    "minute": 65,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1999,7 +1999,7 @@
       "home": {
         "possession": 64.5,
         "shots": 9,
-        "shotsOnTarget": 1,
+        "shotsOnTarget": 2,
         "passAccuracy": 84.9,
         "accuratePasses": 366,
         "fouls": 8,
