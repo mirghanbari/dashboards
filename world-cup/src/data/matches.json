@@ -2007,6 +2007,13 @@
         "teamId": "aut",
         "player": "Marcel Sabitzer",
         "text": "Marcel Sabitzer Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+12'",
+        "teamId": "aut",
+        "player": "Marko Arnautovic",
+        "text": "Marko Arnautovic Penalty - Score"
       }
     ],
     "stats": {
@@ -2017,12 +2024,12 @@
         "passAccuracy": 84.3,
         "accuratePasses": 489,
         "fouls": 12,
-        "corners": 5,
+        "corners": 4,
         "offsides": 3,
         "saves": 3,
         "xg": 0.83,
         "duelsWon": 43,
-        "boxTouches": 27
+        "boxTouches": 28
       },
       "away": {
         "possession": 36.6,
