@@ -1959,10 +1959,10 @@
     "city": "Santa Clara, California",
     "homeTeamId": "aut",
     "awayTeamId": "jor",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": 68,
+    "minute": 69,
     "broadcasts": [
       {
         "name": "FS1",
@@ -1993,25 +1993,32 @@
         "player": "Ali Olwan",
         "text": "Ali Olwan Goal",
         "assist": "Noor Al-Rawabdeh"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "aut",
+        "player": "Marko Arnautovic",
+        "text": "Marko Arnautovic Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.5,
-        "shots": 9,
-        "shotsOnTarget": 2,
-        "passAccuracy": 85.2,
-        "accuratePasses": 386,
+        "possession": 65.6,
+        "shots": 10,
+        "shotsOnTarget": 3,
+        "passAccuracy": 85.3,
+        "accuratePasses": 388,
         "fouls": 8,
         "corners": 2,
         "offsides": 2,
         "saves": 3,
         "xg": 0.58,
         "duelsWon": 31,
-        "boxTouches": 23
+        "boxTouches": 25
       },
       "away": {
-        "possession": 34.5,
+        "possession": 34.4,
         "shots": 10,
         "shotsOnTarget": 4,
         "passAccuracy": 74.4,
