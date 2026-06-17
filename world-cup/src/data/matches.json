@@ -2020,7 +2020,7 @@
         "corners": 3,
         "offsides": 3,
         "saves": 3,
-        "xg": 0.54,
+        "xg": 0.83,
         "duelsWon": 39,
         "boxTouches": 25
       },
@@ -2035,7 +2035,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.51,
-        "duelsWon": 43,
+        "duelsWon": 45,
         "boxTouches": 21
       }
     }
