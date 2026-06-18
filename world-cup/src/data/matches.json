@@ -64,6 +64,7 @@
         "teamId": "mex",
         "player": "Raúl Jiménez",
         "text": "Raúl Jiménez Goal - Header",
+        "goalType": "header",
         "assist": "Roberto Alvarado"
       },
       {
@@ -155,6 +156,7 @@
         "teamId": "cze",
         "player": "Ladislav Krejcí",
         "text": "Ladislav Krejcí Goal - Header",
+        "goalType": "header",
         "assist": "Vladimír Coufal"
       },
       {
@@ -255,6 +257,7 @@
         "teamId": "bih",
         "player": "Jovo Lukic",
         "text": "Jovo Lukic Goal - Header",
+        "goalType": "header",
         "assist": "Sead Kolasinac"
       },
       {
@@ -360,7 +363,8 @@
         "minute": "7'",
         "teamId": "usa",
         "player": "Damián Bobadilla",
-        "text": "Damián Bobadilla Own Goal"
+        "text": "Damián Bobadilla Own Goal",
+        "goalType": "own"
       },
       {
         "type": "yellow",
@@ -517,7 +521,8 @@
         "minute": "17'",
         "teamId": "sui",
         "player": "Breel Embolo",
-        "text": "Breel Embolo Penalty - Scored"
+        "text": "Breel Embolo Penalty - Scored",
+        "goalType": "penalty"
       },
       {
         "type": "yellow",
@@ -539,6 +544,7 @@
         "teamId": "qat",
         "player": "Miro Muheim",
         "text": "Miro Muheim Own Goal",
+        "goalType": "own",
         "assist": "Homam Ahmed"
       }
     ],
@@ -897,6 +903,7 @@
         "teamId": "ger",
         "player": "Nico Schlotterbeck",
         "text": "Nico Schlotterbeck Goal - Header",
+        "goalType": "header",
         "assist": "Nathaniel Brown"
       },
       {
@@ -904,7 +911,8 @@
         "minute": "45'+5'",
         "teamId": "ger",
         "player": "Kai Havertz",
-        "text": "Kai Havertz Penalty - Scored"
+        "text": "Kai Havertz Penalty - Scored",
+        "goalType": "penalty"
       },
       {
         "type": "goal",
@@ -920,6 +928,7 @@
         "teamId": "ger",
         "player": "Nathaniel Brown",
         "text": "Nathaniel Brown Goal - Volley",
+        "goalType": "own",
         "assist": "Deniz Undav"
       },
       {
@@ -1006,6 +1015,7 @@
         "teamId": "ned",
         "player": "Virgil van Dijk",
         "text": "Virgil van Dijk Goal - Header",
+        "goalType": "header",
         "assist": "Ryan Gravenberch"
       },
       {
@@ -1044,6 +1054,7 @@
         "teamId": "jpn",
         "player": "Daichi Kamada",
         "text": "Daichi Kamada Goal - Header",
+        "goalType": "header",
         "assist": "Koki Ogawa"
       },
       {
@@ -1234,6 +1245,7 @@
         "teamId": "tun",
         "player": "Omar Rekik",
         "text": "Omar Rekik Goal - Header",
+        "goalType": "header",
         "assist": "Hannibal Mejbri"
       },
       {
@@ -1439,7 +1451,8 @@
         "minute": "66'",
         "teamId": "bel",
         "player": "Mohamed Hany",
-        "text": "Mohamed Hany Own Goal"
+        "text": "Mohamed Hany Own Goal",
+        "goalType": "own"
       },
       {
         "type": "yellow",
@@ -1622,6 +1635,7 @@
         "teamId": "irn",
         "player": "Mohammad Mohebbi",
         "text": "Mohammad Mohebbi Goal - Header",
+        "goalType": "header",
         "assist": "Ramin Rezaeian"
       },
       {
@@ -1800,6 +1814,7 @@
         "teamId": "irq",
         "player": "Aymen Hussein",
         "text": "Aymen Hussein Goal - Header",
+        "goalType": "header",
         "assist": "Amir Al-Ammari"
       },
       {
@@ -1815,6 +1830,7 @@
         "teamId": "nor",
         "player": "Leo Østigard",
         "text": "Leo Østigard Goal - Header",
+        "goalType": "header",
         "assist": "Martin Ødegaard"
       },
       {
@@ -1829,7 +1845,8 @@
         "minute": "90'+6'",
         "teamId": "nor",
         "player": "Aymen Hussein",
-        "text": "Aymen Hussein Own Goal"
+        "text": "Aymen Hussein Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
@@ -1995,7 +2012,8 @@
         "minute": "76'",
         "teamId": "aut",
         "player": "Yazan Al-Arab",
-        "text": "Yazan Al-Arab Own Goal"
+        "text": "Yazan Al-Arab Own Goal",
+        "goalType": "own"
       },
       {
         "type": "yellow",
@@ -2009,7 +2027,8 @@
         "minute": "90'+12'",
         "teamId": "aut",
         "player": "Marko Arnautovic",
-        "text": "Marko Arnautovic Penalty - Score"
+        "text": "Marko Arnautovic Penalty - Score",
+        "goalType": "penalty"
       }
     ],
     "stats": {
@@ -2079,6 +2098,7 @@
         "teamId": "por",
         "player": "João Neves",
         "text": "João Neves Goal - Header",
+        "goalType": "header",
         "assist": "Pedro Neto"
       },
       {
@@ -2101,6 +2121,7 @@
         "teamId": "cod",
         "player": "Yoane Wissa",
         "text": "Yoane Wissa Goal - Header",
+        "goalType": "header",
         "assist": "Arthur Masuaku"
       },
       {
@@ -2184,7 +2205,8 @@
         "minute": "12'",
         "teamId": "eng",
         "player": "Harry Kane",
-        "text": "Harry Kane Penalty - Scored"
+        "text": "Harry Kane Penalty - Scored",
+        "goalType": "penalty"
       },
       {
         "type": "goal",
@@ -2200,6 +2222,7 @@
         "teamId": "eng",
         "player": "Harry Kane",
         "text": "Harry Kane Goal - Header",
+        "goalType": "header",
         "assist": "Declan Rice"
       },
       {
@@ -2208,6 +2231,7 @@
         "teamId": "cro",
         "player": "Petar Musa",
         "text": "Petar Musa Goal - Volley",
+        "goalType": "volley",
         "assist": "Ivan Perisic"
       },
       {
@@ -2406,7 +2430,8 @@
         "minute": "60'",
         "teamId": "uzb",
         "player": "Abbosbek Fayzullaev",
-        "text": "Abbosbek Fayzullaev Goal - Heade"
+        "text": "Abbosbek Fayzullaev Goal - Heade",
+        "goalType": "header"
       },
       {
         "type": "goal",
@@ -2422,6 +2447,7 @@
         "teamId": "col",
         "player": "Jáminton Campaz",
         "text": "Jáminton Campaz Goal - Header",
+        "goalType": "header",
         "assist": "Cucho Hernández"
       }
     ],
@@ -2520,7 +2546,8 @@
         "minute": "83'",
         "teamId": "rsa",
         "player": "Teboho Mokoena",
-        "text": "Teboho Mokoena Penalty - Scored"
+        "text": "Teboho Mokoena Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
