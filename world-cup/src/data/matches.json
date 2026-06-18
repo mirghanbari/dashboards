@@ -2723,7 +2723,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2781,6 +2781,13 @@
         "teamId": "qat",
         "player": "Assim Madibo",
         "text": "Assim Madibo Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "53'",
+        "teamId": "qat",
+        "player": "Assim Madibo",
+        "text": "Assim Madibo Red Card"
       }
     ],
     "stats": {
