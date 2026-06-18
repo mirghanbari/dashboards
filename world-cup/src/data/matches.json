@@ -2363,7 +2363,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "33",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2385,16 +2385,23 @@
         "teamId": "col",
         "player": "Johan Mojica",
         "text": "Johan Mojica Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "34'",
+        "teamId": "uzb",
+        "player": "Abdukodir Khusanov",
+        "text": "Abdukodir Khusanov Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 28.3,
+        "possession": 28.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 69.3,
-        "accuratePasses": 52,
-        "fouls": 7,
+        "passAccuracy": 68.4,
+        "accuratePasses": 54,
+        "fouls": 8,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
@@ -2402,11 +2409,11 @@
         "duelsWon": 8
       },
       "away": {
-        "possession": 71.7,
+        "possession": 71.4,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.2,
-        "accuratePasses": 174,
+        "passAccuracy": 87.6,
+        "accuratePasses": 177,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
