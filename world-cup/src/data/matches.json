@@ -2470,7 +2470,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "39",
+    "minute": "41",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2500,35 +2500,42 @@
         "teamId": "rsa",
         "player": "Teboho Mokoena",
         "text": "Teboho Mokoena Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "40'",
+        "teamId": "rsa",
+        "player": "Thalente Mbatha",
+        "text": "Thalente Mbatha Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41,
+        "possession": 39.5,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.2,
-        "accuratePasses": 116,
+        "passAccuracy": 85.7,
+        "accuratePasses": 120,
         "fouls": 7,
         "corners": 2,
         "offsides": 1,
         "saves": 0,
         "xg": 0.38,
-        "duelsWon": 13,
+        "duelsWon": 14,
         "boxTouches": 4
       },
       "away": {
-        "possession": 59,
+        "possession": 60.5,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 89,
-        "accuratePasses": 178,
-        "fouls": 3,
+        "passAccuracy": 89.2,
+        "accuratePasses": 198,
+        "fouls": 4,
         "corners": 2,
         "offsides": 1,
         "saves": 0,
         "xg": 0.09,
-        "duelsWon": 17,
+        "duelsWon": 18,
         "boxTouches": 5
       }
     }
