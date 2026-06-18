@@ -2723,7 +2723,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "8",
+    "minute": "9",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2738,14 +2738,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "9'",
+        "teamId": "can",
+        "player": "Derek Cornelius",
+        "text": "Derek Cornelius Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 75.6,
+        "possession": 74.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.7,
-        "accuratePasses": 47,
-        "fouls": 0,
+        "passAccuracy": 86.9,
+        "accuratePasses": 53,
+        "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
@@ -2754,11 +2763,11 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 24.4,
+        "possession": 25.3,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 44.4,
-        "accuratePasses": 8,
+        "passAccuracy": 50,
+        "accuratePasses": 11,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
