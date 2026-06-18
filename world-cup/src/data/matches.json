@@ -2363,7 +2363,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2398,7 +2398,7 @@
         "minute": "40'",
         "teamId": "col",
         "player": "Daniel Muñoz",
-        "text": "Daniel Muñoz Goal - Volley",
+        "text": "Daniel Muñoz Goal",
         "assist": "Luis Díaz"
       },
       {
@@ -2411,29 +2411,29 @@
     ],
     "stats": {
       "home": {
-        "possession": 31.5,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 72.5,
-        "accuratePasses": 132,
+        "possession": 32.7,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 74,
+        "accuratePasses": 145,
         "fouls": 11,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.02,
+        "xg": 1,
         "duelsWon": 17,
         "boxTouches": 3
       },
       "away": {
-        "possession": 68.5,
+        "possession": 67.3,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 88.2,
-        "accuratePasses": 358,
+        "passAccuracy": 88,
+        "accuratePasses": 365,
         "fouls": 7,
         "corners": 2,
         "offsides": 2,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.83,
         "duelsWon": 23,
         "boxTouches": 15
