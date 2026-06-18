@@ -2361,9 +2361,9 @@
     "homeTeamId": "uzb",
     "awayTeamId": "col",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "90+8",
+    "minute": "90+10",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2415,36 +2415,43 @@
         "player": "Luis Díaz",
         "text": "Luis Díaz Goal",
         "assist": "Gustavo Puerta"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+9'",
+        "teamId": "col",
+        "player": "Jáminton Campaz",
+        "text": "Jáminton Campaz Goal - Header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 38.1,
+        "possession": 38,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 76.6,
-        "accuratePasses": 236,
+        "passAccuracy": 76.2,
+        "accuratePasses": 237,
         "fouls": 14,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
         "xg": 1.14,
-        "duelsWon": 33,
+        "duelsWon": 34,
         "boxTouches": 5
       },
       "away": {
-        "possession": 61.9,
-        "shots": 14,
-        "shotsOnTarget": 3,
-        "passAccuracy": 86,
-        "accuratePasses": 444,
+        "possession": 62,
+        "shots": 15,
+        "shotsOnTarget": 4,
+        "passAccuracy": 85.8,
+        "accuratePasses": 448,
         "fouls": 11,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
         "xg": 1.43,
-        "duelsWon": 35,
-        "boxTouches": 26
+        "duelsWon": 36,
+        "boxTouches": 27
       }
     }
   },
