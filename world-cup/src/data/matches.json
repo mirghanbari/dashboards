@@ -2720,10 +2720,10 @@
     "city": "Vancouver",
     "homeTeamId": "can",
     "awayTeamId": "qat",
-    "homeScore": 4,
+    "homeScore": 5,
     "awayScore": 0,
     "status": "live",
-    "minute": "74",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2794,28 +2794,36 @@
         "teamId": "can",
         "player": "Nathan Saliba",
         "text": "Nathan Saliba Goal - Free-kick"
+      },
+      {
+        "type": "goal",
+        "minute": "75'",
+        "teamId": "can",
+        "player": "Mohamed Manai",
+        "text": "Mohamed Manai Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
       "home": {
-        "possession": 74.6,
+        "possession": 75,
         "shots": 17,
         "shotsOnTarget": 9,
-        "passAccuracy": 89.7,
-        "accuratePasses": 350,
+        "passAccuracy": 89.8,
+        "accuratePasses": 362,
         "fouls": 4,
         "corners": 10,
         "offsides": 1,
         "saves": 0,
         "xg": 2.68,
         "duelsWon": 29,
-        "boxTouches": 60
+        "boxTouches": 62
       },
       "away": {
-        "possession": 25.4,
+        "possession": 25,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 68.3,
+        "passAccuracy": 67.8,
         "accuratePasses": 97,
         "fouls": 9,
         "corners": 1,
