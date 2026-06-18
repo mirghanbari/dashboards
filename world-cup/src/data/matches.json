@@ -2361,9 +2361,9 @@
     "homeTeamId": "uzb",
     "awayTeamId": "col",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2407,6 +2407,13 @@
         "teamId": "uzb",
         "player": "Abbosbek Fayzullaev",
         "text": "Abbosbek Fayzullaev Goal - Heade"
+      },
+      {
+        "type": "goal",
+        "minute": "65'",
+        "teamId": "col",
+        "player": "Luis Díaz",
+        "text": "Luis Díaz Goal"
       }
     ],
     "stats": {
@@ -2434,9 +2441,9 @@
         "corners": 3,
         "offsides": 2,
         "saves": 1,
-        "xg": 0.96,
-        "duelsWon": 24,
-        "boxTouches": 20
+        "xg": 1.02,
+        "duelsWon": 25,
+        "boxTouches": 22
       }
     }
   },
