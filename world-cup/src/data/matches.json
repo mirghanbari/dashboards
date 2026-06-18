@@ -2723,7 +2723,7 @@
     "homeScore": 6,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2808,23 +2808,24 @@
         "minute": "90'+2'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal"
+        "text": "Jonathan David Goal",
+        "assist": "Nathan Saliba"
       }
     ],
     "stats": {
       "home": {
         "possession": 77.6,
-        "shots": 27,
-        "shotsOnTarget": 9,
+        "shots": 29,
+        "shotsOnTarget": 10,
         "passAccuracy": 90.2,
         "accuratePasses": 460,
         "fouls": 7,
         "corners": 16,
         "offsides": 1,
         "saves": 0,
-        "xg": 3.17,
-        "duelsWon": 30,
-        "boxTouches": 82
+        "xg": 3.87,
+        "duelsWon": 32,
+        "boxTouches": 84
       },
       "away": {
         "possession": 22.4,
@@ -2837,7 +2838,7 @@
         "offsides": 0,
         "saves": 4,
         "xg": 0.18,
-        "duelsWon": 27,
+        "duelsWon": 28,
         "boxTouches": 1
       }
     }
