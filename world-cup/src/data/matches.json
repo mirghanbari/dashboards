@@ -2593,9 +2593,9 @@
     "homeTeamId": "sui",
     "awayTeamId": "bih",
     "homeScore": 3,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2661,6 +2661,14 @@
         "player": "Johan Manzambi",
         "text": "Johan Manzambi Goal",
         "assist": "Rubén Vargas"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+3'",
+        "teamId": "bih",
+        "player": "Ermin Mahmic",
+        "text": "Ermin Mahmic Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
@@ -2680,8 +2688,8 @@
       },
       "away": {
         "possession": 38.3,
-        "shots": 4,
-        "shotsOnTarget": 2,
+        "shots": 5,
+        "shotsOnTarget": 3,
         "passAccuracy": 81.1,
         "accuratePasses": 283,
         "fouls": 16,
@@ -2690,7 +2698,7 @@
         "saves": 3,
         "xg": 0.19,
         "duelsWon": 34,
-        "boxTouches": 7
+        "boxTouches": 8
       }
     }
   },
