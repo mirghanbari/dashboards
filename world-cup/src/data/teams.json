@@ -935,12 +935,12 @@
     "goalsFor": 3,
     "goalsAgainst": 1,
     "points": 3,
-    "possession": 61.5,
+    "possession": 61.4,
     "ppda": 11.8,
     "cleanSheets": 0,
-    "passCompletion": 85.6,
-    "xgFor": 1.62,
-    "xgAgainst": 1.19
+    "passCompletion": 85.5,
+    "xgFor": 1.61,
+    "xgAgainst": 1.22
   },
   {
     "id": "por",
@@ -981,12 +981,12 @@
     "goalsFor": 1,
     "goalsAgainst": 3,
     "points": 0,
-    "possession": 38.5,
-    "ppda": 16.8,
+    "possession": 38.6,
+    "ppda": 16.7,
     "cleanSheets": 0,
-    "passCompletion": 76.1,
-    "xgFor": 1.19,
-    "xgAgainst": 1.62
+    "passCompletion": 76.2,
+    "xgFor": 1.22,
+    "xgAgainst": 1.61
   },
   {
     "id": "cod",

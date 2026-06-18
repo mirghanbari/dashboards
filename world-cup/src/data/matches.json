@@ -2398,7 +2398,7 @@
         "minute": "40'",
         "teamId": "col",
         "player": "Daniel Muñoz",
-        "text": "Daniel Muñoz Goal",
+        "text": "Daniel Muñoz Goal - Volley",
         "assist": "Luis Díaz"
       },
       {
@@ -2427,30 +2427,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 38.5,
+        "possession": 38.6,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 76.1,
-        "accuratePasses": 242,
+        "passAccuracy": 76.2,
+        "accuratePasses": 243,
         "fouls": 14,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
         "xg": 1.16,
-        "duelsWon": 35,
+        "duelsWon": 34,
         "boxTouches": 5
       },
       "away": {
-        "possession": 61.5,
+        "possession": 61.4,
         "shots": 15,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.6,
-        "accuratePasses": 446,
+        "passAccuracy": 85.5,
+        "accuratePasses": 444,
         "fouls": 11,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.62,
+        "xg": 1.61,
         "duelsWon": 36,
         "boxTouches": 27
       }
