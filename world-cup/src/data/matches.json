@@ -2421,7 +2421,8 @@
         "minute": "90'+9'",
         "teamId": "col",
         "player": "Jáminton Campaz",
-        "text": "Jáminton Campaz Goal - Header"
+        "text": "Jáminton Campaz Goal - Header",
+        "assist": "Cucho Hernández"
       }
     ],
     "stats": {
@@ -2449,7 +2450,7 @@
         "corners": 4,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.43,
+        "xg": 1.61,
         "duelsWon": 36,
         "boxTouches": 27
       }
