@@ -2723,7 +2723,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2774,13 +2774,6 @@
         "player": "Jonathan David",
         "text": "Jonathan David Goal - Volley",
         "goalType": "volley"
-      },
-      {
-        "type": "yellow",
-        "minute": "51'",
-        "teamId": "qat",
-        "player": "Assim Madibo",
-        "text": "Assim Madibo Yellow Card"
       },
       {
         "type": "red",
