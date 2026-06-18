@@ -2595,7 +2595,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "58",
+    "minute": "59",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2610,6 +2610,15 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "59'",
+        "teamId": "bih",
+        "player": "Amar Dedic",
+        "text": "Amar Dedic Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
         "possession": 65.6,
@@ -2622,7 +2631,7 @@
         "offsides": 3,
         "saves": 1,
         "xg": 0.19,
-        "duelsWon": 29,
+        "duelsWon": 32,
         "boxTouches": 17
       },
       "away": {
