@@ -2470,7 +2470,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "75",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2507,15 +2507,22 @@
         "teamId": "rsa",
         "player": "Thalente Mbatha",
         "text": "Thalente Mbatha Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "75'",
+        "teamId": "cze",
+        "player": "Ladislav Krejcí",
+        "text": "Ladislav Krejcí Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 38.6,
+        "possession": 39.5,
         "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 81.1,
-        "accuratePasses": 215,
+        "passAccuracy": 81.6,
+        "accuratePasses": 226,
         "fouls": 9,
         "corners": 4,
         "offsides": 1,
@@ -2525,12 +2532,12 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 61.4,
+        "possession": 60.5,
         "shots": 9,
         "shotsOnTarget": 1,
-        "passAccuracy": 90,
-        "accuratePasses": 385,
-        "fouls": 8,
+        "passAccuracy": 90.1,
+        "accuratePasses": 390,
+        "fouls": 9,
         "corners": 4,
         "offsides": 3,
         "saves": 2,
