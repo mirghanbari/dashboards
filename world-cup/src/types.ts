@@ -85,6 +85,9 @@ export interface MatchEvent {
   player: string;
   assist?: string;
   text?: string;
+  // Goal method, when ESPN tags it (from the event text). Plain open-play
+  // goals are left undefined. "own" = own goal (player scored into own net).
+  goalType?: "penalty" | "own" | "header" | "volley";
 }
 
 // Per-match team stats, one value per side. All optional — a given feed may

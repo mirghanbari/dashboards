@@ -2210,6 +2210,13 @@ tr.is-me .player-name {
 .md-event-player {
   font-weight: 600;
 }
+.md-event-goaltype {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  text-transform: lowercase;
+}
 .md-event-assist {
   color: var(--ink-faint);
   font-size: 0.78rem;

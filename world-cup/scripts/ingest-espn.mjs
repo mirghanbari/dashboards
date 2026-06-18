@@ -346,6 +346,26 @@ async function main() {
         player: e.participants?.[0]?.athlete?.displayName ?? "",
         text: e.shortText ?? text,
       };
+      // Goal method/type, when ESPN tags it. The qualifier lives in the event
+      // text (e.g. "… Penalty - Scored" / "… Own Goal" / "Goal - Header" /
+      // "Goal - Volley"); the penalty string is inconsistently spelled
+      // ("Penalty - Score(d)"), so match on substrings. Plain goals stay
+      // undefined (no marker). ESPN sometimes also exposes booleans — prefer
+      // those when present.
+      if (isGoal) {
+        const blob = `${text} ${e.shortText ?? ""}`;
+        const goalType =
+          e.penaltyKick === true || /penalty/i.test(blob)
+            ? "penalty"
+            : e.ownGoal === true || /own goal/i.test(blob)
+              ? "own"
+              : /header/i.test(blob)
+                ? "header"
+                : /volley/i.test(blob)
+                  ? "volley"
+                  : undefined;
+        if (goalType) ev.goalType = goalType;
+      }
       const assist = isGoal ? e.participants?.[1]?.athlete?.displayName : undefined;
       if (assist) ev.assist = assist;
       out.push(ev);

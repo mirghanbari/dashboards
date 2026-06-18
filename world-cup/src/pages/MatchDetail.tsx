@@ -12,6 +12,14 @@ const EVENT_ICON: Record<MatchEvent["type"], string> = {
   red: "🟥",
 };
 
+// Short label shown next to a goal scorer when ESPN tagged its method.
+const GOAL_TYPE_LABEL: Record<NonNullable<MatchEvent["goalType"]>, string> = {
+  penalty: "pen",
+  own: "OG",
+  header: "header",
+  volley: "volley",
+};
+
 // The team-comparison stats to show, in display order. `suffix` for percentages,
 // `decimals` for fractional values (xG). `asShare` renders the value as each
 // side's % of the pair (the underlying raw counts drive the split) — used for
@@ -72,7 +80,12 @@ function Timeline({ match }: { match: Match }) {
               <span className="md-event-body">
                 <span className="md-event-icon">{EVENT_ICON[e.type]}</span>
                 <span className="md-event-text">
-                  <span className="md-event-player">{e.player || team.name}</span>
+                  <span className="md-event-player">
+                    {e.player || team.name}
+                    {e.goalType && (
+                      <small className="md-event-goaltype">({GOAL_TYPE_LABEL[e.goalType]})</small>
+                    )}
+                  </span>
                   {e.assist && <small className="md-event-assist">assist: {e.assist}</small>}
                 </span>
               </span>
