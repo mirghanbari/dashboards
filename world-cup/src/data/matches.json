@@ -2595,7 +2595,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+6",
+    "minute": "90+8",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2669,30 +2669,38 @@
         "player": "Ermin Mahmic",
         "text": "Ermin Mahmic Goal - Volley",
         "goalType": "volley"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+7'",
+        "teamId": "sui",
+        "player": "Granit Xhaka",
+        "text": "Granit Xhaka Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.1,
+        "possession": 62.3,
         "shots": 12,
         "shotsOnTarget": 6,
         "passAccuracy": 88.1,
-        "accuratePasses": 512,
+        "accuratePasses": 517,
         "fouls": 7,
         "corners": 7,
         "offsides": 3,
         "saves": 2,
         "xg": 1.2,
-        "duelsWon": 49,
-        "boxTouches": 31
+        "duelsWon": 50,
+        "boxTouches": 34
       },
       "away": {
-        "possession": 37.9,
+        "possession": 37.7,
         "shots": 5,
         "shotsOnTarget": 3,
         "passAccuracy": 80.7,
         "accuratePasses": 285,
-        "fouls": 16,
+        "fouls": 18,
         "corners": 3,
         "offsides": 1,
         "saves": 3,
