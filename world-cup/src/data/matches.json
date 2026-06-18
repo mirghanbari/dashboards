@@ -2723,7 +2723,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2760,37 +2760,30 @@
         "player": "Jonathan David",
         "text": "Jonathan David Goal - Volley",
         "goalType": "volley"
-      },
-      {
-        "type": "yellow",
-        "minute": "32'",
-        "teamId": "qat",
-        "player": "Homam Ahmed",
-        "text": "Homam Ahmed Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.1,
+        "possession": 66.2,
         "shots": 7,
         "shotsOnTarget": 4,
-        "passAccuracy": 87.6,
-        "accuratePasses": 127,
+        "passAccuracy": 87.7,
+        "accuratePasses": 128,
         "fouls": 2,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 0.67,
         "duelsWon": 13,
-        "boxTouches": 12
+        "boxTouches": 11
       },
       "away": {
-        "possession": 33.9,
+        "possession": 33.8,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 65.8,
-        "accuratePasses": 52,
-        "fouls": 4,
+        "passAccuracy": 64.6,
+        "accuratePasses": 51,
+        "fouls": 5,
         "corners": 1,
         "offsides": 0,
         "saves": 2,
