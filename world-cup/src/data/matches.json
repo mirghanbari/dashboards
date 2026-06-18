@@ -2272,7 +2272,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "71",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2294,6 +2294,13 @@
         "teamId": "gha",
         "player": "Caleb Yirenkyi",
         "text": "Caleb Yirenkyi Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "72'",
+        "teamId": "pan",
+        "player": "César Blackman",
+        "text": "César Blackman Yellow Card"
       }
     ],
     "stats": {
@@ -2308,7 +2315,7 @@
         "offsides": 3,
         "saves": 2,
         "xg": 0.2,
-        "duelsWon": 43,
+        "duelsWon": 46,
         "boxTouches": 11
       },
       "away": {
