@@ -2723,7 +2723,7 @@
     "homeScore": 5,
     "awayScore": 0,
     "status": "live",
-    "minute": "77",
+    "minute": "78",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2815,7 +2815,7 @@
         "corners": 10,
         "offsides": 1,
         "saves": 0,
-        "xg": 2.84,
+        "xg": 2.86,
         "duelsWon": 29,
         "boxTouches": 63
       },
