@@ -2592,10 +2592,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "sui",
     "awayTeamId": "bih",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+8",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -2667,8 +2667,7 @@
         "minute": "90'+3'",
         "teamId": "bih",
         "player": "Ermin Mahmic",
-        "text": "Ermin Mahmic Goal - Volley",
-        "goalType": "volley"
+        "text": "Ermin Mahmic Goal"
       },
       {
         "type": "goal",
@@ -2682,15 +2681,15 @@
     "stats": {
       "home": {
         "possession": 62.3,
-        "shots": 12,
-        "shotsOnTarget": 6,
+        "shots": 13,
+        "shotsOnTarget": 7,
         "passAccuracy": 88.1,
         "accuratePasses": 517,
         "fouls": 7,
         "corners": 7,
         "offsides": 3,
         "saves": 2,
-        "xg": 1.2,
+        "xg": 2.01,
         "duelsWon": 50,
         "boxTouches": 34
       },
