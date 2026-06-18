@@ -2720,10 +2720,10 @@
     "city": "Vancouver",
     "homeTeamId": "can",
     "awayTeamId": "qat",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "63",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2772,8 +2772,7 @@
         "minute": "45'+3'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal - Volley",
-        "goalType": "volley"
+        "text": "Jonathan David Goal"
       },
       {
         "type": "red",
@@ -2808,7 +2807,7 @@
         "corners": 8,
         "offsides": 1,
         "saves": 0,
-        "xg": 2.62,
+        "xg": 2.68,
         "duelsWon": 26,
         "boxTouches": 51
       },
