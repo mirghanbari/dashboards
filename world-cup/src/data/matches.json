@@ -2363,7 +2363,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2413,15 +2413,16 @@
         "minute": "65'",
         "teamId": "col",
         "player": "Luis Díaz",
-        "text": "Luis Díaz Goal"
+        "text": "Luis Díaz Goal",
+        "assist": "Gustavo Puerta"
       }
     ],
     "stats": {
       "home": {
-        "possession": 32.3,
+        "possession": 32.4,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 74.4,
+        "passAccuracy": 73.6,
         "accuratePasses": 148,
         "fouls": 11,
         "corners": 2,
@@ -2432,17 +2433,17 @@
         "boxTouches": 3
       },
       "away": {
-        "possession": 67.7,
-        "shots": 9,
-        "shotsOnTarget": 2,
-        "passAccuracy": 87.9,
-        "accuratePasses": 378,
+        "possession": 67.6,
+        "shots": 11,
+        "shotsOnTarget": 3,
+        "passAccuracy": 87.7,
+        "accuratePasses": 379,
         "fouls": 8,
         "corners": 3,
         "offsides": 2,
         "saves": 1,
-        "xg": 1.02,
-        "duelsWon": 25,
+        "xg": 1.26,
+        "duelsWon": 24,
         "boxTouches": 22
       }
     }
