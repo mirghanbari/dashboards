@@ -2269,10 +2269,10 @@
     "city": "Toronto",
     "homeTeamId": "gha",
     "awayTeamId": "pan",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2301,35 +2301,43 @@
         "teamId": "pan",
         "player": "César Blackman",
         "text": "César Blackman Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+5'",
+        "teamId": "gha",
+        "player": "Caleb Yirenkyi",
+        "text": "Caleb Yirenkyi Goal",
+        "assist": "Brandon Thomas-Asante"
       }
     ],
     "stats": {
       "home": {
-        "possession": 38,
-        "shots": 6,
-        "shotsOnTarget": 1,
-        "passAccuracy": 82.4,
-        "accuratePasses": 281,
+        "possession": 38.2,
+        "shots": 7,
+        "shotsOnTarget": 2,
+        "passAccuracy": 82.8,
+        "accuratePasses": 289,
         "fouls": 7,
         "corners": 2,
         "offsides": 4,
         "saves": 3,
         "xg": 0.25,
-        "duelsWon": 53,
-        "boxTouches": 12
+        "duelsWon": 54,
+        "boxTouches": 14
       },
       "away": {
-        "possession": 62,
+        "possession": 61.8,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.6,
-        "accuratePasses": 490,
+        "passAccuracy": 86.7,
+        "accuratePasses": 497,
         "fouls": 10,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
         "xg": 0.45,
-        "duelsWon": 49,
+        "duelsWon": 50,
         "boxTouches": 16
       }
     }
