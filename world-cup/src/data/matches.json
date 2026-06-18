@@ -2723,7 +2723,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+4",
+    "minute": "45+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2772,30 +2772,31 @@
         "minute": "45'+3'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal"
+        "text": "Jonathan David Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.6,
+        "possession": 64.2,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 87.4,
-        "accuratePasses": 188,
+        "passAccuracy": 87.5,
+        "accuratePasses": 189,
         "fouls": 3,
         "corners": 5,
         "offsides": 1,
         "saves": 0,
-        "xg": 1.38,
+        "xg": 2.35,
         "duelsWon": 19,
-        "boxTouches": 30
+        "boxTouches": 35
       },
       "away": {
-        "possession": 35.4,
+        "possession": 35.8,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 71.2,
-        "accuratePasses": 89,
+        "passAccuracy": 71.1,
+        "accuratePasses": 91,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
