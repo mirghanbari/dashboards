@@ -2595,7 +2595,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2624,16 +2624,23 @@
         "teamId": "bih",
         "player": "Edin Dzeko",
         "text": "Edin Dzeko Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "65'",
+        "teamId": "sui",
+        "player": "Nico Elvedi",
+        "text": "Nico Elvedi Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.4,
+        "possession": 62.8,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 88,
-        "accuratePasses": 388,
-        "fouls": 5,
+        "passAccuracy": 87.8,
+        "accuratePasses": 389,
+        "fouls": 6,
         "corners": 6,
         "offsides": 3,
         "saves": 1,
@@ -2642,17 +2649,17 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 35.6,
+        "possession": 37.2,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 79,
-        "accuratePasses": 192,
+        "passAccuracy": 80.2,
+        "accuratePasses": 211,
         "fouls": 14,
         "corners": 2,
         "offsides": 1,
         "saves": 3,
         "xg": 0.18,
-        "duelsWon": 25,
+        "duelsWon": 26,
         "boxTouches": 7
       }
     }
