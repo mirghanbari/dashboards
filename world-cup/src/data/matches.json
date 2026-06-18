@@ -2361,9 +2361,9 @@
     "homeTeamId": "uzb",
     "awayTeamId": "col",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FS1",
@@ -2392,6 +2392,14 @@
         "teamId": "uzb",
         "player": "Abdukodir Khusanov",
         "text": "Abdukodir Khusanov Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "40'",
+        "teamId": "col",
+        "player": "Daniel Muñoz",
+        "text": "Daniel Muñoz Goal",
+        "assist": "Luis Díaz"
       }
     ],
     "stats": {
@@ -2410,15 +2418,15 @@
       },
       "away": {
         "possession": 74.4,
-        "shots": 3,
+        "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 89,
-        "accuratePasses": 226,
+        "accuratePasses": 227,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.18,
+        "xg": 0.73,
         "duelsWon": 14
       }
     }
