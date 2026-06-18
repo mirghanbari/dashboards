@@ -2468,9 +2468,9 @@
     "homeTeamId": "cze",
     "awayTeamId": "rsa",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "82",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2514,6 +2514,13 @@
         "teamId": "cze",
         "player": "Ladislav Krejcí",
         "text": "Ladislav Krejcí Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "83'",
+        "teamId": "rsa",
+        "player": "Teboho Mokoena",
+        "text": "Teboho Mokoena Penalty - Scored"
       }
     ],
     "stats": {
@@ -2533,8 +2540,8 @@
       },
       "away": {
         "possession": 62.5,
-        "shots": 11,
-        "shotsOnTarget": 1,
+        "shots": 12,
+        "shotsOnTarget": 2,
         "passAccuracy": 90.7,
         "accuratePasses": 437,
         "fouls": 9,
@@ -2543,7 +2550,7 @@
         "saves": 2,
         "xg": 0.33,
         "duelsWon": 38,
-        "boxTouches": 12
+        "boxTouches": 13
       }
     }
   },
