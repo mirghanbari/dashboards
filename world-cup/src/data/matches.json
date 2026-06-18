@@ -2419,31 +2419,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 35,
-        "shots": 4,
+        "possession": 35.5,
+        "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 73.6,
-        "accuratePasses": 195,
+        "passAccuracy": 74.2,
+        "accuratePasses": 201,
         "fouls": 14,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
-        "xg": 1.02,
-        "duelsWon": 29,
-        "boxTouches": 3
+        "xg": 1.1,
+        "duelsWon": 31,
+        "boxTouches": 4
       },
       "away": {
-        "possession": 65,
+        "possession": 64.5,
         "shots": 14,
         "shotsOnTarget": 3,
         "passAccuracy": 86.4,
-        "accuratePasses": 437,
+        "accuratePasses": 438,
         "fouls": 10,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
         "xg": 1.43,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 26
       }
     }
