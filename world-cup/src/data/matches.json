@@ -2737,7 +2737,15 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "duelsWon": 0
+      },
+      "away": {
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M028",
