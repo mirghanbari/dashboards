@@ -2470,7 +2470,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2493,15 +2493,22 @@
         "player": "Michal Sadílek",
         "text": "Michal Sadílek Goal",
         "assist": "Alexandr Sojka"
+      },
+      {
+        "type": "yellow",
+        "minute": "33'",
+        "teamId": "rsa",
+        "player": "Teboho Mokoena",
+        "text": "Teboho Mokoena Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41.6,
+        "possession": 42.7,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.7,
-        "accuratePasses": 105,
+        "passAccuracy": 88.8,
+        "accuratePasses": 111,
         "fouls": 6,
         "corners": 2,
         "offsides": 1,
@@ -2511,17 +2518,17 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 58.4,
+        "possession": 57.3,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 89.6,
-        "accuratePasses": 155,
+        "passAccuracy": 89.2,
+        "accuratePasses": 157,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.07,
-        "duelsWon": 16,
+        "xg": 0.09,
+        "duelsWon": 17,
         "boxTouches": 4
       }
     }
