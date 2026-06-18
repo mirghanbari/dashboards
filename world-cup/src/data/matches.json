@@ -2806,31 +2806,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 77,
-        "shots": 24,
+        "possession": 77.2,
+        "shots": 26,
         "shotsOnTarget": 9,
-        "passAccuracy": 90.7,
-        "accuratePasses": 428,
+        "passAccuracy": 90.9,
+        "accuratePasses": 438,
         "fouls": 4,
-        "corners": 14,
+        "corners": 15,
         "offsides": 1,
         "saves": 0,
-        "xg": 3.02,
+        "xg": 3.14,
         "duelsWon": 29,
         "boxTouches": 76
       },
       "away": {
-        "possession": 23,
+        "possession": 22.8,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 66.4,
+        "passAccuracy": 66,
         "accuratePasses": 101,
         "fouls": 9,
         "corners": 1,
         "offsides": 0,
         "saves": 4,
         "xg": 0.18,
-        "duelsWon": 22,
+        "duelsWon": 24,
         "boxTouches": 1
       }
     }
