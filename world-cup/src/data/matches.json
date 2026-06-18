@@ -2595,7 +2595,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "60",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2617,15 +2617,22 @@
         "teamId": "bih",
         "player": "Amar Dedic",
         "text": "Amar Dedic Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "61'",
+        "teamId": "bih",
+        "player": "Edin Dzeko",
+        "text": "Edin Dzeko Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.5,
+        "possession": 64.1,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 88.2,
-        "accuratePasses": 373,
+        "passAccuracy": 88,
+        "accuratePasses": 380,
         "fouls": 4,
         "corners": 5,
         "offsides": 3,
@@ -2635,12 +2642,12 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 35.5,
+        "possession": 35.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.9,
-        "accuratePasses": 183,
-        "fouls": 11,
+        "passAccuracy": 79.3,
+        "accuratePasses": 191,
+        "fouls": 13,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
