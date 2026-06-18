@@ -1073,12 +1073,12 @@
     "goalsFor": 0,
     "goalsAgainst": 1,
     "points": 0,
-    "possession": 62.1,
+    "possession": 62,
     "ppda": 7.8,
     "cleanSheets": 0,
     "passCompletion": 86.3,
     "xgFor": 0.74,
-    "xgAgainst": 1.32
+    "xgAgainst": 1.26
   },
   {
     "id": "gha",
@@ -1096,11 +1096,11 @@
     "goalsFor": 1,
     "goalsAgainst": 0,
     "points": 3,
-    "possession": 37.9,
+    "possession": 38,
     "ppda": 17.7,
     "cleanSheets": 1,
-    "passCompletion": 83.2,
-    "xgFor": 1.32,
+    "passCompletion": 83,
+    "xgFor": 1.26,
     "xgAgainst": 0.74
   }
 ]
