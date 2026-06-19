@@ -19,8 +19,8 @@
     "ppda": 15,
     "cleanSheets": 2,
     "passCompletion": 85.8,
-    "xgFor": 1.93,
-    "xgAgainst": 0.8
+    "xgFor": 1.97,
+    "xgAgainst": 1.1
   },
   {
     "id": "cze",
@@ -65,8 +65,8 @@
     "ppda": 14,
     "cleanSheets": 0,
     "passCompletion": 85.6,
-    "xgFor": 3.04,
-    "xgAgainst": 1.31
+    "xgFor": 3.34,
+    "xgAgainst": 1.35
   },
   {
     "id": "rsa",
