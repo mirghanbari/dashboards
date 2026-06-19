@@ -2943,7 +2943,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2973,30 +2973,37 @@
         "teamId": "aus",
         "player": "Jordan Bos",
         "text": "Jordan Bos Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "aus",
+        "player": "Alessandro Circati",
+        "text": "Alessandro Circati Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 67.1,
+        "possession": 68.4,
         "shots": 5,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.2,
-        "accuratePasses": 163,
+        "passAccuracy": 87.9,
+        "accuratePasses": 174,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.45,
-        "duelsWon": 16,
+        "duelsWon": 17,
         "boxTouches": 7
       },
       "away": {
-        "possession": 32.9,
+        "possession": 31.6,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 63.3,
         "accuratePasses": 57,
-        "fouls": 4,
+        "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
