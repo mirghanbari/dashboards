@@ -2943,7 +2943,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3016,35 +3016,42 @@
         "teamId": "aus",
         "player": "Jacob Italiano",
         "text": "Jacob Italiano Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "usa",
+        "player": "Chris Richards",
+        "text": "Chris Richards Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.7,
+        "possession": 62.6,
         "shots": 10,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.2,
-        "accuratePasses": 436,
-        "fouls": 11,
+        "passAccuracy": 85.9,
+        "accuratePasses": 443,
+        "fouls": 12,
         "corners": 7,
         "offsides": 1,
         "saves": 2,
         "xg": 1.3,
         "duelsWon": 57,
-        "boxTouches": 17
+        "boxTouches": 18
       },
       "away": {
-        "possession": 37.3,
+        "possession": 37.4,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 73.4,
-        "accuratePasses": 212,
+        "accuratePasses": 218,
         "fouls": 16,
         "corners": 4,
         "offsides": 0,
         "saves": 1,
         "xg": 0.44,
-        "duelsWon": 56,
+        "duelsWon": 57,
         "boxTouches": 19
       }
     }
