@@ -2942,8 +2942,8 @@
     "awayTeamId": "aus",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+8",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
