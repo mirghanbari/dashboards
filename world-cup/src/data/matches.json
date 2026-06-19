@@ -3070,7 +3070,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3100,16 +3100,23 @@
         "teamId": "mar",
         "player": "Issa Diop",
         "text": "Issa Diop Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "65'",
+        "teamId": "sco",
+        "player": "Andy Robertson",
+        "text": "Andy Robertson Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 39.5,
+        "possession": 38.9,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.1,
+        "passAccuracy": 86.8,
         "accuratePasses": 270,
-        "fouls": 7,
+        "fouls": 8,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
@@ -3118,11 +3125,11 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 60.5,
+        "possession": 61.1,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.8,
-        "accuratePasses": 434,
+        "passAccuracy": 90.9,
+        "accuratePasses": 447,
         "fouls": 5,
         "corners": 5,
         "offsides": 0,
