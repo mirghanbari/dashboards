@@ -2860,7 +2860,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "52",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2888,7 +2888,8 @@
         "minute": "50'",
         "teamId": "mex",
         "player": "Luis Romo",
-        "text": "Luis Romo Goal"
+        "text": "Luis Romo Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
@@ -2896,7 +2897,7 @@
         "possession": 48.1,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.7,
+        "passAccuracy": 84.4,
         "accuratePasses": 255,
         "fouls": 4,
         "corners": 0,
@@ -2910,7 +2911,7 @@
         "possession": 51.9,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.5,
+        "passAccuracy": 83.2,
         "accuratePasses": 273,
         "fouls": 4,
         "corners": 0,
