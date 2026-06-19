@@ -2859,8 +2859,12 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "25",
+    "minute": "26",
     "broadcasts": [
+      {
+        "name": "FOX",
+        "type": "tv"
+      },
       {
         "name": "Telemundo",
         "type": "tv"
