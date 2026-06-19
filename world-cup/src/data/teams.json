@@ -111,7 +111,7 @@
     "ppda": 7.1,
     "cleanSheets": 1,
     "passCompletion": 82.2,
-    "xgFor": 5.99,
+    "xgFor": 6.07,
     "xgAgainst": 1.15
   },
   {
@@ -131,11 +131,11 @@
     "goalsAgainst": 5,
     "points": 1,
     "possession": 38.3,
-    "ppda": 10.7,
+    "ppda": 10.8,
     "cleanSheets": 0,
     "passCompletion": 72.1,
-    "xgFor": 1.21,
-    "xgAgainst": 3.24
+    "xgFor": 1.2,
+    "xgAgainst": 3.3
   },
   {
     "id": "sui",
@@ -154,11 +154,11 @@
     "goalsAgainst": 2,
     "points": 4,
     "possession": 65.2,
-    "ppda": 11.3,
+    "ppda": 11.1,
     "cleanSheets": 0,
     "passCompletion": 89.8,
-    "xgFor": 5.19,
-    "xgAgainst": 0.85
+    "xgFor": 5.25,
+    "xgAgainst": 0.84
   },
   {
     "id": "qat",
@@ -181,7 +181,7 @@
     "cleanSheets": 0,
     "passCompletion": 67.7,
     "xgFor": 0.79,
-    "xgAgainst": 7.94
+    "xgAgainst": 8.02
   },
   {
     "id": "bra",
