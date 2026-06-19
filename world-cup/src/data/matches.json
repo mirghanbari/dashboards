@@ -3104,21 +3104,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 38.1,
+        "possession": 38,
         "shots": 2,
         "shotsOnTarget": 0,
         "passAccuracy": 88.1,
-        "accuratePasses": 193,
+        "accuratePasses": 192,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0.2,
-        "duelsWon": 16,
+        "duelsWon": 17,
         "boxTouches": 8
       },
       "away": {
-        "possession": 61.9,
+        "possession": 62,
         "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 90.6,
