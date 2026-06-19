@@ -2230,8 +2230,7 @@
         "minute": "45'+5'",
         "teamId": "cro",
         "player": "Petar Musa",
-        "text": "Petar Musa Goal - Volley",
-        "goalType": "volley",
+        "text": "Petar Musa Goal",
         "assist": "Ivan Perisic"
       },
       {
@@ -2860,7 +2859,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2886,27 +2885,27 @@
     ],
     "stats": {
       "home": {
-        "possession": 60.1,
+        "possession": 60.7,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 86.4,
-        "accuratePasses": 146,
+        "passAccuracy": 86.3,
+        "accuratePasses": 164,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0.11,
-        "duelsWon": 15
+        "duelsWon": 17
       },
       "away": {
-        "possession": 39.9,
+        "possession": 39.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 75.5,
-        "accuratePasses": 83,
+        "passAccuracy": 76,
+        "accuratePasses": 92,
         "fouls": 4,
         "corners": 0,
-        "offsides": 2,
+        "offsides": 3,
         "saves": 1,
         "xg": 0,
         "duelsWon": 11
