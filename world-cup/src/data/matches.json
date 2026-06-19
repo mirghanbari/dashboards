@@ -2637,7 +2637,8 @@
         "minute": "74'",
         "teamId": "sui",
         "player": "Johan Manzambi",
-        "text": "Johan Manzambi Goal"
+        "text": "Johan Manzambi Goal - Volley",
+        "goalType": "volley"
       },
       {
         "type": "red",
@@ -2667,7 +2668,8 @@
         "minute": "90'+3'",
         "teamId": "bih",
         "player": "Ermin Mahmic",
-        "text": "Ermin Mahmic Goal"
+        "text": "Ermin Mahmic Goal - Volley",
+        "goalType": "volley"
       },
       {
         "type": "goal",
