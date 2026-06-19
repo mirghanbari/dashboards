@@ -2904,8 +2904,8 @@
         "possession": 42.3,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 81.5,
-        "accuratePasses": 349,
+        "passAccuracy": 81.8,
+        "accuratePasses": 350,
         "fouls": 9,
         "corners": 1,
         "offsides": 3,
@@ -2925,8 +2925,8 @@
         "offsides": 6,
         "saves": 3,
         "xg": 0.69,
-        "duelsWon": 44,
-        "boxTouches": 10
+        "duelsWon": 45,
+        "boxTouches": 11
       }
     }
   },
