@@ -2918,14 +2918,14 @@
         "possession": 57.7,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 84,
-        "accuratePasses": 487,
+        "passAccuracy": 84.1,
+        "accuratePasses": 488,
         "fouls": 7,
         "corners": 2,
         "offsides": 6,
         "saves": 3,
         "xg": 0.69,
-        "duelsWon": 43,
+        "duelsWon": 44,
         "boxTouches": 10
       }
     }
