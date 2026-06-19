@@ -2859,8 +2859,8 @@
     "awayTeamId": "kor",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -2901,13 +2901,13 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.5,
+        "possession": 42.4,
         "shots": 8,
         "shotsOnTarget": 4,
         "passAccuracy": 81.6,
         "accuratePasses": 350,
         "fouls": 9,
-        "corners": 0,
+        "corners": 1,
         "offsides": 3,
         "saves": 2,
         "xg": 0.48,
@@ -2915,10 +2915,10 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 57.5,
+        "possession": 57.6,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.1,
+        "passAccuracy": 83.9,
         "accuratePasses": 486,
         "fouls": 7,
         "corners": 2,
