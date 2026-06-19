@@ -2519,6 +2519,35 @@
         "player": "Michal Sadílek",
         "text": "Michal Sadílek Goal",
         "assist": "Alexandr Sojka"
+      },
+      {
+        "type": "yellow",
+        "minute": "33'",
+        "teamId": "rsa",
+        "player": "Teboho Mokoena",
+        "text": "Teboho Mokoena Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "40'",
+        "teamId": "rsa",
+        "player": "Thalente Mbatha",
+        "text": "Thalente Mbatha Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "75'",
+        "teamId": "cze",
+        "player": "Ladislav Krejcí",
+        "text": "Ladislav Krejcí Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "83'",
+        "teamId": "rsa",
+        "player": "Teboho Mokoena",
+        "text": "Teboho Mokoena Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
