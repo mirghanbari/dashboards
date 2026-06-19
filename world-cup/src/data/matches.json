@@ -2760,7 +2760,8 @@
         "minute": "29'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal"
+        "text": "Jonathan David Goal - Volley",
+        "goalType": "volley"
       },
       {
         "type": "red",
@@ -2885,11 +2886,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 61.2,
+        "possession": 60.1,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.3,
-        "accuratePasses": 144,
+        "passAccuracy": 86.4,
+        "accuratePasses": 146,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
@@ -2898,11 +2899,11 @@
         "duelsWon": 15
       },
       "away": {
-        "possession": 38.8,
+        "possession": 39.9,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.7,
-        "accuratePasses": 79,
+        "passAccuracy": 75.5,
+        "accuratePasses": 83,
         "fouls": 4,
         "corners": 0,
         "offsides": 2,
