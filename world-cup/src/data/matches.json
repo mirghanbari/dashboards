@@ -2911,7 +2911,7 @@
         "offsides": 3,
         "saves": 2,
         "xg": 0.48,
-        "duelsWon": 39,
+        "duelsWon": 40,
         "boxTouches": 6
       },
       "away": {
@@ -2925,8 +2925,8 @@
         "offsides": 6,
         "saves": 3,
         "xg": 0.69,
-        "duelsWon": 44,
-        "boxTouches": 9
+        "duelsWon": 43,
+        "boxTouches": 10
       }
     }
   },
