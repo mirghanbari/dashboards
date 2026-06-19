@@ -2943,7 +2943,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "44",
+    "minute": "45+1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2980,25 +2980,33 @@
         "teamId": "aus",
         "player": "Alessandro Circati",
         "text": "Alessandro Circati Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "43'",
+        "teamId": "usa",
+        "player": "Alex Freeman",
+        "text": "Alex Freeman Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.4,
-        "shots": 6,
+        "possession": 71.3,
+        "shots": 7,
         "shotsOnTarget": 0,
         "passAccuracy": 89,
-        "accuratePasses": 235,
+        "accuratePasses": 234,
         "fouls": 5,
         "corners": 2,
-        "offsides": 0,
+        "offsides": 1,
         "saves": 1,
         "xg": 0.57,
-        "duelsWon": 26,
-        "boxTouches": 12
+        "duelsWon": 27,
+        "boxTouches": 13
       },
       "away": {
-        "possession": 28.6,
+        "possession": 28.7,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 62.9,
