@@ -2943,7 +2943,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "16",
+    "minute": "17",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2966,30 +2966,37 @@
         "player": "Cameron Burgess",
         "text": "Cameron Burgess Own Goal",
         "goalType": "own"
+      },
+      {
+        "type": "yellow",
+        "minute": "16'",
+        "teamId": "aus",
+        "player": "Jordan Bos",
+        "text": "Jordan Bos Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 74.7,
+        "possession": 72.7,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 86.1,
-        "accuratePasses": 93,
+        "passAccuracy": 86.2,
+        "accuratePasses": 100,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.35,
-        "duelsWon": 14,
-        "boxTouches": 4
+        "duelsWon": 15,
+        "boxTouches": 5
       },
       "away": {
-        "possession": 25.3,
+        "possession": 27.3,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 62.2,
-        "accuratePasses": 23,
-        "fouls": 1,
+        "passAccuracy": 59.1,
+        "accuratePasses": 26,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
