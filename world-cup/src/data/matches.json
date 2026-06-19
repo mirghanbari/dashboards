@@ -3079,6 +3079,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ],
     "timeline": [
