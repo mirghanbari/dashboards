@@ -3068,9 +3068,9 @@
     "homeTeamId": "sco",
     "awayTeamId": "mar",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "1",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3085,28 +3085,42 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "2'",
+        "teamId": "mar",
+        "player": "Ismael Saibari",
+        "text": "Ismael Saibari Goal",
+        "assist": "Brahim Díaz"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 0,
+        "possession": 9.5,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "passAccuracy": 50,
+        "accuratePasses": 1,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
-        "saves": 0
+        "saves": 0,
+        "xg": 0,
+        "duelsWon": 0
       },
       "away": {
-        "possession": 0,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "possession": 90.5,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 94.7,
+        "accuratePasses": 18,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
-        "saves": 0
+        "saves": 0,
+        "xg": 0.13,
+        "duelsWon": 0
       }
     }
   },
