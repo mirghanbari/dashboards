@@ -2943,7 +2943,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -2988,29 +2988,36 @@
         "player": "Alex Freeman",
         "text": "Alex Freeman Goal - Header",
         "goalType": "header"
+      },
+      {
+        "type": "yellow",
+        "minute": "56'",
+        "teamId": "usa",
+        "player": "Antonee Robinson",
+        "text": "Antonee Robinson Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.2,
+        "possession": 70.9,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.6,
-        "accuratePasses": 337,
-        "fouls": 8,
+        "passAccuracy": 89.3,
+        "accuratePasses": 341,
+        "fouls": 9,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
         "xg": 1.35,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 16
       },
       "away": {
-        "possession": 28.8,
+        "possession": 29.1,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 64.2,
-        "accuratePasses": 97,
+        "passAccuracy": 64.5,
+        "accuratePasses": 100,
         "fouls": 10,
         "corners": 2,
         "offsides": 0,
