@@ -3070,7 +3070,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3093,15 +3093,22 @@
         "player": "Ismael Saibari",
         "text": "Ismael Saibari Goal",
         "assist": "Brahim Díaz"
+      },
+      {
+        "type": "yellow",
+        "minute": "23'",
+        "teamId": "mar",
+        "player": "Issa Diop",
+        "text": "Issa Diop Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 27.2,
+        "possession": 32,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.6,
-        "accuratePasses": 62,
+        "passAccuracy": 85.3,
+        "accuratePasses": 81,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
@@ -3111,7 +3118,7 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 72.8,
+        "possession": 68,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 93.1,
