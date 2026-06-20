@@ -3154,7 +3154,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "26",
+    "minute": "27",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3181,27 +3181,27 @@
         "type": "goal",
         "minute": "23'",
         "teamId": "bra",
-        "player": "",
-        "text": "Matheus Cunha Own Goal",
-        "goalType": "own"
+        "player": "Matheus Cunha",
+        "text": "Matheus Cunha Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.6,
+        "possession": 62.7,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.5,
+        "passAccuracy": 88.9,
         "accuratePasses": 128,
         "fouls": 3,
         "corners": 4,
         "offsides": 4,
         "saves": 0,
         "xg": 0.47,
-        "duelsWon": 12
+        "duelsWon": 13,
+        "boxTouches": 7
       },
       "away": {
-        "possession": 37.4,
+        "possession": 37.3,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 78.9,
@@ -3211,7 +3211,8 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0,
-        "duelsWon": 13
+        "duelsWon": 13,
+        "boxTouches": 1
       }
     }
   },
