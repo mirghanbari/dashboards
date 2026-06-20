@@ -3069,8 +3069,8 @@
     "awayTeamId": "mar",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
