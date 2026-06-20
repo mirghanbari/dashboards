@@ -3354,7 +3354,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "46",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3389,11 +3389,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.1,
+        "possession": 58.1,
         "shots": 5,
         "shotsOnTarget": 4,
-        "passAccuracy": 89.6,
-        "accuratePasses": 223,
+        "passAccuracy": 89.2,
+        "accuratePasses": 224,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
@@ -3403,12 +3403,12 @@
         "boxTouches": 13
       },
       "away": {
-        "possession": 40.9,
+        "possession": 41.9,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.4,
-        "accuratePasses": 146,
-        "fouls": 4,
+        "passAccuracy": 84.1,
+        "accuratePasses": 153,
+        "fouls": 5,
         "corners": 2,
         "offsides": 3,
         "saves": 2,
