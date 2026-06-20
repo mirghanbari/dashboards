@@ -19,12 +19,24 @@ import { PLAYERS, TEAMS, getTeam } from "./data";
 // volumes climb through the tournament. Averaged over players who've attempted
 // any (so the ~1200 who never featured don't drag it to ~0); floor of 1 so a
 // pre-tournament empty feed still yields a sane threshold.
-function avgAttempts(field: keyof Player): number {
+// Minimum attempts before an efficiency rate (Shot accuracy, Pass completion)
+// earns a spot on its leaderboard — otherwise a 2-for-2 cameo reads a perfect
+// 100% and swamps high-volume marksmen. The bar is the tournament-wide AVERAGE
+// attempts (recomputed live from the data, so it rises on its own as volumes
+// climb through the tournament) times a per-stat factor. Averaged over players
+// who've attempted any (so the ~800 who never featured don't drag it to ~0);
+// floor of 1 so a pre-tournament empty feed still yields a sane threshold.
+// Shots take a 2.5× factor because shooting is low-volume — the raw average is
+// only ~2 early on (cameo-heavy), too few attempts for a percentage to mean
+// anything, so we require ~2½ matchdays' worth of shots. Passing is high-volume,
+// so its plain average (~40) is already a meaningful bar (factor 1).
+function avgAttempts(field: keyof Player, factor = 1): number {
   const vals = PLAYERS.map((p) => p[field] as number).filter((v) => v > 0);
   if (!vals.length) return 1;
-  return Math.max(1, Math.round(vals.reduce((a, b) => a + b, 0) / vals.length));
+  const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+  return Math.max(1, Math.round(mean * factor));
 }
-export const MIN_SHOTS_FOR_ACCURACY = avgAttempts("shots");
+export const MIN_SHOTS_FOR_ACCURACY = avgAttempts("shots", 2.5);
 export const MIN_PASSES_FOR_COMPLETION = avgAttempts("passes");
 
 export const STAT_CATALOG: StatDef[] = [
@@ -36,8 +48,9 @@ export const STAT_CATALOG: StatDef[] = [
     key: "shotAccuracy", label: "Shot accuracy", tier: "basic", scope: "player",
     source: "derived", unit: "%", decimals: 1,
     qualifier: `min ${MIN_SHOTS_FOR_ACCURACY} att`,
-    // Returns 0 below the shot minimum so leaders() (which filters value > 0)
-    // drops unqualified players from the leaderboard.
+    // Real on-target % — but returns 0 below the shot minimum so leaders()
+    // (which filters value > 0) drops small-sample players whose 100% isn't yet
+    // meaningful.
     derive: (p) =>
       p.shots >= MIN_SHOTS_FOR_ACCURACY ? (p.shotsOnTarget / p.shots) * 100 : 0,
   },
