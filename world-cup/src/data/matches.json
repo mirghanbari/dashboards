@@ -3485,7 +3485,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "69",
+    "minute": "70",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3513,7 +3513,8 @@
         "minute": "68'",
         "teamId": "ger",
         "player": "Deniz Undav",
-        "text": "Deniz Undav Goal",
+        "text": "Deniz Undav Goal - Volley",
+        "goalType": "volley",
         "assist": "Nadiem Amiri"
       }
     ],
@@ -3528,7 +3529,7 @@
         "corners": 8,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.72,
+        "xg": 1.04,
         "duelsWon": 32,
         "boxTouches": 23
       },
