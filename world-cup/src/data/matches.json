@@ -3483,9 +3483,9 @@
     "homeTeamId": "ger",
     "awayTeamId": "civ",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "30",
+    "minute": "31",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3498,6 +3498,15 @@
       {
         "name": "FOX One",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "30'",
+        "teamId": "civ",
+        "player": "Franck Kessié",
+        "text": "Franck Kessié Goal"
       }
     ],
     "stats": {
@@ -3517,15 +3526,15 @@
       },
       "away": {
         "possession": 38.5,
-        "shots": 1,
-        "shotsOnTarget": 0,
+        "shots": 3,
+        "shotsOnTarget": 1,
         "passAccuracy": 89,
         "accuratePasses": 97,
         "fouls": 1,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.09,
+        "xg": 0.7,
         "duelsWon": 11,
         "boxTouches": 5
       }
