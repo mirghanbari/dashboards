@@ -9,6 +9,7 @@ import {
   TEAMS,
 } from "../data";
 import { MatchCard } from "../components/MatchCard";
+import { FavoriteStar } from "../components/FavoriteStar";
 import { StatCard } from "../components/StatCard";
 import { RatingBars } from "../components/RatingBars";
 import { useJsonLd } from "../seo/jsonLd";
@@ -60,7 +61,10 @@ export function TeamDetail() {
       <header className="team-hero">
         <span className="team-hero-flag">{team.flag}</span>
         <div>
-          <h1 className="team-hero-name">{team.name}</h1>
+          <div className="team-hero-titlerow">
+            <h1 className="team-hero-name">{team.name}</h1>
+            <FavoriteStar teamId={teamId} className="fav-star-lg" />
+          </div>
           <p className="team-hero-meta">
             Group {team.group} · {team.confederation}
             {team.fifaRank > 0 && ` · FIFA rank #${team.fifaRank}`}

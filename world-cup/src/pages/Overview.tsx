@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MATCHES, TEAMS, PLAYERS, META, topScorers, getTeam, goalsByGroup, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
+import { FavoriteTeams } from "../components/FavoriteTeams";
 import { ScoreBoard } from "../components/ScoreBoard";
 import { StatCard } from "../components/StatCard";
 import { BarChart } from "../components/BarChart";
@@ -64,6 +65,8 @@ export function Overview() {
         <StatCard label="Teams" value={TEAMS.length} sub="12 groups" to="/teams" />
         <StatCard label="Players tracked" value={PLAYERS.length} to="/players" />
       </section>
+
+      <FavoriteTeams matches={matches} />
 
       {live.length > 0 && (
         <section className="section">

@@ -702,6 +702,9 @@ select:disabled {
 .standings .col-team {
   text-align: left;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .standings .col-pts {
   font-weight: 800;
@@ -2428,3 +2431,160 @@ tr.is-me .player-name {
 }
 .third-in-key { background: var(--pitch-2); }
 .third-out-key { background: var(--ink-faint); }
+
+/* ---------------- Favorite teams ---------------- */
+.fav-star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-faint);
+  line-height: 1;
+  padding: 2px;
+  flex: none;
+  transition: color 0.13s, transform 0.13s;
+}
+.fav-star:hover {
+  color: var(--gold);
+  transform: scale(1.15);
+}
+.fav-star.is-on {
+  color: var(--gold);
+}
+.fav-star-sm {
+  font-size: 0.95rem;
+}
+.fav-star-lg {
+  font-size: 1.5rem;
+}
+
+.team-hero-titlerow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* "Your teams" panel on the Overview page */
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+.fav-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fav-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.fav-card-team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+.fav-card-team:hover .fav-card-name {
+  color: var(--pitch-1);
+}
+.fav-card-flag {
+  font-size: 1.8rem;
+  flex: none;
+}
+.fav-card-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fav-card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-top: -4px;
+}
+.fav-qual {
+  border-left: 3px solid transparent;
+  border-radius: 0 6px 6px 0;
+  padding: 6px 8px 6px 10px;
+}
+.fav-qual.q-in {
+  border-left-color: var(--pitch-2);
+  background: rgba(11, 191, 91, 0.06);
+}
+.fav-qual.q-alive {
+  border-left-color: var(--gold);
+  background: rgba(244, 183, 64, 0.08);
+}
+.fav-qual.q-out2 {
+  border-left-color: var(--ink-faint);
+  background: rgba(138, 152, 143, 0.08);
+}
+.fav-qual.q-elim {
+  border-left-color: var(--red);
+  background: rgba(226, 54, 54, 0.06);
+}
+.fav-qual-status {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 1px 7px;
+  border-radius: 999px;
+  margin-bottom: 3px;
+}
+.q-in .fav-qual-status {
+  background: rgba(11, 191, 91, 0.16);
+  color: var(--pitch-1);
+}
+.q-alive .fav-qual-status {
+  background: rgba(244, 183, 64, 0.2);
+  color: #9a6b00;
+}
+.q-out2 .fav-qual-status {
+  background: rgba(138, 152, 143, 0.18);
+  color: var(--ink-faint);
+}
+.q-elim .fav-qual-status {
+  background: rgba(226, 54, 54, 0.14);
+  color: var(--red);
+}
+.fav-qual-scenario {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.fav-card-match-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+}
+.fav-card-match .match-card {
+  cursor: pointer;
+}
+.fav-card-odds {
+  font-size: 0.78rem;
+  margin-top: auto;
+}
+.fav-card-odds a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.fav-card-odds a:hover {
+  color: var(--pitch-1);
+}

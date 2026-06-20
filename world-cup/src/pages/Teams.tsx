@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { groupLetters, standingsForGroup, teamRankings, classifyGroup } from "../data";
 import type { QualStatus } from "../data";
+import { FavoriteStar } from "../components/FavoriteStar";
 
 // A couple of full names overflow the narrow group-standings column; show a
 // compact label (the FIFA code) there instead. Falls back to the full name.
@@ -164,6 +165,7 @@ export function Teams() {
                     <tr key={t.id} className={t.rank <= 2 ? "qualifies" : ""}>
                       <td className="col-pos">{t.rank}</td>
                       <td className="col-team">
+                        <FavoriteStar teamId={t.id} className="fav-star-sm" />
                         <Link to={`/teams/${t.id}`} className="team-cell">
                           <span className="team-flag">{t.flag}</span>
                           <span className="team-name">{label}</span>
