@@ -1762,6 +1762,16 @@ tr.is-me .player-name {
   .hero {
     padding: 40px 22px;
   }
+  /* Stack the title and its CTA so the pill chip doesn't get squeezed into a
+     multi-line blob beside the heading on narrow screens. */
+  .page-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .page-head-row .chip {
+    white-space: nowrap;
+  }
   .footer-meta {
     text-align: left;
   }
