@@ -3151,10 +3151,10 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "bra",
     "awayTeamId": "hai",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3183,29 +3183,36 @@
         "teamId": "bra",
         "player": "Matheus Cunha",
         "text": "Matheus Cunha Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "36'",
+        "teamId": "bra",
+        "player": "Matheus Cunha",
+        "text": "Matheus Cunha Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.1,
-        "shots": 5,
-        "shotsOnTarget": 3,
-        "passAccuracy": 86.9,
-        "accuratePasses": 159,
+        "possession": 60.6,
+        "shots": 6,
+        "shotsOnTarget": 4,
+        "passAccuracy": 86.2,
+        "accuratePasses": 163,
         "fouls": 4,
         "corners": 4,
         "offsides": 5,
         "saves": 0,
         "xg": 0.58,
-        "duelsWon": 15,
-        "boxTouches": 9
+        "duelsWon": 17,
+        "boxTouches": 10
       },
       "away": {
-        "possession": 37.9,
+        "possession": 39.4,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 77,
-        "accuratePasses": 87,
+        "passAccuracy": 79.2,
+        "accuratePasses": 99,
         "fouls": 2,
         "corners": 1,
         "offsides": 1,
