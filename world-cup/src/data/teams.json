@@ -296,7 +296,7 @@
     "cleanSheets": 1,
     "passCompletion": 63,
     "xgFor": 0.85,
-    "xgAgainst": 3.61
+    "xgAgainst": 3.66
   },
   {
     "id": "tur",
@@ -318,7 +318,7 @@
     "ppda": 7.9,
     "cleanSheets": 0,
     "passCompletion": 89.6,
-    "xgFor": 3.55,
+    "xgFor": 3.6,
     "xgAgainst": 1.49
   },
   {
