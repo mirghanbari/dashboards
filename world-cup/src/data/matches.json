@@ -3354,7 +3354,7 @@
     "homeScore": 4,
     "awayScore": 1,
     "status": "live",
-    "minute": "88",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3430,6 +3430,13 @@
         "teamId": "swe",
         "player": "Lucas Bergvall",
         "text": "Lucas Bergvall Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "89'",
+        "teamId": "ned",
+        "player": "Crysencio Summerville",
+        "text": "Crysencio Summerville Goal"
       }
     ],
     "stats": {
@@ -3444,7 +3451,7 @@
         "offsides": 3,
         "saves": 6,
         "xg": 2.38,
-        "duelsWon": 40,
+        "duelsWon": 41,
         "boxTouches": 19
       },
       "away": {
@@ -3458,8 +3465,8 @@
         "offsides": 3,
         "saves": 2,
         "xg": 0.91,
-        "duelsWon": 39,
-        "boxTouches": 22
+        "duelsWon": 42,
+        "boxTouches": 23
       }
     }
   },
