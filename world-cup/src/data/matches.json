@@ -3154,7 +3154,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "3",
+    "minute": "5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3169,21 +3169,30 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "4'",
+        "teamId": "hai",
+        "player": "Carlens Arcus",
+        "text": "Carlens Arcus Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 67.7,
+        "possession": 69.7,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 90.5,
-        "accuratePasses": 19,
+        "passAccuracy": 91.3,
+        "accuratePasses": 21,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 2
+        "duelsWon": 4
       },
       "away": {
-        "possession": 32.3,
+        "possession": 30.3,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 70,
