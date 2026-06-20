@@ -3484,8 +3484,8 @@
     "awayTeamId": "civ",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -3527,11 +3527,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.9,
+        "possession": 59.4,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 89.5,
-        "accuratePasses": 553,
+        "passAccuracy": 89.1,
+        "accuratePasses": 554,
         "fouls": 5,
         "corners": 8,
         "offsides": 0,
@@ -3541,11 +3541,11 @@
         "boxTouches": 32
       },
       "away": {
-        "possession": 40.1,
+        "possession": 40.6,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 86,
-        "accuratePasses": 361,
+        "passAccuracy": 85.2,
+        "accuratePasses": 367,
         "fouls": 7,
         "corners": 3,
         "offsides": 1,
