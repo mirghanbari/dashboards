@@ -3154,7 +3154,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+4",
+    "minute": "45+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3199,6 +3199,13 @@
         "player": "Vinícius Júnior",
         "text": "Vinícius Júnior Goal",
         "assist": "Lucas Paquetá"
+      },
+      {
+        "type": "yellow",
+        "minute": "45'+4'",
+        "teamId": "hai",
+        "player": "Frantzdy Pierrot",
+        "text": "Frantzdy Pierrot Yellow Card"
       }
     ],
     "stats": {
@@ -3213,7 +3220,7 @@
         "offsides": 5,
         "saves": 0,
         "xg": 1.26,
-        "duelsWon": 19,
+        "duelsWon": 20,
         "boxTouches": 12
       },
       "away": {
