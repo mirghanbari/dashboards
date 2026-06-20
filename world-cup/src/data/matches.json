@@ -3263,7 +3263,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "70",
+    "minute": "71",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3300,6 +3300,13 @@
         "teamId": "par",
         "player": "Miguel Almirón",
         "text": "Miguel Almirón Red Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "71'",
+        "teamId": "tur",
+        "player": "Eren Elmali",
+        "text": "Eren Elmali Yellow Card"
       }
     ],
     "stats": {
