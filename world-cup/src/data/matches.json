@@ -3351,10 +3351,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "ned",
     "awayTeamId": "swe",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3400,31 +3400,39 @@
         "teamId": "swe",
         "player": "Gabriel Gudmundsson",
         "text": "Gabriel Gudmundsson Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "ned",
+        "player": "Cody Gakpo",
+        "text": "Cody Gakpo Goal",
+        "assist": "Crysencio Summerville"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.5,
-        "shots": 7,
-        "shotsOnTarget": 5,
-        "passAccuracy": 90.3,
-        "accuratePasses": 250,
+        "possession": 56.3,
+        "shots": 8,
+        "shotsOnTarget": 6,
+        "passAccuracy": 90,
+        "accuratePasses": 260,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
-        "xg": 2.21,
+        "xg": 2.34,
         "duelsWon": 29,
         "boxTouches": 18
       },
       "away": {
-        "possession": 43.5,
+        "possession": 43.7,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 85,
-        "accuratePasses": 181,
-        "fouls": 5,
-        "corners": 3,
+        "passAccuracy": 84.4,
+        "accuratePasses": 189,
+        "fouls": 6,
+        "corners": 2,
         "offsides": 3,
         "saves": 2,
         "xg": 0.54,
