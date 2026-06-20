@@ -2636,8 +2636,7 @@
         "minute": "74'",
         "teamId": "sui",
         "player": "Johan Manzambi",
-        "text": "Johan Manzambi Goal - Volley",
-        "goalType": "volley"
+        "text": "Johan Manzambi Goal"
       },
       {
         "type": "red",
@@ -2667,8 +2666,7 @@
         "minute": "90'+3'",
         "teamId": "bih",
         "player": "Ermin Mahmic",
-        "text": "Ermin Mahmic Goal - Volley",
-        "goalType": "volley"
+        "text": "Ermin Mahmic Goal"
       },
       {
         "type": "goal",
@@ -3152,7 +3150,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "49",
+    "minute": "50",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3208,11 +3206,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 61.2,
+        "possession": 61.9,
         "shots": 6,
         "shotsOnTarget": 5,
-        "passAccuracy": 89,
-        "accuratePasses": 268,
+        "passAccuracy": 89.3,
+        "accuratePasses": 283,
         "fouls": 6,
         "corners": 4,
         "offsides": 5,
@@ -3222,12 +3220,12 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 38.8,
+        "possession": 38.1,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 80.4,
-        "accuratePasses": 156,
-        "fouls": 5,
+        "passAccuracy": 80.8,
+        "accuratePasses": 160,
+        "fouls": 6,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
