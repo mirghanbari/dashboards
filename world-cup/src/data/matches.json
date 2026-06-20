@@ -3149,8 +3149,8 @@
     "awayTeamId": "hai",
     "homeScore": 3,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -3220,12 +3220,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.7,
+        "possession": 56.5,
         "shots": 8,
         "shotsOnTarget": 5,
         "passAccuracy": 88.3,
         "accuratePasses": 461,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 4,
         "offsides": 8,
         "saves": 3,
@@ -3234,10 +3234,10 @@
         "boxTouches": 24
       },
       "away": {
-        "possession": 43.3,
+        "possession": 43.5,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 83.2,
+        "passAccuracy": 83,
         "accuratePasses": 331,
         "fouls": 15,
         "corners": 4,
