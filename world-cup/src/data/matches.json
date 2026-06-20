@@ -3213,31 +3213,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 59,
+        "possession": 59.3,
         "shots": 6,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.6,
-        "accuratePasses": 372,
+        "passAccuracy": 89.8,
+        "accuratePasses": 378,
         "fouls": 9,
         "corners": 4,
         "offsides": 6,
         "saves": 1,
         "xg": 1.21,
-        "duelsWon": 29,
-        "boxTouches": 13
+        "duelsWon": 31,
+        "boxTouches": 17
       },
       "away": {
-        "possession": 41,
-        "shots": 3,
+        "possession": 40.7,
+        "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 83,
         "accuratePasses": 239,
-        "fouls": 6,
+        "fouls": 7,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
         "xg": 0.22,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 9
       }
     }
