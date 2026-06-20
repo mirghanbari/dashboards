@@ -1,10 +1,26 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { groupLetters, standingsForGroup, teamRankings } from "../data";
+import { groupLetters, standingsForGroup, teamRankings, classifyGroup } from "../data";
+import type { QualStatus } from "../data";
 
 // A couple of full names overflow the narrow group-standings column; show a
 // compact label (the FIFA code) there instead. Falls back to the full name.
 const STANDINGS_LABEL: Record<string, string> = { bih: "BIH" };
+
+// A compact qualification badge for the standings rows. Only the fully decided
+// states (clinched a R32 spot / mathematically eliminated) get a chip; "in
+// contention" and "out of top 2 but alive via the third-place race" stay
+// unlabelled to keep the table clean. Full per-team scenarios live on the
+// Qualification page.
+function QualBadge({ status }: { status: QualStatus }) {
+  if (status === "clinched-first")
+    return <span className="qbadge qbadge-in" title="Won the group">✓ 1st</span>;
+  if (status === "clinched")
+    return <span className="qbadge qbadge-in" title="Qualified for the Round of 32">✓ R32</span>;
+  if (status === "eliminated")
+    return <span className="qbadge qbadge-out" title="Eliminated — cannot reach the Round of 32">out</span>;
+  return null;
+}
 
 type RankSort = "fifa" | "elo";
 
@@ -97,16 +113,24 @@ function WorldRankings() {
 export function Teams() {
   return (
     <>
-      <header className="page-head">
-        <h1 className="page-title">Teams &amp; Groups</h1>
-        <p className="page-sub">
-          Live standings across all 12 groups · top two advance
-        </p>
+      <header className="page-head page-head-row">
+        <div>
+          <h1 className="page-title">Teams &amp; Groups</h1>
+          <p className="page-sub">
+            Live standings across all 12 groups · top two advance
+          </p>
+        </div>
+        <Link to="/qualification" className="chip">
+          Road to Round of 32 →
+        </Link>
       </header>
 
       <div className="group-grid">
         {groupLetters.map((g) => {
           const rows = standingsForGroup(g);
+          const status = new Map(
+            classifyGroup(g).teams.map((t) => [t.teamId, t.status]),
+          );
           return (
             <section key={g} className="group-card">
               <h2 className="group-title">Group {g}</h2>
@@ -124,15 +148,26 @@ export function Teams() {
                   </tr>
                 </thead>
                 <tbody>
-                  {rows.map((t) => (
+                  {rows.map((t) => {
+                    const qstatus = status.get(t.id) ?? "alive";
+                    // A row with a qualification badge is tight; show the
+                    // 3-letter code for longer names so the badge + Pts stay
+                    // inside the card (e.g. United States → USA).
+                    const decided =
+                      qstatus === "clinched" ||
+                      qstatus === "clinched-first" ||
+                      qstatus === "eliminated";
+                    const label =
+                      STANDINGS_LABEL[t.id] ??
+                      (decided && t.name.length > 8 ? t.code : t.name);
+                    return (
                     <tr key={t.id} className={t.rank <= 2 ? "qualifies" : ""}>
                       <td className="col-pos">{t.rank}</td>
                       <td className="col-team">
                         <Link to={`/teams/${t.id}`} className="team-cell">
                           <span className="team-flag">{t.flag}</span>
-                          <span className="team-name">
-                            {STANDINGS_LABEL[t.id] ?? t.name}
-                          </span>
+                          <span className="team-name">{label}</span>
+                          <QualBadge status={qstatus} />
                         </Link>
                       </td>
                       <td>{t.played}</td>
@@ -142,7 +177,8 @@ export function Teams() {
                       <td>{t.goalDiff > 0 ? `+${t.goalDiff}` : t.goalDiff}</td>
                       <td className="col-pts">{t.points}</td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
             </section>

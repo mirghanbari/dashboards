@@ -2264,3 +2264,157 @@ tr.is-me .player-name {
 .md-stat-away {
   background: var(--gold);
 }
+
+/* ---- Qualification: standings badges + Road-to-R32 page ---- */
+.qbadge {
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.qbadge-in {
+  background: rgba(11, 191, 91, 0.16);
+  color: var(--pitch-1);
+}
+.qbadge-out {
+  background: rgba(138, 152, 143, 0.18);
+  color: var(--ink-faint);
+}
+
+.qual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+.qual-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px 8px;
+}
+.qual-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.qual-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.qual-card-sub {
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+}
+.qrow-list {
+  list-style: none;
+}
+.qrow {
+  padding: 8px 0 8px 10px;
+  border-top: 1px solid var(--line);
+  border-left: 3px solid transparent;
+}
+.qrow:first-child {
+  border-top: none;
+}
+.qrow.q-in {
+  border-left-color: var(--pitch-2);
+}
+.qrow.q-alive {
+  border-left-color: var(--gold);
+}
+.qrow.q-out2 {
+  border-left-color: var(--ink-faint);
+}
+.qrow.q-elim {
+  border-left-color: var(--red);
+}
+.qrow-main {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+.qrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.q-in .qrow-dot { background: var(--pitch-2); }
+.q-alive .qrow-dot { background: var(--gold); }
+.q-out2 .qrow-dot { background: var(--ink-faint); }
+.q-elim .qrow-dot { background: var(--red); }
+.qrow-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+.qrow-team:hover .qrow-name {
+  color: var(--pitch-1);
+  text-decoration: underline;
+}
+.qrow-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.qrow-status {
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 1px 6px;
+  border-radius: 999px;
+  flex: none;
+}
+.q-in .qrow-status { background: rgba(11, 191, 91, 0.16); color: var(--pitch-1); }
+.q-alive .qrow-status { background: rgba(244, 183, 64, 0.2); color: #9a6b00; }
+.q-out2 .qrow-status { background: rgba(138, 152, 143, 0.18); color: var(--ink-faint); }
+.q-elim .qrow-status { background: rgba(226, 54, 54, 0.14); color: var(--red); }
+.qrow-scenario {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  padding-left: 15px;
+  margin-top: 1px;
+}
+
+/* third-place race table */
+.third-race tr.third-out td {
+  color: var(--ink-faint);
+}
+.third-race tr.third-cutline td {
+  border-bottom: 2px dashed var(--gold);
+}
+.third-race tr.third-in .col-pos {
+  color: var(--pitch-1);
+  font-weight: 700;
+}
+.third-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.third-in-key,
+.third-out-key {
+  display: inline-block;
+  width: 22px;
+  height: 4px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+.third-in-key { background: var(--pitch-2); }
+.third-out-key { background: var(--ink-faint); }

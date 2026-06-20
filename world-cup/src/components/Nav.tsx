@@ -6,6 +6,7 @@ const LINKS = [
   { to: "/", label: "Overview", end: true },
   { to: "/matches", label: "Matches", end: false },
   { to: "/teams", label: "Teams", end: false },
+  { to: "/qualification", label: "Qualifying", end: false },
   { to: "/players", label: "Players", end: false },
   { to: "/stats", label: "Stats", end: false },
   // Friendlies hidden during the World Cup — route still works at /friendlies.
