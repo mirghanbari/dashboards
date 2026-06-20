@@ -3513,7 +3513,8 @@
         "minute": "68'",
         "teamId": "ger",
         "player": "Deniz Undav",
-        "text": "Deniz Undav Goal",
+        "text": "Deniz Undav Goal - Volley",
+        "goalType": "volley",
         "assist": "Nadiem Amiri"
       },
       {
@@ -3527,11 +3528,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.4,
+        "possession": 59.5,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 89.1,
-        "accuratePasses": 554,
+        "passAccuracy": 88.9,
+        "accuratePasses": 555,
         "fouls": 5,
         "corners": 8,
         "offsides": 0,
@@ -3541,7 +3542,7 @@
         "boxTouches": 32
       },
       "away": {
-        "possession": 40.6,
+        "possession": 40.5,
         "shots": 9,
         "shotsOnTarget": 2,
         "passAccuracy": 85.2,
