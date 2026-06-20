@@ -3354,7 +3354,7 @@
     "homeScore": 4,
     "awayScore": 1,
     "status": "live",
-    "minute": "80",
+    "minute": "81",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3423,15 +3423,22 @@
         "teamId": "swe",
         "player": "Yasin Ayari",
         "text": "Yasin Ayari Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "80'",
+        "teamId": "swe",
+        "player": "Lucas Bergvall",
+        "text": "Lucas Bergvall Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.1,
+        "possession": 54.2,
         "shots": 9,
         "shotsOnTarget": 6,
-        "passAccuracy": 89.8,
-        "accuratePasses": 362,
+        "passAccuracy": 89.7,
+        "accuratePasses": 366,
         "fouls": 7,
         "corners": 2,
         "offsides": 2,
@@ -3441,12 +3448,12 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 45.9,
+        "possession": 45.8,
         "shots": 12,
         "shotsOnTarget": 5,
-        "passAccuracy": 86.1,
-        "accuratePasses": 290,
-        "fouls": 9,
+        "passAccuracy": 85.9,
+        "accuratePasses": 292,
+        "fouls": 10,
         "corners": 3,
         "offsides": 3,
         "saves": 2,
