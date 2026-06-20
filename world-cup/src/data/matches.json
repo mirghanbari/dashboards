@@ -3351,10 +3351,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "ned",
     "awayTeamId": "swe",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "47",
+    "minute": "49",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3385,25 +3385,33 @@
         "player": "Brian Brobbey",
         "text": "Brian Brobbey Goal",
         "assist": "Denzel Dumfries"
+      },
+      {
+        "type": "goal",
+        "minute": "47'",
+        "teamId": "ned",
+        "player": "Cody Gakpo",
+        "text": "Cody Gakpo Goal",
+        "assist": "Denzel Dumfries"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58.1,
-        "shots": 5,
-        "shotsOnTarget": 4,
-        "passAccuracy": 89.2,
-        "accuratePasses": 224,
+        "possession": 59.4,
+        "shots": 6,
+        "shotsOnTarget": 5,
+        "passAccuracy": 89.8,
+        "accuratePasses": 237,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
         "xg": 1.28,
         "duelsWon": 23,
-        "boxTouches": 13
+        "boxTouches": 17
       },
       "away": {
-        "possession": 41.9,
+        "possession": 40.6,
         "shots": 9,
         "shotsOnTarget": 4,
         "passAccuracy": 84.1,
