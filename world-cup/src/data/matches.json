@@ -3482,10 +3482,10 @@
     "city": "Toronto",
     "homeTeamId": "ger",
     "awayTeamId": "civ",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3513,31 +3513,38 @@
         "minute": "68'",
         "teamId": "ger",
         "player": "Deniz Undav",
-        "text": "Deniz Undav Goal - Volley",
-        "goalType": "volley",
+        "text": "Deniz Undav Goal",
         "assist": "Nadiem Amiri"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+4'",
+        "teamId": "ger",
+        "player": "Deniz Undav",
+        "text": "Deniz Undav Goal",
+        "assist": "Felix Nmecha"
       }
     ],
     "stats": {
       "home": {
-        "possession": 59,
-        "shots": 15,
-        "shotsOnTarget": 6,
-        "passAccuracy": 89.2,
-        "accuratePasses": 531,
+        "possession": 59.9,
+        "shots": 16,
+        "shotsOnTarget": 7,
+        "passAccuracy": 89.5,
+        "accuratePasses": 553,
         "fouls": 5,
         "corners": 8,
         "offsides": 0,
         "saves": 1,
         "xg": 1.48,
         "duelsWon": 45,
-        "boxTouches": 31
+        "boxTouches": 32
       },
       "away": {
-        "possession": 41,
+        "possession": 40.1,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.2,
+        "passAccuracy": 86,
         "accuratePasses": 361,
         "fouls": 7,
         "corners": 3,
