@@ -3354,7 +3354,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "52",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3393,11 +3393,18 @@
         "player": "Cody Gakpo",
         "text": "Cody Gakpo Goal",
         "assist": "Denzel Dumfries"
+      },
+      {
+        "type": "yellow",
+        "minute": "53'",
+        "teamId": "swe",
+        "player": "Gabriel Gudmundsson",
+        "text": "Gabriel Gudmundsson Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.9,
+        "possession": 56.5,
         "shots": 7,
         "shotsOnTarget": 5,
         "passAccuracy": 90.3,
@@ -3411,16 +3418,16 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 43.1,
-        "shots": 9,
+        "possession": 43.5,
+        "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.7,
-        "accuratePasses": 180,
+        "passAccuracy": 85,
+        "accuratePasses": 181,
         "fouls": 5,
-        "corners": 2,
+        "corners": 3,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.48,
+        "xg": 0.54,
         "duelsWon": 26,
         "boxTouches": 12
       }
