@@ -3150,7 +3150,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3202,6 +3202,13 @@
         "teamId": "hai",
         "player": "Frantzdy Pierrot",
         "text": "Frantzdy Pierrot Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "66'",
+        "teamId": "bra",
+        "player": "Douglas Santos",
+        "text": "Douglas Santos Yellow Card"
       }
     ],
     "stats": {
@@ -3216,7 +3223,7 @@
         "offsides": 6,
         "saves": 1,
         "xg": 1.21,
-        "duelsWon": 28,
+        "duelsWon": 29,
         "boxTouches": 13
       },
       "away": {
@@ -3229,9 +3236,9 @@
         "corners": 2,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.11,
+        "xg": 0.22,
         "duelsWon": 31,
-        "boxTouches": 8
+        "boxTouches": 9
       }
     }
   },
