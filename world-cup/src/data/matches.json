@@ -3150,7 +3150,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "71",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3209,6 +3209,13 @@
         "teamId": "bra",
         "player": "Douglas Santos",
         "text": "Douglas Santos Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "72'",
+        "teamId": "hai",
+        "player": "Danley Jean Jacques",
+        "text": "Danley Jean Jacques Yellow Card"
       }
     ],
     "stats": {
@@ -3223,7 +3230,7 @@
         "offsides": 7,
         "saves": 1,
         "xg": 1.21,
-        "duelsWon": 32,
+        "duelsWon": 35,
         "boxTouches": 16
       },
       "away": {
@@ -3237,8 +3244,8 @@
         "offsides": 2,
         "saves": 2,
         "xg": 0.22,
-        "duelsWon": 32,
-        "boxTouches": 9
+        "duelsWon": 33,
+        "boxTouches": 10
       }
     }
   },
