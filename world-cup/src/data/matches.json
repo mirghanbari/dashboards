@@ -3352,9 +3352,9 @@
     "homeTeamId": "ned",
     "awayTeamId": "swe",
     "homeScore": 4,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3408,34 +3408,42 @@
         "player": "Cody Gakpo",
         "text": "Cody Gakpo Goal",
         "assist": "Crysencio Summerville"
+      },
+      {
+        "type": "goal",
+        "minute": "59'",
+        "teamId": "swe",
+        "player": "Anthony Elanga",
+        "text": "Anthony Elanga Goal",
+        "assist": "Alexander Isak"
       }
     ],
     "stats": {
       "home": {
-        "possession": 55.4,
-        "shots": 8,
+        "possession": 56.1,
+        "shots": 9,
         "shotsOnTarget": 6,
-        "passAccuracy": 90,
-        "accuratePasses": 260,
+        "passAccuracy": 90.4,
+        "accuratePasses": 281,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
         "xg": 2.38,
-        "duelsWon": 29,
+        "duelsWon": 30,
         "boxTouches": 18
       },
       "away": {
-        "possession": 44.6,
-        "shots": 11,
-        "shotsOnTarget": 4,
-        "passAccuracy": 85,
-        "accuratePasses": 198,
+        "possession": 43.9,
+        "shots": 12,
+        "shotsOnTarget": 5,
+        "passAccuracy": 85.2,
+        "accuratePasses": 208,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.57,
+        "xg": 1.01,
         "duelsWon": 28,
         "boxTouches": 14
       }
