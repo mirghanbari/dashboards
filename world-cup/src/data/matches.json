@@ -3353,8 +3353,8 @@
     "awayTeamId": "swe",
     "homeScore": 5,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -3450,7 +3450,7 @@
         "fouls": 9,
         "corners": 2,
         "offsides": 3,
-        "saves": 6,
+        "saves": 7,
         "xg": 2.47,
         "duelsWon": 42,
         "boxTouches": 19
