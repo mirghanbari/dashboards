@@ -2759,8 +2759,7 @@
         "minute": "29'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal - Volley",
-        "goalType": "volley"
+        "text": "Jonathan David Goal"
       },
       {
         "type": "red",
@@ -2774,8 +2773,7 @@
         "minute": "45'+3'",
         "teamId": "can",
         "player": "Jonathan David",
-        "text": "Jonathan David Goal - Volley",
-        "goalType": "volley"
+        "text": "Jonathan David Goal"
       },
       {
         "type": "red",
@@ -3154,7 +3152,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "48",
+    "minute": "49",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3210,31 +3208,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 62,
+        "possession": 61.2,
         "shots": 6,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.2,
-        "accuratePasses": 249,
+        "passAccuracy": 89,
+        "accuratePasses": 268,
         "fouls": 6,
         "corners": 4,
         "offsides": 5,
         "saves": 0,
         "xg": 1.21,
-        "duelsWon": 22,
+        "duelsWon": 25,
         "boxTouches": 12
       },
       "away": {
-        "possession": 38,
-        "shots": 0,
+        "possession": 38.8,
+        "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 80.5,
-        "accuratePasses": 140,
+        "passAccuracy": 80.4,
+        "accuratePasses": 156,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.04,
-        "duelsWon": 25,
+        "xg": 0.05,
+        "duelsWon": 26,
         "boxTouches": 4
       }
     }
