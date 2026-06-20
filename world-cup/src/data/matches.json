@@ -3154,7 +3154,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+1",
+    "minute": "45+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3191,29 +3191,36 @@
         "player": "Matheus Cunha",
         "text": "Matheus Cunha Goal",
         "assist": "Vinícius Júnior"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+3'",
+        "teamId": "bra",
+        "player": "Vinícius Júnior",
+        "text": "Vinícius Júnior Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62,
+        "possession": 62.7,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 88.6,
-        "accuratePasses": 209,
-        "fouls": 5,
-        "corners": 5,
+        "passAccuracy": 89.4,
+        "accuratePasses": 228,
+        "fouls": 6,
+        "corners": 4,
         "offsides": 5,
         "saves": 0,
         "xg": 0.91,
         "duelsWon": 19,
-        "boxTouches": 11
+        "boxTouches": 12
       },
       "away": {
-        "possession": 38,
+        "possession": 37.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 81,
-        "accuratePasses": 119,
+        "passAccuracy": 80.5,
+        "accuratePasses": 124,
         "fouls": 3,
         "corners": 1,
         "offsides": 2,
