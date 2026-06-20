@@ -3351,10 +3351,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "ned",
     "awayTeamId": "swe",
-    "homeScore": 4,
+    "homeScore": 5,
     "awayScore": 1,
     "status": "live",
-    "minute": "89",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3436,30 +3436,31 @@
         "minute": "89'",
         "teamId": "ned",
         "player": "Crysencio Summerville",
-        "text": "Crysencio Summerville Goal"
+        "text": "Crysencio Summerville Goal",
+        "assist": "Memphis Depay"
       }
     ],
     "stats": {
       "home": {
-        "possession": 52.8,
-        "shots": 9,
-        "shotsOnTarget": 6,
-        "passAccuracy": 89,
-        "accuratePasses": 379,
+        "possession": 52.7,
+        "shots": 10,
+        "shotsOnTarget": 7,
+        "passAccuracy": 88.8,
+        "accuratePasses": 389,
         "fouls": 8,
         "corners": 2,
         "offsides": 3,
         "saves": 6,
-        "xg": 2.38,
+        "xg": 2.47,
         "duelsWon": 41,
         "boxTouches": 19
       },
       "away": {
-        "possession": 47.2,
+        "possession": 47.3,
         "shots": 14,
         "shotsOnTarget": 7,
-        "passAccuracy": 86.1,
-        "accuratePasses": 322,
+        "passAccuracy": 85.8,
+        "accuratePasses": 331,
         "fouls": 11,
         "corners": 4,
         "offsides": 3,
