@@ -3150,7 +3150,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "67",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3205,7 +3205,7 @@
       },
       {
         "type": "yellow",
-        "minute": "66'",
+        "minute": "65'",
         "teamId": "bra",
         "player": "Douglas Santos",
         "text": "Douglas Santos Yellow Card"
@@ -3213,21 +3213,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.3,
+        "possession": 59.9,
         "shots": 6,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.8,
-        "accuratePasses": 378,
+        "passAccuracy": 89.4,
+        "accuratePasses": 388,
         "fouls": 9,
         "corners": 4,
-        "offsides": 6,
+        "offsides": 7,
         "saves": 1,
         "xg": 1.21,
         "duelsWon": 31,
         "boxTouches": 17
       },
       "away": {
-        "possession": 40.7,
+        "possession": 40.1,
         "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 83,
