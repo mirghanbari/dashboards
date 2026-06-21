@@ -3675,7 +3675,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3710,10 +3710,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 39.3,
+        "possession": 39.8,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.3,
+        "passAccuracy": 77.6,
         "accuratePasses": 111,
         "fouls": 3,
         "corners": 1,
@@ -3724,7 +3724,7 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 60.7,
+        "possession": 60.2,
         "shots": 5,
         "shotsOnTarget": 3,
         "passAccuracy": 89.3,
