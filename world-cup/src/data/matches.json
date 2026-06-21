@@ -3767,10 +3767,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "esp",
     "awayTeamId": "ksa",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "24",
+    "minute": "25",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3801,29 +3801,38 @@
         "player": "Mikel Oyarzabal",
         "text": "Mikel Oyarzabal Goal",
         "assist": "Aymeric Laporte"
+      },
+      {
+        "type": "goal",
+        "minute": "24'",
+        "teamId": "esp",
+        "player": "Mikel Oyarzabal",
+        "text": "Mikel Oyarzabal Goal - Volley",
+        "goalType": "volley",
+        "assist": "Dani Olmo"
       }
     ],
     "stats": {
       "home": {
-        "possession": 72.6,
-        "shots": 10,
-        "shotsOnTarget": 3,
-        "passAccuracy": 91.4,
-        "accuratePasses": 138,
+        "possession": 73,
+        "shots": 11,
+        "shotsOnTarget": 4,
+        "passAccuracy": 90.5,
+        "accuratePasses": 143,
         "fouls": 1,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.04,
-        "duelsWon": 10,
-        "boxTouches": 16
+        "xg": 1.6,
+        "duelsWon": 12,
+        "boxTouches": 17
       },
       "away": {
-        "possession": 27.4,
+        "possession": 27,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 66.7,
-        "accuratePasses": 40,
+        "passAccuracy": 67.7,
+        "accuratePasses": 42,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
