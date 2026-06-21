@@ -3878,7 +3878,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "33",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3900,25 +3900,32 @@
         "teamId": "bel",
         "player": "Romelu Lukaku",
         "text": "Romelu Lukaku Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "33'",
+        "teamId": "irn",
+        "player": "Saeid Ezatolahi",
+        "text": "Saeid Ezatolahi Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 74.1,
+        "possession": 74.3,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 87,
-        "accuratePasses": 161,
+        "passAccuracy": 87.2,
+        "accuratePasses": 163,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.57,
-        "duelsWon": 13,
+        "duelsWon": 15,
         "boxTouches": 12
       },
       "away": {
-        "possession": 25.9,
+        "possession": 25.7,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 63.1,
