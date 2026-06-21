@@ -3537,9 +3537,9 @@
         "corners": 8,
         "offsides": 0,
         "saves": 1,
-        "xg": 1.83,
+        "xg": 1.89,
         "duelsWon": 48,
-        "boxTouches": 34
+        "boxTouches": 33
       },
       "away": {
         "possession": 40.5,
@@ -3551,7 +3551,7 @@
         "corners": 3,
         "offsides": 1,
         "saves": 5,
-        "xg": 1.23,
+        "xg": 1.22,
         "duelsWon": 54,
         "boxTouches": 22
       }
@@ -3643,7 +3643,7 @@
         "saves": 3,
         "xg": 3.06,
         "duelsWon": 51,
-        "boxTouches": 47
+        "boxTouches": 46
       },
       "away": {
         "possession": 25.2,
@@ -4840,7 +4840,7 @@
     "date": "2026-06-29T20:30Z",
     "venue": "Gillette Stadium",
     "city": "Foxborough, Massachusetts",
-    "homeTeamId": "tbd",
+    "homeTeamId": "ger",
     "awayTeamId": "tbd",
     "homeScore": null,
     "awayScore": null,
