@@ -3571,7 +3571,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90",
+    "minute": "90+1",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3621,6 +3621,13 @@
         "teamId": "cuw",
         "player": "Juriën Gaari",
         "text": "Juriën Gaari Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+1'",
+        "teamId": "cuw",
+        "player": "Gervane Kastaneer",
+        "text": "Gervane Kastaneer Yellow Card"
       }
     ],
     "stats": {
@@ -3634,9 +3641,9 @@
         "corners": 7,
         "offsides": 1,
         "saves": 3,
-        "xg": 3.06,
-        "duelsWon": 47,
-        "boxTouches": 43
+        "xg": 3.08,
+        "duelsWon": 49,
+        "boxTouches": 44
       },
       "away": {
         "possession": 25.3,
@@ -3649,7 +3656,7 @@
         "offsides": 2,
         "saves": 15,
         "xg": 0.48,
-        "duelsWon": 47,
+        "duelsWon": 48,
         "boxTouches": 12
       }
     }
