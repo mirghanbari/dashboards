@@ -3571,7 +3571,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "74",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3614,25 +3614,32 @@
         "teamId": "cuw",
         "player": "Livano Comenencia",
         "text": "Livano Comenencia Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "75'",
+        "teamId": "cuw",
+        "player": "Juriën Gaari",
+        "text": "Juriën Gaari Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 73.6,
-        "shots": 22,
+        "possession": 73.7,
+        "shots": 24,
         "shotsOnTarget": 13,
         "passAccuracy": 90.4,
-        "accuratePasses": 462,
+        "accuratePasses": 463,
         "fouls": 7,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 2,
-        "xg": 2.61,
-        "duelsWon": 40,
+        "xg": 2.76,
+        "duelsWon": 41,
         "boxTouches": 33
       },
       "away": {
-        "possession": 26.4,
+        "possession": 26.3,
         "shots": 9,
         "shotsOnTarget": 2,
         "passAccuracy": 72.2,
@@ -3642,7 +3649,7 @@
         "offsides": 2,
         "saves": 13,
         "xg": 0.44,
-        "duelsWon": 38,
+        "duelsWon": 39,
         "boxTouches": 12
       }
     }
