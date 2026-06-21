@@ -3876,9 +3876,9 @@
     "homeTeamId": "bel",
     "awayTeamId": "irn",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "25",
+    "minute": "26",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3900,16 +3900,24 @@
         "teamId": "bel",
         "player": "Romelu Lukaku",
         "text": "Romelu Lukaku Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "25'",
+        "teamId": "irn",
+        "player": "Mehdi Taremi",
+        "text": "Mehdi Taremi Goal",
+        "assist": "Ehsan Hajsafi"
       }
     ],
     "stats": {
       "home": {
-        "possession": 72.8,
+        "possession": 72.4,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 87.7,
         "accuratePasses": 135,
-        "fouls": 3,
+        "fouls": 4,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
@@ -3918,18 +3926,18 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 27.2,
-        "shots": 2,
-        "shotsOnTarget": 1,
-        "passAccuracy": 66.1,
-        "accuratePasses": 39,
+        "possession": 27.6,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 66.7,
+        "accuratePasses": 40,
         "fouls": 0,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 0.26,
         "duelsWon": 12,
-        "boxTouches": 4
+        "boxTouches": 5
       }
     }
   },
