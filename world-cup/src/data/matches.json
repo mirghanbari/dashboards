@@ -3878,7 +3878,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "2",
+    "minute": "4",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3891,6 +3891,15 @@
       {
         "name": "FOX One",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "3'",
+        "teamId": "bel",
+        "player": "Romelu Lukaku",
+        "text": "Romelu Lukaku Yellow Card"
       }
     ],
     "stats": {
@@ -3916,7 +3925,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 2
+        "duelsWon": 3
       }
     }
   },
