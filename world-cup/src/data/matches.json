@@ -3900,14 +3900,6 @@
         "teamId": "bel",
         "player": "Romelu Lukaku",
         "text": "Romelu Lukaku Yellow Card"
-      },
-      {
-        "type": "goal",
-        "minute": "25'",
-        "teamId": "irn",
-        "player": "Mehdi Taremi",
-        "text": "Mehdi Taremi Goal",
-        "assist": "Ehsan Hajsafi"
       }
     ],
     "stats": {
@@ -3936,8 +3928,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 0.26,
-        "duelsWon": 12,
-        "boxTouches": 5
+        "duelsWon": 11,
+        "boxTouches": 4
       }
     }
   },
