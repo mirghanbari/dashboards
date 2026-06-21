@@ -89,6 +89,17 @@ function zeroPlayerStats() {
   };
 }
 
+// Player-level fields owned by FotMob, not ESPN. ESPN rebuilds every player from
+// a zeroed base each run, so without this the next ESPN-only tick (e.g. every
+// live-poll tick, which runs a full ESPN ingest but only a live-only FotMob pass)
+// would wipe these for every already-finished match. Carried forward from the
+// prior players.json here, exactly as match.stats xG/duels are; the next full
+// FotMob pass refreshes them. Mirror any additions to ingest-fotmob.mjs.
+const PLAYER_FOTMOB_FIELDS = [
+  "minutes", "xg", "xa", "xgot", "chancesCreated", "finalThirdEntries",
+  "tackles", "interceptions", "clearances", "setPieceXg", "passCompletion", "passes",
+];
+
 const stat = (entry, name) => {
   const s = entry.stats.find((x) => x.name === name);
   return s ? Number(s.value ?? s.displayValue ?? 0) : 0;
@@ -144,15 +155,19 @@ async function main() {
   const players = [];
   const playerByEspnId = new Map(); // ESPN athlete id → player object
 
-  // Prior committed roster, indexed by teamId. ESPN occasionally 404s a single
-  // team's roster endpoint; rather than abort the whole ingest (and the run),
-  // we reuse that team's cached players so the dataset stays complete.
+  // Prior committed roster, indexed by teamId (for the 404 fallback below) and
+  // by player id (to carry FotMob-owned fields forward, see PLAYER_FOTMOB_FIELDS).
+  // ESPN occasionally 404s a single team's roster endpoint; rather than abort the
+  // whole ingest (and the run), we reuse that team's cached players so the dataset
+  // stays complete.
   const priorByTeam = new Map();
+  const priorById = new Map();
   try {
     const prior = JSON.parse(readFileSync(join(DATA_DIR, "players.json"), "utf8"));
     for (const p of prior) {
       if (!priorByTeam.has(p.teamId)) priorByTeam.set(p.teamId, []);
       priorByTeam.get(p.teamId).push(p);
+      priorById.set(p.id, p);
     }
   } catch {
     /* no prior players.json (first run) — nothing to fall back to */
@@ -217,6 +232,16 @@ async function main() {
     process.stdout.write(`  ${team.code} (${athletes.length})  `);
   });
   console.log(`\n  ${players.length} players.`);
+
+  // Carry FotMob-owned player fields forward from the prior commit so an
+  // ESPN-only refresh doesn't zero them (see PLAYER_FOTMOB_FIELDS).
+  for (const player of players) {
+    const prev = priorById.get(player.id);
+    if (!prev) continue;
+    for (const f of PLAYER_FOTMOB_FIELDS) {
+      if (prev[f] != null) player[f] = prev[f];
+    }
+  }
 
   console.log("Fetching fixtures…");
   const dates = [];
