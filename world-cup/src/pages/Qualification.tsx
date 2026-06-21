@@ -1,6 +1,17 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { getTeam, qualificationByGroup, thirdPlaceRace } from "../data";
+import {
+  MATCHES,
+  getTeam,
+  qualificationByGroup,
+  thirdPlaceRace,
+  useLiveMatches,
+  applyLive,
+  liveStandings,
+} from "../data";
 import type { QualStatus, TeamQualification } from "../data";
+import type { Match } from "../types";
+import { liveClock } from "../clock";
 
 const STATUS_LABEL: Record<QualStatus, string> = {
   "clinched-first": "Group winners",
@@ -35,11 +46,61 @@ function TeamRow({ q }: { q: TeamQualification }) {
   );
 }
 
+/** A group's in-progress games, shown above the table but NOT yet folded into
+ *  the standings/verdicts — only a finished result moves the table. */
+function LiveGames({ games }: { games: Match[] }) {
+  if (games.length === 0) return null;
+  return (
+    <div className="qual-live">
+      {games.map((m) => {
+        const home = getTeam(m.homeTeamId);
+        const away = getTeam(m.awayTeamId);
+        return (
+          <Link key={m.id} to={`/matches/${m.id}`} className="qual-live-row">
+            <span className="dot-live" aria-hidden />
+            <span className="qual-live-score">
+              <span className="team-flag">{home.flag}</span>
+              {home.code} {m.homeScore ?? 0}–{m.awayScore ?? 0} {away.code}
+              <span className="team-flag">{away.flag}</span>
+            </span>
+            <span className="qual-live-min">{liveClock(m.minute)}</span>
+          </Link>
+        );
+      })}
+      <p className="qual-live-note">Live — not yet counted below</p>
+    </div>
+  );
+}
+
 export function Qualification() {
-  // Standings (and therefore the scenarios) are deploy-time data, refreshed by
-  // the ingest pipeline every couple of minutes — same as the Teams standings.
-  const groups = qualificationByGroup();
-  const thirds = thirdPlaceRace();
+  // Live-reactive: a game that finishes is folded into the standings (and the
+  // clinch/elimination math) the moment it ends, no page reload — `liveStandings`
+  // adjusts the deploy-time aggregates, `applyLive` overlays match results for
+  // head-to-head. Games still in PROGRESS are shown as a banner per group but are
+  // deliberately kept out of the verdicts, so no badge flips on a live score that
+  // could still change. The full deploy still refreshes everything on its cadence.
+  const live = useLiveMatches();
+  const groups = useMemo(() => {
+    const teams = liveStandings(live);
+    const matches = applyLive(MATCHES, live);
+    return qualificationByGroup(teams, matches);
+  }, [live]);
+  const thirds = useMemo(
+    () => thirdPlaceRace(liveStandings(live), applyLive(MATCHES, live)),
+    [live],
+  );
+
+  // In-progress group games, keyed by group letter, for the per-card banner.
+  const liveByGroup = useMemo(() => {
+    const byGroup = new Map<string, Match[]>();
+    for (const m of applyLive(MATCHES, live)) {
+      if (m.stage !== "group" || !m.group || m.status !== "live") continue;
+      const list = byGroup.get(m.group) ?? [];
+      list.push(m);
+      byGroup.set(m.group, list);
+    }
+    return byGroup;
+  }, [live]);
 
   return (
     <>
@@ -73,6 +134,7 @@ export function Qualification() {
                   : `${g.matchesLeftPerTeam} game${g.matchesLeftPerTeam > 1 ? "s" : ""} left each`}
               </span>
             </header>
+            <LiveGames games={liveByGroup.get(g.group) ?? []} />
             <ol className="qrow-list">
               {g.teams.map((q) => (
                 <TeamRow key={q.teamId} q={q} />

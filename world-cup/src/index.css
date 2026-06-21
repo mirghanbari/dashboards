@@ -2326,6 +2326,43 @@ tr.is-me .player-name {
   font-size: 0.74rem;
   color: var(--ink-faint);
 }
+.qual-live {
+  margin: 2px 0 8px;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 45, 85, 0.05);
+}
+.qual-live-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+.qual-live-row + .qual-live-row {
+  margin-top: 4px;
+}
+.qual-live-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.qual-live-min {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--live);
+}
+.qual-live-note {
+  margin-top: 5px;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ink-faint);
+}
 .qrow-list {
   list-style: none;
 }

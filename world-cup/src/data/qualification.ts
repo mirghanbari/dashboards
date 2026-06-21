@@ -21,9 +21,21 @@
 // ranking. Only the points layer feeds the clinch/eliminate math (margins are
 // free, so points decide what is provable); the full chain orders the
 // third-place race table for display.
-import { MATCHES, TEAMS, standingsForGroup } from ".";
-import { headToHead, decidedFromMatch, type Decided } from "./tiebreakers";
-import type { Match, Standing } from "../types";
+//
+// Data inputs are passed in (defaulting to the bundled deploy-time TEAMS/MATCHES)
+// so the Qualification page can feed *live*-adjusted standings: a game that has
+// finished since the last deploy moves the table the moment it ends, with no page
+// reload. Games still in progress are deliberately NOT folded into these inputs
+// (see `liveStandings` in live.ts) — only settled results drive a verdict, so a
+// badge never flips on a score that can still change.
+import { MATCHES, TEAMS } from ".";
+import {
+  headToHead,
+  decidedFromMatch,
+  orderGroupStandings,
+  type Decided,
+} from "./tiebreakers";
+import type { Match, Standing, Team } from "../types";
 
 export type QualStatus =
   | "clinched-first" // guaranteed to win the group outright
@@ -54,24 +66,7 @@ type Outcome = "home" | "draw" | "away";
 
 const THIRDS_ADVANCING = 8;
 
-// Lazy + cached: this module is re-exported from the data barrel, so reading
-// TEAMS at module-eval time would hit the circular import before TEAMS is
-// initialised. Compute on first call instead.
-let groupsCache: string[] | null = null;
-function allGroups(): string[] {
-  if (!groupsCache) groupsCache = [...new Set(TEAMS.map((t) => t.group))].sort();
-  return groupsCache;
-}
-
-/** Every group match (played or not) for a group. */
-function groupMatches(group: string): Match[] {
-  return MATCHES.filter((m) => m.stage === "group" && m.group === group);
-}
-
-/** Remaining (not-yet-finished) matches in a group. */
-function remainingMatches(group: string): Match[] {
-  return groupMatches(group).filter((m) => m.status !== "finished");
-}
+// ---- Pure helpers (no data dependency) ------------------------------------
 
 /** Every W/D/L combination across a set of matches. */
 function combinations(matches: Match[]): Outcome[][] {
@@ -98,34 +93,6 @@ function pointsFor(base: Pts, matches: Match[], combo: Outcome[]): Pts {
     }
   });
   return pts;
-}
-
-/**
- * The decided result of every group match for one completion: finished matches
- * keep their real result, the remaining matches take this combo's win/draw/loss
- * (no goals — margins are free, so head-to-head goal diff doesn't contribute).
- */
-function decidedForCombo(
-  group: string,
-  rem: Match[],
-  combo: Outcome[],
-): Decided[] {
-  const out: Decided[] = [];
-  for (const m of groupMatches(group)) {
-    if (m.status === "finished") {
-      const d = decidedFromMatch(m);
-      if (d) out.push(d);
-      continue;
-    }
-    const o = combo[rem.indexOf(m)];
-    out.push({
-      homeId: m.homeTeamId,
-      awayId: m.awayTeamId,
-      homePts: o === "home" ? 3 : o === "draw" ? 1 : 0,
-      awayPts: o === "away" ? 3 : o === "draw" ? 1 : 0,
-    });
-  }
-  return out;
 }
 
 /**
@@ -170,177 +137,248 @@ function aheadCounts(
   return { def, poss };
 }
 
-/** Base (current) group points keyed by team id. */
-function basePoints(group: string): Pts {
-  return Object.fromEntries(
-    TEAMS.filter((t) => t.group === group).map((t) => [t.id, t.points]),
-  );
+// ---- The engine -----------------------------------------------------------
+// All data-dependent logic closes over one (teams, matches) snapshot plus its
+// own memo caches, so the same module serves both the static deploy-time data
+// and a live-adjusted snapshot without cross-contaminating cached results.
+
+interface Engine {
+  groups: string[];
+  classifyGroup(group: string): GroupQualification;
+  thirdPlaceRace(): ThirdPlaceRow[];
 }
 
-// ---- Cross-group third-place feasibility ----------------------------------
+function createEngine(teams: Team[], matches: Match[]): Engine {
+  const groups = [...new Set(teams.map((t) => t.group))]
+    .filter((g) => g)
+    .sort();
 
-// The fewest points a group's third-placed team can finish on, over every
-// completion of that group. Memoised — it depends only on the static dataset.
-const minThirdCache = new Map<string, number>();
-function minThirdPoints(group: string): number {
-  const cached = minThirdCache.get(group);
-  if (cached !== undefined) return cached;
-  const base = basePoints(group);
-  const rem = remainingMatches(group);
-  let min = Infinity;
-  for (const combo of combinations(rem)) {
-    const pts = pointsFor(base, rem, combo);
-    const third = Object.values(pts).sort((a, b) => b - a)[2];
-    if (third < min) min = third;
-  }
-  minThirdCache.set(group, min);
-  return min;
-}
+  /** Every group match (played or not) for a group. */
+  const groupMatches = (group: string): Match[] =>
+    matches.filter((m) => m.stage === "group" && m.group === group);
 
-// The most points a team can finish on while landing in 3rd (its only route to
-// the R32 once it's out of the top two). A team can be 3rd in a completion iff
-// exactly two teams finish above it for sure (head-to-head included); a third
-// rival only level on goal difference can be edged out with a free margin.
-// Returns -1 if it can never be better than 4th — that team is eliminated.
-function maxThirdPoints(id: string, group: string): number {
-  const base = basePoints(group);
-  const rem = remainingMatches(group);
-  let max = -1;
-  for (const combo of combinations(rem)) {
-    const pts = pointsFor(base, rem, combo);
-    const { def } = aheadCounts(pts, decidedForCombo(group, rem, combo), id);
-    if (def === 2 && pts[id] > max) max = pts[id];
-  }
-  return max;
-}
+  /** Remaining (not-yet-finished) matches in a group. */
+  const remainingMatches = (group: string): Match[] =>
+    groupMatches(group).filter((m) => m.status !== "finished");
 
-// Is a team (already out of the top two) also out of the best-third race? It is
-// eliminated iff at least 8 other groups are FORCED to produce a third-placed
-// team on more points than this team's best possible third-place total — i.e.
-// fewer than 4 other groups can be arranged at or below it (where it would win
-// the GD tie-break, since it can run up its own margin freely).
-function eliminatedFromR32(id: string, group: string): boolean {
-  const best = maxThirdPoints(id, group);
-  if (best < 0) return true; // can't even finish 3rd
-  const groups = allGroups();
-  const canBeAtOrBelow = groups.filter(
-    (g) => g !== group && minThirdPoints(g) <= best,
-  ).length;
-  const othersNeeded = groups.length - 1 - THIRDS_ADVANCING + 1; // = 4
-  return canBeAtOrBelow < othersNeeded;
-}
+  /** A group's teams, ordered by the full FIFA tie-break chain. */
+  const standings = (group: string): Standing[] =>
+    orderGroupStandings(
+      teams.filter((t) => t.group === group),
+      groupMatches(group),
+    );
 
-/**
- * Classify one group: status + scenario text for each of its four teams,
- * ordered by current standings.
- */
-export function classifyGroup(group: string): GroupQualification {
-  const standings = standingsForGroup(group);
-  const rem = remainingMatches(group);
-  const base = basePoints(group);
-  const combos = combinations(rem);
+  /** Base (current) group points keyed by team id. */
+  const basePoints = (group: string): Pts =>
+    Object.fromEntries(
+      teams.filter((t) => t.group === group).map((t) => [t.id, t.points]),
+    );
 
-  const teams = standings.map((t): TeamQualification => {
-    const id = t.id;
-    let clinchedTop2 = true;
-    let clinchedFirst = true;
-    let outOfTop2 = true;
-    for (const combo of combos) {
-      const pts = pointsFor(base, rem, combo);
-      const { def, poss } = aheadCounts(
-        pts,
-        decidedForCombo(group, rem, combo),
-        id,
-      );
-      if (poss > 1) clinchedTop2 = false;
-      if (poss > 0) clinchedFirst = false;
-      if (def < 2) outOfTop2 = false;
+  /**
+   * The decided result of every group match for one completion: finished matches
+   * keep their real result, the remaining matches take this combo's win/draw/loss
+   * (no goals — margins are free, so head-to-head goal diff doesn't contribute).
+   */
+  const decidedForCombo = (
+    group: string,
+    rem: Match[],
+    combo: Outcome[],
+  ): Decided[] => {
+    const out: Decided[] = [];
+    for (const m of groupMatches(group)) {
+      if (m.status === "finished") {
+        const d = decidedFromMatch(m);
+        if (d) out.push(d);
+        continue;
+      }
+      const o = combo[rem.indexOf(m)];
+      out.push({
+        homeId: m.homeTeamId,
+        awayId: m.awayTeamId,
+        homePts: o === "home" ? 3 : o === "draw" ? 1 : 0,
+        awayPts: o === "away" ? 3 : o === "draw" ? 1 : 0,
+      });
     }
-
-    let status: QualStatus;
-    if (clinchedFirst) status = "clinched-first";
-    else if (clinchedTop2) status = "clinched";
-    else if (!outOfTop2) status = "alive";
-    else status = eliminatedFromR32(id, group) ? "eliminated" : "out-top2";
-
-    return {
-      teamId: id,
-      status,
-      scenario: scenarioText(id, status, group, base, rem),
-    };
-  });
-
-  // Per-team games left: the most any one team in the group still has to play.
-  const matchesLeftPerTeam = standings.reduce((max, t) => {
-    const left = rem.filter(
-      (m) => m.homeTeamId === t.id || m.awayTeamId === t.id,
-    ).length;
-    return left > max ? left : max;
-  }, 0);
-
-  return { group, matchesLeftPerTeam, teams };
-}
-
-/** Human-readable summary of what a team has done / still needs. */
-function scenarioText(
-  id: string,
-  status: QualStatus,
-  group: string,
-  base: Pts,
-  rem: Match[],
-): string {
-  const left = rem.filter((m) => m.homeTeamId === id || m.awayTeamId === id);
-
-  if (status === "clinched-first")
-    return left.length === 0 ? "Won the group" : "Top spot secured";
-  if (status === "clinched")
-    return left.length === 0 ? "Through to the Round of 32" : "Qualified for the Round of 32";
-  if (status === "eliminated")
-    return left.length === 0 ? "Eliminated" : "Cannot reach the Round of 32";
-  if (status === "out-top2")
-    return "Can only reach the R32 as a best third-placed team";
-
-  // Alive for the top two. The crisp cases are the final-matchday teams with
-  // exactly one game left; otherwise keep it general.
-  if (left.length !== 1) return "Still in contention for the top two";
-
-  const tMatch = left[0];
-  const ti = rem.indexOf(tMatch);
-  const idIsHome = tMatch.homeTeamId === id;
-  const combos = combinations(rem);
-  // Fix the team's last result, enumerate every other remaining match, and test
-  // whether top two is then certain — head-to-head and all (a draw can fall
-  // short on a goal-difference tie even when the points look safe).
-  const guaranteed = (result: "win" | "draw"): boolean => {
-    const wanted: Outcome =
-      result === "draw" ? "draw" : idIsHome ? "home" : "away";
-    return combos
-      .filter((c) => c[ti] === wanted)
-      .every(
-        (c) =>
-          aheadCounts(pointsFor(base, rem, c), decidedForCombo(group, rem, c), id)
-            .poss <= 1,
-      );
+    return out;
   };
-  const winGuar = guaranteed("win");
-  const drawGuar = guaranteed("draw");
 
-  if (drawGuar) return "A win or draw guarantees qualification";
-  if (winGuar) return "A win guarantees qualification";
-  return "Must win and hope other results fall its way";
+  // ---- Cross-group third-place feasibility --------------------------------
+
+  // The fewest points a group's third-placed team can finish on, over every
+  // completion of that group. Memoised within this engine snapshot.
+  const minThirdCache = new Map<string, number>();
+  const minThirdPoints = (group: string): number => {
+    const cached = minThirdCache.get(group);
+    if (cached !== undefined) return cached;
+    const base = basePoints(group);
+    const rem = remainingMatches(group);
+    let min = Infinity;
+    for (const combo of combinations(rem)) {
+      const pts = pointsFor(base, rem, combo);
+      const third = Object.values(pts).sort((a, b) => b - a)[2];
+      if (third < min) min = third;
+    }
+    minThirdCache.set(group, min);
+    return min;
+  };
+
+  // The most points a team can finish on while landing in 3rd (its only route to
+  // the R32 once it's out of the top two). A team can be 3rd in a completion iff
+  // exactly two teams finish above it for sure (head-to-head included); a third
+  // rival only level on goal difference can be edged out with a free margin.
+  // Returns -1 if it can never be better than 4th — that team is eliminated.
+  const maxThirdPoints = (id: string, group: string): number => {
+    const base = basePoints(group);
+    const rem = remainingMatches(group);
+    let max = -1;
+    for (const combo of combinations(rem)) {
+      const pts = pointsFor(base, rem, combo);
+      const { def } = aheadCounts(pts, decidedForCombo(group, rem, combo), id);
+      if (def === 2 && pts[id] > max) max = pts[id];
+    }
+    return max;
+  };
+
+  // Is a team (already out of the top two) also out of the best-third race? It is
+  // eliminated iff at least 8 other groups are FORCED to produce a third-placed
+  // team on more points than this team's best possible third-place total — i.e.
+  // fewer than 4 other groups can be arranged at or below it (where it would win
+  // the GD tie-break, since it can run up its own margin freely).
+  const eliminatedFromR32 = (id: string, group: string): boolean => {
+    const best = maxThirdPoints(id, group);
+    if (best < 0) return true; // can't even finish 3rd
+    const canBeAtOrBelow = groups.filter(
+      (g) => g !== group && minThirdPoints(g) <= best,
+    ).length;
+    const othersNeeded = groups.length - 1 - THIRDS_ADVANCING + 1; // = 4
+    return canBeAtOrBelow < othersNeeded;
+  };
+
+  /** Human-readable summary of what a team has done / still needs. */
+  const scenarioText = (
+    id: string,
+    status: QualStatus,
+    group: string,
+    base: Pts,
+    rem: Match[],
+  ): string => {
+    const left = rem.filter((m) => m.homeTeamId === id || m.awayTeamId === id);
+
+    if (status === "clinched-first")
+      return left.length === 0 ? "Won the group" : "Top spot secured";
+    if (status === "clinched")
+      return left.length === 0
+        ? "Through to the Round of 32"
+        : "Qualified for the Round of 32";
+    if (status === "eliminated")
+      return left.length === 0 ? "Eliminated" : "Cannot reach the Round of 32";
+    if (status === "out-top2")
+      return "Can only reach the R32 as a best third-placed team";
+
+    // Alive for the top two. The crisp cases are the final-matchday teams with
+    // exactly one game left; otherwise keep it general.
+    if (left.length !== 1) return "Still in contention for the top two";
+
+    const tMatch = left[0];
+    const ti = rem.indexOf(tMatch);
+    const idIsHome = tMatch.homeTeamId === id;
+    const combos = combinations(rem);
+    // Fix the team's last result, enumerate every other remaining match, and test
+    // whether top two is then certain — head-to-head and all (a draw can fall
+    // short on a goal-difference tie even when the points look safe).
+    const guaranteed = (result: "win" | "draw"): boolean => {
+      const wanted: Outcome =
+        result === "draw" ? "draw" : idIsHome ? "home" : "away";
+      return combos
+        .filter((c) => c[ti] === wanted)
+        .every(
+          (c) =>
+            aheadCounts(
+              pointsFor(base, rem, c),
+              decidedForCombo(group, rem, c),
+              id,
+            ).poss <= 1,
+        );
+    };
+    const winGuar = guaranteed("win");
+    const drawGuar = guaranteed("draw");
+
+    if (drawGuar) return "A win or draw guarantees qualification";
+    if (winGuar) return "A win guarantees qualification";
+    return "Must win and hope other results fall its way";
+  };
+
+  /**
+   * Classify one group: status + scenario text for each of its four teams,
+   * ordered by current standings.
+   */
+  const classifyGroup = (group: string): GroupQualification => {
+    const ordered = standings(group);
+    const rem = remainingMatches(group);
+    const base = basePoints(group);
+    const combos = combinations(rem);
+
+    const classified = ordered.map((t): TeamQualification => {
+      const id = t.id;
+      let clinchedTop2 = true;
+      let clinchedFirst = true;
+      let outOfTop2 = true;
+      for (const combo of combos) {
+        const pts = pointsFor(base, rem, combo);
+        const { def, poss } = aheadCounts(
+          pts,
+          decidedForCombo(group, rem, combo),
+          id,
+        );
+        if (poss > 1) clinchedTop2 = false;
+        if (poss > 0) clinchedFirst = false;
+        if (def < 2) outOfTop2 = false;
+      }
+
+      let status: QualStatus;
+      if (clinchedFirst) status = "clinched-first";
+      else if (clinchedTop2) status = "clinched";
+      else if (!outOfTop2) status = "alive";
+      else status = eliminatedFromR32(id, group) ? "eliminated" : "out-top2";
+
+      return {
+        teamId: id,
+        status,
+        scenario: scenarioText(id, status, group, base, rem),
+      };
+    });
+
+    // Per-team games left: the most any one team in the group still has to play.
+    const matchesLeftPerTeam = ordered.reduce((max, t) => {
+      const cnt = rem.filter(
+        (m) => m.homeTeamId === t.id || m.awayTeamId === t.id,
+      ).length;
+      return cnt > max ? cnt : max;
+    }, 0);
+
+    return { group, matchesLeftPerTeam, teams: classified };
+  };
+
+  // ---- Third-place race (cross-group) -------------------------------------
+  // The eight best third-placed teams across the twelve groups also reach the
+  // Round of 32. This is a *live projection* of the current third-place table,
+  // not a clinch proof — the cutoff shifts as results land. Ordered by the
+  // official cross-group tie-break (points → GD → goals for → FIFA ranking;
+  // no head-to-head, since the teams are in different groups).
+  const thirdPlaceRace = (): ThirdPlaceRow[] => {
+    const thirds: Standing[] = [];
+    for (const g of groups) {
+      const row = standings(g)[2];
+      if (row) thirds.push(row);
+    }
+    return thirds
+      .sort(byStrength)
+      .map((t, i) => ({ ...t, projectedIn: i < THIRDS_ADVANCING }));
+  };
+
+  return { groups, classifyGroup, thirdPlaceRace };
 }
 
-/** All twelve groups classified, in group order. */
-export function qualificationByGroup(): GroupQualification[] {
-  return allGroups().map((g) => classifyGroup(g));
-}
-
-// ---- Third-place race (cross-group) ----------------------------------------
-// The eight best third-placed teams across the twelve groups also reach the
-// Round of 32. This is a *live projection* of the current third-place table,
-// not a clinch proof — the cutoff shifts as results land. Ordered by the
-// official cross-group tie-break (points → GD → goals for → FIFA ranking;
-// no head-to-head, since the teams are in different groups).
 const byStrength = (a: Standing, b: Standing) =>
   b.points - a.points ||
   b.goalDiff - a.goalDiff ||
@@ -351,13 +389,32 @@ export interface ThirdPlaceRow extends Standing {
   projectedIn: boolean; // currently inside the top-8 cutoff
 }
 
-export function thirdPlaceRace(): ThirdPlaceRow[] {
-  const thirds: Standing[] = [];
-  for (const g of allGroups()) {
-    const row = standingsForGroup(g)[2];
-    if (row) thirds.push(row);
-  }
-  return thirds
-    .sort(byStrength)
-    .map((t, i) => ({ ...t, projectedIn: i < THIRDS_ADVANCING }));
+// ---- Public API -----------------------------------------------------------
+// Each call builds a fresh engine over the given snapshot (default = bundled
+// deploy-time data). Cheap enough to run per render: ≤729 combos × 12 groups.
+
+/** Classify a single group (default snapshot = bundled deploy-time data). */
+export function classifyGroup(
+  group: string,
+  teams: Team[] = TEAMS,
+  matches: Match[] = MATCHES,
+): GroupQualification {
+  return createEngine(teams, matches).classifyGroup(group);
+}
+
+/** All twelve groups classified, in group order. */
+export function qualificationByGroup(
+  teams: Team[] = TEAMS,
+  matches: Match[] = MATCHES,
+): GroupQualification[] {
+  const engine = createEngine(teams, matches);
+  return engine.groups.map((g) => engine.classifyGroup(g));
+}
+
+/** The cross-group third-place projection. */
+export function thirdPlaceRace(
+  teams: Team[] = TEAMS,
+  matches: Match[] = MATCHES,
+): ThirdPlaceRow[] {
+  return createEngine(teams, matches).thirdPlaceRace();
 }

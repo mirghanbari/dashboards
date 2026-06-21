@@ -226,7 +226,7 @@ export function goalsByGroup(): { label: string; value: number }[] {
   }));
 }
 
-export { useLiveMatches, applyLive } from "./live";
+export { useLiveMatches, applyLive, liveStandings } from "./live";
 export {
   classifyGroup,
   qualificationByGroup,

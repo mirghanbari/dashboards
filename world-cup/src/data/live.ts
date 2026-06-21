@@ -8,8 +8,8 @@
 // a match is live or about to kick off, drop to a 5-min heartbeat otherwise (to
 // catch a kickoff), pause while the tab is hidden, and refresh on refocus.
 import { useEffect, useRef, useState } from "react";
-import { MATCHES } from ".";
-import type { Match } from "../types";
+import { MATCHES, TEAMS } from ".";
+import type { Match, Team } from "../types";
 
 /**
  * The fields live.json carries. Every entry has the slim card fields; live and
@@ -102,4 +102,54 @@ export function applyLive(matches: Match[], live: Map<string, LiveMatch>): Match
     const patch = live.get(m.id);
     return patch ? { ...m, ...patch } : m;
   });
+}
+
+/**
+ * Team aggregates with any group game that has finished *since the last deploy*
+ * folded into the standings — so the Qualification page reflects a just-ended
+ * result without waiting for the data pipeline to rebuild teams.json + redeploy.
+ *
+ * Deliberately conservative: a match counts only when the live feed reports it
+ * `finished` (with a score) AND the bundled data hadn't already recorded it as
+ * finished. Games still in progress are NOT counted — only a settled result may
+ * move the table, so no qualification verdict ever rests on a score that can
+ * still change. Returns the bundled TEAMS unchanged when nothing has flipped.
+ */
+export function liveStandings(live: Map<string, LiveMatch>): Team[] {
+  if (live.size === 0) return TEAMS;
+  const byId = new Map(TEAMS.map((t) => [t.id, { ...t }]));
+  let changed = false;
+  for (const base of MATCHES) {
+    if (base.stage !== "group" || base.status === "finished") continue;
+    const patch = live.get(base.id);
+    if (!patch || patch.status !== "finished") continue;
+    if (patch.homeScore == null || patch.awayScore == null) continue;
+    const home = byId.get(base.homeTeamId);
+    const away = byId.get(base.awayTeamId);
+    if (!home || !away) continue;
+    const hs = patch.homeScore;
+    const as = patch.awayScore;
+    home.played++;
+    away.played++;
+    home.goalsFor += hs;
+    home.goalsAgainst += as;
+    away.goalsFor += as;
+    away.goalsAgainst += hs;
+    if (hs > as) {
+      home.won++;
+      away.lost++;
+      home.points += 3;
+    } else if (hs < as) {
+      away.won++;
+      home.lost++;
+      away.points += 3;
+    } else {
+      home.drawn++;
+      away.drawn++;
+      home.points += 1;
+      away.points += 1;
+    }
+    changed = true;
+  }
+  return changed ? [...byId.values()] : TEAMS;
 }
