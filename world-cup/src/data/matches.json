@@ -3876,9 +3876,9 @@
     "homeTeamId": "bel",
     "awayTeamId": "irn",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 0,
     "status": "live",
-    "minute": "26",
+    "minute": "29",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3904,11 +3904,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 72.4,
+        "possession": 73.4,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.7,
-        "accuratePasses": 135,
+        "passAccuracy": 88.1,
+        "accuratePasses": 140,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
@@ -3918,14 +3918,14 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 27.6,
-        "shots": 3,
-        "shotsOnTarget": 2,
-        "passAccuracy": 66.7,
-        "accuratePasses": 40,
+        "possession": 26.6,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 66.1,
+        "accuratePasses": 39,
         "fouls": 0,
         "corners": 1,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 2,
         "xg": 0.26,
         "duelsWon": 11,
