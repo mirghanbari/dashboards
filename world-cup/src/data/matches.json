@@ -3879,7 +3879,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3908,6 +3908,13 @@
         "teamId": "irn",
         "player": "Saeid Ezatolahi",
         "text": "Saeid Ezatolahi Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "66'",
+        "teamId": "bel",
+        "player": "Nathan Ngoy",
+        "text": "Nathan Ngoy Red Card"
       }
     ],
     "stats": {
@@ -3935,8 +3942,8 @@
         "corners": 2,
         "offsides": 2,
         "saves": 6,
-        "xg": 0.47,
-        "duelsWon": 32,
+        "xg": 0.49,
+        "duelsWon": 33,
         "boxTouches": 11
       }
     }
