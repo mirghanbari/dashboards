@@ -3770,7 +3770,7 @@
     "homeScore": 5,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3837,26 +3837,27 @@
         "minute": "90'+2'",
         "teamId": "esp",
         "player": "Ferran Torres",
-        "text": "Ferran Torres Goal"
+        "text": "Ferran Torres Goal",
+        "assist": "Pedro Porro"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.4,
+        "possession": 66.5,
         "shots": 22,
         "shotsOnTarget": 9,
         "passAccuracy": 91.9,
-        "accuratePasses": 634,
+        "accuratePasses": 635,
         "fouls": 10,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.78,
+        "xg": 3.68,
         "duelsWon": 26,
-        "boxTouches": 35
+        "boxTouches": 36
       },
       "away": {
-        "possession": 33.6,
+        "possession": 33.5,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 80.6,
