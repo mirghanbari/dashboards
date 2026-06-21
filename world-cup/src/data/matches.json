@@ -3769,8 +3769,8 @@
     "awayTeamId": "ksa",
     "homeScore": 4,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -3835,11 +3835,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.6,
+        "possession": 67.1,
         "shots": 21,
         "shotsOnTarget": 8,
-        "passAccuracy": 92,
-        "accuratePasses": 653,
+        "passAccuracy": 92.1,
+        "accuratePasses": 668,
         "fouls": 10,
         "corners": 6,
         "offsides": 2,
@@ -3849,10 +3849,10 @@
         "boxTouches": 35
       },
       "away": {
-        "possession": 33.4,
+        "possession": 32.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.4,
+        "passAccuracy": 80.2,
         "accuratePasses": 292,
         "fouls": 2,
         "corners": 1,
