@@ -3767,10 +3767,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "esp",
     "awayTeamId": "ksa",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "49",
+    "minute": "50",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3817,25 +3817,33 @@
         "teamId": "ksa",
         "player": "Salem Al-Dawsari",
         "text": "Salem Al-Dawsari Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "49'",
+        "teamId": "esp",
+        "player": "Hassan Al-Tambakti",
+        "text": "Hassan Al-Tambakti Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
       "home": {
-        "possession": 72.3,
-        "shots": 17,
-        "shotsOnTarget": 5,
+        "possession": 72.4,
+        "shots": 18,
+        "shotsOnTarget": 6,
         "passAccuracy": 91.9,
-        "accuratePasses": 373,
+        "accuratePasses": 375,
         "fouls": 3,
         "corners": 5,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.85,
+        "xg": 2,
         "duelsWon": 18,
         "boxTouches": 28
       },
       "away": {
-        "possession": 27.7,
+        "possession": 27.6,
         "shots": 2,
         "shotsOnTarget": 0,
         "passAccuracy": 72.7,
@@ -3843,7 +3851,7 @@
         "fouls": 1,
         "corners": 1,
         "offsides": 3,
-        "saves": 2,
+        "saves": 3,
         "xg": 0.11,
         "duelsWon": 17,
         "boxTouches": 1
