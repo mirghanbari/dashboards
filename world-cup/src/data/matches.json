@@ -3570,8 +3570,8 @@
     "awayTeamId": "cuw",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
