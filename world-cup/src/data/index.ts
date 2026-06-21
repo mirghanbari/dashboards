@@ -165,8 +165,15 @@ export function getMatch(id: string): Match | undefined {
   return MATCHES.find((m) => m.id === id);
 }
 
+// Cross-group comparison (best third-placed teams, bracket seeding). No
+// head-to-head — these teams are in different groups — so: points → overall GD
+// → overall goals → fair-play conduct → FIFA ranking.
 const byStrength = (a: Standing, b: Standing) =>
-  b.points - a.points || b.goalDiff - a.goalDiff || b.goalsFor - a.goalsFor || a.fifaRank - b.fifaRank;
+  b.points - a.points ||
+  b.goalDiff - a.goalDiff ||
+  b.goalsFor - a.goalsFor ||
+  b.conduct - a.conduct ||
+  a.fifaRank - b.fifaRank;
 
 /** The 32 projected qualifiers: 12 winners, 12 runners-up, 8 best third places. */
 export function projectedQualifiers(): Standing[] {

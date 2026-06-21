@@ -191,6 +191,9 @@ export interface Meta {
 export interface Standing extends Team {
   goalDiff: number;
   rank: number; // position within the group
+  // FIFA fair-play conduct score from group cards (≤ 0; nearer 0 is better).
+  // Used as the last tie-break before FIFA ranking.
+  conduct: number;
 }
 
 // ---------- International Friendlies (proof-of-concept data flow) ----------

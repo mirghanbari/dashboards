@@ -6,8 +6,9 @@
 //   3. Head-to-head goals scored
 //   4. Overall goal difference
 //   5. Overall goals scored
-//   6. Fair-play / conduct score   — NOT wired (we have no per-team group-stage
-//      card totals); ties that reach this step fall through to FIFA ranking.
+//   6. Fair-play / conduct score   — derived from the cards in each match
+//      timeline (see `conductScore`); ties that survive it fall through to
+//      FIFA ranking (we don't model the final "drawing of lots" step).
 //   7. FIFA World Ranking
 //
 // The crucial property the engine relies on: head-to-head is computed only from
@@ -74,9 +75,60 @@ export function headToHead(ids: string[], decided: Decided[]): Map<string, H2H> 
   return table;
 }
 
+// ---- Fair-play / conduct score --------------------------------------------
+// FIFA disciplinary points, applied once per player per match for their worst
+// outcome (the buckets are mutually exclusive — a sending-off is not also
+// counted as the booking that may precede it):
+//   yellow card ......................... −1
+//   indirect red (second yellow) ........ −3
+//   direct red .......................... −4
+//   yellow + direct red (same player) ... −5
+// A team's conduct score is the sum across all its group-stage cards (≤ 0;
+// nearer zero is the better-behaved team and ranks higher).
+const Y = -1;
+const INDIRECT_RED = -3;
+const DIRECT_RED = -4;
+const YELLOW_AND_DIRECT_RED = -5;
+
+interface PlayerCards {
+  yellows: number;
+  directRed: boolean;
+  indirectRed: boolean; // a red explicitly flagged as a second yellow
+}
+
+function playerDeduction(c: PlayerCards): number {
+  if (c.directRed) return c.yellows >= 1 ? YELLOW_AND_DIRECT_RED : DIRECT_RED;
+  if (c.indirectRed || c.yellows >= 2) return INDIRECT_RED;
+  if (c.yellows === 1) return Y;
+  return 0;
+}
+
+/** FIFA fair-play conduct score for one team across the given matches. */
+export function conductScore(teamId: string, matches: Match[]): number {
+  let total = 0;
+  for (const m of matches) {
+    if (!m.timeline) continue;
+    const byPlayer = new Map<string, PlayerCards>();
+    for (const ev of m.timeline) {
+      if (ev.teamId !== teamId) continue;
+      if (ev.type !== "yellow" && ev.type !== "red") continue;
+      const rec =
+        byPlayer.get(ev.player) ??
+        { yellows: 0, directRed: false, indirectRed: false };
+      if (ev.type === "yellow") rec.yellows++;
+      else if (/second|2nd|yellow/i.test(ev.text ?? "")) rec.indirectRed = true;
+      else rec.directRed = true;
+      byPlayer.set(ev.player, rec);
+    }
+    for (const rec of byPlayer.values()) total += playerDeduction(rec);
+  }
+  return total;
+}
+
 export interface OrderedTeam extends Team {
   goalDiff: number;
   rank: number;
+  conduct: number;
 }
 
 /**
@@ -109,7 +161,12 @@ export function orderGroupStandings(
   const zero: H2H = { pts: 0, gd: 0, gf: 0 };
 
   return teams
-    .map((t) => ({ ...t, goalDiff: t.goalsFor - t.goalsAgainst, rank: 0 }))
+    .map((t) => ({
+      ...t,
+      goalDiff: t.goalsFor - t.goalsAgainst,
+      rank: 0,
+      conduct: conductScore(t.id, groupMatches),
+    }))
     .sort((a, b) => {
       if (b.points !== a.points) return b.points - a.points;
       const ha = h2hByTeam.get(a.id) ?? zero;
@@ -120,6 +177,7 @@ export function orderGroupStandings(
         hb.gf - ha.gf ||
         b.goalDiff - a.goalDiff ||
         b.goalsFor - a.goalsFor ||
+        b.conduct - a.conduct ||
         a.fifaRank - b.fifaRank
       );
     })
