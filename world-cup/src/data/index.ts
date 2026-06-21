@@ -16,6 +16,7 @@ import playersJson from "./players.json";
 import metaJson from "./meta.json";
 import predictionsJson from "./predictions.json";
 import headToHeadJson from "./headtohead.json";
+import { orderGroupStandings } from "./tiebreakers";
 
 export const TEAMS = teamsJson as Team[];
 export const MATCHES = matchesJson as Match[];
@@ -126,18 +127,16 @@ export function getTeam(id: string): Team {
 
 export const groupLetters = [...new Set(TEAMS.map((t) => t.group))].sort();
 
-/** Standings for a single group, sorted by points → goal diff → goals for. */
+/**
+ * Standings for a single group, ordered by the official FIFA 2026 tie-break
+ * chain — points, then head-to-head (points → GD → goals among the level
+ * teams), then overall GD → overall goals → FIFA ranking.
+ */
 export function standingsForGroup(group: string): Standing[] {
-  return TEAMS.filter((t) => t.group === group)
-    .map((t) => ({ ...t, goalDiff: t.goalsFor - t.goalsAgainst, rank: 0 }))
-    .sort(
-      (a, b) =>
-        b.points - a.points ||
-        b.goalDiff - a.goalDiff ||
-        b.goalsFor - a.goalsFor ||
-        a.fifaRank - b.fifaRank,
-    )
-    .map((t, i) => ({ ...t, rank: i + 1 }));
+  return orderGroupStandings(
+    TEAMS.filter((t) => t.group === group),
+    MATCHES.filter((m) => m.stage === "group" && m.group === group),
+  );
 }
 
 export function playersForTeam(teamId: string): Player[] {

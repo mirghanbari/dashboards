@@ -22,6 +22,7 @@
 // free, so points decide what is provable); the full chain orders the
 // third-place race table for display.
 import { MATCHES, TEAMS, standingsForGroup } from ".";
+import { headToHead, decidedFromMatch, type Decided } from "./tiebreakers";
 import type { Match, Standing } from "../types";
 
 export type QualStatus =
@@ -62,11 +63,14 @@ function allGroups(): string[] {
   return groupsCache;
 }
 
+/** Every group match (played or not) for a group. */
+function groupMatches(group: string): Match[] {
+  return MATCHES.filter((m) => m.stage === "group" && m.group === group);
+}
+
 /** Remaining (not-yet-finished) matches in a group. */
 function remainingMatches(group: string): Match[] {
-  return MATCHES.filter(
-    (m) => m.stage === "group" && m.group === group && m.status !== "finished",
-  );
+  return groupMatches(group).filter((m) => m.status !== "finished");
 }
 
 /** Every W/D/L combination across a set of matches. */
@@ -96,11 +100,74 @@ function pointsFor(base: Pts, matches: Match[], combo: Outcome[]): Pts {
   return pts;
 }
 
-function teamsAtOrAbove(pts: Pts, id: string): number {
-  return Object.keys(pts).filter((k) => k !== id && pts[k] >= pts[id]).length;
+/**
+ * The decided result of every group match for one completion: finished matches
+ * keep their real result, the remaining matches take this combo's win/draw/loss
+ * (no goals — margins are free, so head-to-head goal diff doesn't contribute).
+ */
+function decidedForCombo(
+  group: string,
+  rem: Match[],
+  combo: Outcome[],
+): Decided[] {
+  const out: Decided[] = [];
+  for (const m of groupMatches(group)) {
+    if (m.status === "finished") {
+      const d = decidedFromMatch(m);
+      if (d) out.push(d);
+      continue;
+    }
+    const o = combo[rem.indexOf(m)];
+    out.push({
+      homeId: m.homeTeamId,
+      awayId: m.awayTeamId,
+      homePts: o === "home" ? 3 : o === "draw" ? 1 : 0,
+      awayPts: o === "away" ? 3 : o === "draw" ? 1 : 0,
+    });
+  }
+  return out;
 }
-function teamsStrictlyAbove(pts: Pts, id: string): number {
-  return Object.keys(pts).filter((k) => k !== id && pts[k] > pts[id]).length;
+
+/**
+ * How many teams finish above `id` in one completion, splitting "for sure" from
+ * "possibly". Teams with more points are above either way. Teams level on
+ * points are ranked by head-to-head points (fully determined by the results in
+ * this completion — no goal margins needed): a level rival with MORE head-to-
+ * head points is above for sure; one with EQUAL head-to-head points is a
+ * genuine goal-difference tie that margins could swing either way (so it's
+ * "possibly" above but not for sure); one with FEWER is below for sure.
+ *   - `def`  drives elimination — we only call a team out when it's behind for
+ *            sure, so we never over-eliminate on a margin that's still open.
+ *   - `poss` drives clinching — a team is only safe when no rival can possibly
+ *            pull level-or-ahead, so a free GD tie keeps it honest.
+ */
+function aheadCounts(
+  pts: Pts,
+  decided: Decided[],
+  id: string,
+): { def: number; poss: number } {
+  const p = pts[id];
+  const level = Object.keys(pts).filter((k) => pts[k] === p);
+  const h2h = level.length > 1 ? headToHead(level, decided) : null;
+  const mine = h2h?.get(id)?.pts ?? 0;
+  let def = 0;
+  let poss = 0;
+  for (const k of Object.keys(pts)) {
+    if (k === id) continue;
+    if (pts[k] > p) {
+      def++;
+      poss++;
+    } else if (pts[k] === p) {
+      const theirs = h2h?.get(k)?.pts ?? 0;
+      if (theirs > mine) {
+        def++;
+        poss++;
+      } else if (theirs === mine) {
+        poss++; // open goal-difference tie
+      }
+    }
+  }
+  return { def, poss };
 }
 
 /** Base (current) group points keyed by team id. */
@@ -131,16 +198,18 @@ function minThirdPoints(group: string): number {
 }
 
 // The most points a team can finish on while landing in 3rd (its only route to
-// the R32 once it's out of the top two). A team is 3rd in a completion iff
-// exactly two teams are strictly above it on points. Returns -1 if it can never
-// be better than 4th. Goal margins are free, so points alone decide this.
+// the R32 once it's out of the top two). A team can be 3rd in a completion iff
+// exactly two teams finish above it for sure (head-to-head included); a third
+// rival only level on goal difference can be edged out with a free margin.
+// Returns -1 if it can never be better than 4th — that team is eliminated.
 function maxThirdPoints(id: string, group: string): number {
   const base = basePoints(group);
   const rem = remainingMatches(group);
   let max = -1;
   for (const combo of combinations(rem)) {
     const pts = pointsFor(base, rem, combo);
-    if (teamsStrictlyAbove(pts, id) === 2 && pts[id] > max) max = pts[id];
+    const { def } = aheadCounts(pts, decidedForCombo(group, rem, combo), id);
+    if (def === 2 && pts[id] > max) max = pts[id];
   }
   return max;
 }
@@ -178,10 +247,14 @@ export function classifyGroup(group: string): GroupQualification {
     let outOfTop2 = true;
     for (const combo of combos) {
       const pts = pointsFor(base, rem, combo);
-      const atOrAbove = teamsAtOrAbove(pts, id);
-      if (atOrAbove > 1) clinchedTop2 = false;
-      if (atOrAbove > 0) clinchedFirst = false;
-      if (teamsStrictlyAbove(pts, id) < 2) outOfTop2 = false;
+      const { def, poss } = aheadCounts(
+        pts,
+        decidedForCombo(group, rem, combo),
+        id,
+      );
+      if (poss > 1) clinchedTop2 = false;
+      if (poss > 0) clinchedFirst = false;
+      if (def < 2) outOfTop2 = false;
     }
 
     let status: QualStatus;
@@ -190,7 +263,11 @@ export function classifyGroup(group: string): GroupQualification {
     else if (!outOfTop2) status = "alive";
     else status = eliminatedFromR32(id, group) ? "eliminated" : "out-top2";
 
-    return { teamId: id, status, scenario: scenarioText(id, status, base, rem) };
+    return {
+      teamId: id,
+      status,
+      scenario: scenarioText(id, status, group, base, rem),
+    };
   });
 
   // Per-team games left: the most any one team in the group still has to play.
@@ -208,6 +285,7 @@ export function classifyGroup(group: string): GroupQualification {
 function scenarioText(
   id: string,
   status: QualStatus,
+  group: string,
   base: Pts,
   rem: Match[],
 ): string {
@@ -227,17 +305,25 @@ function scenarioText(
   if (left.length !== 1) return "Still in contention for the top two";
 
   const tMatch = left[0];
-  const opp = tMatch.homeTeamId === id ? tMatch.awayTeamId : tMatch.homeTeamId;
-  const others = rem.filter((m) => m !== tMatch);
-  const otherCombos = combinations(others);
-  // Fix the team's last result (and the opponent's, since it's the same match),
-  // then enumerate the remaining matches to test whether top 2 is then certain.
-  const guaranteed = (tDelta: number, oppDelta: number): boolean => {
-    const b: Pts = { ...base, [id]: base[id] + tDelta, [opp]: base[opp] + oppDelta };
-    return otherCombos.every((combo) => teamsAtOrAbove(pointsFor(b, others, combo), id) <= 1);
+  const ti = rem.indexOf(tMatch);
+  const idIsHome = tMatch.homeTeamId === id;
+  const combos = combinations(rem);
+  // Fix the team's last result, enumerate every other remaining match, and test
+  // whether top two is then certain — head-to-head and all (a draw can fall
+  // short on a goal-difference tie even when the points look safe).
+  const guaranteed = (result: "win" | "draw"): boolean => {
+    const wanted: Outcome =
+      result === "draw" ? "draw" : idIsHome ? "home" : "away";
+    return combos
+      .filter((c) => c[ti] === wanted)
+      .every(
+        (c) =>
+          aheadCounts(pointsFor(base, rem, c), decidedForCombo(group, rem, c), id)
+            .poss <= 1,
+      );
   };
-  const winGuar = guaranteed(3, 0);
-  const drawGuar = guaranteed(1, 1);
+  const winGuar = guaranteed("win");
+  const drawGuar = guaranteed("draw");
 
   if (drawGuar) return "A win or draw guarantees qualification";
   if (winGuar) return "A win guarantees qualification";
