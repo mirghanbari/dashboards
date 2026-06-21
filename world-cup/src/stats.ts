@@ -118,7 +118,7 @@ export const STAT_CATALOG: StatDef[] = [
 
 export const SOURCE_META: Record<StatDef["source"], { label: string; hint: string }> = {
   espn: { label: "ESPN · live", hint: "Pulled live from ESPN's match feed." },
-  fotmob: { label: "FotMob · free", hint: "Free FotMob public API — xG, xGOT, set-piece xG and per-player advanced stats." },
+  fotmob: { label: "FotMob", hint: "FotMob public API — xG, xGOT, set-piece xG and per-player advanced stats." },
   derived: { label: "Derived", hint: "Computed from other tracked stats." },
   fbref: { label: "FBref/Opta", hint: "Opta event data via the worldfootballR open dataset." },
   model: { label: "Open model · needs events", hint: "xT and VAEP use open models, but require a full event stream (every pass and carry). No free feed covers the live 2026 World Cup — FotMob is shots-only and FBref is blocked — so these stay unpopulated." },
