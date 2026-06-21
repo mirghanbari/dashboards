@@ -3770,7 +3770,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3810,29 +3810,36 @@
         "text": "Mikel Oyarzabal Goal - Volley",
         "goalType": "volley",
         "assist": "Dani Olmo"
+      },
+      {
+        "type": "yellow",
+        "minute": "30'",
+        "teamId": "ksa",
+        "player": "Salem Al-Dawsari",
+        "text": "Salem Al-Dawsari Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 72.9,
+        "possession": 73.6,
         "shots": 12,
         "shotsOnTarget": 4,
-        "passAccuracy": 90.9,
-        "accuratePasses": 150,
+        "passAccuracy": 90.8,
+        "accuratePasses": 168,
         "fouls": 1,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.68,
-        "duelsWon": 13,
-        "boxTouches": 17
+        "xg": 1.6,
+        "duelsWon": 15,
+        "boxTouches": 18
       },
       "away": {
-        "possession": 27.1,
+        "possession": 26.4,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 67.7,
-        "accuratePasses": 44,
+        "passAccuracy": 65.7,
+        "accuratePasses": 46,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
