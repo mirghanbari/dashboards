@@ -3673,9 +3673,9 @@
     "homeTeamId": "tun",
     "awayTeamId": "jpn",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "30",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3698,35 +3698,42 @@
         "player": "Daichi Kamada",
         "text": "Daichi Kamada Goal",
         "assist": "Keito Nakamura"
+      },
+      {
+        "type": "goal",
+        "minute": "31'",
+        "teamId": "jpn",
+        "player": "Ayase Ueda",
+        "text": "Ayase Ueda Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 32.1,
+        "possession": 39.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.5,
-        "accuratePasses": 52,
+        "passAccuracy": 78.6,
+        "accuratePasses": 77,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.01,
-        "duelsWon": 11,
+        "duelsWon": 12,
         "boxTouches": 1
       },
       "away": {
-        "possession": 67.9,
-        "shots": 4,
-        "shotsOnTarget": 2,
-        "passAccuracy": 89.6,
-        "accuratePasses": 129,
+        "possession": 60.5,
+        "shots": 5,
+        "shotsOnTarget": 3,
+        "passAccuracy": 88.6,
+        "accuratePasses": 132,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 1.24,
-        "duelsWon": 16,
+        "duelsWon": 17,
         "boxTouches": 9
       }
     }
