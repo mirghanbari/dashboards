@@ -3959,10 +3959,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "uru",
     "awayTeamId": "cpv",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "45+6",
+    "minute": "45+8",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4018,7 +4018,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.9,
+        "possession": 65.6,
         "shots": 11,
         "shotsOnTarget": 2,
         "passAccuracy": 84.1,
@@ -4027,16 +4027,16 @@
         "corners": 4,
         "offsides": 2,
         "saves": 0,
-        "xg": 1.37,
-        "duelsWon": 21,
+        "xg": 1.93,
+        "duelsWon": 22,
         "boxTouches": 20
       },
       "away": {
-        "possession": 33.1,
+        "possession": 34.4,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 72.3,
-        "accuratePasses": 94,
+        "passAccuracy": 73.2,
+        "accuratePasses": 101,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
