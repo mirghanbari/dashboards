@@ -3673,9 +3673,9 @@
     "homeTeamId": "tun",
     "awayTeamId": "jpn",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "5",
+    "minute": "6",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3690,13 +3690,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "4'",
+        "teamId": "jpn",
+        "player": "Daichi Kamada",
+        "text": "Daichi Kamada Goal",
+        "assist": "Keito Nakamura"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 31.2,
+        "possession": 33.3,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 60,
-        "accuratePasses": 3,
+        "passAccuracy": 77.8,
+        "accuratePasses": 7,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
@@ -3705,16 +3715,16 @@
         "duelsWon": 0
       },
       "away": {
-        "possession": 68.8,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 81.8,
-        "accuratePasses": 9,
+        "possession": 66.7,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 88.9,
+        "accuratePasses": 16,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.57,
+        "xg": 0.83,
         "duelsWon": 4
       }
     }
