@@ -68,9 +68,9 @@ export function Qualification() {
             <header className="qual-card-head">
               <h2 className="qual-card-title">Group {g.group}</h2>
               <span className="qual-card-sub">
-                {g.remaining === 0
+                {g.matchesLeftPerTeam === 0
                   ? "Group complete"
-                  : `${g.remaining} match${g.remaining > 1 ? "es" : ""} left`}
+                  : `${g.matchesLeftPerTeam} game${g.matchesLeftPerTeam > 1 ? "s" : ""} left each`}
               </span>
             </header>
             <ol className="qrow-list">

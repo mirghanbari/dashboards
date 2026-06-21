@@ -39,7 +39,12 @@ export interface TeamQualification {
 
 export interface GroupQualification {
   group: string;
-  remaining: number; // remaining matches in the group
+  // Games each team still has to play (its own remaining fixtures), NOT the
+  // group's total remaining fixtures — a 4-team group has 2 fixtures per
+  // matchday, so "total fixtures left" reads as twice the rounds to go. We take
+  // the max across the four teams so a round with staggered kickoffs (one
+  // fixture done, one not) still reports the round as outstanding.
+  matchesLeftPerTeam: number;
   teams: TeamQualification[]; // in current-standings order
 }
 
@@ -188,7 +193,15 @@ export function classifyGroup(group: string): GroupQualification {
     return { teamId: id, status, scenario: scenarioText(id, status, base, rem) };
   });
 
-  return { group, remaining: rem.length, teams };
+  // Per-team games left: the most any one team in the group still has to play.
+  const matchesLeftPerTeam = standings.reduce((max, t) => {
+    const left = rem.filter(
+      (m) => m.homeTeamId === t.id || m.awayTeamId === t.id,
+    ).length;
+    return left > max ? left : max;
+  }, 0);
+
+  return { group, matchesLeftPerTeam, teams };
 }
 
 /** Human-readable summary of what a team has done / still needs. */
