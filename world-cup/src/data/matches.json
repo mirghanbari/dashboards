@@ -3635,7 +3635,7 @@
         "possession": 74.6,
         "shots": 27,
         "shotsOnTarget": 15,
-        "passAccuracy": 89.8,
+        "passAccuracy": 90.1,
         "accuratePasses": 580,
         "fouls": 7,
         "corners": 9,
@@ -3675,7 +3675,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "24",
+    "minute": "25",
     "broadcasts": [
       {
         "name": "FS1",
