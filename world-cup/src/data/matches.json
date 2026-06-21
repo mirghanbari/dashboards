@@ -3704,16 +3704,17 @@
         "minute": "31'",
         "teamId": "jpn",
         "player": "Ayase Ueda",
-        "text": "Ayase Ueda Goal"
+        "text": "Ayase Ueda Goal",
+        "assist": "Kou Itakura"
       }
     ],
     "stats": {
       "home": {
-        "possession": 39.5,
+        "possession": 41.7,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 78.6,
-        "accuratePasses": 77,
+        "passAccuracy": 79.6,
+        "accuratePasses": 86,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
@@ -3723,16 +3724,16 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 60.5,
+        "possession": 58.3,
         "shots": 5,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.6,
+        "passAccuracy": 88,
         "accuratePasses": 132,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.24,
+        "xg": 1.28,
         "duelsWon": 17,
         "boxTouches": 9
       }
