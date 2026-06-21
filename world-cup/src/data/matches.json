@@ -3962,7 +3962,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4014,16 +4014,23 @@
         "player": "Agustín Cano",
         "text": "Agustín Cano Goal",
         "assist": "Maxi Araújo"
+      },
+      {
+        "type": "yellow",
+        "minute": "58'",
+        "teamId": "uru",
+        "player": "Mathías Olivera",
+        "text": "Mathías Olivera Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.6,
+        "possession": 65.8,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.2,
-        "accuratePasses": 288,
-        "fouls": 7,
+        "passAccuracy": 84.3,
+        "accuratePasses": 311,
+        "fouls": 8,
         "corners": 5,
         "offsides": 2,
         "saves": 0,
@@ -4032,11 +4039,11 @@
         "boxTouches": 23
       },
       "away": {
-        "possession": 33.4,
+        "possession": 34.2,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.4,
-        "accuratePasses": 132,
+        "passAccuracy": 76,
+        "accuratePasses": 149,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
