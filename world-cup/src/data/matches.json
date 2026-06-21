@@ -3767,10 +3767,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "esp",
     "awayTeamId": "ksa",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "21",
+    "minute": "23",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3793,25 +3793,33 @@
         "player": "Lamine Yamal",
         "text": "Lamine Yamal Goal",
         "assist": "Mikel Oyarzabal"
+      },
+      {
+        "type": "goal",
+        "minute": "21'",
+        "teamId": "esp",
+        "player": "Mikel Oyarzabal",
+        "text": "Mikel Oyarzabal Goal",
+        "assist": "Aymeric Laporte"
       }
     ],
     "stats": {
       "home": {
-        "possession": 73.2,
-        "shots": 8,
-        "shotsOnTarget": 2,
-        "passAccuracy": 91.9,
-        "accuratePasses": 137,
+        "possession": 73.5,
+        "shots": 10,
+        "shotsOnTarget": 3,
+        "passAccuracy": 91.4,
+        "accuratePasses": 138,
         "fouls": 1,
-        "corners": 2,
+        "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.82,
+        "xg": 1.04,
         "duelsWon": 8,
         "boxTouches": 14
       },
       "away": {
-        "possession": 26.8,
+        "possession": 26.5,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 66.7,
