@@ -522,10 +522,10 @@
     "goalsAgainst": 2,
     "points": 4,
     "possession": 51.2,
-    "ppda": 14.4,
+    "ppda": 14.2,
     "cleanSheets": 1,
-    "passCompletion": 86.7,
-    "xgFor": 2.68,
+    "passCompletion": 86.6,
+    "xgFor": 2.74,
     "xgAgainst": 0.83
   },
   {
@@ -547,9 +547,9 @@
     "possession": 44.6,
     "ppda": 12.5,
     "cleanSheets": 0,
-    "passCompletion": 79.6,
+    "passCompletion": 79.5,
     "xgFor": 0.31,
-    "xgAgainst": 3.43
+    "xgAgainst": 3.49
   },
   {
     "id": "bel",
