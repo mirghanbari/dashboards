@@ -3674,8 +3674,8 @@
     "awayTeamId": "jpn",
     "homeScore": 0,
     "awayScore": 4,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
