@@ -3767,10 +3767,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "esp",
     "awayTeamId": "ksa",
-    "homeScore": 4,
+    "homeScore": 5,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -3831,25 +3831,32 @@
         "teamId": "ksa",
         "player": "Mohamed Kanno",
         "text": "Mohamed Kanno Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+2'",
+        "teamId": "esp",
+        "player": "Ferran Torres",
+        "text": "Ferran Torres Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.7,
-        "shots": 21,
-        "shotsOnTarget": 8,
-        "passAccuracy": 91.6,
-        "accuratePasses": 610,
+        "possession": 66.4,
+        "shots": 22,
+        "shotsOnTarget": 9,
+        "passAccuracy": 91.9,
+        "accuratePasses": 634,
         "fouls": 10,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
         "xg": 2.78,
         "duelsWon": 26,
-        "boxTouches": 34
+        "boxTouches": 35
       },
       "away": {
-        "possession": 34.3,
+        "possession": 33.6,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 80.6,
