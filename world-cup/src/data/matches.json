@@ -3571,7 +3571,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3607,6 +3607,13 @@
         "teamId": "cuw",
         "player": "Juninho Bacuna",
         "text": "Juninho Bacuna Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "56'",
+        "teamId": "cuw",
+        "player": "Livano Comenencia",
+        "text": "Livano Comenencia Yellow Card"
       }
     ],
     "stats": {
@@ -3621,7 +3628,7 @@
         "offsides": 1,
         "saves": 0,
         "xg": 1.15,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 18
       },
       "away": {
