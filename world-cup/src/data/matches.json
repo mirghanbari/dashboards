@@ -3960,9 +3960,9 @@
     "homeTeamId": "uru",
     "awayTeamId": "cpv",
     "homeScore": 2,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "60",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4021,15 +4021,22 @@
         "teamId": "uru",
         "player": "Mathías Olivera",
         "text": "Mathías Olivera Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "61'",
+        "teamId": "cpv",
+        "player": "Hélio Varela",
+        "text": "Hélio Varela Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.6,
+        "possession": 66.1,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.3,
-        "accuratePasses": 311,
+        "passAccuracy": 84,
+        "accuratePasses": 316,
         "fouls": 8,
         "corners": 5,
         "offsides": 2,
@@ -4039,9 +4046,9 @@
         "boxTouches": 23
       },
       "away": {
-        "possession": 34.4,
-        "shots": 4,
-        "shotsOnTarget": 1,
+        "possession": 33.9,
+        "shots": 5,
+        "shotsOnTarget": 2,
         "passAccuracy": 75.6,
         "accuratePasses": 149,
         "fouls": 3,
@@ -4049,7 +4056,7 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 27,
+        "duelsWon": 28,
         "boxTouches": 3
       }
     }
