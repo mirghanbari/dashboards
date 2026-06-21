@@ -3878,8 +3878,8 @@
     "awayTeamId": "irn",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -3919,11 +3919,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 70.5,
-        "shots": 22,
+        "possession": 70.3,
+        "shots": 23,
         "shotsOnTarget": 7,
-        "passAccuracy": 85.9,
-        "accuratePasses": 526,
+        "passAccuracy": 86,
+        "accuratePasses": 535,
         "fouls": 7,
         "corners": 4,
         "offsides": 3,
@@ -3933,11 +3933,11 @@
         "boxTouches": 42
       },
       "away": {
-        "possession": 29.5,
+        "possession": 29.7,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 73.9,
-        "accuratePasses": 193,
+        "accuratePasses": 198,
         "fouls": 9,
         "corners": 2,
         "offsides": 4,
