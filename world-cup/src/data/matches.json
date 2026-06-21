@@ -3571,7 +3571,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+2",
+    "minute": "45+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3604,31 +3604,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 74.5,
+        "possession": 74.3,
         "shots": 8,
         "shotsOnTarget": 6,
-        "passAccuracy": 88.8,
-        "accuratePasses": 316,
+        "passAccuracy": 89.1,
+        "accuratePasses": 326,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 1.1,
-        "duelsWon": 21,
+        "duelsWon": 23,
         "boxTouches": 14
       },
       "away": {
-        "possession": 25.5,
-        "shots": 4,
+        "possession": 25.7,
+        "shots": 5,
         "shotsOnTarget": 0,
-        "passAccuracy": 71.5,
-        "accuratePasses": 88,
+        "passAccuracy": 71.9,
+        "accuratePasses": 92,
         "fouls": 4,
         "corners": 0,
         "offsides": 2,
         "saves": 6,
-        "xg": 0.18,
-        "duelsWon": 17,
+        "xg": 0.2,
+        "duelsWon": 18,
         "boxTouches": 6
       }
     }
@@ -4044,8 +4044,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4104,8 +4104,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4194,8 +4194,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4224,8 +4224,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4284,8 +4284,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4344,8 +4344,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4464,8 +4464,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4584,8 +4584,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4674,8 +4674,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
@@ -4704,8 +4704,8 @@
         "type": "tv"
       },
       {
-        "name": "Telemundo",
-        "type": "tv"
+        "name": "Universo",
+        "type": "stream"
       },
       {
         "name": "FOX One",
