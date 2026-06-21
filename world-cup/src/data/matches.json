@@ -3879,8 +3879,16 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
+      {
+        "name": "FS1",
+        "type": "tv"
+      },
+      {
+        "name": "Telemundo",
+        "type": "tv"
+      },
       {
         "name": "FOX One",
         "type": "stream"
@@ -3904,32 +3912,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 80.1,
+        "possession": 79.4,
         "shots": 17,
         "shotsOnTarget": 6,
         "passAccuracy": 86.4,
-        "accuratePasses": 424,
+        "accuratePasses": 426,
         "fouls": 6,
         "corners": 4,
         "offsides": 3,
         "saves": 2,
-        "xg": 1.45,
+        "xg": 1.44,
         "duelsWon": 39,
         "boxTouches": 36
       },
       "away": {
-        "possession": 19.9,
-        "shots": 4,
+        "possession": 20.6,
+        "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 59.3,
-        "accuratePasses": 73,
-        "fouls": 6,
-        "corners": 1,
+        "passAccuracy": 59.4,
+        "accuratePasses": 76,
+        "fouls": 7,
+        "corners": 2,
         "offsides": 2,
         "saves": 6,
         "xg": 0.47,
-        "duelsWon": 31,
-        "boxTouches": 10
+        "duelsWon": 32,
+        "boxTouches": 11
       }
     }
   },
