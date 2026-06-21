@@ -3571,7 +3571,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "52",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FS1",
@@ -3600,30 +3600,37 @@
         "teamId": "cuw",
         "player": "Leandro Bacuna",
         "text": "Leandro Bacuna Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "53'",
+        "teamId": "cuw",
+        "player": "Juninho Bacuna",
+        "text": "Juninho Bacuna Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 74.2,
+        "possession": 74.1,
         "shots": 10,
         "shotsOnTarget": 7,
-        "passAccuracy": 89.5,
-        "accuratePasses": 382,
+        "passAccuracy": 89.3,
+        "accuratePasses": 383,
         "fouls": 6,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
-        "xg": 1.2,
-        "duelsWon": 29,
+        "xg": 1.14,
+        "duelsWon": 31,
         "boxTouches": 15
       },
       "away": {
-        "possession": 25.8,
+        "possession": 25.9,
         "shots": 5,
         "shotsOnTarget": 0,
-        "passAccuracy": 71.1,
-        "accuratePasses": 106,
-        "fouls": 5,
+        "passAccuracy": 70.9,
+        "accuratePasses": 107,
+        "fouls": 6,
         "corners": 0,
         "offsides": 2,
         "saves": 7,
