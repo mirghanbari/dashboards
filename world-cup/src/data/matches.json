@@ -4197,10 +4197,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "arg",
     "awayTeamId": "aut",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4251,33 +4251,40 @@
         "teamId": "arg",
         "player": "Leandro Paredes",
         "text": "Leandro Paredes Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+5'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54,
-        "shots": 8,
-        "shotsOnTarget": 2,
-        "passAccuracy": 89.6,
-        "accuratePasses": 491,
+        "possession": 53.8,
+        "shots": 11,
+        "shotsOnTarget": 5,
+        "passAccuracy": 89.1,
+        "accuratePasses": 492,
         "fouls": 13,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
-        "xg": 1.58,
+        "xg": 2.62,
         "duelsWon": 48,
-        "boxTouches": 19
+        "boxTouches": 20
       },
       "away": {
-        "possession": 46,
+        "possession": 46.2,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.8,
-        "accuratePasses": 392,
+        "passAccuracy": 86,
+        "accuratePasses": 398,
         "fouls": 12,
         "corners": 3,
         "offsides": 0,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.5,
         "duelsWon": 46,
         "boxTouches": 18
