@@ -4200,7 +4200,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "40",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4223,11 +4223,18 @@
         "player": "Lionel Messi",
         "text": "Lionel Messi Goal",
         "assist": "Facundo Medina"
+      },
+      {
+        "type": "yellow",
+        "minute": "41'",
+        "teamId": "aut",
+        "player": "Stefan Posch",
+        "text": "Stefan Posch Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58.4,
+        "possession": 57.7,
         "shots": 3,
         "shotsOnTarget": 2,
         "passAccuracy": 89.3,
@@ -4241,11 +4248,11 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 41.6,
+        "possession": 42.3,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 78.2,
-        "accuratePasses": 111,
+        "passAccuracy": 77.4,
+        "accuratePasses": 113,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
