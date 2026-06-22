@@ -4302,10 +4302,10 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "fra",
     "awayTeamId": "irq",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "14",
+    "minute": "15",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4327,28 +4327,36 @@
         "teamId": "irq",
         "player": "Amir Al-Ammari",
         "text": "Amir Al-Ammari Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "14'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal",
+        "assist": "Michael Olise"
       }
     ],
     "stats": {
       "home": {
-        "possession": 63.1,
-        "shots": 3,
-        "shotsOnTarget": 0,
-        "passAccuracy": 89.4,
-        "accuratePasses": 84,
+        "possession": 65.5,
+        "shots": 6,
+        "shotsOnTarget": 1,
+        "passAccuracy": 88.8,
+        "accuratePasses": 95,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.26,
         "duelsWon": 7,
         "boxTouches": 10
       },
       "away": {
-        "possession": 36.9,
+        "possession": 34.5,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.3,
+        "passAccuracy": 78,
         "accuratePasses": 46,
         "fouls": 1,
         "corners": 0,
