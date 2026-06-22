@@ -4200,7 +4200,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "74",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4230,35 +4230,42 @@
         "teamId": "aut",
         "player": "Stefan Posch",
         "text": "Stefan Posch Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "76'",
+        "teamId": "arg",
+        "player": "Facundo Medina",
+        "text": "Facundo Medina Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58.4,
+        "possession": 58.1,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.7,
-        "accuratePasses": 420,
+        "passAccuracy": 89.4,
+        "accuratePasses": 428,
         "fouls": 10,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
         "xg": 1.36,
-        "duelsWon": 35,
+        "duelsWon": 36,
         "boxTouches": 12
       },
       "away": {
-        "possession": 41.6,
+        "possession": 41.9,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.7,
-        "accuratePasses": 273,
-        "fouls": 8,
+        "passAccuracy": 83.5,
+        "accuratePasses": 283,
+        "fouls": 10,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.41,
-        "duelsWon": 38,
+        "duelsWon": 39,
         "boxTouches": 14
       }
     }
