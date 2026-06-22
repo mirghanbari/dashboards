@@ -4305,7 +4305,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "5",
+    "minute": "7",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4320,32 +4320,41 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "6'",
+        "teamId": "irq",
+        "player": "Amir Al-Ammari",
+        "text": "Amir Al-Ammari Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 57.1,
+        "possession": 52.7,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 95.7,
-        "accuratePasses": 22,
+        "passAccuracy": 92.1,
+        "accuratePasses": 35,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.03,
-        "duelsWon": 2
+        "duelsWon": 3
       },
       "away": {
-        "possession": 42.9,
+        "possession": 47.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.9,
-        "accuratePasses": 16,
-        "fouls": 0,
+        "passAccuracy": 85.7,
+        "accuratePasses": 30,
+        "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 2
+        "duelsWon": 3
       }
     }
   },
