@@ -3513,8 +3513,7 @@
         "minute": "68'",
         "teamId": "ger",
         "player": "Deniz Undav",
-        "text": "Deniz Undav Goal - Volley",
-        "goalType": "volley",
+        "text": "Deniz Undav Goal",
         "assist": "Nadiem Amiri"
       },
       {
@@ -4083,7 +4082,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "39",
+    "minute": "40",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4157,7 +4156,7 @@
         "saves": 2,
         "xg": 0.25,
         "duelsWon": 22,
-        "boxTouches": 11
+        "boxTouches": 12
       }
     }
   },
