@@ -3961,8 +3961,8 @@
     "awayTeamId": "cpv",
     "homeScore": 2,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+8",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
