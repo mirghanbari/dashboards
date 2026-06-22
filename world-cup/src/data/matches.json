@@ -4200,7 +4200,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4226,7 +4226,7 @@
       },
       {
         "type": "yellow",
-        "minute": "41'",
+        "minute": "40'",
         "teamId": "aut",
         "player": "Stefan Posch",
         "text": "Stefan Posch Yellow Card"
@@ -4237,22 +4237,22 @@
         "possession": 57.7,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.3,
-        "accuratePasses": 184,
+        "passAccuracy": 89.5,
+        "accuratePasses": 188,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 1.05,
-        "duelsWon": 18,
+        "duelsWon": 20,
         "boxTouches": 8
       },
       "away": {
         "possession": 42.3,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 77.4,
-        "accuratePasses": 113,
+        "passAccuracy": 77.2,
+        "accuratePasses": 115,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
