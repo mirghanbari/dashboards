@@ -4082,7 +4082,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "81",
+    "minute": "82",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4144,14 +4144,22 @@
         "player": "Mohamed Salah",
         "text": "Mohamed Salah Goal",
         "assist": "Mostafa Zico"
+      },
+      {
+        "type": "goal",
+        "minute": "82'",
+        "teamId": "egy",
+        "player": "Trézéguet",
+        "text": "Trézéguet Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 40.8,
+        "possession": 40.6,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 82,
+        "passAccuracy": 81.5,
         "accuratePasses": 273,
         "fouls": 13,
         "corners": 2,
@@ -4162,18 +4170,18 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 59.2,
-        "shots": 16,
+        "possession": 59.4,
+        "shots": 17,
         "shotsOnTarget": 5,
         "passAccuracy": 89.4,
-        "accuratePasses": 431,
+        "accuratePasses": 438,
         "fouls": 7,
-        "corners": 2,
+        "corners": 3,
         "offsides": 0,
         "saves": 3,
-        "xg": 1.59,
+        "xg": 1.72,
         "duelsWon": 44,
-        "boxTouches": 28
+        "boxTouches": 31
       }
     }
   },
