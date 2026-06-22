@@ -4197,10 +4197,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "arg",
     "awayTeamId": "aut",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "39",
+    "minute": "40",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4215,26 +4215,36 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "38'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal",
+        "assist": "Facundo Medina"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 55.8,
-        "shots": 2,
-        "shotsOnTarget": 1,
-        "passAccuracy": 89.6,
-        "accuratePasses": 163,
+        "possession": 58.5,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 89.3,
+        "accuratePasses": 184,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.86,
+        "xg": 1.05,
         "duelsWon": 18,
         "boxTouches": 7
       },
       "away": {
-        "possession": 44.2,
+        "possession": 41.5,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.9,
+        "passAccuracy": 78.7,
         "accuratePasses": 111,
         "fouls": 4,
         "corners": 2,
