@@ -4200,7 +4200,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "76",
+    "minute": "77",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4237,6 +4237,13 @@
         "teamId": "arg",
         "player": "Facundo Medina",
         "text": "Facundo Medina Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "76'",
+        "teamId": "aut",
+        "player": "Konrad Laimer",
+        "text": "Konrad Laimer Yellow Card"
       }
     ],
     "stats": {
