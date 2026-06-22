@@ -4080,9 +4080,9 @@
     "homeTeamId": "nzl",
     "awayTeamId": "egy",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4142,16 +4142,17 @@
         "minute": "67'",
         "teamId": "egy",
         "player": "Mohamed Salah",
-        "text": "Mohamed Salah Goal"
+        "text": "Mohamed Salah Goal",
+        "assist": "Mostafa Zico"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.3,
+        "possession": 41.7,
         "shots": 9,
         "shotsOnTarget": 4,
         "passAccuracy": 82.1,
-        "accuratePasses": 247,
+        "accuratePasses": 248,
         "fouls": 12,
         "corners": 2,
         "offsides": 2,
@@ -4161,16 +4162,16 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 57.7,
-        "shots": 14,
-        "shotsOnTarget": 3,
-        "passAccuracy": 90.2,
-        "accuratePasses": 367,
+        "possession": 58.3,
+        "shots": 15,
+        "shotsOnTarget": 4,
+        "passAccuracy": 89.7,
+        "accuratePasses": 376,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 3,
-        "xg": 1.43,
+        "xg": 1.59,
         "duelsWon": 40,
         "boxTouches": 26
       }
