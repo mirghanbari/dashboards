@@ -4082,7 +4082,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "67",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4136,6 +4136,13 @@
         "text": "Mostafa Zico Goal - Header",
         "goalType": "header",
         "assist": "Mohamed Hany"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "egy",
+        "player": "Mohamed Salah",
+        "text": "Mohamed Salah Goal"
       }
     ],
     "stats": {
@@ -4150,7 +4157,7 @@
         "offsides": 2,
         "saves": 2,
         "xg": 0.61,
-        "duelsWon": 29,
+        "duelsWon": 28,
         "boxTouches": 8
       },
       "away": {
@@ -4164,8 +4171,8 @@
         "offsides": 0,
         "saves": 3,
         "xg": 1.43,
-        "duelsWon": 39,
-        "boxTouches": 23
+        "duelsWon": 40,
+        "boxTouches": 26
       }
     }
   },
