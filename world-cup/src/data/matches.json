@@ -3962,7 +3962,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4032,7 +4032,7 @@
       },
       {
         "type": "yellow",
-        "minute": "90'+4'",
+        "minute": "90'+3'",
         "teamId": "cpv",
         "player": "Diney Borges",
         "text": "Diney Borges Yellow Card"
@@ -4040,32 +4040,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.5,
+        "possession": 66.1,
         "shots": 17,
         "shotsOnTarget": 2,
-        "passAccuracy": 82.8,
-        "accuratePasses": 413,
-        "fouls": 8,
-        "corners": 12,
+        "passAccuracy": 82.6,
+        "accuratePasses": 414,
+        "fouls": 9,
+        "corners": 11,
         "offsides": 3,
-        "saves": 0,
+        "saves": 1,
         "xg": 2.33,
-        "duelsWon": 46,
+        "duelsWon": 47,
         "boxTouches": 34
       },
       "away": {
-        "possession": 33.5,
-        "shots": 9,
-        "shotsOnTarget": 2,
-        "passAccuracy": 74.2,
-        "accuratePasses": 190,
+        "possession": 33.9,
+        "shots": 10,
+        "shotsOnTarget": 3,
+        "passAccuracy": 74.3,
+        "accuratePasses": 194,
         "fouls": 4,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.84,
-        "duelsWon": 50,
-        "boxTouches": 6
+        "xg": 0.89,
+        "duelsWon": 52,
+        "boxTouches": 10
       }
     }
   },
