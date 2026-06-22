@@ -4266,13 +4266,13 @@
         "shots": 12,
         "shotsOnTarget": 5,
         "passAccuracy": 89.2,
-        "accuratePasses": 493,
+        "accuratePasses": 494,
         "fouls": 13,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
-        "xg": 2.36,
-        "duelsWon": 50,
+        "xg": 2.62,
+        "duelsWon": 49,
         "boxTouches": 19
       },
       "away": {
@@ -4280,13 +4280,13 @@
         "shots": 6,
         "shotsOnTarget": 1,
         "passAccuracy": 85.7,
-        "accuratePasses": 400,
+        "accuratePasses": 401,
         "fouls": 13,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.53,
-        "duelsWon": 46,
+        "xg": 0.5,
+        "duelsWon": 45,
         "boxTouches": 18
       }
     }
