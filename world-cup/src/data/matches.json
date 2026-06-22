@@ -4083,7 +4083,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "16",
+    "minute": "17",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4107,6 +4107,13 @@
         "text": "Finn Surman Goal - Header",
         "goalType": "header",
         "assist": "Tim Payne"
+      },
+      {
+        "type": "yellow",
+        "minute": "17'",
+        "teamId": "egy",
+        "player": "Mohanad Lashin",
+        "text": "Mohanad Lashin Yellow Card"
       }
     ],
     "stats": {
@@ -4120,7 +4127,7 @@
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.23,
+        "xg": 0.21,
         "duelsWon": 5,
         "boxTouches": 2
       },
