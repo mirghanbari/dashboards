@@ -4080,10 +4080,10 @@
     "city": "Vancouver",
     "homeTeamId": "nzl",
     "awayTeamId": "egy",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "15",
+    "minute": "16",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4098,23 +4098,34 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "15'",
+        "teamId": "nzl",
+        "player": "Finn Surman",
+        "text": "Finn Surman Goal - Header",
+        "goalType": "header",
+        "assist": "Tim Payne"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 49.7,
-        "shots": 2,
-        "shotsOnTarget": 1,
+        "possession": 50,
+        "shots": 3,
+        "shotsOnTarget": 2,
         "passAccuracy": 84,
         "accuratePasses": 79,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.11,
+        "xg": 0.23,
         "duelsWon": 5,
-        "boxTouches": 1
+        "boxTouches": 2
       },
       "away": {
-        "possession": 50.3,
+        "possession": 50,
         "shots": 1,
         "shotsOnTarget": 0,
         "passAccuracy": 88.8,
