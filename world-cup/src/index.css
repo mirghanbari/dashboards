@@ -656,6 +656,52 @@ select:disabled {
   letter-spacing: 0.06em;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--line);
+  display: block;
+}
+/* Offset the smooth-scroll target so the "Results" CTA doesn't tuck the
+   heading under the sticky top nav. */
+#results-section {
+  scroll-margin-top: 84px;
+}
+/* Collapsible results day: the title row becomes a full-width toggle. */
+.day-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0 0 8px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--line);
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+}
+.day-toggle:hover .day-title {
+  color: var(--ink);
+}
+.day-toggle .day-title {
+  padding-bottom: 0;
+  border-bottom: none;
+  flex: 1;
+}
+.day-caret {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  transition: transform 0.15s ease;
+}
+.day-caret.is-open {
+  transform: rotate(90deg);
+}
+.day-count {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--line);
+  border-radius: 999px;
+  padding: 2px 9px;
+  min-width: 22px;
+  text-align: center;
 }
 
 /* ---------------- Group standings ---------------- */

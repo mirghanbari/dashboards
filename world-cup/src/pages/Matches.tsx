@@ -1,9 +1,27 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { MATCHES, groupLetters, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
 import { Bracket } from "../components/Bracket";
 import type { Stage } from "../types";
+
+const isToday = (m: (typeof MATCHES)[number]) =>
+  new Date(m.date).toLocaleDateString() === new Date().toLocaleDateString();
+
+// Group a date-sorted match list into [dayLabel, matches] entries, preserving
+// the incoming order (ascending) so callers can reverse for newest-first.
+function groupByDay(list: typeof MATCHES): [string, typeof MATCHES][] {
+  const map = new Map<string, typeof MATCHES>();
+  for (const m of list) {
+    const key = new Date(m.date).toLocaleDateString(undefined, {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+    });
+    (map.get(key) ?? map.set(key, []).get(key)!).push(m);
+  }
+  return [...map.entries()];
+}
 
 const STAGE_FILTERS: { value: Stage | "all"; label: string }[] = [
   { value: "all", label: "All stages" },
@@ -50,19 +68,42 @@ export function Matches() {
     );
   }, [visible]);
 
-  // Group all visible matches by calendar day for readability.
-  const byDay = useMemo(() => {
-    const map = new Map<string, typeof visible>();
-    for (const m of visible) {
-      const key = new Date(m.date).toLocaleDateString(undefined, {
-        weekday: "short",
-        month: "short",
-        day: "numeric",
-      });
-      (map.get(key) ?? map.set(key, []).get(key)!).push(m);
+  // Split into upcoming fixtures and finished results, each grouped by calendar
+  // day. Fixtures lead the page in chronological order so "what's next" is right
+  // under the fold; results sit below, newest-first, as a collapsible archive
+  // instead of forcing a scroll past every played day. Today's full slate stays
+  // under Fixtures — including games already played — so the active day reads as
+  // one snapshot (live + done + still to come), and Results is purely the past.
+  const fixtureDays = useMemo(
+    () => groupByDay(visible.filter((m) => m.status !== "finished" || isToday(m))),
+    [visible],
+  );
+  const resultDays = useMemo(
+    () => groupByDay(visible.filter((m) => m.status === "finished" && !isToday(m))).reverse(),
+    [visible],
+  );
+
+  // "Results" CTA jumps to the results archive; if we're on the bracket view we
+  // first switch back to the list, then scroll once it has rendered.
+  const pendingResultsScroll = useRef(false);
+  const scrollToResults = () =>
+    document.getElementById("results-section")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  useEffect(() => {
+    if (view === "list" && pendingResultsScroll.current) {
+      pendingResultsScroll.current = false;
+      scrollToResults();
     }
-    return [...map.entries()];
-  }, [visible]);
+  }, [view]);
+  const goToResults = () => {
+    if (view === "list") scrollToResults();
+    else {
+      pendingResultsScroll.current = true;
+      setView("list");
+    }
+  };
 
   return (
     <>
@@ -86,6 +127,9 @@ export function Matches() {
           >
             Bracket
           </button>
+          <button className="chip" onClick={goToResults}>
+            Results
+          </button>
         </div>
       </header>
 
@@ -101,7 +145,8 @@ export function Matches() {
           setStatus={setStatus}
           live={live}
           todayUpcoming={todayUpcoming}
-          byDay={byDay}
+          fixtureDays={fixtureDays}
+          resultDays={resultDays}
         />
       )}
     </>
@@ -117,7 +162,8 @@ function MatchList({
   setStatus,
   live,
   todayUpcoming,
-  byDay,
+  fixtureDays,
+  resultDays,
 }: {
   stage: Stage | "all";
   setStage: (s: Stage | "all") => void;
@@ -127,7 +173,8 @@ function MatchList({
   setStatus: (s: "all" | "live" | "finished" | "scheduled") => void;
   live: typeof MATCHES;
   todayUpcoming: typeof MATCHES;
-  byDay: [string, typeof MATCHES][];
+  fixtureDays: [string, typeof MATCHES][];
+  resultDays: [string, typeof MATCHES][];
 }) {
   return (
     <>
@@ -195,18 +242,86 @@ function MatchList({
         </section>
       )}
 
-      {byDay.length === 0 && <p className="empty">No matches match these filters.</p>}
+      {fixtureDays.length === 0 && resultDays.length === 0 && (
+        <p className="empty">No matches match these filters.</p>
+      )}
 
-      {byDay.map(([day, dayMatches]) => (
-        <section key={day} className="day-group">
-          <h2 className="day-title">{day}</h2>
-          <div className="match-grid">
-            {dayMatches.map((m) => (
-              <MatchCard key={m.id} match={m} />
-            ))}
-          </div>
+      {fixtureDays.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">Fixtures</h2>
+          {fixtureDays.map(([day, dayMatches]) => (
+            <DayGroup key={day} day={day} matches={dayMatches} defaultOpen />
+          ))}
         </section>
-      ))}
+      )}
+
+      {resultDays.length > 0 && (
+        <section className="section" id="results-section">
+          <h2 className="section-title">Results</h2>
+          {resultDays.map(([day, dayMatches], i) => (
+            <DayGroup
+              key={day}
+              day={day}
+              matches={dayMatches}
+              collapsible
+              // Keep the most recent results day open (and everything when the
+              // user has explicitly filtered to finished games); collapse the
+              // rest so the archive doesn't bury the fixtures above it.
+              defaultOpen={i === 0 || status === "finished"}
+            />
+          ))}
+        </section>
+      )}
     </>
+  );
+}
+
+function DayGroup({
+  day,
+  matches,
+  defaultOpen = false,
+  collapsible = false,
+}: {
+  day: string;
+  matches: typeof MATCHES;
+  defaultOpen?: boolean;
+  collapsible?: boolean;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+
+  if (!collapsible) {
+    return (
+      <div className="day-group">
+        <h3 className="day-title">{day}</h3>
+        <div className="match-grid">
+          {matches.map((m) => (
+            <MatchCard key={m.id} match={m} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="day-group">
+      <button
+        className="day-toggle"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+      >
+        <span className={"day-caret" + (open ? " is-open" : "")} aria-hidden="true">
+          ▸
+        </span>
+        <span className="day-title">{day}</span>
+        <span className="day-count">{matches.length}</span>
+      </button>
+      {open && (
+        <div className="match-grid">
+          {matches.map((m) => (
+            <MatchCard key={m.id} match={m} />
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
