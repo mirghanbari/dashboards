@@ -4081,8 +4081,8 @@
     "awayTeamId": "egy",
     "homeScore": 1,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+10",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -4157,11 +4157,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 44.5,
-        "shots": 10,
-        "shotsOnTarget": 4,
-        "passAccuracy": 80.1,
-        "accuratePasses": 330,
+        "possession": 44.3,
+        "shots": 11,
+        "shotsOnTarget": 5,
+        "passAccuracy": 80.5,
+        "accuratePasses": 338,
         "fouls": 14,
         "corners": 4,
         "offsides": 3,
@@ -4171,11 +4171,11 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 55.5,
+        "possession": 55.7,
         "shots": 19,
         "shotsOnTarget": 7,
         "passAccuracy": 87.7,
-        "accuratePasses": 449,
+        "accuratePasses": 463,
         "fouls": 8,
         "corners": 3,
         "offsides": 0,
