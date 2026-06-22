@@ -4083,7 +4083,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "19",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4114,35 +4114,42 @@
         "teamId": "egy",
         "player": "Mohanad Lashin",
         "text": "Mohanad Lashin Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "20'",
+        "teamId": "nzl",
+        "player": "Sarpreet Singh",
+        "text": "Sarpreet Singh Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 50,
-        "shots": 3,
-        "shotsOnTarget": 2,
-        "passAccuracy": 85,
-        "accuratePasses": 91,
-        "fouls": 3,
+        "possession": 50.4,
+        "shots": 5,
+        "shotsOnTarget": 3,
+        "passAccuracy": 82.9,
+        "accuratePasses": 92,
+        "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.28,
         "duelsWon": 6,
-        "boxTouches": 2
+        "boxTouches": 4
       },
       "away": {
-        "possession": 50,
+        "possession": 49.6,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.3,
-        "accuratePasses": 98,
+        "passAccuracy": 88.6,
+        "accuratePasses": 101,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.04,
-        "duelsWon": 11,
+        "duelsWon": 12,
         "boxTouches": 5
       }
     }
