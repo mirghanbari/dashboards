@@ -55,27 +55,22 @@ export function Matches() {
     }).sort((a, b) => +new Date(a.date) - +new Date(b.date));
   }, [allMatches, stage, group, status]);
 
-  // Live matches also float to a pinned block at the top (like the Overview
-  // page); they intentionally still appear in their own day section below too.
+  // Live matches get their own pinned block at the top for instant access (like
+  // the Overview page). They are kept OUT of the Fixtures day cards below so the
+  // live game isn't shown twice within a single scroll.
   const live = useMemo(() => visible.filter((m) => m.status === "live"), [visible]);
-
-  // Today's still-to-come kickoffs get pinned just under the live block (they
-  // also remain in their own day section below, like the live cards).
-  const todayUpcoming = useMemo(() => {
-    const todayKey = new Date().toLocaleDateString();
-    return visible.filter(
-      (m) => m.status === "scheduled" && new Date(m.date).toLocaleDateString() === todayKey,
-    );
-  }, [visible]);
 
   // Split into upcoming fixtures and finished results, each grouped by calendar
   // day. Fixtures lead the page in chronological order so "what's next" is right
   // under the fold; results sit below, newest-first, as a collapsible archive
-  // instead of forcing a scroll past every played day. Today's full slate stays
-  // under Fixtures — including games already played — so the active day reads as
-  // one snapshot (live + done + still to come), and Results is purely the past.
+  // instead of forcing a scroll past every played day. Today's games already
+  // played stay under Fixtures (so the active day reads as a snapshot of done +
+  // still to come), while live games are excluded — they live in the pin above.
   const fixtureDays = useMemo(
-    () => groupByDay(visible.filter((m) => m.status !== "finished" || isToday(m))),
+    () =>
+      groupByDay(
+        visible.filter((m) => m.status === "scheduled" || (m.status === "finished" && isToday(m))),
+      ),
     [visible],
   );
   const resultDays = useMemo(
@@ -144,7 +139,6 @@ export function Matches() {
           status={status}
           setStatus={setStatus}
           live={live}
-          todayUpcoming={todayUpcoming}
           fixtureDays={fixtureDays}
           resultDays={resultDays}
         />
@@ -161,7 +155,6 @@ function MatchList({
   status,
   setStatus,
   live,
-  todayUpcoming,
   fixtureDays,
   resultDays,
 }: {
@@ -172,7 +165,6 @@ function MatchList({
   status: "all" | "live" | "finished" | "scheduled";
   setStatus: (s: "all" | "live" | "finished" | "scheduled") => void;
   live: typeof MATCHES;
-  todayUpcoming: typeof MATCHES;
   fixtureDays: [string, typeof MATCHES][];
   resultDays: [string, typeof MATCHES][];
 }) {
@@ -225,17 +217,6 @@ function MatchList({
           </h2>
           <div className="match-grid">
             {live.map((m) => (
-              <MatchCard key={m.id} match={m} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {todayUpcoming.length > 0 && (
-        <section className="section">
-          <h2 className="section-title">Upcoming today</h2>
-          <div className="match-grid">
-            {todayUpcoming.map((m) => (
               <MatchCard key={m.id} match={m} />
             ))}
           </div>
