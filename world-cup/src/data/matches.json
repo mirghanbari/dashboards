@@ -4011,7 +4011,7 @@
         "minute": "45'+6'",
         "teamId": "uru",
         "player": "Agustín Canobbio",
-        "text": "Agustín Cano Goal",
+        "text": "Agustín Canobbio Goal",
         "assist": "Maxi Araújo"
       },
       {
@@ -4039,11 +4039,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 65.3,
+        "possession": 65.2,
         "shots": 17,
         "shotsOnTarget": 2,
-        "passAccuracy": 82,
-        "accuratePasses": 419,
+        "passAccuracy": 82.2,
+        "accuratePasses": 420,
         "fouls": 11,
         "corners": 11,
         "offsides": 3,
@@ -4053,10 +4053,10 @@
         "boxTouches": 34
       },
       "away": {
-        "possession": 34.7,
+        "possession": 34.8,
         "shots": 12,
         "shotsOnTarget": 4,
-        "passAccuracy": 74,
+        "passAccuracy": 73.7,
         "accuratePasses": 205,
         "fouls": 4,
         "corners": 4,
