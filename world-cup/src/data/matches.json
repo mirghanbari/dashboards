@@ -4304,8 +4304,8 @@
     "awayTeamId": "irq",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "live",
-    "minute": "HT",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
