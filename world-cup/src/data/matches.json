@@ -4200,7 +4200,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4243,7 +4243,7 @@
         "corners": 0,
         "offsides": 2,
         "saves": 1,
-        "xg": 1.05,
+        "xg": 1.14,
         "duelsWon": 33,
         "boxTouches": 9
       },
