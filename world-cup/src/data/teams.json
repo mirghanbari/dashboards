@@ -683,11 +683,11 @@
     "goalsAgainst": 3,
     "points": 2,
     "possession": 66.1,
-    "ppda": 16.9,
+    "ppda": 11.1,
     "cleanSheets": 0,
     "passCompletion": 85.1,
-    "xgFor": 1.79,
-    "xgAgainst": 0.7
+    "xgFor": 4.13,
+    "xgAgainst": 1.55
   },
   {
     "id": "ksa",
@@ -729,11 +729,11 @@
     "goalsAgainst": 2,
     "points": 2,
     "possession": 30.2,
-    "ppda": 23.5,
+    "ppda": 19.6,
     "cleanSheets": 1,
-    "passCompletion": 74.1,
-    "xgFor": 0.2,
-    "xgAgainst": 2.09
+    "passCompletion": 73.9,
+    "xgFor": 1.05,
+    "xgAgainst": 4.43
   },
   {
     "id": "nor",
