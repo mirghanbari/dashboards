@@ -614,11 +614,11 @@
     "goalsAgainst": 2,
     "points": 4,
     "possession": 51,
-    "ppda": 9.7,
+    "ppda": 9.8,
     "cleanSheets": 0,
     "passCompletion": 84.3,
-    "xgFor": 3.08,
-    "xgAgainst": 2.57
+    "xgFor": 2.97,
+    "xgAgainst": 2.59
   },
   {
     "id": "nzl",
@@ -640,8 +640,8 @@
     "ppda": 14.2,
     "cleanSheets": 0,
     "passCompletion": 82.2,
-    "xgFor": 2.46,
-    "xgAgainst": 3.47
+    "xgFor": 2.48,
+    "xgAgainst": 3.36
   },
   {
     "id": "esp",
