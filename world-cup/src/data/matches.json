@@ -4711,8 +4711,8 @@
     "awayTeamId": "gha",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -4745,11 +4745,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 78.6,
+        "possession": 78.7,
         "shots": 19,
         "shotsOnTarget": 4,
-        "passAccuracy": 92.7,
-        "accuratePasses": 581,
+        "passAccuracy": 92.6,
+        "accuratePasses": 585,
         "fouls": 14,
         "corners": 9,
         "offsides": 2,
@@ -4759,7 +4759,7 @@
         "boxTouches": 34
       },
       "away": {
-        "possession": 21.4,
+        "possession": 21.3,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 74,
