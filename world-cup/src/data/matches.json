@@ -4595,9 +4595,9 @@
     "homeTeamId": "por",
     "awayTeamId": "uzb",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4634,16 +4634,23 @@
         "teamId": "por",
         "player": "Nuno Mendes",
         "text": "Nuno Mendes Goal - Free-kick"
+      },
+      {
+        "type": "goal",
+        "minute": "29'",
+        "teamId": "uzb",
+        "player": "Azizjon Ganiev",
+        "text": "Azizjon Ganiev Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 73,
+        "possession": 71.8,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 89.5,
-        "accuratePasses": 136,
-        "fouls": 2,
+        "accuratePasses": 137,
+        "fouls": 3,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
@@ -4652,11 +4659,11 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 27,
-        "shots": 1,
-        "shotsOnTarget": 1,
-        "passAccuracy": 81.4,
-        "accuratePasses": 48,
+        "possession": 28.2,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "passAccuracy": 79.4,
+        "accuratePasses": 50,
         "fouls": 5,
         "corners": 0,
         "offsides": 0,
