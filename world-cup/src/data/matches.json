@@ -4712,7 +4712,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4734,29 +4734,36 @@
         "teamId": "eng",
         "player": "Declan Rice",
         "text": "Declan Rice Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "60'",
+        "teamId": "gha",
+        "player": "Iñaki Williams",
+        "text": "Iñaki Williams Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 75.6,
+        "possession": 75.5,
         "shots": 8,
         "shotsOnTarget": 1,
-        "passAccuracy": 93.4,
-        "accuratePasses": 410,
+        "passAccuracy": 93.5,
+        "accuratePasses": 417,
         "fouls": 9,
         "corners": 3,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.39,
-        "duelsWon": 34,
-        "boxTouches": 18
+        "xg": 0.38,
+        "duelsWon": 35,
+        "boxTouches": 19
       },
       "away": {
-        "possession": 24.4,
+        "possession": 24.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.4,
-        "accuratePasses": 114,
+        "passAccuracy": 81.8,
+        "accuratePasses": 117,
         "fouls": 15,
         "corners": 2,
         "offsides": 1,
