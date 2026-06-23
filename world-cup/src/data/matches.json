@@ -4498,7 +4498,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "69",
+    "minute": "70",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4542,7 +4542,8 @@
         "teamId": "alg",
         "player": "Nadhir Benbouali",
         "text": "Nadhir Benbouali Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Riyad Mahrez"
       }
     ],
     "stats": {
@@ -4562,16 +4563,16 @@
       },
       "away": {
         "possession": 74.8,
-        "shots": 10,
-        "shotsOnTarget": 4,
+        "shots": 11,
+        "shotsOnTarget": 5,
         "passAccuracy": 88.9,
         "accuratePasses": 463,
         "fouls": 6,
         "corners": 6,
         "offsides": 0,
         "saves": 2,
-        "xg": 1.04,
-        "duelsWon": 42,
+        "xg": 1.12,
+        "duelsWon": 43,
         "boxTouches": 18
       }
     }
