@@ -4496,9 +4496,9 @@
     "homeTeamId": "jor",
     "awayTeamId": "alg",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "82",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4544,6 +4544,13 @@
         "text": "Nadhir Benbouali Goal - Header",
         "goalType": "header",
         "assist": "Riyad Mahrez"
+      },
+      {
+        "type": "goal",
+        "minute": "82'",
+        "teamId": "alg",
+        "player": "Amine Gouiri",
+        "text": "Amine Gouiri Goal"
       }
     ],
     "stats": {
@@ -4562,18 +4569,18 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 74.6,
-        "shots": 14,
-        "shotsOnTarget": 6,
+        "possession": 74.7,
+        "shots": 16,
+        "shotsOnTarget": 7,
         "passAccuracy": 89.1,
-        "accuratePasses": 514,
+        "accuratePasses": 517,
         "fouls": 6,
-        "corners": 7,
+        "corners": 8,
         "offsides": 0,
         "saves": 3,
-        "xg": 1.27,
+        "xg": 1.31,
         "duelsWon": 50,
-        "boxTouches": 27
+        "boxTouches": 29
       }
     }
   },
