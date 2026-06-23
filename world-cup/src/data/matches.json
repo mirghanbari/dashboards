@@ -4395,10 +4395,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "nor",
     "awayTeamId": "sen",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "48",
+    "minute": "49",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4420,35 +4420,43 @@
         "teamId": "nor",
         "player": "Marcus Holmgren Pedersen",
         "text": "Marcus Holmgren Pedersen Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "48'",
+        "teamId": "nor",
+        "player": "Erling Haaland",
+        "text": "Erling Haaland Goal",
+        "assist": "Martin Ødegaard"
       }
     ],
     "stats": {
       "home": {
-        "possession": 49.1,
-        "shots": 8,
-        "shotsOnTarget": 4,
-        "passAccuracy": 85.7,
-        "accuratePasses": 191,
+        "possession": 48.3,
+        "shots": 9,
+        "shotsOnTarget": 5,
+        "passAccuracy": 84.7,
+        "accuratePasses": 194,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
         "saves": 1,
         "xg": 1.22,
-        "duelsWon": 27,
-        "boxTouches": 11
+        "duelsWon": 28,
+        "boxTouches": 12
       },
       "away": {
-        "possession": 50.9,
+        "possession": 51.7,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 88,
-        "accuratePasses": 206,
+        "passAccuracy": 87.9,
+        "accuratePasses": 217,
         "fouls": 1,
         "corners": 1,
         "offsides": 2,
         "saves": 3,
         "xg": 0.32,
-        "duelsWon": 25,
+        "duelsWon": 26,
         "boxTouches": 11
       }
     }
