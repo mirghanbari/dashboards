@@ -4305,7 +4305,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "62",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4347,12 +4347,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.3,
+        "possession": 56.1,
         "shots": 12,
         "shotsOnTarget": 3,
-        "passAccuracy": 89.9,
-        "accuratePasses": 365,
-        "fouls": 5,
+        "passAccuracy": 89.7,
+        "accuratePasses": 373,
+        "fouls": 7,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
@@ -4361,12 +4361,12 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 43.7,
+        "possession": 43.9,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.2,
-        "accuratePasses": 267,
-        "fouls": 3,
+        "passAccuracy": 83.4,
+        "accuratePasses": 276,
+        "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
@@ -4390,7 +4390,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "18",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4407,10 +4407,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 46.6,
+        "possession": 40.3,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.5,
+        "passAccuracy": 72.5,
         "accuratePasses": 37,
         "fouls": 1,
         "corners": 4,
@@ -4421,18 +4421,18 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 53.4,
-        "shots": 1,
+        "possession": 59.7,
+        "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.9,
-        "accuratePasses": 51,
+        "passAccuracy": 89.9,
+        "accuratePasses": 71,
         "fouls": 1,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
-        "xg": 0.01,
-        "duelsWon": 13,
-        "boxTouches": 3
+        "xg": 0.11,
+        "duelsWon": 12,
+        "boxTouches": 5
       }
     }
   },
