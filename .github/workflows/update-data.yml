@@ -104,21 +104,32 @@ jobs:
             git add src/data
             git commit -m "data: refresh World Cup scores"
 
-            # Push to main, recovering from races WITHOUT ever leaving a
-            # half-finished rebase behind. We push HEAD:main (works even if a
-            # prior rebase detached HEAD), clear any stale rebase state before
-            # each retry, and resolve data conflicts in OUR favour: in a rebase
-            # `-X theirs` keeps the replayed commits — i.e. this run's freshly
-            # regenerated src/data — while still preserving any non-data change
-            # that landed on origin. (Plain `git rebase` or `-X ours` would
-            # leave our commit empty on conflict, STOP the rebase, and wedge.)
-            local pushed=""
+            # Push to main, recovering from races WITHOUT ever line-merging the
+            # data files. src/data is a fully-regenerated artifact every tick, so
+            # on a race OUR copy is authoritative and must replace origin's
+            # WHOLE-FILE. We must NOT 3-way-merge it: the JSON arrays are written
+            # in non-deterministic order (concurrent roster fetches), so a
+            # textual merge of two differently-ordered arrays unions the blocks
+            # and DUPLICATES players (the old `-X theirs` only resolved
+            # *conflicting* hunks; non-overlapping insertions from both sides
+            # were kept). Instead, snapshot our regenerated src/data, reset hard
+            # onto origin/main (takes any non-data change that landed there, and
+            # un-wedges a detached HEAD), restore our data over it, recommit.
+            local pushed="" snap=""
             for attempt in 1 2 3; do
               if git push origin HEAD:main; then pushed=1; break; fi
-              echo "push race (attempt $attempt); rebasing onto origin/main…"
+              echo "push race (attempt $attempt); replaying our data onto origin/main…"
               git rebase --abort 2>/dev/null || true
+              snap=$(mktemp -d)
+              cp -a src/data/. "$snap/"
               git fetch origin main || true
-              git rebase -X theirs origin/main || git rebase --abort 2>/dev/null || true
+              git reset --hard origin/main
+              rm -rf src/data && mkdir -p src/data && cp -a "$snap/." src/data/
+              rm -rf "$snap"
+              git add src/data
+              # `|| true`: if origin already equals our data there's nothing to
+              # commit; HEAD==origin/main and the next push reports up-to-date.
+              git commit -m "data: refresh World Cup scores" || true
             done
             [ -n "$pushed" ] || { echo "push failed after retries (non-fatal; next tick retries)"; return; }
 

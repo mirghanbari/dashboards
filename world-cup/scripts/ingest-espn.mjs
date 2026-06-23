@@ -502,12 +502,26 @@ async function main() {
     note: "Real squads, groups, and fixtures from ESPN. Match/player stats fill in as the tournament progresses.",
   };
 
+  // Defense-in-depth dedup by id. A clean ingest builds players from scratch so
+  // this is normally a no-op, but the 404 fallback reuses a cached squad and a
+  // git race could leave a duplicated array on disk — never let a duplicate
+  // player reach the dataset (it doubles a row in the Golden Boot race / Players
+  // list). Keeps the first occurrence.
+  const dedupById = (rows, label) => {
+    const byId = new Map();
+    for (const r of rows) if (!byId.has(r.id)) byId.set(r.id, r);
+    if (byId.size !== rows.length) {
+      console.warn(`  Dropped ${rows.length - byId.size} duplicate ${label} (by id).`);
+    }
+    return [...byId.values()];
+  };
+
   mkdirSync(DATA_DIR, { recursive: true });
   const write = (f, o) => writeFileSync(join(DATA_DIR, f), JSON.stringify(o, null, 2) + "\n");
   write("meta.json", meta);
-  write("teams.json", teams);
-  write("players.json", players);
-  write("matches.json", matches);
+  write("teams.json", dedupById(teams, "teams"));
+  write("players.json", dedupById(players, "players"));
+  write("matches.json", dedupById(matches, "matches"));
   console.log("Wrote teams/players/matches/meta to src/data/.");
 }
 
