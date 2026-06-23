@@ -4496,9 +4496,9 @@
     "homeTeamId": "jor",
     "awayTeamId": "alg",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4535,36 +4535,44 @@
         "teamId": "jor",
         "player": "Husam Abu Dahab",
         "text": "Husam Abu Dahab Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "69'",
+        "teamId": "alg",
+        "player": "Nadhir Benbouali",
+        "text": "Nadhir Benbouali Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 25.6,
+        "possession": 25.2,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.7,
+        "passAccuracy": 73.3,
         "accuratePasses": 129,
         "fouls": 6,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
         "xg": 0.58,
-        "duelsWon": 41,
+        "duelsWon": 42,
         "boxTouches": 13
       },
       "away": {
-        "possession": 74.4,
+        "possession": 74.8,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 89,
-        "accuratePasses": 453,
+        "passAccuracy": 88.9,
+        "accuratePasses": 463,
         "fouls": 6,
-        "corners": 5,
+        "corners": 6,
         "offsides": 0,
         "saves": 2,
-        "xg": 1.07,
-        "duelsWon": 40,
-        "boxTouches": 17
+        "xg": 1.04,
+        "duelsWon": 42,
+        "boxTouches": 18
       }
     }
   },
