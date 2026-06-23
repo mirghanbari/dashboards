@@ -4597,7 +4597,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "14",
+    "minute": "15",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4621,15 +4621,22 @@
         "text": "Cristiano Ronaldo Goal - Volley",
         "goalType": "volley",
         "assist": "João Cancelo"
+      },
+      {
+        "type": "yellow",
+        "minute": "14'",
+        "teamId": "uzb",
+        "player": "Odiljon Xamrobekov",
+        "text": "Odiljon Xamrobekov Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 83.7,
+        "possession": 84.9,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.6,
-        "accuratePasses": 75,
+        "passAccuracy": 93.8,
+        "accuratePasses": 105,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
@@ -4638,12 +4645,12 @@
         "duelsWon": 7
       },
       "away": {
-        "possession": 16.3,
+        "possession": 15.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.5,
-        "accuratePasses": 13,
-        "fouls": 2,
+        "passAccuracy": 66.7,
+        "accuratePasses": 14,
+        "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
