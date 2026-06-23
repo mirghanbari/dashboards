@@ -4464,9 +4464,9 @@
         "corners": 5,
         "offsides": 0,
         "saves": 2,
-        "xg": 2.1,
-        "duelsWon": 40,
-        "boxTouches": 25
+        "xg": 2.2,
+        "duelsWon": 38,
+        "boxTouches": 24
       },
       "away": {
         "possession": 58.3,
@@ -4478,8 +4478,8 @@
         "corners": 4,
         "offsides": 4,
         "saves": 3,
-        "xg": 1.7,
-        "duelsWon": 54,
+        "xg": 1.72,
+        "duelsWon": 57,
         "boxTouches": 26
       }
     }
@@ -4556,31 +4556,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 27.9,
+        "possession": 28,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 72.4,
-        "accuratePasses": 178,
-        "fouls": 10,
+        "passAccuracy": 71.7,
+        "accuratePasses": 180,
+        "fouls": 11,
         "corners": 1,
         "offsides": 1,
         "saves": 6,
         "xg": 0.65,
-        "duelsWon": 57,
+        "duelsWon": 59,
         "boxTouches": 14
       },
       "away": {
-        "possession": 72.1,
+        "possession": 72,
         "shots": 17,
         "shotsOnTarget": 8,
-        "passAccuracy": 87.8,
-        "accuratePasses": 552,
+        "passAccuracy": 87.6,
+        "accuratePasses": 559,
         "fouls": 6,
         "corners": 10,
         "offsides": 0,
         "saves": 3,
         "xg": 1.81,
-        "duelsWon": 59,
+        "duelsWon": 65,
         "boxTouches": 31
       }
     }
@@ -5879,9 +5879,8 @@
     "date": "2026-07-03T22:00Z",
     "venue": "Hard Rock Stadium",
     "city": "Miami Gardens, Florida",
-    "homeTeamId": "tbd",
+    "homeTeamId": "arg",
     "awayTeamId": "tbd",
-    "homeSlot": "Group J Winner",
     "awaySlot": "Group H 2nd Place",
     "homeScore": null,
     "awayScore": null,
