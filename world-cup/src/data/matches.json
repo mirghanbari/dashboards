@@ -4398,7 +4398,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "58",
+    "minute": "59",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4442,26 +4442,28 @@
         "minute": "58'",
         "teamId": "nor",
         "player": "Erling Haaland",
-        "text": "Erling Haaland Goal"
+        "text": "Erling Haaland Goal - Volley",
+        "goalType": "volley",
+        "assist": "Patrick Berg"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.2,
-        "shots": 9,
-        "shotsOnTarget": 5,
-        "passAccuracy": 84,
-        "accuratePasses": 220,
+        "possession": 46.4,
+        "shots": 11,
+        "shotsOnTarget": 6,
+        "passAccuracy": 84.1,
+        "accuratePasses": 222,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
-        "xg": 1.38,
+        "xg": 1.76,
         "duelsWon": 31,
-        "boxTouches": 16
+        "boxTouches": 18
       },
       "away": {
-        "possession": 53.8,
+        "possession": 53.6,
         "shots": 9,
         "shotsOnTarget": 3,
         "passAccuracy": 89.3,
