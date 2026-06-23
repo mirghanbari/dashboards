@@ -4594,10 +4594,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "uzb",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "38",
+    "minute": "40",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4634,35 +4634,43 @@
         "teamId": "por",
         "player": "Nuno Mendes",
         "text": "Nuno Mendes Goal - Free-kick"
+      },
+      {
+        "type": "goal",
+        "minute": "39'",
+        "teamId": "por",
+        "player": "Cristiano Ronaldo",
+        "text": "Cristiano Ronaldo Goal",
+        "assist": "Bruno Fernandes"
       }
     ],
     "stats": {
       "home": {
-        "possession": 69.3,
-        "shots": 6,
-        "shotsOnTarget": 2,
-        "passAccuracy": 86.6,
-        "accuratePasses": 162,
+        "possession": 67.9,
+        "shots": 7,
+        "shotsOnTarget": 3,
+        "passAccuracy": 86.8,
+        "accuratePasses": 171,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 1.04,
-        "duelsWon": 17,
-        "boxTouches": 11
+        "duelsWon": 18,
+        "boxTouches": 12
       },
       "away": {
-        "possession": 30.7,
+        "possession": 32.1,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.2,
-        "accuratePasses": 69,
+        "passAccuracy": 76,
+        "accuratePasses": 73,
         "fouls": 7,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.08,
-        "duelsWon": 13,
+        "duelsWon": 14,
         "boxTouches": 1
       }
     }
