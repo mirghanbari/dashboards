@@ -4597,7 +4597,7 @@
     "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4650,16 +4650,23 @@
         "player": "Abduvohid Nematov",
         "text": "Abduvohid Nematov Own Goal",
         "goalType": "own"
+      },
+      {
+        "type": "yellow",
+        "minute": "68'",
+        "teamId": "por",
+        "player": "Renato Veiga",
+        "text": "Renato Veiga Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.8,
+        "possession": 65.9,
         "shots": 12,
         "shotsOnTarget": 6,
         "passAccuracy": 89.1,
-        "accuratePasses": 384,
-        "fouls": 10,
+        "accuratePasses": 394,
+        "fouls": 11,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
@@ -4668,17 +4675,17 @@
         "boxTouches": 22
       },
       "away": {
-        "possession": 34.2,
+        "possession": 34.1,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.5,
-        "accuratePasses": 182,
+        "passAccuracy": 79.9,
+        "accuratePasses": 187,
         "fouls": 10,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
         "xg": 0.21,
-        "duelsWon": 30,
+        "duelsWon": 31,
         "boxTouches": 5
       }
     }
