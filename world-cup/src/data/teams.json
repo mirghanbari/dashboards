@@ -889,12 +889,12 @@
     "goalsFor": 2,
     "goalsAgainst": 4,
     "points": 3,
-    "possession": 62.1,
-    "ppda": 11,
+    "possession": 62.2,
+    "ppda": 10.8,
     "cleanSheets": 0,
     "passCompletion": 90,
-    "xgFor": 2.15,
-    "xgAgainst": 1.93
+    "xgFor": 2.23,
+    "xgAgainst": 1.91
   },
   {
     "id": "jor",
@@ -912,12 +912,12 @@
     "goalsFor": 2,
     "goalsAgainst": 5,
     "points": 0,
-    "possession": 32.4,
-    "ppda": 15.6,
+    "possession": 32.3,
+    "ppda": 15.7,
     "cleanSheets": 0,
     "passCompletion": 72.4,
-    "xgFor": 1.13,
-    "xgAgainst": 3.51
+    "xgFor": 1.11,
+    "xgAgainst": 3.59
   },
   {
     "id": "col",
