@@ -4594,10 +4594,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "uzb",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "6",
+    "minute": "8",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4612,6 +4612,16 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "6'",
+        "teamId": "por",
+        "player": "Cristiano Ronaldo",
+        "text": "Cristiano Ronaldo Goal",
+        "assist": "João Cancelo"
+      }
+    ],
     "stats": {
       "home": {
         "possession": 90.9,
@@ -4623,7 +4633,7 @@
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.57,
+        "xg": 0.64,
         "duelsWon": 2
       },
       "away": {
