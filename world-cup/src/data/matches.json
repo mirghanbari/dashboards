@@ -4618,7 +4618,8 @@
         "minute": "6'",
         "teamId": "por",
         "player": "Cristiano Ronaldo",
-        "text": "Cristiano Ronaldo Goal",
+        "text": "Cristiano Ronaldo Goal - Volley",
+        "goalType": "volley",
         "assist": "João Cancelo"
       },
       {
@@ -4711,7 +4712,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "22",
+    "minute": "23",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4728,11 +4729,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 89,
+        "possession": 88.4,
         "shots": 3,
         "shotsOnTarget": 0,
         "passAccuracy": 96.7,
-        "accuratePasses": 175,
+        "accuratePasses": 178,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
@@ -4741,12 +4742,12 @@
         "duelsWon": 7
       },
       "away": {
-        "possession": 11,
+        "possession": 11.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 73.9,
-        "accuratePasses": 17,
-        "fouls": 4,
+        "passAccuracy": 72,
+        "accuratePasses": 18,
+        "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
