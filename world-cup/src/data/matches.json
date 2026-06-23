@@ -4026,8 +4026,7 @@
         "minute": "61'",
         "teamId": "cpv",
         "player": "Hélio Varela",
-        "text": "Hélio Varela Goal - Volley",
-        "goalType": "volley"
+        "text": "Hélio Varela Goal"
       },
       {
         "type": "yellow",
@@ -4398,7 +4397,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "79",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4449,31 +4448,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 44,
+        "possession": 43.7,
         "shots": 11,
         "shotsOnTarget": 6,
-        "passAccuracy": 81.8,
-        "accuratePasses": 252,
+        "passAccuracy": 81.2,
+        "accuratePasses": 251,
         "fouls": 8,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
         "xg": 1.76,
-        "duelsWon": 35,
+        "duelsWon": 36,
         "boxTouches": 20
       },
       "away": {
-        "possession": 56,
-        "shots": 10,
+        "possession": 56.3,
+        "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 88,
-        "accuratePasses": 345,
+        "passAccuracy": 87.9,
+        "accuratePasses": 350,
         "fouls": 3,
         "corners": 2,
         "offsides": 3,
         "saves": 3,
         "xg": 0.79,
-        "duelsWon": 41,
+        "duelsWon": 42,
         "boxTouches": 19
       }
     }
