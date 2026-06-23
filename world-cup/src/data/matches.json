@@ -4594,7 +4594,7 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "uzb",
-    "homeScore": 4,
+    "homeScore": 5,
     "awayScore": 0,
     "status": "live",
     "minute": "88",
@@ -4657,30 +4657,37 @@
         "teamId": "por",
         "player": "Renato Veiga",
         "text": "Renato Veiga Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "87'",
+        "teamId": "por",
+        "player": "Rafael Leão",
+        "text": "Rafael Leão Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.6,
-        "shots": 15,
-        "shotsOnTarget": 8,
-        "passAccuracy": 89.9,
-        "accuratePasses": 510,
+        "possession": 66.9,
+        "shots": 16,
+        "shotsOnTarget": 9,
+        "passAccuracy": 90.1,
+        "accuratePasses": 517,
         "fouls": 12,
         "corners": 3,
         "offsides": 1,
         "saves": 2,
         "xg": 2.19,
         "duelsWon": 53,
-        "boxTouches": 32
+        "boxTouches": 33
       },
       "away": {
-        "possession": 33.4,
+        "possession": 33.1,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 80.3,
-        "accuratePasses": 232,
-        "fouls": 13,
+        "passAccuracy": 80.2,
+        "accuratePasses": 231,
+        "fouls": 14,
         "corners": 2,
         "offsides": 1,
         "saves": 4,
