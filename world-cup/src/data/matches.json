@@ -4305,7 +4305,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4343,6 +4343,13 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Goal",
         "assist": "Ousmane Dembélé"
+      },
+      {
+        "type": "goal",
+        "minute": "66'",
+        "teamId": "fra",
+        "player": "Ousmane Dembélé",
+        "text": "Ousmane Dembélé Goal"
       }
     ],
     "stats": {
@@ -4390,7 +4397,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4407,12 +4414,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 43.4,
+        "possession": 40.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.6,
-        "accuratePasses": 44,
-        "fouls": 2,
+        "passAccuracy": 75,
+        "accuratePasses": 45,
+        "fouls": 3,
         "corners": 4,
         "offsides": 0,
         "saves": 0,
@@ -4421,11 +4428,11 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 56.6,
+        "possession": 59.1,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.9,
-        "accuratePasses": 72,
+        "passAccuracy": 88,
+        "accuratePasses": 81,
         "fouls": 1,
         "corners": 1,
         "offsides": 2,
