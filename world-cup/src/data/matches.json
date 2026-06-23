@@ -4395,8 +4395,8 @@
     "awayTeamId": "sen",
     "homeScore": 3,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+10",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -4454,10 +4454,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.8,
+        "possession": 41.7,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 80.6,
+        "passAccuracy": 80.4,
         "accuratePasses": 283,
         "fouls": 13,
         "corners": 5,
@@ -4468,11 +4468,11 @@
         "boxTouches": 25
       },
       "away": {
-        "possession": 58.2,
-        "shots": 15,
+        "possession": 58.3,
+        "shots": 16,
         "shotsOnTarget": 4,
-        "passAccuracy": 88.2,
-        "accuratePasses": 428,
+        "passAccuracy": 88.1,
+        "accuratePasses": 429,
         "fouls": 5,
         "corners": 4,
         "offsides": 4,
