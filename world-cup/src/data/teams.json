@@ -775,11 +775,11 @@
     "goalsAgainst": 1,
     "points": 6,
     "possession": 54.5,
-    "ppda": 17,
+    "ppda": 16.9,
     "cleanSheets": 1,
     "passCompletion": 88.7,
-    "xgFor": 4.18,
-    "xgAgainst": 1.13
+    "xgFor": 4.48,
+    "xgAgainst": 1.16
   },
   {
     "id": "sen",
@@ -800,7 +800,7 @@
     "possession": 52.5,
     "ppda": 15.2,
     "cleanSheets": 0,
-    "passCompletion": 86.9,
+    "passCompletion": 86.8,
     "xgFor": 2.22,
     "xgAgainst": 3.88
   },
@@ -821,11 +821,11 @@
     "goalsAgainst": 7,
     "points": 0,
     "possession": 41.6,
-    "ppda": 16.5,
+    "ppda": 17.3,
     "cleanSheets": 0,
-    "passCompletion": 83.4,
-    "xgFor": 1.4,
-    "xgAgainst": 4.93
+    "passCompletion": 83.5,
+    "xgFor": 1.43,
+    "xgAgainst": 5.23
   },
   {
     "id": "arg",
