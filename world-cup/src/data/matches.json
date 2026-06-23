@@ -4396,9 +4396,9 @@
     "homeTeamId": "nor",
     "awayTeamId": "sen",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "52",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4428,15 +4428,22 @@
         "player": "Erling Haaland",
         "text": "Erling Haaland Goal",
         "assist": "Martin Ødegaard"
+      },
+      {
+        "type": "goal",
+        "minute": "53'",
+        "teamId": "sen",
+        "player": "Ismaïla Sarr",
+        "text": "Ismaïla Sarr Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.7,
+        "possession": 45.1,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 84.3,
-        "accuratePasses": 198,
+        "passAccuracy": 83.7,
+        "accuratePasses": 200,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
@@ -4446,18 +4453,18 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 53.3,
+        "possession": 54.9,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 88.9,
-        "accuratePasses": 240,
+        "passAccuracy": 89.4,
+        "accuratePasses": 262,
         "fouls": 1,
         "corners": 1,
         "offsides": 3,
         "saves": 3,
         "xg": 0.41,
-        "duelsWon": 28,
-        "boxTouches": 12
+        "duelsWon": 30,
+        "boxTouches": 13
       }
     }
   },
