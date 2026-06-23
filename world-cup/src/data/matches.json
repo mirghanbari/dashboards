@@ -4785,10 +4785,10 @@
     "city": "Toronto",
     "homeTeamId": "pan",
     "awayTeamId": "cro",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4802,7 +4802,35 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0,
+        "duelsWon": 1
+      },
+      "away": {
+        "possession": 100,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 3,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.03,
+        "duelsWon": 1
+      }
+    }
   },
   {
     "id": "M048",
