@@ -4497,7 +4497,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "42",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4520,15 +4520,22 @@
         "player": "Nizar Al-Rashdan",
         "text": "Nizar Al-Rashdan Goal",
         "assist": "Mousa Al-Tamari"
+      },
+      {
+        "type": "yellow",
+        "minute": "44'",
+        "teamId": "alg",
+        "player": "Ramiz Zerrouki",
+        "text": "Ramiz Zerrouki Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 26.1,
+        "possession": 25.7,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 76.8,
-        "accuratePasses": 76,
+        "passAccuracy": 76.2,
+        "accuratePasses": 77,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
@@ -4538,11 +4545,11 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 73.9,
+        "possession": 74.3,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.2,
-        "accuratePasses": 257,
+        "passAccuracy": 89,
+        "accuratePasses": 268,
         "fouls": 4,
         "corners": 3,
         "offsides": 0,
