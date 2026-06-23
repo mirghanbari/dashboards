@@ -4398,7 +4398,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "61",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4460,7 +4460,7 @@
         "saves": 2,
         "xg": 1.76,
         "duelsWon": 31,
-        "boxTouches": 18
+        "boxTouches": 19
       },
       "away": {
         "possession": 53.6,
