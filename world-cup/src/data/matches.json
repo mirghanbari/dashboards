@@ -4302,10 +4302,10 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "fra",
     "awayTeamId": "irq",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4349,18 +4349,19 @@
         "minute": "66'",
         "teamId": "fra",
         "player": "Ousmane Dembélé",
-        "text": "Ousmane Dembélé Goal"
+        "text": "Ousmane Dembélé Goal",
+        "assist": "Michael Olise"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.5,
-        "shots": 12,
-        "shotsOnTarget": 3,
-        "passAccuracy": 89.9,
-        "accuratePasses": 391,
+        "possession": 56.6,
+        "shots": 16,
+        "shotsOnTarget": 4,
+        "passAccuracy": 89.5,
+        "accuratePasses": 394,
         "fouls": 7,
-        "corners": 1,
+        "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 0.24,
@@ -4368,11 +4369,11 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 43.5,
+        "possession": 43.4,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.5,
-        "accuratePasses": 284,
+        "passAccuracy": 83.4,
+        "accuratePasses": 286,
         "fouls": 4,
         "corners": 1,
         "offsides": 0,
@@ -4397,7 +4398,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "22",
+    "minute": "23",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4414,7 +4415,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 40.9,
+        "possession": 37.6,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 75,
@@ -4424,22 +4425,22 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.33,
-        "duelsWon": 9,
+        "duelsWon": 10,
         "boxTouches": 2
       },
       "away": {
-        "possession": 59.1,
+        "possession": 62.4,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 88,
-        "accuratePasses": 81,
+        "passAccuracy": 88.6,
+        "accuratePasses": 93,
         "fouls": 1,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
         "xg": 0.14,
-        "duelsWon": 14,
-        "boxTouches": 5
+        "duelsWon": 15,
+        "boxTouches": 6
       }
     }
   },
