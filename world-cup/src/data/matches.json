@@ -4594,10 +4594,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "uzb",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "17",
+    "minute": "18",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4618,8 +4618,7 @@
         "minute": "6'",
         "teamId": "por",
         "player": "Cristiano Ronaldo",
-        "text": "Cristiano Ronaldo Goal - Volley",
-        "goalType": "volley",
+        "text": "Cristiano Ronaldo Goal",
         "assist": "João Cancelo"
       },
       {
@@ -4628,20 +4627,27 @@
         "teamId": "uzb",
         "player": "Odiljon Xamrobekov",
         "text": "Odiljon Xamrobekov Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "17'",
+        "teamId": "por",
+        "player": "Nuno Mendes",
+        "text": "Nuno Mendes Goal - Free-kick"
       }
     ],
     "stats": {
       "home": {
         "possession": 85,
-        "shots": 4,
-        "shotsOnTarget": 1,
+        "shots": 5,
+        "shotsOnTarget": 2,
         "passAccuracy": 92.9,
         "accuratePasses": 105,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.85,
+        "xg": 1.02,
         "duelsWon": 7
       },
       "away": {
