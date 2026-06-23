@@ -4302,7 +4302,7 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "fra",
     "awayTeamId": "irq",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
     "minute": "55",
@@ -4341,16 +4341,17 @@
         "minute": "54'",
         "teamId": "fra",
         "player": "Kylian Mbappé",
-        "text": "Kylian Mbappé Goal"
+        "text": "Kylian Mbappé Goal",
+        "assist": "Ousmane Dembélé"
       }
     ],
     "stats": {
       "home": {
-        "possession": 55.3,
-        "shots": 8,
-        "shotsOnTarget": 1,
-        "passAccuracy": 90,
-        "accuratePasses": 323,
+        "possession": 55.8,
+        "shots": 9,
+        "shotsOnTarget": 2,
+        "passAccuracy": 90.2,
+        "accuratePasses": 331,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
@@ -4360,11 +4361,11 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 44.7,
+        "possession": 44.2,
         "shots": 2,
         "shotsOnTarget": 0,
         "passAccuracy": 84.5,
-        "accuratePasses": 250,
+        "accuratePasses": 251,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
@@ -4389,7 +4390,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "10",
+    "minute": "11",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4430,7 +4431,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.01,
-        "duelsWon": 9,
+        "duelsWon": 11,
         "boxTouches": 1
       }
     }
