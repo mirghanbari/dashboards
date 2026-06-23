@@ -4398,7 +4398,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4434,7 +4434,8 @@
         "minute": "53'",
         "teamId": "sen",
         "player": "Ismaïla Sarr",
-        "text": "Ismaïla Sarr Goal"
+        "text": "Ismaïla Sarr Goal",
+        "assist": "Sadio Mané"
       }
     ],
     "stats": {
@@ -4442,8 +4443,8 @@
         "possession": 45.1,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 83.7,
-        "accuratePasses": 200,
+        "passAccuracy": 84.1,
+        "accuratePasses": 201,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
@@ -4454,15 +4455,15 @@
       },
       "away": {
         "possession": 54.9,
-        "shots": 7,
-        "shotsOnTarget": 2,
+        "shots": 8,
+        "shotsOnTarget": 3,
         "passAccuracy": 89.4,
         "accuratePasses": 262,
         "fouls": 1,
         "corners": 1,
         "offsides": 3,
         "saves": 3,
-        "xg": 0.41,
+        "xg": 0.81,
         "duelsWon": 30,
         "boxTouches": 13
       }
