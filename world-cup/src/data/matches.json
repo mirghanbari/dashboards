@@ -4394,9 +4394,9 @@
     "homeTeamId": "nor",
     "awayTeamId": "sen",
     "homeScore": 3,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4440,18 +4440,25 @@
         "minute": "58'",
         "teamId": "nor",
         "player": "Erling Haaland",
-        "text": "Erling Haaland Goal - Volley",
-        "goalType": "volley",
+        "text": "Erling Haaland Goal",
         "assist": "Patrick Berg"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+3'",
+        "teamId": "sen",
+        "player": "Ismaïla Sarr",
+        "text": "Ismaïla Sarr Goal",
+        "assist": "Nicolas Jackson"
       }
     ],
     "stats": {
       "home": {
-        "possession": 44.4,
+        "possession": 43.3,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 80.8,
-        "accuratePasses": 278,
+        "passAccuracy": 81,
+        "accuratePasses": 282,
         "fouls": 11,
         "corners": 5,
         "offsides": 0,
@@ -4461,18 +4468,18 @@
         "boxTouches": 25
       },
       "away": {
-        "possession": 55.6,
-        "shots": 12,
-        "shotsOnTarget": 3,
-        "passAccuracy": 87.2,
-        "accuratePasses": 374,
+        "possession": 56.7,
+        "shots": 14,
+        "shotsOnTarget": 4,
+        "passAccuracy": 87.9,
+        "accuratePasses": 398,
         "fouls": 4,
         "corners": 2,
         "offsides": 4,
         "saves": 3,
         "xg": 0.93,
-        "duelsWon": 49,
-        "boxTouches": 21
+        "duelsWon": 50,
+        "boxTouches": 23
       }
     }
   },
