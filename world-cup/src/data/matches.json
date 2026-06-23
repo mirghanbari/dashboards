@@ -4498,7 +4498,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "63",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4528,14 +4528,21 @@
         "teamId": "alg",
         "player": "Ramiz Zerrouki",
         "text": "Ramiz Zerrouki Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "64'",
+        "teamId": "jor",
+        "player": "Husam Abu Dahab",
+        "text": "Husam Abu Dahab Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 26.3,
+        "possession": 26.4,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 74.6,
+        "passAccuracy": 74.1,
         "accuratePasses": 129,
         "fouls": 5,
         "corners": 1,
@@ -4546,18 +4553,18 @@
         "boxTouches": 13
       },
       "away": {
-        "possession": 73.7,
+        "possession": 73.6,
         "shots": 8,
         "shotsOnTarget": 3,
         "passAccuracy": 88.5,
-        "accuratePasses": 432,
+        "accuratePasses": 433,
         "fouls": 6,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.77,
-        "duelsWon": 37,
-        "boxTouches": 15
+        "xg": 0.81,
+        "duelsWon": 39,
+        "boxTouches": 16
       }
     }
   },
