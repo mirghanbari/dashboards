@@ -4594,10 +4594,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "por",
     "awayTeamId": "uzb",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "60",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4642,12 +4642,20 @@
         "player": "Cristiano Ronaldo",
         "text": "Cristiano Ronaldo Goal",
         "assist": "Bruno Fernandes"
+      },
+      {
+        "type": "goal",
+        "minute": "60'",
+        "teamId": "por",
+        "player": "Abduvohid Nematov",
+        "text": "Abduvohid Nematov Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
       "home": {
         "possession": 64.7,
-        "shots": 11,
+        "shots": 12,
         "shotsOnTarget": 5,
         "passAccuracy": 88.6,
         "accuratePasses": 334,
@@ -4656,8 +4664,8 @@
         "offsides": 0,
         "saves": 2,
         "xg": 1.71,
-        "duelsWon": 32,
-        "boxTouches": 19
+        "duelsWon": 33,
+        "boxTouches": 20
       },
       "away": {
         "possession": 35.3,
@@ -4666,7 +4674,7 @@
         "passAccuracy": 78.8,
         "accuratePasses": 167,
         "fouls": 9,
-        "corners": 1,
+        "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.2,
