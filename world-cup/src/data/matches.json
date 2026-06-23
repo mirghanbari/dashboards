@@ -3806,8 +3806,7 @@
         "minute": "24'",
         "teamId": "esp",
         "player": "Mikel Oyarzabal",
-        "text": "Mikel Oyarzabal Goal - Volley",
-        "goalType": "volley",
+        "text": "Mikel Oyarzabal Goal",
         "assist": "Dani Olmo"
       },
       {
@@ -4397,7 +4396,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4448,10 +4447,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 44,
+        "possession": 43.9,
         "shots": 11,
         "shotsOnTarget": 6,
-        "passAccuracy": 81.1,
+        "passAccuracy": 80.6,
         "accuratePasses": 258,
         "fouls": 8,
         "corners": 4,
@@ -4462,12 +4461,12 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 56,
+        "possession": 56.1,
         "shots": 12,
         "shotsOnTarget": 3,
-        "passAccuracy": 87.4,
-        "accuratePasses": 353,
-        "fouls": 3,
+        "passAccuracy": 87.3,
+        "accuratePasses": 356,
+        "fouls": 4,
         "corners": 2,
         "offsides": 4,
         "saves": 3,
