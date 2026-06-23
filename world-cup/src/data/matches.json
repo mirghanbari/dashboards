@@ -4494,10 +4494,10 @@
     "city": "Santa Clara, California",
     "homeTeamId": "jor",
     "awayTeamId": "alg",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4512,27 +4512,37 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "36'",
+        "teamId": "jor",
+        "player": "Nizar Al-Rashdan",
+        "text": "Nizar Al-Rashdan Goal",
+        "assist": "Mousa Al-Tamari"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 24.6,
-        "shots": 3,
-        "shotsOnTarget": 2,
-        "passAccuracy": 76.9,
-        "accuratePasses": 60,
+        "possession": 26.3,
+        "shots": 5,
+        "shotsOnTarget": 3,
+        "passAccuracy": 76.1,
+        "accuratePasses": 67,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.19,
+        "xg": 0.32,
         "duelsWon": 14,
-        "boxTouches": 5
+        "boxTouches": 6
       },
       "away": {
-        "possession": 75.4,
+        "possession": 73.7,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.2,
-        "accuratePasses": 222,
+        "passAccuracy": 88.9,
+        "accuratePasses": 225,
         "fouls": 3,
         "corners": 3,
         "offsides": 0,
