@@ -4498,7 +4498,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "83",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4550,7 +4550,8 @@
         "minute": "82'",
         "teamId": "alg",
         "player": "Amine Gouiri",
-        "text": "Amine Gouiri Goal"
+        "text": "Amine Gouiri Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
@@ -4578,9 +4579,9 @@
         "corners": 8,
         "offsides": 0,
         "saves": 3,
-        "xg": 1.31,
+        "xg": 1.62,
         "duelsWon": 50,
-        "boxTouches": 29
+        "boxTouches": 28
       }
     }
   },
