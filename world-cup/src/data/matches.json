@@ -4305,7 +4305,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "53",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4335,15 +4335,22 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Goal",
         "assist": "Michael Olise"
+      },
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58.1,
-        "shots": 7,
+        "possession": 55.3,
+        "shots": 8,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.9,
-        "accuratePasses": 284,
+        "passAccuracy": 90,
+        "accuratePasses": 323,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
@@ -4353,11 +4360,11 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 41.9,
+        "possession": 44.7,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.5,
-        "accuratePasses": 190,
+        "passAccuracy": 84.5,
+        "accuratePasses": 250,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
@@ -4382,7 +4389,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "8",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4399,12 +4406,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 72,
+        "possession": 64.4,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.5,
+        "passAccuracy": 82.4,
         "accuratePasses": 28,
-        "fouls": 0,
+        "fouls": 1,
         "corners": 4,
         "offsides": 0,
         "saves": 0,
@@ -4413,17 +4420,17 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 28,
-        "shots": 0,
+        "possession": 35.6,
+        "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 84.6,
-        "accuratePasses": 11,
+        "passAccuracy": 77.8,
+        "accuratePasses": 14,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.03,
-        "duelsWon": 7,
+        "xg": 0.01,
+        "duelsWon": 9,
         "boxTouches": 1
       }
     }
