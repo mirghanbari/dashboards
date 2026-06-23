@@ -4712,7 +4712,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "40",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4727,14 +4727,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "41'",
+        "teamId": "eng",
+        "player": "Declan Rice",
+        "text": "Declan Rice Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 84.2,
+        "possession": 82.4,
         "shots": 5,
         "shotsOnTarget": 0,
-        "passAccuracy": 95.7,
-        "accuratePasses": 286,
-        "fouls": 7,
+        "passAccuracy": 95.4,
+        "accuratePasses": 290,
+        "fouls": 8,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
@@ -4742,17 +4751,17 @@
         "duelsWon": 15
       },
       "away": {
-        "possession": 15.8,
+        "possession": 17.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 72.4,
-        "accuratePasses": 42,
+        "passAccuracy": 74.6,
+        "accuratePasses": 50,
         "fouls": 8,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 21
+        "duelsWon": 22
       }
     }
   },
