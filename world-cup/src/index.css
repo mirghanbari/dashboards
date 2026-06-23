@@ -451,6 +451,16 @@ a.team-name:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Unresolved knockout slot ("Group A Winner", "Third Place Group A/B/C/D/F").
+   Longer than a country name, so let it wrap and dim it instead of ellipsing. */
+.team-name.is-slot {
+  font-weight: 500;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.2;
+}
 .team-code {
   color: var(--ink-faint);
   font-size: 0.78rem;
@@ -2191,6 +2201,11 @@ tr.is-me .player-name {
 }
 .md-team-name {
   font-weight: 700;
+}
+.md-team-name.is-slot {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
 }
 .md-score {
   display: flex;

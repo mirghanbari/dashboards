@@ -301,6 +301,14 @@ async function main() {
       const away = c.competitors.find((x) => x.homeAway === "away");
       const homeId = espnIdToTeamId.get(home?.team?.id) ?? "tbd";
       const awayId = espnIdToTeamId.get(away?.team?.id) ?? "tbd";
+      // For an unresolved knockout slot ESPN supplies a placeholder "team" whose
+      // displayName is the bracket position ("Group A Winner", "Group A 2nd
+      // Place", "Third Place Group A/B/C/D/F", "Round of 16 3 Winner", …). Keep
+      // it so the card can show the slot instead of a flat "To be decided".
+      const slotLabel = (comp, id) =>
+        id === "tbd" ? comp?.team?.displayName || undefined : undefined;
+      const homeSlot = slotLabel(home, homeId);
+      const awaySlot = slotLabel(away, awayId);
       const homeTeam = teams.find((t) => t.id === homeId);
       const awayTeam = teams.find((t) => t.id === awayId);
       const sameGroup = homeTeam && awayTeam && homeTeam.group === awayTeam.group;
@@ -317,6 +325,8 @@ async function main() {
         city: c.venue?.address?.city ?? "",
         homeTeamId: homeId,
         awayTeamId: awayId,
+        ...(homeSlot ? { homeSlot } : {}),
+        ...(awaySlot ? { awaySlot } : {}),
         homeScore: status === "scheduled" ? null : Number(home?.score ?? 0),
         awayScore: status === "scheduled" ? null : Number(away?.score ?? 0),
         status,

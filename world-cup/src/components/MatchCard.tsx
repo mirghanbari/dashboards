@@ -18,7 +18,17 @@ export function stageLabel(m: Match): string {
   return STAGE_LABEL[m.stage] ?? m.stage;
 }
 
-function TeamLine({ teamId, score, winner }: { teamId: string; score: number | null; winner: boolean }) {
+function TeamLine({
+  teamId,
+  slot,
+  score,
+  winner,
+}: {
+  teamId: string;
+  slot?: string;
+  score: number | null;
+  winner: boolean;
+}) {
   const team = getTeam(teamId);
   const isTbd = team.id === "tbd";
   return (
@@ -26,7 +36,7 @@ function TeamLine({ teamId, score, winner }: { teamId: string; score: number | n
       <span className="team-id-wrap">
         <span className="team-flag">{team.flag}</span>
         {isTbd ? (
-          <span className="team-name">{team.name}</span>
+          <span className={"team-name" + (slot ? " is-slot" : "")}>{slot ?? team.name}</span>
         ) : (
           // Only the country name links to the team page; the rest of the card
           // clicks through to the match detail. Stop the bubble so this wins.
@@ -145,7 +155,7 @@ export function MatchCard({ match }: { match: Match }) {
       }}
       role="link"
       tabIndex={0}
-      aria-label={`Match details: ${getTeam(match.homeTeamId).name} vs ${getTeam(match.awayTeamId).name}`}
+      aria-label={`Match details: ${match.homeSlot ?? getTeam(match.homeTeamId).name} vs ${match.awaySlot ?? getTeam(match.awayTeamId).name}`}
     >
       <header className="match-head">
         <span className="match-stage">{stageLabel(match)}</span>
@@ -160,8 +170,8 @@ export function MatchCard({ match }: { match: Match }) {
         )}
       </header>
       <div className="match-teams">
-        <TeamLine teamId={match.homeTeamId} score={match.homeScore} winner={homeWin} />
-        <TeamLine teamId={match.awayTeamId} score={match.awayScore} winner={awayWin} />
+        <TeamLine teamId={match.homeTeamId} slot={match.homeSlot} score={match.homeScore} winner={homeWin} />
+        <TeamLine teamId={match.awayTeamId} slot={match.awaySlot} score={match.awayScore} winner={awayWin} />
       </div>
       {match.status === "scheduled" && <MatchPrediction match={match} />}
       {match.status !== "scheduled" && <FieldTilt match={match} />}

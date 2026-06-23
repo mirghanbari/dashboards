@@ -47,15 +47,18 @@ const STAT_ROWS: {
 
 const pct = (n: number) => Math.round(n * 100) + "%";
 
-function TeamColumn({ teamId }: { teamId: string }) {
+function TeamColumn({ teamId, slot }: { teamId: string; slot?: string }) {
   const team = getTeam(teamId);
+  const isTbd = team.id === "tbd";
   const inner = (
     <>
       <span className="md-team-flag">{team.flag}</span>
-      <span className="md-team-name">{team.name}</span>
+      <span className={"md-team-name" + (isTbd && slot ? " is-slot" : "")}>
+        {isTbd ? slot ?? team.name : team.name}
+      </span>
     </>
   );
-  return team.id === "tbd" ? (
+  return isTbd ? (
     <span className="md-team">{inner}</span>
   ) : (
     <Link to={`/teams/${team.id}`} className="md-team">
@@ -214,7 +217,7 @@ export function MatchDetail() {
           {status}
         </div>
         <div className="md-scoreline">
-          <TeamColumn teamId={match.homeTeamId} />
+          <TeamColumn teamId={match.homeTeamId} slot={match.homeSlot} />
           <div className="md-score">
             {showScore ? (
               <>
@@ -226,7 +229,7 @@ export function MatchDetail() {
               <span className="md-vs">vs</span>
             )}
           </div>
-          <TeamColumn teamId={match.awayTeamId} />
+          <TeamColumn teamId={match.awayTeamId} slot={match.awaySlot} />
         </div>
         <p className="md-venue">
           {match.venue}

@@ -60,6 +60,11 @@ export interface Match {
   city: string;
   homeTeamId: string;
   awayTeamId: string;
+  // Bracket-position label for an unresolved knockout slot (homeTeamId/awayTeamId
+  // === "tbd"), from ESPN — e.g. "Group A Winner", "Third Place Group A/B/C/D/F",
+  // "Round of 16 3 Winner". Absent once the real team is assigned.
+  homeSlot?: string;
+  awaySlot?: string;
   homeScore: number | null;
   awayScore: number | null;
   status: MatchStatus;
