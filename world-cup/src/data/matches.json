@@ -4457,9 +4457,9 @@
         "possession": 42.5,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 80.9,
+        "passAccuracy": 80.6,
         "accuratePasses": 283,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 5,
         "offsides": 0,
         "saves": 2,
@@ -4471,15 +4471,15 @@
         "possession": 57.5,
         "shots": 14,
         "shotsOnTarget": 4,
-        "passAccuracy": 87.8,
-        "accuratePasses": 412,
-        "fouls": 4,
+        "passAccuracy": 87.9,
+        "accuratePasses": 414,
+        "fouls": 5,
         "corners": 3,
         "offsides": 4,
         "saves": 3,
         "xg": 1.2,
         "duelsWon": 53,
-        "boxTouches": 24
+        "boxTouches": 25
       }
     }
   },
