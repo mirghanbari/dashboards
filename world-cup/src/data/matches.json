@@ -4786,9 +4786,9 @@
     "homeTeamId": "pan",
     "awayTeamId": "cro",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4803,9 +4803,18 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "cro",
+        "player": "Ante Budimir",
+        "text": "Ante Budimir Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 37.1,
+        "possession": 36.1,
         "shots": 1,
         "shotsOnTarget": 1,
         "passAccuracy": 77.6,
@@ -4815,22 +4824,22 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 5
       },
       "away": {
-        "possession": 62.9,
-        "shots": 2,
+        "possession": 63.9,
+        "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 87,
-        "accuratePasses": 302,
+        "passAccuracy": 87.3,
+        "accuratePasses": 317,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 0.05,
         "duelsWon": 34,
-        "boxTouches": 6
+        "boxTouches": 7
       }
     }
   },
