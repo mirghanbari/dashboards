@@ -4964,7 +4964,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "83",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5028,26 +5028,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.8,
+        "possession": 56.7,
         "shots": 14,
         "shotsOnTarget": 5,
         "passAccuracy": 87.8,
-        "accuratePasses": 411,
+        "accuratePasses": 416,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 0,
         "xg": 0.65,
-        "duelsWon": 38,
+        "duelsWon": 39,
         "boxTouches": 19
       },
       "away": {
-        "possession": 43.2,
+        "possession": 43.3,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.6,
-        "accuratePasses": 302,
-        "fouls": 11,
+        "passAccuracy": 84.3,
+        "accuratePasses": 306,
+        "fouls": 12,
         "corners": 3,
         "offsides": 2,
         "saves": 3,
@@ -5125,15 +5125,22 @@
         "text": "Promise David Goal - Volley",
         "goalType": "volley",
         "assist": "Nathan Saliba"
+      },
+      {
+        "type": "yellow",
+        "minute": "87'",
+        "teamId": "can",
+        "player": "Liam Millar",
+        "text": "Liam Millar Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.2,
+        "possession": 56.5,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.2,
-        "accuratePasses": 347,
+        "passAccuracy": 84.6,
+        "accuratePasses": 356,
         "fouls": 16,
         "corners": 2,
         "offsides": 1,
@@ -5143,17 +5150,17 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 43.8,
+        "possession": 43.5,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 79.5,
-        "accuratePasses": 245,
-        "fouls": 11,
-        "corners": 6,
+        "passAccuracy": 79.6,
+        "accuratePasses": 246,
+        "fouls": 12,
+        "corners": 7,
         "offsides": 3,
         "saves": 2,
         "xg": 0.84,
-        "duelsWon": 34,
+        "duelsWon": 36,
         "boxTouches": 19
       }
     }
