@@ -4963,8 +4963,8 @@
     "awayTeamId": "qat",
     "homeScore": 3,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -5029,11 +5029,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.7,
+        "possession": 54.6,
         "shots": 14,
         "shotsOnTarget": 5,
         "passAccuracy": 87.6,
-        "accuratePasses": 444,
+        "accuratePasses": 452,
         "fouls": 8,
         "corners": 5,
         "offsides": 1,
@@ -5043,11 +5043,11 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 45.3,
+        "possession": 45.4,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 85,
-        "accuratePasses": 358,
+        "passAccuracy": 85.4,
+        "accuratePasses": 368,
         "fouls": 14,
         "corners": 5,
         "offsides": 3,
@@ -6216,9 +6216,8 @@
     "date": "2026-07-03T03:00Z",
     "venue": "BC Place",
     "city": "Vancouver",
-    "homeTeamId": "tbd",
+    "homeTeamId": "sui",
     "awayTeamId": "tbd",
-    "homeSlot": "Group B Winner",
     "awaySlot": "Third Place Group E/F/G/I/J",
     "homeScore": null,
     "awayScore": null,
