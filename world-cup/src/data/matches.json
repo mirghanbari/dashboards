@@ -5171,10 +5171,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "mar",
     "awayTeamId": "hai",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 2,
     "status": "live",
-    "minute": "89",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5243,33 +5243,41 @@
         "teamId": "hai",
         "player": "Duckens Nazon",
         "text": "Duckens Nazon Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "89'",
+        "teamId": "mar",
+        "player": "Gessime Yassine",
+        "text": "Gessime Yassine Goal",
+        "assist": "Soufiane Rahimi"
       }
     ],
     "stats": {
       "home": {
-        "possession": 70.5,
-        "shots": 19,
-        "shotsOnTarget": 9,
-        "passAccuracy": 88.8,
-        "accuratePasses": 469,
+        "possession": 70.6,
+        "shots": 22,
+        "shotsOnTarget": 11,
+        "passAccuracy": 88.9,
+        "accuratePasses": 474,
         "fouls": 8,
-        "corners": 8,
+        "corners": 9,
         "offsides": 5,
         "saves": 0,
-        "xg": 2.41,
-        "duelsWon": 62,
-        "boxTouches": 42
+        "xg": 2.45,
+        "duelsWon": 63,
+        "boxTouches": 45
       },
       "away": {
-        "possession": 29.5,
+        "possession": 29.4,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.8,
+        "passAccuracy": 79.5,
         "accuratePasses": 182,
-        "fouls": 16,
+        "fouls": 17,
         "corners": 0,
         "offsides": 0,
-        "saves": 7,
+        "saves": 8,
         "xg": 0.52,
         "duelsWon": 49,
         "boxTouches": 5
@@ -5290,7 +5298,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5348,8 +5356,8 @@
     ],
     "stats": {
       "home": {
-        "possession": 48.4,
-        "shots": 11,
+        "possession": 47.5,
+        "shots": 12,
         "shotsOnTarget": 3,
         "passAccuracy": 90.2,
         "accuratePasses": 433,
@@ -5358,21 +5366,21 @@
         "offsides": 0,
         "saves": 4,
         "xg": 0.79,
-        "duelsWon": 23,
-        "boxTouches": 20
+        "duelsWon": 24,
+        "boxTouches": 22
       },
       "away": {
-        "possession": 51.6,
-        "shots": 18,
+        "possession": 52.5,
+        "shots": 19,
         "shotsOnTarget": 8,
-        "passAccuracy": 92.8,
-        "accuratePasses": 490,
+        "passAccuracy": 93.2,
+        "accuratePasses": 509,
         "fouls": 8,
-        "corners": 6,
+        "corners": 7,
         "offsides": 1,
         "saves": 3,
-        "xg": 4.33,
-        "duelsWon": 37,
+        "xg": 4.36,
+        "duelsWon": 38,
         "boxTouches": 30
       }
     }
