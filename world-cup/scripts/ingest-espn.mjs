@@ -248,8 +248,16 @@ async function main() {
   for (let d = new Date("2026-06-11"); d <= new Date("2026-07-19"); d.setDate(d.getDate() + 1)) {
     dates.push(d.toISOString().slice(0, 10).replace(/-/g, ""));
   }
+  // ESPN dates are UTC, but a late-evening Americas kickoff lands after midnight
+  // UTC (the last Round of 32 game starts 01:30Z = 18:30 the prior evening PT /
+  // 21:30 ET). Slicing the UTC date pushes those cross-midnight games into the
+  // next round — M088 (last R32) read as R16, M100 (last QF) as a semi. Classify
+  // by the US-Eastern calendar date — the schedule's reference day — so each game
+  // lands in its real round. Intl handles DST; en-CA yields a YYYY-MM-DD string.
+  const easternDay = (iso) =>
+    new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date(iso));
   const STAGE_BY_DATE = (iso) => {
-    const day = iso.slice(0, 10);
+    const day = easternDay(iso);
     if (day <= "2026-06-27") return "group";
     if (day <= "2026-07-03") return "round32";
     if (day <= "2026-07-07") return "round16";
