@@ -4964,7 +4964,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "82",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5017,11 +5017,18 @@
         "teamId": "bih",
         "player": "Ermin Mahmic",
         "text": "Ermin Mahmic Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "82'",
+        "teamId": "bih",
+        "player": "Ermin Mahmic",
+        "text": "Ermin Mahmic Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 57.6,
+        "possession": 56.8,
         "shots": 14,
         "shotsOnTarget": 5,
         "passAccuracy": 87.8,
@@ -5035,18 +5042,18 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 42.4,
+        "possession": 43.2,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.1,
-        "accuratePasses": 290,
+        "passAccuracy": 84.6,
+        "accuratePasses": 302,
         "fouls": 11,
         "corners": 3,
         "offsides": 2,
         "saves": 3,
         "xg": 0.65,
         "duelsWon": 22,
-        "boxTouches": 12
+        "boxTouches": 13
       }
     }
   },
@@ -5064,7 +5071,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "85",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5122,11 +5129,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.6,
+        "possession": 56.2,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.1,
-        "accuratePasses": 338,
+        "passAccuracy": 84.2,
+        "accuratePasses": 347,
         "fouls": 16,
         "corners": 2,
         "offsides": 1,
@@ -5136,11 +5143,11 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 44.4,
+        "possession": 43.8,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 79.9,
-        "accuratePasses": 246,
+        "passAccuracy": 79.5,
+        "accuratePasses": 245,
         "fouls": 11,
         "corners": 6,
         "offsides": 3,
