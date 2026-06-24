@@ -5180,7 +5180,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "9",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5195,32 +5195,43 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "10'",
+        "teamId": "hai",
+        "player": "Lenny Joseph",
+        "text": "Lenny Joseph Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 74.5,
+        "possession": 76.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 93.3,
-        "accuratePasses": 70,
+        "passAccuracy": 92.9,
+        "accuratePasses": 79,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 6
+        "duelsWon": 9,
+        "boxTouches": 5
       },
       "away": {
-        "possession": 25.5,
+        "possession": 23.9,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.5,
-        "accuratePasses": 23,
+        "passAccuracy": 88.9,
+        "accuratePasses": 24,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.04,
-        "duelsWon": 5
+        "duelsWon": 8,
+        "boxTouches": 2
       }
     }
   },
@@ -5238,7 +5249,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "8",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5265,11 +5276,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.7,
+        "possession": 62.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 89.6,
-        "accuratePasses": 60,
+        "passAccuracy": 88.4,
+        "accuratePasses": 61,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
