@@ -5137,11 +5137,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.2,
+        "possession": 55.3,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 83.2,
-        "accuratePasses": 367,
+        "passAccuracy": 83.3,
+        "accuratePasses": 369,
         "fouls": 19,
         "corners": 2,
         "offsides": 1,
@@ -5171,10 +5171,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "mar",
     "awayTeamId": "hai",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "77",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5221,25 +5221,33 @@
         "player": "Ismael Saibari",
         "text": "Ismael Saibari Goal",
         "assist": "Achraf Hakimi"
+      },
+      {
+        "type": "goal",
+        "minute": "78'",
+        "teamId": "mar",
+        "player": "Soufiane Rahimi",
+        "text": "Soufiane Rahimi Goal",
+        "assist": "Chadi Riad"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.5,
-        "shots": 16,
-        "shotsOnTarget": 8,
+        "possession": 71.6,
+        "shots": 19,
+        "shotsOnTarget": 9,
         "passAccuracy": 88.9,
         "accuratePasses": 433,
         "fouls": 7,
-        "corners": 6,
+        "corners": 8,
         "offsides": 5,
         "saves": 0,
-        "xg": 2.27,
-        "duelsWon": 54,
-        "boxTouches": 37
+        "xg": 2.31,
+        "duelsWon": 55,
+        "boxTouches": 40
       },
       "away": {
-        "possession": 28.5,
+        "possession": 28.4,
         "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 79.9,
@@ -5268,7 +5276,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "74",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5319,21 +5327,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 50,
+        "possession": 50.5,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.9,
-        "accuratePasses": 400,
+        "passAccuracy": 91.1,
+        "accuratePasses": 410,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
         "saves": 3,
         "xg": 0.71,
-        "duelsWon": 16,
-        "boxTouches": 12
+        "duelsWon": 17,
+        "boxTouches": 14
       },
       "away": {
-        "possession": 50,
+        "possession": 49.5,
         "shots": 16,
         "shotsOnTarget": 7,
         "passAccuracy": 92.2,
