@@ -4745,7 +4745,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 78.8,
+        "possession": 78.9,
         "shots": 19,
         "shotsOnTarget": 3,
         "passAccuracy": 92.6,
@@ -4759,11 +4759,11 @@
         "boxTouches": 34
       },
       "away": {
-        "possession": 21.2,
+        "possession": 21.1,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 74,
-        "accuratePasses": 128,
+        "passAccuracy": 73.8,
+        "accuratePasses": 127,
         "fouls": 24,
         "corners": 2,
         "offsides": 2,
@@ -4787,8 +4787,8 @@
     "awayTeamId": "cro",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+4",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -4830,10 +4830,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.3,
+        "possession": 42.2,
         "shots": 8,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.1,
+        "passAccuracy": 77.7,
         "accuratePasses": 278,
         "fouls": 19,
         "corners": 7,
@@ -4844,11 +4844,11 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 57.7,
+        "possession": 57.8,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.1,
-        "accuratePasses": 430,
+        "passAccuracy": 84,
+        "accuratePasses": 432,
         "fouls": 12,
         "corners": 2,
         "offsides": 2,
