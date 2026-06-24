@@ -4870,10 +4870,10 @@
     "city": "Guadalajara",
     "homeTeamId": "col",
     "awayTeamId": "cod",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4887,7 +4887,35 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 40,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 66.7,
+        "accuratePasses": 4,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0,
+        "duelsWon": 1
+      },
+      "away": {
+        "possession": 60,
+        "shots": 1,
+        "shotsOnTarget": 0,
+        "passAccuracy": 88.9,
+        "accuratePasses": 8,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.02,
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M049",
