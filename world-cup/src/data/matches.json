@@ -4961,10 +4961,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bih",
     "awayTeamId": "qat",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "80",
+    "minute": "81",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5010,25 +5010,32 @@
         "teamId": "qat",
         "player": "Ahmed Fathy",
         "text": "Ahmed Fathy Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "80'",
+        "teamId": "bih",
+        "player": "Ermin Mahmic",
+        "text": "Ermin Mahmic Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 57.5,
-        "shots": 10,
-        "shotsOnTarget": 3,
+        "possession": 57.6,
+        "shots": 12,
+        "shotsOnTarget": 4,
         "passAccuracy": 87.8,
-        "accuratePasses": 409,
+        "accuratePasses": 411,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.51,
+        "xg": 0.54,
         "duelsWon": 38,
-        "boxTouches": 16
+        "boxTouches": 19
       },
       "away": {
-        "possession": 42.5,
+        "possession": 42.4,
         "shots": 6,
         "shotsOnTarget": 1,
         "passAccuracy": 84.1,
@@ -5036,7 +5043,7 @@
         "fouls": 11,
         "corners": 3,
         "offsides": 2,
-        "saves": 2,
+        "saves": 3,
         "xg": 0.65,
         "duelsWon": 22,
         "boxTouches": 12
@@ -5115,26 +5122,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.7,
+        "possession": 55.8,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.6,
-        "accuratePasses": 335,
+        "passAccuracy": 84.5,
+        "accuratePasses": 337,
         "fouls": 16,
         "corners": 2,
         "offsides": 1,
         "saves": 3,
         "xg": 1.06,
-        "duelsWon": 38,
+        "duelsWon": 39,
         "boxTouches": 14
       },
       "away": {
-        "possession": 44.3,
+        "possession": 44.2,
         "shots": 9,
         "shotsOnTarget": 4,
         "passAccuracy": 80.2,
         "accuratePasses": 243,
-        "fouls": 10,
+        "fouls": 11,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
