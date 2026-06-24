@@ -4964,7 +4964,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "77",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5003,35 +5003,42 @@
         "player": "Hassan Al-Haydos",
         "text": "Hassan Al-Haydos Goal",
         "assist": "Edmílson Junior"
+      },
+      {
+        "type": "yellow",
+        "minute": "78'",
+        "teamId": "qat",
+        "player": "Ahmed Fathy",
+        "text": "Ahmed Fathy Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 57.7,
+        "possession": 57.2,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 88,
-        "accuratePasses": 403,
+        "passAccuracy": 87.8,
+        "accuratePasses": 404,
         "fouls": 7,
         "corners": 4,
         "offsides": 1,
         "saves": 0,
         "xg": 0.51,
-        "duelsWon": 36,
+        "duelsWon": 37,
         "boxTouches": 16
       },
       "away": {
-        "possession": 42.3,
+        "possession": 42.8,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.3,
-        "accuratePasses": 284,
-        "fouls": 10,
+        "passAccuracy": 84.1,
+        "accuratePasses": 290,
+        "fouls": 11,
         "corners": 3,
         "offsides": 2,
         "saves": 2,
         "xg": 0.65,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 12
       }
     }
@@ -5050,7 +5057,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "80",
+    "minute": "82",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5108,26 +5115,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.2,
+        "possession": 55.7,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.1,
+        "passAccuracy": 84.9,
         "accuratePasses": 332,
         "fouls": 16,
         "corners": 2,
         "offsides": 1,
         "saves": 3,
         "xg": 1.06,
-        "duelsWon": 36,
+        "duelsWon": 37,
         "boxTouches": 14
       },
       "away": {
-        "possession": 43.8,
+        "possession": 44.3,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 81.2,
-        "accuratePasses": 237,
-        "fouls": 9,
+        "passAccuracy": 80.9,
+        "accuratePasses": 242,
+        "fouls": 10,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
