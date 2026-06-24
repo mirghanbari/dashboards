@@ -5174,7 +5174,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "85",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5232,6 +5232,13 @@
       },
       {
         "type": "yellow",
+        "minute": "78'",
+        "teamId": "hai",
+        "player": "Johny Placide",
+        "text": "Johny Placide Yellow Card"
+      },
+      {
+        "type": "yellow",
         "minute": "79'",
         "teamId": "hai",
         "player": "Duckens Nazon",
@@ -5240,12 +5247,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 71,
+        "possession": 70.5,
         "shots": 19,
         "shotsOnTarget": 9,
-        "passAccuracy": 88.9,
-        "accuratePasses": 456,
-        "fouls": 7,
+        "passAccuracy": 89,
+        "accuratePasses": 459,
+        "fouls": 8,
         "corners": 8,
         "offsides": 5,
         "saves": 0,
@@ -5254,17 +5261,17 @@
         "boxTouches": 40
       },
       "away": {
-        "possession": 29,
+        "possession": 29.5,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 80,
-        "accuratePasses": 172,
+        "passAccuracy": 79.8,
+        "accuratePasses": 178,
         "fouls": 16,
         "corners": 0,
         "offsides": 0,
         "saves": 7,
         "xg": 0.52,
-        "duelsWon": 46,
+        "duelsWon": 47,
         "boxTouches": 5
       }
     }
@@ -5283,7 +5290,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "83",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5341,31 +5348,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.3,
-        "shots": 10,
+        "possession": 49.7,
+        "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.3,
-        "accuratePasses": 427,
+        "passAccuracy": 90.2,
+        "accuratePasses": 433,
         "fouls": 7,
         "corners": 6,
         "offsides": 0,
         "saves": 4,
         "xg": 0.76,
         "duelsWon": 22,
-        "boxTouches": 14
+        "boxTouches": 20
       },
       "away": {
-        "possession": 50.7,
+        "possession": 50.3,
         "shots": 18,
         "shotsOnTarget": 8,
         "passAccuracy": 92.6,
-        "accuratePasses": 462,
+        "accuratePasses": 464,
         "fouls": 8,
         "corners": 5,
         "offsides": 1,
         "saves": 3,
         "xg": 4.33,
-        "duelsWon": 36,
+        "duelsWon": 37,
         "boxTouches": 29
       }
     }
