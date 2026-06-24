@@ -1031,8 +1031,8 @@
     "ppda": 11.2,
     "cleanSheets": 1,
     "passCompletion": 89.1,
-    "xgFor": 4.71,
-    "xgAgainst": 0.98
+    "xgFor": 4.79,
+    "xgAgainst": 0.87
   },
   {
     "id": "cro",
@@ -1100,7 +1100,7 @@
     "ppda": 14,
     "cleanSheets": 2,
     "passCompletion": 78.4,
-    "xgFor": 1.54,
-    "xgAgainst": 2.06
+    "xgFor": 1.43,
+    "xgAgainst": 2.14
   }
 ]
