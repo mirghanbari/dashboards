@@ -1054,7 +1054,7 @@
     "ppda": 12.1,
     "cleanSheets": 1,
     "passCompletion": 85.2,
-    "xgFor": 2.34,
+    "xgFor": 2.33,
     "xgAgainst": 3.95
   },
   {
@@ -1078,7 +1078,7 @@
     "cleanSheets": 0,
     "passCompletion": 82.5,
     "xgFor": 1.3,
-    "xgAgainst": 2.9
+    "xgAgainst": 2.89
   },
   {
     "id": "gha",
