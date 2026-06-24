@@ -5177,10 +5177,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "mar",
     "awayTeamId": "hai",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5197,9 +5197,27 @@
     ],
     "stats": {
       "home": {
+        "possession": 100,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 3,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
         "duelsWon": 0
       },
       "away": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
         "duelsWon": 0
       }
     }
@@ -5215,10 +5233,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "sco",
     "awayTeamId": "bra",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5232,7 +5250,33 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 2
+      },
+      "away": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 2
+      }
+    }
   },
   {
     "id": "M053",
