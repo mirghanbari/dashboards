@@ -4964,7 +4964,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5007,11 +5007,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.2,
+        "possession": 59.4,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 89.2,
-        "accuratePasses": 313,
+        "passAccuracy": 89.3,
+        "accuratePasses": 318,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
@@ -5021,11 +5021,11 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 40.8,
+        "possession": 40.6,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 85,
-        "accuratePasses": 210,
+        "passAccuracy": 84.7,
+        "accuratePasses": 211,
         "fouls": 7,
         "corners": 1,
         "offsides": 2,
@@ -5047,10 +5047,10 @@
     "city": "Vancouver",
     "homeTeamId": "sui",
     "awayTeamId": "can",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5087,29 +5087,37 @@
         "player": "Rubén Vargas",
         "text": "Rubén Vargas Goal",
         "assist": "Johan Manzambi"
+      },
+      {
+        "type": "goal",
+        "minute": "57'",
+        "teamId": "sui",
+        "player": "Johan Manzambi",
+        "text": "Johan Manzambi Goal",
+        "assist": "Breel Embolo"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.6,
-        "shots": 5,
-        "shotsOnTarget": 3,
-        "passAccuracy": 86.1,
-        "accuratePasses": 298,
+        "possession": 65,
+        "shots": 6,
+        "shotsOnTarget": 4,
+        "passAccuracy": 86.3,
+        "accuratePasses": 302,
         "fouls": 13,
         "corners": 2,
         "offsides": 1,
         "saves": 3,
         "xg": 0.97,
         "duelsWon": 22,
-        "boxTouches": 13
+        "boxTouches": 14
       },
       "away": {
-        "possession": 33.4,
+        "possession": 35,
         "shots": 5,
         "shotsOnTarget": 3,
-        "passAccuracy": 74.3,
-        "accuratePasses": 127,
+        "passAccuracy": 76.2,
+        "accuratePasses": 141,
         "fouls": 5,
         "corners": 1,
         "offsides": 3,
