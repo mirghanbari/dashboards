@@ -5172,9 +5172,9 @@
     "homeTeamId": "mar",
     "awayTeamId": "hai",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "42",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5205,14 +5205,21 @@
         "teamId": "mar",
         "player": "Achraf Hakimi",
         "text": "Achraf Hakimi Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "43'",
+        "teamId": "hai",
+        "player": "Wilson Isidor",
+        "text": "Wilson Isidor Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 67.1,
+        "possession": 65.7,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 90.2,
+        "passAccuracy": 89.5,
         "accuratePasses": 222,
         "fouls": 3,
         "corners": 3,
@@ -5223,11 +5230,11 @@
         "boxTouches": 26
       },
       "away": {
-        "possession": 32.9,
-        "shots": 3,
+        "possession": 34.3,
+        "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.6,
-        "accuratePasses": 107,
+        "passAccuracy": 86.5,
+        "accuratePasses": 115,
         "fouls": 6,
         "corners": 0,
         "offsides": 0,
@@ -5252,7 +5259,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "42",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5279,11 +5286,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.7,
+        "possession": 50.4,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.6,
-        "accuratePasses": 195,
+        "passAccuracy": 88,
+        "accuratePasses": 198,
         "fouls": 2,
         "corners": 3,
         "offsides": 0,
@@ -5293,16 +5300,16 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 48.3,
-        "shots": 6,
+        "possession": 49.6,
+        "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.8,
-        "accuratePasses": 194,
+        "passAccuracy": 92.4,
+        "accuratePasses": 208,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 1.13,
+        "xg": 1.15,
         "duelsWon": 22,
         "boxTouches": 9
       }
