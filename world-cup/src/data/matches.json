@@ -4921,7 +4921,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 63.6,
+        "possession": 63.5,
         "shots": 20,
         "shotsOnTarget": 9,
         "passAccuracy": 87.6,
@@ -4935,10 +4935,10 @@
         "boxTouches": 25
       },
       "away": {
-        "possession": 36.4,
-        "shots": 8,
+        "possession": 36.5,
+        "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.2,
+        "passAccuracy": 74.9,
         "accuratePasses": 224,
         "fouls": 16,
         "corners": 4,
