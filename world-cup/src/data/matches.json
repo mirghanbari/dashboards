@@ -4873,7 +4873,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "77",
+    "minute": "78",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4901,7 +4901,8 @@
         "minute": "76'",
         "teamId": "col",
         "player": "Daniel Muñoz",
-        "text": "Daniel Muñoz Goal"
+        "text": "Daniel Muñoz Goal",
+        "assist": "Juan Fernando Quintero"
       }
     ],
     "stats": {
@@ -4915,7 +4916,7 @@
         "corners": 4,
         "offsides": 5,
         "saves": 0,
-        "xg": 0.82,
+        "xg": 0.86,
         "duelsWon": 35,
         "boxTouches": 25
       },
