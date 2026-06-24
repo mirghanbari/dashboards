@@ -5180,7 +5180,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "8",
+    "minute": "9",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5206,8 +5206,8 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 5,
-        "xg": 0
+        "xg": 0,
+        "duelsWon": 6
       },
       "away": {
         "possession": 25.5,
@@ -5219,8 +5219,8 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 3,
-        "xg": 0.06
+        "xg": 0.04,
+        "duelsWon": 5
       }
     }
   },
@@ -5253,33 +5253,43 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "7'",
+        "teamId": "bra",
+        "player": "Vinícius Júnior",
+        "text": "Vinícius Júnior Goal",
+        "assist": "Rayan"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 58.6,
+        "possession": 62.7,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 89.3,
-        "accuratePasses": 50,
+        "passAccuracy": 89.6,
+        "accuratePasses": 60,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 2,
         "xg": 0,
+        "duelsWon": 2,
         "boxTouches": 1
       },
       "away": {
-        "possession": 41.4,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 95,
-        "accuratePasses": 38,
+        "possession": 37.2,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 95.1,
+        "accuratePasses": 39,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
+        "xg": 0.97,
         "duelsWon": 3,
-        "xg": 0.22,
         "boxTouches": 3
       }
     }
