@@ -4788,7 +4788,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4809,37 +4809,38 @@
         "minute": "54'",
         "teamId": "cro",
         "player": "Ante Budimir",
-        "text": "Ante Budimir Goal",
+        "text": "Ante Budimir Goal - Volley",
+        "goalType": "volley",
         "assist": "Josip Stanisic"
       }
     ],
     "stats": {
       "home": {
-        "possession": 36.1,
+        "possession": 37.1,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 77.6,
-        "accuratePasses": 156,
+        "passAccuracy": 77.1,
+        "accuratePasses": 162,
         "fouls": 12,
-        "corners": 1,
+        "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 32,
-        "boxTouches": 5
+        "duelsWon": 34,
+        "boxTouches": 6
       },
       "away": {
-        "possession": 63.9,
+        "possession": 62.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.3,
+        "passAccuracy": 86.8,
         "accuratePasses": 316,
-        "fouls": 5,
+        "fouls": 6,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 0.84,
-        "duelsWon": 34,
+        "duelsWon": 35,
         "boxTouches": 7
       }
     }
