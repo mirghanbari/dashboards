@@ -151,16 +151,18 @@ export function Teams() {
                 <tbody>
                   {rows.map((t) => {
                     const qstatus = status.get(t.id) ?? "alive";
-                    // A row with a qualification badge is tight; show the
-                    // 3-letter code for longer names so the badge + Pts stay
-                    // inside the card (e.g. United States → USA).
+                    // A qualification badge adds ~50px to the team cell, which
+                    // is enough to push the table past the card edge even for a
+                    // medium-length name (Germany ✓ 1st, Colombia ✓ R32). On any
+                    // badged row show the compact 3-letter code so the badge +
+                    // Pts always stay inside the card; un-badged rows keep the
+                    // full name.
                     const decided =
                       qstatus === "clinched" ||
                       qstatus === "clinched-first" ||
                       qstatus === "eliminated";
                     const label =
-                      STANDINGS_LABEL[t.id] ??
-                      (decided && t.name.length > 8 ? t.code : t.name);
+                      STANDINGS_LABEL[t.id] ?? (decided ? t.code : t.name);
                     return (
                     <tr key={t.id} className={t.rank <= 2 ? "qualifies" : ""}>
                       <td className="col-pos">{t.rank}</td>
