@@ -5069,9 +5069,9 @@
     "city": "Vancouver",
     "homeTeamId": "sui",
     "awayTeamId": "can",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "finished",
     "minute": null,
     "broadcasts": [
       {
@@ -5086,7 +5086,79 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "can",
+        "player": "Cyle Larin",
+        "text": "Cyle Larin Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "sui",
+        "player": "Granit Xhaka",
+        "text": "Granit Xhaka Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "46'",
+        "teamId": "sui",
+        "player": "Rubén Vargas",
+        "text": "Rubén Vargas Goal",
+        "assist": "Johan Manzambi"
+      },
+      {
+        "type": "goal",
+        "minute": "57'",
+        "teamId": "sui",
+        "player": "Johan Manzambi",
+        "text": "Johan Manzambi Goal",
+        "assist": "Breel Embolo"
+      },
+      {
+        "type": "goal",
+        "minute": "76'",
+        "teamId": "can",
+        "player": "Promise David",
+        "text": "Promise David Goal - Volley",
+        "goalType": "volley",
+        "assist": "Nathan Saliba"
+      },
+      {
+        "type": "yellow",
+        "minute": "87'",
+        "teamId": "can",
+        "player": "Liam Millar",
+        "text": "Liam Millar Yellow Card"
+      }
+    ],
+    "stats": {
+      "home": {
+        "possession": 55.2,
+        "shots": 6,
+        "shotsOnTarget": 4,
+        "passAccuracy": 83.2,
+        "accuratePasses": 367,
+        "fouls": 19,
+        "corners": 2,
+        "offsides": 1,
+        "saves": 6
+      },
+      "away": {
+        "possession": 44.8,
+        "shots": 13,
+        "shotsOnTarget": 7,
+        "passAccuracy": 79.9,
+        "accuratePasses": 271,
+        "fouls": 13,
+        "corners": 7,
+        "offsides": 3,
+        "saves": 2
+      }
+    }
   },
   {
     "id": "M051",
@@ -5102,7 +5174,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "19",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5129,26 +5201,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 67,
+        "possession": 68.7,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 91.7,
-        "accuratePasses": 122,
+        "passAccuracy": 92.4,
+        "accuratePasses": 133,
         "fouls": 2,
         "corners": 2,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 0,
         "xg": 0.46,
         "duelsWon": 16,
         "boxTouches": 12
       },
       "away": {
-        "possession": 33,
+        "possession": 31.3,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 89.6,
         "accuratePasses": 60,
-        "fouls": 1,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
@@ -5172,7 +5244,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "18",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5199,32 +5271,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.8,
+        "possession": 50,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 89.1,
-        "accuratePasses": 115,
+        "passAccuracy": 88.7,
+        "accuratePasses": 118,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 3,
+        "duelsWon": 4,
         "boxTouches": 1
       },
       "away": {
-        "possession": 50.2,
+        "possession": 50,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 94.5,
-        "accuratePasses": 121,
+        "passAccuracy": 93.8,
+        "accuratePasses": 122,
         "fouls": 0,
-        "corners": 0,
+        "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 1.02,
-        "duelsWon": 9,
-        "boxTouches": 5
+        "duelsWon": 13,
+        "boxTouches": 7
       }
     }
   },
