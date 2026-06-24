@@ -4964,7 +4964,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "31",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4991,11 +4991,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.7,
+        "possession": 58.3,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 89,
-        "accuratePasses": 137,
+        "passAccuracy": 89.6,
+        "accuratePasses": 146,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
@@ -5004,11 +5004,11 @@
         "duelsWon": 12
       },
       "away": {
-        "possession": 41.3,
+        "possession": 41.7,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 82.8,
-        "accuratePasses": 96,
+        "passAccuracy": 83.2,
+        "accuratePasses": 104,
         "fouls": 4,
         "corners": 1,
         "offsides": 2,
@@ -5032,7 +5032,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "31",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5047,13 +5047,29 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "can",
+        "player": "Cyle Larin",
+        "text": "Cyle Larin Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "sui",
+        "player": "Granit Xhaka",
+        "text": "Granit Xhaka Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 69.7,
+        "possession": 69.8,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.9,
-        "accuratePasses": 141,
+        "passAccuracy": 85.2,
+        "accuratePasses": 144,
         "fouls": 8,
         "corners": 1,
         "offsides": 1,
@@ -5063,18 +5079,18 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 30.3,
+        "possession": 30.2,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 71,
-        "accuratePasses": 49,
-        "fouls": 3,
+        "passAccuracy": 71.4,
+        "accuratePasses": 50,
+        "fouls": 4,
         "corners": 0,
         "offsides": 2,
         "saves": 2,
         "xg": 0.03,
         "duelsWon": 15,
-        "boxTouches": 3
+        "boxTouches": 4
       }
     }
   },
