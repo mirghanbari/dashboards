@@ -6303,7 +6303,7 @@
   {
     "id": "M088",
     "espnEventId": "760501",
-    "stage": "round16",
+    "stage": "round32",
     "group": null,
     "matchday": null,
     "date": "2026-07-04T01:30Z",
@@ -6687,7 +6687,7 @@
   {
     "id": "M100",
     "espnEventId": "760513",
-    "stage": "semi",
+    "stage": "quarter",
     "group": null,
     "matchday": null,
     "date": "2026-07-12T01:00Z",
