@@ -4964,7 +4964,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "71",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5011,13 +5011,13 @@
         "shots": 9,
         "shotsOnTarget": 3,
         "passAccuracy": 87.8,
-        "accuratePasses": 374,
+        "accuratePasses": 375,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
         "saves": 0,
         "xg": 0.5,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 14
       },
       "away": {
@@ -5048,9 +5048,9 @@
     "homeTeamId": "sui",
     "awayTeamId": "can",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "75",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5095,15 +5095,22 @@
         "player": "Johan Manzambi",
         "text": "Johan Manzambi Goal",
         "assist": "Breel Embolo"
+      },
+      {
+        "type": "goal",
+        "minute": "76'",
+        "teamId": "can",
+        "player": "Promise David",
+        "text": "Promise David Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 57,
+        "possession": 56.6,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.9,
-        "accuratePasses": 322,
+        "passAccuracy": 85.6,
+        "accuratePasses": 326,
         "fouls": 15,
         "corners": 2,
         "offsides": 1,
@@ -5113,18 +5120,18 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 43,
-        "shots": 8,
-        "shotsOnTarget": 3,
-        "passAccuracy": 80.5,
-        "accuratePasses": 219,
+        "possession": 43.4,
+        "shots": 9,
+        "shotsOnTarget": 4,
+        "passAccuracy": 81.2,
+        "accuratePasses": 229,
         "fouls": 8,
         "corners": 5,
         "offsides": 3,
         "saves": 2,
         "xg": 0.5,
         "duelsWon": 32,
-        "boxTouches": 15
+        "boxTouches": 17
       }
     }
   },
