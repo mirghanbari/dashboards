@@ -938,9 +938,9 @@
     "possession": 62.5,
     "ppda": 10.5,
     "cleanSheets": 1,
-    "passCompletion": 86.6,
-    "xgFor": 2.65,
-    "xgAgainst": 1.56
+    "passCompletion": 86.5,
+    "xgFor": 2.61,
+    "xgAgainst": 1.58
   },
   {
     "id": "por",
@@ -1007,9 +1007,9 @@
     "possession": 30.6,
     "ppda": 18.9,
     "cleanSheets": 0,
-    "passCompletion": 76.6,
-    "xgFor": 1.21,
-    "xgAgainst": 1.69
+    "passCompletion": 76.9,
+    "xgFor": 1.23,
+    "xgAgainst": 1.65
   },
   {
     "id": "eng",
