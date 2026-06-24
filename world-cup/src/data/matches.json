@@ -4788,7 +4788,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4809,7 +4809,8 @@
         "minute": "54'",
         "teamId": "cro",
         "player": "Ante Budimir",
-        "text": "Ante Budimir Goal"
+        "text": "Ante Budimir Goal",
+        "assist": "Josip Stanisic"
       }
     ],
     "stats": {
@@ -4832,12 +4833,12 @@
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 87.3,
-        "accuratePasses": 317,
+        "accuratePasses": 316,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.05,
+        "xg": 0.84,
         "duelsWon": 34,
         "boxTouches": 7
       }
