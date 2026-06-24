@@ -5174,7 +5174,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5225,13 +5225,13 @@
     ],
     "stats": {
       "home": {
-        "possession": 69.9,
+        "possession": 69.5,
         "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 90,
-        "accuratePasses": 343,
+        "passAccuracy": 89.8,
+        "accuratePasses": 345,
         "fouls": 3,
-        "corners": 4,
+        "corners": 5,
         "offsides": 4,
         "saves": 0,
         "xg": 2.16,
@@ -5239,11 +5239,11 @@
         "boxTouches": 33
       },
       "away": {
-        "possession": 30.1,
+        "possession": 30.5,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.7,
-        "accuratePasses": 139,
+        "passAccuracy": 82.1,
+        "accuratePasses": 142,
         "fouls": 11,
         "corners": 0,
         "offsides": 0,
@@ -5268,7 +5268,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "54",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5304,31 +5304,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.1,
+        "possession": 50.3,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.8,
-        "accuratePasses": 308,
+        "passAccuracy": 90.3,
+        "accuratePasses": 325,
         "fouls": 4,
         "corners": 3,
         "offsides": 0,
-        "saves": 2,
+        "saves": 3,
         "xg": 0.24,
         "duelsWon": 14,
         "boxTouches": 7
       },
       "away": {
-        "possession": 50.9,
+        "possession": 49.7,
         "shots": 13,
         "shotsOnTarget": 6,
         "passAccuracy": 91.7,
-        "accuratePasses": 330,
+        "accuratePasses": 331,
         "fouls": 2,
         "corners": 4,
         "offsides": 0,
         "saves": 1,
-        "xg": 3.12,
-        "duelsWon": 30,
+        "xg": 3.13,
+        "duelsWon": 31,
         "boxTouches": 21
       }
     }
