@@ -5174,7 +5174,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "88",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5232,14 +5232,14 @@
       },
       {
         "type": "yellow",
-        "minute": "78'",
+        "minute": "79'",
         "teamId": "hai",
         "player": "Johny Placide",
         "text": "Johny Placide Yellow Card"
       },
       {
         "type": "yellow",
-        "minute": "79'",
+        "minute": "80'",
         "teamId": "hai",
         "player": "Duckens Nazon",
         "text": "Duckens Nazon Yellow Card"
@@ -5257,7 +5257,7 @@
         "offsides": 5,
         "saves": 0,
         "xg": 2.41,
-        "duelsWon": 63,
+        "duelsWon": 62,
         "boxTouches": 42
       },
       "away": {
@@ -5271,7 +5271,7 @@
         "offsides": 0,
         "saves": 7,
         "xg": 0.52,
-        "duelsWon": 48,
+        "duelsWon": 49,
         "boxTouches": 5
       }
     }
@@ -5290,7 +5290,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5348,7 +5348,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 48.6,
+        "possession": 48.4,
         "shots": 11,
         "shotsOnTarget": 3,
         "passAccuracy": 90.2,
@@ -5362,18 +5362,18 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 51.4,
+        "possession": 51.6,
         "shots": 18,
         "shotsOnTarget": 8,
-        "passAccuracy": 92.9,
-        "accuratePasses": 486,
+        "passAccuracy": 92.8,
+        "accuratePasses": 490,
         "fouls": 8,
-        "corners": 5,
+        "corners": 6,
         "offsides": 1,
         "saves": 3,
         "xg": 4.33,
         "duelsWon": 37,
-        "boxTouches": 29
+        "boxTouches": 30
       }
     }
   },
