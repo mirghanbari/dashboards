@@ -4964,7 +4964,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4992,8 +4992,8 @@
         "type": "goal",
         "minute": "34'",
         "teamId": "bih",
-        "player": "Sultan Al-Brake",
-        "text": "Sultan Al-Brake Own Goal",
+        "player": "Mahmoud Abunada",
+        "text": "Mahmoud Abunada Own Goal",
         "goalType": "own"
       },
       {
@@ -5007,11 +5007,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.7,
+        "possession": 58,
         "shots": 9,
         "shotsOnTarget": 3,
         "passAccuracy": 87.8,
-        "accuratePasses": 375,
+        "accuratePasses": 374,
         "fouls": 7,
         "corners": 4,
         "offsides": 0,
@@ -5021,13 +5021,13 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 41.3,
+        "possession": 42,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.6,
-        "accuratePasses": 261,
+        "passAccuracy": 85.2,
+        "accuratePasses": 264,
         "fouls": 9,
-        "corners": 1,
+        "corners": 3,
         "offsides": 2,
         "saves": 2,
         "xg": 0.65,
@@ -5050,7 +5050,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "72",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5109,7 +5109,7 @@
         "offsides": 1,
         "saves": 3,
         "xg": 1.06,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 14
       },
       "away": {
