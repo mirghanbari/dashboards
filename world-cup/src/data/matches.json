@@ -5029,11 +5029,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.4,
+        "possession": 56.8,
         "shots": 14,
         "shotsOnTarget": 5,
-        "passAccuracy": 87.8,
-        "accuratePasses": 426,
+        "passAccuracy": 88.2,
+        "accuratePasses": 440,
         "fouls": 8,
         "corners": 5,
         "offsides": 1,
@@ -5043,17 +5043,17 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 43.6,
+        "possession": 43.2,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.4,
-        "accuratePasses": 318,
-        "fouls": 12,
+        "passAccuracy": 84.3,
+        "accuratePasses": 321,
+        "fouls": 13,
         "corners": 3,
         "offsides": 2,
         "saves": 3,
         "xg": 0.67,
-        "duelsWon": 23,
+        "duelsWon": 24,
         "boxTouches": 14
       }
     }
@@ -5072,7 +5072,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5137,32 +5137,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.4,
+        "possession": 55.3,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 84,
+        "passAccuracy": 83.6,
         "accuratePasses": 358,
-        "fouls": 19,
+        "fouls": 20,
         "corners": 2,
         "offsides": 1,
         "saves": 3,
         "xg": 1.06,
-        "duelsWon": 43,
+        "duelsWon": 44,
         "boxTouches": 14
       },
       "away": {
-        "possession": 44.6,
-        "shots": 9,
+        "possession": 44.7,
+        "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 79.8,
+        "passAccuracy": 79.3,
         "accuratePasses": 261,
         "fouls": 12,
         "corners": 7,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.84,
-        "duelsWon": 41,
-        "boxTouches": 19
+        "xg": 1.04,
+        "duelsWon": 44,
+        "boxTouches": 20
       }
     }
   },
