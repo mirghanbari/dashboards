@@ -4964,7 +4964,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "34",
+    "minute": "35",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4987,15 +4987,23 @@
         "player": "Kerim Alajbegovic",
         "text": "Kerim Alajbegovic Goal",
         "assist": "Ivan Basic"
+      },
+      {
+        "type": "goal",
+        "minute": "34'",
+        "teamId": "bih",
+        "player": "Sultan Al-Brake",
+        "text": "Sultan Al-Brake Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.6,
-        "shots": 6,
+        "possession": 60.9,
+        "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 90,
-        "accuratePasses": 162,
+        "passAccuracy": 89.6,
+        "accuratePasses": 164,
         "fouls": 4,
         "corners": 3,
         "offsides": 0,
@@ -5004,11 +5012,11 @@
         "duelsWon": 14
       },
       "away": {
-        "possession": 39.4,
+        "possession": 39.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.2,
-        "accuratePasses": 104,
+        "passAccuracy": 82.7,
+        "accuratePasses": 105,
         "fouls": 4,
         "corners": 1,
         "offsides": 2,
@@ -5032,7 +5040,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "34",
+    "minute": "35",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5065,11 +5073,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 71.5,
+        "possession": 72.4,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.5,
-        "accuratePasses": 173,
+        "passAccuracy": 86.8,
+        "accuratePasses": 191,
         "fouls": 8,
         "corners": 1,
         "offsides": 1,
@@ -5079,11 +5087,11 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 28.5,
+        "possession": 27.6,
         "shots": 2,
         "shotsOnTarget": 2,
-        "passAccuracy": 74,
-        "accuratePasses": 57,
+        "passAccuracy": 72.8,
+        "accuratePasses": 59,
         "fouls": 4,
         "corners": 0,
         "offsides": 3,
