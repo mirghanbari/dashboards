@@ -5174,7 +5174,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "22",
+    "minute": "23",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5201,21 +5201,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 67.1,
-        "shots": 3,
+        "possession": 70,
+        "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 91.1,
-        "accuratePasses": 133,
+        "passAccuracy": 92.2,
+        "accuratePasses": 154,
         "fouls": 2,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.46,
+        "xg": 0.54,
         "duelsWon": 18,
         "boxTouches": 13
       },
       "away": {
-        "possession": 32.9,
+        "possession": 30,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 87.7,
@@ -5242,9 +5242,9 @@
     "homeTeamId": "sco",
     "awayTeamId": "bra",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "22",
+    "minute": "23",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5267,15 +5267,22 @@
         "player": "Vinícius Júnior",
         "text": "Vinícius Júnior Goal",
         "assist": "Rayan"
+      },
+      {
+        "type": "goal",
+        "minute": "22'",
+        "teamId": "bra",
+        "player": "Vinícius Júnior",
+        "text": "Vinícius Júnior Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 48.3,
+        "possession": 47.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.5,
-        "accuratePasses": 123,
+        "passAccuracy": 88.7,
+        "accuratePasses": 126,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
@@ -5285,18 +5292,18 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 51.7,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 94.5,
-        "accuratePasses": 138,
+        "possession": 52.2,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 94,
+        "accuratePasses": 142,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 1.06,
-        "duelsWon": 13,
-        "boxTouches": 7
+        "duelsWon": 12,
+        "boxTouches": 9
       }
     }
   },
