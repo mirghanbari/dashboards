@@ -63,6 +63,10 @@ export interface GroupQualification {
 
 type Pts = Record<string, number>;
 type Outcome = "home" | "draw" | "away";
+// For two teams level on points and head-to-head, whether the rival is above for
+// sure (a locked goal-difference tie), below for sure, or still genuinely open
+// (a remaining game can swing the margin either way).
+type TieVerdict = "above" | "below" | "open";
 
 const THIRDS_ADVANCING = 8;
 
@@ -107,11 +111,18 @@ function pointsFor(base: Pts, matches: Match[], combo: Outcome[]): Pts {
  *            sure, so we never over-eliminate on a margin that's still open.
  *   - `poss` drives clinching — a team is only safe when no rival can possibly
  *            pull level-or-ahead, so a free GD tie keeps it honest.
+ *
+ * `resolveTie(a, b)` settles a level-on-points/level-on-head-to-head pair: when
+ * both teams have finished all their games the goal-difference tie is *locked*,
+ * so the actual standings order decides it for sure ("above"/"below"); while
+ * either still has a game to play it stays "open" (margins free). Defaults to
+ * always-open so callers that don't care keep the conservative behaviour.
  */
 function aheadCounts(
   pts: Pts,
   decided: Decided[],
   id: string,
+  resolveTie: (a: string, b: string) => TieVerdict = () => "open",
 ): { def: number; poss: number } {
   const p = pts[id];
   const level = Object.keys(pts).filter((k) => pts[k] === p);
@@ -130,7 +141,14 @@ function aheadCounts(
         def++;
         poss++;
       } else if (theirs === mine) {
-        poss++; // open goal-difference tie
+        const verdict = resolveTie(id, k);
+        if (verdict === "above") {
+          def++;
+          poss++;
+        } else if (verdict === "open") {
+          poss++; // goal-difference tie a remaining game can still swing
+        }
+        // "below" → the rival is behind for sure; count it neither way.
       }
     }
   }
@@ -173,6 +191,28 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     Object.fromEntries(
       teams.filter((t) => t.group === group).map((t) => [t.id, t.points]),
     );
+
+  /**
+   * A tie resolver for a group: for two teams level on points and head-to-head,
+   * if BOTH have finished all their group games their goal difference is locked,
+   * so the final standings order (the full FIFA chain) decides who is ahead for
+   * certain. While either still has a game to play the margin can swing, so the
+   * tie stays open. This is what lets a completed group report a clinched 2nd
+   * place and a settled 3rd instead of leaving level rivals "in contention".
+   */
+  const tieResolver = (group: string): ((a: string, b: string) => TieVerdict) => {
+    const order = standings(group);
+    const rank: Record<string, number> = {};
+    order.forEach((t, i) => (rank[t.id] = i));
+    const playing = new Set<string>();
+    for (const m of remainingMatches(group)) {
+      playing.add(m.homeTeamId);
+      playing.add(m.awayTeamId);
+    }
+    const done = (id: string) => !playing.has(id);
+    return (a, b) =>
+      done(a) && done(b) ? (rank[b] < rank[a] ? "above" : "below") : "open";
+  };
 
   /**
    * The decided result of every group match for one completion: finished matches
@@ -230,10 +270,16 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
   const maxThirdPoints = (id: string, group: string): number => {
     const base = basePoints(group);
     const rem = remainingMatches(group);
+    const resolveTie = tieResolver(group);
     let max = -1;
     for (const combo of combinations(rem)) {
       const pts = pointsFor(base, rem, combo);
-      const { def } = aheadCounts(pts, decidedForCombo(group, rem, combo), id);
+      const { def } = aheadCounts(
+        pts,
+        decidedForCombo(group, rem, combo),
+        id,
+        resolveTie,
+      );
       if (def === 2 && pts[id] > max) max = pts[id];
     }
     return max;
@@ -283,6 +329,7 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     const ti = rem.indexOf(tMatch);
     const idIsHome = tMatch.homeTeamId === id;
     const combos = combinations(rem);
+    const resolveTie = tieResolver(group);
     // Fix the team's last result, enumerate every other remaining match, and test
     // whether top two is then certain — head-to-head and all (a draw can fall
     // short on a goal-difference tie even when the points look safe).
@@ -297,6 +344,7 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
               pointsFor(base, rem, c),
               decidedForCombo(group, rem, c),
               id,
+              resolveTie,
             ).poss <= 1,
         );
     };
@@ -317,6 +365,7 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     const rem = remainingMatches(group);
     const base = basePoints(group);
     const combos = combinations(rem);
+    const resolveTie = tieResolver(group);
 
     const classified = ordered.map((t): TeamQualification => {
       const id = t.id;
@@ -329,6 +378,7 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
           pts,
           decidedForCombo(group, rem, combo),
           id,
+          resolveTie,
         );
         if (poss > 1) clinchedTop2 = false;
         if (poss > 0) clinchedFirst = false;
