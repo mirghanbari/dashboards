@@ -4961,10 +4961,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bih",
     "awayTeamId": "qat",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4981,10 +4981,28 @@
     ],
     "stats": {
       "home": {
-        "xg": 0.03,
+        "possession": 82.4,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "passAccuracy": 80,
+        "accuratePasses": 20,
+        "fouls": 0,
+        "corners": 1,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.02,
         "duelsWon": 0
       },
       "away": {
+        "possession": 17.6,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 50,
+        "accuratePasses": 3,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 2,
         "xg": 0,
         "duelsWon": 0
       }
@@ -5004,7 +5022,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "1",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5021,28 +5039,28 @@
     ],
     "stats": {
       "home": {
-        "possession": 0,
+        "possession": 59,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
-        "fouls": 0,
+        "passAccuracy": 81.8,
+        "accuratePasses": 18,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "duelsWon": 0
       },
       "away": {
-        "possession": 100,
+        "possession": 41,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 100,
-        "accuratePasses": 1,
+        "passAccuracy": 68.8,
+        "accuratePasses": 11,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 2
+        "duelsWon": 3
       }
     }
   },
