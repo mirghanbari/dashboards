@@ -4788,7 +4788,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -4819,17 +4819,24 @@
         "teamId": "pan",
         "player": "Édgar Yoel Bárcenas",
         "text": "Édgar Yoel Bárcenas Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+2'",
+        "teamId": "cro",
+        "player": "Petar Sucic",
+        "text": "Petar Sucic Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41.8,
+        "possession": 41.9,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.8,
+        "passAccuracy": 78.4,
         "accuratePasses": 272,
         "fouls": 18,
-        "corners": 6,
+        "corners": 7,
         "offsides": 1,
         "saves": 1,
         "xg": 0.54,
@@ -4837,12 +4844,12 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 58.2,
+        "possession": 58.1,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 85,
-        "accuratePasses": 429,
-        "fouls": 10,
+        "passAccuracy": 84.8,
+        "accuratePasses": 430,
+        "fouls": 11,
         "corners": 2,
         "offsides": 2,
         "saves": 1,
