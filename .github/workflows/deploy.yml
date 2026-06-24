@@ -10,6 +10,10 @@ on:
       - ".github/workflows/deploy.yml"
   # Redeploy after a scheduled data refresh — commits made by the Actions bot
   # with GITHUB_TOKEN don't trigger `push`, so we chain off the data workflow.
+  # Only *successful* update-data runs are worth a deploy; the job `if` below
+  # filters out the cancelled ones (the live-cadence dispatch leaves pending runs
+  # that cancel-in-progress:false then cancels — each would otherwise fire a
+  # pointless deploy and add to the Pages "in progress deployment" collisions).
   workflow_run:
     workflows: ["Update World Cup data"]
     types: [completed]
@@ -29,6 +33,10 @@ concurrency:
 
 jobs:
   build:
+    # Skip deploys chained off a cancelled/failed data refresh; push and manual
+    # dispatch always proceed (they carry no workflow_run payload). `deploy`
+    # needs `build`, so skipping here skips the whole deploy.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     defaults:
       run:

@@ -4,8 +4,14 @@
 //
 // The Worker wakes every minute (free, well under the Workers limit) but only
 // *dispatches a run* when warranted:
-//   - while a match is in progress  -> every minute
+//   - while a match is in progress  -> every LIVE_EVERY_MIN minutes (default 2)
 //   - otherwise (idle)              -> every IDLE_EVERY_MIN minutes (default 30)
+// LIVE_EVERY_MIN is 2 (not 1) on purpose: an update-data run takes ~2 min and a
+// live match's run already polls internally every 60s for up to ~3h, so a 1/min
+// external dispatch just piles up pending runs that get cancelled (concurrency
+// is cancel-in-progress:false) and fires a deploy per cancellation. 2 min keeps
+// the data just as fresh (the deploy is throttled to 2 min anyway) with far less
+// cancelled-run churn.
 // "In progress" is decided from the published matches.json: any match flagged
 // live, or any match whose kickoff is within [kickoff - PRE_KICKOFF, kickoff +
 // MATCH_WINDOW]. Schedule-based detection means we switch to 1/min right at
@@ -23,7 +29,8 @@ const DEFAULTS = {
   MATCHES_URL:
     "https://raw.githubusercontent.com/mirghanbari/dashboards/main/world-cup/src/data/matches.json",
   IDLE_EVERY_MIN: "30", // dispatch this often when no match is on
-  PRE_KICKOFF_MIN: "5", // start the 1/min cadence this long before kickoff
+  LIVE_EVERY_MIN: "2", // dispatch this often while a match is in progress
+  PRE_KICKOFF_MIN: "5", // start the live cadence this long before kickoff
   MATCH_WINDOW_MIN: "165", // treat as in-progress up to 2h45m after kickoff
 };
 
@@ -76,6 +83,7 @@ async function isGameOn(env, now) {
 // Decide whether to dispatch this tick. Returns { gameOn, dispatch, reason }.
 async function decide(env, now) {
   const idle = Number(cfg(env, "IDLE_EVERY_MIN"));
+  const liveEvery = Number(cfg(env, "LIVE_EVERY_MIN"));
   let gameOn = false;
   let reason;
   try {
@@ -86,11 +94,17 @@ async function decide(env, now) {
     reason = `live-check failed: ${err.message}`;
   }
   const minute = new Date(now).getUTCMinutes();
+  const onLiveTick = minute % liveEvery === 0;
   const onIdleTick = minute % idle === 0;
   return {
     gameOn,
-    dispatch: gameOn || onIdleTick,
-    reason: reason ?? (gameOn ? "match in progress" : `idle (min=${minute})`),
+    // Even while a match is on we only fire every LIVE_EVERY_MIN minutes — see
+    // the header note on why 1/min just churns cancelled runs. Idle ticks (every
+    // 30) still fire regardless so an off-window heartbeat always lands.
+    dispatch: (gameOn && onLiveTick) || onIdleTick,
+    reason:
+      reason ??
+      (gameOn ? `match in progress (min=${minute})` : `idle (min=${minute})`),
   };
 }
 
