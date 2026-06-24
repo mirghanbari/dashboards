@@ -4961,10 +4961,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bih",
     "awayTeamId": "qat",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "33",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5000,8 +5000,8 @@
         "corners": 3,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.27,
-        "duelsWon": 13
+        "xg": 0.39,
+        "duelsWon": 14
       },
       "away": {
         "possession": 39.4,
@@ -5032,7 +5032,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "33",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5065,28 +5065,28 @@
     ],
     "stats": {
       "home": {
-        "possession": 69.9,
+        "possession": 71.5,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.9,
-        "accuratePasses": 152,
+        "passAccuracy": 86.5,
+        "accuratePasses": 173,
         "fouls": 8,
         "corners": 1,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.67,
         "duelsWon": 14,
         "boxTouches": 7
       },
       "away": {
-        "possession": 30.1,
+        "possession": 28.5,
         "shots": 2,
         "shotsOnTarget": 2,
-        "passAccuracy": 72.6,
-        "accuratePasses": 53,
+        "passAccuracy": 74,
+        "accuratePasses": 57,
         "fouls": 4,
         "corners": 0,
-        "offsides": 2,
+        "offsides": 3,
         "saves": 2,
         "xg": 0.16,
         "duelsWon": 15,
