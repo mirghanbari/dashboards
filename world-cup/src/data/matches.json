@@ -4873,7 +4873,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4888,33 +4888,42 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "56'",
+        "teamId": "col",
+        "player": "Jhon Lucumí",
+        "text": "Jhon Lucumí Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 66.9,
+        "possession": 66.3,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 89.9,
+        "passAccuracy": 89.2,
         "accuratePasses": 355,
-        "fouls": 5,
+        "fouls": 7,
         "corners": 3,
         "offsides": 3,
         "saves": 0,
         "xg": 0.82,
-        "duelsWon": 25,
+        "duelsWon": 27,
         "boxTouches": 20
       },
       "away": {
-        "possession": 33.1,
+        "possession": 33.7,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.2,
-        "accuratePasses": 144,
+        "passAccuracy": 76,
+        "accuratePasses": 149,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
         "saves": 7,
         "xg": 0.14,
-        "duelsWon": 18,
+        "duelsWon": 20,
         "boxTouches": 2
       }
     }
