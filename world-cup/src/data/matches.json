@@ -5174,7 +5174,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "81",
+    "minute": "82",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5229,29 +5229,36 @@
         "player": "Soufiane Rahimi",
         "text": "Soufiane Rahimi Goal",
         "assist": "Chadi Riad"
+      },
+      {
+        "type": "yellow",
+        "minute": "79'",
+        "teamId": "hai",
+        "player": "Duckens Nazon",
+        "text": "Duckens Nazon Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.6,
+        "possession": 71.1,
         "shots": 19,
         "shotsOnTarget": 9,
-        "passAccuracy": 88.9,
+        "passAccuracy": 88.5,
         "accuratePasses": 433,
         "fouls": 7,
         "corners": 8,
         "offsides": 5,
         "saves": 0,
         "xg": 2.41,
-        "duelsWon": 56,
+        "duelsWon": 57,
         "boxTouches": 40
       },
       "away": {
-        "possession": 28.4,
+        "possession": 28.9,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.9,
-        "accuratePasses": 159,
+        "passAccuracy": 79.5,
+        "accuratePasses": 163,
         "fouls": 15,
         "corners": 0,
         "offsides": 0,
@@ -5276,7 +5283,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "77",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5327,11 +5334,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.8,
+        "possession": 49.5,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 91,
-        "accuratePasses": 413,
+        "passAccuracy": 90.8,
+        "accuratePasses": 415,
         "fouls": 7,
         "corners": 6,
         "offsides": 0,
@@ -5341,16 +5348,16 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 50.2,
+        "possession": 50.5,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 92.3,
-        "accuratePasses": 434,
+        "passAccuracy": 92.7,
+        "accuratePasses": 444,
         "fouls": 5,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 3,
-        "xg": 3.38,
+        "xg": 3.44,
         "duelsWon": 35,
         "boxTouches": 25
       }
