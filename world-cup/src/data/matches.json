@@ -5174,7 +5174,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "44",
+    "minute": "45",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5211,7 +5211,8 @@
         "minute": "43'",
         "teamId": "hai",
         "player": "Wilson Isidor",
-        "text": "Wilson Isidor Goal"
+        "text": "Wilson Isidor Goal",
+        "assist": "Jean-Kévin Duverne"
       }
     ],
     "stats": {
@@ -5239,7 +5240,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 4,
-        "xg": 0.45,
+        "xg": 0.48,
         "duelsWon": 23,
         "boxTouches": 3
       }
@@ -5259,7 +5260,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "44",
+    "minute": "45",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5286,10 +5287,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 50.4,
+        "possession": 47.7,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 88,
+        "passAccuracy": 87.2,
         "accuratePasses": 198,
         "fouls": 2,
         "corners": 3,
@@ -5300,11 +5301,11 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 49.6,
+        "possession": 52.3,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.4,
-        "accuratePasses": 208,
+        "passAccuracy": 92.9,
+        "accuratePasses": 236,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
