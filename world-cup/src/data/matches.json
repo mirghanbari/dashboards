@@ -4962,9 +4962,9 @@
     "homeTeamId": "bih",
     "awayTeamId": "qat",
     "homeScore": 2,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FS1",
@@ -4995,11 +4995,19 @@
         "player": "Sultan Al-Brake",
         "text": "Sultan Al-Brake Own Goal",
         "goalType": "own"
+      },
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "qat",
+        "player": "Hassan Al-Haydos",
+        "text": "Hassan Al-Haydos Goal",
+        "assist": "Edmílson Junior"
       }
     ],
     "stats": {
       "home": {
-        "possession": 61.2,
+        "possession": 60,
         "shots": 9,
         "shotsOnTarget": 3,
         "passAccuracy": 90,
@@ -5013,16 +5021,16 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 38.8,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 83.5,
-        "accuratePasses": 132,
+        "possession": 40,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 84.2,
+        "accuratePasses": 139,
         "fouls": 6,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.24,
+        "xg": 0.28,
         "duelsWon": 13,
         "boxTouches": 2
       }
@@ -5042,7 +5050,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5098,9 +5106,9 @@
         "corners": 1,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.26,
-        "duelsWon": 18,
-        "boxTouches": 5
+        "xg": 0.25,
+        "duelsWon": 21,
+        "boxTouches": 6
       }
     }
   },
