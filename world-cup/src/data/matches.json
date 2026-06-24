@@ -5174,7 +5174,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5283,7 +5283,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "82",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5330,6 +5330,13 @@
         "teamId": "bra",
         "player": "Danilo",
         "text": "Danilo Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "82'",
+        "teamId": "bra",
+        "player": "Fabinho",
+        "text": "Fabinho Yellow Card"
       }
     ],
     "stats": {
@@ -5337,29 +5344,29 @@
         "possession": 49.3,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.4,
-        "accuratePasses": 426,
+        "passAccuracy": 90.3,
+        "accuratePasses": 427,
         "fouls": 7,
         "corners": 6,
         "offsides": 0,
         "saves": 4,
         "xg": 0.76,
-        "duelsWon": 20,
+        "duelsWon": 22,
         "boxTouches": 14
       },
       "away": {
         "possession": 50.7,
-        "shots": 17,
+        "shots": 18,
         "shotsOnTarget": 8,
         "passAccuracy": 92.6,
-        "accuratePasses": 460,
-        "fouls": 7,
+        "accuratePasses": 462,
+        "fouls": 8,
         "corners": 5,
         "offsides": 1,
         "saves": 3,
-        "xg": 3.44,
-        "duelsWon": 35,
-        "boxTouches": 28
+        "xg": 4.33,
+        "duelsWon": 36,
+        "boxTouches": 29
       }
     }
   },
