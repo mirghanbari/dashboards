@@ -5174,7 +5174,7 @@
     "homeScore": 4,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5251,6 +5251,13 @@
         "player": "Gessime Yassine",
         "text": "Gessime Yassine Goal",
         "assist": "Soufiane Rahimi"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "hai",
+        "player": "Josué Casimir",
+        "text": "Josué Casimir Yellow Card"
       }
     ],
     "stats": {
@@ -5265,7 +5272,7 @@
         "offsides": 5,
         "saves": 0,
         "xg": 3.26,
-        "duelsWon": 63,
+        "duelsWon": 64,
         "boxTouches": 45
       },
       "away": {
@@ -5279,7 +5286,7 @@
         "offsides": 0,
         "saves": 8,
         "xg": 0.52,
-        "duelsWon": 49,
+        "duelsWon": 51,
         "boxTouches": 5
       }
     }
@@ -5298,7 +5305,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "89",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5363,32 +5370,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 47.5,
-        "shots": 12,
-        "shotsOnTarget": 3,
+        "possession": 47.2,
+        "shots": 13,
+        "shotsOnTarget": 4,
         "passAccuracy": 90.4,
         "accuratePasses": 445,
-        "fouls": 8,
+        "fouls": 9,
         "corners": 6,
         "offsides": 0,
-        "saves": 4,
-        "xg": 0.81,
-        "duelsWon": 23,
-        "boxTouches": 22
+        "saves": 5,
+        "xg": 0.87,
+        "duelsWon": 24,
+        "boxTouches": 23
       },
       "away": {
-        "possession": 52.5,
-        "shots": 19,
-        "shotsOnTarget": 8,
-        "passAccuracy": 93,
-        "accuratePasses": 519,
+        "possession": 52.8,
+        "shots": 20,
+        "shotsOnTarget": 9,
+        "passAccuracy": 93.1,
+        "accuratePasses": 525,
         "fouls": 8,
         "corners": 7,
         "offsides": 1,
         "saves": 4,
         "xg": 4.39,
-        "duelsWon": 40,
-        "boxTouches": 30
+        "duelsWon": 41,
+        "boxTouches": 31
       }
     }
   },
