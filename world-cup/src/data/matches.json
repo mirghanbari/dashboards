@@ -5174,7 +5174,7 @@
     "homeScore": 4,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5298,7 +5298,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "88",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5352,6 +5352,13 @@
         "teamId": "bra",
         "player": "Fabinho",
         "text": "Fabinho Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "89'",
+        "teamId": "sco",
+        "player": "Ryan Christie",
+        "text": "Ryan Christie Yellow Card"
       }
     ],
     "stats": {
@@ -5359,9 +5366,9 @@
         "possession": 47.5,
         "shots": 12,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.2,
-        "accuratePasses": 433,
-        "fouls": 7,
+        "passAccuracy": 90.4,
+        "accuratePasses": 445,
+        "fouls": 8,
         "corners": 6,
         "offsides": 0,
         "saves": 4,
@@ -5373,13 +5380,13 @@
         "possession": 52.5,
         "shots": 19,
         "shotsOnTarget": 8,
-        "passAccuracy": 93.2,
-        "accuratePasses": 509,
+        "passAccuracy": 93,
+        "accuratePasses": 519,
         "fouls": 8,
         "corners": 7,
         "offsides": 1,
-        "saves": 3,
-        "xg": 4.36,
+        "saves": 4,
+        "xg": 4.39,
         "duelsWon": 40,
         "boxTouches": 30
       }
