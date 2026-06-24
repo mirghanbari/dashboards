@@ -4914,10 +4914,10 @@
         "accuratePasses": 453,
         "fouls": 8,
         "corners": 4,
-        "offsides": 6,
+        "offsides": 7,
         "saves": 0,
         "xg": 0.89,
-        "duelsWon": 37,
+        "duelsWon": 38,
         "boxTouches": 25
       },
       "away": {
@@ -4926,7 +4926,7 @@
         "shotsOnTarget": 0,
         "passAccuracy": 75.7,
         "accuratePasses": 193,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 2,
         "offsides": 0,
         "saves": 7,
