@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "45+1",
+    "minute": "45+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5629,31 +5629,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.2,
+        "possession": 28.3,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.8,
-        "accuratePasses": 111,
+        "passAccuracy": 83,
+        "accuratePasses": 112,
         "fouls": 7,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.09,
-        "duelsWon": 23,
+        "duelsWon": 25,
         "boxTouches": 4
       },
       "away": {
-        "possession": 71.8,
-        "shots": 4,
+        "possession": 71.7,
+        "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 91,
         "accuratePasses": 312,
-        "fouls": 3,
-        "corners": 3,
+        "fouls": 4,
+        "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.8,
-        "duelsWon": 22,
+        "xg": 0.81,
+        "duelsWon": 23,
         "boxTouches": 8
       }
     }
@@ -5672,7 +5672,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "45+1",
+    "minute": "45+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5721,11 +5721,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 38.9,
+        "possession": 37.1,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.1,
-        "accuratePasses": 162,
+        "passAccuracy": 86.2,
+        "accuratePasses": 168,
         "fouls": 9,
         "corners": 1,
         "offsides": 0,
@@ -5735,11 +5735,11 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 61.1,
+        "possession": 62.9,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.3,
-        "accuratePasses": 259,
+        "passAccuracy": 88.7,
+        "accuratePasses": 290,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
