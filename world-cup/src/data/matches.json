@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5643,7 +5643,7 @@
       },
       {
         "type": "yellow",
-        "minute": "84'",
+        "minute": "83'",
         "teamId": "cuw",
         "player": "Gervane Kastaneer",
         "text": "Gervane Kastaneer Yellow Card"
@@ -5654,28 +5654,28 @@
         "possession": 35.4,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 85,
+        "passAccuracy": 84.7,
         "accuratePasses": 255,
         "fouls": 11,
         "corners": 3,
         "offsides": 1,
         "saves": 0,
         "xg": 0.37,
-        "duelsWon": 41,
-        "boxTouches": 9
+        "duelsWon": 43,
+        "boxTouches": 11
       },
       "away": {
         "possession": 64.6,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.8,
-        "accuratePasses": 493,
+        "passAccuracy": 89.9,
+        "accuratePasses": 498,
         "fouls": 6,
         "corners": 4,
         "offsides": 1,
         "saves": 2,
         "xg": 1.1,
-        "duelsWon": 40,
+        "duelsWon": 41,
         "boxTouches": 17
       }
     }
@@ -5694,7 +5694,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "84",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5762,21 +5762,21 @@
         "possession": 42.3,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 83.7,
-        "accuratePasses": 298,
+        "passAccuracy": 83.4,
+        "accuratePasses": 297,
         "fouls": 11,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
         "xg": 1.57,
         "duelsWon": 47,
-        "boxTouches": 17
+        "boxTouches": 18
       },
       "away": {
         "possession": 57.7,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.4,
+        "passAccuracy": 86.6,
         "accuratePasses": 421,
         "fouls": 9,
         "corners": 1,
