@@ -5809,7 +5809,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "9",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5826,11 +5826,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 45.6,
+        "possession": 54.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.2,
-        "accuratePasses": 31,
+        "passAccuracy": 88,
+        "accuratePasses": 44,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
@@ -5840,17 +5840,17 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 54.4,
+        "possession": 45.8,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.7,
+        "passAccuracy": 71.8,
         "accuratePasses": 28,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.03,
-        "duelsWon": 3,
+        "duelsWon": 4,
         "boxTouches": 2
       }
     }
@@ -5869,7 +5869,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "9",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5898,18 +5898,19 @@
         "minute": "7'",
         "teamId": "ned",
         "player": "Brian Brobbey",
-        "text": "Brian Brobbey Goal",
+        "text": "Brian Brobbey Goal - Volley",
+        "goalType": "volley",
         "assist": "Virgil van Dijk"
       }
     ],
     "stats": {
       "home": {
-        "possession": 31.9,
-        "shots": 1,
+        "possession": 30,
+        "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.8,
-        "accuratePasses": 18,
-        "fouls": 1,
+        "passAccuracy": 80,
+        "accuratePasses": 20,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
@@ -5918,16 +5919,16 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 68.1,
+        "possession": 70,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 93.6,
-        "accuratePasses": 44,
+        "passAccuracy": 95,
+        "accuratePasses": 57,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.23,
+        "xg": 0.38,
         "duelsWon": 2,
         "boxTouches": 5
       }
