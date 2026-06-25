@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "77",
+    "minute": "78",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5684,10 +5684,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "ecu",
     "awayTeamId": "ger",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "78",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5739,6 +5739,14 @@
         "teamId": "ecu",
         "player": "Alan Franco",
         "text": "Alan Franco Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "77'",
+        "teamId": "ecu",
+        "player": "Gonzalo Plata",
+        "text": "Gonzalo Plata Goal",
+        "assist": "Kevin Rodríguez"
       }
     ],
     "stats": {
@@ -5752,9 +5760,9 @@
         "corners": 3,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.57,
-        "duelsWon": 43,
-        "boxTouches": 13
+        "xg": 0.64,
+        "duelsWon": 44,
+        "boxTouches": 16
       },
       "away": {
         "possession": 57.3,
