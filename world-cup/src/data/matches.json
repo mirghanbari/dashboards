@@ -5417,8 +5417,8 @@
     "awayTeamId": "mex",
     "homeScore": 0,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -5468,11 +5468,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.3,
+        "possession": 51.6,
         "shots": 13,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.8,
-        "accuratePasses": 325,
+        "passAccuracy": 83.4,
+        "accuratePasses": 332,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
@@ -5482,11 +5482,11 @@
         "boxTouches": 13
       },
       "away": {
-        "possession": 48.7,
+        "possession": 48.4,
         "shots": 11,
         "shotsOnTarget": 5,
-        "passAccuracy": 85.7,
-        "accuratePasses": 329,
+        "passAccuracy": 85.3,
+        "accuratePasses": 331,
         "fouls": 13,
         "corners": 1,
         "offsides": 0,
@@ -5510,8 +5510,8 @@
     "awayTeamId": "kor",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -5552,11 +5552,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 31.5,
+        "possession": 31.6,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 82,
-        "accuratePasses": 273,
+        "passAccuracy": 81.7,
+        "accuratePasses": 277,
         "fouls": 7,
         "corners": 4,
         "offsides": 3,
@@ -5566,11 +5566,11 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 68.5,
+        "possession": 68.4,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 89.9,
-        "accuratePasses": 639,
+        "passAccuracy": 89.3,
+        "accuratePasses": 643,
         "fouls": 9,
         "corners": 6,
         "offsides": 0,
