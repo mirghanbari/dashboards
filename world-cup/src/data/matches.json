@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "1",
+    "minute": "4",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5612,28 +5612,28 @@
     ],
     "stats": {
       "home": {
-        "possession": 0,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "possession": 25.7,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 55.6,
+        "accuratePasses": 5,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.02,
-        "duelsWon": 0
+        "duelsWon": 1
       },
       "away": {
-        "possession": 0,
+        "possession": 74.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "passAccuracy": 80.8,
+        "accuratePasses": 21,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0,
         "duelsWon": 1
       }
@@ -5651,9 +5651,9 @@
     "homeTeamId": "ecu",
     "awayTeamId": "ger",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "2",
+    "minute": "5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5668,13 +5668,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "2'",
+        "teamId": "ger",
+        "player": "Leroy Sané",
+        "text": "Leroy Sané Goal",
+        "assist": "Florian Wirtz"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 0,
+        "possession": 9.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "passAccuracy": 50,
+        "accuratePasses": 1,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
@@ -5683,17 +5693,17 @@
         "duelsWon": 0
       },
       "away": {
-        "possession": 100,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 87.5,
-        "accuratePasses": 7,
+        "possession": 90.9,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 85,
+        "accuratePasses": 17,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 1
+        "duelsWon": 2
       }
     }
   },
