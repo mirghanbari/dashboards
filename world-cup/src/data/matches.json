@@ -5809,7 +5809,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "31",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5824,28 +5824,37 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "32'",
+        "teamId": "swe",
+        "player": "Isak Hien",
+        "text": "Isak Hien Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 51.4,
+        "possession": 50.6,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.4,
-        "accuratePasses": 122,
+        "passAccuracy": 87.6,
+        "accuratePasses": 134,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
         "xg": 0.14,
-        "duelsWon": 8,
+        "duelsWon": 11,
         "boxTouches": 2
       },
       "away": {
-        "possession": 48.6,
+        "possession": 49.4,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.2,
-        "accuratePasses": 95,
-        "fouls": 1,
+        "passAccuracy": 76.7,
+        "accuratePasses": 112,
+        "fouls": 3,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
@@ -5869,7 +5878,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "30",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5905,32 +5914,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 32.6,
+        "possession": 31.9,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 77.5,
         "accuratePasses": 62,
-        "fouls": 3,
+        "fouls": 4,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.23,
-        "duelsWon": 8,
+        "duelsWon": 10,
         "boxTouches": 5
       },
       "away": {
-        "possession": 67.4,
-        "shots": 6,
+        "possession": 68.1,
+        "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 92.4,
-        "accuratePasses": 157,
+        "passAccuracy": 92.6,
+        "accuratePasses": 163,
         "fouls": 2,
-        "corners": 2,
+        "corners": 3,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.75,
+        "xg": 0.8,
         "duelsWon": 10,
-        "boxTouches": 13
+        "boxTouches": 14
       }
     }
   },
