@@ -5419,7 +5419,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "4",
+    "minute": "6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5436,11 +5436,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 33.3,
+        "possession": 35.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 100,
-        "accuratePasses": 5,
+        "passAccuracy": 90,
+        "accuratePasses": 18,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
@@ -5448,11 +5448,11 @@
         "duelsWon": 3
       },
       "away": {
-        "possession": 66.7,
+        "possession": 64.9,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 100,
-        "accuratePasses": 10,
+        "passAccuracy": 97.2,
+        "accuratePasses": 35,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
@@ -5475,7 +5475,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "4",
+    "minute": "5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5492,31 +5492,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.1,
+        "possession": 45,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 93.3,
-        "accuratePasses": 14,
+        "passAccuracy": 88.5,
+        "accuratePasses": 23,
         "fouls": 0,
-        "corners": 0,
+        "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
         "duelsWon": 3,
-        "boxTouches": 1
+        "boxTouches": 2
       },
       "away": {
-        "possession": 57.9,
+        "possession": 55,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 80,
-        "accuratePasses": 16,
+        "passAccuracy": 80.6,
+        "accuratePasses": 25,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.06,
-        "duelsWon": 4,
+        "duelsWon": 6,
         "boxTouches": 1
       }
     }
