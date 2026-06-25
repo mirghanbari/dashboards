@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "65",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5637,11 +5637,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 34.8,
+        "possession": 35.7,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.9,
-        "accuratePasses": 213,
+        "passAccuracy": 84.2,
+        "accuratePasses": 223,
         "fouls": 10,
         "corners": 3,
         "offsides": 0,
@@ -5651,17 +5651,17 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 65.2,
+        "possession": 64.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.1,
-        "accuratePasses": 430,
+        "passAccuracy": 90,
+        "accuratePasses": 431,
         "fouls": 4,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
         "xg": 1.1,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 14
       }
     }
@@ -5680,7 +5680,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "66",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5736,11 +5736,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.2,
+        "possession": 41.3,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 82.4,
-        "accuratePasses": 234,
+        "passAccuracy": 82.5,
+        "accuratePasses": 235,
         "fouls": 10,
         "corners": 2,
         "offsides": 0,
@@ -5750,16 +5750,16 @@
         "boxTouches": 8
       },
       "away": {
-        "possession": 58.8,
+        "possession": 58.7,
         "shots": 8,
         "shotsOnTarget": 2,
         "passAccuracy": 87.4,
         "accuratePasses": 355,
-        "fouls": 7,
+        "fouls": 8,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.4,
+        "xg": 0.43,
         "duelsWon": 38,
         "boxTouches": 15
       }
