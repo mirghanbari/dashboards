@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "87",
+    "minute": "88",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5651,10 +5651,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 36.2,
+        "possession": 36.1,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.8,
+        "passAccuracy": 84.3,
         "accuratePasses": 268,
         "fouls": 11,
         "corners": 3,
@@ -5665,13 +5665,13 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 63.8,
+        "possession": 63.9,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 90,
-        "accuratePasses": 504,
+        "passAccuracy": 90.1,
+        "accuratePasses": 509,
         "fouls": 6,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 2,
         "xg": 1.1,
@@ -5694,7 +5694,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "88",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5755,11 +5755,18 @@
         "text": "Gonzalo Plata Goal - Volley",
         "goalType": "volley",
         "assist": "Kevin Rodríguez"
+      },
+      {
+        "type": "yellow",
+        "minute": "89'",
+        "teamId": "ecu",
+        "player": "Gonzalo Plata",
+        "text": "Gonzalo Plata Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 40.9,
+        "possession": 40.6,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 83.5,
@@ -5773,17 +5780,17 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 59.1,
+        "possession": 59.4,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 87.3,
-        "accuratePasses": 452,
+        "passAccuracy": 87.4,
+        "accuratePasses": 456,
         "fouls": 9,
-        "corners": 1,
+        "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.61,
-        "duelsWon": 44,
+        "duelsWon": 45,
         "boxTouches": 17
       }
     }
