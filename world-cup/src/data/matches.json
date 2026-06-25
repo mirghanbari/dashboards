@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "HT",
+    "minute": "46",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5629,11 +5629,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 30.4,
+        "possession": 30.6,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.3,
-        "accuratePasses": 121,
+        "passAccuracy": 82.4,
+        "accuratePasses": 122,
         "fouls": 7,
         "corners": 3,
         "offsides": 0,
@@ -5643,7 +5643,7 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 69.6,
+        "possession": 69.4,
         "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 90.4,
@@ -5653,7 +5653,7 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.8,
-        "duelsWon": 27,
+        "duelsWon": 28,
         "boxTouches": 8
       }
     }
@@ -5672,7 +5672,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "46",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5721,12 +5721,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 38,
+        "possession": 37.9,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.5,
-        "accuratePasses": 177,
-        "fouls": 9,
+        "passAccuracy": 85.2,
+        "accuratePasses": 178,
+        "fouls": 10,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
@@ -5735,18 +5735,18 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 62,
+        "possession": 62.1,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 88.4,
-        "accuratePasses": 296,
+        "passAccuracy": 88.2,
+        "accuratePasses": 299,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.37,
-        "duelsWon": 30,
-        "boxTouches": 12
+        "duelsWon": 32,
+        "boxTouches": 13
       }
     }
   },
