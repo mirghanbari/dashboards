@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "83",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5640,6 +5640,13 @@
         "teamId": "cuw",
         "player": "Juninho Bacuna",
         "text": "Juninho Bacuna Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "84'",
+        "teamId": "cuw",
+        "player": "Gervane Kastaneer",
+        "text": "Gervane Kastaneer Yellow Card"
       }
     ],
     "stats": {
@@ -5647,8 +5654,8 @@
         "possession": 35.4,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.2,
-        "accuratePasses": 254,
+        "passAccuracy": 85,
+        "accuratePasses": 255,
         "fouls": 11,
         "corners": 3,
         "offsides": 1,
@@ -5661,9 +5668,9 @@
         "possession": 64.6,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.9,
-        "accuratePasses": 490,
-        "fouls": 5,
+        "passAccuracy": 89.8,
+        "accuratePasses": 493,
+        "fouls": 6,
         "corners": 4,
         "offsides": 1,
         "saves": 2,
@@ -5687,7 +5694,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "83",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5752,26 +5759,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.5,
+        "possession": 42.3,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 83.1,
-        "accuratePasses": 270,
+        "passAccuracy": 83.7,
+        "accuratePasses": 298,
         "fouls": 11,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
         "xg": 1.57,
-        "duelsWon": 44,
-        "boxTouches": 16
+        "duelsWon": 47,
+        "boxTouches": 17
       },
       "away": {
-        "possession": 58.5,
+        "possession": 57.7,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.5,
-        "accuratePasses": 398,
-        "fouls": 8,
+        "passAccuracy": 86.4,
+        "accuratePasses": 421,
+        "fouls": 9,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
