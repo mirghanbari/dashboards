@@ -5416,7 +5416,7 @@
     "homeTeamId": "cze",
     "awayTeamId": "mex",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
     "minute": "62",
     "broadcasts": [
@@ -5441,6 +5441,14 @@
         "player": "Mateo Chávez",
         "text": "Mateo Chávez Goal",
         "assist": "Luis Romo"
+      },
+      {
+        "type": "goal",
+        "minute": "61'",
+        "teamId": "mex",
+        "player": "Julián Quiñones",
+        "text": "Julián Quiñones Goal",
+        "assist": "Jorge Sánchez"
       }
     ],
     "stats": {
@@ -5460,15 +5468,15 @@
       },
       "away": {
         "possession": 50.8,
-        "shots": 7,
-        "shotsOnTarget": 2,
+        "shots": 8,
+        "shotsOnTarget": 3,
         "passAccuracy": 85.9,
         "accuratePasses": 249,
         "fouls": 10,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.78,
+        "xg": 1.54,
         "duelsWon": 26,
         "boxTouches": 10
       }
@@ -5488,7 +5496,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5505,11 +5513,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 37.1,
+        "possession": 37.9,
         "shots": 12,
         "shotsOnTarget": 3,
-        "passAccuracy": 85.8,
-        "accuratePasses": 229,
+        "passAccuracy": 86.5,
+        "accuratePasses": 243,
         "fouls": 4,
         "corners": 4,
         "offsides": 3,
@@ -5519,11 +5527,11 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 62.9,
-        "shots": 4,
-        "shotsOnTarget": 1,
-        "passAccuracy": 89.9,
-        "accuratePasses": 401,
+        "possession": 62.1,
+        "shots": 5,
+        "shotsOnTarget": 2,
+        "passAccuracy": 89.7,
+        "accuratePasses": 408,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
