@@ -5244,7 +5244,7 @@
       },
       {
         "type": "yellow",
-        "minute": "80'",
+        "minute": "79'",
         "teamId": "hai",
         "player": "Duckens Nazon",
         "text": "Duckens Nazon Yellow Card"
@@ -5267,11 +5267,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 69,
+        "possession": 69.1,
         "shots": 22,
         "shotsOnTarget": 11,
-        "passAccuracy": 88.4,
-        "accuratePasses": 479,
+        "passAccuracy": 88.2,
+        "accuratePasses": 477,
         "fouls": 10,
         "corners": 9,
         "offsides": 5,
@@ -5281,10 +5281,10 @@
         "boxTouches": 46
       },
       "away": {
-        "possession": 31,
+        "possession": 30.9,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 79.8,
+        "passAccuracy": 80.2,
         "accuratePasses": 198,
         "fouls": 18,
         "corners": 1,
