@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5618,15 +5618,22 @@
         "player": "Nicolas Pépé",
         "text": "Nicolas Pépé Goal",
         "assist": "Yan Diomande"
+      },
+      {
+        "type": "yellow",
+        "minute": "35'",
+        "teamId": "civ",
+        "player": "Nicolas Pépé",
+        "text": "Nicolas Pépé Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 25.6,
+        "possession": 25.5,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 81.1,
-        "accuratePasses": 77,
+        "passAccuracy": 80.4,
+        "accuratePasses": 78,
         "fouls": 6,
         "corners": 1,
         "offsides": 0,
@@ -5636,18 +5643,18 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 74.4,
+        "possession": 74.5,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 91.4,
-        "accuratePasses": 256,
+        "passAccuracy": 91.6,
+        "accuratePasses": 263,
         "fouls": 2,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.8,
-        "duelsWon": 18,
-        "boxTouches": 6
+        "duelsWon": 20,
+        "boxTouches": 7
       }
     }
   },
@@ -5665,7 +5672,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "37",
+    "minute": "38",
     "broadcasts": [
       {
         "name": "FOX",
