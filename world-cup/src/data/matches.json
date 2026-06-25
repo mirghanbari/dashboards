@@ -5460,32 +5460,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 52.6,
+        "possession": 52.5,
         "shots": 10,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.8,
-        "accuratePasses": 275,
+        "passAccuracy": 83.6,
+        "accuratePasses": 276,
         "fouls": 8,
         "corners": 5,
         "offsides": 1,
         "saves": 1,
         "xg": 0.42,
-        "duelsWon": 33,
+        "duelsWon": 35,
         "boxTouches": 12
       },
       "away": {
-        "possession": 47.4,
+        "possession": 47.5,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 85,
-        "accuratePasses": 260,
+        "passAccuracy": 85.1,
+        "accuratePasses": 263,
         "fouls": 11,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 1.6,
         "duelsWon": 30,
-        "boxTouches": 11
+        "boxTouches": 12
       }
     }
   },
@@ -5503,7 +5503,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "78",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5533,6 +5533,13 @@
         "teamId": "rsa",
         "player": "Aubrey Modiba",
         "text": "Aubrey Modiba Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "79'",
+        "teamId": "kor",
+        "player": "Cho Gue-Sung",
+        "text": "Cho Gue-Sung Yellow Card"
       }
     ],
     "stats": {
@@ -5540,8 +5547,8 @@
         "possession": 33.7,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.7,
-        "accuratePasses": 252,
+        "passAccuracy": 85.5,
+        "accuratePasses": 254,
         "fouls": 6,
         "corners": 4,
         "offsides": 3,
@@ -5555,8 +5562,8 @@
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 90.4,
-        "accuratePasses": 516,
-        "fouls": 6,
+        "accuratePasses": 520,
+        "fouls": 7,
         "corners": 3,
         "offsides": 0,
         "saves": 3,
