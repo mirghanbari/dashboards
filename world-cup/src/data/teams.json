@@ -62,7 +62,7 @@
     "goalsAgainst": 3,
     "points": 3,
     "possession": 62.5,
-    "ppda": 13.8,
+    "ppda": 14,
     "cleanSheets": 0,
     "passCompletion": 86.8,
     "xgFor": 4.34,
@@ -246,11 +246,11 @@
     "goalsAgainst": 8,
     "points": 0,
     "possession": 42.7,
-    "ppda": 10.4,
+    "ppda": 10.5,
     "cleanSheets": 0,
     "passCompletion": 82.7,
-    "xgFor": 1.98,
-    "xgAgainst": 6.74
+    "xgFor": 1.97,
+    "xgAgainst": 6.21
   },
   {
     "id": "mar",
@@ -269,11 +269,11 @@
     "goalsAgainst": 3,
     "points": 7,
     "possession": 58.8,
-    "ppda": 11.5,
+    "ppda": 11.8,
     "cleanSheets": 1,
     "passCompletion": 88,
-    "xgFor": 6.15,
-    "xgAgainst": 2.44
+    "xgFor": 5.62,
+    "xgAgainst": 2.43
   },
   {
     "id": "par",
