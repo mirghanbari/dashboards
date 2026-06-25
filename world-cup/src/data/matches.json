@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "19",
+    "minute": "21",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5622,31 +5622,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.7,
+        "possession": 27.8,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.2,
-        "accuratePasses": 64,
-        "fouls": 3,
+        "passAccuracy": 84.4,
+        "accuratePasses": 65,
+        "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.05,
-        "duelsWon": 9,
+        "duelsWon": 11,
         "boxTouches": 2
       },
       "away": {
-        "possession": 71.3,
+        "possession": 72.2,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 91.5,
-        "accuratePasses": 172,
+        "accuratePasses": 182,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0.67,
-        "duelsWon": 11,
+        "duelsWon": 13,
         "boxTouches": 7
       }
     }
@@ -5665,7 +5665,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5700,25 +5700,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 33.8,
+        "possession": 39.6,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.4,
-        "accuratePasses": 61,
-        "fouls": 7,
-        "corners": 0,
+        "passAccuracy": 89.4,
+        "accuratePasses": 84,
+        "fouls": 8,
+        "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.03,
         "duelsWon": 11,
-        "boxTouches": 1
+        "boxTouches": 2
       },
       "away": {
-        "possession": 66.2,
+        "possession": 60.4,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 90.1,
-        "accuratePasses": 118,
+        "accuratePasses": 127,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
