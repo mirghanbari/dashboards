@@ -5418,7 +5418,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "87",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5460,11 +5460,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.9,
+        "possession": 52.1,
         "shots": 11,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.7,
-        "accuratePasses": 293,
+        "passAccuracy": 83.3,
+        "accuratePasses": 295,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
@@ -5474,11 +5474,11 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 48.1,
+        "possession": 47.9,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 84.9,
-        "accuratePasses": 286,
+        "passAccuracy": 84.7,
+        "accuratePasses": 287,
         "fouls": 12,
         "corners": 1,
         "offsides": 0,
@@ -5503,7 +5503,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "88",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5544,30 +5544,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 31.8,
+        "possession": 31.7,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.3,
-        "accuratePasses": 258,
+        "passAccuracy": 83.6,
+        "accuratePasses": 260,
         "fouls": 7,
         "corners": 4,
         "offsides": 3,
         "saves": 1,
         "xg": 1.1,
-        "duelsWon": 38,
+        "duelsWon": 40,
         "boxTouches": 12
       },
       "away": {
-        "possession": 68.2,
+        "possession": 68.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.1,
-        "accuratePasses": 582,
-        "fouls": 8,
+        "passAccuracy": 90.2,
+        "accuratePasses": 596,
+        "fouls": 9,
         "corners": 5,
         "offsides": 0,
         "saves": 3,
-        "xg": 0.6,
+        "xg": 0.63,
         "duelsWon": 42,
         "boxTouches": 15
       }
