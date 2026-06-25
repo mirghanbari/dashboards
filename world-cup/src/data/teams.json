@@ -15,12 +15,12 @@
     "goalsFor": 6,
     "goalsAgainst": 0,
     "points": 9,
-    "possession": 50.4,
+    "possession": 50.3,
     "ppda": 14.1,
     "cleanSheets": 3,
-    "passCompletion": 85.6,
-    "xgFor": 3.75,
-    "xgAgainst": 1.58
+    "passCompletion": 85.7,
+    "xgFor": 3.72,
+    "xgAgainst": 1.62
   },
   {
     "id": "cze",
@@ -38,12 +38,12 @@
     "goalsFor": 2,
     "goalsAgainst": 6,
     "points": 1,
-    "possession": 42.8,
-    "ppda": 17,
+    "possession": 42.9,
+    "ppda": 16.6,
     "cleanSheets": 0,
-    "passCompletion": 77.8,
-    "xgFor": 2.33,
-    "xgAgainst": 5.47
+    "passCompletion": 77.9,
+    "xgFor": 2.37,
+    "xgAgainst": 5.44
   },
   {
     "id": "kor",
@@ -65,8 +65,8 @@
     "ppda": 13.8,
     "cleanSheets": 0,
     "passCompletion": 86.8,
-    "xgFor": 4.34,
-    "xgAgainst": 2.48
+    "xgFor": 4.24,
+    "xgAgainst": 2.54
   },
   {
     "id": "rsa",
@@ -84,12 +84,12 @@
     "goalsFor": 2,
     "goalsAgainst": 3,
     "points": 4,
-    "possession": 44.2,
+    "possession": 44.3,
     "ppda": 15.2,
     "cleanSheets": 1,
-    "passCompletion": 84.5,
-    "xgFor": 2.58,
-    "xgAgainst": 3.47
+    "passCompletion": 84.4,
+    "xgFor": 2.64,
+    "xgAgainst": 3.37
   },
   {
     "id": "can",
