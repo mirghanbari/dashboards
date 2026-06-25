@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "74",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5633,11 +5633,18 @@
         "player": "Nicolas Pépé",
         "text": "Nicolas Pépé Goal",
         "assist": "Ibrahim Sangaré"
+      },
+      {
+        "type": "yellow",
+        "minute": "75'",
+        "teamId": "cuw",
+        "player": "Juninho Bacuna",
+        "text": "Juninho Bacuna Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 36.3,
+        "possession": 35.3,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 84.7,
@@ -5647,21 +5654,21 @@
         "offsides": 1,
         "saves": 0,
         "xg": 0.19,
-        "duelsWon": 35,
-        "boxTouches": 6
+        "duelsWon": 36,
+        "boxTouches": 7
       },
       "away": {
-        "possession": 63.7,
+        "possession": 64.7,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.7,
-        "accuratePasses": 443,
+        "passAccuracy": 89.9,
+        "accuratePasses": 464,
         "fouls": 4,
         "corners": 3,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 1.1,
-        "duelsWon": 34,
+        "duelsWon": 35,
         "boxTouches": 14
       }
     }
@@ -5680,7 +5687,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "75",
+    "minute": "77",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5736,32 +5743,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.3,
+        "possession": 41.6,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 82.6,
-        "accuratePasses": 246,
-        "fouls": 10,
+        "passAccuracy": 82.7,
+        "accuratePasses": 254,
+        "fouls": 11,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.36,
+        "xg": 0.4,
         "duelsWon": 42,
         "boxTouches": 11
       },
       "away": {
-        "possession": 58.7,
+        "possession": 58.4,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.3,
-        "accuratePasses": 366,
+        "passAccuracy": 86,
+        "accuratePasses": 370,
         "fouls": 8,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.43,
         "duelsWon": 41,
-        "boxTouches": 16
+        "boxTouches": 17
       }
     }
   },
