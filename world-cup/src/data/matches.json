@@ -5595,7 +5595,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "78",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5654,7 +5654,7 @@
         "offsides": 1,
         "saves": 0,
         "xg": 0.19,
-        "duelsWon": 36,
+        "duelsWon": 40,
         "boxTouches": 7
       },
       "away": {
@@ -5668,8 +5668,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.1,
-        "duelsWon": 35,
-        "boxTouches": 14
+        "duelsWon": 36,
+        "boxTouches": 16
       }
     }
   },
@@ -5745,37 +5745,38 @@
         "minute": "77'",
         "teamId": "ecu",
         "player": "Gonzalo Plata",
-        "text": "Gonzalo Plata Goal",
+        "text": "Gonzalo Plata Goal - Volley",
+        "goalType": "volley",
         "assist": "Kevin Rodríguez"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.7,
-        "shots": 6,
-        "shotsOnTarget": 2,
+        "possession": 42.5,
+        "shots": 8,
+        "shotsOnTarget": 3,
         "passAccuracy": 83.2,
         "accuratePasses": 268,
         "fouls": 11,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.64,
+        "xg": 1.57,
         "duelsWon": 44,
         "boxTouches": 16
       },
       "away": {
-        "possession": 57.3,
+        "possession": 57.5,
         "shots": 9,
         "shotsOnTarget": 3,
         "passAccuracy": 86.1,
-        "accuratePasses": 372,
+        "accuratePasses": 377,
         "fouls": 8,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.58,
-        "duelsWon": 41,
+        "xg": 0.61,
+        "duelsWon": 42,
         "boxTouches": 17
       }
     }
