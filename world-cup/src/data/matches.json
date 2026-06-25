@@ -5594,8 +5594,8 @@
     "awayTeamId": "civ",
     "homeScore": 0,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -5651,11 +5651,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 36.8,
+        "possession": 36.6,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.5,
-        "accuratePasses": 293,
+        "passAccuracy": 83.6,
+        "accuratePasses": 296,
         "fouls": 11,
         "corners": 4,
         "offsides": 2,
@@ -5665,11 +5665,11 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 63.2,
+        "possession": 63.4,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 89.4,
-        "accuratePasses": 547,
+        "passAccuracy": 89.6,
+        "accuratePasses": 558,
         "fouls": 6,
         "corners": 6,
         "offsides": 1,
@@ -5693,8 +5693,8 @@
     "awayTeamId": "ger",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -5766,11 +5766,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 38.7,
+        "possession": 38.9,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 82.5,
-        "accuratePasses": 311,
+        "passAccuracy": 82.6,
+        "accuratePasses": 313,
         "fouls": 15,
         "corners": 3,
         "offsides": 1,
@@ -5780,7 +5780,7 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 61.3,
+        "possession": 61.1,
         "shots": 11,
         "shotsOnTarget": 3,
         "passAccuracy": 87.3,
