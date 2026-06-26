@@ -6003,8 +6003,8 @@
     "awayTeamId": "aus",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+4",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -6037,11 +6037,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 44,
+        "possession": 44.1,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 77.6,
-        "accuratePasses": 329,
+        "passAccuracy": 77.3,
+        "accuratePasses": 330,
         "fouls": 9,
         "corners": 1,
         "offsides": 0,
@@ -6051,10 +6051,10 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 56,
+        "possession": 55.9,
         "shots": 12,
         "shotsOnTarget": 5,
-        "passAccuracy": 82.2,
+        "passAccuracy": 81.9,
         "accuratePasses": 439,
         "fouls": 6,
         "corners": 3,
@@ -6080,7 +6080,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6137,11 +6137,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 47.1,
+        "possession": 46.9,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 77.3,
-        "accuratePasses": 321,
+        "passAccuracy": 76.9,
+        "accuratePasses": 323,
         "fouls": 13,
         "corners": 2,
         "offsides": 2,
@@ -6151,11 +6151,11 @@
         "boxTouches": 21
       },
       "away": {
-        "possession": 52.9,
+        "possession": 53.1,
         "shots": 17,
         "shotsOnTarget": 7,
-        "passAccuracy": 84.4,
-        "accuratePasses": 383,
+        "passAccuracy": 84.8,
+        "accuratePasses": 392,
         "fouls": 12,
         "corners": 9,
         "offsides": 5,
