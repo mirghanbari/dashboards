@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "59",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6255,7 +6255,7 @@
         "offsides": 0,
         "saves": 5,
         "xg": 1.27,
-        "duelsWon": 29,
+        "duelsWon": 31,
         "boxTouches": 19
       },
       "away": {
@@ -6269,7 +6269,7 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.09,
-        "duelsWon": 29,
+        "duelsWon": 31,
         "boxTouches": 19
       }
     }
@@ -6285,10 +6285,10 @@
     "city": "Toronto",
     "homeTeamId": "sen",
     "awayTeamId": "irq",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6325,35 +6325,42 @@
         "teamId": "sen",
         "player": "Abdoulaye Seck",
         "text": "Abdoulaye Seck Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "56'",
+        "teamId": "sen",
+        "player": "Ismaïla Sarr",
+        "text": "Ismaïla Sarr Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.6,
-        "shots": 12,
-        "shotsOnTarget": 2,
-        "passAccuracy": 84.1,
-        "accuratePasses": 248,
+        "possession": 62.9,
+        "shots": 14,
+        "shotsOnTarget": 4,
+        "passAccuracy": 84.4,
+        "accuratePasses": 260,
         "fouls": 6,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
         "xg": 1.59,
-        "duelsWon": 25,
-        "boxTouches": 20
+        "duelsWon": 26,
+        "boxTouches": 24
       },
       "away": {
-        "possession": 37.4,
+        "possession": 37.1,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.1,
-        "accuratePasses": 133,
+        "passAccuracy": 73.4,
+        "accuratePasses": 138,
         "fouls": 5,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
         "xg": 0.15,
-        "duelsWon": 25,
+        "duelsWon": 28,
         "boxTouches": 4
       }
     }
