@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "33",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6239,7 +6239,8 @@
         "minute": "32'",
         "teamId": "fra",
         "player": "Ousmane Dembélé",
-        "text": "Ousmane Dembélé Goal"
+        "text": "Ousmane Dembélé Goal",
+        "assist": "Aurélien Tchouaméni"
       }
     ],
     "stats": {
@@ -6267,7 +6268,7 @@
         "corners": 3,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.68,
+        "xg": 0.74,
         "duelsWon": 15,
         "boxTouches": 11
       }
@@ -6287,7 +6288,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6338,8 +6339,8 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.87,
-        "duelsWon": 8,
-        "boxTouches": 5
+        "duelsWon": 9,
+        "boxTouches": 7
       },
       "away": {
         "possession": 44.3,
@@ -6352,7 +6353,7 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.06,
-        "duelsWon": 6,
+        "duelsWon": 7,
         "boxTouches": 4
       }
     }
