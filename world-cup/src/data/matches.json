@@ -6187,7 +6187,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "10",
+    "minute": "11",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6221,29 +6221,29 @@
     ],
     "stats": {
       "home": {
-        "possession": 35.1,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 71,
-        "accuratePasses": 22,
-        "fouls": 2,
+        "possession": 34.9,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 65.7,
+        "accuratePasses": 23,
+        "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 4,
         "xg": 0.02,
-        "duelsWon": 6,
+        "duelsWon": 7,
         "boxTouches": 1
       },
       "away": {
-        "possession": 64.9,
+        "possession": 65.1,
         "shots": 5,
         "shotsOnTarget": 5,
-        "passAccuracy": 90,
-        "accuratePasses": 54,
-        "fouls": 0,
+        "passAccuracy": 89.7,
+        "accuratePasses": 61,
+        "fouls": 1,
         "corners": 1,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.23,
         "duelsWon": 6,
         "boxTouches": 4
@@ -6287,6 +6287,13 @@
         "player": "Habib Diarra",
         "text": "Habib Diarra Goal",
         "assist": "Abdoulaye Seck"
+      },
+      {
+        "type": "yellow",
+        "minute": "10'",
+        "teamId": "irq",
+        "player": "Rebin Sulaka",
+        "text": "Rebin Sulaka Yellow Card"
       }
     ],
     "stats": {
