@@ -6303,8 +6303,8 @@
     "awayTeamId": "irq",
     "homeScore": 5,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -6398,11 +6398,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 69.2,
+        "possession": 69.3,
         "shots": 28,
         "shotsOnTarget": 12,
-        "passAccuracy": 87.9,
-        "accuratePasses": 515,
+        "passAccuracy": 87.8,
+        "accuratePasses": 518,
         "fouls": 10,
         "corners": 12,
         "offsides": 1,
@@ -6412,15 +6412,15 @@
         "boxTouches": 51
       },
       "away": {
-        "possession": 30.8,
+        "possession": 30.7,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 69.7,
+        "passAccuracy": 69.4,
         "accuratePasses": 184,
         "fouls": 11,
         "corners": 3,
         "offsides": 0,
-        "saves": 6,
+        "saves": 7,
         "xg": 0.18,
         "duelsWon": 49,
         "boxTouches": 5
