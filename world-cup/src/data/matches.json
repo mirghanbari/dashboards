@@ -6003,7 +6003,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "11",
+    "minute": "12",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6020,30 +6020,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 22.3,
+        "possession": 20.7,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 60.9,
-        "accuratePasses": 14,
+        "passAccuracy": 62.5,
+        "accuratePasses": 15,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0,
-        "duelsWon": 9
+        "duelsWon": 12
       },
       "away": {
-        "possession": 77.7,
+        "possession": 79.3,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.2,
-        "accuratePasses": 64,
+        "passAccuracy": 85.2,
+        "accuratePasses": 75,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 7
+        "duelsWon": 8
       }
     }
   },
@@ -6090,29 +6090,30 @@
         "minute": "10'",
         "teamId": "tur",
         "player": "Arda Güler",
-        "text": "Arda Güler Goal"
+        "text": "Arda Güler Goal",
+        "assist": "Baris Alper Yilmaz"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41.2,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 80,
-        "accuratePasses": 32,
+        "possession": 44.8,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 83,
+        "accuratePasses": 39,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.5,
+        "xg": 0.53,
         "duelsWon": 7,
         "boxTouches": 2
       },
       "away": {
-        "possession": 58.8,
+        "possession": 55.2,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.5,
+        "passAccuracy": 83.9,
         "accuratePasses": 47,
         "fouls": 2,
         "corners": 2,
