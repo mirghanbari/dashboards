@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "78",
+    "minute": "79",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6252,11 +6252,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 44.5,
+        "possession": 46.8,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 81.5,
-        "accuratePasses": 269,
+        "passAccuracy": 82.4,
+        "accuratePasses": 300,
         "fouls": 8,
         "corners": 3,
         "offsides": 0,
@@ -6266,10 +6266,10 @@
         "boxTouches": 24
       },
       "away": {
-        "possession": 55.5,
+        "possession": 53.2,
         "shots": 16,
         "shotsOnTarget": 8,
-        "passAccuracy": 84.8,
+        "passAccuracy": 84.6,
         "accuratePasses": 352,
         "fouls": 9,
         "corners": 4,
@@ -6295,7 +6295,7 @@
     "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "74",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6356,35 +6356,42 @@
         "player": "Pape Gueye",
         "text": "Pape Gueye Goal",
         "assist": "Iliman Ndiaye"
+      },
+      {
+        "type": "yellow",
+        "minute": "76'",
+        "teamId": "irq",
+        "player": "Amir Al-Ammari",
+        "text": "Amir Al-Ammari Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 63.7,
-        "shots": 17,
+        "possession": 63.5,
+        "shots": 19,
         "shotsOnTarget": 6,
-        "passAccuracy": 86.1,
-        "accuratePasses": 328,
+        "passAccuracy": 85.4,
+        "accuratePasses": 333,
         "fouls": 8,
         "corners": 9,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.22,
-        "duelsWon": 32,
-        "boxTouches": 33
+        "xg": 2.34,
+        "duelsWon": 33,
+        "boxTouches": 34
       },
       "away": {
-        "possession": 36.3,
+        "possession": 36.5,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.1,
-        "accuratePasses": 166,
+        "passAccuracy": 73.6,
+        "accuratePasses": 170,
         "fouls": 7,
         "corners": 3,
         "offsides": 0,
         "saves": 2,
         "xg": 0.18,
-        "duelsWon": 33,
+        "duelsWon": 35,
         "boxTouches": 5
       }
     }
