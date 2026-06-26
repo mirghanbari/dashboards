@@ -5882,8 +5882,8 @@
         "possession": 47.7,
         "shots": 10,
         "shotsOnTarget": 5,
-        "passAccuracy": 79.2,
-        "accuratePasses": 313,
+        "passAccuracy": 79,
+        "accuratePasses": 312,
         "fouls": 11,
         "corners": 8,
         "offsides": 2,
@@ -5971,7 +5971,7 @@
         "offsides": 2,
         "saves": 4,
         "xg": 0.43,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 11
       },
       "away": {
@@ -5985,7 +5985,7 @@
         "offsides": 1,
         "saves": 3,
         "xg": 1.68,
-        "duelsWon": 36,
+        "duelsWon": 35,
         "boxTouches": 43
       }
     }
@@ -6450,8 +6450,7 @@
     "venue": "NRG Stadium",
     "city": "Houston, Texas",
     "homeTeamId": "bra",
-    "awayTeamId": "tbd",
-    "awaySlot": "Group F 2nd Place",
+    "awayTeamId": "jpn",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
@@ -6511,9 +6510,8 @@
     "date": "2026-06-30T01:00Z",
     "venue": "Estadio BBVA",
     "city": "Guadalupe",
-    "homeTeamId": "tbd",
+    "homeTeamId": "ned",
     "awayTeamId": "mar",
-    "homeSlot": "Group F Winner",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
