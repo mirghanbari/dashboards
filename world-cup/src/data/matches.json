@@ -6004,7 +6004,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6037,31 +6037,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.8,
+        "possession": 43.3,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 77.5,
-        "accuratePasses": 306,
+        "passAccuracy": 77.2,
+        "accuratePasses": 312,
         "fouls": 8,
         "corners": 1,
         "offsides": 0,
         "saves": 4,
         "xg": 0.19,
         "duelsWon": 54,
-        "boxTouches": 5
+        "boxTouches": 6
       },
       "away": {
-        "possession": 57.2,
+        "possession": 56.7,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 83.1,
+        "passAccuracy": 82.8,
         "accuratePasses": 433,
         "fouls": 6,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
         "xg": 0.47,
-        "duelsWon": 58,
+        "duelsWon": 59,
         "boxTouches": 12
       }
     }
@@ -6137,7 +6137,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 46.1,
+        "possession": 45.9,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 76.5,
@@ -6147,15 +6147,15 @@
         "offsides": 2,
         "saves": 5,
         "xg": 1.76,
-        "duelsWon": 60,
+        "duelsWon": 61,
         "boxTouches": 21
       },
       "away": {
-        "possession": 53.9,
+        "possession": 54.1,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 84.4,
-        "accuratePasses": 379,
+        "passAccuracy": 84.5,
+        "accuratePasses": 383,
         "fouls": 12,
         "corners": 9,
         "offsides": 5,
