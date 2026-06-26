@@ -6003,7 +6003,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "18",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6020,30 +6020,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 35.4,
+        "possession": 37.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.2,
-        "accuratePasses": 48,
-        "fouls": 1,
+        "passAccuracy": 77.1,
+        "accuratePasses": 54,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0,
-        "duelsWon": 15
+        "duelsWon": 16
       },
       "away": {
-        "possession": 64.6,
+        "possession": 62.4,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.1,
-        "accuratePasses": 92,
-        "fouls": 2,
+        "passAccuracy": 83.2,
+        "accuratePasses": 94,
+        "fouls": 3,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 14
+        "duelsWon": 15
       }
     }
   },
@@ -6061,7 +6061,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "17",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6092,14 +6092,21 @@
         "player": "Arda Güler",
         "text": "Arda Güler Goal",
         "assist": "Baris Alper Yilmaz"
+      },
+      {
+        "type": "yellow",
+        "minute": "19'",
+        "teamId": "usa",
+        "player": "Sebastian Berhalter",
+        "text": "Sebastian Berhalter Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 43.8,
+        "possession": 38.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 77,
+        "passAccuracy": 76,
         "accuratePasses": 57,
         "fouls": 2,
         "corners": 0,
@@ -6110,11 +6117,11 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 56.2,
+        "possession": 61.3,
         "shots": 5,
         "shotsOnTarget": 3,
-        "passAccuracy": 87,
-        "accuratePasses": 80,
+        "passAccuracy": 88.8,
+        "accuratePasses": 103,
         "fouls": 3,
         "corners": 2,
         "offsides": 0,
