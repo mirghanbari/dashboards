@@ -6187,7 +6187,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "7",
+    "minute": "9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6202,14 +6202,24 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "7'",
+        "teamId": "fra",
+        "player": "Ousmane Dembélé",
+        "text": "Ousmane Dembélé Goal",
+        "assist": "Kylian Mbappé"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 26.7,
+        "possession": 28.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 57.9,
-        "accuratePasses": 11,
-        "fouls": 1,
+        "passAccuracy": 57.1,
+        "accuratePasses": 12,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 3,
@@ -6218,17 +6228,17 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 73.3,
-        "shots": 3,
-        "shotsOnTarget": 3,
+        "possession": 71.4,
+        "shots": 4,
+        "shotsOnTarget": 4,
         "passAccuracy": 90.7,
         "accuratePasses": 49,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.17,
-        "duelsWon": 5,
+        "xg": 0.2,
+        "duelsWon": 6,
         "boxTouches": 4
       }
     }
@@ -6247,7 +6257,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "6",
+    "minute": "7",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6274,30 +6284,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 26.3,
+        "possession": 30.2,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.7,
-        "accuratePasses": 6,
+        "passAccuracy": 76.9,
+        "accuratePasses": 10,
         "fouls": 0,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.45,
-        "duelsWon": 2
+        "duelsWon": 2,
+        "boxTouches": 3
       },
       "away": {
-        "possession": 73.7,
+        "possession": 69.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 85.7,
-        "accuratePasses": 24,
-        "fouls": 0,
+        "passAccuracy": 83.8,
+        "accuratePasses": 31,
+        "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 1
+        "duelsWon": 1,
+        "boxTouches": 1
       }
     }
   },
