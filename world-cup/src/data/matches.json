@@ -6185,9 +6185,9 @@
     "homeTeamId": "nor",
     "awayTeamId": "fra",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "31",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6233,11 +6233,18 @@
         "player": "Thelo Aasgaard",
         "text": "Thelo Aasgaard Goal",
         "assist": "Andreas Schjelderup"
+      },
+      {
+        "type": "goal",
+        "minute": "32'",
+        "teamId": "fra",
+        "player": "Ousmane Dembélé",
+        "text": "Ousmane Dembélé Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 35.2,
+        "possession": 33.4,
         "shots": 4,
         "shotsOnTarget": 2,
         "passAccuracy": 74.7,
@@ -6247,22 +6254,22 @@
         "offsides": 0,
         "saves": 5,
         "xg": 0.27,
-        "duelsWon": 15,
-        "boxTouches": 7
+        "duelsWon": 16,
+        "boxTouches": 6
       },
       "away": {
-        "possession": 64.8,
-        "shots": 11,
-        "shotsOnTarget": 7,
-        "passAccuracy": 87.4,
-        "accuratePasses": 159,
+        "possession": 66.6,
+        "shots": 12,
+        "shotsOnTarget": 8,
+        "passAccuracy": 88.3,
+        "accuratePasses": 174,
         "fouls": 3,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
         "xg": 0.68,
         "duelsWon": 15,
-        "boxTouches": 10
+        "boxTouches": 11
       }
     }
   },
@@ -6280,7 +6287,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "31",
+    "minute": "32",
     "broadcasts": [
       {
         "name": "FS1",
