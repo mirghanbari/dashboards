@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6245,31 +6245,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.1,
-        "shots": 7,
-        "shotsOnTarget": 3,
-        "passAccuracy": 78.9,
-        "accuratePasses": 225,
+        "possession": 42.2,
+        "shots": 8,
+        "shotsOnTarget": 4,
+        "passAccuracy": 79.9,
+        "accuratePasses": 239,
         "fouls": 8,
         "corners": 3,
         "offsides": 0,
         "saves": 5,
-        "xg": 1.29,
-        "duelsWon": 35,
-        "boxTouches": 21
+        "xg": 1.42,
+        "duelsWon": 36,
+        "boxTouches": 22
       },
       "away": {
-        "possession": 58.9,
+        "possession": 57.8,
         "shots": 16,
         "shotsOnTarget": 8,
-        "passAccuracy": 85,
-        "accuratePasses": 351,
+        "passAccuracy": 84.8,
+        "accuratePasses": 352,
         "fouls": 8,
         "corners": 4,
         "offsides": 2,
-        "saves": 2,
+        "saves": 3,
         "xg": 1.17,
-        "duelsWon": 37,
+        "duelsWon": 39,
         "boxTouches": 23
       }
     }
@@ -6288,7 +6288,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6345,21 +6345,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.9,
+        "possession": 63,
         "shots": 16,
         "shotsOnTarget": 5,
         "passAccuracy": 85.8,
-        "accuratePasses": 308,
+        "accuratePasses": 309,
         "fouls": 8,
         "corners": 9,
         "offsides": 1,
         "saves": 1,
         "xg": 2.09,
         "duelsWon": 27,
-        "boxTouches": 27
+        "boxTouches": 28
       },
       "away": {
-        "possession": 37.1,
+        "possession": 37,
         "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 74.4,
