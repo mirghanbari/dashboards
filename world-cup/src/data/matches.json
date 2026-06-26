@@ -5873,9 +5873,9 @@
         "corners": 2,
         "offsides": 3,
         "saves": 4,
-        "xg": 1.31,
-        "duelsWon": 46,
-        "boxTouches": 12
+        "xg": 1.21,
+        "duelsWon": 47,
+        "boxTouches": 11
       },
       "away": {
         "possession": 47.7,
@@ -5887,9 +5887,9 @@
         "corners": 8,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.61,
-        "duelsWon": 41,
-        "boxTouches": 15
+        "xg": 0.64,
+        "duelsWon": 44,
+        "boxTouches": 13
       }
     }
   },
@@ -5970,7 +5970,7 @@
         "corners": 4,
         "offsides": 2,
         "saves": 4,
-        "xg": 0.43,
+        "xg": 0.62,
         "duelsWon": 38,
         "boxTouches": 11
       },
@@ -5984,7 +5984,7 @@
         "corners": 6,
         "offsides": 1,
         "saves": 3,
-        "xg": 1.68,
+        "xg": 1.85,
         "duelsWon": 37,
         "boxTouches": 44
       }
@@ -6144,7 +6144,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 47.4,
+        "possession": 47.5,
         "shots": 9,
         "shotsOnTarget": 4,
         "passAccuracy": 76.6,
@@ -6158,11 +6158,11 @@
         "boxTouches": 23
       },
       "away": {
-        "possession": 52.6,
+        "possession": 52.5,
         "shots": 18,
         "shotsOnTarget": 7,
         "passAccuracy": 84.7,
-        "accuratePasses": 399,
+        "accuratePasses": 398,
         "fouls": 13,
         "corners": 9,
         "offsides": 5,
