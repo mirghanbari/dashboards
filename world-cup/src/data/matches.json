@@ -5873,9 +5873,9 @@
         "corners": 2,
         "offsides": 3,
         "saves": 4,
-        "xg": 1.31,
-        "duelsWon": 46,
-        "boxTouches": 12
+        "xg": 1.21,
+        "duelsWon": 47,
+        "boxTouches": 11
       },
       "away": {
         "possession": 47.7,
@@ -5887,9 +5887,9 @@
         "corners": 8,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.61,
-        "duelsWon": 41,
-        "boxTouches": 15
+        "xg": 0.64,
+        "duelsWon": 44,
+        "boxTouches": 13
       }
     }
   },
@@ -6146,7 +6146,7 @@
       "home": {
         "possession": 47.5,
         "shots": 9,
-        "shotsOnTarget": 4,
+        "shotsOnTarget": 3,
         "passAccuracy": 76.6,
         "accuratePasses": 333,
         "fouls": 13,
@@ -6946,9 +6946,8 @@
     "date": "2026-07-03T18:00Z",
     "venue": "AT&T Stadium",
     "city": "Arlington, Texas",
-    "homeTeamId": "tbd",
+    "homeTeamId": "aus",
     "awayTeamId": "tbd",
-    "homeSlot": "Group D 2nd Place",
     "awaySlot": "Group G 2nd Place",
     "homeScore": null,
     "awayScore": null,

@@ -499,11 +499,11 @@
     "goalsAgainst": 7,
     "points": 4,
     "possession": 48.5,
-    "ppda": 14.6,
+    "ppda": 14.4,
     "cleanSheets": 0,
     "passCompletion": 80.7,
-    "xgFor": 2.96,
-    "xgAgainst": 4.19
+    "xgFor": 2.98,
+    "xgAgainst": 4.08
   },
   {
     "id": "jpn",
@@ -525,8 +525,8 @@
     "ppda": 12.9,
     "cleanSheets": 1,
     "passCompletion": 86.1,
-    "xgFor": 4.06,
-    "xgAgainst": 1.45
+    "xgFor": 3.95,
+    "xgAgainst": 1.47
   },
   {
     "id": "tun",
