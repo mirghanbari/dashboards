@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "75",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6252,26 +6252,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.2,
+        "possession": 43.2,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 79.9,
-        "accuratePasses": 239,
+        "passAccuracy": 80.4,
+        "accuratePasses": 251,
         "fouls": 8,
         "corners": 3,
         "offsides": 0,
         "saves": 5,
-        "xg": 1.42,
-        "duelsWon": 36,
+        "xg": 1.58,
+        "duelsWon": 37,
         "boxTouches": 22
       },
       "away": {
-        "possession": 57.8,
+        "possession": 56.8,
         "shots": 16,
         "shotsOnTarget": 8,
         "passAccuracy": 84.8,
         "accuratePasses": 352,
-        "fouls": 8,
+        "fouls": 9,
         "corners": 4,
         "offsides": 2,
         "saves": 3,
@@ -6292,10 +6292,10 @@
     "city": "Toronto",
     "homeTeamId": "sen",
     "awayTeamId": "irq",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "70",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6348,29 +6348,37 @@
         "player": "Pape Gueye",
         "text": "Pape Gueye Goal",
         "assist": "Ismaïla Sarr"
+      },
+      {
+        "type": "goal",
+        "minute": "71'",
+        "teamId": "sen",
+        "player": "Pape Gueye",
+        "text": "Pape Gueye Goal",
+        "assist": "Iliman Ndiaye"
       }
     ],
     "stats": {
       "home": {
-        "possession": 63,
-        "shots": 16,
-        "shotsOnTarget": 5,
-        "passAccuracy": 85.9,
-        "accuratePasses": 311,
+        "possession": 63.4,
+        "shots": 17,
+        "shotsOnTarget": 6,
+        "passAccuracy": 85.8,
+        "accuratePasses": 320,
         "fouls": 8,
         "corners": 9,
         "offsides": 1,
         "saves": 1,
         "xg": 2.09,
-        "duelsWon": 28,
-        "boxTouches": 28
+        "duelsWon": 29,
+        "boxTouches": 32
       },
       "away": {
-        "possession": 37,
+        "possession": 36.6,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.1,
-        "accuratePasses": 163,
+        "passAccuracy": 74,
+        "accuratePasses": 165,
         "fouls": 6,
         "corners": 3,
         "offsides": 0,
