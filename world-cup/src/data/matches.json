@@ -6187,7 +6187,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "18",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6221,11 +6221,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 32.4,
+        "possession": 30.5,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 67.9,
-        "accuratePasses": 36,
+        "passAccuracy": 70,
+        "accuratePasses": 42,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
@@ -6235,11 +6235,11 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 67.6,
+        "possession": 69.5,
         "shots": 7,
         "shotsOnTarget": 6,
-        "passAccuracy": 87.8,
-        "accuratePasses": 101,
+        "passAccuracy": 88.7,
+        "accuratePasses": 125,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
@@ -6264,7 +6264,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "18",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6294,35 +6294,42 @@
         "teamId": "irq",
         "player": "Rebin Sulaka",
         "text": "Rebin Sulaka Red Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "18'",
+        "teamId": "sen",
+        "player": "Abdoulaye Seck",
+        "text": "Abdoulaye Seck Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 40,
-        "shots": 5,
+        "possession": 42,
+        "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 75.9,
-        "accuratePasses": 22,
-        "fouls": 0,
+        "passAccuracy": 76.5,
+        "accuratePasses": 26,
+        "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.8,
-        "duelsWon": 4,
-        "boxTouches": 4
+        "xg": 0.87,
+        "duelsWon": 5,
+        "boxTouches": 5
       },
       "away": {
-        "possession": 60,
+        "possession": 58,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.3,
-        "accuratePasses": 39,
+        "passAccuracy": 80.4,
+        "accuratePasses": 41,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0,
-        "duelsWon": 1,
+        "duelsWon": 2,
         "boxTouches": 4
       }
     }
