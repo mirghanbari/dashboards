@@ -5875,12 +5875,12 @@
         "offsides": 3,
         "saves": 4,
         "xg": 1.31,
-        "duelsWon": 47,
+        "duelsWon": 46,
         "boxTouches": 12
       },
       "away": {
         "possession": 47.7,
-        "shots": 10,
+        "shots": 11,
         "shotsOnTarget": 5,
         "passAccuracy": 79,
         "accuratePasses": 312,
@@ -5889,7 +5889,7 @@
         "offsides": 2,
         "saves": 2,
         "xg": 0.61,
-        "duelsWon": 40,
+        "duelsWon": 41,
         "boxTouches": 15
       }
     }
