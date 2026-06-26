@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6245,12 +6245,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.4,
+        "possession": 42.3,
         "shots": 6,
         "shotsOnTarget": 3,
         "passAccuracy": 78.4,
-        "accuratePasses": 196,
-        "fouls": 5,
+        "accuratePasses": 207,
+        "fouls": 6,
         "corners": 2,
         "offsides": 0,
         "saves": 5,
@@ -6259,17 +6259,17 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 57.6,
+        "possession": 57.7,
         "shots": 15,
         "shotsOnTarget": 8,
-        "passAccuracy": 85.8,
-        "accuratePasses": 297,
+        "passAccuracy": 86.1,
+        "accuratePasses": 315,
         "fouls": 7,
         "corners": 3,
         "offsides": 1,
         "saves": 2,
         "xg": 1.09,
-        "duelsWon": 31,
+        "duelsWon": 33,
         "boxTouches": 19
       }
     }
@@ -6288,7 +6288,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6331,7 +6331,8 @@
         "minute": "56'",
         "teamId": "sen",
         "player": "Ismaïla Sarr",
-        "text": "Ismaïla Sarr Goal"
+        "text": "Ismaïla Sarr Goal",
+        "assist": "Lamine Camara"
       }
     ],
     "stats": {
@@ -6345,7 +6346,7 @@
         "corners": 6,
         "offsides": 1,
         "saves": 1,
-        "xg": 1.59,
+        "xg": 2,
         "duelsWon": 26,
         "boxTouches": 24
       },
