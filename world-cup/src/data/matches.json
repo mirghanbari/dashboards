@@ -6047,7 +6047,17 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "xg": 0,
+        "duelsWon": 0
+      },
+      "away": {
+        "xg": 0.05,
+        "duelsWon": 1
+      }
+    }
   },
   {
     "id": "M061",
