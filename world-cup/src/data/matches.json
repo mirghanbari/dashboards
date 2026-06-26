@@ -5807,9 +5807,9 @@
     "homeTeamId": "jpn",
     "awayTeamId": "swe",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "62",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5845,7 +5845,8 @@
         "minute": "62'",
         "teamId": "swe",
         "player": "Anthony Elanga",
-        "text": "Anthony Elanga Goal"
+        "text": "Anthony Elanga Goal",
+        "assist": "Viktor Gyökeres"
       }
     ],
     "stats": {
@@ -5853,8 +5854,8 @@
         "possession": 53.5,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.3,
-        "accuratePasses": 284,
+        "passAccuracy": 86.4,
+        "accuratePasses": 285,
         "fouls": 12,
         "corners": 1,
         "offsides": 3,
@@ -5873,7 +5874,7 @@
         "corners": 5,
         "offsides": 1,
         "saves": 2,
-        "xg": 0.14,
+        "xg": 0.16,
         "duelsWon": 27,
         "boxTouches": 8
       }
@@ -5893,7 +5894,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "64",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FS1",
