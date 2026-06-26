@@ -296,7 +296,7 @@
     "cleanSheets": 2,
     "passCompletion": 68,
     "xgFor": 1.1,
-    "xgAgainst": 4.23
+    "xgAgainst": 4.21
   },
   {
     "id": "tur",
@@ -338,10 +338,10 @@
     "goalsAgainst": 2,
     "points": 4,
     "possession": 40.8,
-    "ppda": 16.4,
+    "ppda": 16.2,
     "cleanSheets": 2,
     "passCompletion": 75.5,
-    "xgFor": 2.1,
+    "xgFor": 2.08,
     "xgAgainst": 2.69
   },
   {
