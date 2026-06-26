@@ -6187,7 +6187,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "4",
+    "minute": "5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6227,8 +6227,8 @@
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.04,
-        "duelsWon": 3,
+        "xg": 0.17,
+        "duelsWon": 5,
         "boxTouches": 3
       }
     }
@@ -6244,10 +6244,10 @@
     "city": "Toronto",
     "homeTeamId": "sen",
     "awayTeamId": "irq",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "4",
+    "minute": "5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6262,22 +6262,31 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "4'",
+        "teamId": "sen",
+        "player": "Habib Diarra",
+        "text": "Habib Diarra Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 34.8,
-        "shots": 0,
+        "possession": 40,
+        "shots": 1,
         "shotsOnTarget": 0,
         "passAccuracy": 85.7,
         "accuratePasses": 6,
         "fouls": 0,
-        "corners": 1,
+        "corners": 2,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 0,
-        "xg": 0.03
+        "xg": 0.04,
+        "duelsWon": 0
       },
       "away": {
-        "possession": 65.2,
+        "possession": 60,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 73.3,
@@ -6286,8 +6295,8 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 1,
-        "xg": 0
+        "xg": 0,
+        "duelsWon": 1
       }
     }
   },
