@@ -6187,7 +6187,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "1",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6204,30 +6204,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 0,
+        "possession": 26.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "passAccuracy": 45.5,
+        "accuratePasses": 5,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0,
-        "duelsWon": 2
+        "duelsWon": 3,
+        "boxTouches": 2
       },
       "away": {
-        "possession": 0,
-        "shots": 0,
-        "shotsOnTarget": 0,
-        "passAccuracy": 0,
-        "accuratePasses": 0,
+        "possession": 73.8,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 90.3,
+        "accuratePasses": 28,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.04,
-        "duelsWon": 0
+        "duelsWon": 2,
+        "boxTouches": 1
       }
     }
   },
@@ -6242,10 +6244,10 @@
     "city": "Toronto",
     "homeTeamId": "sen",
     "awayTeamId": "irq",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6259,7 +6261,33 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 34.8,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 85.7,
+        "accuratePasses": 6,
+        "fouls": 0,
+        "corners": 1,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 0
+      },
+      "away": {
+        "possession": 65.2,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 73.3,
+        "accuratePasses": 11,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
+      }
+    }
   },
   {
     "id": "M063",
