@@ -318,8 +318,8 @@
     "ppda": 8.5,
     "cleanSheets": 0,
     "passCompletion": 85.2,
-    "xgFor": 6.41,
-    "xgAgainst": 3.55
+    "xgFor": 6.8,
+    "xgAgainst": 3.5
   },
   {
     "id": "aus",
@@ -364,8 +364,8 @@
     "ppda": 8.8,
     "cleanSheets": 1,
     "passCompletion": 84.9,
-    "xgFor": 4.56,
-    "xgAgainst": 3.7
+    "xgFor": 4.51,
+    "xgAgainst": 4.09
   },
   {
     "id": "ecu",
