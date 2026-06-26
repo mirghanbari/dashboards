@@ -5809,7 +5809,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "83",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5854,30 +5854,37 @@
         "teamId": "jpn",
         "player": "Shogo Taniguchi",
         "text": "Shogo Taniguchi Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "85'",
+        "teamId": "swe",
+        "player": "Viktor Gyökeres",
+        "text": "Viktor Gyökeres Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.1,
+        "possession": 53.7,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 85.5,
+        "passAccuracy": 84.8,
         "accuratePasses": 336,
         "fouls": 18,
         "corners": 2,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.93,
-        "duelsWon": 40,
+        "xg": 1.31,
+        "duelsWon": 42,
         "boxTouches": 12
       },
       "away": {
-        "possession": 45.9,
+        "possession": 46.3,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 77.8,
-        "accuratePasses": 253,
-        "fouls": 10,
+        "passAccuracy": 78.1,
+        "accuratePasses": 260,
+        "fouls": 11,
         "corners": 7,
         "offsides": 2,
         "saves": 2,
@@ -5901,7 +5908,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5954,10 +5961,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 30,
+        "possession": 29.6,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 77.2,
+        "passAccuracy": 76.9,
         "accuratePasses": 186,
         "fouls": 11,
         "corners": 3,
@@ -5968,18 +5975,18 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 70,
+        "possession": 70.4,
         "shots": 20,
         "shotsOnTarget": 7,
-        "passAccuracy": 92.2,
-        "accuratePasses": 517,
+        "passAccuracy": 92.3,
+        "accuratePasses": 528,
         "fouls": 10,
-        "corners": 5,
+        "corners": 6,
         "offsides": 1,
         "saves": 3,
         "xg": 1.68,
         "duelsWon": 32,
-        "boxTouches": 36
+        "boxTouches": 38
       }
     }
   },
