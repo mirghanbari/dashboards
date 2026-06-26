@@ -5852,14 +5852,14 @@
         "possession": 44.9,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.9,
-        "accuratePasses": 154,
+        "passAccuracy": 75.4,
+        "accuratePasses": 153,
         "fouls": 6,
         "corners": 3,
         "offsides": 1,
         "saves": 2,
         "xg": 0.07,
-        "duelsWon": 24,
+        "duelsWon": 23,
         "boxTouches": 5
       }
     }
