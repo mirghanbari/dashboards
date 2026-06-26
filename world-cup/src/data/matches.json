@@ -6004,7 +6004,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "46",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6019,28 +6019,37 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "46'",
+        "teamId": "aus",
+        "player": "Jackson Irvine",
+        "text": "Jackson Irvine Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 37.3,
+        "possession": 37.4,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 74.3,
-        "accuratePasses": 139,
+        "passAccuracy": 73.4,
+        "accuratePasses": 141,
         "fouls": 5,
         "corners": 0,
         "offsides": 0,
         "saves": 3,
         "xg": 0.05,
-        "duelsWon": 29,
+        "duelsWon": 30,
         "boxTouches": 3
       },
       "away": {
-        "possession": 62.7,
+        "possession": 62.6,
         "shots": 6,
         "shotsOnTarget": 3,
         "passAccuracy": 84.6,
-        "accuratePasses": 258,
-        "fouls": 4,
+        "accuratePasses": 264,
+        "fouls": 5,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
@@ -6064,7 +6073,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "46",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FOX",
