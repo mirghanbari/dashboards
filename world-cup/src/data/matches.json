@@ -5806,10 +5806,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "jpn",
     "awayTeamId": "swe",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "55",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5831,25 +5831,33 @@
         "teamId": "swe",
         "player": "Isak Hien",
         "text": "Isak Hien Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "56'",
+        "teamId": "jpn",
+        "player": "Daizen Maeda",
+        "text": "Daizen Maeda Goal",
+        "assist": "Ritsu Doan"
       }
     ],
     "stats": {
       "home": {
-        "possession": 57.5,
-        "shots": 6,
-        "shotsOnTarget": 2,
-        "passAccuracy": 85.9,
-        "accuratePasses": 275,
+        "possession": 58.1,
+        "shots": 7,
+        "shotsOnTarget": 3,
+        "passAccuracy": 86.3,
+        "accuratePasses": 284,
         "fouls": 11,
         "corners": 1,
         "offsides": 3,
         "saves": 1,
         "xg": 0.34,
         "duelsWon": 30,
-        "boxTouches": 10
+        "boxTouches": 11
       },
       "away": {
-        "possession": 42.5,
+        "possession": 41.9,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 75.1,
@@ -5878,7 +5886,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
