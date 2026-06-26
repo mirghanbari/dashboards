@@ -5936,7 +5936,8 @@
         "minute": "7'",
         "teamId": "ned",
         "player": "Brian Brobbey",
-        "text": "Brian Brobbey Goal",
+        "text": "Brian Brobbey Goal - Volley",
+        "goalType": "volley",
         "assist": "Virgil van Dijk"
       },
       {
@@ -5960,11 +5961,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.4,
+        "possession": 28.5,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 77.5,
-        "accuratePasses": 200,
+        "passAccuracy": 77.1,
+        "accuratePasses": 199,
         "fouls": 11,
         "corners": 4,
         "offsides": 2,
@@ -5974,11 +5975,11 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 71.6,
+        "possession": 71.5,
         "shots": 20,
         "shotsOnTarget": 7,
-        "passAccuracy": 92.2,
-        "accuratePasses": 601,
+        "passAccuracy": 92.4,
+        "accuratePasses": 600,
         "fouls": 10,
         "corners": 6,
         "offsides": 1,
@@ -6003,7 +6004,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6020,11 +6021,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 38.2,
+        "possession": 39.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 76.9,
-        "accuratePasses": 60,
+        "passAccuracy": 75,
+        "accuratePasses": 63,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
@@ -6033,17 +6034,17 @@
         "duelsWon": 18
       },
       "away": {
-        "possession": 61.8,
+        "possession": 60.8,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.5,
-        "accuratePasses": 99,
+        "passAccuracy": 80.6,
+        "accuratePasses": 100,
         "fouls": 3,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 17
+        "duelsWon": 18
       }
     }
   },
@@ -6061,7 +6062,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6127,7 +6128,7 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.44,
-        "duelsWon": 9,
+        "duelsWon": 10,
         "boxTouches": 10
       }
     }
