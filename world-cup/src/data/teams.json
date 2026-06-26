@@ -340,7 +340,7 @@
     "possession": 40.8,
     "ppda": 16.4,
     "cleanSheets": 2,
-    "passCompletion": 75.6,
+    "passCompletion": 75.5,
     "xgFor": 2.11,
     "xgAgainst": 2.69
   },
@@ -479,8 +479,8 @@
     "ppda": 12,
     "cleanSheets": 0,
     "passCompletion": 90,
-    "xgFor": 5.24,
-    "xgAgainst": 2.21
+    "xgFor": 5.08,
+    "xgAgainst": 2.03
   },
   {
     "id": "swe",
@@ -499,11 +499,11 @@
     "goalsAgainst": 7,
     "points": 4,
     "possession": 48.5,
-    "ppda": 14.4,
+    "ppda": 14.6,
     "cleanSheets": 0,
     "passCompletion": 80.7,
-    "xgFor": 2.98,
-    "xgAgainst": 4.08
+    "xgFor": 2.96,
+    "xgAgainst": 4.19
   },
   {
     "id": "jpn",
@@ -525,8 +525,8 @@
     "ppda": 12.9,
     "cleanSheets": 1,
     "passCompletion": 86.1,
-    "xgFor": 3.95,
-    "xgAgainst": 1.47
+    "xgFor": 4.06,
+    "xgAgainst": 1.45
   },
   {
     "id": "tun",
@@ -548,8 +548,8 @@
     "ppda": 14.3,
     "cleanSheets": 0,
     "passCompletion": 78.7,
-    "xgFor": 0.93,
-    "xgAgainst": 5.34
+    "xgFor": 0.75,
+    "xgAgainst": 5.18
   },
   {
     "id": "bel",
