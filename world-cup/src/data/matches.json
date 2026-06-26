@@ -5809,7 +5809,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5888,8 +5888,8 @@
         "corners": 8,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.37,
-        "duelsWon": 39,
+        "xg": 0.43,
+        "duelsWon": 40,
         "boxTouches": 14
       }
     }
@@ -5907,8 +5907,8 @@
     "awayTeamId": "ned",
     "homeScore": 1,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
