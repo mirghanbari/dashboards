@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "80",
+    "minute": "81",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6252,7 +6252,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 46,
+        "possession": 45.2,
         "shots": 9,
         "shotsOnTarget": 4,
         "passAccuracy": 82.4,
@@ -6262,22 +6262,22 @@
         "offsides": 0,
         "saves": 5,
         "xg": 1.65,
-        "duelsWon": 37,
+        "duelsWon": 38,
         "boxTouches": 25
       },
       "away": {
-        "possession": 54,
+        "possession": 54.8,
         "shots": 16,
         "shotsOnTarget": 8,
-        "passAccuracy": 85.4,
-        "accuratePasses": 375,
+        "passAccuracy": 85.6,
+        "accuratePasses": 387,
         "fouls": 9,
-        "corners": 4,
+        "corners": 5,
         "offsides": 2,
         "saves": 3,
         "xg": 1.17,
         "duelsWon": 40,
-        "boxTouches": 23
+        "boxTouches": 24
       }
     }
   },
@@ -6295,7 +6295,7 @@
     "homeScore": 4,
     "awayScore": 0,
     "status": "live",
-    "minute": "77",
+    "minute": "78",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6359,7 +6359,7 @@
       },
       {
         "type": "yellow",
-        "minute": "76'",
+        "minute": "75'",
         "teamId": "irq",
         "player": "Amir Al-Ammari",
         "text": "Amir Al-Ammari Yellow Card"
@@ -6367,21 +6367,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 63.2,
-        "shots": 19,
+        "possession": 64.9,
+        "shots": 20,
         "shotsOnTarget": 6,
-        "passAccuracy": 85.4,
-        "accuratePasses": 334,
+        "passAccuracy": 86.5,
+        "accuratePasses": 365,
         "fouls": 8,
         "corners": 9,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.34,
-        "duelsWon": 33,
-        "boxTouches": 34
+        "xg": 2.45,
+        "duelsWon": 36,
+        "boxTouches": 36
       },
       "away": {
-        "possession": 36.8,
+        "possession": 35.1,
         "shots": 6,
         "shotsOnTarget": 1,
         "passAccuracy": 73.9,
@@ -6391,7 +6391,7 @@
         "offsides": 0,
         "saves": 2,
         "xg": 0.18,
-        "duelsWon": 35,
+        "duelsWon": 36,
         "boxTouches": 5
       }
     }
