@@ -6004,7 +6004,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "51",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6030,29 +6030,29 @@
     ],
     "stats": {
       "home": {
-        "possession": 37.3,
+        "possession": 37.1,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 73,
-        "accuratePasses": 146,
+        "passAccuracy": 74.1,
+        "accuratePasses": 157,
         "fouls": 5,
         "corners": 0,
         "offsides": 0,
         "saves": 3,
-        "xg": 0.11,
-        "duelsWon": 32,
+        "xg": 0.12,
+        "duelsWon": 33,
         "boxTouches": 3
       },
       "away": {
-        "possession": 62.7,
+        "possession": 62.9,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 83.8,
-        "accuratePasses": 275,
+        "passAccuracy": 84.5,
+        "accuratePasses": 294,
         "fouls": 5,
         "corners": 3,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.26,
         "duelsWon": 40,
         "boxTouches": 9
@@ -6073,7 +6073,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "51",
+    "minute": "52",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6130,11 +6130,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.6,
+        "possession": 43.2,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 72.2,
-        "accuratePasses": 143,
+        "passAccuracy": 72,
+        "accuratePasses": 157,
         "fouls": 7,
         "corners": 2,
         "offsides": 1,
@@ -6144,11 +6144,11 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 58.4,
-        "shots": 10,
+        "possession": 56.8,
+        "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 84.4,
-        "accuratePasses": 228,
+        "passAccuracy": 82.9,
+        "accuratePasses": 232,
         "fouls": 8,
         "corners": 6,
         "offsides": 2,
