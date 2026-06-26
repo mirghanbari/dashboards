@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6255,8 +6255,8 @@
         "offsides": 0,
         "saves": 5,
         "xg": 1.27,
-        "duelsWon": 33,
-        "boxTouches": 19
+        "duelsWon": 34,
+        "boxTouches": 20
       },
       "away": {
         "possession": 58,
@@ -6269,8 +6269,8 @@
         "offsides": 2,
         "saves": 2,
         "xg": 1.09,
-        "duelsWon": 34,
-        "boxTouches": 19
+        "duelsWon": 35,
+        "boxTouches": 21
       }
     }
   },
@@ -6288,7 +6288,7 @@
     "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6339,30 +6339,31 @@
         "minute": "59'",
         "teamId": "sen",
         "player": "Pape Gueye",
-        "text": "Pape Gueye Goal"
+        "text": "Pape Gueye Goal",
+        "assist": "Ismaïla Sarr"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.9,
-        "shots": 14,
-        "shotsOnTarget": 4,
-        "passAccuracy": 84.4,
-        "accuratePasses": 260,
+        "possession": 62.3,
+        "shots": 15,
+        "shotsOnTarget": 5,
+        "passAccuracy": 84.5,
+        "accuratePasses": 261,
         "fouls": 6,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
-        "xg": 2,
+        "xg": 2.02,
         "duelsWon": 26,
         "boxTouches": 24
       },
       "away": {
-        "possession": 37.1,
+        "possession": 37.7,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.4,
-        "accuratePasses": 138,
+        "passAccuracy": 73.6,
+        "accuratePasses": 142,
         "fouls": 5,
         "corners": 3,
         "offsides": 0,
