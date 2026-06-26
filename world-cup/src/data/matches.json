@@ -5809,7 +5809,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "52",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5835,11 +5835,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.9,
+        "possession": 57.1,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 87,
-        "accuratePasses": 260,
+        "passAccuracy": 87.2,
+        "accuratePasses": 265,
         "fouls": 11,
         "corners": 1,
         "offsides": 2,
@@ -5849,11 +5849,11 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 43.1,
+        "possession": 42.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.2,
-        "accuratePasses": 164,
+        "passAccuracy": 75,
+        "accuratePasses": 165,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
@@ -5875,10 +5875,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "tun",
     "awayTeamId": "ned",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5907,9 +5907,17 @@
         "minute": "7'",
         "teamId": "ned",
         "player": "Brian Brobbey",
-        "text": "Brian Brobbey Goal - Volley",
-        "goalType": "volley",
+        "text": "Brian Brobbey Goal",
         "assist": "Virgil van Dijk"
+      },
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "tun",
+        "player": "Hazem Mastouri",
+        "text": "Hazem Mastouri Goal - Header",
+        "goalType": "header",
+        "assist": "Hannibal Mejbri"
       }
     ],
     "stats": {
@@ -5924,8 +5932,8 @@
         "offsides": 1,
         "saves": 2,
         "xg": 0.23,
-        "duelsWon": 21,
-        "boxTouches": 8
+        "duelsWon": 22,
+        "boxTouches": 9
       },
       "away": {
         "possession": 70.5,
@@ -5938,7 +5946,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 1.22,
-        "duelsWon": 19,
+        "duelsWon": 18,
         "boxTouches": 23
       }
     }
