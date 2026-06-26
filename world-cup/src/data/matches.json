@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "62",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6245,31 +6245,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.3,
+        "possession": 42,
         "shots": 6,
         "shotsOnTarget": 3,
         "passAccuracy": 78.4,
-        "accuratePasses": 207,
-        "fouls": 6,
+        "accuratePasses": 210,
+        "fouls": 7,
         "corners": 2,
         "offsides": 0,
         "saves": 5,
         "xg": 1.27,
-        "duelsWon": 31,
+        "duelsWon": 33,
         "boxTouches": 19
       },
       "away": {
-        "possession": 57.7,
+        "possession": 58,
         "shots": 15,
         "shotsOnTarget": 8,
-        "passAccuracy": 86.1,
-        "accuratePasses": 315,
+        "passAccuracy": 86.2,
+        "accuratePasses": 325,
         "fouls": 7,
         "corners": 3,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 2,
         "xg": 1.09,
-        "duelsWon": 33,
+        "duelsWon": 34,
         "boxTouches": 19
       }
     }
@@ -6285,10 +6285,10 @@
     "city": "Toronto",
     "homeTeamId": "sen",
     "awayTeamId": "irq",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "58",
+    "minute": "59",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6333,6 +6333,13 @@
         "player": "Ismaïla Sarr",
         "text": "Ismaïla Sarr Goal",
         "assist": "Lamine Camara"
+      },
+      {
+        "type": "goal",
+        "minute": "59'",
+        "teamId": "sen",
+        "player": "Pape Gueye",
+        "text": "Pape Gueye Goal"
       }
     ],
     "stats": {
