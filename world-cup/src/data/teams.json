@@ -754,9 +754,9 @@
     "possession": 48.8,
     "ppda": 13.8,
     "cleanSheets": 0,
-    "passCompletion": 83.5,
-    "xgFor": 6.41,
-    "xgAgainst": 3.83
+    "passCompletion": 83.4,
+    "xgFor": 6.42,
+    "xgAgainst": 4.03
   },
   {
     "id": "fra",
@@ -778,8 +778,8 @@
     "ppda": 14.5,
     "cleanSheets": 1,
     "passCompletion": 88,
-    "xgFor": 5.78,
-    "xgAgainst": 2.85
+    "xgFor": 5.98,
+    "xgAgainst": 2.86
   },
   {
     "id": "sen",
@@ -801,8 +801,8 @@
     "ppda": 13.9,
     "cleanSheets": 1,
     "passCompletion": 87.1,
-    "xgFor": 5.3,
-    "xgAgainst": 4.14
+    "xgFor": 5.26,
+    "xgAgainst": 4.11
   },
   {
     "id": "irq",
@@ -824,8 +824,8 @@
     "ppda": 16.6,
     "cleanSheets": 0,
     "passCompletion": 78.7,
-    "xgFor": 1.6,
-    "xgAgainst": 8.27
+    "xgFor": 1.57,
+    "xgAgainst": 8.23
   },
   {
     "id": "arg",
