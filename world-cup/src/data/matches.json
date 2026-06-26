@@ -6077,10 +6077,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "tur",
     "awayTeamId": "usa",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+8",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6133,15 +6133,22 @@
         "teamId": "usa",
         "player": "Sebastian Berhalter",
         "text": "Sebastian Berhalter Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+8'",
+        "teamId": "tur",
+        "player": "Kaan Ayhan",
+        "text": "Kaan Ayhan Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 47.1,
-        "shots": 7,
-        "shotsOnTarget": 2,
-        "passAccuracy": 76.8,
-        "accuratePasses": 328,
+        "possession": 47.4,
+        "shots": 9,
+        "shotsOnTarget": 3,
+        "passAccuracy": 76.6,
+        "accuratePasses": 333,
         "fouls": 13,
         "corners": 2,
         "offsides": 2,
@@ -6151,11 +6158,11 @@
         "boxTouches": 21
       },
       "away": {
-        "possession": 52.9,
+        "possession": 52.6,
         "shots": 18,
         "shotsOnTarget": 7,
-        "passAccuracy": 84.8,
-        "accuratePasses": 397,
+        "passAccuracy": 84.7,
+        "accuratePasses": 399,
         "fouls": 13,
         "corners": 9,
         "offsides": 5,
