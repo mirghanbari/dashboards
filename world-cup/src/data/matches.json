@@ -6187,7 +6187,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "51",
+    "minute": "52",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6245,31 +6245,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 39.9,
-        "shots": 4,
-        "shotsOnTarget": 2,
-        "passAccuracy": 77.1,
-        "accuratePasses": 158,
+        "possession": 39.8,
+        "shots": 5,
+        "shotsOnTarget": 3,
+        "passAccuracy": 77,
+        "accuratePasses": 164,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
         "saves": 5,
-        "xg": 0.41,
+        "xg": 1.2,
         "duelsWon": 28,
-        "boxTouches": 13
+        "boxTouches": 17
       },
       "away": {
-        "possession": 60.1,
+        "possession": 60.2,
         "shots": 14,
         "shotsOnTarget": 8,
-        "passAccuracy": 87.6,
-        "accuratePasses": 275,
+        "passAccuracy": 87.5,
+        "accuratePasses": 286,
         "fouls": 7,
         "corners": 3,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 1.05,
-        "duelsWon": 24,
+        "duelsWon": 25,
         "boxTouches": 19
       }
     }
@@ -6288,7 +6288,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "47",
+    "minute": "48",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6329,24 +6329,24 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.5,
-        "shots": 10,
+        "possession": 60.7,
+        "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 82.1,
-        "accuratePasses": 179,
+        "passAccuracy": 83.5,
+        "accuratePasses": 203,
         "fouls": 5,
         "corners": 6,
         "offsides": 1,
         "saves": 0,
-        "xg": 1,
-        "duelsWon": 21,
+        "xg": 1.02,
+        "duelsWon": 22,
         "boxTouches": 15
       },
       "away": {
-        "possession": 41.5,
+        "possession": 39.3,
         "shots": 4,
         "shotsOnTarget": 0,
-        "passAccuracy": 75.5,
+        "passAccuracy": 74.5,
         "accuratePasses": 120,
         "fouls": 4,
         "corners": 3,
