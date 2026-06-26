@@ -5809,7 +5809,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "60",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FOX",
@@ -5843,12 +5843,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.1,
+        "possession": 54.9,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 86.3,
         "accuratePasses": 284,
-        "fouls": 11,
+        "fouls": 12,
         "corners": 1,
         "offsides": 3,
         "saves": 1,
@@ -5857,11 +5857,11 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 41.9,
+        "possession": 45.1,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.1,
-        "accuratePasses": 172,
+        "passAccuracy": 77.5,
+        "accuratePasses": 203,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
@@ -5884,9 +5884,9 @@
     "homeTeamId": "tun",
     "awayTeamId": "ned",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "61",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FS1",
@@ -5926,36 +5926,45 @@
         "text": "Hazem Mastouri Goal - Header",
         "goalType": "header",
         "assist": "Hannibal Mejbri"
+      },
+      {
+        "type": "goal",
+        "minute": "62'",
+        "teamId": "ned",
+        "player": "Jan Paul van Hecke",
+        "text": "Jan Paul van Hecke Goal - Header",
+        "goalType": "header",
+        "assist": "Tijjani Reijnders"
       }
     ],
     "stats": {
       "home": {
-        "possession": 27.9,
+        "possession": 28,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 77,
+        "passAccuracy": 76.1,
         "accuratePasses": 137,
         "fouls": 6,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
         "xg": 0.3,
-        "duelsWon": 23,
+        "duelsWon": 24,
         "boxTouches": 9
       },
       "away": {
-        "possession": 72.1,
-        "shots": 13,
-        "shotsOnTarget": 3,
-        "passAccuracy": 92.5,
+        "possession": 72,
+        "shots": 15,
+        "shotsOnTarget": 4,
+        "passAccuracy": 92.3,
         "accuratePasses": 429,
         "fouls": 7,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 1,
-        "xg": 1.22,
+        "xg": 1.29,
         "duelsWon": 20,
-        "boxTouches": 23
+        "boxTouches": 26
       }
     }
   },
