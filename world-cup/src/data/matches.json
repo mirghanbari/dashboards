@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "8",
+    "minute": "9",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6463,28 +6463,35 @@
         "teamId": "ksa",
         "player": "Saud Abdulhamid",
         "text": "Saud Abdulhamid Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "9'",
+        "teamId": "cpv",
+        "player": "Wagner Pina",
+        "text": "Wagner Pina Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.9,
+        "possession": 58.7,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.2,
-        "accuratePasses": 41,
-        "fouls": 0,
+        "passAccuracy": 84.9,
+        "accuratePasses": 45,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "duelsWon": 5
       },
       "away": {
-        "possession": 35.1,
+        "possession": 41.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 73.1,
-        "accuratePasses": 19,
-        "fouls": 1,
+        "passAccuracy": 78.9,
+        "accuratePasses": 30,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
@@ -6506,7 +6513,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "8",
+    "minute": "9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6523,7 +6530,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 27.5,
+        "possession": 22.4,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 55.6,
@@ -6532,17 +6539,17 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 4,
+        "duelsWon": 5,
         "boxTouches": 1
       },
       "away": {
-        "possession": 72.5,
+        "possession": 77.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.2,
-        "accuratePasses": 41,
+        "passAccuracy": 90.2,
+        "accuratePasses": 55,
         "fouls": 2,
-        "corners": 1,
+        "corners": 3,
         "offsides": 0,
         "saves": 0,
         "duelsWon": 6,
