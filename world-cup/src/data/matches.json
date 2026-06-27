@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "64",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6696,31 +6696,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.4,
-        "shots": 11,
+        "possession": 63,
+        "shots": 12,
         "shotsOnTarget": 3,
-        "passAccuracy": 88,
-        "accuratePasses": 359,
+        "passAccuracy": 88.1,
+        "accuratePasses": 370,
         "fouls": 8,
         "corners": 6,
         "offsides": 0,
         "saves": 2,
         "xg": 0.67,
         "duelsWon": 42,
-        "boxTouches": 23
+        "boxTouches": 24
       },
       "away": {
-        "possession": 37.6,
+        "possession": 37,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.9,
+        "passAccuracy": 73.6,
         "accuratePasses": 181,
-        "fouls": 10,
+        "fouls": 11,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 1.27,
-        "duelsWon": 52,
+        "duelsWon": 54,
         "boxTouches": 12
       }
     }
@@ -6737,9 +6737,9 @@
     "homeTeamId": "nzl",
     "awayTeamId": "bel",
     "homeScore": 0,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6774,8 +6774,7 @@
         "minute": "50'",
         "teamId": "bel",
         "player": "Leandro Trossard",
-        "text": "Leandro Trossard Goal - Volley",
-        "goalType": "volley",
+        "text": "Leandro Trossard Goal",
         "assist": "Hans Vanaken"
       },
       {
@@ -6784,15 +6783,22 @@
         "teamId": "nzl",
         "player": "Elijah Just",
         "text": "Elijah Just Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "66'",
+        "teamId": "bel",
+        "player": "Kevin De Bruyne",
+        "text": "Kevin De Bruyne Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41.4,
+        "possession": 41.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 82,
-        "accuratePasses": 228,
+        "passAccuracy": 82.2,
+        "accuratePasses": 235,
         "fouls": 6,
         "corners": 3,
         "offsides": 1,
@@ -6802,18 +6808,18 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 58.6,
+        "possession": 58.1,
         "shots": 24,
         "shotsOnTarget": 6,
-        "passAccuracy": 87.2,
-        "accuratePasses": 348,
+        "passAccuracy": 87.3,
+        "accuratePasses": 350,
         "fouls": 5,
         "corners": 7,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.43,
-        "duelsWon": 24,
-        "boxTouches": 59
+        "xg": 2.65,
+        "duelsWon": 26,
+        "boxTouches": 60
       }
     }
   },
