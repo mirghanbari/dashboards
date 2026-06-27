@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "79",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6692,6 +6692,13 @@
         "teamId": "irn",
         "player": "Ali Nemati",
         "text": "Ali Nemati Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "79'",
+        "teamId": "irn",
+        "player": "Saeid Ezatolahi",
+        "text": "Saeid Ezatolahi Yellow Card"
       }
     ],
     "stats": {
@@ -6705,8 +6712,8 @@
         "corners": 8,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.77,
-        "duelsWon": 47,
+        "xg": 0.78,
+        "duelsWon": 48,
         "boxTouches": 27
       },
       "away": {
@@ -6720,7 +6727,7 @@
         "offsides": 1,
         "saves": 2,
         "xg": 1.31,
-        "duelsWon": 62,
+        "duelsWon": 63,
         "boxTouches": 16
       }
     }
@@ -6739,7 +6746,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "81",
+    "minute": "82",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6747,6 +6754,10 @@
       },
       {
         "name": "Universo",
+        "type": "stream"
+      },
+      {
+        "name": "FOX One",
         "type": "stream"
       }
     ],
@@ -6790,32 +6801,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 43.1,
+        "possession": 42.8,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.2,
-        "accuratePasses": 283,
+        "passAccuracy": 83.3,
+        "accuratePasses": 284,
         "fouls": 9,
         "corners": 4,
         "offsides": 1,
         "saves": 4,
         "xg": 0.2,
-        "duelsWon": 26,
+        "duelsWon": 28,
         "boxTouches": 4
       },
       "away": {
-        "possession": 56.9,
+        "possession": 57.2,
         "shots": 29,
         "shotsOnTarget": 7,
-        "passAccuracy": 87.2,
-        "accuratePasses": 396,
+        "passAccuracy": 87.4,
+        "accuratePasses": 403,
         "fouls": 6,
         "corners": 7,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.98,
+        "xg": 3,
         "duelsWon": 33,
-        "boxTouches": 64
+        "boxTouches": 65
       }
     }
   },
