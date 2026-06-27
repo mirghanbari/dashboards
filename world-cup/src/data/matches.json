@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "60",
+    "minute": "61",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6911,11 +6911,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.5,
+        "possession": 49.7,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 91.6,
-        "accuratePasses": 329,
+        "passAccuracy": 91.7,
+        "accuratePasses": 330,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
@@ -6925,7 +6925,7 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 50.5,
+        "possession": 50.3,
         "shots": 3,
         "shotsOnTarget": 0,
         "passAccuracy": 91.4,
@@ -6954,7 +6954,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6989,7 +6989,8 @@
         "minute": "62'",
         "teamId": "eng",
         "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal",
+        "text": "Jude Bellingham Goal - Volley",
+        "goalType": "volley",
         "assist": "Bukayo Saka"
       }
     ],
@@ -7018,7 +7019,7 @@
         "corners": 6,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.62,
+        "xg": 0.72,
         "duelsWon": 48,
         "boxTouches": 30
       }
