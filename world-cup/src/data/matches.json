@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "82",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6703,11 +6703,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 64.7,
+        "possession": 64.4,
         "shots": 14,
         "shotsOnTarget": 3,
         "passAccuracy": 88.5,
-        "accuratePasses": 461,
+        "accuratePasses": 463,
         "fouls": 9,
         "corners": 8,
         "offsides": 0,
@@ -6717,11 +6717,11 @@
         "boxTouches": 27
       },
       "away": {
-        "possession": 35.3,
+        "possession": 35.6,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.9,
-        "accuratePasses": 210,
+        "passAccuracy": 74,
+        "accuratePasses": 214,
         "fouls": 14,
         "corners": 1,
         "offsides": 1,
@@ -6743,10 +6743,10 @@
     "city": "Vancouver",
     "homeTeamId": "nzl",
     "awayTeamId": "bel",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6797,35 +6797,42 @@
         "teamId": "bel",
         "player": "Kevin De Bruyne",
         "text": "Kevin De Bruyne Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "84'",
+        "teamId": "nzl",
+        "player": "Elijah Just",
+        "text": "Elijah Just Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.6,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 83.1,
-        "accuratePasses": 291,
+        "possession": 43.5,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 83.5,
+        "accuratePasses": 303,
         "fouls": 9,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 4,
         "xg": 0.2,
         "duelsWon": 28,
-        "boxTouches": 4
+        "boxTouches": 5
       },
       "away": {
-        "possession": 57.4,
+        "possession": 56.5,
         "shots": 30,
         "shotsOnTarget": 7,
-        "passAccuracy": 87.9,
-        "accuratePasses": 420,
+        "passAccuracy": 87.7,
+        "accuratePasses": 422,
         "fouls": 7,
         "corners": 7,
         "offsides": 1,
         "saves": 1,
         "xg": 3,
-        "duelsWon": 33,
+        "duelsWon": 34,
         "boxTouches": 66
       }
     }
