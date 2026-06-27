@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "74",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6696,11 +6696,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 65.2,
+        "possession": 65,
         "shots": 13,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.3,
-        "accuratePasses": 415,
+        "passAccuracy": 87.9,
+        "accuratePasses": 416,
         "fouls": 9,
         "corners": 8,
         "offsides": 0,
@@ -6710,12 +6710,12 @@
         "boxTouches": 25
       },
       "away": {
-        "possession": 34.8,
+        "possession": 35,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.4,
-        "accuratePasses": 185,
-        "fouls": 12,
+        "passAccuracy": 73,
+        "accuratePasses": 187,
+        "fouls": 13,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
@@ -6739,7 +6739,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "75",
+    "minute": "77",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6794,11 +6794,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.2,
+        "possession": 43.2,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.6,
-        "accuratePasses": 246,
+        "passAccuracy": 83.6,
+        "accuratePasses": 275,
         "fouls": 8,
         "corners": 3,
         "offsides": 1,
@@ -6808,16 +6808,16 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 58.8,
-        "shots": 26,
+        "possession": 56.8,
+        "shots": 28,
         "shotsOnTarget": 7,
-        "passAccuracy": 88.2,
-        "accuratePasses": 380,
-        "fouls": 5,
+        "passAccuracy": 87.9,
+        "accuratePasses": 384,
+        "fouls": 6,
         "corners": 7,
         "offsides": 1,
         "saves": 1,
-        "xg": 2.81,
+        "xg": 2.88,
         "duelsWon": 28,
         "boxTouches": 64
       }
