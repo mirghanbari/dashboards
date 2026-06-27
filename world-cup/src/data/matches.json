@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "58",
+    "minute": "59",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6911,7 +6911,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.4,
+        "possession": 48.7,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 91.4,
@@ -6921,16 +6921,16 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.28,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 4
       },
       "away": {
-        "possession": 50,
-        "shots": 4,
+        "possession": 51.3,
+        "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.5,
-        "accuratePasses": 312,
-        "fouls": 8,
+        "passAccuracy": 91.2,
+        "accuratePasses": 331,
+        "fouls": 9,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
@@ -6976,11 +6976,18 @@
         "teamId": "pan",
         "player": "José Fajardo",
         "text": "José Fajardo Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "60'",
+        "teamId": "eng",
+        "player": "Jarell Quansah",
+        "text": "Jarell Quansah Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 28,
+        "possession": 27.9,
         "shots": 4,
         "shotsOnTarget": 2,
         "passAccuracy": 70.1,
@@ -6994,18 +7001,18 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 72,
+        "possession": 72.1,
         "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.7,
-        "accuratePasses": 361,
+        "passAccuracy": 88.8,
+        "accuratePasses": 363,
         "fouls": 5,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
         "xg": 0.62,
         "duelsWon": 48,
-        "boxTouches": 30
+        "boxTouches": 29
       }
     }
   },
