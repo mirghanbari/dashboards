@@ -6632,9 +6632,9 @@
     "homeTeamId": "egy",
     "awayTeamId": "irn",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6699,6 +6699,13 @@
         "teamId": "irn",
         "player": "Saeid Ezatolahi",
         "text": "Saeid Ezatolahi Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+2'",
+        "teamId": "egy",
+        "player": "Mohanad Lashin",
+        "text": "Mohanad Lashin Yellow Card"
       }
     ],
     "stats": {
@@ -6713,7 +6720,7 @@
         "offsides": 0,
         "saves": 2,
         "xg": 0.81,
-        "duelsWon": 56,
+        "duelsWon": 57,
         "boxTouches": 28
       },
       "away": {
@@ -6727,8 +6734,8 @@
         "offsides": 2,
         "saves": 2,
         "xg": 1.31,
-        "duelsWon": 68,
-        "boxTouches": 15
+        "duelsWon": 67,
+        "boxTouches": 16
       }
     }
   },
@@ -6744,9 +6751,9 @@
     "homeTeamId": "nzl",
     "awayTeamId": "bel",
     "homeScore": 1,
-    "awayScore": 4,
+    "awayScore": 5,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6813,15 +6820,22 @@
         "text": "Romelu Lukaku Goal - Header",
         "goalType": "header",
         "assist": "Nicolas Raskin"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+4'",
+        "teamId": "bel",
+        "player": "Alexis Saelemaekers",
+        "text": "Alexis Saelemaekers Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 44.7,
+        "possession": 45.2,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.4,
-        "accuratePasses": 352,
+        "passAccuracy": 84.8,
+        "accuratePasses": 362,
         "fouls": 10,
         "corners": 5,
         "offsides": 1,
@@ -6831,7 +6845,7 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 55.3,
+        "possession": 54.8,
         "shots": 34,
         "shotsOnTarget": 9,
         "passAccuracy": 88.1,
@@ -6840,9 +6854,9 @@
         "corners": 8,
         "offsides": 1,
         "saves": 1,
-        "xg": 3.59,
+        "xg": 3.6,
         "duelsWon": 38,
-        "boxTouches": 75
+        "boxTouches": 77
       }
     }
   },
