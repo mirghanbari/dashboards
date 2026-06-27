@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "5",
+    "minute": "6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,11 +7103,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.1,
+        "possession": 44.9,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 93.8,
-        "accuratePasses": 15,
+        "passAccuracy": 81.8,
+        "accuratePasses": 18,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
@@ -7116,17 +7116,17 @@
         "duelsWon": 2
       },
       "away": {
-        "possession": 57.9,
-        "shots": 0,
+        "possession": 55.1,
+        "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 95.5,
-        "accuratePasses": 21,
+        "passAccuracy": 88.9,
+        "accuratePasses": 24,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.01,
-        "duelsWon": 1
+        "duelsWon": 2
       }
     }
   },
@@ -7144,7 +7144,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "5",
+    "minute": "6",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7161,30 +7161,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 48.6,
+        "possession": 48.3,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 61.1,
-        "accuratePasses": 11,
+        "passAccuracy": 67.9,
+        "accuratePasses": 19,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0.02,
-        "duelsWon": 2
+        "duelsWon": 5
       },
       "away": {
-        "possession": 51.4,
+        "possession": 51.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.9,
-        "accuratePasses": 15,
+        "passAccuracy": 79.3,
+        "accuratePasses": 23,
         "fouls": 1,
         "corners": 0,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 0,
-        "xg": 0.1,
-        "duelsWon": 1
+        "xg": 0,
+        "duelsWon": 5
       }
     }
   },
