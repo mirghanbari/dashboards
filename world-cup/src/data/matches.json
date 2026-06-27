@@ -6882,9 +6882,9 @@
     "homeTeamId": "cro",
     "awayTeamId": "gha",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 0,
     "status": "live",
-    "minute": "73",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6914,18 +6914,11 @@
         "teamId": "cro",
         "player": "Ivan Perisic",
         "text": "Ivan Perisic Yellow Card"
-      },
-      {
-        "type": "goal",
-        "minute": "73'",
-        "teamId": "gha",
-        "player": "Derrick Luckassen",
-        "text": "Derrick Luckassen Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 52.5,
+        "possession": 52.3,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 92.4,
@@ -6939,18 +6932,18 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 47.5,
-        "shots": 3,
-        "shotsOnTarget": 0,
-        "passAccuracy": 91,
-        "accuratePasses": 355,
+        "possession": 47.7,
+        "shots": 4,
+        "shotsOnTarget": 1,
+        "passAccuracy": 90.8,
+        "accuratePasses": 356,
         "fouls": 9,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
         "duelsWon": 28,
-        "boxTouches": 5
+        "boxTouches": 4
       }
     }
   },
@@ -6968,7 +6961,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "75",
+    "minute": "76",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7019,26 +7012,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 30.7,
+        "possession": 31.6,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 72.6,
-        "accuratePasses": 138,
+        "passAccuracy": 73,
+        "accuratePasses": 146,
         "fouls": 12,
         "corners": 1,
         "offsides": 1,
         "saves": 3,
-        "xg": 0.36,
-        "duelsWon": 33,
-        "boxTouches": 6
+        "xg": 0.38,
+        "duelsWon": 35,
+        "boxTouches": 11
       },
       "away": {
-        "possession": 69.3,
+        "possession": 68.4,
         "shots": 14,
         "shotsOnTarget": 5,
-        "passAccuracy": 88.6,
-        "accuratePasses": 388,
-        "fouls": 8,
+        "passAccuracy": 88.4,
+        "accuratePasses": 389,
+        "fouls": 9,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
