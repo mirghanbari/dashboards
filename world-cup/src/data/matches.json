@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6905,7 +6905,8 @@
         "minute": "31'",
         "teamId": "cro",
         "player": "Petar Sucic",
-        "text": "Petar Sucic Goal"
+        "text": "Petar Sucic Goal",
+        "assist": "Mateo Kovacic"
       }
     ],
     "stats": {
@@ -6919,7 +6920,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.21,
+        "xg": 0.24,
         "duelsWon": 13
       },
       "away": {
@@ -6951,7 +6952,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FOX",
