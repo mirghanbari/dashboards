@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "10",
+    "minute": "11",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6655,7 +6655,8 @@
         "minute": "5'",
         "teamId": "egy",
         "player": "Mahmoud Saber",
-        "text": "Mahmoud Saber Goal",
+        "text": "Mahmoud Saber Goal - Volley",
+        "goalType": "volley",
         "assist": "Trézéguet"
       }
     ],
@@ -6684,7 +6685,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0,
+        "xg": 0.79,
         "duelsWon": 7,
         "boxTouches": 1
       }
@@ -6704,7 +6705,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "10",
+    "minute": "11",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6721,11 +6722,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 21,
+        "possession": 14.4,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 58.3,
-        "accuratePasses": 7,
+        "passAccuracy": 53.3,
+        "accuratePasses": 8,
         "fouls": 0,
         "corners": 0,
         "offsides": 1,
@@ -6734,17 +6735,17 @@
         "duelsWon": 5
       },
       "away": {
-        "possession": 79,
+        "possession": 85.6,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 85.4,
-        "accuratePasses": 41,
+        "passAccuracy": 87.1,
+        "accuratePasses": 81,
         "fouls": 0,
-        "corners": 0,
+        "corners": 1,
         "offsides": 0,
         "saves": 0,
         "xg": 0.02,
-        "duelsWon": 2
+        "duelsWon": 4
       }
     }
   },
