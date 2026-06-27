@@ -8,6 +8,7 @@ import {
   qualificationByGroup,
   thirdPlaceRace,
   thirdPlaceVerdicts,
+  provisionalThirdOutcomes,
   useLiveMatches,
   applyLive,
   liveStandings,
@@ -16,6 +17,8 @@ import type {
   QualStatus,
   TeamQualification,
   ThirdVerdict,
+  ProvisionalOutcomes,
+  ResultOutcome,
 } from "../data";
 import type { Match } from "../types";
 import { liveClock } from "../clock";
@@ -118,24 +121,37 @@ function bubbleNote(v: ThirdVerdict, remaining: string[]): string {
   return `Needs at least ${numWord(v.needBelow)} of the ${numWord(n)} still-to-finish thirds (${where}) to come in at or below it.`;
 }
 
+/** What each result earns a still-playing third, spelled out as a clause. */
+const OUTCOME_VERB: Record<ResultOutcome, string> = {
+  top2: "and it goes through as the group runner-up",
+  "best-third": "and it still reaches the Round of 32 as a best third",
+  bubble: "and it is left on the best-third bubble, needing other results",
+  eliminated: "and it is eliminated",
+};
+
 /** A still-playing team's situation — its group hasn't finished, so its own
- *  result decides it before the cross-group cut even applies. The team's group
- *  scenario (what it needs for the top two) is spelled out as the exact result,
- *  with the fallback being the best-third route. */
-function provisionalNote(v: ThirdVerdict, scenario: string): string {
+ *  result decides whether it reaches the R32 via the top two OR the best-third
+ *  cut. The outcome of each result (win / draw / loss) is computed by the engine
+ *  (`provisionalThirdOutcomes`), so a draw that clinches a best-third place — or
+ *  one that eliminates — is stated as such, not lumped into a vague "chase". */
+function provisionalNote(v: ThirdVerdict, o?: ProvisionalOutcomes): string {
   const lead =
     v.gamesLeft === 1
-      ? `Third in Group ${v.group}, final game to play`
-      : `Third in Group ${v.group}, ${numWord(v.gamesLeft)} group games to play`;
+      ? `Final game in Group ${v.group}`
+      : `Group ${v.group}, ${numWord(v.gamesLeft)} group games to play`;
 
-  if (/win or draw/i.test(scenario))
-    return `${lead} — a win or draw lifts it into the top two; only a defeat drops it into the best-third race.`;
-  if (/win guarantees/i.test(scenario))
-    return `${lead} — a win lifts it into the top two; a draw or defeat leaves it chasing a best-third place.`;
-  if (/must win/i.test(scenario))
-    return `${lead} — it must win, and hope other results fall its way, to take the top two; otherwise it is chasing a best-third place.`;
-  // No crisp single-result case (e.g. already out of the top two): keep it general.
-  return `${lead} — its own result still decides whether it climbs into the top two or chases a best-third place.`;
+  // Fall back to the general line if outcomes aren't a crisp one-game case.
+  if (!o || v.gamesLeft !== 1)
+    return `${lead} — its own result still decides whether it climbs into the top two or chases a best-third place.`;
+
+  const clauses = [`a win ${OUTCOME_VERB[o.win]}`];
+  if (o.draw === o.loss) {
+    clauses.push(`a draw or defeat ${OUTCOME_VERB[o.draw]}`);
+  } else {
+    clauses.push(`a draw ${OUTCOME_VERB[o.draw]}`);
+    clauses.push(`defeat ${OUTCOME_VERB[o.loss]}`);
+  }
+  return `${lead}: ${clauses.join("; ")}.`;
 }
 
 function ThirdNameList({ ids }: { ids: string[] }) {
@@ -160,11 +176,11 @@ function ThirdNameList({ ids }: { ids: string[] }) {
 function ThirdPlaceNote({
   verdicts,
   remainingGroups,
-  scenarioById,
+  outcomesById,
 }: {
   verdicts: ThirdVerdict[];
   remainingGroups: string[];
-  scenarioById: Map<string, string>;
+  outcomesById: Map<string, ProvisionalOutcomes>;
 }) {
   // "Through"/"Out" are settled verdicts (the team's own group is finished).
   // The bubble holds every team still in the race: the settled thirds with an
@@ -234,7 +250,7 @@ function ThirdPlaceNote({
                     <span className="tn-cond">
                       {v.groupComplete
                         ? bubbleNote(v, remainingGroups)
-                        : provisionalNote(v, scenarioById.get(v.teamId) ?? "")}
+                        : provisionalNote(v, outcomesById.get(v.teamId))}
                     </span>
                   </li>
                 );
@@ -291,14 +307,18 @@ export function Qualification() {
     () => thirdPlaceVerdicts(liveStandings(live), applyLive(MATCHES, live)),
     [live],
   );
-  // teamId → its own group scenario ("A win guarantees…", etc.), so a still-playing
-  // third's note can spell out the exact result it needs for the top two.
-  const scenarioById = useMemo(() => {
-    const m = new Map<string, string>();
-    for (const g of groups)
-      for (const t of g.teams) m.set(t.teamId, t.scenario);
+  // teamId → per-result R32 outcome (win/draw/loss → top2 | best-third | bubble |
+  // eliminated) for each still-playing third, so its note spells out exactly what
+  // each result earns — via the top two OR the best-third cut.
+  const outcomesById = useMemo(() => {
+    const teams = liveStandings(live);
+    const matches = applyLive(MATCHES, live);
+    const m = new Map<string, ProvisionalOutcomes>();
+    for (const v of thirdVerdicts.verdicts)
+      if (!v.groupComplete)
+        m.set(v.teamId, provisionalThirdOutcomes(v.teamId, teams, matches));
     return m;
-  }, [groups]);
+  }, [live, thirdVerdicts]);
 
   // In-progress group games, keyed by group letter, for the per-card banner.
   const liveByGroup = useMemo(() => {
@@ -366,7 +386,7 @@ export function Qualification() {
         <ThirdPlaceNote
           verdicts={thirdVerdicts.verdicts}
           remainingGroups={thirdVerdicts.remainingGroups}
-          scenarioById={scenarioById}
+          outcomesById={outcomesById}
         />
         <table className="ranking-table third-race">
           <thead>

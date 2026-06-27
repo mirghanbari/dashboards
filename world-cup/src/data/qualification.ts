@@ -147,6 +147,7 @@ interface Engine {
   classifyGroup(group: string): GroupQualification;
   thirdPlaceRace(): ThirdPlaceRow[];
   thirdPlaceVerdicts(): ThirdPlaceVerdicts;
+  provisionalThirdOutcomes(id: string): ProvisionalOutcomes;
 }
 
 function createEngine(teams: Team[], matches: Match[]): Engine {
@@ -470,7 +471,85 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     return { verdicts, remainingGroups };
   };
 
-  return { groups, classifyGroup, thirdPlaceRace, thirdPlaceVerdicts };
+  // ---- Per-result outcome for a still-playing third -----------------------
+  // For a team that is currently its group's third with exactly one game left,
+  // work out what each of its three possible results (win / draw / loss) means
+  // for reaching the Round of 32 — crucially via EITHER route (top two OR best
+  // third), since for a third-placed team a draw can clinch a best-third spot
+  // while a different result eliminates it outright. The same points-only,
+  // margins-free rigour as `thirdPlaceVerdicts`: counting a level-on-points
+  // rival as "can be above" is conservative, so a `best-third` verdict is a real
+  // guarantee (never over-promised) and an `eliminated` verdict is certain.
+  const provisionalThirdOutcomes = (id: string): ProvisionalOutcomes => {
+    const team = teams.find((t) => t.id === id);
+    const group = team?.group ?? "";
+    const rem = remainingMatches(group);
+    const base = basePoints(group);
+    const combos = combinations(rem);
+    const xMatch = rem.find((m) => m.homeTeamId === id || m.awayTeamId === id);
+    const xi = xMatch ? rem.indexOf(xMatch) : -1;
+    const idIsHome = xMatch?.homeTeamId === id;
+    const allowAbove = THIRDS_ADVANCING - 1; // 7 rivals above and you're still 8th
+
+    const classify = (result: "win" | "draw" | "loss"): ResultOutcome => {
+      if (xi < 0) return "bubble";
+      const wanted: Outcome =
+        result === "draw" ? "draw" : (result === "win") === idIsHome ? "home" : "away";
+      const sub = combos.filter((c) => c[xi] === wanted);
+
+      // Top-two analysis over the completions matching this result.
+      let guarTop2 = true; // top two in every completion
+      let canTop2 = false; // top two in at least one
+      let alwaysThird = true; // never worse than 3rd (at most two rivals above)
+      for (const c of sub) {
+        const { poss } = aheadCounts(
+          pointsFor(base, rem, c),
+          decidedForCombo(group, rem, c),
+          id,
+        );
+        if (poss > 1) guarTop2 = false;
+        else canTop2 = true;
+        if (poss > 2) alwaysThird = false;
+      }
+      if (guarTop2) return "top2";
+
+      // Best-third route: X's points are final after this game (its only one).
+      const pX = base[id] + (result === "win" ? 3 : result === "draw" ? 1 : 0);
+      let canAbove = 0; // thirds that can finish at or above X (worst case for X)
+      let mustAbove = 0; // thirds forced strictly above X (best case for X)
+      for (const g of groups) {
+        if (g === group) continue;
+        if (remainingMatches(g).length === 0) {
+          const y = standings(g)[2];
+          if (y && y.points >= pX) canAbove++;
+          if (y && y.points > pX) mustAbove++;
+        } else {
+          if (maxThirdSlotPoints(g) >= pX) canAbove++;
+          if (minThirdPoints(g) > pX) mustAbove++;
+        }
+      }
+
+      if (alwaysThird && canAbove <= allowAbove) return "best-third";
+      if (mustAbove >= THIRDS_ADVANCING && !canTop2) return "eliminated";
+      return "bubble";
+    };
+
+    return {
+      teamId: id,
+      group,
+      win: classify("win"),
+      draw: classify("draw"),
+      loss: classify("loss"),
+    };
+  };
+
+  return {
+    groups,
+    classifyGroup,
+    thirdPlaceRace,
+    thirdPlaceVerdicts,
+    provisionalThirdOutcomes,
+  };
 }
 
 const byStrength = (a: Standing, b: Standing) =>
@@ -497,6 +576,21 @@ export interface ThirdVerdict {
 export interface ThirdPlaceVerdicts {
   verdicts: ThirdVerdict[];
   remainingGroups: string[]; // groups whose third place is not yet decided
+}
+
+/** What one of a still-playing third's possible results means for the R32. */
+export type ResultOutcome =
+  | "top2" // guaranteed top two (through as a group runner-up)
+  | "best-third" // guaranteed the R32, at worst as one of the best thirds
+  | "bubble" // still possible, but not guaranteed
+  | "eliminated"; // cannot reach the R32 by any route
+
+export interface ProvisionalOutcomes {
+  teamId: string;
+  group: string;
+  win: ResultOutcome;
+  draw: ResultOutcome;
+  loss: ResultOutcome;
 }
 
 // ---- Public API -----------------------------------------------------------
@@ -535,4 +629,13 @@ export function thirdPlaceVerdicts(
   matches: Match[] = MATCHES,
 ): ThirdPlaceVerdicts {
   return createEngine(teams, matches).thirdPlaceVerdicts();
+}
+
+/** What each result (win/draw/loss) would mean for a still-playing third. */
+export function provisionalThirdOutcomes(
+  id: string,
+  teams: Team[] = TEAMS,
+  matches: Match[] = MATCHES,
+): ProvisionalOutcomes {
+  return createEngine(teams, matches).provisionalThirdOutcomes(id);
 }

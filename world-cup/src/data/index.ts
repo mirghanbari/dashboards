@@ -232,10 +232,13 @@ export {
   qualificationByGroup,
   thirdPlaceRace,
   thirdPlaceVerdicts,
+  provisionalThirdOutcomes,
   type QualStatus,
   type TeamQualification,
   type GroupQualification,
   type ThirdPlaceRow,
   type ThirdVerdict,
   type ThirdPlaceVerdicts,
+  type ProvisionalOutcomes,
+  type ResultOutcome,
 } from "./qualification";
