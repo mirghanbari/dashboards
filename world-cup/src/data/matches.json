@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6911,31 +6911,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 48.7,
+        "possession": 49.5,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 91.4,
-        "accuratePasses": 317,
+        "passAccuracy": 91.6,
+        "accuratePasses": 329,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.28,
         "duelsWon": 22,
-        "boxTouches": 4
+        "boxTouches": 5
       },
       "away": {
-        "possession": 51.3,
+        "possession": 50.5,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.2,
+        "passAccuracy": 91.4,
         "accuratePasses": 331,
         "fouls": 9,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 4
       }
     }
@@ -6952,9 +6952,9 @@
     "homeTeamId": "pan",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "61",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6983,11 +6983,19 @@
         "teamId": "eng",
         "player": "Jarell Quansah",
         "text": "Jarell Quansah Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "62'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal",
+        "assist": "Bukayo Saka"
       }
     ],
     "stats": {
       "home": {
-        "possession": 27.9,
+        "possession": 27.8,
         "shots": 4,
         "shotsOnTarget": 2,
         "passAccuracy": 70.1,
@@ -7001,9 +7009,9 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 72.1,
-        "shots": 11,
-        "shotsOnTarget": 3,
+        "possession": 72.2,
+        "shots": 12,
+        "shotsOnTarget": 4,
         "passAccuracy": 88.8,
         "accuratePasses": 363,
         "fouls": 5,
@@ -7012,7 +7020,7 @@
         "saves": 2,
         "xg": 0.62,
         "duelsWon": 48,
-        "boxTouches": 29
+        "boxTouches": 30
       }
     }
   },
