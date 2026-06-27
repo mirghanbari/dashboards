@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6483,8 +6483,8 @@
         "corners": 3,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.38,
-        "duelsWon": 38,
+        "xg": 0.4,
+        "duelsWon": 37,
         "boxTouches": 11
       },
       "away": {
@@ -6497,9 +6497,9 @@
         "corners": 1,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.19,
+        "xg": 0.2,
         "duelsWon": 40,
-        "boxTouches": 8
+        "boxTouches": 9
       }
     }
   },
@@ -6554,16 +6554,23 @@
         "teamId": "uru",
         "player": "Juan Manuel Sanabria",
         "text": "Juan Manuel Sanabria Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "58'",
+        "teamId": "uru",
+        "player": "Guillermo Varela",
+        "text": "Guillermo Varela Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 29,
+        "possession": 28.8,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 75.3,
-        "accuratePasses": 128,
-        "fouls": 4,
+        "passAccuracy": 75,
+        "accuratePasses": 129,
+        "fouls": 5,
         "corners": 0,
         "offsides": 3,
         "saves": 0,
@@ -6572,17 +6579,17 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 71,
+        "possession": 71.2,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 90,
-        "accuratePasses": 376,
+        "passAccuracy": 89.3,
+        "accuratePasses": 382,
         "fouls": 10,
-        "corners": 5,
+        "corners": 6,
         "offsides": 1,
         "saves": 1,
         "xg": 0.31,
-        "duelsWon": 30,
+        "duelsWon": 31,
         "boxTouches": 11
       }
     }
