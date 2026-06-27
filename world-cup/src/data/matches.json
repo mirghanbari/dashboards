@@ -6632,9 +6632,9 @@
     "homeTeamId": "egy",
     "awayTeamId": "irn",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 1,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6708,13 +6708,6 @@
         "text": "Mohanad Lashin Yellow Card"
       },
       {
-        "type": "goal",
-        "minute": "90'+3'",
-        "teamId": "irn",
-        "player": "Shoja Khalilzadeh",
-        "text": "Shoja Khalilzadeh Goal"
-      },
-      {
         "type": "yellow",
         "minute": "90'+4'",
         "teamId": "irn",
@@ -6724,7 +6717,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.2,
+        "possession": 62.3,
         "shots": 15,
         "shotsOnTarget": 3,
         "passAccuracy": 88.1,
@@ -6734,22 +6727,22 @@
         "offsides": 0,
         "saves": 3,
         "xg": 0.81,
-        "duelsWon": 57,
+        "duelsWon": 58,
         "boxTouches": 28
       },
       "away": {
-        "possession": 37.8,
-        "shots": 11,
-        "shotsOnTarget": 5,
-        "passAccuracy": 76.6,
+        "possession": 37.7,
+        "shots": 10,
+        "shotsOnTarget": 4,
+        "passAccuracy": 76.8,
         "accuratePasses": 268,
         "fouls": 16,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 1.78,
+        "xg": 1.59,
         "duelsWon": 68,
-        "boxTouches": 17
+        "boxTouches": 16
       }
     }
   },
