@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6700,7 +6700,7 @@
         "shots": 11,
         "shotsOnTarget": 3,
         "passAccuracy": 87.3,
-        "accuratePasses": 317,
+        "accuratePasses": 323,
         "fouls": 8,
         "corners": 5,
         "offsides": 0,
@@ -6713,14 +6713,14 @@
         "possession": 38.5,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.9,
-        "accuratePasses": 167,
+        "passAccuracy": 73.6,
+        "accuratePasses": 170,
         "fouls": 9,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.26,
-        "duelsWon": 48,
+        "xg": 1.27,
+        "duelsWon": 49,
         "boxTouches": 12
       }
     }
@@ -6739,7 +6739,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6788,32 +6788,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 40,
-        "shots": 2,
+        "possession": 40.8,
+        "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 82.4,
-        "accuratePasses": 202,
+        "accuratePasses": 215,
         "fouls": 6,
-        "corners": 1,
+        "corners": 2,
         "offsides": 1,
         "saves": 3,
-        "xg": 0.08,
+        "xg": 0.06,
         "duelsWon": 20,
-        "boxTouches": 2
+        "boxTouches": 1
       },
       "away": {
-        "possession": 60,
+        "possession": 59.2,
         "shots": 19,
         "shotsOnTarget": 5,
-        "passAccuracy": 88.3,
-        "accuratePasses": 326,
+        "passAccuracy": 87.9,
+        "accuratePasses": 335,
         "fouls": 4,
-        "corners": 4,
+        "corners": 5,
         "offsides": 1,
         "saves": 1,
         "xg": 2.06,
         "duelsWon": 24,
-        "boxTouches": 51
+        "boxTouches": 52
       }
     }
   },
