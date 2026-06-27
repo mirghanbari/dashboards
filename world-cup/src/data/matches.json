@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6470,36 +6470,43 @@
         "teamId": "cpv",
         "player": "Wagner Pina",
         "text": "Wagner Pina Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "67'",
+        "teamId": "ksa",
+        "player": "Nasser Al-Dawsari",
+        "text": "Nasser Al-Dawsari Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.6,
+        "possession": 54.5,
         "shots": 8,
         "shotsOnTarget": 1,
-        "passAccuracy": 85,
-        "accuratePasses": 300,
+        "passAccuracy": 84.9,
+        "accuratePasses": 304,
         "fouls": 8,
         "corners": 3,
         "offsides": 0,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.4,
-        "duelsWon": 40,
+        "duelsWon": 41,
         "boxTouches": 12
       },
       "away": {
-        "possession": 45.4,
-        "shots": 4,
-        "shotsOnTarget": 1,
+        "possession": 45.5,
+        "shots": 5,
+        "shotsOnTarget": 2,
         "passAccuracy": 79.5,
-        "accuratePasses": 240,
-        "fouls": 10,
+        "accuratePasses": 245,
+        "fouls": 12,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.2,
-        "duelsWon": 42,
-        "boxTouches": 9
+        "xg": 0.24,
+        "duelsWon": 43,
+        "boxTouches": 10
       }
     }
   },
@@ -6517,7 +6524,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6565,31 +6572,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.5,
+        "possession": 28.8,
         "shots": 4,
         "shotsOnTarget": 0,
-        "passAccuracy": 74,
-        "accuratePasses": 142,
-        "fouls": 6,
+        "passAccuracy": 74.5,
+        "accuratePasses": 146,
+        "fouls": 7,
         "corners": 0,
         "offsides": 3,
         "saves": 0,
-        "xg": 0.17,
-        "duelsWon": 36,
+        "xg": 0.18,
+        "duelsWon": 38,
         "boxTouches": 8
       },
       "away": {
-        "possession": 71.5,
+        "possession": 71.2,
         "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 89.5,
-        "accuratePasses": 433,
+        "accuratePasses": 437,
         "fouls": 10,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
         "xg": 0.48,
-        "duelsWon": 34,
+        "duelsWon": 35,
         "boxTouches": 13
       }
     }
