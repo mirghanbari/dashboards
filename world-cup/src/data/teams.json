@@ -591,11 +591,11 @@
     "goalsAgainst": 3,
     "points": 3,
     "possession": 39,
-    "ppda": 13.2,
+    "ppda": 13.4,
     "cleanSheets": 1,
     "passCompletion": 75.6,
-    "xgFor": 4.22,
-    "xgAgainst": 3.84
+    "xgFor": 4.24,
+    "xgAgainst": 3.87
   },
   {
     "id": "egy",
@@ -613,12 +613,12 @@
     "goalsFor": 5,
     "goalsAgainst": 3,
     "points": 5,
-    "possession": 54.4,
+    "possession": 54.5,
     "ppda": 10,
     "cleanSheets": 0,
-    "passCompletion": 85.3,
-    "xgFor": 3.78,
-    "xgAgainst": 4.69
+    "passCompletion": 85.2,
+    "xgFor": 3.81,
+    "xgAgainst": 4.71
   },
   {
     "id": "nzl",
@@ -639,7 +639,7 @@
     "possession": 47.1,
     "ppda": 15.9,
     "cleanSheets": 0,
-    "passCompletion": 83.1,
+    "passCompletion": 83,
     "xgFor": 2.73,
     "xgAgainst": 7.03
   },
