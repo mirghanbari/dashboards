@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "50",
+    "minute": "51",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6696,31 +6696,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 60.2,
+        "possession": 61.6,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.8,
-        "accuratePasses": 269,
+        "passAccuracy": 87.3,
+        "accuratePasses": 295,
         "fouls": 6,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
         "xg": 0.36,
-        "duelsWon": 35,
+        "duelsWon": 36,
         "boxTouches": 17
       },
       "away": {
-        "possession": 39.8,
+        "possession": 38.4,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.7,
-        "accuratePasses": 151,
+        "passAccuracy": 74.2,
+        "accuratePasses": 155,
         "fouls": 8,
         "corners": 1,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 1.24,
-        "duelsWon": 42,
+        "duelsWon": 44,
         "boxTouches": 12
       }
     }
@@ -6739,7 +6739,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "51",
+    "minute": "52",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6774,17 +6774,18 @@
         "minute": "50'",
         "teamId": "bel",
         "player": "Leandro Trossard",
-        "text": "Leandro Trossard Goal",
+        "text": "Leandro Trossard Goal - Volley",
+        "goalType": "volley",
         "assist": "Hans Vanaken"
       }
     ],
     "stats": {
       "home": {
-        "possession": 39.5,
+        "possession": 39.8,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.5,
-        "accuratePasses": 182,
+        "passAccuracy": 83.7,
+        "accuratePasses": 185,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
@@ -6794,8 +6795,8 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 60.5,
-        "shots": 18,
+        "possession": 60.2,
+        "shots": 19,
         "shotsOnTarget": 5,
         "passAccuracy": 88.7,
         "accuratePasses": 299,
@@ -6803,7 +6804,7 @@
         "corners": 4,
         "offsides": 1,
         "saves": 0,
-        "xg": 1.91,
+        "xg": 2.06,
         "duelsWon": 21,
         "boxTouches": 50
       }
