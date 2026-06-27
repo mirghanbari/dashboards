@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6713,6 +6713,13 @@
         "teamId": "irn",
         "player": "Shoja Khalilzadeh",
         "text": "Shoja Khalilzadeh Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+4'",
+        "teamId": "irn",
+        "player": "Shoja Khalilzadeh",
+        "text": "Shoja Khalilzadeh Yellow Card"
       }
     ],
     "stats": {
@@ -6740,7 +6747,7 @@
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 1.59,
+        "xg": 1.78,
         "duelsWon": 68,
         "boxTouches": 17
       }
@@ -6759,8 +6766,8 @@
     "awayTeamId": "bel",
     "homeScore": 1,
     "awayScore": 5,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -6856,8 +6863,8 @@
         "possession": 54.6,
         "shots": 35,
         "shotsOnTarget": 10,
-        "passAccuracy": 87.8,
-        "accuratePasses": 462,
+        "passAccuracy": 88,
+        "accuratePasses": 463,
         "fouls": 7,
         "corners": 8,
         "offsides": 1,
