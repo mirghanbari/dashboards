@@ -6727,12 +6727,12 @@
         "offsides": 0,
         "saves": 3,
         "xg": 0.81,
-        "duelsWon": 61,
+        "duelsWon": 62,
         "boxTouches": 28
       },
       "away": {
         "possession": 38.7,
-        "shots": 12,
+        "shots": 13,
         "shotsOnTarget": 4,
         "passAccuracy": 76.6,
         "accuratePasses": 281,
@@ -6741,8 +6741,8 @@
         "offsides": 3,
         "saves": 2,
         "xg": 1.95,
-        "duelsWon": 70,
-        "boxTouches": 23
+        "duelsWon": 71,
+        "boxTouches": 24
       }
     }
   },
@@ -7300,9 +7300,8 @@
     "date": "2026-07-01T20:00Z",
     "venue": "Lumen Field",
     "city": "Seattle, Washington",
-    "homeTeamId": "tbd",
+    "homeTeamId": "bel",
     "awayTeamId": "tbd",
-    "homeSlot": "Group G Winner",
     "awaySlot": "Third Place Group A/E/H/I/J",
     "homeScore": null,
     "awayScore": null,
@@ -7457,8 +7456,7 @@
     "venue": "AT&T Stadium",
     "city": "Arlington, Texas",
     "homeTeamId": "aus",
-    "awayTeamId": "tbd",
-    "awaySlot": "Group G 2nd Place",
+    "awayTeamId": "egy",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
