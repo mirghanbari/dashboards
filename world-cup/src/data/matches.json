@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6474,11 +6474,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.5,
+        "possession": 57,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.7,
-        "accuratePasses": 144,
+        "passAccuracy": 84,
+        "accuratePasses": 152,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
@@ -6488,7 +6488,7 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 44.5,
+        "possession": 43,
         "shots": 1,
         "shotsOnTarget": 0,
         "passAccuracy": 79.6,
@@ -6517,7 +6517,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6538,15 +6538,16 @@
         "minute": "42'",
         "teamId": "esp",
         "player": "Álex Baena",
-        "text": "Álex Baena Goal"
+        "text": "Álex Baena Goal",
+        "assist": "Marcos Llorente"
       }
     ],
     "stats": {
       "home": {
-        "possession": 25.6,
+        "possession": 25.2,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 68.7,
+        "passAccuracy": 67.3,
         "accuratePasses": 68,
         "fouls": 1,
         "corners": 0,
@@ -6557,17 +6558,17 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 74.4,
-        "shots": 2,
-        "shotsOnTarget": 0,
-        "passAccuracy": 89.5,
-        "accuratePasses": 257,
+        "possession": 74.8,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 89.2,
+        "accuratePasses": 265,
         "fouls": 5,
         "corners": 5,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.19,
-        "duelsWon": 24,
+        "xg": 0.33,
+        "duelsWon": 23,
         "boxTouches": 10
       }
     }
