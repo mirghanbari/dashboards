@@ -6881,10 +6881,10 @@
     "city": "Philadelphia, Pennsylvania",
     "homeTeamId": "cro",
     "awayTeamId": "gha",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "1",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6898,7 +6898,33 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 100,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 6,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
+      },
+      "away": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 1,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M068",
@@ -6911,10 +6937,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "pan",
     "awayTeamId": "eng",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6928,7 +6954,35 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 100,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 1,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.04,
+        "duelsWon": 0
+      },
+      "away": {
+        "possession": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0,
+        "duelsWon": 2
+      }
+    }
   },
   {
     "id": "M069",
