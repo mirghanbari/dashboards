@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "38",
+    "minute": "39",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6911,24 +6911,24 @@
     ],
     "stats": {
       "home": {
-        "possession": 46.7,
-        "shots": 4,
+        "possession": 51.6,
+        "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 94.2,
-        "accuratePasses": 179,
+        "passAccuracy": 94,
+        "accuratePasses": 220,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.24,
+        "xg": 0.28,
         "duelsWon": 15
       },
       "away": {
-        "possession": 53.3,
+        "possession": 48.4,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 92.6,
-        "accuratePasses": 201,
+        "passAccuracy": 92.2,
+        "accuratePasses": 202,
         "fouls": 6,
         "corners": 0,
         "offsides": 0,
@@ -6952,7 +6952,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "38",
+    "minute": "39",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6969,32 +6969,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 29.5,
+        "possession": 29,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 74.5,
-        "accuratePasses": 76,
+        "passAccuracy": 75.2,
+        "accuratePasses": 79,
         "fouls": 7,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 0.15,
-        "duelsWon": 17,
+        "duelsWon": 18,
         "boxTouches": 2
       },
       "away": {
-        "possession": 70.5,
-        "shots": 7,
+        "possession": 71,
+        "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 91.5,
-        "accuratePasses": 236,
+        "passAccuracy": 91.4,
+        "accuratePasses": 246,
         "fouls": 3,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.36,
-        "duelsWon": 24,
-        "boxTouches": 14
+        "xg": 0.45,
+        "duelsWon": 27,
+        "boxTouches": 16
       }
     }
   },
