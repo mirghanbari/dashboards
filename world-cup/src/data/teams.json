@@ -705,12 +705,12 @@
     "goalsFor": 1,
     "goalsAgainst": 5,
     "points": 2,
-    "possession": 38.3,
+    "possession": 38.4,
     "ppda": 15.3,
     "cleanSheets": 1,
     "passCompletion": 78.3,
-    "xgFor": 1.24,
-    "xgAgainst": 5.62
+    "xgFor": 1.23,
+    "xgAgainst": 5.47
   },
   {
     "id": "cpv",
@@ -732,8 +732,8 @@
     "ppda": 16.7,
     "cleanSheets": 2,
     "passCompletion": 77.3,
-    "xgFor": 2.61,
-    "xgAgainst": 4.82
+    "xgFor": 2.46,
+    "xgAgainst": 4.81
   },
   {
     "id": "nor",
