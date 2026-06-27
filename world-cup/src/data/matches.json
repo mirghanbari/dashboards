@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6712,8 +6712,8 @@
         "corners": 8,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.78,
-        "duelsWon": 50,
+        "xg": 0.81,
+        "duelsWon": 52,
         "boxTouches": 28
       },
       "away": {
@@ -6746,7 +6746,7 @@
     "homeScore": 1,
     "awayScore": 4,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6811,16 +6811,17 @@
         "teamId": "bel",
         "player": "Romelu Lukaku",
         "text": "Romelu Lukaku Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Nicolas Raskin"
       }
     ],
     "stats": {
       "home": {
-        "possession": 43.5,
+        "possession": 43.1,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.5,
-        "accuratePasses": 303,
+        "passAccuracy": 83.1,
+        "accuratePasses": 304,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
@@ -6830,16 +6831,16 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 56.5,
-        "shots": 30,
-        "shotsOnTarget": 7,
-        "passAccuracy": 87.7,
-        "accuratePasses": 422,
+        "possession": 56.9,
+        "shots": 31,
+        "shotsOnTarget": 8,
+        "passAccuracy": 88,
+        "accuratePasses": 433,
         "fouls": 7,
         "corners": 7,
         "offsides": 1,
         "saves": 1,
-        "xg": 3,
+        "xg": 3.52,
         "duelsWon": 34,
         "boxTouches": 68
       }
