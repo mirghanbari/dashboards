@@ -6439,7 +6439,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6475,6 +6475,13 @@
         "teamId": "ksa",
         "player": "Nasser Al-Dawsari",
         "text": "Nasser Al-Dawsari Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "ksa",
+        "player": "Feras Al-Brikan",
+        "text": "Feras Al-Brikan Yellow Card"
       }
     ],
     "stats": {
@@ -6482,29 +6489,29 @@
         "possession": 50.7,
         "shots": 15,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.1,
-        "accuratePasses": 371,
+        "passAccuracy": 85.2,
+        "accuratePasses": 373,
         "fouls": 10,
         "corners": 4,
         "offsides": 1,
-        "saves": 2,
+        "saves": 3,
         "xg": 1.52,
-        "duelsWon": 54,
+        "duelsWon": 57,
         "boxTouches": 18
       },
       "away": {
         "possession": 49.3,
-        "shots": 6,
-        "shotsOnTarget": 2,
-        "passAccuracy": 81,
-        "accuratePasses": 353,
-        "fouls": 15,
+        "shots": 7,
+        "shotsOnTarget": 3,
+        "passAccuracy": 80.9,
+        "accuratePasses": 355,
+        "fouls": 16,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.27,
-        "duelsWon": 53,
-        "boxTouches": 18
+        "xg": 0.4,
+        "duelsWon": 56,
+        "boxTouches": 20
       }
     }
   },
@@ -6522,7 +6529,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6566,29 +6573,36 @@
         "teamId": "uru",
         "player": "Guillermo Varela",
         "text": "Guillermo Varela Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "uru",
+        "player": "Nicolás de la Cruz",
+        "text": "Nicolás de la Cruz Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 32.1,
+        "possession": 32.5,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 76.8,
-        "accuratePasses": 218,
-        "fouls": 12,
+        "passAccuracy": 76.3,
+        "accuratePasses": 222,
+        "fouls": 13,
         "corners": 1,
         "offsides": 5,
         "saves": 0,
         "xg": 0.2,
-        "duelsWon": 48,
+        "duelsWon": 49,
         "boxTouches": 12
       },
       "away": {
-        "possession": 67.9,
+        "possession": 67.5,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.9,
-        "accuratePasses": 546,
+        "passAccuracy": 88.8,
+        "accuratePasses": 549,
         "fouls": 14,
         "corners": 6,
         "offsides": 2,
