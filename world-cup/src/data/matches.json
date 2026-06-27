@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "83",
+    "minute": "84",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6703,31 +6703,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 64.4,
-        "shots": 14,
+        "possession": 64.2,
+        "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.5,
-        "accuratePasses": 463,
+        "passAccuracy": 88.4,
+        "accuratePasses": 474,
         "fouls": 9,
         "corners": 8,
         "offsides": 0,
         "saves": 2,
         "xg": 0.78,
-        "duelsWon": 48,
-        "boxTouches": 27
+        "duelsWon": 50,
+        "boxTouches": 28
       },
       "away": {
-        "possession": 35.6,
+        "possession": 35.8,
         "shots": 9,
         "shotsOnTarget": 3,
-        "passAccuracy": 74,
-        "accuratePasses": 214,
+        "passAccuracy": 73.9,
+        "accuratePasses": 221,
         "fouls": 14,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 1.31,
-        "duelsWon": 64,
+        "duelsWon": 66,
         "boxTouches": 16
       }
     }
@@ -6744,9 +6744,9 @@
     "homeTeamId": "nzl",
     "awayTeamId": "bel",
     "homeScore": 1,
-    "awayScore": 3,
+    "awayScore": 4,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6804,6 +6804,14 @@
         "teamId": "nzl",
         "player": "Elijah Just",
         "text": "Elijah Just Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "86'",
+        "teamId": "bel",
+        "player": "Romelu Lukaku",
+        "text": "Romelu Lukaku Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
@@ -6817,7 +6825,7 @@
         "corners": 5,
         "offsides": 1,
         "saves": 4,
-        "xg": 0.2,
+        "xg": 0.24,
         "duelsWon": 28,
         "boxTouches": 5
       },
@@ -6833,7 +6841,7 @@
         "saves": 1,
         "xg": 3,
         "duelsWon": 34,
-        "boxTouches": 66
+        "boxTouches": 68
       }
     }
   },
