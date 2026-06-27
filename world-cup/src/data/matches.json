@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6907,36 +6907,43 @@
         "player": "Petar Sucic",
         "text": "Petar Sucic Goal",
         "assist": "Mateo Kovacic"
+      },
+      {
+        "type": "yellow",
+        "minute": "68'",
+        "teamId": "cro",
+        "player": "Ivan Perisic",
+        "text": "Ivan Perisic Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53.2,
+        "possession": 52.7,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 92.8,
-        "accuratePasses": 399,
-        "fouls": 4,
+        "passAccuracy": 92.6,
+        "accuratePasses": 403,
+        "fouls": 5,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.28,
-        "duelsWon": 24,
+        "duelsWon": 25,
         "boxTouches": 5
       },
       "away": {
-        "possession": 46.8,
+        "possession": 47.3,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 91,
-        "accuratePasses": 342,
+        "passAccuracy": 91.2,
+        "accuratePasses": 351,
         "fouls": 9,
-        "corners": 1,
+        "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 26,
-        "boxTouches": 4
+        "duelsWon": 27,
+        "boxTouches": 5
       }
     }
   },
@@ -6954,7 +6961,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "69",
+    "minute": "70",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6989,7 +6996,8 @@
         "minute": "62'",
         "teamId": "eng",
         "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal",
+        "text": "Jude Bellingham Goal - Volley",
+        "goalType": "volley",
         "assist": "Bukayo Saka"
       },
       {
@@ -7004,11 +7012,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.6,
+        "possession": 29.1,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 70.7,
-        "accuratePasses": 118,
+        "passAccuracy": 70.8,
+        "accuratePasses": 121,
         "fouls": 12,
         "corners": 1,
         "offsides": 1,
@@ -7018,7 +7026,7 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 71.4,
+        "possession": 70.9,
         "shots": 14,
         "shotsOnTarget": 5,
         "passAccuracy": 88.7,
