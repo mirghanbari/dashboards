@@ -6884,7 +6884,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6942,30 +6942,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.4,
+        "possession": 53.7,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 91.7,
-        "accuratePasses": 465,
+        "passAccuracy": 91.8,
+        "accuratePasses": 471,
         "fouls": 9,
-        "corners": 2,
+        "corners": 3,
         "offsides": 1,
         "saves": 0,
         "xg": 0.46,
-        "duelsWon": 37,
+        "duelsWon": 38,
         "boxTouches": 7
       },
       "away": {
-        "possession": 46.6,
-        "shots": 4,
+        "possession": 46.3,
+        "shots": 5,
         "shotsOnTarget": 1,
         "passAccuracy": 89.3,
         "accuratePasses": 392,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.67,
+        "xg": 0.71,
         "duelsWon": 35,
         "boxTouches": 7
       }
@@ -6984,8 +6984,8 @@
     "awayTeamId": "eng",
     "homeScore": 0,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -7043,11 +7043,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 32.4,
+        "possession": 32.9,
         "shots": 13,
         "shotsOnTarget": 2,
-        "passAccuracy": 75,
-        "accuratePasses": 195,
+        "passAccuracy": 75.3,
+        "accuratePasses": 201,
         "fouls": 16,
         "corners": 3,
         "offsides": 4,
@@ -7057,12 +7057,12 @@
         "boxTouches": 13
       },
       "away": {
-        "possession": 67.6,
+        "possession": 67.1,
         "shots": 17,
         "shotsOnTarget": 6,
         "passAccuracy": 88.5,
-        "accuratePasses": 492,
-        "fouls": 12,
+        "accuratePasses": 493,
+        "fouls": 13,
         "corners": 7,
         "offsides": 4,
         "saves": 2,
