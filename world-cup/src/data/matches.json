@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "40",
+    "minute": "41",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6474,11 +6474,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.5,
+        "possession": 55.5,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.1,
-        "accuratePasses": 133,
+        "passAccuracy": 83.7,
+        "accuratePasses": 144,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
@@ -6488,12 +6488,12 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 45.5,
+        "possession": 44.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 80.4,
-        "accuratePasses": 111,
-        "fouls": 6,
+        "passAccuracy": 79.6,
+        "accuratePasses": 113,
+        "fouls": 7,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
@@ -6515,9 +6515,9 @@
     "homeTeamId": "uru",
     "awayTeamId": "esp",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6532,6 +6532,15 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "esp",
+        "player": "Álex Baena",
+        "text": "Álex Baena Goal"
+      }
+    ],
     "stats": {
       "home": {
         "possession": 25.6,
@@ -6544,7 +6553,7 @@
         "offsides": 1,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 23,
+        "duelsWon": 25,
         "boxTouches": 4
       },
       "away": {
@@ -6558,8 +6567,8 @@
         "offsides": 1,
         "saves": 0,
         "xg": 0.19,
-        "duelsWon": 21,
-        "boxTouches": 9
+        "duelsWon": 24,
+        "boxTouches": 10
       }
     }
   },
