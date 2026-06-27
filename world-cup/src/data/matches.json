@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "49",
+    "minute": "50",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6696,25 +6696,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 60,
-        "shots": 8,
-        "shotsOnTarget": 2,
+        "possession": 60.2,
+        "shots": 9,
+        "shotsOnTarget": 3,
         "passAccuracy": 86.8,
-        "accuratePasses": 263,
+        "accuratePasses": 269,
         "fouls": 6,
         "corners": 4,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.32,
+        "xg": 0.36,
         "duelsWon": 35,
         "boxTouches": 17
       },
       "away": {
-        "possession": 40,
+        "possession": 39.8,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.6,
-        "accuratePasses": 148,
+        "passAccuracy": 73.7,
+        "accuratePasses": 151,
         "fouls": 8,
         "corners": 1,
         "offsides": 1,
@@ -6737,9 +6737,9 @@
     "homeTeamId": "nzl",
     "awayTeamId": "bel",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "50",
+    "minute": "51",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6768,14 +6768,22 @@
         "teamId": "nzl",
         "player": "Marko Stamenic",
         "text": "Marko Stamenic Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "50'",
+        "teamId": "bel",
+        "player": "Leandro Trossard",
+        "text": "Leandro Trossard Goal",
+        "assist": "Hans Vanaken"
       }
     ],
     "stats": {
       "home": {
-        "possession": 39.8,
+        "possession": 39.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.9,
+        "passAccuracy": 83.5,
         "accuratePasses": 182,
         "fouls": 5,
         "corners": 1,
@@ -6786,18 +6794,18 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 60.2,
-        "shots": 17,
-        "shotsOnTarget": 4,
-        "passAccuracy": 88.8,
-        "accuratePasses": 293,
+        "possession": 60.5,
+        "shots": 18,
+        "shotsOnTarget": 5,
+        "passAccuracy": 88.7,
+        "accuratePasses": 299,
         "fouls": 2,
         "corners": 4,
         "offsides": 1,
         "saves": 0,
         "xg": 1.91,
-        "duelsWon": 20,
-        "boxTouches": 46
+        "duelsWon": 21,
+        "boxTouches": 50
       }
     }
   },
