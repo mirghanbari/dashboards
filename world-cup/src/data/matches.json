@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "22",
+    "minute": "24",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,30 +7103,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 42,
-        "shots": 6,
-        "shotsOnTarget": 1,
-        "passAccuracy": 86.1,
-        "accuratePasses": 87,
-        "fouls": 1,
+        "possession": 41.5,
+        "shots": 7,
+        "shotsOnTarget": 2,
+        "passAccuracy": 85.4,
+        "accuratePasses": 88,
+        "fouls": 2,
         "corners": 1,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.55,
+        "xg": 0.57,
         "duelsWon": 5
       },
       "away": {
-        "possession": 58,
+        "possession": 58.5,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 95.7,
-        "accuratePasses": 132,
+        "passAccuracy": 95.1,
+        "accuratePasses": 137,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.03,
-        "duelsWon": 8
+        "duelsWon": 10
       }
     }
   },
@@ -7144,7 +7144,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "22",
+    "minute": "24",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7179,12 +7179,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.3,
+        "possession": 54.3,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.1,
-        "accuratePasses": 75,
-        "fouls": 3,
+        "passAccuracy": 78.2,
+        "accuratePasses": 79,
+        "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
@@ -7193,17 +7193,17 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 46.7,
+        "possession": 45.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 80,
+        "passAccuracy": 79,
         "accuratePasses": 64,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 0.01,
-        "duelsWon": 15,
+        "duelsWon": 19,
         "boxTouches": 2
       }
     }
