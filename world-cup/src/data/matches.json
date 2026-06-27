@@ -6883,8 +6883,8 @@
     "awayTeamId": "gha",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+8",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -6945,7 +6945,7 @@
         "possession": 53.3,
         "shots": 8,
         "shotsOnTarget": 4,
-        "passAccuracy": 91.6,
+        "passAccuracy": 91.4,
         "accuratePasses": 478,
         "fouls": 9,
         "corners": 3,
