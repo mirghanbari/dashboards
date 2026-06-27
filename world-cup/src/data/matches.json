@@ -6796,7 +6796,8 @@
         "minute": "50'",
         "teamId": "bel",
         "player": "Leandro Trossard",
-        "text": "Leandro Trossard Goal",
+        "text": "Leandro Trossard Goal - Volley",
+        "goalType": "volley",
         "assist": "Hans Vanaken"
       },
       {
@@ -6840,32 +6841,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 45.4,
+        "possession": 45.5,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.8,
-        "accuratePasses": 369,
+        "passAccuracy": 84.9,
+        "accuratePasses": 370,
         "fouls": 10,
         "corners": 5,
         "offsides": 1,
         "saves": 5,
         "xg": 0.25,
-        "duelsWon": 30,
+        "duelsWon": 31,
         "boxTouches": 6
       },
       "away": {
-        "possession": 54.6,
+        "possession": 54.5,
         "shots": 35,
         "shotsOnTarget": 10,
         "passAccuracy": 88,
-        "accuratePasses": 463,
+        "accuratePasses": 462,
         "fouls": 7,
         "corners": 8,
         "offsides": 1,
         "saves": 1,
         "xg": 3.69,
         "duelsWon": 38,
-        "boxTouches": 77
+        "boxTouches": 79
       }
     }
   },
