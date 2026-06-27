@@ -418,6 +418,9 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     const verdicts = groups.map((gX): ThirdVerdict => {
       const x = standings(gX)[2];
       const gXDone = remainingMatches(gX).length === 0;
+      const gamesLeft = remainingMatches(gX).filter(
+        (m) => m.homeTeamId === x.id || m.awayTeamId === x.id,
+      ).length;
 
       // How many other thirds finish above X — at minimum (best case for X) and
       // at maximum (worst case). Finished groups contribute a settled comparison;
@@ -458,6 +461,7 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
         group: gX,
         status,
         groupComplete: gXDone,
+        gamesLeft,
         maxAbove,
         needBelow,
       };
@@ -485,6 +489,7 @@ export interface ThirdVerdict {
   group: string;
   status: "through" | "bubble" | "out";
   groupComplete: boolean; // false → the team's own group is still being played
+  gamesLeft: number; // the team's own remaining group games (0 once its group ends)
   maxAbove: number; // most thirds that can finish above it (worst case)
   needBelow: number; // bubble only: how many outstanding thirds must finish ≤ it
 }

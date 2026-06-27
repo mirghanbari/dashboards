@@ -118,6 +118,16 @@ function bubbleNote(v: ThirdVerdict, remaining: string[]): string {
   return `Needs at least ${numWord(v.needBelow)} of the ${numWord(n)} still-to-finish thirds (${where}) to come in at or below it.`;
 }
 
+/** A still-playing team's situation — its group hasn't finished, so its own
+ *  result decides it before the cross-group cut even applies. */
+function provisionalNote(v: ThirdVerdict): string {
+  const games =
+    v.gamesLeft === 1
+      ? "its final group game"
+      : `${numWord(v.gamesLeft)} group games`;
+  return `Third in Group ${v.group} with ${games} to play — its own result still decides whether it climbs into the top two or chases a best-third place.`;
+}
+
 function ThirdNameList({ ids }: { ids: string[] }) {
   return (
     <>
@@ -144,18 +154,20 @@ function ThirdPlaceNote({
   verdicts: ThirdVerdict[];
   remainingGroups: string[];
 }) {
-  // Only teams whose own group has finished get a hard verdict; the provisional
-  // thirds in the unfinished groups are described by the footer line instead.
-  const settled = verdicts.filter((v) => v.groupComplete);
-  // Order each bucket best-first so it reads top-to-bottom of the cut: safest
-  // qualifiers, then the bubble from most to least likely (fewest results needed).
-  const through = settled
-    .filter((v) => v.status === "through")
+  // "Through"/"Out" are settled verdicts (the team's own group is finished).
+  // The bubble holds every team still in the race: the settled thirds with an
+  // exact condition AND the provisional thirds of the groups still being played.
+  const through = verdicts
+    .filter((v) => v.groupComplete && v.status === "through")
     .sort((a, b) => a.maxAbove - b.maxAbove);
-  const bubble = settled
+  const out = verdicts.filter((v) => v.groupComplete && v.status === "out");
+  // Order the bubble by the model's advance odds, most-likely first, so the
+  // settled and still-playing teams interleave by how close each is.
+  const advance = (v: ThirdVerdict) =>
+    predictionForTeam(v.teamId)?.advance ?? -1;
+  const bubble = verdicts
     .filter((v) => v.status === "bubble")
-    .sort((a, b) => a.needBelow - b.needBelow);
-  const out = settled.filter((v) => v.status === "out");
+    .sort((a, b) => advance(b) - advance(a));
 
   return (
     <div className="third-note">
@@ -164,8 +176,10 @@ function ThirdPlaceNote({
         join the runners-up in the Round of 32.{" "}
         {remainingGroups.length > 0 ? (
           <>
-            With {groupList(remainingGroups)} still to finish, here is where the
-            settled thirds stand — and exactly what the teams on the bubble need.
+            With {groupList(remainingGroups)} still to finish, here is who has
+            secured one, who is out, and who is on the bubble — the settled
+            thirds with an exact condition, the teams still playing with live
+            odds.
           </>
         ) : (
           <>Every group is in, so the eight best thirds are now locked.</>
@@ -196,6 +210,9 @@ function ThirdPlaceNote({
                       <span className="team-flag">{t.flag}</span>
                       {t.name}
                     </span>
+                    {!v.groupComplete && (
+                      <span className="tn-playing">still playing</span>
+                    )}
                     {pred && (
                       <span className="tn-prob" title="Model probability of reaching the Round of 32">
                         {fmtProb(pred.advance)}
@@ -203,7 +220,9 @@ function ThirdPlaceNote({
                       </span>
                     )}{" "}
                     <span className="tn-cond">
-                      {bubbleNote(v, remainingGroups)}
+                      {v.groupComplete
+                        ? bubbleNote(v, remainingGroups)
+                        : provisionalNote(v)}
                     </span>
                   </li>
                 );
@@ -212,7 +231,8 @@ function ThirdPlaceNote({
             <p className="tn-prob-src">
               Advance % is a model estimate —{" "}
               <Link to="/predictions">{PREDICTIONS.source}</Link>, updated after
-              each game. The conditions above are mathematically exact.
+              each game. Conditions for the finished groups are mathematically
+              exact; teams still playing can yet move on their own results.
             </p>
           </div>
         </div>
@@ -230,10 +250,8 @@ function ThirdPlaceNote({
 
       {remainingGroups.length > 0 && (
         <p className="third-note-foot">
-          {groupList(remainingGroups)} will supply the other{" "}
-          {numWord(remainingGroups.length)} third-placed{" "}
-          {remainingGroups.length === 1 ? "team" : "teams"} today — the rows below
-          show the live order as their results land.
+          {groupList(remainingGroups)} finish today — the live third-place order
+          below shifts as their results land.
         </p>
       )}
     </div>

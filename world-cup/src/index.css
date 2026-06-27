@@ -2578,6 +2578,19 @@ tr.is-me .player-name {
   color: var(--ink-soft);
   font-weight: 400;
 }
+.tn-playing {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(43, 110, 214, 0.13);
+  color: #2f6bd0;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
 .tn-prob {
   display: inline-block;
   margin: 0 4px;
