@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "6",
+    "minute": "7",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6655,35 +6655,36 @@
         "minute": "5'",
         "teamId": "egy",
         "player": "Mahmoud Saber",
-        "text": "Mahmoud Saber Goal"
+        "text": "Mahmoud Saber Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
       "home": {
-        "possession": 69.6,
+        "possession": 65.1,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 90.9,
-        "accuratePasses": 50,
+        "passAccuracy": 91.1,
+        "accuratePasses": 51,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 3,
-        "xg": 0.13
+        "xg": 0.17,
+        "duelsWon": 5
       },
       "away": {
-        "possession": 30.4,
+        "possession": 34.9,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.3,
-        "accuratePasses": 20,
+        "passAccuracy": 86.7,
+        "accuratePasses": 26,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 5,
-        "xg": 0
+        "xg": 0,
+        "duelsWon": 6
       }
     }
   },
@@ -6701,7 +6702,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "5",
+    "minute": "7",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6718,24 +6719,24 @@
     ],
     "stats": {
       "home": {
-        "possession": 20,
+        "possession": 21,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 50,
-        "accuratePasses": 4,
+        "passAccuracy": 58.3,
+        "accuratePasses": 7,
         "fouls": 0,
         "corners": 0,
-        "offsides": 0,
+        "offsides": 1,
         "saves": 0,
         "xg": 0,
         "duelsWon": 4
       },
       "away": {
-        "possession": 80,
+        "possession": 79,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 85.7,
-        "accuratePasses": 30,
+        "passAccuracy": 85.4,
+        "accuratePasses": 41,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
