@@ -5751,8 +5751,7 @@
         "minute": "77'",
         "teamId": "ecu",
         "player": "Gonzalo Plata",
-        "text": "Gonzalo Plata Goal - Volley",
-        "goalType": "volley",
+        "text": "Gonzalo Plata Goal",
         "assist": "Kevin Rodríguez"
       },
       {
@@ -5936,8 +5935,7 @@
         "minute": "7'",
         "teamId": "ned",
         "player": "Brian Brobbey",
-        "text": "Brian Brobbey Goal - Volley",
-        "goalType": "volley",
+        "text": "Brian Brobbey Goal",
         "assist": "Virgil van Dijk"
       },
       {
@@ -6441,7 +6439,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6481,11 +6479,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.3,
+        "possession": 50.7,
         "shots": 15,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.2,
-        "accuratePasses": 367,
+        "passAccuracy": 85.1,
+        "accuratePasses": 371,
         "fouls": 10,
         "corners": 4,
         "offsides": 1,
@@ -6495,18 +6493,18 @@
         "boxTouches": 18
       },
       "away": {
-        "possession": 48.7,
+        "possession": 49.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 80.5,
-        "accuratePasses": 339,
+        "passAccuracy": 81,
+        "accuratePasses": 353,
         "fouls": 15,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
         "xg": 0.27,
         "duelsWon": 53,
-        "boxTouches": 17
+        "boxTouches": 18
       }
     }
   },
@@ -6524,7 +6522,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6575,7 +6573,7 @@
         "possession": 32.1,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 77,
+        "passAccuracy": 76.8,
         "accuratePasses": 218,
         "fouls": 12,
         "corners": 1,
@@ -6589,14 +6587,14 @@
         "possession": 67.9,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.1,
-        "accuratePasses": 545,
+        "passAccuracy": 88.9,
+        "accuratePasses": 546,
         "fouls": 14,
         "corners": 6,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 2,
         "xg": 0.86,
-        "duelsWon": 52,
+        "duelsWon": 54,
         "boxTouches": 19
       }
     }
