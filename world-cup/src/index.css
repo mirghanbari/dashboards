@@ -2562,17 +2562,45 @@ tr.is-me .player-name {
 .tn-team .team-flag {
   margin-right: 4px;
 }
+.tn-bubble-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 .tn-bubble-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 .tn-cond {
   color: var(--ink-soft);
   font-weight: 400;
+}
+.tn-prob {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(214, 158, 30, 0.16);
+  color: #97690f;
+  font-weight: 700;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+.tn-prob-sub {
+  font-weight: 500;
+  opacity: 0.75;
+}
+.tn-prob-src {
+  margin: 8px 0 0;
+  font-size: 0.76rem;
+  color: var(--ink-faint);
+}
+.tn-prob-src a {
+  color: var(--ink-soft);
+  text-decoration: underline;
 }
 .third-note-foot {
   margin: 11px 0 0;

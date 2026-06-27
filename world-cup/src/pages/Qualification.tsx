@@ -2,7 +2,9 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import {
   MATCHES,
+  PREDICTIONS,
   getTeam,
+  predictionForTeam,
   qualificationByGroup,
   thirdPlaceRace,
   thirdPlaceVerdicts,
@@ -90,6 +92,14 @@ const NUM_WORD = [
 ];
 const numWord = (n: number) => NUM_WORD[n] ?? String(n);
 
+/** A model probability as a percentage, keeping tiny-but-alive odds visible. */
+function fmtProb(n: number): string {
+  if (n <= 0) return "0%";
+  if (n < 0.01) return "<1%";
+  if (n >= 0.995 && n < 1) return ">99%";
+  return Math.round(n * 100) + "%";
+}
+
 /** "J" → "Group J"; ["J","K","L"] → "Groups J, K and L". */
 function groupList(letters: string[]): string {
   if (letters.length === 0) return "";
@@ -175,22 +185,36 @@ function ThirdPlaceNote({
       {bubble.length > 0 && (
         <div className="tn-row tn-bubble">
           <span className="tn-tag">On the bubble</span>
-          <ul className="tn-bubble-list">
-            {bubble.map((v) => {
-              const t = getTeam(v.teamId);
-              return (
-                <li key={v.teamId}>
-                  <span className="tn-team">
-                    <span className="team-flag">{t.flag}</span>
-                    {t.name}
-                  </span>{" "}
-                  <span className="tn-cond">
-                    {bubbleNote(v, remainingGroups)}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="tn-bubble-body">
+            <ul className="tn-bubble-list">
+              {bubble.map((v) => {
+                const t = getTeam(v.teamId);
+                const pred = predictionForTeam(v.teamId);
+                return (
+                  <li key={v.teamId}>
+                    <span className="tn-team">
+                      <span className="team-flag">{t.flag}</span>
+                      {t.name}
+                    </span>
+                    {pred && (
+                      <span className="tn-prob" title="Model probability of reaching the Round of 32">
+                        {fmtProb(pred.advance)}
+                        <span className="tn-prob-sub"> to advance</span>
+                      </span>
+                    )}{" "}
+                    <span className="tn-cond">
+                      {bubbleNote(v, remainingGroups)}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="tn-prob-src">
+              Advance % is a model estimate —{" "}
+              <Link to="/predictions">{PREDICTIONS.source}</Link>, updated after
+              each game. The conditions above are mathematically exact.
+            </p>
+          </div>
         </div>
       )}
 
