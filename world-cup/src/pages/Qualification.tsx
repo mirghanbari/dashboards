@@ -5,11 +5,16 @@ import {
   getTeam,
   qualificationByGroup,
   thirdPlaceRace,
+  thirdPlaceVerdicts,
   useLiveMatches,
   applyLive,
   liveStandings,
 } from "../data";
-import type { QualStatus, TeamQualification } from "../data";
+import type {
+  QualStatus,
+  TeamQualification,
+  ThirdVerdict,
+} from "../data";
 import type { Match } from "../types";
 import { liveClock } from "../clock";
 
@@ -72,6 +77,145 @@ function LiveGames({ games }: { games: Match[] }) {
   );
 }
 
+const NUM_WORD = [
+  "zero",
+  "one",
+  "two",
+  "three",
+  "four",
+  "five",
+  "six",
+  "seven",
+  "eight",
+];
+const numWord = (n: number) => NUM_WORD[n] ?? String(n);
+
+/** "J" → "Group J"; ["J","K","L"] → "Groups J, K and L". */
+function groupList(letters: string[]): string {
+  if (letters.length === 0) return "";
+  const label = letters.length === 1 ? "Group" : "Groups";
+  if (letters.length === 1) return `${label} ${letters[0]}`;
+  const head = letters.slice(0, -1).join(", ");
+  return `${label} ${head} and ${letters[letters.length - 1]}`;
+}
+
+/** The condition a bubble third still needs the outstanding groups to meet. */
+function bubbleNote(v: ThirdVerdict, remaining: string[]): string {
+  const n = remaining.length;
+  const where = groupList(remaining);
+  if (v.needBelow >= n)
+    return `Needs all ${numWord(n)} of the still-to-finish thirds (${where}) to come in at or below it.`;
+  return `Needs at least ${numWord(v.needBelow)} of the ${numWord(n)} still-to-finish thirds (${where}) to come in at or below it.`;
+}
+
+function ThirdNameList({ ids }: { ids: string[] }) {
+  return (
+    <>
+      {ids.map((id, i) => {
+        const t = getTeam(id);
+        return (
+          <span key={id} className="tn-team">
+            {i > 0 && <span className="tn-sep">, </span>}
+            <span className="team-flag">{t.flag}</span>
+            {t.name}
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
+/** Note above the third-place table: clinch / bubble / out for every settled
+ *  third, plus what the bubble teams need. Auto-updates as the last groups end. */
+function ThirdPlaceNote({
+  verdicts,
+  remainingGroups,
+}: {
+  verdicts: ThirdVerdict[];
+  remainingGroups: string[];
+}) {
+  // Only teams whose own group has finished get a hard verdict; the provisional
+  // thirds in the unfinished groups are described by the footer line instead.
+  const settled = verdicts.filter((v) => v.groupComplete);
+  // Order each bucket best-first so it reads top-to-bottom of the cut: safest
+  // qualifiers, then the bubble from most to least likely (fewest results needed).
+  const through = settled
+    .filter((v) => v.status === "through")
+    .sort((a, b) => a.maxAbove - b.maxAbove);
+  const bubble = settled
+    .filter((v) => v.status === "bubble")
+    .sort((a, b) => a.needBelow - b.needBelow);
+  const out = settled.filter((v) => v.status === "out");
+
+  return (
+    <div className="third-note">
+      <p className="third-note-lead">
+        Twelve groups, but only the <strong>eight best third-placed teams</strong>{" "}
+        join the runners-up in the Round of 32.{" "}
+        {remainingGroups.length > 0 ? (
+          <>
+            With {groupList(remainingGroups)} still to finish, here is where the
+            settled thirds stand — and exactly what the teams on the bubble need.
+          </>
+        ) : (
+          <>Every group is in, so the eight best thirds are now locked.</>
+        )}
+      </p>
+
+      {through.length > 0 && (
+        <div className="tn-row tn-through">
+          <span className="tn-tag">Through</span>
+          <span className="tn-body">
+            <ThirdNameList ids={through.map((v) => v.teamId)} /> — already
+            guaranteed a top-eight third place.
+          </span>
+        </div>
+      )}
+
+      {bubble.length > 0 && (
+        <div className="tn-row tn-bubble">
+          <span className="tn-tag">On the bubble</span>
+          <ul className="tn-bubble-list">
+            {bubble.map((v) => {
+              const t = getTeam(v.teamId);
+              return (
+                <li key={v.teamId}>
+                  <span className="tn-team">
+                    <span className="team-flag">{t.flag}</span>
+                    {t.name}
+                  </span>{" "}
+                  <span className="tn-cond">
+                    {bubbleNote(v, remainingGroups)}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+
+      {out.length > 0 && (
+        <div className="tn-row tn-out">
+          <span className="tn-tag">Out</span>
+          <span className="tn-body">
+            <ThirdNameList ids={out.map((v) => v.teamId)} /> — cannot reach the
+            top-eight thirds.
+          </span>
+        </div>
+      )}
+
+      {remainingGroups.length > 0 && (
+        <p className="third-note-foot">
+          {groupList(remainingGroups)} will supply the other{" "}
+          {numWord(remainingGroups.length)} third-placed{" "}
+          {remainingGroups.length === 1 ? "team" : "teams"} today — the rows below
+          show the live order as their results land.
+        </p>
+      )}
+    </div>
+  );
+}
+
 export function Qualification() {
   // Live-reactive: a game that finishes is folded into the standings (and the
   // clinch/elimination math) the moment it ends, no page reload — `liveStandings`
@@ -87,6 +231,10 @@ export function Qualification() {
   }, [live]);
   const thirds = useMemo(
     () => thirdPlaceRace(liveStandings(live), applyLive(MATCHES, live)),
+    [live],
+  );
+  const thirdVerdicts = useMemo(
+    () => thirdPlaceVerdicts(liveStandings(live), applyLive(MATCHES, live)),
     [live],
   );
 
@@ -153,6 +301,10 @@ export function Qualification() {
           in the Round of 32. Live projection of the current third-place table —
           the cutoff line moves as results come in.
         </p>
+        <ThirdPlaceNote
+          verdicts={thirdVerdicts.verdicts}
+          remainingGroups={thirdVerdicts.remainingGroups}
+        />
         <table className="ranking-table third-race">
           <thead>
             <tr>

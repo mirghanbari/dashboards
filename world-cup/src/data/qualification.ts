@@ -146,6 +146,7 @@ interface Engine {
   groups: string[];
   classifyGroup(group: string): GroupQualification;
   thirdPlaceRace(): ThirdPlaceRow[];
+  thirdPlaceVerdicts(): ThirdPlaceVerdicts;
 }
 
 function createEngine(teams: Team[], matches: Match[]): Engine {
@@ -220,6 +221,26 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
     }
     minThirdCache.set(group, min);
     return min;
+  };
+
+  // The MOST points a group's third-placed slot can finish on, over every
+  // completion of that group (mirror of `minThirdPoints`). Used to decide
+  // whether a not-yet-finished group could still produce a third strong enough
+  // to overtake an already-settled third elsewhere.
+  const maxThirdCache = new Map<string, number>();
+  const maxThirdSlotPoints = (group: string): number => {
+    const cached = maxThirdCache.get(group);
+    if (cached !== undefined) return cached;
+    const base = basePoints(group);
+    const rem = remainingMatches(group);
+    let max = -Infinity;
+    for (const combo of combinations(rem)) {
+      const pts = pointsFor(base, rem, combo);
+      const third = Object.values(pts).sort((a, b) => b - a)[2];
+      if (third > max) max = third;
+    }
+    maxThirdCache.set(group, max);
+    return max;
   };
 
   // The most points a team can finish on while landing in 3rd (its only route to
@@ -376,7 +397,76 @@ function createEngine(teams: Team[], matches: Match[]): Engine {
       .map((t, i) => ({ ...t, projectedIn: i < THIRDS_ADVANCING }));
   };
 
-  return { groups, classifyGroup, thirdPlaceRace };
+  // ---- Best-third verdicts (cross-group clinch / elimination) -------------
+  // Unlike `thirdPlaceRace` (a live snapshot of the table), this proves, for the
+  // third-placed team in EACH group, whether it is already guaranteed a top-eight
+  // best-third place, already out of it, or still on the bubble — and, when on the
+  // bubble, exactly how many of the still-to-finish groups' thirds it needs to
+  // finish at or below.
+  //
+  // The rigour mirrors the in-group engine: a rival third "can" finish above team
+  // X if it can reach X's points (an equal-points tie is then a free goal-margin
+  // swing); it is "guaranteed" above only if it must out-POINT X. Crucially this
+  // cuts both ways — a not-yet-finished group's third can also be dragged BELOW a
+  // settled third by a heavy loss, since margins are free in both directions. So a
+  // settled third with the weakest goal difference is never auto-eliminated while
+  // any group is unfinished; it just needs every outstanding third to fall short.
+  const thirdPlaceVerdicts = (): ThirdPlaceVerdicts => {
+    const remainingGroups = groups.filter((g) => remainingMatches(g).length > 0);
+    const allowAbove = THIRDS_ADVANCING - 1; // 7 rivals above and you're still 8th
+
+    const verdicts = groups.map((gX): ThirdVerdict => {
+      const x = standings(gX)[2];
+      const gXDone = remainingMatches(gX).length === 0;
+
+      // How many other thirds finish above X — at minimum (best case for X) and
+      // at maximum (worst case). Finished groups contribute a settled comparison;
+      // unfinished groups contribute a points-range test (margins free).
+      let settledAbove = 0; // finished groups whose third outranks X for sure
+      let canAbove = 0; // unfinished groups that could put a third above X
+      let mustAbove = 0; // unfinished groups forced to out-point X
+      for (const g of groups) {
+        if (g === gX) continue;
+        if (remainingMatches(g).length === 0) {
+          const y = standings(g)[2];
+          if (y && byStrength(y, x) < 0) settledAbove++; // y sorts before x
+        } else {
+          if (maxThirdSlotPoints(g) >= x.points) canAbove++;
+          if (minThirdPoints(g) > x.points) mustAbove++;
+        }
+      }
+      const maxAbove = settledAbove + canAbove;
+      const minAbove = settledAbove + mustAbove;
+
+      let status: ThirdVerdict["status"];
+      // A team whose own group is still playing isn't settled — leave it on the
+      // bubble until its record is final.
+      if (gXDone && maxAbove <= allowAbove) status = "through";
+      else if (gXDone && minAbove >= THIRDS_ADVANCING) status = "out";
+      else status = "bubble";
+
+      // For bubble teams: of the outstanding groups, how many of their thirds must
+      // come in at or below X. (Groups that can't reach X's points are already
+      // "below" and only help — the bound stays correct.)
+      const needBelow = Math.max(
+        0,
+        remainingGroups.length - (allowAbove - settledAbove),
+      );
+
+      return {
+        teamId: x.id,
+        group: gX,
+        status,
+        groupComplete: gXDone,
+        maxAbove,
+        needBelow,
+      };
+    });
+
+    return { verdicts, remainingGroups };
+  };
+
+  return { groups, classifyGroup, thirdPlaceRace, thirdPlaceVerdicts };
 }
 
 const byStrength = (a: Standing, b: Standing) =>
@@ -387,6 +477,21 @@ const byStrength = (a: Standing, b: Standing) =>
 
 export interface ThirdPlaceRow extends Standing {
   projectedIn: boolean; // currently inside the top-8 cutoff
+}
+
+/** A best-third clinch/elimination verdict for one group's third-placed team. */
+export interface ThirdVerdict {
+  teamId: string;
+  group: string;
+  status: "through" | "bubble" | "out";
+  groupComplete: boolean; // false → the team's own group is still being played
+  maxAbove: number; // most thirds that can finish above it (worst case)
+  needBelow: number; // bubble only: how many outstanding thirds must finish ≤ it
+}
+
+export interface ThirdPlaceVerdicts {
+  verdicts: ThirdVerdict[];
+  remainingGroups: string[]; // groups whose third place is not yet decided
 }
 
 // ---- Public API -----------------------------------------------------------
@@ -417,4 +522,12 @@ export function thirdPlaceRace(
   matches: Match[] = MATCHES,
 ): ThirdPlaceRow[] {
   return createEngine(teams, matches).thirdPlaceRace();
+}
+
+/** Best-third clinch / elimination verdicts, one per group's third-placed team. */
+export function thirdPlaceVerdicts(
+  teams: Team[] = TEAMS,
+  matches: Match[] = MATCHES,
+): ThirdPlaceVerdicts {
+  return createEngine(teams, matches).thirdPlaceVerdicts();
 }

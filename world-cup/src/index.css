@@ -2501,6 +2501,87 @@ tr.is-me .player-name {
   margin-top: 1px;
 }
 
+/* best-third clinch / bubble / out note (above the third-place table) */
+.third-note {
+  margin: 4px 0 16px;
+  padding: 14px 16px;
+  background: var(--surface-2, #f7f9f8);
+  border: 1px solid var(--line, #e4e9e6);
+  border-radius: var(--radius-sm);
+}
+.third-note-lead {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.third-note-lead strong {
+  color: var(--ink);
+}
+.tn-row {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-top: 1px solid var(--line, #e7ece9);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+.tn-tag {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  min-width: 92px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  text-align: center;
+}
+.tn-through .tn-tag {
+  background: rgba(43, 138, 62, 0.14);
+  color: var(--pitch-1, #2b8a3e);
+}
+.tn-bubble .tn-tag {
+  background: rgba(214, 158, 30, 0.18);
+  color: #a9791a;
+}
+.tn-out .tn-tag {
+  background: rgba(226, 54, 54, 0.13);
+  color: var(--red, #e23636);
+}
+.tn-body {
+  color: var(--ink-soft);
+}
+.tn-team {
+  white-space: nowrap;
+  color: var(--ink);
+  font-weight: 600;
+}
+.tn-team .team-flag {
+  margin-right: 4px;
+}
+.tn-bubble-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tn-cond {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+.third-note-foot {
+  margin: 11px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line, #e7ece9);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
 /* third-place race table */
 .third-race tr.third-out td {
   color: var(--ink-faint);

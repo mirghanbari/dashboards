@@ -231,8 +231,11 @@ export {
   classifyGroup,
   qualificationByGroup,
   thirdPlaceRace,
+  thirdPlaceVerdicts,
   type QualStatus,
   type TeamQualification,
   type GroupQualification,
   type ThirdPlaceRow,
+  type ThirdVerdict,
+  type ThirdPlaceVerdicts,
 } from "./qualification";
