@@ -119,13 +119,23 @@ function bubbleNote(v: ThirdVerdict, remaining: string[]): string {
 }
 
 /** A still-playing team's situation — its group hasn't finished, so its own
- *  result decides it before the cross-group cut even applies. */
-function provisionalNote(v: ThirdVerdict): string {
-  const games =
+ *  result decides it before the cross-group cut even applies. The team's group
+ *  scenario (what it needs for the top two) is spelled out as the exact result,
+ *  with the fallback being the best-third route. */
+function provisionalNote(v: ThirdVerdict, scenario: string): string {
+  const lead =
     v.gamesLeft === 1
-      ? "its final group game"
-      : `${numWord(v.gamesLeft)} group games`;
-  return `Third in Group ${v.group} with ${games} to play — its own result still decides whether it climbs into the top two or chases a best-third place.`;
+      ? `Third in Group ${v.group}, final game to play`
+      : `Third in Group ${v.group}, ${numWord(v.gamesLeft)} group games to play`;
+
+  if (/win or draw/i.test(scenario))
+    return `${lead} — a win or draw lifts it into the top two; only a defeat drops it into the best-third race.`;
+  if (/win guarantees/i.test(scenario))
+    return `${lead} — a win lifts it into the top two; a draw or defeat leaves it chasing a best-third place.`;
+  if (/must win/i.test(scenario))
+    return `${lead} — it must win, and hope other results fall its way, to take the top two; otherwise it is chasing a best-third place.`;
+  // No crisp single-result case (e.g. already out of the top two): keep it general.
+  return `${lead} — its own result still decides whether it climbs into the top two or chases a best-third place.`;
 }
 
 function ThirdNameList({ ids }: { ids: string[] }) {
@@ -150,9 +160,11 @@ function ThirdNameList({ ids }: { ids: string[] }) {
 function ThirdPlaceNote({
   verdicts,
   remainingGroups,
+  scenarioById,
 }: {
   verdicts: ThirdVerdict[];
   remainingGroups: string[];
+  scenarioById: Map<string, string>;
 }) {
   // "Through"/"Out" are settled verdicts (the team's own group is finished).
   // The bubble holds every team still in the race: the settled thirds with an
@@ -222,7 +234,7 @@ function ThirdPlaceNote({
                     <span className="tn-cond">
                       {v.groupComplete
                         ? bubbleNote(v, remainingGroups)
-                        : provisionalNote(v)}
+                        : provisionalNote(v, scenarioById.get(v.teamId) ?? "")}
                     </span>
                   </li>
                 );
@@ -279,6 +291,14 @@ export function Qualification() {
     () => thirdPlaceVerdicts(liveStandings(live), applyLive(MATCHES, live)),
     [live],
   );
+  // teamId → its own group scenario ("A win guarantees…", etc.), so a still-playing
+  // third's note can spell out the exact result it needs for the top two.
+  const scenarioById = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const g of groups)
+      for (const t of g.teams) m.set(t.teamId, t.scenario);
+    return m;
+  }, [groups]);
 
   // In-progress group games, keyed by group letter, for the per-card banner.
   const liveByGroup = useMemo(() => {
@@ -346,6 +366,7 @@ export function Qualification() {
         <ThirdPlaceNote
           verdicts={thirdVerdicts.verdicts}
           remainingGroups={thirdVerdicts.remainingGroups}
+          scenarioById={scenarioById}
         />
         <table className="ranking-table third-race">
           <thead>
