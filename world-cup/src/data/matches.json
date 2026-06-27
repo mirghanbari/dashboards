@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "64",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6921,7 +6921,7 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0.28,
-        "duelsWon": 22,
+        "duelsWon": 23,
         "boxTouches": 5
       },
       "away": {
@@ -6935,7 +6935,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 22,
+        "duelsWon": 25,
         "boxTouches": 4
       }
     }
@@ -6954,7 +6954,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "67",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6989,18 +6989,25 @@
         "minute": "62'",
         "teamId": "eng",
         "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal - Volley",
-        "goalType": "volley",
+        "text": "Jude Bellingham Goal",
         "assist": "Bukayo Saka"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 28.9,
+        "possession": 28.6,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 71.3,
-        "accuratePasses": 117,
+        "passAccuracy": 70.7,
+        "accuratePasses": 118,
         "fouls": 12,
         "corners": 1,
         "offsides": 1,
@@ -7010,18 +7017,18 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 71.1,
-        "shots": 12,
+        "possession": 71.4,
+        "shots": 13,
         "shotsOnTarget": 4,
         "passAccuracy": 88.7,
-        "accuratePasses": 368,
+        "accuratePasses": 378,
         "fouls": 6,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.72,
-        "duelsWon": 48,
-        "boxTouches": 32
+        "xg": 0.8,
+        "duelsWon": 49,
+        "boxTouches": 34
       }
     }
   },
