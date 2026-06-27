@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "20",
+    "minute": "21",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,30 +7103,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 43.3,
+        "possession": 41.6,
         "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 86.4,
-        "accuratePasses": 76,
+        "passAccuracy": 84.8,
+        "accuratePasses": 78,
         "fouls": 1,
         "corners": 1,
         "offsides": 2,
         "saves": 0,
         "xg": 0.55,
-        "duelsWon": 4
+        "duelsWon": 5
       },
       "away": {
-        "possession": 56.7,
+        "possession": 58.4,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 94.8,
-        "accuratePasses": 109,
+        "passAccuracy": 95.3,
+        "accuratePasses": 122,
         "fouls": 1,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.03,
-        "duelsWon": 7
+        "duelsWon": 8
       }
     }
   },
@@ -7144,7 +7144,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "19",
+    "minute": "21",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7165,17 +7165,25 @@
         "minute": "10'",
         "teamId": "uzb",
         "player": "Eldor Shomurodov",
-        "text": "Eldor Shomurodov Goal",
-        "assist": "Abbosbek Fayzullaev"
+        "text": "Eldor Shomurodov Goal - Volley",
+        "goalType": "volley",
+        "assist": "Akmal Mozgovoy"
+      },
+      {
+        "type": "yellow",
+        "minute": "21'",
+        "teamId": "cod",
+        "player": "Noah Sadiki",
+        "text": "Noah Sadiki Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.2,
+        "possession": 52.3,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.5,
-        "accuratePasses": 66,
+        "passAccuracy": 78.9,
+        "accuratePasses": 71,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
@@ -7185,17 +7193,17 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 48.8,
+        "possession": 47.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 78.9,
-        "accuratePasses": 60,
+        "passAccuracy": 79.7,
+        "accuratePasses": 63,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 0.01,
-        "duelsWon": 13,
+        "duelsWon": 15,
         "boxTouches": 2
       }
     }
