@@ -6882,9 +6882,9 @@
     "homeTeamId": "cro",
     "awayTeamId": "gha",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "72",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6914,16 +6914,23 @@
         "teamId": "cro",
         "player": "Ivan Perisic",
         "text": "Ivan Perisic Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "73'",
+        "teamId": "gha",
+        "player": "Derrick Luckassen",
+        "text": "Derrick Luckassen Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 52.8,
+        "possession": 52.5,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 92.4,
         "accuratePasses": 403,
-        "fouls": 5,
+        "fouls": 6,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
@@ -6932,18 +6939,18 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 47.2,
+        "possession": 47.5,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.1,
-        "accuratePasses": 350,
+        "passAccuracy": 91,
+        "accuratePasses": 355,
         "fouls": 9,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
         "duelsWon": 28,
-        "boxTouches": 4
+        "boxTouches": 5
       }
     }
   },
@@ -6961,7 +6968,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "74",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7021,9 +7028,9 @@
         "corners": 1,
         "offsides": 1,
         "saves": 3,
-        "xg": 0.24,
-        "duelsWon": 31,
-        "boxTouches": 5
+        "xg": 0.36,
+        "duelsWon": 33,
+        "boxTouches": 6
       },
       "away": {
         "possession": 69.3,
