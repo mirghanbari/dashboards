@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "19",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6671,6 +6671,13 @@
         "teamId": "irn",
         "player": "Hossein Kanani",
         "text": "Hossein Kanani Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "20'",
+        "teamId": "egy",
+        "player": "Mahmoud Saber",
+        "text": "Mahmoud Saber Yellow Card"
       }
     ],
     "stats": {
@@ -6685,8 +6692,8 @@
         "offsides": 0,
         "saves": 2,
         "xg": 0.21,
-        "duelsWon": 11,
-        "boxTouches": 5
+        "duelsWon": 14,
+        "boxTouches": 8
       },
       "away": {
         "possession": 45.8,
@@ -6698,9 +6705,9 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.97,
-        "duelsWon": 12,
-        "boxTouches": 6
+        "xg": 1.01,
+        "duelsWon": 15,
+        "boxTouches": 7
       }
     }
   },
@@ -6718,7 +6725,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "19",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6735,10 +6742,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 26.4,
+        "possession": 25.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 78.4,
+        "passAccuracy": 75.5,
         "accuratePasses": 40,
         "fouls": 0,
         "corners": 0,
@@ -6748,17 +6755,17 @@
         "duelsWon": 8
       },
       "away": {
-        "possession": 73.6,
+        "possession": 74.7,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.6,
-        "accuratePasses": 124,
+        "passAccuracy": 87.7,
+        "accuratePasses": 135,
         "fouls": 0,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.41,
-        "duelsWon": 5
+        "duelsWon": 6
       }
     }
   },
