@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "46",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6474,7 +6474,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.2,
+        "possession": 51.7,
         "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 81.7,
@@ -6484,22 +6484,22 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.13,
-        "duelsWon": 30,
+        "duelsWon": 32,
         "boxTouches": 8
       },
       "away": {
-        "possession": 46.8,
-        "shots": 3,
+        "possession": 48.3,
+        "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.5,
-        "accuratePasses": 155,
+        "passAccuracy": 79.6,
+        "accuratePasses": 164,
         "fouls": 7,
-        "corners": 0,
+        "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.19,
         "duelsWon": 33,
-        "boxTouches": 6
+        "boxTouches": 8
       }
     }
   },
@@ -6517,7 +6517,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "HT",
+    "minute": "46",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6540,6 +6540,13 @@
         "player": "Álex Baena",
         "text": "Álex Baena Goal",
         "assist": "Marcos Llorente"
+      },
+      {
+        "type": "yellow",
+        "minute": "46'",
+        "teamId": "esp",
+        "player": "Álex Baena",
+        "text": "Álex Baena Yellow Card"
       }
     ],
     "stats": {
@@ -6554,8 +6561,8 @@
         "offsides": 2,
         "saves": 0,
         "xg": 0.1,
-        "duelsWon": 30,
-        "boxTouches": 4
+        "duelsWon": 32,
+        "boxTouches": 5
       },
       "away": {
         "possession": 73.8,
