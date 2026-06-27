@@ -6438,8 +6438,8 @@
     "awayTeamId": "ksa",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -6486,21 +6486,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 50.5,
+        "possession": 51.1,
         "shots": 15,
         "shotsOnTarget": 2,
-        "passAccuracy": 85,
-        "accuratePasses": 374,
+        "passAccuracy": 85.4,
+        "accuratePasses": 385,
         "fouls": 10,
         "corners": 4,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 3,
         "xg": 1.52,
         "duelsWon": 58,
         "boxTouches": 18
       },
       "away": {
-        "possession": 49.5,
+        "possession": 48.9,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 80.5,
@@ -6529,7 +6529,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6601,7 +6601,7 @@
         "offsides": 5,
         "saves": 0,
         "xg": 0.2,
-        "duelsWon": 50,
+        "duelsWon": 49,
         "boxTouches": 12
       },
       "away": {
