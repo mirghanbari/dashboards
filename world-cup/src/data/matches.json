@@ -6441,7 +6441,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6475,30 +6475,30 @@
     "stats": {
       "home": {
         "possession": 51.3,
-        "shots": 6,
+        "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.3,
-        "accuratePasses": 205,
+        "passAccuracy": 83.8,
+        "accuratePasses": 217,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.31,
-        "duelsWon": 35,
+        "xg": 0.38,
+        "duelsWon": 37,
         "boxTouches": 11
       },
       "away": {
         "possession": 48.7,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.8,
-        "accuratePasses": 194,
-        "fouls": 8,
+        "passAccuracy": 80.6,
+        "accuratePasses": 203,
+        "fouls": 9,
         "corners": 1,
         "offsides": 0,
         "saves": 1,
         "xg": 0.22,
-        "duelsWon": 35,
+        "duelsWon": 38,
         "boxTouches": 8
       }
     }
@@ -6517,7 +6517,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6547,15 +6547,22 @@
         "teamId": "esp",
         "player": "Álex Baena",
         "text": "Álex Baena Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "54'",
+        "teamId": "uru",
+        "player": "Juan Manuel Sanabria",
+        "text": "Juan Manuel Sanabria Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 27.9,
+        "possession": 28.7,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 74.7,
-        "accuratePasses": 109,
+        "passAccuracy": 75.8,
+        "accuratePasses": 125,
         "fouls": 3,
         "corners": 0,
         "offsides": 3,
@@ -6565,11 +6572,11 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 72.1,
+        "possession": 71.3,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.5,
-        "accuratePasses": 342,
+        "passAccuracy": 90.1,
+        "accuratePasses": 372,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
