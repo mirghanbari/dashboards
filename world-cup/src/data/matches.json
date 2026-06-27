@@ -6634,7 +6634,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6696,31 +6696,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 61.9,
+        "possession": 62.2,
         "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 87.2,
-        "accuratePasses": 300,
+        "passAccuracy": 87.3,
+        "accuratePasses": 310,
         "fouls": 6,
         "corners": 5,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.48,
-        "duelsWon": 37,
+        "xg": 0.62,
+        "duelsWon": 38,
         "boxTouches": 20
       },
       "away": {
-        "possession": 38.1,
+        "possession": 37.8,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 73.9,
-        "accuratePasses": 156,
+        "passAccuracy": 74,
+        "accuratePasses": 159,
         "fouls": 9,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 1.24,
-        "duelsWon": 44,
+        "duelsWon": 47,
         "boxTouches": 12
       }
     }
@@ -6739,7 +6739,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6777,15 +6777,22 @@
         "text": "Leandro Trossard Goal - Volley",
         "goalType": "volley",
         "assist": "Hans Vanaken"
+      },
+      {
+        "type": "yellow",
+        "minute": "56'",
+        "teamId": "nzl",
+        "player": "Elijah Just",
+        "text": "Elijah Just Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 39.1,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 82.1,
-        "accuratePasses": 188,
+        "possession": 39.5,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 82.4,
+        "accuratePasses": 192,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
@@ -6795,7 +6802,7 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 60.9,
+        "possession": 60.5,
         "shots": 19,
         "shotsOnTarget": 5,
         "passAccuracy": 88.3,
@@ -6803,9 +6810,9 @@
         "fouls": 3,
         "corners": 4,
         "offsides": 1,
-        "saves": 0,
+        "saves": 1,
         "xg": 2.06,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 51
       }
     }
