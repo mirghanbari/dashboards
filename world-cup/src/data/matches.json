@@ -6884,7 +6884,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6911,31 +6911,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 50.8,
+        "possession": 53.2,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 92,
-        "accuratePasses": 346,
+        "passAccuracy": 92.8,
+        "accuratePasses": 399,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.28,
-        "duelsWon": 23,
+        "duelsWon": 24,
         "boxTouches": 5
       },
       "away": {
-        "possession": 49.2,
+        "possession": 46.8,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.4,
-        "accuratePasses": 331,
+        "passAccuracy": 91,
+        "accuratePasses": 342,
         "fouls": 9,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
         "xg": 0.05,
-        "duelsWon": 25,
+        "duelsWon": 26,
         "boxTouches": 4
       }
     }
@@ -6952,9 +6952,9 @@
     "homeTeamId": "pan",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6998,7 +6998,8 @@
         "teamId": "eng",
         "player": "Harry Kane",
         "text": "Harry Kane Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Jude Bellingham"
       }
     ],
     "stats": {
@@ -7018,15 +7019,15 @@
       },
       "away": {
         "possession": 71.4,
-        "shots": 13,
-        "shotsOnTarget": 4,
+        "shots": 14,
+        "shotsOnTarget": 5,
         "passAccuracy": 88.7,
         "accuratePasses": 378,
         "fouls": 6,
         "corners": 6,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.8,
+        "xg": 0.99,
         "duelsWon": 49,
         "boxTouches": 34
       }
