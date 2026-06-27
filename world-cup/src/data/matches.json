@@ -6884,7 +6884,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "15",
+    "minute": "16",
     "broadcasts": [
       {
         "name": "FS1",
@@ -6901,28 +6901,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 42.7,
-        "shots": 0,
+        "possession": 50.2,
+        "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 91.7,
-        "accuratePasses": 66,
+        "passAccuracy": 94.1,
+        "accuratePasses": 111,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 5
+        "duelsWon": 6,
+        "xg": 0.06
       },
       "away": {
-        "possession": 57.3,
+        "possession": 49.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 92.8,
-        "accuratePasses": 90,
+        "passAccuracy": 90.8,
+        "accuratePasses": 108,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "duelsWon": 1
+        "duelsWon": 4,
+        "xg": 0
       }
     }
   },
@@ -6940,7 +6942,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "16",
+    "minute": "17",
     "broadcasts": [
       {
         "name": "FOX",
@@ -6957,12 +6959,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.1,
+        "possession": 29.2,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 70,
-        "accuratePasses": 28,
-        "fouls": 3,
+        "passAccuracy": 72.9,
+        "accuratePasses": 35,
+        "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 2,
@@ -6970,17 +6972,17 @@
         "duelsWon": 8
       },
       "away": {
-        "possession": 71.9,
+        "possession": 70.8,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 88.7,
-        "accuratePasses": 94,
+        "passAccuracy": 90.2,
+        "accuratePasses": 110,
         "fouls": 2,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
         "xg": 0.07,
-        "duelsWon": 13
+        "duelsWon": 14
       }
     }
   },
