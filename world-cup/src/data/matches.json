@@ -7298,7 +7298,15 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "duelsWon": 0
+      },
+      "away": {
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M072",
@@ -7328,7 +7336,15 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "duelsWon": 1
+      },
+      "away": {
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M073",
