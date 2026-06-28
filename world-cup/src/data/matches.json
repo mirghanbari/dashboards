@@ -7284,7 +7284,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7341,11 +7341,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 60,
+        "possession": 59.7,
         "shots": 11,
         "shotsOnTarget": 4,
         "passAccuracy": 91.1,
-        "accuratePasses": 399,
+        "accuratePasses": 407,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
@@ -7355,17 +7355,17 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 40,
+        "possession": 40.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.4,
-        "accuratePasses": 245,
+        "passAccuracy": 85.9,
+        "accuratePasses": 255,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 2,
         "xg": 1.03,
-        "duelsWon": 14,
+        "duelsWon": 17,
         "boxTouches": 12
       }
     }
@@ -7384,7 +7384,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7429,14 +7429,21 @@
         "player": "Mousa Al-Tamari",
         "text": "Mousa Al-Tamari Goal",
         "assist": "Ehsan Haddad"
+      },
+      {
+        "type": "yellow",
+        "minute": "64'",
+        "teamId": "jor",
+        "player": "Yazan Al-Arab",
+        "text": "Yazan Al-Arab Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 27.8,
+        "possession": 27.3,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.2,
+        "passAccuracy": 79.8,
         "accuratePasses": 166,
         "fouls": 6,
         "corners": 1,
@@ -7447,17 +7454,17 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 72.2,
+        "possession": 72.7,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.9,
-        "accuratePasses": 500,
+        "passAccuracy": 91.1,
+        "accuratePasses": 519,
         "fouls": 6,
         "corners": 3,
         "offsides": 3,
         "saves": 0,
         "xg": 1.66,
-        "duelsWon": 19,
+        "duelsWon": 20,
         "boxTouches": 13
       }
     }
