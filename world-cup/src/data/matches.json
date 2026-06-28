@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "79",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,32 +7103,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.6,
+        "possession": 55.9,
         "shots": 21,
         "shotsOnTarget": 6,
-        "passAccuracy": 89.3,
-        "accuratePasses": 416,
-        "fouls": 8,
+        "passAccuracy": 89.4,
+        "accuratePasses": 423,
+        "fouls": 9,
         "corners": 4,
         "offsides": 2,
         "saves": 2,
         "xg": 1.41,
         "duelsWon": 26,
-        "boxTouches": 28
+        "boxTouches": 29
       },
       "away": {
-        "possession": 44.4,
-        "shots": 11,
+        "possession": 44.1,
+        "shots": 12,
         "shotsOnTarget": 2,
         "passAccuracy": 92.6,
-        "accuratePasses": 336,
+        "accuratePasses": 337,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 6,
-        "xg": 0.63,
+        "xg": 0.67,
         "duelsWon": 27,
-        "boxTouches": 9
+        "boxTouches": 10
       }
     }
   },
@@ -7143,10 +7143,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "cod",
     "awayTeamId": "uzb",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "77",
+    "minute": "78",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7212,29 +7212,36 @@
         "player": "Yoane Wissa",
         "text": "Yoane Wissa Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "goal",
+        "minute": "78'",
+        "teamId": "cod",
+        "player": "Fiston Mayele",
+        "text": "Fiston Mayele Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.7,
-        "shots": 12,
-        "shotsOnTarget": 2,
-        "passAccuracy": 82.8,
-        "accuratePasses": 342,
+        "possession": 64.9,
+        "shots": 13,
+        "shotsOnTarget": 3,
+        "passAccuracy": 82.9,
+        "accuratePasses": 349,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 1,
         "xg": 1.56,
         "duelsWon": 46,
-        "boxTouches": 25
+        "boxTouches": 26
       },
       "away": {
-        "possession": 35.3,
+        "possession": 35.1,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.9,
-        "accuratePasses": 164,
+        "passAccuracy": 73.7,
+        "accuratePasses": 165,
         "fouls": 14,
         "corners": 3,
         "offsides": 1,
