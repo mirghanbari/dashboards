@@ -7282,9 +7282,9 @@
     "homeTeamId": "alg",
     "awayTeamId": "aut",
     "homeScore": 3,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+7",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7345,14 +7345,22 @@
         "player": "Riyad Mahrez",
         "text": "Riyad Mahrez Goal",
         "assist": "Houssem Aouar"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+6'",
+        "teamId": "aut",
+        "player": "Sasa Kalajdzic",
+        "text": "Sasa Kalajdzic Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.5,
+        "possession": 65,
         "shots": 12,
         "shotsOnTarget": 5,
-        "passAccuracy": 93.9,
+        "passAccuracy": 93.5,
         "accuratePasses": 705,
         "fouls": 3,
         "corners": 0,
@@ -7363,18 +7371,18 @@
         "boxTouches": 21
       },
       "away": {
-        "possession": 34.5,
-        "shots": 8,
+        "possession": 35,
+        "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.6,
-        "accuratePasses": 340,
+        "passAccuracy": 86.9,
+        "accuratePasses": 344,
         "fouls": 7,
         "corners": 3,
         "offsides": 3,
         "saves": 2,
-        "xg": 1.18,
+        "xg": 1.28,
         "duelsWon": 23,
-        "boxTouches": 15
+        "boxTouches": 17
       }
     }
   },
@@ -7391,8 +7399,8 @@
     "awayTeamId": "arg",
     "homeScore": 1,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -7462,10 +7470,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 27,
+        "possession": 26.7,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.3,
+        "passAccuracy": 80,
         "accuratePasses": 228,
         "fouls": 13,
         "corners": 2,
@@ -7476,11 +7484,11 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 73,
+        "possession": 73.3,
         "shots": 12,
         "shotsOnTarget": 4,
         "passAccuracy": 92,
-        "accuratePasses": 724,
+        "accuratePasses": 735,
         "fouls": 7,
         "corners": 6,
         "offsides": 3,
