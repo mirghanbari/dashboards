@@ -7284,7 +7284,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "79",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7341,11 +7341,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 59,
+        "possession": 58.4,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 91.8,
-        "accuratePasses": 490,
+        "passAccuracy": 91.6,
+        "accuratePasses": 492,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
@@ -7355,11 +7355,11 @@
         "boxTouches": 16
       },
       "away": {
-        "possession": 41,
+        "possession": 41.6,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.4,
-        "accuratePasses": 318,
+        "passAccuracy": 87.5,
+        "accuratePasses": 329,
         "fouls": 6,
         "corners": 3,
         "offsides": 3,
@@ -7382,9 +7382,9 @@
     "homeTeamId": "jor",
     "awayTeamId": "arg",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "79",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7436,6 +7436,13 @@
         "teamId": "jor",
         "player": "Yazan Al-Arab",
         "text": "Yazan Al-Arab Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "80'",
+        "teamId": "arg",
+        "player": "Lionel Messi",
+        "text": "Lionel Messi Goal - Free-kick"
       }
     ],
     "stats": {
@@ -7455,15 +7462,15 @@
       },
       "away": {
         "possession": 73.4,
-        "shots": 8,
-        "shotsOnTarget": 3,
+        "shots": 9,
+        "shotsOnTarget": 4,
         "passAccuracy": 91.7,
         "accuratePasses": 645,
         "fouls": 7,
         "corners": 3,
         "offsides": 3,
         "saves": 0,
-        "xg": 1.7,
+        "xg": 1.79,
         "duelsWon": 23,
         "boxTouches": 13
       }
