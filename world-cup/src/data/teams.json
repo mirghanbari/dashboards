@@ -848,7 +848,7 @@
     "cleanSheets": 2,
     "passCompletion": 90.3,
     "xgFor": 5.76,
-    "xgAgainst": 1.61
+    "xgAgainst": 1.62
   },
   {
     "id": "aut",
@@ -867,7 +867,7 @@
     "goalsAgainst": 6,
     "points": 4,
     "possession": 48.2,
-    "ppda": 15.6,
+    "ppda": 15.5,
     "cleanSheets": 0,
     "passCompletion": 85.7,
     "xgFor": 3.67,
@@ -916,7 +916,7 @@
     "ppda": 16,
     "cleanSheets": 0,
     "passCompletion": 74.9,
-    "xgFor": 1.85,
+    "xgFor": 1.86,
     "xgAgainst": 5.72
   },
   {
