@@ -7578,7 +7578,7 @@
         "offsides": 0,
         "saves": 1,
         "xg": 1.32,
-        "duelsWon": 56,
+        "duelsWon": 55,
         "boxTouches": 28
       }
     }
@@ -8042,9 +8042,8 @@
     "date": "2026-07-04T17:00Z",
     "venue": "NRG Stadium",
     "city": "Houston, Texas",
-    "homeTeamId": "tbd",
+    "homeTeamId": "can",
     "awayTeamId": "tbd",
-    "homeSlot": "Round of 32 1 Winner",
     "awaySlot": "Round of 32 3 Winner",
     "homeScore": null,
     "awayScore": null,
