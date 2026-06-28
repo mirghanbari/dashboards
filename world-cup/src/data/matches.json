@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7112,21 +7112,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.2,
-        "shots": 22,
+        "possession": 54.8,
+        "shots": 23,
         "shotsOnTarget": 6,
-        "passAccuracy": 89.3,
-        "accuratePasses": 467,
+        "passAccuracy": 89.5,
+        "accuratePasses": 477,
         "fouls": 11,
-        "corners": 4,
-        "offsides": 2,
+        "corners": 5,
+        "offsides": 3,
         "saves": 2,
-        "xg": 1.49,
+        "xg": 1.58,
         "duelsWon": 27,
         "boxTouches": 34
       },
       "away": {
-        "possession": 45.8,
+        "possession": 45.2,
         "shots": 12,
         "shotsOnTarget": 2,
         "passAccuracy": 91.4,
@@ -7152,10 +7152,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "cod",
     "awayTeamId": "uzb",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "89",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7232,31 +7232,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 59.1,
+        "possession": 59.2,
         "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 82.4,
-        "accuratePasses": 379,
+        "passAccuracy": 82.3,
+        "accuratePasses": 382,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 1,
         "xg": 2.21,
-        "duelsWon": 52,
-        "boxTouches": 26
+        "duelsWon": 53,
+        "boxTouches": 27
       },
       "away": {
-        "possession": 40.9,
+        "possession": 40.8,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.2,
+        "passAccuracy": 74.9,
         "accuratePasses": 239,
         "fouls": 15,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
         "xg": 0.2,
-        "duelsWon": 60,
+        "duelsWon": 61,
         "boxTouches": 7
       }
     }
