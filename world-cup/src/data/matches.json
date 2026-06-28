@@ -7284,7 +7284,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "17",
+    "minute": "18",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7349,9 +7349,9 @@
     "homeTeamId": "jor",
     "awayTeamId": "arg",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "17",
+    "minute": "18",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7366,22 +7366,38 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "17'",
+        "teamId": "jor",
+        "player": "Mohannad Abu Taha",
+        "text": "Mohannad Abu Taha Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "19'",
+        "teamId": "arg",
+        "player": "Giovani Lo Celso",
+        "text": "Giovani Lo Celso Goal - Free-kic"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 17.9,
+        "possession": 17.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 71.4,
-        "accuratePasses": 30,
+        "passAccuracy": 70.7,
+        "accuratePasses": 29,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 5
+        "duelsWon": 4
       },
       "away": {
-        "possession": 82.1,
+        "possession": 82.4,
         "shots": 1,
         "shotsOnTarget": 0,
         "passAccuracy": 92.1,
