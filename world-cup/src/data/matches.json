@@ -7368,7 +7368,7 @@
         "corners": 0,
         "offsides": 1,
         "saves": 1,
-        "xg": 1.62,
+        "xg": 1.67,
         "duelsWon": 34,
         "boxTouches": 22
       },
@@ -7382,7 +7382,7 @@
         "corners": 3,
         "offsides": 3,
         "saves": 2,
-        "xg": 1.44,
+        "xg": 1.49,
         "duelsWon": 28,
         "boxTouches": 18
       }
@@ -7490,7 +7490,7 @@
         "shots": 12,
         "shotsOnTarget": 4,
         "passAccuracy": 92,
-        "accuratePasses": 736,
+        "accuratePasses": 737,
         "fouls": 7,
         "corners": 6,
         "offsides": 3,
