@@ -6920,7 +6920,8 @@
         "minute": "73'",
         "teamId": "gha",
         "player": "Derrick Luckassen",
-        "text": "Derrick Luckassen Goal",
+        "text": "Derrick Luckassen Goal - Volley",
+        "goalType": "volley",
         "assist": "Ernest Nuamah"
       },
       {
@@ -7112,7 +7113,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.5,
+        "possession": 54.6,
         "shots": 24,
         "shotsOnTarget": 6,
         "passAccuracy": 89,
@@ -7126,11 +7127,11 @@
         "boxTouches": 35
       },
       "away": {
-        "possession": 45.5,
+        "possession": 45.4,
         "shots": 13,
         "shotsOnTarget": 2,
         "passAccuracy": 91,
-        "accuratePasses": 406,
+        "accuratePasses": 405,
         "fouls": 6,
         "corners": 2,
         "offsides": 2,
@@ -7155,7 +7156,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+7",
+    "minute": "90+8",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7240,11 +7241,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.4,
-        "shots": 18,
+        "possession": 57.5,
+        "shots": 19,
         "shotsOnTarget": 4,
-        "passAccuracy": 82.2,
-        "accuratePasses": 387,
+        "passAccuracy": 82.5,
+        "accuratePasses": 396,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
@@ -7254,11 +7255,11 @@
         "boxTouches": 30
       },
       "away": {
-        "possession": 41.6,
+        "possession": 42.5,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 75,
-        "accuratePasses": 249,
+        "passAccuracy": 75.6,
+        "accuratePasses": 267,
         "fouls": 15,
         "corners": 4,
         "offsides": 1,
