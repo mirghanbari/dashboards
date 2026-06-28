@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "69",
+    "minute": "71",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7146,7 +7146,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7167,8 +7167,7 @@
         "minute": "10'",
         "teamId": "uzb",
         "player": "Eldor Shomurodov",
-        "text": "Eldor Shomurodov Goal - Volley",
-        "goalType": "volley",
+        "text": "Eldor Shomurodov Goal",
         "assist": "Akmal Mozgovoy"
       },
       {
@@ -7205,21 +7204,29 @@
         "teamId": "cod",
         "player": "Samuel Moutoussamy",
         "text": "Samuel Moutoussamy Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "68'",
+        "teamId": "cod",
+        "player": "Yoane Wissa",
+        "text": "Yoane Wissa Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
         "possession": 64.5,
-        "shots": 10,
-        "shotsOnTarget": 1,
+        "shots": 11,
+        "shotsOnTarget": 2,
         "passAccuracy": 83.2,
         "accuratePasses": 317,
         "fouls": 6,
         "corners": 1,
         "offsides": 3,
         "saves": 1,
-        "xg": 0.68,
-        "duelsWon": 42,
+        "xg": 1.46,
+        "duelsWon": 44,
         "boxTouches": 21
       },
       "away": {
