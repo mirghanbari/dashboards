@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,29 +7103,29 @@
     ],
     "stats": {
       "home": {
-        "possession": 57.1,
-        "shots": 12,
-        "shotsOnTarget": 3,
-        "passAccuracy": 89.1,
-        "accuratePasses": 320,
+        "possession": 56.3,
+        "shots": 14,
+        "shotsOnTarget": 5,
+        "passAccuracy": 89.4,
+        "accuratePasses": 329,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.92,
+        "xg": 0.94,
         "duelsWon": 17,
         "boxTouches": 16
       },
       "away": {
-        "possession": 42.9,
+        "possession": 43.7,
         "shots": 10,
         "shotsOnTarget": 2,
         "passAccuracy": 93.1,
-        "accuratePasses": 242,
+        "accuratePasses": 256,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
-        "saves": 4,
+        "saves": 5,
         "xg": 0.59,
         "duelsWon": 19,
         "boxTouches": 9
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "54",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7202,11 +7202,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.5,
+        "possession": 66,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.8,
-        "accuratePasses": 264,
+        "passAccuracy": 83.3,
+        "accuratePasses": 265,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
@@ -7216,11 +7216,11 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 33.5,
+        "possession": 34,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 72.5,
-        "accuratePasses": 111,
+        "passAccuracy": 72.8,
+        "accuratePasses": 115,
         "fouls": 11,
         "corners": 3,
         "offsides": 1,
