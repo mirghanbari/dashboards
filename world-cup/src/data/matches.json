@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "50",
+    "minute": "51",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,32 +7103,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 55.8,
+        "possession": 53.7,
         "shots": 12,
         "shotsOnTarget": 3,
         "passAccuracy": 88.9,
         "accuratePasses": 273,
-        "fouls": 4,
+        "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
         "xg": 0.89,
-        "duelsWon": 13,
+        "duelsWon": 15,
         "boxTouches": 14
       },
       "away": {
-        "possession": 44.2,
+        "possession": 46.3,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 92.8,
-        "accuratePasses": 218,
+        "passAccuracy": 93.3,
+        "accuratePasses": 238,
         "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 3,
         "xg": 0.52,
         "duelsWon": 17,
-        "boxTouches": 8
+        "boxTouches": 9
       }
     }
   },
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "48",
+    "minute": "50",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7202,25 +7202,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 65,
+        "possession": 65.3,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.1,
-        "accuratePasses": 228,
+        "passAccuracy": 84.5,
+        "accuratePasses": 235,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
-        "xg": 0.2,
-        "duelsWon": 30,
-        "boxTouches": 6
+        "xg": 0.21,
+        "duelsWon": 31,
+        "boxTouches": 8
       },
       "away": {
-        "possession": 35,
+        "possession": 34.7,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.9,
-        "accuratePasses": 102,
+        "passAccuracy": 73.6,
+        "accuratePasses": 103,
         "fouls": 11,
         "corners": 3,
         "offsides": 1,
