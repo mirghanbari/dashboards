@@ -7284,7 +7284,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "30",
+    "minute": "31",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7318,20 +7318,20 @@
     ],
     "stats": {
       "home": {
-        "possession": 52.3,
+        "possession": 54.3,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.3,
-        "accuratePasses": 137,
+        "passAccuracy": 87.6,
+        "accuratePasses": 149,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.01,
-        "duelsWon": 12
+        "duelsWon": 13
       },
       "away": {
-        "possession": 47.7,
+        "possession": 45.7,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 85.9,
@@ -7341,7 +7341,7 @@
         "offsides": 2,
         "saves": 0,
         "xg": 0.81,
-        "duelsWon": 6
+        "duelsWon": 7
       }
     }
   },
@@ -7357,9 +7357,9 @@
     "homeTeamId": "jor",
     "awayTeamId": "arg",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "30",
+    "minute": "31",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7388,6 +7388,14 @@
         "teamId": "arg",
         "player": "Giovani Lo Celso",
         "text": "Giovani Lo Celso Goal - Free-kic"
+      },
+      {
+        "type": "goal",
+        "minute": "31'",
+        "teamId": "arg",
+        "player": "Lautaro Martínez",
+        "text": "Lautaro Martínez Penalty - Score",
+        "goalType": "penalty"
       }
     ],
     "stats": {
@@ -7397,7 +7405,7 @@
         "shotsOnTarget": 0,
         "passAccuracy": 72.4,
         "accuratePasses": 42,
-        "fouls": 1,
+        "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
@@ -7411,11 +7419,11 @@
         "passAccuracy": 92.6,
         "accuratePasses": 226,
         "fouls": 1,
-        "corners": 3,
+        "corners": 2,
         "offsides": 1,
         "saves": 0,
         "xg": 0.7,
-        "duelsWon": 7
+        "duelsWon": 8
       }
     }
   },
