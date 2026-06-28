@@ -7281,10 +7281,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "alg",
     "awayTeamId": "aut",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7301,10 +7301,28 @@
     ],
     "stats": {
       "home": {
-        "duelsWon": 0
+        "possession": 47.4,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 9,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
       },
       "away": {
-        "duelsWon": 0
+        "possession": 52.6,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 80,
+        "accuratePasses": 8,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
       }
     }
   },
@@ -7319,10 +7337,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "jor",
     "awayTeamId": "arg",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7339,9 +7357,27 @@
     ],
     "stats": {
       "home": {
-        "duelsWon": 1
+        "possession": 43.8,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 85.7,
+        "accuratePasses": 6,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 2
       },
       "away": {
+        "possession": 56.2,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 88.9,
+        "accuratePasses": 8,
+        "fouls": 1,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
         "duelsWon": 0
       }
     }
