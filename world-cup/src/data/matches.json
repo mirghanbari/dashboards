@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7106,13 +7106,13 @@
         "possession": 54.3,
         "shots": 15,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.3,
-        "accuratePasses": 357,
-        "fouls": 5,
+        "passAccuracy": 89.4,
+        "accuratePasses": 363,
+        "fouls": 6,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.94,
+        "xg": 1.13,
         "duelsWon": 19,
         "boxTouches": 17
       },
@@ -7120,14 +7120,14 @@
         "possession": 45.7,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 93.6,
-        "accuratePasses": 305,
+        "passAccuracy": 93.3,
+        "accuratePasses": 308,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
         "saves": 5,
         "xg": 0.63,
-        "duelsWon": 19,
+        "duelsWon": 21,
         "boxTouches": 9
       }
     }
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "60",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7198,35 +7198,42 @@
         "teamId": "uzb",
         "player": "Sherzod Nasrullaev",
         "text": "Sherzod Nasrullaev Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "62'",
+        "teamId": "cod",
+        "player": "Samuel Moutoussamy",
+        "text": "Samuel Moutoussamy Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.4,
+        "possession": 65.1,
         "shots": 11,
         "shotsOnTarget": 1,
-        "passAccuracy": 84,
-        "accuratePasses": 294,
-        "fouls": 5,
+        "passAccuracy": 83.8,
+        "accuratePasses": 295,
+        "fouls": 6,
         "corners": 1,
         "offsides": 3,
         "saves": 1,
-        "xg": 0.52,
-        "duelsWon": 36,
+        "xg": 0.7,
+        "duelsWon": 38,
         "boxTouches": 19
       },
       "away": {
-        "possession": 34.6,
+        "possession": 34.9,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 73.6,
-        "accuratePasses": 134,
+        "passAccuracy": 74.1,
+        "accuratePasses": 137,
         "fouls": 11,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
         "xg": 0.2,
-        "duelsWon": 41,
+        "duelsWon": 44,
         "boxTouches": 7
       }
     }
