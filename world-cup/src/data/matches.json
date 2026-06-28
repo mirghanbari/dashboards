@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "43",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,32 +7103,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.8,
+        "possession": 54.2,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.2,
-        "accuratePasses": 184,
+        "passAccuracy": 88,
+        "accuratePasses": 206,
         "fouls": 2,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
         "xg": 0.58,
-        "duelsWon": 9,
-        "boxTouches": 10
+        "duelsWon": 10,
+        "boxTouches": 11
       },
       "away": {
-        "possession": 48.2,
+        "possession": 45.8,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 93.1,
+        "passAccuracy": 92.6,
         "accuratePasses": 176,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
         "xg": 0.49,
-        "duelsWon": 11,
-        "boxTouches": 9
+        "duelsWon": 12,
+        "boxTouches": 8
       }
     }
   },
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "43",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7177,6 +7177,13 @@
         "teamId": "cod",
         "player": "Noah Sadiki",
         "text": "Noah Sadiki Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "43'",
+        "teamId": "uzb",
+        "player": "Abdukodir Khusanov",
+        "text": "Abdukodir Khusanov Yellow Card"
       }
     ],
     "stats": {
