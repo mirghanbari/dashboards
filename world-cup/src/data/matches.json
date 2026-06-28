@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "66",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,25 +7103,25 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.5,
-        "shots": 15,
+        "possession": 54.4,
+        "shots": 17,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.5,
-        "accuratePasses": 367,
+        "passAccuracy": 89.4,
+        "accuratePasses": 370,
         "fouls": 6,
-        "corners": 1,
+        "corners": 2,
         "offsides": 2,
         "saves": 2,
-        "xg": 1.13,
-        "duelsWon": 19,
-        "boxTouches": 17
+        "xg": 1.2,
+        "duelsWon": 20,
+        "boxTouches": 20
       },
       "away": {
-        "possession": 45.5,
+        "possession": 45.6,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 93.1,
-        "accuratePasses": 308,
+        "passAccuracy": 92.9,
+        "accuratePasses": 312,
         "fouls": 5,
         "corners": 1,
         "offsides": 2,
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7210,24 +7210,24 @@
     "stats": {
       "home": {
         "possession": 65,
-        "shots": 11,
+        "shots": 10,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.8,
-        "accuratePasses": 301,
+        "passAccuracy": 83.2,
+        "accuratePasses": 303,
         "fouls": 6,
         "corners": 1,
         "offsides": 3,
         "saves": 1,
-        "xg": 0.77,
-        "duelsWon": 40,
+        "xg": 0.68,
+        "duelsWon": 41,
         "boxTouches": 19
       },
       "away": {
         "possession": 35,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.6,
-        "accuratePasses": 141,
+        "passAccuracy": 74,
+        "accuratePasses": 142,
         "fouls": 12,
         "corners": 3,
         "offsides": 1,
