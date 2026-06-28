@@ -7284,7 +7284,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7355,7 +7355,7 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 42.1,
+        "possession": 41.4,
         "shots": 8,
         "shotsOnTarget": 2,
         "passAccuracy": 86.7,
@@ -7384,7 +7384,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FOX",
