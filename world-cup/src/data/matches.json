@@ -7283,8 +7283,8 @@
     "awayTeamId": "aut",
     "homeScore": 3,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
@@ -7352,7 +7352,8 @@
         "teamId": "aut",
         "player": "Sasa Kalajdzic",
         "text": "Sasa Kalajdzic Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Michael Gregoritsch"
       }
     ],
     "stats": {
@@ -7361,7 +7362,7 @@
         "shots": 12,
         "shotsOnTarget": 5,
         "passAccuracy": 93.5,
-        "accuratePasses": 705,
+        "accuratePasses": 706,
         "fouls": 3,
         "corners": 0,
         "offsides": 1,
@@ -7372,10 +7373,10 @@
       },
       "away": {
         "possession": 35,
-        "shots": 9,
-        "shotsOnTarget": 2,
-        "passAccuracy": 86.9,
-        "accuratePasses": 344,
+        "shots": 10,
+        "shotsOnTarget": 3,
+        "passAccuracy": 87.2,
+        "accuratePasses": 346,
         "fouls": 7,
         "corners": 3,
         "offsides": 3,
