@@ -7177,7 +7177,8 @@
         "minute": "10'",
         "teamId": "uzb",
         "player": "Eldor Shomurodov",
-        "text": "Eldor Shomurodov Goal",
+        "text": "Eldor Shomurodov Goal - Volley",
+        "goalType": "volley",
         "assist": "Akmal Mozgovoy"
       },
       {
