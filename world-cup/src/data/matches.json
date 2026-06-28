@@ -7282,9 +7282,9 @@
     "homeTeamId": "alg",
     "awayTeamId": "aut",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "28",
+    "minute": "29",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7306,15 +7306,22 @@
         "teamId": "aut",
         "player": "Marko Arnautovic",
         "text": "Marko Arnautovic Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "28'",
+        "teamId": "aut",
+        "player": "Marko Arnautovic",
+        "text": "Marko Arnautovic Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53.2,
+        "possession": 51.7,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.1,
-        "accuratePasses": 128,
+        "passAccuracy": 87.5,
+        "accuratePasses": 133,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
@@ -7323,11 +7330,11 @@
         "duelsWon": 12
       },
       "away": {
-        "possession": 46.8,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 85,
-        "accuratePasses": 108,
+        "possession": 48.3,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 85.8,
+        "accuratePasses": 121,
         "fouls": 2,
         "corners": 0,
         "offsides": 1,
@@ -7351,7 +7358,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "27",
+    "minute": "29",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7384,7 +7391,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 19.5,
+        "possession": 19.3,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 72.4,
@@ -7392,21 +7399,21 @@
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0,
         "duelsWon": 7
       },
       "away": {
-        "possession": 80.5,
-        "shots": 2,
+        "possession": 80.7,
+        "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 92.6,
-        "accuratePasses": 224,
+        "accuratePasses": 225,
         "fouls": 1,
-        "corners": 2,
+        "corners": 3,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.14,
+        "xg": 0.84,
         "duelsWon": 7
       }
     }
