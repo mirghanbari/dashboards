@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,11 +7103,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 54.9,
-        "shots": 18,
-        "shotsOnTarget": 5,
+        "possession": 54.8,
+        "shots": 19,
+        "shotsOnTarget": 6,
         "passAccuracy": 89.3,
-        "accuratePasses": 376,
+        "accuratePasses": 375,
         "fouls": 6,
         "corners": 3,
         "offsides": 2,
@@ -7117,7 +7117,7 @@
         "boxTouches": 23
       },
       "away": {
-        "possession": 45.1,
+        "possession": 45.2,
         "shots": 11,
         "shotsOnTarget": 2,
         "passAccuracy": 92.9,
@@ -7143,10 +7143,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "cod",
     "awayTeamId": "uzb",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "67",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7220,7 +7220,7 @@
         "saves": 1,
         "xg": 0.68,
         "duelsWon": 42,
-        "boxTouches": 20
+        "boxTouches": 21
       },
       "away": {
         "possession": 35.5,
@@ -7228,7 +7228,7 @@
         "shotsOnTarget": 1,
         "passAccuracy": 75.2,
         "accuratePasses": 155,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 3,
         "offsides": 1,
         "saves": 1,
