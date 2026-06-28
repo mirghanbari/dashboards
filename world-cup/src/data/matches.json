@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7123,7 +7123,7 @@
         "saves": 2,
         "xg": 1.58,
         "duelsWon": 27,
-        "boxTouches": 34
+        "boxTouches": 33
       },
       "away": {
         "possession": 45.2,
@@ -7136,8 +7136,8 @@
         "offsides": 2,
         "saves": 6,
         "xg": 0.67,
-        "duelsWon": 33,
-        "boxTouches": 12
+        "duelsWon": 35,
+        "boxTouches": 14
       }
     }
   },
@@ -7155,7 +7155,7 @@
     "homeScore": 3,
     "awayScore": 1,
     "status": "live",
-    "minute": "90",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7228,21 +7228,29 @@
         "teamId": "cod",
         "player": "Fiston Mayele",
         "text": "Fiston Mayele Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+1'",
+        "teamId": "cod",
+        "player": "Yoane Wissa",
+        "text": "Yoane Wissa Goal",
+        "assist": "Meschack Elia"
       }
     ],
     "stats": {
       "home": {
         "possession": 59.2,
-        "shots": 15,
-        "shotsOnTarget": 3,
+        "shots": 17,
+        "shotsOnTarget": 4,
         "passAccuracy": 82.3,
         "accuratePasses": 382,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
         "saves": 1,
-        "xg": 2.21,
-        "duelsWon": 53,
+        "xg": 2.25,
+        "duelsWon": 54,
         "boxTouches": 27
       },
       "away": {
@@ -7256,7 +7264,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.2,
-        "duelsWon": 61,
+        "duelsWon": 62,
         "boxTouches": 7
       }
     }
