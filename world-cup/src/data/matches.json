@@ -6655,8 +6655,7 @@
         "minute": "5'",
         "teamId": "egy",
         "player": "Mahmoud Saber",
-        "text": "Mahmoud Saber Goal - Volley",
-        "goalType": "volley",
+        "text": "Mahmoud Saber Goal",
         "assist": "Trézéguet"
       },
       {
@@ -6796,8 +6795,7 @@
         "minute": "50'",
         "teamId": "bel",
         "player": "Leandro Trossard",
-        "text": "Leandro Trossard Goal - Volley",
-        "goalType": "volley",
+        "text": "Leandro Trossard Goal",
         "assist": "Hans Vanaken"
       },
       {
