@@ -7513,7 +7513,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7535,15 +7535,22 @@
         "teamId": "can",
         "player": "Nathan Saliba",
         "text": "Nathan Saliba Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "67'",
+        "teamId": "can",
+        "player": "Niko Sigur",
+        "text": "Niko Sigur Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 59.3,
+        "possession": 59.2,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.7,
-        "accuratePasses": 320,
+        "passAccuracy": 84.8,
+        "accuratePasses": 328,
         "fouls": 7,
         "corners": 1,
         "offsides": 0,
@@ -7553,12 +7560,12 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 40.7,
+        "possession": 40.8,
         "shots": 9,
         "shotsOnTarget": 5,
         "passAccuracy": 76.9,
-        "accuratePasses": 190,
-        "fouls": 10,
+        "accuratePasses": 196,
+        "fouls": 11,
         "corners": 4,
         "offsides": 0,
         "saves": 1,
