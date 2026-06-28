@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "32",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,30 +7103,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 49.3,
+        "possession": 49.5,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 87.9,
-        "accuratePasses": 131,
+        "passAccuracy": 87.8,
+        "accuratePasses": 137,
         "fouls": 2,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
         "xg": 0.58,
-        "duelsWon": 6
+        "duelsWon": 7,
+        "boxTouches": 7
       },
       "away": {
-        "possession": 50.7,
+        "possession": 50.5,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 94.7,
-        "accuratePasses": 143,
-        "fouls": 1,
+        "passAccuracy": 93.6,
+        "accuratePasses": 147,
+        "fouls": 2,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
         "xg": 0.06,
-        "duelsWon": 8
+        "duelsWon": 8,
+        "boxTouches": 1
       }
     }
   },
@@ -7144,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "31",
+    "minute": "33",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7179,11 +7181,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 57.2,
+        "possession": 58.5,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 81.6,
-        "accuratePasses": 111,
+        "passAccuracy": 81.8,
+        "accuratePasses": 121,
         "fouls": 4,
         "corners": 0,
         "offsides": 1,
@@ -7193,11 +7195,11 @@
         "boxTouches": 3
       },
       "away": {
-        "possession": 42.8,
+        "possession": 41.5,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 77.1,
-        "accuratePasses": 74,
+        "passAccuracy": 76.8,
+        "accuratePasses": 76,
         "fouls": 3,
         "corners": 2,
         "offsides": 1,
