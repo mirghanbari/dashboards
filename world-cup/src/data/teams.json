@@ -936,11 +936,11 @@
     "goalsAgainst": 1,
     "points": 7,
     "possession": 59.8,
-    "ppda": 11.8,
+    "ppda": 11.6,
     "cleanSheets": 2,
-    "passCompletion": 87.3,
-    "xgFor": 4.25,
-    "xgAgainst": 2.3
+    "passCompletion": 87.4,
+    "xgFor": 4.32,
+    "xgAgainst": 2.53
   },
   {
     "id": "por",
@@ -959,11 +959,11 @@
     "goalsAgainst": 1,
     "points": 5,
     "possession": 62.2,
-    "ppda": 13.5,
+    "ppda": 13,
     "cleanSheets": 2,
     "passCompletion": 91.1,
-    "xgFor": 3.99,
-    "xgAgainst": 2.76
+    "xgFor": 4.22,
+    "xgAgainst": 2.83
   },
   {
     "id": "uzb",
