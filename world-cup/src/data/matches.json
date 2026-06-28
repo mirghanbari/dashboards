@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "45+2",
+    "minute": "45+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7103,30 +7103,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.8,
-        "shots": 11,
-        "shotsOnTarget": 2,
-        "passAccuracy": 88.4,
-        "accuratePasses": 221,
+        "possession": 54.8,
+        "shots": 13,
+        "shotsOnTarget": 3,
+        "passAccuracy": 89,
+        "accuratePasses": 234,
         "fouls": 3,
         "corners": 1,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.8,
+        "xg": 0.88,
         "duelsWon": 13,
-        "boxTouches": 13
+        "boxTouches": 14
       },
       "away": {
-        "possession": 46.2,
+        "possession": 45.2,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 92.2,
-        "accuratePasses": 190,
+        "passAccuracy": 91.8,
+        "accuratePasses": 191,
         "fouls": 4,
         "corners": 1,
         "offsides": 1,
-        "saves": 2,
-        "xg": 0.49,
+        "saves": 3,
+        "xg": 0.52,
         "duelsWon": 14,
         "boxTouches": 8
       }
@@ -7146,7 +7146,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "45+2",
+    "minute": "45+3",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7188,31 +7188,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 60.6,
+        "possession": 62.3,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.3,
-        "accuratePasses": 175,
+        "passAccuracy": 83.5,
+        "accuratePasses": 193,
         "fouls": 4,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
         "xg": 0.15,
-        "duelsWon": 26,
-        "boxTouches": 5
+        "duelsWon": 27,
+        "boxTouches": 6
       },
       "away": {
-        "possession": 39.4,
+        "possession": 37.7,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.8,
-        "accuratePasses": 97,
-        "fouls": 8,
+        "passAccuracy": 74.2,
+        "accuratePasses": 98,
+        "fouls": 9,
         "corners": 3,
         "offsides": 1,
         "saves": 0,
         "xg": 0.01,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 6
       }
     }
