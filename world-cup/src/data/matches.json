@@ -7284,7 +7284,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7373,8 +7373,8 @@
         "offsides": 3,
         "saves": 2,
         "xg": 1.18,
-        "duelsWon": 22,
-        "boxTouches": 13
+        "duelsWon": 23,
+        "boxTouches": 15
       }
     }
   },
@@ -7392,7 +7392,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7451,25 +7451,32 @@
         "teamId": "arg",
         "player": "Lionel Messi",
         "text": "Lionel Messi Goal - Free-kick"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+4'",
+        "teamId": "jor",
+        "player": "Mohammed Abu Zraiq",
+        "text": "Mohammed Abu Zraiq Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 26.8,
+        "possession": 27,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.1,
-        "accuratePasses": 226,
-        "fouls": 12,
+        "passAccuracy": 80.3,
+        "accuratePasses": 228,
+        "fouls": 13,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.74,
-        "duelsWon": 35,
+        "duelsWon": 34,
         "boxTouches": 4
       },
       "away": {
-        "possession": 73.2,
+        "possession": 73,
         "shots": 12,
         "shotsOnTarget": 4,
         "passAccuracy": 92,
@@ -7479,7 +7486,7 @@
         "offsides": 3,
         "saves": 0,
         "xg": 2.14,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 15
       }
     }
