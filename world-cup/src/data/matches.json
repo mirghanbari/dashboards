@@ -7086,7 +7086,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7101,13 +7101,22 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "86'",
+        "teamId": "col",
+        "player": "Gustavo Puerta",
+        "text": "Gustavo Puerta Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 55.1,
+        "possession": 55.4,
         "shots": 21,
         "shotsOnTarget": 6,
-        "passAccuracy": 89.2,
-        "accuratePasses": 430,
+        "passAccuracy": 89.5,
+        "accuratePasses": 459,
         "fouls": 11,
         "corners": 4,
         "offsides": 2,
@@ -7117,18 +7126,18 @@
         "boxTouches": 29
       },
       "away": {
-        "possession": 44.9,
+        "possession": 44.6,
         "shots": 12,
         "shotsOnTarget": 2,
-        "passAccuracy": 91.9,
-        "accuratePasses": 352,
+        "passAccuracy": 91.8,
+        "accuratePasses": 369,
         "fouls": 6,
         "corners": 2,
         "offsides": 2,
         "saves": 6,
         "xg": 0.67,
-        "duelsWon": 29,
-        "boxTouches": 10
+        "duelsWon": 32,
+        "boxTouches": 12
       }
     }
   },
@@ -7146,7 +7155,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7223,11 +7232,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.7,
+        "possession": 61.4,
         "shots": 14,
         "shotsOnTarget": 3,
-        "passAccuracy": 82.2,
-        "accuratePasses": 352,
+        "passAccuracy": 82.5,
+        "accuratePasses": 362,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
@@ -7237,11 +7246,11 @@
         "boxTouches": 26
       },
       "away": {
-        "possession": 37.3,
+        "possession": 38.6,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 74.6,
-        "accuratePasses": 188,
+        "passAccuracy": 76.3,
+        "accuratePasses": 209,
         "fouls": 14,
         "corners": 3,
         "offsides": 1,
