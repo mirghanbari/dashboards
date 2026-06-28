@@ -7284,7 +7284,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7312,16 +7312,17 @@
         "minute": "28'",
         "teamId": "aut",
         "player": "Marko Arnautovic",
-        "text": "Marko Arnautovic Goal"
+        "text": "Marko Arnautovic Goal",
+        "assist": "David Alaba"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.7,
+        "possession": 52.3,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 87.5,
-        "accuratePasses": 133,
+        "passAccuracy": 87.3,
+        "accuratePasses": 137,
         "fouls": 1,
         "corners": 0,
         "offsides": 0,
@@ -7330,16 +7331,16 @@
         "duelsWon": 12
       },
       "away": {
-        "possession": 48.3,
+        "possession": 47.7,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.8,
-        "accuratePasses": 121,
+        "passAccuracy": 85.9,
+        "accuratePasses": 122,
         "fouls": 2,
         "corners": 0,
-        "offsides": 1,
+        "offsides": 2,
         "saves": 0,
-        "xg": 0.01,
+        "xg": 0.81,
         "duelsWon": 6
       }
     }
@@ -7358,7 +7359,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7405,15 +7406,15 @@
       },
       "away": {
         "possession": 80.7,
-        "shots": 3,
-        "shotsOnTarget": 1,
+        "shots": 4,
+        "shotsOnTarget": 2,
         "passAccuracy": 92.6,
-        "accuratePasses": 225,
+        "accuratePasses": 226,
         "fouls": 1,
         "corners": 3,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.84,
+        "xg": 0.7,
         "duelsWon": 7
       }
     }
