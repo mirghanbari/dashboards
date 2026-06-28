@@ -7284,7 +7284,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7335,12 +7335,13 @@
         "minute": "60'",
         "teamId": "alg",
         "player": "Riyad Mahrez",
-        "text": "Riyad Mahrez Goal"
+        "text": "Riyad Mahrez Goal",
+        "assist": "Houssem Aouar"
       }
     ],
     "stats": {
       "home": {
-        "possession": 61.2,
+        "possession": 60.5,
         "shots": 11,
         "shotsOnTarget": 4,
         "passAccuracy": 91.1,
@@ -7349,16 +7350,16 @@
         "corners": 0,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.98,
+        "xg": 1.14,
         "duelsWon": 29,
         "boxTouches": 14
       },
       "away": {
-        "possession": 38.8,
+        "possession": 39.5,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.6,
-        "accuratePasses": 231,
+        "passAccuracy": 85.1,
+        "accuratePasses": 240,
         "fouls": 6,
         "corners": 2,
         "offsides": 3,
@@ -7383,7 +7384,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "61",
+    "minute": "62",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7432,11 +7433,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 28.8,
+        "possession": 29,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 80.4,
-        "accuratePasses": 164,
+        "passAccuracy": 80.6,
+        "accuratePasses": 166,
         "fouls": 6,
         "corners": 1,
         "offsides": 1,
@@ -7446,7 +7447,7 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 71.2,
+        "possession": 71,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 90.7,
