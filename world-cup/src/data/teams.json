@@ -1031,8 +1031,8 @@
     "ppda": 9.7,
     "cleanSheets": 2,
     "passCompletion": 88.9,
-    "xgFor": 6.19,
-    "xgAgainst": 1.46
+    "xgFor": 6.35,
+    "xgAgainst": 1.53
   },
   {
     "id": "cro",
@@ -1074,11 +1074,11 @@
     "goalsAgainst": 4,
     "points": 0,
     "possession": 45.6,
-    "ppda": 12.1,
+    "ppda": 12.2,
     "cleanSheets": 0,
     "passCompletion": 80.1,
-    "xgFor": 1.89,
-    "xgAgainst": 4.3
+    "xgFor": 1.96,
+    "xgAgainst": 4.46
   },
   {
     "id": "gha",
