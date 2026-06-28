@@ -7281,10 +7281,10 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "alg",
     "awayTeamId": "aut",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FS1",
@@ -7337,25 +7337,33 @@
         "player": "Riyad Mahrez",
         "text": "Riyad Mahrez Goal",
         "assist": "Houssem Aouar"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+3'",
+        "teamId": "alg",
+        "player": "Riyad Mahrez",
+        "text": "Riyad Mahrez Goal",
+        "assist": "Houssem Aouar"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.1,
-        "shots": 11,
-        "shotsOnTarget": 4,
-        "passAccuracy": 92.4,
-        "accuratePasses": 551,
+        "possession": 65.5,
+        "shots": 12,
+        "shotsOnTarget": 5,
+        "passAccuracy": 93.9,
+        "accuratePasses": 705,
         "fouls": 3,
         "corners": 0,
         "offsides": 1,
         "saves": 1,
-        "xg": 1.14,
-        "duelsWon": 33,
-        "boxTouches": 19
+        "xg": 1.59,
+        "duelsWon": 34,
+        "boxTouches": 21
       },
       "away": {
-        "possession": 39.9,
+        "possession": 34.5,
         "shots": 8,
         "shotsOnTarget": 2,
         "passAccuracy": 87.6,
@@ -7365,7 +7373,7 @@
         "offsides": 3,
         "saves": 2,
         "xg": 1.18,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 13
       }
     }
@@ -7384,7 +7392,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7447,31 +7455,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 26.6,
+        "possession": 26.8,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.8,
-        "accuratePasses": 221,
-        "fouls": 11,
+        "passAccuracy": 80.1,
+        "accuratePasses": 226,
+        "fouls": 12,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.74,
-        "duelsWon": 34,
+        "duelsWon": 35,
         "boxTouches": 4
       },
       "away": {
-        "possession": 73.4,
+        "possession": 73.2,
         "shots": 12,
         "shotsOnTarget": 4,
-        "passAccuracy": 92.1,
-        "accuratePasses": 718,
+        "passAccuracy": 92,
+        "accuratePasses": 724,
         "fouls": 7,
         "corners": 6,
         "offsides": 3,
         "saves": 0,
         "xg": 2.14,
-        "duelsWon": 27,
+        "duelsWon": 31,
         "boxTouches": 15
       }
     }
