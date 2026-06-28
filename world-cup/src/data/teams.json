@@ -982,11 +982,11 @@
     "goalsAgainst": 11,
     "points": 0,
     "possession": 38.4,
-    "ppda": 14.7,
+    "ppda": 12.1,
     "cleanSheets": 0,
     "passCompletion": 77.4,
-    "xgFor": 1.47,
-    "xgAgainst": 4.23
+    "xgFor": 1.76,
+    "xgAgainst": 6.58
   },
   {
     "id": "cod",
@@ -1005,11 +1005,11 @@
     "goalsAgainst": 3,
     "points": 4,
     "possession": 39.6,
-    "ppda": 18.9,
+    "ppda": 16.3,
     "cleanSheets": 0,
     "passCompletion": 78.7,
-    "xgFor": 1.23,
-    "xgAgainst": 1.65
+    "xgFor": 3.58,
+    "xgAgainst": 1.94
   },
   {
     "id": "eng",
@@ -1053,7 +1053,7 @@
     "possession": 53.2,
     "ppda": 13.5,
     "cleanSheets": 1,
-    "passCompletion": 87.3,
+    "passCompletion": 87.2,
     "xgFor": 2.77,
     "xgAgainst": 4.59
   },
