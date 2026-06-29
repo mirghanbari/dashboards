@@ -7594,7 +7594,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "14",
+    "minute": "15",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7616,35 +7616,42 @@
         "teamId": "jpn",
         "player": "Kaishu Sano",
         "text": "Kaishu Sano Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "14'",
+        "teamId": "bra",
+        "player": "Casemiro",
+        "text": "Casemiro Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.6,
-        "shots": 3,
+        "possession": 71,
+        "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 91.5,
-        "accuratePasses": 107,
-        "fouls": 0,
+        "passAccuracy": 91.7,
+        "accuratePasses": 111,
+        "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.14,
         "duelsWon": 6,
-        "boxTouches": 6
+        "boxTouches": 7
       },
       "away": {
-        "possession": 28.4,
+        "possession": 29,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 84.4,
-        "accuratePasses": 38,
+        "passAccuracy": 85.4,
+        "accuratePasses": 41,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0,
-        "duelsWon": 3,
+        "duelsWon": 4,
         "boxTouches": 1
       }
     }
