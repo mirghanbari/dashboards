@@ -7762,18 +7762,18 @@
         "possession": 77.6,
         "shots": 18,
         "shotsOnTarget": 4,
-        "passAccuracy": 90,
-        "accuratePasses": 678,
+        "passAccuracy": 90.1,
+        "accuratePasses": 679,
         "fouls": 15,
         "corners": 13,
         "offsides": 4,
         "saves": 2,
         "xg": 1.26,
-        "duelsWon": 42,
+        "duelsWon": 45,
         "boxTouches": 38
       },
       "away": {
-        "possession": 22.6,
+        "possession": 22.4,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 60.5,
@@ -7781,10 +7781,10 @@
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
-        "saves": 3,
+        "saves": 4,
         "xg": 0.42,
-        "duelsWon": 62,
-        "boxTouches": 13
+        "duelsWon": 64,
+        "boxTouches": 14
       }
     }
   },
