@@ -7592,9 +7592,9 @@
     "homeTeamId": "bra",
     "awayTeamId": "jpn",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "30",
+    "minute": "31",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7637,8 +7637,8 @@
         "possession": 73.7,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 93.3,
-        "accuratePasses": 195,
+        "passAccuracy": 92.9,
+        "accuratePasses": 197,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
@@ -7649,15 +7649,15 @@
       },
       "away": {
         "possession": 26.3,
-        "shots": 2,
-        "shotsOnTarget": 0,
-        "passAccuracy": 82.9,
-        "accuratePasses": 58,
+        "shots": 3,
+        "shotsOnTarget": 1,
+        "passAccuracy": 83.1,
+        "accuratePasses": 59,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.15,
+        "xg": 0.18,
         "duelsWon": 8,
         "boxTouches": 2
       }
