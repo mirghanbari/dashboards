@@ -7755,22 +7755,13 @@
         "teamId": "par",
         "player": "Andrés Cubas",
         "text": "Andrés Cubas Yellow Card"
-      },
-      {
-        "type": "goal",
-        "minute": "102'",
-        "teamId": "ger",
-        "player": "Jonathan Tah",
-        "text": "Jonathan Tah Goal - Header",
-        "goalType": "header",
-        "assist": "Nathaniel Brown"
       }
     ],
     "stats": {
       "home": {
         "possession": 77.5,
-        "shots": 18,
-        "shotsOnTarget": 4,
+        "shots": 17,
+        "shotsOnTarget": 3,
         "passAccuracy": 90.2,
         "accuratePasses": 660,
         "fouls": 14,
@@ -7778,7 +7769,7 @@
         "offsides": 4,
         "saves": 2,
         "xg": 1.01,
-        "duelsWon": 37,
+        "duelsWon": 38,
         "boxTouches": 36
       },
       "away": {
