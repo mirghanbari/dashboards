@@ -7714,8 +7714,8 @@
     "awayTeamId": "par",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+6",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -7764,12 +7764,12 @@
         "shotsOnTarget": 3,
         "passAccuracy": 89.9,
         "accuratePasses": 579,
-        "fouls": 13,
+        "fouls": 14,
         "corners": 10,
         "offsides": 4,
         "saves": 2,
         "xg": 0.72,
-        "duelsWon": 34,
+        "duelsWon": 33,
         "boxTouches": 33
       },
       "away": {
