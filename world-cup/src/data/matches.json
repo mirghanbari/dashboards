@@ -7591,10 +7591,10 @@
     "city": "Houston, Texas",
     "homeTeamId": "bra",
     "awayTeamId": "jpn",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7660,35 +7660,43 @@
         "teamId": "jpn",
         "player": "Junnosuke Suzuki",
         "text": "Junnosuke Suzuki Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+5'",
+        "teamId": "bra",
+        "player": "Gabriel Martinelli",
+        "text": "Gabriel Martinelli Goal",
+        "assist": "Bruno Guimarães"
       }
     ],
     "stats": {
       "home": {
-        "possession": 68.6,
-        "shots": 17,
-        "shotsOnTarget": 6,
-        "passAccuracy": 92.2,
-        "accuratePasses": 602,
+        "possession": 69.1,
+        "shots": 19,
+        "shotsOnTarget": 7,
+        "passAccuracy": 92.3,
+        "accuratePasses": 624,
         "fouls": 4,
         "corners": 6,
         "offsides": 1,
         "saves": 1,
-        "xg": 1.49,
-        "duelsWon": 34,
-        "boxTouches": 33
+        "xg": 1.48,
+        "duelsWon": 35,
+        "boxTouches": 35
       },
       "away": {
-        "possession": 31.4,
+        "possession": 30.9,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.4,
-        "accuratePasses": 254,
+        "passAccuracy": 84.2,
+        "accuratePasses": 256,
         "fouls": 11,
         "corners": 2,
         "offsides": 0,
         "saves": 4,
         "xg": 0.23,
-        "duelsWon": 30,
+        "duelsWon": 31,
         "boxTouches": 11
       }
     }
