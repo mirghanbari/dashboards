@@ -7593,8 +7593,8 @@
     "awayTeamId": "jpn",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+11",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -7672,10 +7672,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 68.5,
+        "possession": 68.6,
         "shots": 19,
         "shotsOnTarget": 7,
-        "passAccuracy": 91.9,
+        "passAccuracy": 91.6,
         "accuratePasses": 625,
         "fouls": 4,
         "corners": 6,
@@ -7686,7 +7686,7 @@
         "boxTouches": 35
       },
       "away": {
-        "possession": 31.5,
+        "possession": 31.4,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 82.9,
