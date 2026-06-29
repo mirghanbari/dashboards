@@ -292,11 +292,11 @@
     "goalsAgainst": 4,
     "points": 4,
     "possession": 31.2,
-    "ppda": 12.8,
+    "ppda": 13.1,
     "cleanSheets": 2,
     "passCompletion": 66.7,
-    "xgFor": 1.1,
-    "xgAgainst": 4.21
+    "xgFor": 1.51,
+    "xgAgainst": 5.69
   },
   {
     "id": "tur",
@@ -407,11 +407,11 @@
     "goalsAgainst": 4,
     "points": 6,
     "possession": 65.1,
-    "ppda": 9.4,
+    "ppda": 8.9,
     "cleanSheets": 0,
     "passCompletion": 88.3,
-    "xgFor": 6.78,
-    "xgAgainst": 2.91
+    "xgFor": 8.26,
+    "xgAgainst": 3.32
   },
   {
     "id": "civ",
