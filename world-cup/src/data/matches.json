@@ -7713,9 +7713,9 @@
     "homeTeamId": "ger",
     "awayTeamId": "par",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "41",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7730,9 +7730,20 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "par",
+        "player": "Julio Enciso",
+        "text": "Julio Enciso Goal - Header",
+        "goalType": "header",
+        "assist": "Matías Galarza"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 79.4,
+        "possession": 78.4,
         "shots": 3,
         "shotsOnTarget": 0,
         "passAccuracy": 90.1,
@@ -7742,22 +7753,22 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.09,
-        "duelsWon": 8,
+        "duelsWon": 9,
         "boxTouches": 11
       },
       "away": {
-        "possession": 20.6,
-        "shots": 2,
-        "shotsOnTarget": 1,
-        "passAccuracy": 61.8,
-        "accuratePasses": 47,
+        "possession": 21.6,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "passAccuracy": 62.5,
+        "accuratePasses": 50,
         "fouls": 2,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
         "xg": 0.18,
         "duelsWon": 22,
-        "boxTouches": 3
+        "boxTouches": 5
       }
     }
   },
