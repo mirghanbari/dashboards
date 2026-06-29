@@ -7594,7 +7594,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "12",
+    "minute": "13",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7609,13 +7609,22 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "12'",
+        "teamId": "jpn",
+        "player": "Kaishu Sano",
+        "text": "Kaishu Sano Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 81.8,
+        "possession": 72.2,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 92.6,
-        "accuratePasses": 88,
+        "passAccuracy": 91.2,
+        "accuratePasses": 103,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
@@ -7625,12 +7634,12 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 18.2,
+        "possession": 27.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 66.7,
-        "accuratePasses": 14,
-        "fouls": 2,
+        "passAccuracy": 83.3,
+        "accuratePasses": 35,
+        "fouls": 3,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
