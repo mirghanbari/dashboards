@@ -85,11 +85,11 @@
     "goalsAgainst": 3,
     "points": 4,
     "possession": 47.8,
-    "ppda": 12.8,
+    "ppda": 13,
     "cleanSheets": 1,
-    "passCompletion": 84.5,
-    "xgFor": 2.77,
-    "xgAgainst": 4.69
+    "passCompletion": 84.3,
+    "xgFor": 2.78,
+    "xgAgainst": 4.75
   },
   {
     "id": "can",
@@ -107,12 +107,12 @@
     "goalsFor": 8,
     "goalsAgainst": 3,
     "points": 4,
-    "possession": 56.7,
+    "possession": 56.6,
     "ppda": 10.2,
     "cleanSheets": 2,
-    "passCompletion": 80.7,
-    "xgFor": 9.13,
-    "xgAgainst": 2.48
+    "passCompletion": 80.8,
+    "xgFor": 9.19,
+    "xgAgainst": 2.49
   },
   {
     "id": "bih",
