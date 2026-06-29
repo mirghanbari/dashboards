@@ -7653,6 +7653,13 @@
         "text": "Casemiro Goal - Header",
         "goalType": "header",
         "assist": "Gabriel Magalhães"
+      },
+      {
+        "type": "yellow",
+        "minute": "84'",
+        "teamId": "jpn",
+        "player": "Junnosuke Suzuki",
+        "text": "Junnosuke Suzuki Yellow Card"
       }
     ],
     "stats": {
