@@ -7712,7 +7712,7 @@
     "city": "Foxborough, Massachusetts",
     "homeTeamId": "ger",
     "awayTeamId": "par",
-    "homeScore": 2,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "finished",
     "minute": null,
@@ -7759,32 +7759,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 77.5,
+        "possession": 77.4,
         "shots": 17,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.2,
+        "passAccuracy": 90,
         "accuratePasses": 660,
-        "fouls": 14,
+        "fouls": 15,
         "corners": 13,
         "offsides": 4,
         "saves": 2,
         "xg": 1.01,
-        "duelsWon": 38,
-        "boxTouches": 36
+        "duelsWon": 41,
+        "boxTouches": 37
       },
       "away": {
-        "possession": 22.5,
+        "possession": 22.6,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 60.8,
+        "passAccuracy": 60.6,
         "accuratePasses": 129,
         "fouls": 8,
         "corners": 4,
         "offsides": 1,
         "saves": 3,
         "xg": 0.42,
-        "duelsWon": 61,
-        "boxTouches": 10
+        "duelsWon": 63,
+        "boxTouches": 13
       }
     }
   },
