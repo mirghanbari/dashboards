@@ -7715,7 +7715,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7746,16 +7746,17 @@
         "teamId": "ger",
         "player": "Kai Havertz",
         "text": "Kai Havertz Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Florian Wirtz"
       }
     ],
     "stats": {
       "home": {
-        "possession": 77.8,
-        "shots": 5,
+        "possession": 77.5,
+        "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 89.4,
-        "accuratePasses": 371,
+        "passAccuracy": 89.1,
+        "accuratePasses": 375,
         "fouls": 9,
         "corners": 6,
         "offsides": 3,
@@ -7765,17 +7766,17 @@
         "boxTouches": 16
       },
       "away": {
-        "possession": 22.2,
+        "possession": 22.5,
         "shots": 4,
         "shotsOnTarget": 3,
-        "passAccuracy": 59.3,
-        "accuratePasses": 70,
+        "passAccuracy": 59.8,
+        "accuratePasses": 73,
         "fouls": 2,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.32,
-        "duelsWon": 29,
+        "duelsWon": 30,
         "boxTouches": 6
       }
     }
