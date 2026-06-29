@@ -7755,36 +7755,43 @@
         "teamId": "par",
         "player": "Andrés Cubas",
         "text": "Andrés Cubas Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "106'",
+        "teamId": "ger",
+        "player": "Kai Havertz",
+        "text": "Kai Havertz Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 77.6,
+        "possession": 77.1,
         "shots": 18,
         "shotsOnTarget": 4,
-        "passAccuracy": 90.1,
-        "accuratePasses": 679,
-        "fouls": 15,
+        "passAccuracy": 90,
+        "accuratePasses": 684,
+        "fouls": 17,
         "corners": 13,
         "offsides": 4,
         "saves": 2,
         "xg": 1.26,
-        "duelsWon": 45,
-        "boxTouches": 38
+        "duelsWon": 47,
+        "boxTouches": 39
       },
       "away": {
-        "possession": 22.4,
+        "possession": 22.9,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 60.5,
-        "accuratePasses": 130,
+        "passAccuracy": 60.2,
+        "accuratePasses": 133,
         "fouls": 9,
-        "corners": 5,
+        "corners": 6,
         "offsides": 1,
         "saves": 4,
         "xg": 0.42,
-        "duelsWon": 64,
-        "boxTouches": 14
+        "duelsWon": 66,
+        "boxTouches": 15
       }
     }
   },
