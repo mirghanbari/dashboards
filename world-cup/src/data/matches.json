@@ -6918,8 +6918,7 @@
         "minute": "73'",
         "teamId": "gha",
         "player": "Derrick Luckassen",
-        "text": "Derrick Luckassen Goal - Volley",
-        "goalType": "volley",
+        "text": "Derrick Luckassen Goal",
         "assist": "Ernest Nuamah"
       },
       {
@@ -7019,8 +7018,7 @@
         "minute": "62'",
         "teamId": "eng",
         "player": "Jude Bellingham",
-        "text": "Jude Bellingham Goal - Volley",
-        "goalType": "volley",
+        "text": "Jude Bellingham Goal",
         "assist": "Bukayo Saka"
       },
       {
