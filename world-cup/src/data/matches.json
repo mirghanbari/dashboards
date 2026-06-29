@@ -7769,6 +7769,13 @@
         "teamId": "ger",
         "player": "Jamal Musiala",
         "text": "Jamal Musiala Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "117'",
+        "teamId": "par",
+        "player": "Matías Galarza",
+        "text": "Matías Galarza Yellow Card"
       }
     ],
     "stats": {
@@ -7782,9 +7789,9 @@
         "corners": 15,
         "offsides": 4,
         "saves": 2,
-        "xg": 1.27,
-        "duelsWon": 51,
-        "boxTouches": 39
+        "xg": 1.46,
+        "duelsWon": 59,
+        "boxTouches": 41
       },
       "away": {
         "possession": 24.1,
@@ -7797,7 +7804,7 @@
         "offsides": 1,
         "saves": 5,
         "xg": 0.42,
-        "duelsWon": 72,
+        "duelsWon": 76,
         "boxTouches": 13
       }
     }
