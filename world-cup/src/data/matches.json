@@ -7712,7 +7712,7 @@
     "city": "Foxborough, Massachusetts",
     "homeTeamId": "ger",
     "awayTeamId": "par",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "finished",
     "minute": null,
@@ -7755,17 +7755,26 @@
         "teamId": "par",
         "player": "Andrés Cubas",
         "text": "Andrés Cubas Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "102'",
+        "teamId": "ger",
+        "player": "Jonathan Tah",
+        "text": "Jonathan Tah Goal - Header",
+        "goalType": "header",
+        "assist": "Nathaniel Brown"
       }
     ],
     "stats": {
       "home": {
-        "possession": 77.3,
-        "shots": 17,
-        "shotsOnTarget": 3,
-        "passAccuracy": 90.1,
-        "accuratePasses": 645,
+        "possession": 77.5,
+        "shots": 18,
+        "shotsOnTarget": 4,
+        "passAccuracy": 90.2,
+        "accuratePasses": 660,
         "fouls": 14,
-        "corners": 12,
+        "corners": 13,
         "offsides": 4,
         "saves": 2,
         "xg": 1.01,
@@ -7773,17 +7782,17 @@
         "boxTouches": 36
       },
       "away": {
-        "possession": 22.7,
+        "possession": 22.5,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 61.5,
-        "accuratePasses": 128,
+        "passAccuracy": 60.8,
+        "accuratePasses": 129,
         "fouls": 8,
         "corners": 4,
         "offsides": 1,
         "saves": 3,
         "xg": 0.42,
-        "duelsWon": 60,
+        "duelsWon": 61,
         "boxTouches": 10
       }
     }
