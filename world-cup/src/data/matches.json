@@ -7968,7 +7968,7 @@
         "corners": 14,
         "offsides": 2,
         "saves": 1,
-        "xg": 1.36,
+        "xg": 1.49,
         "duelsWon": 49,
         "boxTouches": 48
       },
@@ -7982,7 +7982,7 @@
         "corners": 3,
         "offsides": 2,
         "saves": 4,
-        "xg": 2.02,
+        "xg": 1.9,
         "duelsWon": 41,
         "boxTouches": 26
       }
@@ -8054,7 +8054,7 @@
         "corners": 9,
         "offsides": 3,
         "saves": 3,
-        "xg": 3.16,
+        "xg": 3.17,
         "duelsWon": 46,
         "boxTouches": 32
       },
@@ -8068,9 +8068,9 @@
         "corners": 1,
         "offsides": 1,
         "saves": 9,
-        "xg": 0.56,
-        "duelsWon": 40,
-        "boxTouches": 13
+        "xg": 0.67,
+        "duelsWon": 41,
+        "boxTouches": 15
       }
     }
   },
