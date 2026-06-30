@@ -7907,9 +7907,9 @@
     "homeTeamId": "civ",
     "awayTeamId": "nor",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "40",
+    "minute": "41",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7924,9 +7924,19 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "39'",
+        "teamId": "nor",
+        "player": "Antonio Nusa",
+        "text": "Antonio Nusa Goal",
+        "assist": "Martin Ødegaard"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 45.3,
+        "possession": 43.9,
         "shots": 4,
         "shotsOnTarget": 1,
         "passAccuracy": 84.5,
@@ -7940,18 +7950,18 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 54.7,
-        "shots": 2,
-        "shotsOnTarget": 1,
-        "passAccuracy": 88.3,
-        "accuratePasses": 182,
+        "possession": 56.1,
+        "shots": 4,
+        "shotsOnTarget": 2,
+        "passAccuracy": 89,
+        "accuratePasses": 195,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.09,
-        "duelsWon": 16,
-        "boxTouches": 5
+        "xg": 0.12,
+        "duelsWon": 15,
+        "boxTouches": 6
       }
     }
   },
