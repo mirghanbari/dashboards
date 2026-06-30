@@ -8002,7 +8002,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8031,12 +8031,13 @@
         "minute": "53'",
         "teamId": "fra",
         "player": "Bradley Barcola",
-        "text": "Bradley Barcola Goal"
+        "text": "Bradley Barcola Goal",
+        "assist": "Michael Olise"
       }
     ],
     "stats": {
       "home": {
-        "possession": 71.3,
+        "possession": 70.7,
         "shots": 17,
         "shotsOnTarget": 7,
         "passAccuracy": 86.9,
@@ -8045,16 +8046,16 @@
         "corners": 6,
         "offsides": 2,
         "saves": 1,
-        "xg": 0.92,
+        "xg": 1.48,
         "duelsWon": 28,
         "boxTouches": 19
       },
       "away": {
-        "possession": 28.7,
+        "possession": 29.3,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 64.4,
-        "accuratePasses": 87,
+        "passAccuracy": 65.5,
+        "accuratePasses": 91,
         "fouls": 7,
         "corners": 0,
         "offsides": 1,
