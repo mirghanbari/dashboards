@@ -7906,10 +7906,10 @@
     "city": "Arlington, Texas",
     "homeTeamId": "civ",
     "awayTeamId": "nor",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "74",
+    "minute": "75",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7939,29 +7939,37 @@
         "teamId": "nor",
         "player": "Antonio Nusa",
         "text": "Antonio Nusa Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "74'",
+        "teamId": "civ",
+        "player": "Amad Diallo",
+        "text": "Amad Diallo Goal",
+        "assist": "Nicolas Pépé"
       }
     ],
     "stats": {
       "home": {
-        "possession": 50.4,
-        "shots": 11,
-        "shotsOnTarget": 3,
-        "passAccuracy": 84.8,
-        "accuratePasses": 280,
+        "possession": 51.2,
+        "shots": 12,
+        "shotsOnTarget": 4,
+        "passAccuracy": 85.4,
+        "accuratePasses": 293,
         "fouls": 3,
         "corners": 12,
         "offsides": 1,
         "saves": 1,
         "xg": 0.91,
-        "duelsWon": 37,
-        "boxTouches": 39
+        "duelsWon": 38,
+        "boxTouches": 41
       },
       "away": {
-        "possession": 49.6,
+        "possession": 48.8,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 85,
-        "accuratePasses": 289,
+        "accuratePasses": 290,
         "fouls": 6,
         "corners": 3,
         "offsides": 2,
