@@ -8019,7 +8019,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.3,
+        "possession": 66,
         "shots": 2,
         "shotsOnTarget": 2,
         "passAccuracy": 91.3,
@@ -8033,7 +8033,7 @@
         "boxTouches": 2
       },
       "away": {
-        "possession": 33.7,
+        "possession": 34,
         "shots": 1,
         "shotsOnTarget": 1,
         "passAccuracy": 76.6,
@@ -8044,7 +8044,7 @@
         "saves": 2,
         "xg": 0.03,
         "duelsWon": 10,
-        "boxTouches": 2
+        "boxTouches": 3
       }
     }
   },
