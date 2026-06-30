@@ -269,11 +269,11 @@
     "goalsAgainst": 3,
     "points": 7,
     "possession": 61.7,
-    "ppda": 10.6,
+    "ppda": 10.5,
     "cleanSheets": 1,
     "passCompletion": 88.8,
-    "xgFor": 7.54,
-    "xgAgainst": 3.23
+    "xgFor": 7.53,
+    "xgAgainst": 3.24
   },
   {
     "id": "par",
@@ -476,11 +476,11 @@
     "goalsAgainst": 4,
     "points": 7,
     "possession": 53,
-    "ppda": 14.4,
+    "ppda": 14.3,
     "cleanSheets": 0,
-    "passCompletion": 87.1,
-    "xgFor": 5.48,
-    "xgAgainst": 3.6
+    "passCompletion": 87.2,
+    "xgFor": 5.49,
+    "xgAgainst": 3.59
   },
   {
     "id": "swe",
