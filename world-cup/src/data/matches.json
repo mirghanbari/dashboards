@@ -7823,7 +7823,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "72",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7845,29 +7845,37 @@
         "teamId": "mar",
         "player": "Issa Diop",
         "text": "Issa Diop Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "72'",
+        "teamId": "ned",
+        "player": "Cody Gakpo",
+        "text": "Cody Gakpo Goal",
+        "assist": "Crysencio Summerville"
       }
     ],
     "stats": {
       "home": {
-        "possession": 38.8,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 83.4,
-        "accuratePasses": 226,
+        "possession": 38.7,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 83.6,
+        "accuratePasses": 230,
         "fouls": 8,
         "corners": 4,
         "offsides": 3,
-        "saves": 3,
-        "xg": 0.14,
+        "saves": 4,
+        "xg": 0.27,
         "duelsWon": 23,
         "boxTouches": 13
       },
       "away": {
-        "possession": 61.2,
+        "possession": 61.3,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 90.7,
-        "accuratePasses": 388,
+        "passAccuracy": 90.6,
+        "accuratePasses": 395,
         "fouls": 7,
         "corners": 6,
         "offsides": 0,
