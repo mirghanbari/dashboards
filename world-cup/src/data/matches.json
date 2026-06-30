@@ -7866,7 +7866,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 30.2,
+        "possession": 29.3,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 78.6,
@@ -7876,15 +7876,15 @@
         "offsides": 3,
         "saves": 5,
         "xg": 0.23,
-        "duelsWon": 52,
+        "duelsWon": 53,
         "boxTouches": 18
       },
       "away": {
-        "possession": 69.8,
+        "possession": 70.7,
         "shots": 11,
         "shotsOnTarget": 5,
         "passAccuracy": 91.1,
-        "accuratePasses": 746,
+        "accuratePasses": 780,
         "fouls": 15,
         "corners": 8,
         "offsides": 0,
