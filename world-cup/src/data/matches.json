@@ -7907,9 +7907,9 @@
     "homeTeamId": "civ",
     "awayTeamId": "nor",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7953,7 +7953,8 @@
         "minute": "86'",
         "teamId": "nor",
         "player": "Erling Haaland",
-        "text": "Erling Haaland Goal"
+        "text": "Erling Haaland Goal",
+        "assist": "Patrick Berg"
       }
     ],
     "stats": {
@@ -7981,7 +7982,7 @@
         "corners": 3,
         "offsides": 2,
         "saves": 3,
-        "xg": 1.13,
+        "xg": 1.48,
         "duelsWon": 36,
         "boxTouches": 23
       }
