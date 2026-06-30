@@ -7999,10 +7999,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "fra",
     "awayTeamId": "swe",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8033,35 +8033,42 @@
         "player": "Bradley Barcola",
         "text": "Bradley Barcola Goal",
         "assist": "Michael Olise"
+      },
+      {
+        "type": "goal",
+        "minute": "74'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.1,
-        "shots": 21,
-        "shotsOnTarget": 10,
-        "passAccuracy": 86.9,
-        "accuratePasses": 378,
+        "possession": 63.7,
+        "shots": 22,
+        "shotsOnTarget": 11,
+        "passAccuracy": 86.8,
+        "accuratePasses": 383,
         "fouls": 10,
         "corners": 8,
         "offsides": 2,
         "saves": 1,
         "xg": 2.21,
-        "duelsWon": 35,
-        "boxTouches": 24
+        "duelsWon": 34,
+        "boxTouches": 25
       },
       "away": {
-        "possession": 35.9,
+        "possession": 36.3,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 75.5,
-        "accuratePasses": 182,
-        "fouls": 7,
+        "passAccuracy": 76.3,
+        "accuratePasses": 190,
+        "fouls": 8,
         "corners": 1,
         "offsides": 1,
         "saves": 8,
         "xg": 0.33,
-        "duelsWon": 27,
+        "duelsWon": 28,
         "boxTouches": 9
       }
     }
