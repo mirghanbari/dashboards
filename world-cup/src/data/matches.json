@@ -7909,7 +7909,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7947,11 +7947,18 @@
         "player": "Amad Diallo",
         "text": "Amad Diallo Goal",
         "assist": "Nicolas Pépé"
+      },
+      {
+        "type": "goal",
+        "minute": "86'",
+        "teamId": "nor",
+        "player": "Erling Haaland",
+        "text": "Erling Haaland Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 48,
+        "possession": 46.5,
         "shots": 12,
         "shotsOnTarget": 4,
         "passAccuracy": 84.9,
@@ -7965,18 +7972,18 @@
         "boxTouches": 44
       },
       "away": {
-        "possession": 52,
-        "shots": 7,
-        "shotsOnTarget": 3,
-        "passAccuracy": 86.9,
-        "accuratePasses": 357,
+        "possession": 53.5,
+        "shots": 8,
+        "shotsOnTarget": 4,
+        "passAccuracy": 87.2,
+        "accuratePasses": 381,
         "fouls": 6,
         "corners": 3,
         "offsides": 2,
         "saves": 3,
         "xg": 1.13,
-        "duelsWon": 35,
-        "boxTouches": 20
+        "duelsWon": 36,
+        "boxTouches": 23
       }
     }
   },
