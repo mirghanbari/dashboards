@@ -8001,8 +8001,8 @@
     "awayTeamId": "swe",
     "homeScore": 3,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+4",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -8045,7 +8045,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 61.6,
+        "possession": 60.9,
         "shots": 25,
         "shotsOnTarget": 12,
         "passAccuracy": 88,
@@ -8053,17 +8053,17 @@
         "fouls": 14,
         "corners": 9,
         "offsides": 3,
-        "saves": 2,
+        "saves": 3,
         "xg": 3.16,
         "duelsWon": 46,
         "boxTouches": 32
       },
       "away": {
-        "possession": 38.4,
-        "shots": 6,
-        "shotsOnTarget": 2,
-        "passAccuracy": 79,
-        "accuratePasses": 271,
+        "possession": 39.1,
+        "shots": 8,
+        "shotsOnTarget": 3,
+        "passAccuracy": 79.5,
+        "accuratePasses": 280,
         "fouls": 10,
         "corners": 1,
         "offsides": 1,
