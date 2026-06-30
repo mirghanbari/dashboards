@@ -12,9 +12,43 @@ export function Overview() {
   const finished = matches.filter((m) => m.status === "finished");
   const live = matches.filter((m) => m.status === "live");
   const todayKey = new Date().toLocaleDateString();
-  const todayUpcoming = matches.filter(
-    (m) => m.status === "scheduled" && new Date(m.date).toLocaleDateString() === todayKey,
-  ).sort((a, b) => +new Date(a.date) - +new Date(b.date));
+  const upcomingScheduled = matches
+    .filter((m) => m.status === "scheduled")
+    .sort((a, b) => +new Date(a.date) - +new Date(b.date));
+  const todayUpcoming = upcomingScheduled.filter(
+    (m) => new Date(m.date).toLocaleDateString() === todayKey,
+  );
+  // Default to today's remaining games. Once today's slate is fully played
+  // (and nothing is live), roll forward to the next match day with its own
+  // headline; this reverts to "Upcoming today" automatically once that day
+  // becomes today.
+  let upcomingMatches = todayUpcoming;
+  let upcomingLabel = "Upcoming today";
+  if (todayUpcoming.length === 0 && live.length === 0) {
+    // Look only at days from tomorrow onward, so a stray past match still
+    // flagged "scheduled" can't pull the headline backward.
+    const tomorrow = new Date();
+    tomorrow.setHours(0, 0, 0, 0);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const nextUp = upcomingScheduled.find((m) => new Date(m.date) >= tomorrow);
+    if (nextUp) {
+      const nextDate = new Date(nextUp.date);
+      const nextKey = nextDate.toLocaleDateString();
+      upcomingMatches = upcomingScheduled.filter(
+        (m) => new Date(m.date).toLocaleDateString() === nextKey,
+      );
+      upcomingLabel =
+        nextKey === tomorrow.toLocaleDateString()
+          ? "Upcoming tomorrow"
+          : `Upcoming ${nextDate.toLocaleDateString(undefined, {
+              weekday: "long",
+              month: "long",
+              day: "numeric",
+            })}`;
+    } else {
+      upcomingMatches = [];
+    }
+  }
   const goals = finished.reduce(
     (sum, m) => sum + (m.homeScore ?? 0) + (m.awayScore ?? 0),
     0,
@@ -81,16 +115,16 @@ export function Overview() {
         </section>
       )}
 
-      {todayUpcoming.length > 0 && (
+      {upcomingMatches.length > 0 && (
         <section className="section">
           <div className="section-head">
-            <h2 className="section-title">Upcoming today</h2>
+            <h2 className="section-title">{upcomingLabel}</h2>
             <Link to="/matches" className="see-all">
               Full schedule →
             </Link>
           </div>
           <div className="match-grid">
-            {todayUpcoming.map((m) => (
+            {upcomingMatches.map((m) => (
               <MatchCard key={m.id} match={m} />
             ))}
           </div>
