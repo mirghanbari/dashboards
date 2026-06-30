@@ -7820,10 +7820,10 @@
     "city": "Guadalupe",
     "homeTeamId": "ned",
     "awayTeamId": "mar",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "71",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7860,7 +7860,7 @@
         "saves": 3,
         "xg": 0.14,
         "duelsWon": 23,
-        "boxTouches": 11
+        "boxTouches": 13
       },
       "away": {
         "possession": 61.2,
