@@ -7823,7 +7823,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -7853,11 +7853,20 @@
         "player": "Cody Gakpo",
         "text": "Cody Gakpo Goal",
         "assist": "Crysencio Summerville"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+1'",
+        "teamId": "mar",
+        "player": "Issa Diop",
+        "text": "Issa Diop Goal - Header",
+        "goalType": "header",
+        "assist": "Chemsdine Talbi"
       }
     ],
     "stats": {
       "home": {
-        "possession": 34.7,
+        "possession": 34.4,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 81.1,
@@ -7871,16 +7880,16 @@
         "boxTouches": 15
       },
       "away": {
-        "possession": 65.3,
-        "shots": 9,
-        "shotsOnTarget": 3,
-        "passAccuracy": 90.2,
-        "accuratePasses": 513,
+        "possession": 65.6,
+        "shots": 10,
+        "shotsOnTarget": 4,
+        "passAccuracy": 90.3,
+        "accuratePasses": 519,
         "fouls": 8,
         "corners": 7,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.47,
+        "xg": 0.65,
         "duelsWon": 36,
         "boxTouches": 16
       }
