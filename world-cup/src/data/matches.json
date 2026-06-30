@@ -7822,8 +7822,8 @@
     "awayTeamId": "mar",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -7869,7 +7869,7 @@
         "possession": 34.8,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 80,
+        "passAccuracy": 79.7,
         "accuratePasses": 252,
         "fouls": 12,
         "corners": 5,
@@ -7884,7 +7884,7 @@
         "shots": 10,
         "shotsOnTarget": 4,
         "passAccuracy": 90.1,
-        "accuratePasses": 536,
+        "accuratePasses": 537,
         "fouls": 10,
         "corners": 7,
         "offsides": 0,
