@@ -4,6 +4,7 @@ import type {
   Player,
   Meta,
   Standing,
+  Stage,
   Predictions,
   TeamPrediction,
   HeadToHead,
@@ -189,6 +190,34 @@ export function projectedQualifiers(): Standing[] {
   return [...winners, ...runners, ...bestThirds];
 }
 
+export interface BracketRound {
+  stage: Stage;
+  name: string;
+  matchups: { home: Standing | null; away: Standing | null }[];
+}
+
+/**
+ * A projected knockout bracket built from current standings. The Round of 32 is
+ * seeded best-vs-worst across the 32 qualifiers; later rounds are placeholders
+ * until results decide them. Display-only — not the official 2026 pairing.
+ */
+export function projectedBracket(): BracketRound[] {
+  const seeds = [...projectedQualifiers()].sort(byStrength);
+  const r32: BracketRound["matchups"] = [];
+  for (let i = 0; i < Math.floor(seeds.length / 2); i++) {
+    r32.push({ home: seeds[i] ?? null, away: seeds[seeds.length - 1 - i] ?? null });
+  }
+  const tbd = (n: number) =>
+    Array.from({ length: n }, () => ({ home: null, away: null }));
+  return [
+    { stage: "round32", name: "Round of 32", matchups: r32 },
+    { stage: "round16", name: "Round of 16", matchups: tbd(8) },
+    { stage: "quarter", name: "Quarter-finals", matchups: tbd(4) },
+    { stage: "semi", name: "Semi-finals", matchups: tbd(2) },
+    { stage: "final", name: "Final", matchups: tbd(1) },
+  ];
+}
+
 /** Total goals scored by every team in a group — for the per-group chart. */
 export function goalsByGroup(): { label: string; value: number }[] {
   return groupLetters.map((g) => ({
@@ -198,13 +227,6 @@ export function goalsByGroup(): { label: string; value: number }[] {
 }
 
 export { useLiveMatches, applyLive, liveStandings } from "./live";
-export { knockoutBracket } from "./knockout";
-export type {
-  Knockout,
-  KnockoutRound,
-  BracketMatch,
-  BracketSlot,
-} from "./knockout";
 export {
   classifyGroup,
   qualificationByGroup,
