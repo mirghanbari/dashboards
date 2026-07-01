@@ -8085,10 +8085,10 @@
     "city": "Mexico City",
     "homeTeamId": "mex",
     "awayTeamId": "ecu",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8102,7 +8102,33 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 80,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 100,
+        "accuratePasses": 4,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 0
+      },
+      "away": {
+        "possession": 20,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 0,
+        "accuratePasses": 0,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 2
+      }
+    }
   },
   {
     "id": "M080",
