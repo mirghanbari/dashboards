@@ -8295,7 +8295,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "87",
+    "minute": "88",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8345,37 +8345,38 @@
         "minute": "86'",
         "teamId": "bel",
         "player": "Romelu Lukaku",
-        "text": "Romelu Lukaku Goal"
+        "text": "Romelu Lukaku Goal",
+        "assist": "Thomas Meunier"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53.9,
-        "shots": 13,
-        "shotsOnTarget": 2,
-        "passAccuracy": 87.7,
-        "accuratePasses": 422,
+        "possession": 54.2,
+        "shots": 14,
+        "shotsOnTarget": 3,
+        "passAccuracy": 87.6,
+        "accuratePasses": 430,
         "fouls": 13,
         "corners": 3,
         "offsides": 1,
         "saves": 2,
-        "xg": 0.56,
-        "duelsWon": 35,
+        "xg": 0.72,
+        "duelsWon": 37,
         "boxTouches": 31
       },
       "away": {
-        "possession": 46.1,
+        "possession": 45.8,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 86.5,
-        "accuratePasses": 353,
+        "passAccuracy": 86.1,
+        "accuratePasses": 354,
         "fouls": 10,
         "corners": 1,
         "offsides": 2,
         "saves": 3,
         "xg": 2.71,
         "duelsWon": 32,
-        "boxTouches": 19
+        "boxTouches": 20
       }
     }
   },
