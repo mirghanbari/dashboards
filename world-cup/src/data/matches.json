@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "71",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8304,10 +8304,6 @@
       {
         "name": "Telemundo",
         "type": "tv"
-      },
-      {
-        "name": "FOX One",
-        "type": "stream"
       }
     ],
     "timeline": [
