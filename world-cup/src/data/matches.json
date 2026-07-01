@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "51",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8323,7 +8323,8 @@
         "minute": "51'",
         "teamId": "sen",
         "player": "Ismaïla Sarr",
-        "text": "Ismaïla Sarr Goal"
+        "text": "Ismaïla Sarr Goal",
+        "assist": "Moussa Niakhaté"
       }
     ],
     "stats": {
@@ -8351,7 +8352,7 @@
         "corners": 1,
         "offsides": 1,
         "saves": 3,
-        "xg": 2.27,
+        "xg": 2.66,
         "duelsWon": 21,
         "boxTouches": 15
       }
