@@ -8292,10 +8292,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bel",
     "awayTeamId": "sen",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8339,6 +8339,13 @@
         "teamId": "sen",
         "player": "Lamine Camara",
         "text": "Lamine Camara Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "86'",
+        "teamId": "bel",
+        "player": "Romelu Lukaku",
+        "text": "Romelu Lukaku Goal"
       }
     ],
     "stats": {
@@ -8354,7 +8361,7 @@
         "saves": 2,
         "xg": 0.56,
         "duelsWon": 35,
-        "boxTouches": 28
+        "boxTouches": 31
       },
       "away": {
         "possession": 46.1,
@@ -8368,7 +8375,7 @@
         "saves": 3,
         "xg": 2.71,
         "duelsWon": 32,
-        "boxTouches": 17
+        "boxTouches": 19
       }
     }
   },
