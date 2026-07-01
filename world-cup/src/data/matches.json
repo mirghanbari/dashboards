@@ -8293,7 +8293,7 @@
     "homeTeamId": "bel",
     "awayTeamId": "sen",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
     "minute": "51",
     "broadcasts": [
@@ -8317,15 +8317,22 @@
         "teamId": "sen",
         "player": "Habib Diarra",
         "text": "Habib Diarra Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "51'",
+        "teamId": "sen",
+        "player": "Ismaïla Sarr",
+        "text": "Ismaïla Sarr Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 50.4,
+        "possession": 50.2,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.8,
-        "accuratePasses": 266,
+        "passAccuracy": 87.6,
+        "accuratePasses": 268,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
@@ -8335,18 +8342,18 @@
         "boxTouches": 16
       },
       "away": {
-        "possession": 49.6,
-        "shots": 10,
-        "shotsOnTarget": 3,
-        "passAccuracy": 88,
-        "accuratePasses": 256,
+        "possession": 49.8,
+        "shots": 11,
+        "shotsOnTarget": 4,
+        "passAccuracy": 87.9,
+        "accuratePasses": 261,
         "fouls": 6,
         "corners": 1,
         "offsides": 1,
         "saves": 3,
-        "xg": 2.03,
+        "xg": 2.27,
         "duelsWon": 21,
-        "boxTouches": 14
+        "boxTouches": 15
       }
     }
   },
