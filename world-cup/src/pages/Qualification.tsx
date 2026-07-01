@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { Fragment, useMemo } from "react";
 import { Link } from "react-router-dom";
 import {
   MATCHES,
@@ -26,6 +26,7 @@ import { liveClock } from "../clock";
 const STATUS_LABEL: Record<QualStatus, string> = {
   "clinched-first": "Group winners",
   clinched: "Qualified",
+  "clinched-third": "Qualified",
   alive: "In contention",
   "out-top2": "Out of top 2",
   eliminated: "Eliminated",
@@ -34,6 +35,7 @@ const STATUS_LABEL: Record<QualStatus, string> = {
 const STATUS_CLASS: Record<QualStatus, string> = {
   "clinched-first": "q-in",
   clinched: "q-in",
+  "clinched-third": "q-in",
   alive: "q-alive",
   "out-top2": "q-out2",
   eliminated: "q-elim",
@@ -155,16 +157,21 @@ function provisionalNote(v: ThirdVerdict, o?: ProvisionalOutcomes): string {
 }
 
 function ThirdNameList({ ids }: { ids: string[] }) {
+  // The comma+space separator sits OUTSIDE each nowrap `.tn-team`, so the list
+  // has a break opportunity between names and wraps instead of overflowing the
+  // card on narrow screens; the flag + name still stay together.
   return (
     <>
       {ids.map((id, i) => {
         const t = getTeam(id);
         return (
-          <span key={id} className="tn-team">
-            {i > 0 && <span className="tn-sep">, </span>}
-            <span className="team-flag">{t.flag}</span>
-            {t.name}
-          </span>
+          <Fragment key={id}>
+            {i > 0 && ", "}
+            <span className="tn-team">
+              <span className="team-flag">{t.flag}</span>
+              {t.name}
+            </span>
+          </Fragment>
         );
       })}
     </>

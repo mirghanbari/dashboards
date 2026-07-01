@@ -18,6 +18,8 @@ function QualBadge({ status }: { status: QualStatus }) {
     return <span className="qbadge qbadge-in" title="Won the group">✓ 1st</span>;
   if (status === "clinched")
     return <span className="qbadge qbadge-in" title="Qualified for the Round of 32">✓ R32</span>;
+  if (status === "clinched-third")
+    return <span className="qbadge qbadge-in" title="Qualified as one of the eight best third-placed teams">✓ R32</span>;
   if (status === "eliminated")
     return <span className="qbadge qbadge-out" title="Eliminated — cannot reach the Round of 32">out</span>;
   return null;
@@ -160,6 +162,7 @@ export function Teams() {
                     const decided =
                       qstatus === "clinched" ||
                       qstatus === "clinched-first" ||
+                      qstatus === "clinched-third" ||
                       qstatus === "eliminated";
                     const label =
                       STANDINGS_LABEL[t.id] ?? (decided ? t.code : t.name);

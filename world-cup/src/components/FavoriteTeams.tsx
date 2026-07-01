@@ -10,6 +10,7 @@ import { MatchCard } from "./MatchCard";
 const STATUS_LABEL: Record<QualStatus, string> = {
   "clinched-first": "Group winners",
   clinched: "Qualified",
+  "clinched-third": "Qualified",
   alive: "In contention",
   "out-top2": "Out of top 2",
   eliminated: "Eliminated",
@@ -17,6 +18,7 @@ const STATUS_LABEL: Record<QualStatus, string> = {
 const STATUS_CLASS: Record<QualStatus, string> = {
   "clinched-first": "q-in",
   clinched: "q-in",
+  "clinched-third": "q-in",
   alive: "q-alive",
   "out-top2": "q-out2",
   eliminated: "q-elim",

@@ -2552,6 +2552,8 @@ tr.is-me .player-name {
   color: var(--red, #e23636);
 }
 .tn-body {
+  flex: 1 1 auto;
+  min-width: 0;
   color: var(--ink-soft);
 }
 .tn-team {
