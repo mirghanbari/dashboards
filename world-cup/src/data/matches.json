@@ -8194,7 +8194,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "26",
+    "minute": "28",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8224,6 +8224,13 @@
         "teamId": "eng",
         "player": "Jude Bellingham",
         "text": "Jude Bellingham Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "28'",
+        "teamId": "cod",
+        "player": "Noah Sadiki",
+        "text": "Noah Sadiki Yellow Card"
       }
     ],
     "stats": {
@@ -8238,7 +8245,8 @@
         "offsides": 0,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 5
+        "duelsWon": 9,
+        "boxTouches": 1
       },
       "away": {
         "possession": 44.7,
@@ -8251,7 +8259,8 @@
         "offsides": 1,
         "saves": 0,
         "xg": 0.07,
-        "duelsWon": 10
+        "duelsWon": 11,
+        "boxTouches": 3
       }
     }
   },
