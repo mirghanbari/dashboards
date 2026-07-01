@@ -15,12 +15,12 @@
     "goalsFor": 6,
     "goalsAgainst": 0,
     "points": 9,
-    "possession": 48.6,
+    "possession": 48.5,
     "ppda": 14.3,
     "cleanSheets": 4,
-    "passCompletion": 83.8,
-    "xgFor": 4.73,
-    "xgAgainst": 2.34
+    "passCompletion": 83.9,
+    "xgFor": 4.77,
+    "xgAgainst": 2.37
   },
   {
     "id": "cze",
@@ -383,12 +383,12 @@
     "goalsFor": 2,
     "goalsAgainst": 2,
     "points": 4,
-    "possession": 55.5,
+    "possession": 55.6,
     "ppda": 9.8,
     "cleanSheets": 1,
-    "passCompletion": 85.4,
-    "xgFor": 5.93,
-    "xgAgainst": 3.7
+    "passCompletion": 85.3,
+    "xgFor": 5.96,
+    "xgAgainst": 3.74
   },
   {
     "id": "ger",
