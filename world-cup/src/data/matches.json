@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8304,6 +8304,10 @@
       {
         "name": "Telemundo",
         "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
       }
     ],
     "timeline": [
@@ -8348,7 +8352,7 @@
         "corners": 3,
         "offsides": 1,
         "saves": 2,
-        "xg": 0.43,
+        "xg": 0.41,
         "duelsWon": 33,
         "boxTouches": 26
       },
