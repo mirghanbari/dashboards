@@ -8292,10 +8292,10 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bel",
     "awayTeamId": "sen",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "89",
+    "minute": "90",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8347,15 +8347,24 @@
         "player": "Romelu Lukaku",
         "text": "Romelu Lukaku Goal",
         "assist": "Thomas Meunier"
+      },
+      {
+        "type": "goal",
+        "minute": "89'",
+        "teamId": "bel",
+        "player": "Youri Tielemans",
+        "text": "Youri Tielemans Goal - Header",
+        "goalType": "header",
+        "assist": "Leandro Trossard"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.5,
-        "shots": 14,
-        "shotsOnTarget": 3,
+        "possession": 54.6,
+        "shots": 15,
+        "shotsOnTarget": 4,
         "passAccuracy": 87.7,
-        "accuratePasses": 441,
+        "accuratePasses": 444,
         "fouls": 13,
         "corners": 3,
         "offsides": 1,
@@ -8365,7 +8374,7 @@
         "boxTouches": 32
       },
       "away": {
-        "possession": 45.5,
+        "possession": 45.4,
         "shots": 12,
         "shotsOnTarget": 4,
         "passAccuracy": 85.9,
