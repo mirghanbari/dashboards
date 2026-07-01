@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "66",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8332,29 +8332,36 @@
         "teamId": "bel",
         "player": "Brandon Mechele",
         "text": "Brandon Mechele Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "67'",
+        "teamId": "sen",
+        "player": "Lamine Camara",
+        "text": "Lamine Camara Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53.3,
+        "possession": 53.6,
         "shots": 9,
         "shotsOnTarget": 2,
         "passAccuracy": 87.7,
-        "accuratePasses": 343,
+        "accuratePasses": 350,
         "fouls": 10,
         "corners": 3,
-        "offsides": 0,
+        "offsides": 1,
         "saves": 2,
         "xg": 0.41,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 26
       },
       "away": {
-        "possession": 46.7,
+        "possession": 46.4,
         "shots": 11,
         "shotsOnTarget": 4,
-        "passAccuracy": 86.9,
-        "accuratePasses": 293,
+        "passAccuracy": 86.8,
+        "accuratePasses": 295,
         "fouls": 9,
         "corners": 1,
         "offsides": 1,
