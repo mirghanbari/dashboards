@@ -8194,7 +8194,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "18",
+    "minute": "20",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8217,15 +8217,22 @@
         "player": "Brian Cipenga",
         "text": "Brian Cipenga Goal",
         "assist": "Chancel Mbemba"
+      },
+      {
+        "type": "yellow",
+        "minute": "19'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 54.6,
+        "possession": 54.8,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.6,
-        "accuratePasses": 78,
+        "passAccuracy": 88.1,
+        "accuratePasses": 89,
         "fouls": 3,
         "corners": 1,
         "offsides": 0,
@@ -8234,17 +8241,17 @@
         "duelsWon": 5
       },
       "away": {
-        "possession": 45.4,
+        "possession": 45.2,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.5,
-        "accuratePasses": 69,
+        "passAccuracy": 88.6,
+        "accuratePasses": 78,
         "fouls": 1,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0.07,
-        "duelsWon": 6
+        "duelsWon": 8
       }
     }
   },
