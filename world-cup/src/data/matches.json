@@ -8194,7 +8194,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "86",
+    "minute": "87",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8246,21 +8246,22 @@
         "minute": "86'",
         "teamId": "eng",
         "player": "Harry Kane",
-        "text": "Harry Kane Goal"
+        "text": "Harry Kane Goal",
+        "assist": "Anthony Gordon"
       }
     ],
     "stats": {
       "home": {
         "possession": 60.8,
-        "shots": 14,
-        "shotsOnTarget": 6,
+        "shots": 15,
+        "shotsOnTarget": 7,
         "passAccuracy": 91.6,
         "accuratePasses": 446,
         "fouls": 8,
         "corners": 5,
         "offsides": 0,
         "saves": 1,
-        "xg": 1.83,
+        "xg": 2.03,
         "duelsWon": 41,
         "boxTouches": 40
       },
@@ -8273,9 +8274,9 @@
         "fouls": 10,
         "corners": 3,
         "offsides": 4,
-        "saves": 4,
+        "saves": 5,
         "xg": 0.75,
-        "duelsWon": 38,
+        "duelsWon": 39,
         "boxTouches": 12
       }
     }
