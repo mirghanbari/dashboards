@@ -8087,8 +8087,8 @@
     "awayTeamId": "ecu",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+9",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -8151,11 +8151,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 43,
+        "possession": 43.2,
         "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 78.3,
-        "accuratePasses": 246,
+        "passAccuracy": 78.1,
+        "accuratePasses": 249,
         "fouls": 10,
         "corners": 3,
         "offsides": 0,
@@ -8165,12 +8165,12 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 57,
+        "possession": 56.8,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.9,
-        "accuratePasses": 339,
-        "fouls": 13,
+        "passAccuracy": 83.5,
+        "accuratePasses": 340,
+        "fouls": 14,
         "corners": 8,
         "offsides": 1,
         "saves": 1,
