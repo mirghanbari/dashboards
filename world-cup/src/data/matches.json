@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "63",
+    "minute": "64",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8325,6 +8325,13 @@
         "player": "Ismaïla Sarr",
         "text": "Ismaïla Sarr Goal",
         "assist": "Moussa Niakhaté"
+      },
+      {
+        "type": "yellow",
+        "minute": "64'",
+        "teamId": "bel",
+        "player": "Brandon Mechele",
+        "text": "Brandon Mechele Yellow Card"
       }
     ],
     "stats": {
@@ -8353,7 +8360,7 @@
         "offsides": 1,
         "saves": 3,
         "xg": 2.71,
-        "duelsWon": 26,
+        "duelsWon": 27,
         "boxTouches": 16
       }
     }
