@@ -1139,6 +1139,168 @@ tr.qualifies {
   padding: 1px 6px;
 }
 
+/* ---------------- Live knockout bracket ---------------- */
+.kb-note {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  margin: 14px 0 18px;
+}
+.kb {
+  --kb-stub: 16px; /* length of the horizontal connector into/out of a match */
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  align-items: stretch;
+}
+.kb-round {
+  display: flex;
+  flex-direction: column;
+  min-width: 208px;
+  flex: 1 0 auto;
+}
+.kb-round-title {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+  margin: 0 0 4px;
+  padding: 0 var(--kb-stub);
+}
+.kb-matches {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 6px;
+}
+.kb-match {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 6px var(--kb-stub);
+  min-height: 82px;
+}
+
+/* Connector lines ---------------------------------------------------------- */
+/* Vertical "]" joining each pair of feeder matches, drawn on the right edge. */
+.kb-round:not(:last-of-type) .kb-match::after {
+  content: "";
+  position: absolute;
+  right: calc(var(--kb-stub) / 2);
+  width: calc(var(--kb-stub) / 2);
+  border-right: 2px solid var(--line);
+  pointer-events: none;
+}
+.kb-round:not(:last-of-type) .kb-match:nth-child(odd)::after {
+  top: 50%;
+  bottom: 0;
+  border-top: 2px solid var(--line);
+}
+.kb-round:not(:last-of-type) .kb-match:nth-child(even)::after {
+  top: 0;
+  bottom: 50%;
+  border-bottom: 2px solid var(--line);
+}
+/* Horizontal stub feeding the left of every match after the first round. */
+.kb-round:not(:first-of-type) .kb-match::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: calc(var(--kb-stub) / 2);
+  border-top: 2px solid var(--line);
+  pointer-events: none;
+}
+
+/* Match card -------------------------------------------------------------- */
+.kb-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+.kb-card:hover {
+  border-color: var(--pitch-1);
+}
+.kb-card.is-live {
+  border-color: #e5484d;
+}
+.kb-live {
+  position: absolute;
+  top: -9px;
+  right: 8px;
+  background: #e5484d;
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+.kb-side {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  font-size: 0.82rem;
+  color: var(--ink);
+}
+.kb-side + .kb-side {
+  border-top: 1px solid var(--line);
+}
+.kb-flag {
+  font-size: 0.98rem;
+  flex: none;
+}
+.kb-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+.kb-score {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--ink-soft);
+  min-width: 12px;
+  text-align: right;
+}
+.kb-side.is-winner .kb-name {
+  color: var(--pitch-1);
+}
+.kb-side.is-winner .kb-score {
+  color: var(--pitch-1);
+}
+.kb-side.is-loser {
+  opacity: 0.48;
+}
+.kb-side.is-tbd .kb-slot {
+  font-size: 0.72rem;
+  line-height: 1.2;
+  color: var(--ink-faint);
+}
+
+/* Third-place play-off, shown beneath the main tree. */
+.kb-third {
+  margin-top: 26px;
+  max-width: 240px;
+}
+.kb-third .kb-round-title {
+  position: static;
+}
+.kb-match-solo {
+  padding: 0;
+  min-height: 0;
+}
+
 /* ---------------- Player detail ---------------- */
 .player-link:hover {
   color: var(--pitch-1);

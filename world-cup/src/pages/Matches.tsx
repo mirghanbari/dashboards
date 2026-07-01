@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { MATCHES, groupLetters, useLiveMatches, applyLive } from "../data";
 import { MatchCard } from "../components/MatchCard";
-import { Bracket } from "../components/Bracket";
+import { KnockoutBracket } from "../components/KnockoutBracket";
 import type { Stage } from "../types";
 
 const isToday = (m: (typeof MATCHES)[number]) =>
@@ -129,7 +129,7 @@ export function Matches() {
       </header>
 
       {view === "bracket" ? (
-        <Bracket />
+        <KnockoutBracket />
       ) : (
         <MatchList
           stage={stage}

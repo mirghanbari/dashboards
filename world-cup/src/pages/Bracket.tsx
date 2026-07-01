@@ -18,9 +18,10 @@ import {
   submitEntry,
 } from "../bracket";
 import { GroupSorter } from "../components/GroupSorter";
+import { KnockoutBracket } from "../components/KnockoutBracket";
 
 type Step = "step1" | "step2" | "submit";
-type View = "picks" | "leaderboard";
+type View = "knockout" | "picks" | "leaderboard";
 
 // Guard against stale localStorage picks (e.g., groups changed): each group must
 // contain exactly its current four teams, else fall back to the default order.
@@ -37,7 +38,7 @@ function validate(picks: Picks | null): Picks {
 }
 
 export function Bracket() {
-  const [view, setView] = useState<View>("picks");
+  const [view, setView] = useState<View>("knockout");
   const [step, setStep] = useState<Step>("step1");
   const [picks, setPicks] = useState<Picks>(() => validate(loadPicks()));
   const locked = isLocked();
@@ -72,9 +73,11 @@ export function Bracket() {
     <>
       <header className="page-head page-head-row">
         <div>
-          <h1 className="page-title">Bracket Challenge</h1>
+          <h1 className="page-title">Bracket</h1>
           <p className="page-sub">
-            Predict every group's order &amp; the 3rd-place teams that advance
+            {view === "knockout"
+              ? "The live knockout bracket, updating as results come in"
+              : "Predict every group's order & the 3rd-place teams that advance"}
           </p>
         </div>
         <div className="view-toggle">
@@ -83,6 +86,9 @@ export function Bracket() {
               + New entry
             </button>
           )}
+          <button className={"chip" + (view === "knockout" ? " is-active" : "")} onClick={() => setView("knockout")}>
+            Knockout
+          </button>
           <button className={"chip" + (view === "picks" ? " is-active" : "")} onClick={() => setView("picks")}>
             Make picks
           </button>
@@ -92,14 +98,16 @@ export function Bracket() {
         </div>
       </header>
 
-      {locked && (
+      {locked && view === "picks" && (
         <p className="tier-note">
           🔒 Picks are locked — the tournament has kicked off. You can still view your
           entry and the live leaderboard.
         </p>
       )}
 
-      {view === "leaderboard" ? (
+      {view === "knockout" ? (
+        <KnockoutBracket />
+      ) : view === "leaderboard" ? (
         <Leaderboard />
       ) : (
         <>
