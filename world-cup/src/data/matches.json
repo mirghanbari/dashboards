@@ -8088,7 +8088,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8133,6 +8133,13 @@
         "teamId": "ecu",
         "player": "Kendry Páez",
         "text": "Kendry Páez Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "90'+5'",
+        "teamId": "ecu",
+        "player": "Piero Hincapié",
+        "text": "Piero Hincapié Red Card"
       }
     ],
     "stats": {
