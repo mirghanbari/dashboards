@@ -8295,7 +8295,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "24",
+    "minute": "25",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8310,10 +8310,19 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "25'",
+        "teamId": "sen",
+        "player": "Habib Diarra",
+        "text": "Habib Diarra Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 38.3,
-        "shots": 3,
+        "possession": 36.5,
+        "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 85.6,
         "accuratePasses": 95,
@@ -8321,23 +8330,23 @@
         "corners": 0,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.12,
+        "xg": 0.09,
         "duelsWon": 8,
         "boxTouches": 9
       },
       "away": {
-        "possession": 61.7,
+        "possession": 63.5,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.6,
-        "accuratePasses": 155,
+        "passAccuracy": 89.4,
+        "accuratePasses": 168,
         "fouls": 0,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
         "xg": 0.99,
         "duelsWon": 14,
-        "boxTouches": 5
+        "boxTouches": 8
       }
     }
   },
