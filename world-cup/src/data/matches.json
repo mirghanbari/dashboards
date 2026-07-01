@@ -8191,10 +8191,10 @@
     "city": "Atlanta, Georgia",
     "homeTeamId": "eng",
     "awayTeamId": "cod",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "85",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8240,35 +8240,42 @@
         "text": "Harry Kane Goal - Header",
         "goalType": "header",
         "assist": "Anthony Gordon"
+      },
+      {
+        "type": "goal",
+        "minute": "86'",
+        "teamId": "eng",
+        "player": "Harry Kane",
+        "text": "Harry Kane Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.9,
-        "shots": 13,
-        "shotsOnTarget": 5,
-        "passAccuracy": 91.7,
-        "accuratePasses": 441,
+        "possession": 60.8,
+        "shots": 14,
+        "shotsOnTarget": 6,
+        "passAccuracy": 91.6,
+        "accuratePasses": 446,
         "fouls": 8,
         "corners": 5,
         "offsides": 0,
-        "saves": 0,
-        "xg": 1.8,
+        "saves": 1,
+        "xg": 1.83,
         "duelsWon": 41,
-        "boxTouches": 38
+        "boxTouches": 40
       },
       "away": {
-        "possession": 39.1,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 82.2,
-        "accuratePasses": 268,
+        "possession": 39.2,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 82.1,
+        "accuratePasses": 271,
         "fouls": 10,
         "corners": 3,
         "offsides": 4,
         "saves": 4,
-        "xg": 0.73,
-        "duelsWon": 37,
+        "xg": 0.75,
+        "duelsWon": 38,
         "boxTouches": 12
       }
     }
