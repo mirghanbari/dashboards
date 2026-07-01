@@ -8193,8 +8193,8 @@
     "awayTeamId": "cod",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -8621,8 +8621,7 @@
     "venue": "Estadio Banorte",
     "city": "Mexico City",
     "homeTeamId": "mex",
-    "awayTeamId": "tbd",
-    "awaySlot": "Round of 32 8 Winner",
+    "awayTeamId": "eng",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
