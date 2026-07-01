@@ -510,6 +510,55 @@ a.team-name:hover {
   color: var(--pitch-2);
 }
 
+/* ---------------- Add to calendar ---------------- */
+.match-cal {
+  position: relative;
+  margin-top: 10px;
+}
+.cal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.cal-btn:hover,
+.cal-btn[aria-expanded="true"] {
+  border-color: var(--pitch-2);
+  color: var(--ink);
+}
+.cal-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 190px;
+  padding: 6px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-hover);
+}
+.cal-item {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.cal-item:hover {
+  background: var(--paper);
+  color: var(--pitch-1);
+}
+
 /* ---------------- Scorer list ---------------- */
 .scorer-list {
   list-style: none;

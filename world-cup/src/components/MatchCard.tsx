@@ -1,7 +1,16 @@
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import type { Match } from "../types";
 import { getTeam, gameOdds } from "../data";
 import { liveClock } from "../clock";
+import {
+  matchEventTimes,
+  icsObjectUrl,
+  googleCalUrl,
+  outlookCalUrl,
+  yahooCalUrl,
+  type CalEvent,
+} from "../calendar";
 
 const STAGE_LABEL: Record<string, string> = {
   group: "Group",
@@ -118,6 +127,104 @@ function FieldTilt({ match }: { match: Match }) {
   );
 }
 
+/** Build the calendar event from a scheduled match. */
+function matchCalEvent(match: Match): CalEvent {
+  const home = match.homeSlot ?? getTeam(match.homeTeamId).name;
+  const away = match.awaySlot ?? getTeam(match.awayTeamId).name;
+  const { start, end } = matchEventTimes(match.date);
+  const link = `${window.location.origin}${import.meta.env.BASE_URL}#/matches/${match.id}`;
+  const bcast = match.broadcasts?.length
+    ? `\nWatch: ${match.broadcasts.map((b) => b.name).join(", ")}`
+    : "";
+  return {
+    title: `${home} vs ${away} — FIFA World Cup 2026`,
+    description: `${stageLabel(match)} · ${home} vs ${away}${bcast}\n\nMatch centre: ${link}`,
+    location: `${match.venue}, ${match.city}`,
+    start,
+    end,
+  };
+}
+
+/** "Add to calendar" button + provider menu. Shown on upcoming fixtures only. */
+function AddToCalendar({ match }: { match: Match }) {
+  const [open, setOpen] = useState(false);
+  const wrapRef = useRef<HTMLDivElement>(null);
+
+  // Close on outside click / Escape while the menu is open.
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e: MouseEvent) => {
+      if (!wrapRef.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const event = useMemo(() => matchCalEvent(match), [match]);
+  // The .ics is a Blob object URL — only mint it while the menu is open, and
+  // revoke it when the menu closes / unmounts so we don't leak URLs on re-render.
+  const icsUrl = useMemo(() => (open ? icsObjectUrl(event) : ""), [open, event]);
+  useEffect(() => {
+    if (!icsUrl) return;
+    return () => URL.revokeObjectURL(icsUrl);
+  }, [icsUrl]);
+
+  // The card itself is a role="link" that navigates on click — every handler
+  // here must stop the bubble so the menu doesn't also open the match page.
+  const stop = (e: React.MouseEvent) => e.stopPropagation();
+  const items: { label: string; href: string; download?: string }[] = [
+    { label: "Apple Calendar / .ics", href: icsUrl, download: `${match.id}.ics` },
+    { label: "Google Calendar", href: googleCalUrl(event) },
+    { label: "Outlook", href: outlookCalUrl(event) },
+    { label: "Yahoo", href: yahooCalUrl(event) },
+  ];
+
+  return (
+    <div className="match-cal" ref={wrapRef} onClick={stop}>
+      <button
+        type="button"
+        className="cal-btn"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={(e) => {
+          stop(e);
+          setOpen((v) => !v);
+        }}
+      >
+        📅 Add to calendar
+      </button>
+      {open && (
+        <div className="cal-menu" role="menu">
+          {items.map((it) => (
+            <a
+              key={it.label}
+              role="menuitem"
+              className="cal-item"
+              href={it.href}
+              download={it.download}
+              target={it.download ? undefined : "_blank"}
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                stop(e);
+                setOpen(false);
+              }}
+            >
+              {it.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function MatchCard({ match }: { match: Match }) {
   const navigate = useNavigate();
   const date = new Date(match.date);
@@ -184,6 +291,7 @@ export function MatchCard({ match }: { match: Match }) {
           ))}
         </div>
       )}
+      {match.status === "scheduled" && <AddToCalendar match={match} />}
       <footer className="match-foot">
         {match.venue}, {match.city}
       </footer>
