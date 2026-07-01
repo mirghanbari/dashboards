@@ -54,10 +54,12 @@ export function icsContent(e: CalEvent): string {
   ].join("\r\n");
 }
 
-/** Object URL for an .ics download; caller revokes it when done. */
-export function icsObjectUrl(e: CalEvent): string {
-  const blob = new Blob([icsContent(e)], { type: "text/calendar;charset=utf-8" });
-  return URL.createObjectURL(blob);
+// Data URI for the .ics. Preferred over a Blob object URL: nothing to revoke, so
+// there's no lifecycle race (a revoked blob URL is what caused Safari's
+// "WebKitBlobResource error 1" on iOS and "check internet connection" on desktop).
+// iOS Safari also opens a text/calendar data URI straight into the Calendar sheet.
+export function icsDataUri(e: CalEvent): string {
+  return `data:text/calendar;charset=utf-8,${encodeURIComponent(icsContent(e))}`;
 }
 
 export function googleCalUrl(e: CalEvent): string {

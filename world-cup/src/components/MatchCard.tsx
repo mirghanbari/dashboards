@@ -5,7 +5,7 @@ import { getTeam, gameOdds } from "../data";
 import { liveClock } from "../clock";
 import {
   matchEventTimes,
-  icsObjectUrl,
+  icsDataUri,
   googleCalUrl,
   outlookCalUrl,
   yahooCalUrl,
@@ -168,13 +168,9 @@ function AddToCalendar({ match }: { match: Match }) {
   }, [open]);
 
   const event = useMemo(() => matchCalEvent(match), [match]);
-  // The .ics is a Blob object URL — only mint it while the menu is open, and
-  // revoke it when the menu closes / unmounts so we don't leak URLs on re-render.
-  const icsUrl = useMemo(() => (open ? icsObjectUrl(event) : ""), [open, event]);
-  useEffect(() => {
-    if (!icsUrl) return;
-    return () => URL.revokeObjectURL(icsUrl);
-  }, [icsUrl]);
+  // .ics as a data URI — no Blob lifecycle to revoke, so no race that leaves the
+  // download pointing at a dead resource (the cause of the Safari/iOS errors).
+  const icsUrl = useMemo(() => icsDataUri(event), [event]);
 
   // The card itself is a role="link" that navigates on click — every handler
   // here must stop the bubble so the menu doesn't also open the match page.
