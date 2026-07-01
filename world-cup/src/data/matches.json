@@ -8292,7 +8292,7 @@
     "city": "Seattle, Washington",
     "homeTeamId": "bel",
     "awayTeamId": "sen",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
     "status": "finished",
     "minute": null,
@@ -8356,21 +8356,29 @@
         "text": "Youri Tielemans Goal - Header",
         "goalType": "header",
         "assist": "Leandro Trossard"
+      },
+      {
+        "type": "goal",
+        "minute": "120'+5'",
+        "teamId": "bel",
+        "player": "Youri Tielemans",
+        "text": "Youri Tielemans Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
         "possession": 53.6,
-        "shots": 18,
-        "shotsOnTarget": 4,
+        "shots": 19,
+        "shotsOnTarget": 5,
         "passAccuracy": 86.8,
         "accuratePasses": 601,
         "fouls": 20,
         "corners": 4,
         "offsides": 2,
         "saves": 3,
-        "xg": 1.01,
-        "duelsWon": 56,
+        "xg": 1.8,
+        "duelsWon": 57,
         "boxTouches": 38
       },
       "away": {
@@ -8384,8 +8392,8 @@
         "offsides": 2,
         "saves": 3,
         "xg": 3.19,
-        "duelsWon": 53,
-        "boxTouches": 25
+        "duelsWon": 55,
+        "boxTouches": 26
       }
     }
   },
