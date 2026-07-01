@@ -8293,7 +8293,7 @@
     "homeTeamId": "bel",
     "awayTeamId": "sen",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
     "minute": "25",
     "broadcasts": [
@@ -8321,7 +8321,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 36.5,
+        "possession": 35.1,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 85.6,
@@ -8335,16 +8335,16 @@
         "boxTouches": 9
       },
       "away": {
-        "possession": 63.5,
-        "shots": 3,
-        "shotsOnTarget": 1,
-        "passAccuracy": 89.4,
-        "accuratePasses": 168,
+        "possession": 64.9,
+        "shots": 5,
+        "shotsOnTarget": 2,
+        "passAccuracy": 90,
+        "accuratePasses": 180,
         "fouls": 0,
         "corners": 1,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.99,
+        "xg": 1.82,
         "duelsWon": 14,
         "boxTouches": 8
       }
