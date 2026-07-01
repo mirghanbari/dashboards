@@ -499,11 +499,11 @@
     "goalsAgainst": 7,
     "points": 4,
     "possession": 46.1,
-    "ppda": 14.6,
+    "ppda": 14.8,
     "cleanSheets": 0,
     "passCompletion": 80.4,
-    "xgFor": 3.64,
-    "xgAgainst": 7.26
+    "xgFor": 3.68,
+    "xgAgainst": 7.35
   },
   {
     "id": "jpn",
@@ -777,9 +777,9 @@
     "possession": 56.7,
     "ppda": 13.6,
     "cleanSheets": 2,
-    "passCompletion": 88,
-    "xgFor": 9.16,
-    "xgAgainst": 3.52
+    "passCompletion": 87.9,
+    "xgFor": 9.25,
+    "xgAgainst": 3.56
   },
   {
     "id": "sen",

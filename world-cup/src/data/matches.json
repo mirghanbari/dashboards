@@ -8048,29 +8048,29 @@
         "possession": 61,
         "shots": 25,
         "shotsOnTarget": 12,
-        "passAccuracy": 88,
-        "accuratePasses": 485,
+        "passAccuracy": 87.8,
+        "accuratePasses": 484,
         "fouls": 14,
         "corners": 9,
         "offsides": 3,
         "saves": 3,
-        "xg": 3.17,
+        "xg": 3.24,
         "duelsWon": 46,
-        "boxTouches": 32
+        "boxTouches": 35
       },
       "away": {
         "possession": 39,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 79.5,
-        "accuratePasses": 279,
+        "passAccuracy": 79.4,
+        "accuratePasses": 278,
         "fouls": 10,
         "corners": 1,
         "offsides": 1,
         "saves": 9,
-        "xg": 0.66,
-        "duelsWon": 41,
-        "boxTouches": 15
+        "xg": 0.7,
+        "duelsWon": 40,
+        "boxTouches": 14
       }
     }
   },
