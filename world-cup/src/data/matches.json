@@ -8088,7 +8088,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+7",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8140,30 +8140,37 @@
         "teamId": "ecu",
         "player": "Piero Hincapié",
         "text": "Piero Hincapié Red Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+9'",
+        "teamId": "ecu",
+        "player": "Moisés Caicedo",
+        "text": "Moisés Caicedo Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 43.2,
+        "possession": 43,
         "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 78.5,
-        "accuratePasses": 245,
-        "fouls": 9,
+        "passAccuracy": 78.3,
+        "accuratePasses": 246,
+        "fouls": 10,
         "corners": 3,
         "offsides": 0,
         "saves": 1,
         "xg": 1,
-        "duelsWon": 48,
+        "duelsWon": 49,
         "boxTouches": 20
       },
       "away": {
-        "possession": 56.8,
+        "possession": 57,
         "shots": 7,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.2,
-        "accuratePasses": 336,
-        "fouls": 12,
+        "passAccuracy": 83.9,
+        "accuratePasses": 339,
+        "fouls": 13,
         "corners": 8,
         "offsides": 1,
         "saves": 1,
