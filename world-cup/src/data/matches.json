@@ -8408,10 +8408,10 @@
     "city": "Santa Clara, California",
     "homeTeamId": "usa",
     "awayTeamId": "bih",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "44",
+    "minute": "45+1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8424,6 +8424,15 @@
       {
         "name": "FOX One",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "45'",
+        "teamId": "usa",
+        "player": "Folarin Balogun",
+        "text": "Folarin Balogun Goal"
       }
     ],
     "stats": {
@@ -8439,7 +8448,7 @@
         "saves": 1,
         "xg": 0.32,
         "duelsWon": 20,
-        "boxTouches": 13
+        "boxTouches": 14
       },
       "away": {
         "possession": 33.2,
