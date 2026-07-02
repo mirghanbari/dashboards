@@ -26,12 +26,18 @@ function Side({ slot, decided }: { slot: BracketSlot; decided: boolean }) {
 function MatchBox({ m }: { m: BracketMatch }) {
   const live = m.status === "live";
   const decided = m.status === "finished";
+  const date = new Date(m.date);
+  const when =
+    date.toLocaleDateString(undefined, { month: "short", day: "numeric" }) +
+    " · " +
+    date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
   return (
     <Link
       to={`/matches/${m.id}`}
       className={"kb-card" + (live ? " is-live" : "")}
       aria-label={`Match ${m.id} details`}
     >
+      <span className="kb-when">{when}</span>
       {live && <span className="kb-live">● LIVE</span>}
       <Side slot={m.home} decided={decided} />
       <Side slot={m.away} decided={decided} />

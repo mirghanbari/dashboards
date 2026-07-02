@@ -1292,6 +1292,13 @@ tr.qualifies {
   padding: 1px 6px;
   border-radius: 6px;
 }
+.kb-when {
+  padding: 4px 9px 3px;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line);
+}
 .kb-side {
   display: flex;
   align-items: center;
