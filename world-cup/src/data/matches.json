@@ -8313,7 +8313,7 @@
     "timeline": [
       {
         "type": "goal",
-        "minute": "25'",
+        "minute": "24'",
         "teamId": "sen",
         "player": "Habib Diarra",
         "text": "Habib Diarra Goal"
@@ -8368,10 +8368,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 52.2,
+        "possession": 52.3,
         "shots": 19,
         "shotsOnTarget": 5,
-        "passAccuracy": 86.1,
+        "passAccuracy": 85.9,
         "accuratePasses": 602,
         "fouls": 22,
         "corners": 4,
@@ -8382,7 +8382,7 @@
         "boxTouches": 37
       },
       "away": {
-        "possession": 47.8,
+        "possession": 47.7,
         "shots": 19,
         "shotsOnTarget": 5,
         "passAccuracy": 83.9,
