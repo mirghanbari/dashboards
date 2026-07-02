@@ -131,11 +131,11 @@
     "goalsAgainst": 6,
     "points": 4,
     "possession": 45.7,
-    "ppda": 12.2,
+    "ppda": 12.3,
     "cleanSheets": 0,
     "passCompletion": 78.5,
-    "xgFor": 2.11,
-    "xgAgainst": 4.99
+    "xgFor": 2.12,
+    "xgAgainst": 4.96
   },
   {
     "id": "sui",
@@ -361,11 +361,11 @@
     "goalsAgainst": 4,
     "points": 6,
     "possession": 57.1,
-    "ppda": 10.3,
+    "ppda": 10.4,
     "cleanSheets": 2,
-    "passCompletion": 84.6,
-    "xgFor": 5.57,
-    "xgAgainst": 4.19
+    "passCompletion": 84.7,
+    "xgFor": 5.54,
+    "xgAgainst": 4.2
   },
   {
     "id": "ecu",

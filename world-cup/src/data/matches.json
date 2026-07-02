@@ -8461,28 +8461,28 @@
         "possession": 48.4,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.9,
-        "accuratePasses": 348,
+        "passAccuracy": 84.1,
+        "accuratePasses": 349,
         "fouls": 7,
         "corners": 4,
         "offsides": 3,
         "saves": 3,
-        "xg": 0.92,
-        "duelsWon": 46,
-        "boxTouches": 24
+        "xg": 0.88,
+        "duelsWon": 47,
+        "boxTouches": 23
       },
       "away": {
         "possession": 51.6,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 81.6,
-        "accuratePasses": 364,
+        "passAccuracy": 81.7,
+        "accuratePasses": 365,
         "fouls": 13,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 0.25,
-        "duelsWon": 34,
+        "duelsWon": 33,
         "boxTouches": 7
       }
     }
