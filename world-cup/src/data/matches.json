@@ -8501,7 +8501,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "83",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8533,6 +8533,13 @@
         "text": "Pedro Porro Goal - Header",
         "goalType": "header",
         "assist": "Álex Baena"
+      },
+      {
+        "type": "yellow",
+        "minute": "83'",
+        "teamId": "aut",
+        "player": "Stefan Posch",
+        "text": "Stefan Posch Yellow Card"
       }
     ],
     "stats": {
@@ -8561,7 +8568,7 @@
         "offsides": 3,
         "saves": 6,
         "xg": 0.49,
-        "duelsWon": 26,
+        "duelsWon": 27,
         "boxTouches": 11
       }
     }
