@@ -1228,7 +1228,7 @@ tr.qualifies {
   justify-content: center;
   position: relative;
   padding: 6px var(--kb-stub);
-  min-height: 82px;
+  min-height: 104px;
 }
 
 /* Connector lines ---------------------------------------------------------- */
@@ -1266,6 +1266,7 @@ tr.qualifies {
 .kb-card {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
