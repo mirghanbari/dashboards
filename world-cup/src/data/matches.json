@@ -8522,7 +8522,8 @@
         "minute": "36'",
         "teamId": "esp",
         "player": "Mikel Oyarzabal",
-        "text": "Mikel Oyarzabal Goal"
+        "text": "Mikel Oyarzabal Goal",
+        "assist": "Marc Cucurella"
       }
     ],
     "stats": {
@@ -8536,15 +8537,15 @@
         "corners": 5,
         "offsides": 1,
         "saves": 0,
-        "xg": 0.41,
+        "xg": 0.62,
         "duelsWon": 16
       },
       "away": {
-        "possession": 38.3,
+        "possession": 38.1,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 80,
-        "accuratePasses": 108,
+        "passAccuracy": 80.1,
+        "accuratePasses": 109,
         "fouls": 3,
         "corners": 0,
         "offsides": 1,
