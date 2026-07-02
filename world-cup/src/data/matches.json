@@ -8498,10 +8498,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "esp",
     "awayTeamId": "aut",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8524,29 +8524,37 @@
         "player": "Mikel Oyarzabal",
         "text": "Mikel Oyarzabal Goal",
         "assist": "Marc Cucurella"
+      },
+      {
+        "type": "goal",
+        "minute": "66'",
+        "teamId": "esp",
+        "player": "Pedro Porro",
+        "text": "Pedro Porro Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.9,
-        "shots": 17,
-        "shotsOnTarget": 7,
-        "passAccuracy": 91.2,
-        "accuratePasses": 406,
+        "possession": 67,
+        "shots": 19,
+        "shotsOnTarget": 8,
+        "passAccuracy": 91.4,
+        "accuratePasses": 434,
         "fouls": 5,
         "corners": 8,
         "offsides": 2,
         "saves": 0,
         "xg": 1.6,
         "duelsWon": 38,
-        "boxTouches": 35
+        "boxTouches": 39
       },
       "away": {
-        "possession": 34.1,
+        "possession": 33,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.1,
-        "accuratePasses": 185,
+        "passAccuracy": 79,
+        "accuratePasses": 188,
         "fouls": 9,
         "corners": 0,
         "offsides": 3,
