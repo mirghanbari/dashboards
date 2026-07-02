@@ -8501,7 +8501,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "67",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8531,7 +8531,8 @@
         "teamId": "esp",
         "player": "Pedro Porro",
         "text": "Pedro Porro Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Álex Baena"
       }
     ],
     "stats": {
@@ -8545,7 +8546,7 @@
         "corners": 8,
         "offsides": 2,
         "saves": 0,
-        "xg": 1.6,
+        "xg": 1.99,
         "duelsWon": 38,
         "boxTouches": 39
       },
