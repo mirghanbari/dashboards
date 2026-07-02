@@ -8498,10 +8498,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "esp",
     "awayTeamId": "aut",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8515,7 +8515,35 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 35.3,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passAccuracy": 66.7,
+        "accuratePasses": 4,
+        "fouls": 1,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.05,
+        "duelsWon": 0
+      },
+      "away": {
+        "possession": 64.7,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 90,
+        "accuratePasses": 9,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 1,
+        "xg": 0,
+        "duelsWon": 0
+      }
+    }
   },
   {
     "id": "M084",
