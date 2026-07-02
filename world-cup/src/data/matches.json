@@ -8408,10 +8408,10 @@
     "city": "Santa Clara, California",
     "homeTeamId": "usa",
     "awayTeamId": "bih",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "81",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8447,13 +8447,20 @@
         "teamId": "bih",
         "player": "Stjepan Radeljic",
         "text": "Stjepan Radeljic Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "82'",
+        "teamId": "usa",
+        "player": "Malik Tillman",
+        "text": "Malik Tillman Goal - Free-kick"
       }
     ],
     "stats": {
       "home": {
         "possession": 52.1,
-        "shots": 6,
-        "shotsOnTarget": 1,
+        "shots": 7,
+        "shotsOnTarget": 2,
         "passAccuracy": 84.8,
         "accuratePasses": 307,
         "fouls": 5,
