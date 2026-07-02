@@ -8411,7 +8411,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "63",
+    "minute": "65",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8433,13 +8433,6 @@
         "teamId": "usa",
         "player": "Folarin Balogun",
         "text": "Folarin Balogun Goal"
-      },
-      {
-        "type": "red",
-        "minute": "63'",
-        "teamId": "usa",
-        "player": "Folarin Balogun",
-        "text": "Folarin Balogun VAR - (Red) Card"
       }
     ],
     "stats": {
