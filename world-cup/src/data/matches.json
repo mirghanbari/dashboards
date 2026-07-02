@@ -8595,7 +8595,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "16",
+    "minute": "17",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8610,33 +8610,42 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "17'",
+        "teamId": "por",
+        "player": "Rúben Dias",
+        "text": "Rúben Dias Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 57.3,
-        "shots": 5,
+        "possession": 57.2,
+        "shots": 6,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.9,
-        "accuratePasses": 72,
-        "fouls": 1,
+        "passAccuracy": 90.1,
+        "accuratePasses": 73,
+        "fouls": 2,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
-        "xg": 0.62,
+        "xg": 0.73,
         "duelsWon": 6,
-        "boxTouches": 2
+        "boxTouches": 3
       },
       "away": {
-        "possession": 42.7,
+        "possession": 42.8,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.1,
-        "accuratePasses": 53,
+        "passAccuracy": 84.4,
+        "accuratePasses": 54,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0.17,
-        "duelsWon": 5,
+        "duelsWon": 6,
         "boxTouches": 2
       }
     }
