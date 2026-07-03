@@ -8832,30 +8832,37 @@
         "teamId": "egy",
         "player": "Haissem Hassan",
         "text": "Haissem Hassan Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "120'",
+        "teamId": "egy",
+        "player": "Yasser Ibrahim",
+        "text": "Yasser Ibrahim Yellow Card"
       }
     ],
     "stats": {
       "home": {
         "possession": 41.7,
-        "shots": 14,
+        "shots": 15,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.6,
-        "accuratePasses": 403,
+        "passAccuracy": 79.7,
+        "accuratePasses": 404,
         "fouls": 12,
         "corners": 4,
         "offsides": 0,
         "saves": 3,
-        "xg": 0.69,
-        "duelsWon": 62,
-        "boxTouches": 32
+        "xg": 0.88,
+        "duelsWon": 63,
+        "boxTouches": 33
       },
       "away": {
         "possession": 58.3,
         "shots": 14,
         "shotsOnTarget": 4,
-        "passAccuracy": 85,
-        "accuratePasses": 613,
-        "fouls": 13,
+        "passAccuracy": 84.9,
+        "accuratePasses": 614,
+        "fouls": 14,
         "corners": 7,
         "offsides": 3,
         "saves": 1,
