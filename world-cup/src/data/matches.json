@@ -8884,9 +8884,9 @@
     "homeTeamId": "arg",
     "awayTeamId": "cpv",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8909,15 +8909,23 @@
         "player": "Lionel Messi",
         "text": "Lionel Messi Goal",
         "assist": "Lisandro Martínez"
+      },
+      {
+        "type": "goal",
+        "minute": "59'",
+        "teamId": "cpv",
+        "player": "Deroy Duarte",
+        "text": "Deroy Duarte Goal",
+        "assist": "Ryan Mendes"
       }
     ],
     "stats": {
       "home": {
-        "possession": 63.1,
+        "possession": 62.8,
         "shots": 4,
         "shotsOnTarget": 3,
-        "passAccuracy": 93.3,
-        "accuratePasses": 449,
+        "passAccuracy": 93.2,
+        "accuratePasses": 450,
         "fouls": 8,
         "corners": 0,
         "offsides": 2,
@@ -8927,16 +8935,16 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 36.9,
-        "shots": 4,
-        "shotsOnTarget": 1,
-        "passAccuracy": 86.9,
-        "accuratePasses": 239,
+        "possession": 37.2,
+        "shots": 5,
+        "shotsOnTarget": 2,
+        "passAccuracy": 86.8,
+        "accuratePasses": 243,
         "fouls": 4,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
-        "xg": 0.1,
+        "xg": 0.15,
         "duelsWon": 29,
         "boxTouches": 8
       }
