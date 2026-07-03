@@ -8886,7 +8886,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8917,30 +8917,37 @@
         "player": "Deroy Duarte",
         "text": "Deroy Duarte Goal",
         "assist": "Ryan Mendes"
+      },
+      {
+        "type": "yellow",
+        "minute": "68'",
+        "teamId": "cpv",
+        "player": "Kevin Pina",
+        "text": "Kevin Pina Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.3,
+        "possession": 64.4,
         "shots": 6,
         "shotsOnTarget": 4,
-        "passAccuracy": 93.1,
-        "accuratePasses": 498,
+        "passAccuracy": 93.2,
+        "accuratePasses": 505,
         "fouls": 8,
         "corners": 1,
         "offsides": 2,
         "saves": 1,
-        "xg": 0.9,
-        "duelsWon": 23,
+        "xg": 0.92,
+        "duelsWon": 24,
         "boxTouches": 19
       },
       "away": {
-        "possession": 35.7,
+        "possession": 35.6,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.6,
-        "accuratePasses": 251,
-        "fouls": 4,
+        "passAccuracy": 86,
+        "accuratePasses": 252,
+        "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 3,
