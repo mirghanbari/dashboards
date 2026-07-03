@@ -8760,21 +8760,21 @@
         "offsides": 0,
         "saves": 2,
         "xg": 2.52,
-        "duelsWon": 57,
+        "duelsWon": 58,
         "boxTouches": 28
       },
       "away": {
         "possession": 55.5,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.8,
-        "accuratePasses": 476,
+        "passAccuracy": 84.7,
+        "accuratePasses": 475,
         "fouls": 12,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
         "xg": 0.74,
-        "duelsWon": 53,
+        "duelsWon": 52,
         "boxTouches": 15
       }
     }
@@ -9090,9 +9090,8 @@
     "date": "2026-07-07T20:00Z",
     "venue": "BC Place",
     "city": "Vancouver",
-    "homeTeamId": "tbd",
+    "homeTeamId": "sui",
     "awayTeamId": "tbd",
-    "homeSlot": "Round of 32 13 Winner",
     "awaySlot": "Round of 32 15 Winner",
     "homeScore": null,
     "awayScore": null,
