@@ -8595,7 +8595,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8646,26 +8646,27 @@
         "teamId": "por",
         "player": "Gonçalo Ramos",
         "text": "Gonçalo Ramos Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Rafael Leão"
       }
     ],
     "stats": {
       "home": {
-        "possession": 62.2,
-        "shots": 13,
-        "shotsOnTarget": 2,
+        "possession": 62.6,
+        "shots": 14,
+        "shotsOnTarget": 3,
         "passAccuracy": 91.8,
-        "accuratePasses": 503,
+        "accuratePasses": 512,
         "fouls": 6,
         "corners": 9,
         "offsides": 1,
         "saves": 5,
-        "xg": 2.07,
+        "xg": 2.17,
         "duelsWon": 49,
         "boxTouches": 18
       },
       "away": {
-        "possession": 37.8,
+        "possession": 37.4,
         "shots": 12,
         "shotsOnTarget": 6,
         "passAccuracy": 86.2,
