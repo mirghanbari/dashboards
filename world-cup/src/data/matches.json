@@ -8859,7 +8859,7 @@
       "away": {
         "possession": 58.3,
         "shots": 14,
-        "shotsOnTarget": 4,
+        "shotsOnTarget": 3,
         "passAccuracy": 84.9,
         "accuratePasses": 614,
         "fouls": 14,
@@ -8868,7 +8868,7 @@
         "saves": 1,
         "xg": 1.36,
         "duelsWon": 61,
-        "boxTouches": 31
+        "boxTouches": 30
       }
     }
   },
