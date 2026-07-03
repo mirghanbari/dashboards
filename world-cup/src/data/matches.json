@@ -8701,8 +8701,8 @@
     "awayTeamId": "alg",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FS1",
