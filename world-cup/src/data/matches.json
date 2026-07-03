@@ -8659,7 +8659,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 60.4,
+        "possession": 60.5,
         "shots": 15,
         "shotsOnTarget": 3,
         "passAccuracy": 91.1,
@@ -8673,10 +8673,10 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 39.6,
+        "possession": 39.5,
         "shots": 13,
         "shotsOnTarget": 6,
-        "passAccuracy": 84.3,
+        "passAccuracy": 84.5,
         "accuratePasses": 311,
         "fouls": 12,
         "corners": 5,
@@ -8937,9 +8937,8 @@
     "date": "2026-07-06T19:00Z",
     "venue": "AT&T Stadium",
     "city": "Arlington, Texas",
-    "homeTeamId": "tbd",
+    "homeTeamId": "por",
     "awayTeamId": "esp",
-    "homeSlot": "Round of 32 11 Winner",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
