@@ -8702,7 +8702,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "HT",
+    "minute": "47",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8732,28 +8732,35 @@
         "teamId": "alg",
         "player": "Farès Chaïbi",
         "text": "Farès Chaïbi Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "46'",
+        "teamId": "sui",
+        "player": "Dan Ndoye",
+        "text": "Dan Ndoye Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 40.9,
-        "shots": 4,
-        "shotsOnTarget": 2,
-        "passAccuracy": 82,
-        "accuratePasses": 178,
+        "possession": 42.2,
+        "shots": 5,
+        "shotsOnTarget": 3,
+        "passAccuracy": 82.5,
+        "accuratePasses": 188,
         "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
         "xg": 1.28,
         "duelsWon": 24,
-        "boxTouches": 13
+        "boxTouches": 15
       },
       "away": {
-        "possession": 59.1,
+        "possession": 57.8,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 86,
+        "passAccuracy": 85.8,
         "accuratePasses": 277,
         "fouls": 5,
         "corners": 1,
