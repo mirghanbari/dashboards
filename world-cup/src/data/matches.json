@@ -8702,7 +8702,7 @@
     "homeScore": 2,
     "awayScore": 0,
     "status": "live",
-    "minute": "71",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8739,6 +8739,13 @@
         "teamId": "sui",
         "player": "Dan Ndoye",
         "text": "Dan Ndoye Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "72'",
+        "teamId": "alg",
+        "player": "Hicham Boudaoui",
+        "text": "Hicham Boudaoui Yellow Card"
       }
     ],
     "stats": {
