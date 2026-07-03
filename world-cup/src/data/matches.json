@@ -8668,8 +8668,8 @@
         "corners": 9,
         "offsides": 1,
         "saves": 5,
-        "xg": 2.18,
-        "duelsWon": 53,
+        "xg": 2.2,
+        "duelsWon": 55,
         "boxTouches": 19
       },
       "away": {
@@ -8699,10 +8699,10 @@
     "city": "Vancouver",
     "homeTeamId": "sui",
     "awayTeamId": "alg",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "80",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8717,15 +8717,64 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "10'",
+        "teamId": "sui",
+        "player": "Breel Embolo",
+        "text": "Breel Embolo Goal",
+        "assist": "Johan Manzambi"
+      },
+      {
+        "type": "yellow",
+        "minute": "36'",
+        "teamId": "alg",
+        "player": "Farès Chaïbi",
+        "text": "Farès Chaïbi Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "46'",
+        "teamId": "sui",
+        "player": "Dan Ndoye",
+        "text": "Dan Ndoye Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "72'",
+        "teamId": "alg",
+        "player": "Hicham Boudaoui",
+        "text": "Hicham Boudaoui Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "xg": 1.7,
-        "duelsWon": 48,
-        "boxTouches": 19
+        "possession": 44.9,
+        "shots": 7,
+        "shotsOnTarget": 3,
+        "passAccuracy": 81.5,
+        "accuratePasses": 303,
+        "fouls": 7,
+        "corners": 4,
+        "offsides": 0,
+        "saves": 2,
+        "xg": 2.4,
+        "duelsWon": 51,
+        "boxTouches": 24
       },
       "away": {
+        "possession": 55.1,
+        "shots": 7,
+        "shotsOnTarget": 2,
+        "passAccuracy": 84.1,
+        "accuratePasses": 397,
+        "fouls": 10,
+        "corners": 2,
+        "offsides": 1,
+        "saves": 1,
         "xg": 0.71,
-        "duelsWon": 36,
+        "duelsWon": 43,
         "boxTouches": 11
       }
     }
