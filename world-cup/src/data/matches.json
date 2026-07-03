@@ -8593,9 +8593,9 @@
     "homeTeamId": "por",
     "awayTeamId": "cro",
     "homeScore": 2,
-    "awayScore": 2,
+    "awayScore": 1,
     "status": "live",
-    "minute": "90+15",
+    "minute": "90+16",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8655,14 +8655,6 @@
         "teamId": "cro",
         "player": "Ivan Perisic",
         "text": "Ivan Perisic Yellow Card"
-      },
-      {
-        "type": "goal",
-        "minute": "90'+13'",
-        "teamId": "cro",
-        "player": "Josko Gvardiol",
-        "text": "Josko Gvardiol Goal",
-        "assist": "Mario Pasalic"
       }
     ],
     "stats": {
@@ -8682,8 +8674,8 @@
       },
       "away": {
         "possession": 39.7,
-        "shots": 14,
-        "shotsOnTarget": 7,
+        "shots": 13,
+        "shotsOnTarget": 6,
         "passAccuracy": 85,
         "accuratePasses": 311,
         "fouls": 12,
