@@ -8592,10 +8592,10 @@
     "city": "Toronto",
     "homeTeamId": "por",
     "awayTeamId": "cro",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "67",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8631,13 +8631,21 @@
         "teamId": "cro",
         "player": "Luka Modric",
         "text": "Luka Modric Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "68'",
+        "teamId": "por",
+        "player": "Cristiano Ronaldo",
+        "text": "Cristiano Ronaldo Penalty - Scor",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
         "possession": 65.8,
         "shots": 11,
-        "shotsOnTarget": 1,
+        "shotsOnTarget": 2,
         "passAccuracy": 92.6,
         "accuratePasses": 399,
         "fouls": 6,
@@ -8646,7 +8654,7 @@
         "saves": 2,
         "xg": 1.03,
         "duelsWon": 37,
-        "boxTouches": 12
+        "boxTouches": 13
       },
       "away": {
         "possession": 34.2,
@@ -8654,7 +8662,7 @@
         "shotsOnTarget": 3,
         "passAccuracy": 85.5,
         "accuratePasses": 188,
-        "fouls": 9,
+        "fouls": 10,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
