@@ -8702,7 +8702,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "12",
+    "minute": "14",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8720,7 +8720,7 @@
     "timeline": [
       {
         "type": "goal",
-        "minute": "11'",
+        "minute": "10'",
         "teamId": "sui",
         "player": "Breel Embolo",
         "text": "Breel Embolo Goal",
@@ -8729,12 +8729,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 27.8,
+        "possession": 24.9,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.1,
-        "accuratePasses": 34,
-        "fouls": 0,
+        "passAccuracy": 76.7,
+        "accuratePasses": 33,
+        "fouls": 1,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
@@ -8743,17 +8743,17 @@
         "boxTouches": 3
       },
       "away": {
-        "possession": 72.2,
+        "possession": 75.1,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.6,
-        "accuratePasses": 101,
+        "passAccuracy": 89.5,
+        "accuratePasses": 119,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
         "saves": 0,
         "xg": 0.33,
-        "duelsWon": 4,
+        "duelsWon": 5,
         "boxTouches": 1
       }
     }
