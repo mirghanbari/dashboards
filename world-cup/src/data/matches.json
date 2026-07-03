@@ -8792,8 +8792,8 @@
     "awayTeamId": "egy",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+5",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -8829,10 +8829,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 44.3,
+        "possession": 44,
         "shots": 12,
         "shotsOnTarget": 1,
-        "passAccuracy": 81.2,
+        "passAccuracy": 81,
         "accuratePasses": 333,
         "fouls": 7,
         "corners": 4,
@@ -8843,16 +8843,16 @@
         "boxTouches": 27
       },
       "away": {
-        "possession": 55.7,
-        "shots": 9,
+        "possession": 56,
+        "shots": 10,
         "shotsOnTarget": 3,
         "passAccuracy": 85.4,
-        "accuratePasses": 450,
+        "accuratePasses": 457,
         "fouls": 8,
         "corners": 3,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.11,
+        "xg": 1.18,
         "duelsWon": 42,
         "boxTouches": 20
       }
