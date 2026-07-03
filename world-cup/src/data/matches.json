@@ -8836,32 +8836,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 41.6,
-        "shots": 13,
+        "possession": 41.7,
+        "shots": 14,
         "shotsOnTarget": 1,
-        "passAccuracy": 79.5,
-        "accuratePasses": 399,
-        "fouls": 11,
+        "passAccuracy": 79.6,
+        "accuratePasses": 403,
+        "fouls": 12,
         "corners": 4,
         "offsides": 0,
         "saves": 3,
         "xg": 0.69,
-        "duelsWon": 60,
-        "boxTouches": 31
+        "duelsWon": 62,
+        "boxTouches": 32
       },
       "away": {
-        "possession": 58.4,
+        "possession": 58.3,
         "shots": 14,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.4,
-        "accuratePasses": 612,
-        "fouls": 12,
+        "passAccuracy": 85,
+        "accuratePasses": 613,
+        "fouls": 13,
         "corners": 7,
         "offsides": 3,
         "saves": 1,
         "xg": 1.36,
-        "duelsWon": 60,
-        "boxTouches": 30
+        "duelsWon": 61,
+        "boxTouches": 31
       }
     }
   },
