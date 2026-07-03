@@ -8886,8 +8886,21 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "79",
-    "broadcasts": [],
+    "minute": "81",
+    "broadcasts": [
+      {
+        "name": "FOX",
+        "type": "tv"
+      },
+      {
+        "name": "Telemundo",
+        "type": "tv"
+      },
+      {
+        "name": "FOX One",
+        "type": "stream"
+      }
+    ],
     "timeline": [
       {
         "type": "goal",
@@ -8915,26 +8928,26 @@
     ],
     "stats": {
       "home": {
-        "possession": 65.4,
+        "possession": 65.7,
         "shots": 9,
         "shotsOnTarget": 5,
         "passAccuracy": 92.7,
-        "accuratePasses": 534,
+        "accuratePasses": 544,
         "fouls": 9,
         "corners": 2,
         "offsides": 2,
         "saves": 1,
         "xg": 1.2,
         "duelsWon": 31,
-        "boxTouches": 22
+        "boxTouches": 24
       },
       "away": {
-        "possession": 34.6,
+        "possession": 34.3,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 85.6,
-        "accuratePasses": 255,
-        "fouls": 6,
+        "accuratePasses": 256,
+        "fouls": 8,
         "corners": 2,
         "offsides": 0,
         "saves": 4,
