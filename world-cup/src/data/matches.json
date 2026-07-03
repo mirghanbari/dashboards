@@ -8592,10 +8592,10 @@
     "city": "Toronto",
     "homeTeamId": "por",
     "awayTeamId": "cro",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8639,6 +8639,14 @@
         "player": "Cristiano Ronaldo",
         "text": "Cristiano Ronaldo Penalty - Scor",
         "goalType": "penalty"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+4'",
+        "teamId": "por",
+        "player": "Gonçalo Ramos",
+        "text": "Gonçalo Ramos Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
@@ -8646,22 +8654,22 @@
         "possession": 62.2,
         "shots": 13,
         "shotsOnTarget": 2,
-        "passAccuracy": 91.7,
-        "accuratePasses": 500,
+        "passAccuracy": 91.8,
+        "accuratePasses": 503,
         "fouls": 6,
         "corners": 9,
         "offsides": 1,
         "saves": 5,
-        "xg": 2.08,
-        "duelsWon": 48,
-        "boxTouches": 17
+        "xg": 2.07,
+        "duelsWon": 49,
+        "boxTouches": 18
       },
       "away": {
         "possession": 37.8,
         "shots": 12,
         "shotsOnTarget": 6,
-        "passAccuracy": 86.4,
-        "accuratePasses": 279,
+        "passAccuracy": 86.2,
+        "accuratePasses": 280,
         "fouls": 11,
         "corners": 4,
         "offsides": 3,
