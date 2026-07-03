@@ -8702,7 +8702,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "35",
+    "minute": "36",
     "broadcasts": [
       {
         "name": "FS1",
@@ -8725,14 +8725,21 @@
         "player": "Breel Embolo",
         "text": "Breel Embolo Goal",
         "assist": "Johan Manzambi"
+      },
+      {
+        "type": "yellow",
+        "minute": "36'",
+        "teamId": "alg",
+        "player": "Farès Chaïbi",
+        "text": "Farès Chaïbi Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.5,
+        "possession": 41.8,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 87,
+        "passAccuracy": 85.9,
         "accuratePasses": 140,
         "fouls": 3,
         "corners": 1,
@@ -8743,17 +8750,17 @@
         "boxTouches": 11
       },
       "away": {
-        "possession": 57.5,
+        "possession": 58.2,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.3,
-        "accuratePasses": 197,
-        "fouls": 3,
+        "passAccuracy": 87.5,
+        "accuratePasses": 203,
+        "fouls": 4,
         "corners": 0,
         "offsides": 0,
         "saves": 1,
         "xg": 0.38,
-        "duelsWon": 15,
+        "duelsWon": 16,
         "boxTouches": 2
       }
     }
