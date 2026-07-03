@@ -8593,9 +8593,9 @@
     "homeTeamId": "por",
     "awayTeamId": "cro",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FOX",
@@ -8617,36 +8617,43 @@
         "teamId": "por",
         "player": "Rúben Dias",
         "text": "Rúben Dias Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "53'",
+        "teamId": "cro",
+        "player": "Ivan Perisic",
+        "text": "Ivan Perisic Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 68.4,
+        "possession": 66.9,
         "shots": 9,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.4,
+        "passAccuracy": 92.6,
         "accuratePasses": 365,
-        "fouls": 5,
+        "fouls": 6,
         "corners": 6,
         "offsides": 0,
         "saves": 1,
         "xg": 0.97,
-        "duelsWon": 28,
+        "duelsWon": 30,
         "boxTouches": 10
       },
       "away": {
-        "possession": 31.6,
-        "shots": 5,
-        "shotsOnTarget": 1,
-        "passAccuracy": 83.2,
-        "accuratePasses": 149,
+        "possession": 33.1,
+        "shots": 6,
+        "shotsOnTarget": 2,
+        "passAccuracy": 84.3,
+        "accuratePasses": 161,
         "fouls": 7,
         "corners": 1,
         "offsides": 1,
         "saves": 2,
         "xg": 0.37,
         "duelsWon": 23,
-        "boxTouches": 8
+        "boxTouches": 10
       }
     }
   },
