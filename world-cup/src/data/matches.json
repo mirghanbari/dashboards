@@ -9200,15 +9200,16 @@
         "minute": "90'+8'",
         "teamId": "mar",
         "player": "Soufiane Rahimi",
-        "text": "Soufiane Rahimi Goal"
+        "text": "Soufiane Rahimi Goal",
+        "assist": "Brahim Díaz"
       }
     ],
     "stats": {
       "home": {
         "possession": 44.5,
-        "shots": 12,
+        "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 76.3,
+        "passAccuracy": 76.1,
         "accuratePasses": 271,
         "fouls": 24,
         "corners": 11,
@@ -9220,10 +9221,10 @@
       },
       "away": {
         "possession": 55.5,
-        "shots": 4,
-        "shotsOnTarget": 3,
-        "passAccuracy": 82.6,
-        "accuratePasses": 388,
+        "shots": 5,
+        "shotsOnTarget": 4,
+        "passAccuracy": 82.4,
+        "accuratePasses": 389,
         "fouls": 14,
         "corners": 1,
         "offsides": 3,
