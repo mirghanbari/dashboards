@@ -936,10 +936,10 @@
     "goalsAgainst": 1,
     "points": 7,
     "possession": 60.1,
-    "ppda": 11.8,
+    "ppda": 11.7,
     "cleanSheets": 3,
     "passCompletion": 88.2,
-    "xgFor": 6.51,
+    "xgFor": 6.35,
     "xgAgainst": 2.8
   },
   {
@@ -1101,6 +1101,6 @@
     "cleanSheets": 2,
     "passCompletion": 82,
     "xgFor": 2.34,
-    "xgAgainst": 4.76
+    "xgAgainst": 4.6
   }
 ]
