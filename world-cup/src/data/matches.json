@@ -9186,6 +9186,14 @@
         "teamId": "can",
         "player": "Cyle Larin",
         "text": "Cyle Larin Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "82'",
+        "teamId": "mar",
+        "player": "Azzedine Ounahi",
+        "text": "Azzedine Ounahi Goal",
+        "assist": "Brahim Díaz"
       }
     ],
     "stats": {
@@ -9200,21 +9208,21 @@
         "offsides": 2,
         "saves": 1,
         "xg": 0.76,
-        "duelsWon": 42,
+        "duelsWon": 44,
         "boxTouches": 24
       },
       "away": {
         "possession": 60.5,
         "shots": 3,
         "shotsOnTarget": 3,
-        "passAccuracy": 84.5,
-        "accuratePasses": 377,
+        "passAccuracy": 84.3,
+        "accuratePasses": 376,
         "fouls": 9,
         "corners": 1,
         "offsides": 3,
         "saves": 3,
-        "xg": 0.09,
-        "duelsWon": 47,
+        "xg": 0.32,
+        "duelsWon": 48,
         "boxTouches": 8
       }
     }
