@@ -8884,7 +8884,7 @@
     "homeTeamId": "arg",
     "awayTeamId": "cpv",
     "homeScore": 2,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "finished",
     "minute": null,
     "broadcasts": [
@@ -8932,34 +8932,42 @@
         "player": "Lisandro Martínez",
         "text": "Lisandro Martínez Goal",
         "assist": "Alexis Mac Allister"
+      },
+      {
+        "type": "goal",
+        "minute": "103'",
+        "teamId": "cpv",
+        "player": "Sidny Lopes Cabral",
+        "text": "Sidny Lopes Cabral Goal",
+        "assist": "Yannick Semedo"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.7,
+        "possession": 64.4,
         "shots": 19,
         "shotsOnTarget": 9,
-        "passAccuracy": 92.4,
-        "accuratePasses": 690,
+        "passAccuracy": 92.3,
+        "accuratePasses": 692,
         "fouls": 12,
         "corners": 7,
         "offsides": 2,
         "saves": 1,
         "xg": 1.88,
         "duelsWon": 46,
-        "boxTouches": 44
+        "boxTouches": 47
       },
       "away": {
-        "possession": 34.3,
-        "shots": 8,
-        "shotsOnTarget": 2,
-        "passAccuracy": 85.8,
-        "accuratePasses": 326,
+        "possession": 35.6,
+        "shots": 9,
+        "shotsOnTarget": 3,
+        "passAccuracy": 86.7,
+        "accuratePasses": 352,
         "fouls": 10,
         "corners": 5,
         "offsides": 1,
         "saves": 7,
-        "xg": 0.23,
+        "xg": 0.26,
         "duelsWon": 44,
         "boxTouches": 13
       }
