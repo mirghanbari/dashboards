@@ -9249,7 +9249,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "81",
+    "minute": "82",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9279,14 +9279,21 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "yellow",
+        "minute": "81'",
+        "teamId": "fra",
+        "player": "Manu Koné",
+        "text": "Manu Koné Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 23.7,
+        "possession": 23.9,
         "shots": 3,
         "shotsOnTarget": 0,
-        "passAccuracy": 56.8,
+        "passAccuracy": 56.1,
         "accuratePasses": 83,
         "fouls": 8,
         "corners": 1,
@@ -9297,12 +9304,12 @@
         "boxTouches": 3
       },
       "away": {
-        "possession": 76.3,
+        "possession": 76.1,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.1,
-        "accuratePasses": 409,
-        "fouls": 8,
+        "passAccuracy": 90.2,
+        "accuratePasses": 412,
+        "fouls": 9,
         "corners": 10,
         "offsides": 0,
         "saves": 0,
