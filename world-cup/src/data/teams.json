@@ -732,8 +732,8 @@
     "ppda": 18,
     "cleanSheets": 2,
     "passCompletion": 79.5,
-    "xgFor": 2.93,
-    "xgAgainst": 7
+    "xgFor": 2.95,
+    "xgAgainst": 7.11
   },
   {
     "id": "nor",
@@ -847,8 +847,8 @@
     "ppda": 10.9,
     "cleanSheets": 2,
     "passCompletion": 90.7,
-    "xgFor": 7.95,
-    "xgAgainst": 2.09
+    "xgFor": 8.06,
+    "xgAgainst": 2.11
   },
   {
     "id": "aut",
