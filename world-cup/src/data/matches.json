@@ -9073,7 +9073,7 @@
         "corners": 3,
         "offsides": 2,
         "saves": 0,
-        "xg": 2.18,
+        "xg": 2.19,
         "duelsWon": 34,
         "boxTouches": 19
       },
@@ -9313,8 +9313,7 @@
     "venue": "BC Place",
     "city": "Vancouver",
     "homeTeamId": "sui",
-    "awayTeamId": "tbd",
-    "awaySlot": "Round of 32 15 Winner",
+    "awayTeamId": "col",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
