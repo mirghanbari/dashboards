@@ -9002,7 +9002,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "15",
+    "minute": "16",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9030,13 +9030,14 @@
         "minute": "14'",
         "teamId": "col",
         "player": "Jhon Arias",
-        "text": "Jhon Arias Goal"
+        "text": "Jhon Arias Goal",
+        "assist": "Luis Díaz"
       }
     ],
     "stats": {
       "home": {
-        "possession": 81.9,
-        "shots": 1,
+        "possession": 77.5,
+        "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 90.2,
         "accuratePasses": 74,
@@ -9044,15 +9045,15 @@
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.2,
+        "xg": 0.36,
         "duelsWon": 1
       },
       "away": {
-        "possession": 18.1,
+        "possession": 22.5,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 70.6,
-        "accuratePasses": 12,
+        "passAccuracy": 78.3,
+        "accuratePasses": 18,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
