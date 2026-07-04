@@ -9308,7 +9308,7 @@
         "saves": 4,
         "xg": 0.15,
         "duelsWon": 49,
-        "boxTouches": 5
+        "boxTouches": 4
       },
       "away": {
         "possession": 76,
@@ -9322,7 +9322,7 @@
         "saves": 1,
         "xg": 1.36,
         "duelsWon": 56,
-        "boxTouches": 24
+        "boxTouches": 25
       }
     }
   },
