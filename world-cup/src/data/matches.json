@@ -9247,9 +9247,9 @@
     "homeTeamId": "par",
     "awayTeamId": "fra",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "69",
+    "minute": "70",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9271,6 +9271,14 @@
         "teamId": "fra",
         "player": "Bradley Barcola",
         "text": "Bradley Barcola Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "70'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
@@ -9290,17 +9298,17 @@
       },
       "away": {
         "possession": 78.4,
-        "shots": 10,
-        "shotsOnTarget": 1,
+        "shots": 11,
+        "shotsOnTarget": 2,
         "passAccuracy": 90.6,
-        "accuratePasses": 387,
+        "accuratePasses": 385,
         "fouls": 7,
         "corners": 10,
         "offsides": 0,
         "saves": 0,
         "xg": 0.26,
         "duelsWon": 38,
-        "boxTouches": 20
+        "boxTouches": 21
       }
     }
   },
