@@ -8883,7 +8883,7 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "arg",
     "awayTeamId": "cpv",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
     "status": "finished",
     "minute": null,
@@ -8940,17 +8940,25 @@
         "player": "Sidny Lopes Cabral",
         "text": "Sidny Lopes Cabral Goal",
         "assist": "Yannick Semedo"
+      },
+      {
+        "type": "goal",
+        "minute": "111'",
+        "teamId": "arg",
+        "player": "Diney Borges",
+        "text": "Diney Borges Own Goal",
+        "goalType": "own"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.2,
-        "shots": 21,
+        "possession": 65.1,
+        "shots": 22,
         "shotsOnTarget": 10,
-        "passAccuracy": 92.4,
-        "accuratePasses": 765,
+        "passAccuracy": 92.3,
+        "accuratePasses": 776,
         "fouls": 12,
-        "corners": 7,
+        "corners": 8,
         "offsides": 3,
         "saves": 1,
         "xg": 2.15,
@@ -8958,18 +8966,18 @@
         "boxTouches": 51
       },
       "away": {
-        "possession": 34.8,
+        "possession": 34.9,
         "shots": 10,
         "shotsOnTarget": 3,
-        "passAccuracy": 86.2,
-        "accuratePasses": 375,
+        "passAccuracy": 86.5,
+        "accuratePasses": 384,
         "fouls": 12,
         "corners": 5,
         "offsides": 1,
         "saves": 8,
-        "xg": 0.27,
-        "duelsWon": 46,
-        "boxTouches": 13
+        "xg": 0.3,
+        "duelsWon": 48,
+        "boxTouches": 14
       }
     }
   },
