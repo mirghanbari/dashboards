@@ -9249,7 +9249,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "18",
+    "minute": "19",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9264,13 +9264,22 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "19'",
+        "teamId": "fra",
+        "player": "Bradley Barcola",
+        "text": "Bradley Barcola Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 16.4,
+        "possession": 19,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 60.6,
-        "accuratePasses": 20,
+        "passAccuracy": 65,
+        "accuratePasses": 26,
         "fouls": 0,
         "corners": 0,
         "offsides": 0,
@@ -9278,12 +9287,12 @@
         "duelsWon": 10
       },
       "away": {
-        "possession": 83.6,
+        "possession": 81,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 91,
-        "accuratePasses": 152,
-        "fouls": 2,
+        "passAccuracy": 91.1,
+        "accuratePasses": 153,
+        "fouls": 3,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
