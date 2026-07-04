@@ -9300,14 +9300,14 @@
         "possession": 78.4,
         "shots": 11,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.6,
-        "accuratePasses": 385,
+        "passAccuracy": 90.4,
+        "accuratePasses": 384,
         "fouls": 7,
         "corners": 10,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.26,
-        "duelsWon": 38,
+        "xg": 1.05,
+        "duelsWon": 37,
         "boxTouches": 21
       }
     }
