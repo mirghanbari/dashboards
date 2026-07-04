@@ -9107,7 +9107,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "43",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9143,34 +9143,43 @@
         "teamId": "can",
         "player": "Richie Laryea",
         "text": "Richie Laryea Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "43'",
+        "teamId": "can",
+        "player": "Jonathan David",
+        "text": "Jonathan David Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 35.9,
+        "possession": 34.5,
         "shots": 4,
         "shotsOnTarget": 2,
         "passAccuracy": 73.8,
         "accuratePasses": 90,
-        "fouls": 12,
+        "fouls": 13,
         "corners": 5,
         "offsides": 0,
         "saves": 1,
         "xg": 0.42,
-        "duelsWon": 18
+        "duelsWon": 19,
+        "boxTouches": 13
       },
       "away": {
-        "possession": 64.1,
+        "possession": 65.5,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 88.5,
-        "accuratePasses": 208,
+        "passAccuracy": 89.2,
+        "accuratePasses": 224,
         "fouls": 4,
         "corners": 0,
         "offsides": 2,
         "saves": 2,
         "xg": 0.02,
-        "duelsWon": 24
+        "duelsWon": 26,
+        "boxTouches": 1
       }
     }
   },
