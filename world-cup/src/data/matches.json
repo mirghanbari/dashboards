@@ -9107,7 +9107,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "49",
+    "minute": "51",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9171,16 +9171,24 @@
         "teamId": "can",
         "player": "Luc de Fougerolles",
         "text": "Luc de Fougerolles Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "50'",
+        "teamId": "mar",
+        "player": "Azzedine Ounahi",
+        "text": "Azzedine Ounahi Goal",
+        "assist": "Achraf Hakimi"
       }
     ],
     "stats": {
       "home": {
-        "possession": 33.3,
+        "possession": 33.1,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 71.4,
         "accuratePasses": 110,
-        "fouls": 15,
+        "fouls": 16,
         "corners": 6,
         "offsides": 0,
         "saves": 1,
@@ -9189,16 +9197,16 @@
         "boxTouches": 17
       },
       "away": {
-        "possession": 66.7,
-        "shots": 1,
-        "shotsOnTarget": 1,
-        "passAccuracy": 88.4,
-        "accuratePasses": 291,
+        "possession": 66.9,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "passAccuracy": 88.6,
+        "accuratePasses": 294,
         "fouls": 6,
         "corners": 0,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.02,
+        "xg": 0.08,
         "duelsWon": 34,
         "boxTouches": 1
       }
