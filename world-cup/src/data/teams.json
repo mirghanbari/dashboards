@@ -728,12 +728,12 @@
     "goalsFor": 2,
     "goalsAgainst": 2,
     "points": 3,
-    "possession": 36.9,
-    "ppda": 16.7,
+    "possession": 37,
+    "ppda": 18,
     "cleanSheets": 2,
-    "passCompletion": 79.5,
-    "xgFor": 2.46,
-    "xgAgainst": 4.81
+    "passCompletion": 79.4,
+    "xgFor": 2.93,
+    "xgAgainst": 7
   },
   {
     "id": "nor",
@@ -843,12 +843,12 @@
     "goalsFor": 8,
     "goalsAgainst": 1,
     "points": 9,
-    "possession": 59.7,
+    "possession": 59.6,
     "ppda": 10.9,
     "cleanSheets": 2,
-    "passCompletion": 90.8,
-    "xgFor": 5.76,
-    "xgAgainst": 1.62
+    "passCompletion": 90.7,
+    "xgFor": 7.95,
+    "xgAgainst": 2.09
   },
   {
     "id": "aut",
