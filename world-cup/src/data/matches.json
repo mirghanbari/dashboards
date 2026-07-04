@@ -9002,7 +9002,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "65",
+    "minute": "67",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9039,30 +9039,37 @@
         "teamId": "gha",
         "player": "Caleb Yirenkyi",
         "text": "Caleb Yirenkyi Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "66'",
+        "teamId": "gha",
+        "player": "Fatawu Issahaku",
+        "text": "Fatawu Issahaku Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 63.4,
+        "possession": 63.6,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 91.5,
-        "accuratePasses": 397,
+        "passAccuracy": 91,
+        "accuratePasses": 406,
         "fouls": 9,
         "corners": 2,
         "offsides": 1,
         "saves": 0,
         "xg": 1.23,
-        "duelsWon": 19,
+        "duelsWon": 22,
         "boxTouches": 14
       },
       "away": {
-        "possession": 36.6,
+        "possession": 36.4,
         "shots": 6,
         "shotsOnTarget": 0,
-        "passAccuracy": 82.5,
-        "accuratePasses": 203,
-        "fouls": 4,
+        "passAccuracy": 82.9,
+        "accuratePasses": 208,
+        "fouls": 5,
         "corners": 2,
         "offsides": 0,
         "saves": 4,
