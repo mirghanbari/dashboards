@@ -9107,7 +9107,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "39",
+    "minute": "41",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9129,6 +9129,20 @@
         "teamId": "mar",
         "player": "Redouane Halhal",
         "text": "Redouane Halhal Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "40'",
+        "teamId": "mar",
+        "player": "Achraf Hakimi",
+        "text": "Achraf Hakimi Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "40'",
+        "teamId": "can",
+        "player": "Richie Laryea",
+        "text": "Richie Laryea Yellow Card"
       }
     ],
     "stats": {
