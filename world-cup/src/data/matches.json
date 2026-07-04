@@ -9107,7 +9107,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "24",
+    "minute": "25",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9138,7 +9138,7 @@
         "shotsOnTarget": 2,
         "passAccuracy": 76.5,
         "accuratePasses": 62,
-        "fouls": 6,
+        "fouls": 7,
         "corners": 4,
         "offsides": 0,
         "saves": 0,
