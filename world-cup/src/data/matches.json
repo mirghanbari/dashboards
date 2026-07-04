@@ -9002,7 +9002,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "48",
+    "minute": "50",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9032,29 +9032,36 @@
         "player": "Jhon Arias",
         "text": "Jhon Arias Goal",
         "assist": "Luis Suárez"
+      },
+      {
+        "type": "yellow",
+        "minute": "49'",
+        "teamId": "gha",
+        "player": "Caleb Yirenkyi",
+        "text": "Caleb Yirenkyi Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.6,
-        "shots": 5,
+        "possession": 65.4,
+        "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 92,
-        "accuratePasses": 322,
+        "passAccuracy": 92.1,
+        "accuratePasses": 327,
         "fouls": 7,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.87,
+        "xg": 0.88,
         "duelsWon": 13,
-        "boxTouches": 8
+        "boxTouches": 9
       },
       "away": {
-        "possession": 34.4,
+        "possession": 34.6,
         "shots": 6,
         "shotsOnTarget": 0,
-        "passAccuracy": 82.8,
-        "accuratePasses": 149,
+        "passAccuracy": 82.1,
+        "accuratePasses": 151,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
