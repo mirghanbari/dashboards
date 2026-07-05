@@ -9339,8 +9339,8 @@
     "awayTeamId": "nor",
     "homeScore": 1,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+11",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -9391,11 +9391,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 33.3,
+        "possession": 33.5,
         "shots": 14,
         "shotsOnTarget": 4,
-        "passAccuracy": 85,
-        "accuratePasses": 277,
+        "passAccuracy": 84.8,
+        "accuratePasses": 279,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
@@ -9405,11 +9405,11 @@
         "boxTouches": 32
       },
       "away": {
-        "possession": 66.7,
+        "possession": 66.5,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 91,
-        "accuratePasses": 616,
+        "passAccuracy": 90.7,
+        "accuratePasses": 617,
         "fouls": 6,
         "corners": 5,
         "offsides": 1,
