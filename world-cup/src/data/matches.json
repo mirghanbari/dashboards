@@ -9391,10 +9391,10 @@
     ],
     "stats": {
       "home": {
-        "possession": 33.5,
+        "possession": 33.6,
         "shots": 14,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.8,
+        "passAccuracy": 84.5,
         "accuratePasses": 279,
         "fouls": 7,
         "corners": 5,
@@ -9402,13 +9402,13 @@
         "saves": 3,
         "xg": 2.75,
         "duelsWon": 43,
-        "boxTouches": 32
+        "boxTouches": 31
       },
       "away": {
-        "possession": 66.5,
+        "possession": 66.4,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 90.7,
+        "passAccuracy": 90.9,
         "accuratePasses": 617,
         "fouls": 6,
         "corners": 5,
@@ -9426,7 +9426,7 @@
     "stage": "round16",
     "group": null,
     "matchday": null,
-    "date": "2026-07-06T00:00Z",
+    "date": "2026-07-06T01:00Z",
     "venue": "Estadio Banorte",
     "city": "Mexico City",
     "homeTeamId": "mex",
