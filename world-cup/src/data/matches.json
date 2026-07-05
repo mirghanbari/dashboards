@@ -9338,9 +9338,9 @@
     "homeTeamId": "bra",
     "awayTeamId": "nor",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "90",
+    "minute": "90+1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9364,15 +9364,23 @@
         "text": "Erling Haaland Goal - Header",
         "goalType": "header",
         "assist": "Andreas Schjelderup"
+      },
+      {
+        "type": "goal",
+        "minute": "90'",
+        "teamId": "nor",
+        "player": "Erling Haaland",
+        "text": "Erling Haaland Goal",
+        "assist": "Andreas Schjelderup"
       }
     ],
     "stats": {
       "home": {
-        "possession": 31.9,
+        "possession": 32.3,
         "shots": 11,
         "shotsOnTarget": 3,
-        "passAccuracy": 85.2,
-        "accuratePasses": 247,
+        "passAccuracy": 85.5,
+        "accuratePasses": 254,
         "fouls": 6,
         "corners": 5,
         "offsides": 1,
@@ -9382,17 +9390,17 @@
         "boxTouches": 30
       },
       "away": {
-        "possession": 68.1,
-        "shots": 8,
-        "shotsOnTarget": 4,
-        "passAccuracy": 91.6,
-        "accuratePasses": 587,
+        "possession": 67.7,
+        "shots": 9,
+        "shotsOnTarget": 5,
+        "passAccuracy": 91.5,
+        "accuratePasses": 590,
         "fouls": 4,
         "corners": 5,
         "offsides": 1,
         "saves": 4,
         "xg": 0.69,
-        "duelsWon": 35,
+        "duelsWon": 36,
         "boxTouches": 16
       }
     }
