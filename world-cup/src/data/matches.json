@@ -9340,7 +9340,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9372,16 +9372,23 @@
         "player": "Erling Haaland",
         "text": "Erling Haaland Goal",
         "assist": "Andreas Schjelderup"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+6'",
+        "teamId": "bra",
+        "player": "Neymar",
+        "text": "Neymar Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 33.6,
+        "possession": 33.2,
         "shots": 12,
         "shotsOnTarget": 3,
         "passAccuracy": 85.7,
         "accuratePasses": 275,
-        "fouls": 6,
+        "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 3,
@@ -9390,18 +9397,18 @@
         "boxTouches": 30
       },
       "away": {
-        "possession": 66.4,
+        "possession": 66.8,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 91.3,
-        "accuratePasses": 601,
+        "passAccuracy": 91.1,
+        "accuratePasses": 612,
         "fouls": 4,
         "corners": 5,
         "offsides": 1,
         "saves": 4,
         "xg": 0.73,
-        "duelsWon": 40,
-        "boxTouches": 16
+        "duelsWon": 42,
+        "boxTouches": 17
       }
     }
   },
