@@ -9337,10 +9337,10 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "bra",
     "awayTeamId": "nor",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+9",
+    "minute": "90+10",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9379,22 +9379,30 @@
         "teamId": "bra",
         "player": "Neymar",
         "text": "Neymar Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+10'",
+        "teamId": "bra",
+        "player": "Neymar",
+        "text": "Neymar Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
         "possession": 33.3,
-        "shots": 12,
-        "shotsOnTarget": 3,
-        "passAccuracy": 84.9,
-        "accuratePasses": 276,
+        "shots": 14,
+        "shotsOnTarget": 4,
+        "passAccuracy": 85,
+        "accuratePasses": 277,
         "fouls": 7,
         "corners": 5,
         "offsides": 1,
         "saves": 3,
-        "xg": 1.93,
+        "xg": 1.95,
         "duelsWon": 43,
-        "boxTouches": 31
+        "boxTouches": 32
       },
       "away": {
         "possession": 66.7,
@@ -9402,7 +9410,7 @@
         "shotsOnTarget": 5,
         "passAccuracy": 91,
         "accuratePasses": 616,
-        "fouls": 4,
+        "fouls": 6,
         "corners": 5,
         "offsides": 1,
         "saves": 4,
