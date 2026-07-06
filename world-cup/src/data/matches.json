@@ -9432,9 +9432,9 @@
     "homeTeamId": "mex",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "38",
+    "minute": "40",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9465,15 +9465,23 @@
         "text": "Jude Bellingham Goal - Header",
         "goalType": "header",
         "assist": "Bukayo Saka"
+      },
+      {
+        "type": "goal",
+        "minute": "38'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal",
+        "assist": "Harry Kane"
       }
     ],
     "stats": {
       "home": {
-        "possession": 58,
+        "possession": 58.6,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.9,
-        "accuratePasses": 171,
+        "passAccuracy": 93.3,
+        "accuratePasses": 180,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
@@ -9483,17 +9491,17 @@
         "boxTouches": 3
       },
       "away": {
-        "possession": 42,
-        "shots": 2,
-        "shotsOnTarget": 2,
-        "passAccuracy": 85.6,
-        "accuratePasses": 113,
+        "possession": 41.4,
+        "shots": 3,
+        "shotsOnTarget": 3,
+        "passAccuracy": 85.9,
+        "accuratePasses": 116,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.38,
-        "duelsWon": 20,
+        "duelsWon": 21,
         "boxTouches": 6
       }
     }
