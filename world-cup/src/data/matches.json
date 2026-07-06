@@ -9434,7 +9434,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "51",
+    "minute": "53",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9481,6 +9481,13 @@
         "player": "Julián Quiñones",
         "text": "Julián Quiñones Goal - Volley",
         "goalType": "volley"
+      },
+      {
+        "type": "red",
+        "minute": "53'",
+        "teamId": "eng",
+        "player": "Jarell Quansah",
+        "text": "Jarell Quansah VAR - (Red) Card "
       }
     ],
     "stats": {
@@ -9509,7 +9516,7 @@
         "offsides": 0,
         "saves": 2,
         "xg": 0.75,
-        "duelsWon": 35,
+        "duelsWon": 34,
         "boxTouches": 8
       }
     }
