@@ -9434,7 +9434,7 @@
     "homeScore": 2,
     "awayScore": 3,
     "status": "live",
-    "minute": "90+8",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9531,11 +9531,18 @@
         "teamId": "mex",
         "player": "Johan Vásquez",
         "text": "Johan Vásquez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+9'",
+        "teamId": "eng",
+        "player": "Jordan Henderson",
+        "text": "Jordan Henderson Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.5,
+        "possession": 66.3,
         "shots": 18,
         "shotsOnTarget": 5,
         "passAccuracy": 92.7,
@@ -9549,11 +9556,11 @@
         "boxTouches": 31
       },
       "away": {
-        "possession": 33.5,
+        "possession": 33.7,
         "shots": 6,
         "shotsOnTarget": 5,
-        "passAccuracy": 81.4,
-        "accuratePasses": 192,
+        "passAccuracy": 81.1,
+        "accuratePasses": 193,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
