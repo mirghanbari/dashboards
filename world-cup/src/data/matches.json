@@ -9434,7 +9434,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "53",
+    "minute": "54",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9484,10 +9484,10 @@
       },
       {
         "type": "red",
-        "minute": "53'",
+        "minute": "54'",
         "teamId": "eng",
         "player": "Jarell Quansah",
-        "text": "Jarell Quansah VAR - (Red) Card "
+        "text": "Jarell Quansah Red Card"
       }
     ],
     "stats": {
@@ -9497,12 +9497,12 @@
         "shotsOnTarget": 3,
         "passAccuracy": 91.4,
         "accuratePasses": 256,
-        "fouls": 9,
+        "fouls": 8,
         "corners": 4,
         "offsides": 0,
         "saves": 1,
         "xg": 0.47,
-        "duelsWon": 24,
+        "duelsWon": 25,
         "boxTouches": 14
       },
       "away": {
@@ -9516,7 +9516,7 @@
         "offsides": 0,
         "saves": 2,
         "xg": 0.75,
-        "duelsWon": 34,
+        "duelsWon": 33,
         "boxTouches": 8
       }
     }
