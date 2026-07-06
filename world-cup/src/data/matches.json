@@ -9586,7 +9586,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+8",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9623,15 +9623,22 @@
         "teamId": "por",
         "player": "Renato Veiga",
         "text": "Renato Veiga Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+8'",
+        "teamId": "esp",
+        "player": "Ferran Torres",
+        "text": "Ferran Torres Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 44.1,
+        "possession": 44.3,
         "shots": 9,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.8,
-        "accuratePasses": 351,
+        "passAccuracy": 83.7,
+        "accuratePasses": 355,
         "fouls": 9,
         "corners": 3,
         "offsides": 2,
@@ -9641,11 +9648,11 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 55.9,
+        "possession": 55.7,
         "shots": 15,
         "shotsOnTarget": 6,
         "passAccuracy": 87.9,
-        "accuratePasses": 466,
+        "accuratePasses": 467,
         "fouls": 12,
         "corners": 7,
         "offsides": 1,
