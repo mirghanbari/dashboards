@@ -9431,10 +9431,10 @@
     "city": "Mexico City",
     "homeTeamId": "mex",
     "awayTeamId": "eng",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 3,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9495,30 +9495,45 @@
         "player": "Harry Kane",
         "text": "Harry Kane Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "yellow",
+        "minute": "68'",
+        "teamId": "eng",
+        "player": "Marc Guéhi",
+        "text": "Marc Guéhi Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "69'",
+        "teamId": "mex",
+        "player": "Raúl Jiménez",
+        "text": "Raúl Jiménez Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.2,
-        "shots": 9,
-        "shotsOnTarget": 3,
-        "passAccuracy": 90.9,
-        "accuratePasses": 279,
+        "possession": 60.1,
+        "shots": 10,
+        "shotsOnTarget": 4,
+        "passAccuracy": 90.8,
+        "accuratePasses": 277,
         "fouls": 12,
         "corners": 5,
         "offsides": 0,
         "saves": 1,
         "xg": 0.48,
         "duelsWon": 27,
-        "boxTouches": 19
+        "boxTouches": 20
       },
       "away": {
-        "possession": 39.8,
+        "possession": 39.9,
         "shots": 5,
         "shotsOnTarget": 4,
         "passAccuracy": 84.5,
         "accuratePasses": 174,
-        "fouls": 7,
+        "fouls": 6,
         "corners": 2,
         "offsides": 0,
         "saves": 2,
