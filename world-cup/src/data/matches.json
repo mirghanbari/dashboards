@@ -9586,7 +9586,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9616,35 +9616,42 @@
         "player": "Mikel Merino",
         "text": "Mikel Merino Goal",
         "assist": "Ferran Torres"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+4'",
+        "teamId": "por",
+        "player": "Renato Veiga",
+        "text": "Renato Veiga Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 41.8,
+        "possession": 42.4,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.5,
-        "accuratePasses": 318,
-        "fouls": 8,
+        "passAccuracy": 83,
+        "accuratePasses": 327,
+        "fouls": 9,
         "corners": 3,
         "offsides": 2,
         "saves": 5,
         "xg": 0.4,
-        "duelsWon": 41,
+        "duelsWon": 42,
         "boxTouches": 9
       },
       "away": {
-        "possession": 58.2,
+        "possession": 57.6,
         "shots": 15,
         "shotsOnTarget": 6,
-        "passAccuracy": 88,
-        "accuratePasses": 461,
+        "passAccuracy": 88.1,
+        "accuratePasses": 465,
         "fouls": 12,
         "corners": 7,
         "offsides": 1,
         "saves": 2,
         "xg": 1.77,
-        "duelsWon": 30,
+        "duelsWon": 34,
         "boxTouches": 28
       }
     }
