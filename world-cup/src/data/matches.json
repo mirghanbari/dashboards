@@ -9434,7 +9434,7 @@
     "homeScore": 2,
     "awayScore": 3,
     "status": "live",
-    "minute": "90+7",
+    "minute": "90+8",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9524,25 +9524,32 @@
         "teamId": "eng",
         "player": "Nico O'Reilly",
         "text": "Nico O'Reilly Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+8'",
+        "teamId": "mex",
+        "player": "Johan Vásquez",
+        "text": "Johan Vásquez Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.7,
-        "shots": 15,
+        "possession": 66.5,
+        "shots": 18,
         "shotsOnTarget": 5,
-        "passAccuracy": 92.4,
-        "accuratePasses": 390,
+        "passAccuracy": 92.7,
+        "accuratePasses": 406,
         "fouls": 14,
         "corners": 9,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.73,
-        "duelsWon": 35,
+        "xg": 1.87,
+        "duelsWon": 36,
         "boxTouches": 31
       },
       "away": {
-        "possession": 34.3,
+        "possession": 33.5,
         "shots": 6,
         "shotsOnTarget": 5,
         "passAccuracy": 81.4,
