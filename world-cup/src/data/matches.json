@@ -9433,8 +9433,8 @@
     "awayTeamId": "eng",
     "homeScore": 2,
     "awayScore": 3,
-    "status": "live",
-    "minute": "90+12",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
