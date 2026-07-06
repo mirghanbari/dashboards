@@ -9434,7 +9434,7 @@
     "homeScore": 2,
     "awayScore": 3,
     "status": "live",
-    "minute": "71",
+    "minute": "72",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9517,6 +9517,13 @@
         "teamId": "mex",
         "player": "Jorge Sánchez",
         "text": "Jorge Sánchez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "72'",
+        "teamId": "eng",
+        "player": "Nico O'Reilly",
+        "text": "Nico O'Reilly Yellow Card"
       }
     ],
     "stats": {
