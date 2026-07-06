@@ -9431,10 +9431,10 @@
     "city": "Mexico City",
     "homeTeamId": "mex",
     "awayTeamId": "eng",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "42",
+    "minute": "43",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9473,13 +9473,21 @@
         "player": "Jude Bellingham",
         "text": "Jude Bellingham Goal",
         "assist": "Harry Kane"
+      },
+      {
+        "type": "goal",
+        "minute": "42'",
+        "teamId": "mex",
+        "player": "Julián Quiñones",
+        "text": "Julián Quiñones Goal - Volley",
+        "goalType": "volley"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.6,
-        "shots": 4,
-        "shotsOnTarget": 1,
+        "possession": 60.7,
+        "shots": 5,
+        "shotsOnTarget": 2,
         "passAccuracy": 93.4,
         "accuratePasses": 197,
         "fouls": 7,
@@ -9488,10 +9496,10 @@
         "saves": 1,
         "xg": 0.14,
         "duelsWon": 13,
-        "boxTouches": 3
+        "boxTouches": 4
       },
       "away": {
-        "possession": 39.4,
+        "possession": 39.3,
         "shots": 3,
         "shotsOnTarget": 3,
         "passAccuracy": 86.1,
