@@ -9479,7 +9479,8 @@
         "minute": "42'",
         "teamId": "mex",
         "player": "Julián Quiñones",
-        "text": "Julián Quiñones Goal"
+        "text": "Julián Quiñones Goal - Volley",
+        "goalType": "volley"
       },
       {
         "type": "red",
@@ -9542,21 +9543,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 66.8,
+        "possession": 66.9,
         "shots": 20,
         "shotsOnTarget": 5,
         "passAccuracy": 92.3,
-        "accuratePasses": 420,
+        "accuratePasses": 418,
         "fouls": 14,
         "corners": 12,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.94,
-        "duelsWon": 37,
+        "xg": 1.88,
+        "duelsWon": 38,
         "boxTouches": 37
       },
       "away": {
-        "possession": 33.2,
+        "possession": 33.1,
         "shots": 6,
         "shotsOnTarget": 5,
         "passAccuracy": 79.9,
@@ -9565,8 +9566,8 @@
         "corners": 2,
         "offsides": 0,
         "saves": 3,
-        "xg": 1.55,
-        "duelsWon": 50,
+        "xg": 1.61,
+        "duelsWon": 51,
         "boxTouches": 14
       }
     }
