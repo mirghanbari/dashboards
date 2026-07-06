@@ -9434,7 +9434,7 @@
     "homeScore": 2,
     "awayScore": 3,
     "status": "live",
-    "minute": "70",
+    "minute": "71",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9510,15 +9510,22 @@
         "player": "Raúl Jiménez",
         "text": "Raúl Jiménez Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "yellow",
+        "minute": "71'",
+        "teamId": "mex",
+        "player": "Jorge Sánchez",
+        "text": "Jorge Sánchez Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 60.1,
+        "possession": 60,
         "shots": 10,
         "shotsOnTarget": 4,
-        "passAccuracy": 90.8,
-        "accuratePasses": 277,
+        "passAccuracy": 90.6,
+        "accuratePasses": 279,
         "fouls": 12,
         "corners": 5,
         "offsides": 0,
@@ -9528,11 +9535,11 @@
         "boxTouches": 20
       },
       "away": {
-        "possession": 39.9,
+        "possession": 40,
         "shots": 5,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.5,
-        "accuratePasses": 174,
+        "passAccuracy": 84.7,
+        "accuratePasses": 177,
         "fouls": 6,
         "corners": 2,
         "offsides": 0,
