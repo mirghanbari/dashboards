@@ -9586,7 +9586,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "87",
+    "minute": "88",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9601,14 +9601,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "89'",
+        "teamId": "por",
+        "player": "Bernardo Silva",
+        "text": "Bernardo Silva Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 42.4,
+        "possession": 42.5,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.8,
-        "accuratePasses": 310,
-        "fouls": 6,
+        "passAccuracy": 84.1,
+        "accuratePasses": 318,
+        "fouls": 7,
         "corners": 3,
         "offsides": 2,
         "saves": 5,
@@ -9617,17 +9626,17 @@
         "boxTouches": 9
       },
       "away": {
-        "possession": 57.6,
+        "possession": 57.5,
         "shots": 14,
         "shotsOnTarget": 5,
         "passAccuracy": 87.7,
-        "accuratePasses": 435,
+        "accuratePasses": 443,
         "fouls": 12,
         "corners": 7,
         "offsides": 1,
         "saves": 2,
         "xg": 1.22,
-        "duelsWon": 28,
+        "duelsWon": 29,
         "boxTouches": 27
       }
     }
