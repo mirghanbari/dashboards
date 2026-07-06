@@ -9586,7 +9586,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9614,12 +9614,13 @@
         "minute": "90'+1'",
         "teamId": "esp",
         "player": "Mikel Merino",
-        "text": "Mikel Merino Goal"
+        "text": "Mikel Merino Goal",
+        "assist": "Ferran Torres"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42,
+        "possession": 41.8,
         "shots": 8,
         "shotsOnTarget": 2,
         "passAccuracy": 83.5,
@@ -9633,16 +9634,16 @@
         "boxTouches": 9
       },
       "away": {
-        "possession": 58,
-        "shots": 14,
-        "shotsOnTarget": 5,
-        "passAccuracy": 87.9,
-        "accuratePasses": 457,
+        "possession": 58.2,
+        "shots": 15,
+        "shotsOnTarget": 6,
+        "passAccuracy": 88,
+        "accuratePasses": 461,
         "fouls": 12,
         "corners": 7,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.22,
+        "xg": 1.77,
         "duelsWon": 30,
         "boxTouches": 28
       }
