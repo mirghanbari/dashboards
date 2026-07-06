@@ -9400,9 +9400,9 @@
         "corners": 5,
         "offsides": 1,
         "saves": 3,
-        "xg": 2.75,
+        "xg": 2.61,
         "duelsWon": 43,
-        "boxTouches": 31
+        "boxTouches": 33
       },
       "away": {
         "possession": 66.4,
@@ -9414,9 +9414,9 @@
         "corners": 5,
         "offsides": 1,
         "saves": 4,
-        "xg": 0.84,
-        "duelsWon": 42,
-        "boxTouches": 17
+        "xg": 1.05,
+        "duelsWon": 43,
+        "boxTouches": 15
       }
     }
   },
@@ -9551,9 +9551,9 @@
         "corners": 12,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.87,
+        "xg": 1.94,
         "duelsWon": 37,
-        "boxTouches": 33
+        "boxTouches": 37
       },
       "away": {
         "possession": 33.2,
@@ -9566,7 +9566,7 @@
         "offsides": 0,
         "saves": 3,
         "xg": 1.55,
-        "duelsWon": 49,
+        "duelsWon": 50,
         "boxTouches": 14
       }
     }
@@ -9763,8 +9763,7 @@
     "venue": "Hard Rock Stadium",
     "city": "Miami Gardens, Florida",
     "homeTeamId": "nor",
-    "awayTeamId": "tbd",
-    "awaySlot": "Round of 16 4 Winner",
+    "awayTeamId": "eng",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
