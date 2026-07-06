@@ -9584,9 +9584,9 @@
     "homeTeamId": "por",
     "awayTeamId": "esp",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "90",
+    "minute": "90+1",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9608,16 +9608,23 @@
         "teamId": "por",
         "player": "Bernardo Silva",
         "text": "Bernardo Silva Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+1'",
+        "teamId": "esp",
+        "player": "Mikel Merino",
+        "text": "Mikel Merino Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.5,
+        "possession": 42,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 84.1,
+        "passAccuracy": 83.5,
         "accuratePasses": 318,
-        "fouls": 7,
+        "fouls": 8,
         "corners": 3,
         "offsides": 2,
         "saves": 5,
@@ -9626,18 +9633,18 @@
         "boxTouches": 9
       },
       "away": {
-        "possession": 57.5,
+        "possession": 58,
         "shots": 14,
         "shotsOnTarget": 5,
-        "passAccuracy": 87.7,
-        "accuratePasses": 443,
+        "passAccuracy": 87.9,
+        "accuratePasses": 457,
         "fouls": 12,
         "corners": 7,
         "offsides": 1,
         "saves": 2,
         "xg": 1.22,
-        "duelsWon": 29,
-        "boxTouches": 27
+        "duelsWon": 30,
+        "boxTouches": 28
       }
     }
   },
