@@ -9432,9 +9432,9 @@
     "homeTeamId": "mex",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "36",
+    "minute": "38",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9456,36 +9456,45 @@
         "teamId": "eng",
         "player": "Declan Rice",
         "text": "Declan Rice Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "36'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal - Header",
+        "goalType": "header",
+        "assist": "Bukayo Saka"
       }
     ],
     "stats": {
       "home": {
-        "possession": 53.8,
+        "possession": 58,
         "shots": 4,
         "shotsOnTarget": 1,
-        "passAccuracy": 92.1,
-        "accuratePasses": 140,
+        "passAccuracy": 92.9,
+        "accuratePasses": 171,
         "fouls": 7,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.14,
-        "duelsWon": 11,
+        "duelsWon": 12,
         "boxTouches": 3
       },
       "away": {
-        "possession": 46.2,
-        "shots": 1,
-        "shotsOnTarget": 1,
-        "passAccuracy": 86.3,
+        "possession": 42,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "passAccuracy": 85.6,
         "accuratePasses": 113,
         "fouls": 1,
         "corners": 2,
         "offsides": 0,
         "saves": 1,
         "xg": 0.04,
-        "duelsWon": 17,
-        "boxTouches": 2
+        "duelsWon": 19,
+        "boxTouches": 4
       }
     }
   },
