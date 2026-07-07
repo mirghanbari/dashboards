@@ -9792,7 +9792,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+7",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9864,35 +9864,42 @@
         "teamId": "egy",
         "player": "Hamdy Fathy",
         "text": "Hamdy Fathy Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+8'",
+        "teamId": "egy",
+        "player": "Marawan Attia",
+        "text": "Marawan Attia Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.4,
+        "possession": 63.9,
         "shots": 19,
         "shotsOnTarget": 7,
-        "passAccuracy": 90.2,
-        "accuratePasses": 535,
-        "fouls": 12,
+        "passAccuracy": 90.1,
+        "accuratePasses": 536,
+        "fouls": 13,
         "corners": 6,
         "offsides": 3,
         "saves": 0,
         "xg": 2.9,
-        "duelsWon": 47,
+        "duelsWon": 48,
         "boxTouches": 34
       },
       "away": {
-        "possession": 35.6,
+        "possession": 36.1,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 83.5,
-        "accuratePasses": 278,
-        "fouls": 10,
+        "passAccuracy": 83.2,
+        "accuratePasses": 283,
+        "fouls": 11,
         "corners": 1,
         "offsides": 0,
         "saves": 4,
         "xg": 0.97,
-        "duelsWon": 43,
+        "duelsWon": 44,
         "boxTouches": 8
       }
     }
