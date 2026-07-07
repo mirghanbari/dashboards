@@ -9831,7 +9831,8 @@
         "teamId": "arg",
         "player": "Cristian Romero",
         "text": "Cristian Romero Goal - Header",
-        "goalType": "header"
+        "goalType": "header",
+        "assist": "Lionel Messi"
       }
     ],
     "stats": {
@@ -9845,7 +9846,7 @@
         "corners": 5,
         "offsides": 3,
         "saves": 0,
-        "xg": 2.08,
+        "xg": 2.43,
         "duelsWon": 42,
         "boxTouches": 26
       },
