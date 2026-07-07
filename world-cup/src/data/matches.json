@@ -9790,7 +9790,7 @@
     "homeTeamId": "arg",
     "awayTeamId": "egy",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
     "minute": "68",
     "broadcasts": [
@@ -9823,6 +9823,14 @@
         "teamId": "egy",
         "player": "Mostafa Zico",
         "text": "Mostafa Zico Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "egy",
+        "player": "Mostafa Zico",
+        "text": "Mostafa Zico Goal",
+        "assist": "Haissem Hassan"
       }
     ],
     "stats": {
@@ -9842,8 +9850,8 @@
       },
       "away": {
         "possession": 37.9,
-        "shots": 2,
-        "shotsOnTarget": 1,
+        "shots": 3,
+        "shotsOnTarget": 2,
         "passAccuracy": 83.5,
         "accuratePasses": 227,
         "fouls": 9,
@@ -9852,7 +9860,7 @@
         "saves": 4,
         "xg": 0.21,
         "duelsWon": 35,
-        "boxTouches": 3
+        "boxTouches": 4
       }
     }
   },
