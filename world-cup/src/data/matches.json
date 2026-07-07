@@ -9677,7 +9677,7 @@
     "homeScore": 1,
     "awayScore": 3,
     "status": "live",
-    "minute": "57",
+    "minute": "58",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9729,16 +9729,17 @@
         "minute": "57'",
         "teamId": "bel",
         "player": "Hans Vanaken",
-        "text": "Hans Vanaken Goal"
+        "text": "Hans Vanaken Goal",
+        "assist": "Charles De Ketelaere"
       }
     ],
     "stats": {
       "home": {
-        "possession": 49.8,
+        "possession": 50.6,
         "shots": 3,
         "shotsOnTarget": 1,
-        "passAccuracy": 85.2,
-        "accuratePasses": 225,
+        "passAccuracy": 85.3,
+        "accuratePasses": 249,
         "fouls": 5,
         "corners": 1,
         "offsides": 0,
@@ -9748,16 +9749,16 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 50.2,
-        "shots": 11,
-        "shotsOnTarget": 5,
-        "passAccuracy": 82.5,
-        "accuratePasses": 217,
+        "possession": 49.4,
+        "shots": 12,
+        "shotsOnTarget": 6,
+        "passAccuracy": 82.6,
+        "accuratePasses": 233,
         "fouls": 5,
         "corners": 4,
         "offsides": 1,
         "saves": 0,
-        "xg": 1.9,
+        "xg": 1.98,
         "duelsWon": 32,
         "boxTouches": 15
       }
