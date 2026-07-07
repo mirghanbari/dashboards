@@ -9676,8 +9676,8 @@
     "awayTeamId": "bel",
     "homeScore": 1,
     "awayScore": 4,
-    "status": "live",
-    "minute": "90+4",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -9750,7 +9750,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 56.3,
+        "possession": 56.2,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 86.9,
@@ -9764,11 +9764,11 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 43.7,
+        "possession": 43.8,
         "shots": 15,
         "shotsOnTarget": 7,
-        "passAccuracy": 81.1,
-        "accuratePasses": 331,
+        "passAccuracy": 81.2,
+        "accuratePasses": 333,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
