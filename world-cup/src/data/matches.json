@@ -9675,9 +9675,9 @@
     "homeTeamId": "usa",
     "awayTeamId": "bel",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "9",
+    "minute": "10",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9690,6 +9690,15 @@
       {
         "name": "FOX One",
         "type": "stream"
+      }
+    ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "9'",
+        "teamId": "bel",
+        "player": "Charles De Ketelaere",
+        "text": "Charles De Ketelaere Goal"
       }
     ],
     "stats": {
@@ -9709,17 +9718,17 @@
       },
       "away": {
         "possession": 66.2,
-        "shots": 5,
-        "shotsOnTarget": 2,
+        "shots": 7,
+        "shotsOnTarget": 3,
         "passAccuracy": 86,
         "accuratePasses": 43,
         "fouls": 0,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.44,
+        "xg": 0.48,
         "duelsWon": 7,
-        "boxTouches": 4
+        "boxTouches": 5
       }
     }
   },
