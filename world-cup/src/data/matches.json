@@ -9962,35 +9962,42 @@
         "teamId": "col",
         "player": "Luis Suárez",
         "text": "Luis Suárez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "95'",
+        "teamId": "col",
+        "player": "Davinson Sánchez",
+        "text": "Davinson Sánchez Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.5,
+        "possession": 51.9,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 87,
-        "accuratePasses": 428,
+        "accuratePasses": 435,
         "fouls": 14,
         "corners": 3,
         "offsides": 4,
         "saves": 2,
         "xg": 0.3,
-        "duelsWon": 38,
+        "duelsWon": 40,
         "boxTouches": 17
       },
       "away": {
-        "possession": 48.5,
+        "possession": 48.1,
         "shots": 8,
         "shotsOnTarget": 2,
         "passAccuracy": 83,
-        "accuratePasses": 385,
-        "fouls": 15,
+        "accuratePasses": 386,
+        "fouls": 17,
         "corners": 4,
         "offsides": 4,
         "saves": 2,
         "xg": 0.45,
-        "duelsWon": 46,
+        "duelsWon": 47,
         "boxTouches": 11
       }
     }
