@@ -9923,10 +9923,10 @@
     "city": "Vancouver",
     "homeTeamId": "sui",
     "awayTeamId": "col",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9940,7 +9940,33 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 50,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 85.7,
+        "accuratePasses": 6,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 2
+      },
+      "away": {
+        "possession": 50,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 85.7,
+        "accuratePasses": 6,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "duelsWon": 1
+      }
+    }
   },
   {
     "id": "M097",
