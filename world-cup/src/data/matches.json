@@ -9857,6 +9857,13 @@
         "teamId": "egy",
         "player": "Mostafa Shoubir",
         "text": "Mostafa Shoubir Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+4'",
+        "teamId": "egy",
+        "player": "Hamdy Fathy",
+        "text": "Hamdy Fathy Yellow Card"
       }
     ],
     "stats": {
