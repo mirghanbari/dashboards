@@ -9675,9 +9675,9 @@
     "homeTeamId": "usa",
     "awayTeamId": "bel",
     "homeScore": 1,
-    "awayScore": 3,
+    "awayScore": 4,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+4",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9738,14 +9738,22 @@
         "teamId": "usa",
         "player": "Malik Tillman",
         "text": "Malik Tillman Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+3'",
+        "teamId": "bel",
+        "player": "Romelu Lukaku",
+        "text": "Romelu Lukaku Goal",
+        "assist": "Hans Vanaken"
       }
     ],
     "stats": {
       "home": {
-        "possession": 56.3,
+        "possession": 56.2,
         "shots": 7,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.3,
+        "passAccuracy": 87,
         "accuratePasses": 454,
         "fouls": 11,
         "corners": 3,
@@ -9756,18 +9764,18 @@
         "boxTouches": 12
       },
       "away": {
-        "possession": 43.7,
-        "shots": 14,
-        "shotsOnTarget": 6,
-        "passAccuracy": 81.3,
-        "accuratePasses": 327,
+        "possession": 43.8,
+        "shots": 15,
+        "shotsOnTarget": 7,
+        "passAccuracy": 81,
+        "accuratePasses": 329,
         "fouls": 9,
         "corners": 5,
         "offsides": 1,
         "saves": 1,
         "xg": 2.1,
-        "duelsWon": 53,
-        "boxTouches": 20
+        "duelsWon": 54,
+        "boxTouches": 21
       }
     }
   },
