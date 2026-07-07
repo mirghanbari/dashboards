@@ -3,7 +3,7 @@
   "sourceUrl": "https://dtai.cs.kuleuven.be/sports/worldcup2026/",
   "blogUrl": "https://dtai.cs.kuleuven.be/sports/blog/predicting-the-2026-world-cup:-can-anyone-stop-spain/",
   "method": "20,000 Monte-Carlo tournament simulations, updated after each game",
-  "fetchedAt": "2026-07-07T22:26:46.387Z",
+  "fetchedAt": "2026-07-07T22:29:47.895Z",
   "teams": [
     {
       "code": "ESP",
