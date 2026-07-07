@@ -9980,12 +9980,12 @@
     ],
     "stats": {
       "home": {
-        "possession": 53.1,
+        "possession": 53.2,
         "shots": 7,
         "shotsOnTarget": 2,
         "passAccuracy": 87.2,
         "accuratePasses": 546,
-        "fouls": 23,
+        "fouls": 22,
         "corners": 3,
         "offsides": 5,
         "saves": 3,
@@ -9994,11 +9994,11 @@
         "boxTouches": 18
       },
       "away": {
-        "possession": 46.9,
+        "possession": 46.8,
         "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 82.9,
-        "accuratePasses": 455,
+        "passAccuracy": 82.8,
+        "accuratePasses": 454,
         "fouls": 21,
         "corners": 7,
         "offsides": 4,
