@@ -9675,9 +9675,9 @@
     "homeTeamId": "usa",
     "awayTeamId": "bel",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "32",
+    "minute": "34",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9707,15 +9707,23 @@
         "teamId": "usa",
         "player": "Malik Tillman",
         "text": "Malik Tillman Goal - Free-kick"
+      },
+      {
+        "type": "goal",
+        "minute": "33'",
+        "teamId": "bel",
+        "player": "Charles De Ketelaere",
+        "text": "Charles De Ketelaere Goal - Head",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 45.2,
+        "possession": 43.8,
         "shots": 1,
         "shotsOnTarget": 1,
-        "passAccuracy": 84.5,
-        "accuratePasses": 98,
+        "passAccuracy": 84.6,
+        "accuratePasses": 99,
         "fouls": 3,
         "corners": 0,
         "offsides": 0,
@@ -9725,18 +9733,18 @@
         "boxTouches": 1
       },
       "away": {
-        "possession": 54.8,
+        "possession": 56.2,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 84.2,
-        "accuratePasses": 117,
+        "passAccuracy": 84.6,
+        "accuratePasses": 126,
         "fouls": 3,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 1.35,
-        "duelsWon": 18,
-        "boxTouches": 10
+        "duelsWon": 19,
+        "boxTouches": 11
       }
     }
   },
