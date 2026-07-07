@@ -9973,32 +9973,32 @@
     ],
     "stats": {
       "home": {
-        "possession": 51.9,
+        "possession": 52.2,
         "shots": 6,
         "shotsOnTarget": 2,
         "passAccuracy": 87,
-        "accuratePasses": 435,
+        "accuratePasses": 449,
         "fouls": 14,
         "corners": 3,
         "offsides": 4,
         "saves": 2,
         "xg": 0.3,
-        "duelsWon": 40,
+        "duelsWon": 41,
         "boxTouches": 17
       },
       "away": {
-        "possession": 48.1,
+        "possession": 47.8,
         "shots": 8,
         "shotsOnTarget": 2,
-        "passAccuracy": 83,
-        "accuratePasses": 386,
-        "fouls": 17,
+        "passAccuracy": 83.1,
+        "accuratePasses": 393,
+        "fouls": 18,
         "corners": 4,
         "offsides": 4,
         "saves": 2,
-        "xg": 0.45,
-        "duelsWon": 47,
-        "boxTouches": 11
+        "xg": 0.58,
+        "duelsWon": 48,
+        "boxTouches": 14
       }
     }
   },
