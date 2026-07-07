@@ -9792,7 +9792,7 @@
     "homeScore": 0,
     "awayScore": 2,
     "status": "live",
-    "minute": "70",
+    "minute": "71",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9818,13 +9818,6 @@
         "assist": "Marawan Attia"
       },
       {
-        "type": "yellow",
-        "minute": "61'",
-        "teamId": "egy",
-        "player": "Mostafa Zico",
-        "text": "Mostafa Zico Yellow Card"
-      },
-      {
         "type": "goal",
         "minute": "67'",
         "teamId": "egy",
@@ -9835,21 +9828,21 @@
     ],
     "stats": {
       "home": {
-        "possession": 62.1,
-        "shots": 11,
+        "possession": 63.3,
+        "shots": 12,
         "shotsOnTarget": 4,
-        "passAccuracy": 89.7,
-        "accuratePasses": 401,
+        "passAccuracy": 90,
+        "accuratePasses": 422,
         "fouls": 11,
         "corners": 4,
         "offsides": 2,
         "saves": 0,
-        "xg": 1.68,
-        "duelsWon": 40,
-        "boxTouches": 21
+        "xg": 1.7,
+        "duelsWon": 41,
+        "boxTouches": 22
       },
       "away": {
-        "possession": 37.9,
+        "possession": 36.7,
         "shots": 3,
         "shotsOnTarget": 2,
         "passAccuracy": 83.5,
@@ -9858,8 +9851,8 @@
         "corners": 1,
         "offsides": 0,
         "saves": 4,
-        "xg": 0.73,
-        "duelsWon": 35,
+        "xg": 0.85,
+        "duelsWon": 36,
         "boxTouches": 4
       }
     }
