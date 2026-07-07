@@ -9816,6 +9816,13 @@
         "text": "Yasser Ibrahim Goal - Header",
         "goalType": "header",
         "assist": "Marawan Attia"
+      },
+      {
+        "type": "yellow",
+        "minute": "61'",
+        "teamId": "egy",
+        "player": "Mostafa Zico",
+        "text": "Mostafa Zico Yellow Card"
       }
     ],
     "stats": {
@@ -9829,7 +9836,7 @@
         "corners": 2,
         "offsides": 2,
         "saves": 0,
-        "xg": 1.57,
+        "xg": 1.68,
         "duelsWon": 35,
         "boxTouches": 18
       },
@@ -9844,7 +9851,7 @@
         "offsides": 0,
         "saves": 4,
         "xg": 0.21,
-        "duelsWon": 29,
+        "duelsWon": 30,
         "boxTouches": 1
       }
     }
