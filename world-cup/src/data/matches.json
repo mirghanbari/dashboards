@@ -9792,7 +9792,7 @@
     "homeScore": 2,
     "awayScore": 2,
     "status": "live",
-    "minute": "84",
+    "minute": "85",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9839,7 +9839,9 @@
         "minute": "83'",
         "teamId": "arg",
         "player": "Lionel Messi",
-        "text": "Lionel Messi Goal"
+        "text": "Lionel Messi Goal - Volley",
+        "goalType": "volley",
+        "assist": "Gonzalo Montiel"
       }
     ],
     "stats": {
@@ -9853,7 +9855,7 @@
         "corners": 6,
         "offsides": 3,
         "saves": 0,
-        "xg": 2.56,
+        "xg": 2.77,
         "duelsWon": 43,
         "boxTouches": 33
       },
