@@ -9677,7 +9677,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "15",
+    "minute": "16",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9698,7 +9698,8 @@
         "minute": "9'",
         "teamId": "bel",
         "player": "Charles De Ketelaere",
-        "text": "Charles De Ketelaere Goal"
+        "text": "Charles De Ketelaere Goal",
+        "assist": "Nicolas Raskin"
       }
     ],
     "stats": {
@@ -9706,8 +9707,8 @@
         "possession": 35.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 77.3,
-        "accuratePasses": 34,
+        "passAccuracy": 75,
+        "accuratePasses": 39,
         "fouls": 2,
         "corners": 0,
         "offsides": 0,
@@ -9720,13 +9721,13 @@
         "possession": 64.7,
         "shots": 8,
         "shotsOnTarget": 3,
-        "passAccuracy": 83.1,
-        "accuratePasses": 69,
+        "passAccuracy": 84.5,
+        "accuratePasses": 82,
         "fouls": 0,
         "corners": 1,
-        "offsides": 0,
+        "offsides": 1,
         "saves": 0,
-        "xg": 1.39,
+        "xg": 1.35,
         "duelsWon": 13,
         "boxTouches": 9
       }
