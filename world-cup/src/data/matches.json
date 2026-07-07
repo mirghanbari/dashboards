@@ -9792,7 +9792,7 @@
     "homeScore": 3,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9850,6 +9850,13 @@
         "text": "Enzo Fernández Goal - Header",
         "goalType": "header",
         "assist": "Lautaro Martínez"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "egy",
+        "player": "Mostafa Shoubir",
+        "text": "Mostafa Shoubir Yellow Card"
       }
     ],
     "stats": {
