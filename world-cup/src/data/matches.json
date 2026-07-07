@@ -9926,7 +9926,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "51",
+    "minute": "52",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9941,13 +9941,22 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "51'",
+        "teamId": "sui",
+        "player": "Granit Xhaka",
+        "text": "Granit Xhaka Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 50,
+        "possession": 49.9,
         "shots": 3,
         "shotsOnTarget": 2,
-        "passAccuracy": 87.3,
-        "accuratePasses": 247,
+        "passAccuracy": 87.4,
+        "accuratePasses": 250,
         "fouls": 6,
         "corners": 1,
         "offsides": 3,
@@ -9957,11 +9966,11 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 50,
+        "possession": 50.1,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 82.2,
-        "accuratePasses": 231,
+        "passAccuracy": 82.4,
+        "accuratePasses": 234,
         "fouls": 6,
         "corners": 4,
         "offsides": 1,
