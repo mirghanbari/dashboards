@@ -9969,36 +9969,43 @@
         "teamId": "col",
         "player": "Davinson Sánchez",
         "text": "Davinson Sánchez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "105'",
+        "teamId": "sui",
+        "player": "Miro Muheim",
+        "text": "Miro Muheim Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.6,
+        "possession": 52.3,
         "shots": 6,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.7,
-        "accuratePasses": 456,
+        "passAccuracy": 86.9,
+        "accuratePasses": 472,
         "fouls": 15,
         "corners": 3,
-        "offsides": 4,
-        "saves": 2,
+        "offsides": 5,
+        "saves": 3,
         "xg": 0.3,
-        "duelsWon": 45,
-        "boxTouches": 22
+        "duelsWon": 44,
+        "boxTouches": 17
       },
       "away": {
-        "possession": 48.4,
-        "shots": 10,
-        "shotsOnTarget": 2,
+        "possession": 47.7,
+        "shots": 11,
+        "shotsOnTarget": 3,
         "passAccuracy": 83.8,
         "accuratePasses": 414,
-        "fouls": 18,
-        "corners": 5,
+        "fouls": 20,
+        "corners": 6,
         "offsides": 4,
-        "saves": 2,
-        "xg": 0.59,
-        "duelsWon": 49,
-        "boxTouches": 14
+        "saves": 3,
+        "xg": 0.68,
+        "duelsWon": 51,
+        "boxTouches": 15
       }
     }
   },
