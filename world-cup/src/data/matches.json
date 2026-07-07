@@ -9926,7 +9926,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "59",
+    "minute": "60",
     "broadcasts": [
       {
         "name": "FOX",
@@ -9948,6 +9948,13 @@
         "teamId": "sui",
         "player": "Granit Xhaka",
         "text": "Granit Xhaka Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "59'",
+        "teamId": "sui",
+        "player": "Denis Zakaria",
+        "text": "Denis Zakaria Yellow Card"
       }
     ],
     "stats": {
