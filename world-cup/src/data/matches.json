@@ -9839,7 +9839,8 @@
         "minute": "83'",
         "teamId": "arg",
         "player": "Lionel Messi",
-        "text": "Lionel Messi Goal",
+        "text": "Lionel Messi Goal - Volley",
+        "goalType": "volley",
         "assist": "Gonzalo Montiel"
       },
       {
@@ -9891,7 +9892,7 @@
         "corners": 6,
         "offsides": 3,
         "saves": 0,
-        "xg": 2.8,
+        "xg": 2.9,
         "duelsWon": 50,
         "boxTouches": 34
       },
@@ -9899,14 +9900,14 @@
         "possession": 36.4,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 82.8,
-        "accuratePasses": 289,
+        "passAccuracy": 82.5,
+        "accuratePasses": 288,
         "fouls": 11,
         "corners": 1,
         "offsides": 0,
         "saves": 4,
-        "xg": 0.98,
-        "duelsWon": 45,
+        "xg": 0.89,
+        "duelsWon": 46,
         "boxTouches": 8
       }
     }

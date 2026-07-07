@@ -616,9 +616,9 @@
     "possession": 51.6,
     "ppda": 11.9,
     "cleanSheets": 0,
-    "passCompletion": 84.7,
-    "xgFor": 6.1,
-    "xgAgainst": 8.35
+    "passCompletion": 84.6,
+    "xgFor": 6.01,
+    "xgAgainst": 8.46
   },
   {
     "id": "nzl",
@@ -847,8 +847,8 @@
     "ppda": 10.5,
     "cleanSheets": 2,
     "passCompletion": 90.5,
-    "xgFor": 10.85,
-    "xgAgainst": 3.08
+    "xgFor": 10.96,
+    "xgAgainst": 2.99
   },
   {
     "id": "aut",
