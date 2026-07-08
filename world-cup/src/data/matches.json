@@ -7807,6 +7807,62 @@
         "duelsWon": 76,
         "boxTouches": 12
       }
+    },
+    "shootout": {
+      "homeScore": 3,
+      "awayScore": 4,
+      "home": [
+        {
+          "player": "Kai Havertz",
+          "scored": false
+        },
+        {
+          "player": "Joshua Kimmich",
+          "scored": true
+        },
+        {
+          "player": "Jamal Musiala",
+          "scored": true
+        },
+        {
+          "player": "Nick Woltemade",
+          "scored": false
+        },
+        {
+          "player": "Nadiem Amiri",
+          "scored": true
+        },
+        {
+          "player": "Jonathan Tah",
+          "scored": false
+        }
+      ],
+      "away": [
+        {
+          "player": "Maurício",
+          "scored": true
+        },
+        {
+          "player": "Gustavo Gómez",
+          "scored": true
+        },
+        {
+          "player": "Matías Galarza",
+          "scored": true
+        },
+        {
+          "player": "Antonio Sanabria",
+          "scored": false
+        },
+        {
+          "player": "Fabián Balbuena",
+          "scored": false
+        },
+        {
+          "player": "José Canale",
+          "scored": true
+        }
+      ]
     }
   },
   {
@@ -7893,6 +7949,54 @@
         "duelsWon": 53,
         "boxTouches": 20
       }
+    },
+    "shootout": {
+      "homeScore": 2,
+      "awayScore": 3,
+      "home": [
+        {
+          "player": "Teun Koopmeiners",
+          "scored": true
+        },
+        {
+          "player": "Justin Kluivert",
+          "scored": false
+        },
+        {
+          "player": "Wout Weghorst",
+          "scored": true
+        },
+        {
+          "player": "Quinten Timber",
+          "scored": false
+        },
+        {
+          "player": "Crysencio Summerville",
+          "scored": false
+        }
+      ],
+      "away": [
+        {
+          "player": "Neil El Aynaoui",
+          "scored": false
+        },
+        {
+          "player": "Soufiane Rahimi",
+          "scored": true
+        },
+        {
+          "player": "Chemsdine Talbi",
+          "scored": true
+        },
+        {
+          "player": "Achraf Hakimi",
+          "scored": false
+        },
+        {
+          "player": "Ismael Saibari",
+          "scored": true
+        }
+      ]
     }
   },
   {
@@ -8870,6 +8974,46 @@
         "duelsWon": 62,
         "boxTouches": 30
       }
+    },
+    "shootout": {
+      "homeScore": 2,
+      "awayScore": 4,
+      "home": [
+        {
+          "player": "Harry Souttar",
+          "scored": false
+        },
+        {
+          "player": "Jackson Irvine",
+          "scored": true
+        },
+        {
+          "player": "Awer Mabil",
+          "scored": true
+        },
+        {
+          "player": "Lucas Herrington",
+          "scored": false
+        }
+      ],
+      "away": [
+        {
+          "player": "Mahmoud Saber",
+          "scored": true
+        },
+        {
+          "player": "Ramy Rabia",
+          "scored": true
+        },
+        {
+          "player": "Mohamed Salah",
+          "scored": true
+        },
+        {
+          "player": "Hossam Abdelmaguid",
+          "scored": true
+        }
+      ]
     }
   },
   {
@@ -10007,6 +10151,54 @@
         "duelsWon": 61,
         "boxTouches": 21
       }
+    },
+    "shootout": {
+      "homeScore": 4,
+      "awayScore": 3,
+      "home": [
+        {
+          "player": "Granit Xhaka",
+          "scored": true
+        },
+        {
+          "player": "Zeki Amdouni",
+          "scored": true
+        },
+        {
+          "player": "Manuel Akanji",
+          "scored": false
+        },
+        {
+          "player": "Cedric Itten",
+          "scored": true
+        },
+        {
+          "player": "Rubén Vargas",
+          "scored": true
+        }
+      ],
+      "away": [
+        {
+          "player": "Juan Fernando Quintero",
+          "scored": true
+        },
+        {
+          "player": "Davinson Sánchez",
+          "scored": false
+        },
+        {
+          "player": "Jáminton Campaz",
+          "scored": true
+        },
+        {
+          "player": "Cucho Hernández",
+          "scored": false
+        },
+        {
+          "player": "Luis Díaz",
+          "scored": true
+        }
+      ]
     }
   },
   {
