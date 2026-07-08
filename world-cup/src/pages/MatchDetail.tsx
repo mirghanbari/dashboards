@@ -4,7 +4,7 @@ import { stageLabel } from "../components/MatchCard";
 import { useJsonLd } from "../seo/jsonLd";
 import { matchSchema } from "../seo/schema";
 import { liveClock } from "../clock";
-import type { Match, MatchEvent, MatchTeamStats } from "../types";
+import type { Match, MatchEvent, MatchTeamStats, ShootoutKick } from "../types";
 
 const EVENT_ICON: Record<MatchEvent["type"], string> = {
   goal: "⚽",
@@ -96,6 +96,56 @@ function Timeline({ match }: { match: Match }) {
           );
         })}
       </ul>
+    </section>
+  );
+}
+
+/** One side's kick in a shootout round (or a blank cell once the game ended mid-round). */
+function KickCell({ kick, side }: { kick: ShootoutKick | undefined; side: "home" | "away" }) {
+  if (!kick) return <span className={`so-kick so-${side}`} />;
+  return (
+    <span className={`so-kick so-${side}` + (kick.scored ? " is-scored" : " is-missed")}>
+      <span className="so-taker">{kick.player}</span>
+      <span className="so-mark" aria-label={kick.scored ? "scored" : "missed"}>
+        {kick.scored ? "⚽" : "✕"}
+      </span>
+    </span>
+  );
+}
+
+/** Kick-by-kick penalty shootout, for a knockout game that finished level. */
+function Shootout({ match }: { match: Match }) {
+  const so = match.shootout;
+  if (!so) return null;
+  const rounds = Math.max(so.home.length, so.away.length);
+  // A live shootout can be level mid-way; a finished one never is.
+  const ahead =
+    so.homeScore === so.awayScore
+      ? null
+      : getTeam(so.homeScore > so.awayScore ? match.homeTeamId : match.awayTeamId);
+  return (
+    <section className="section">
+      <h2 className="section-title">Penalty shootout</h2>
+      <p className="page-sub">
+        {ahead
+          ? `${ahead.flag} ${ahead.name} ${match.status === "finished" ? "win" : "lead"} ` +
+            `${Math.max(so.homeScore, so.awayScore)}–${Math.min(so.homeScore, so.awayScore)} on penalties`
+          : `Level ${so.homeScore}–${so.awayScore} on penalties`}
+      </p>
+      <div className="md-shootout">
+        <div className="so-row so-head">
+          <span className="so-kick so-home">{getTeam(match.homeTeamId).code}</span>
+          <span className="so-num" />
+          <span className="so-kick so-away">{getTeam(match.awayTeamId).code}</span>
+        </div>
+        {Array.from({ length: rounds }, (_, i) => (
+          <div key={i} className="so-row">
+            <KickCell kick={so.home[i]} side="home" />
+            <span className="so-num">{i + 1}</span>
+            <KickCell kick={so.away[i]} side="away" />
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -231,6 +281,11 @@ export function MatchDetail() {
           </div>
           <TeamColumn teamId={match.awayTeamId} slot={match.awaySlot} />
         </div>
+        {match.shootout && (
+          <p className="md-pens">
+            {match.shootout.homeScore}–{match.shootout.awayScore} on penalties
+          </p>
+        )}
         <p className="md-venue">
           {match.venue}
           {match.city && `, ${match.city}`}
@@ -247,6 +302,7 @@ export function MatchDetail() {
       </header>
 
       <Timeline match={match} />
+      <Shootout match={match} />
       <StatBars match={match} />
       {match.status === "scheduled" && <Forecast match={match} />}
 

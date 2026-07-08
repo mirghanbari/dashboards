@@ -18,6 +18,11 @@ function Side({ slot, decided }: { slot: BracketSlot; decided: boolean }) {
     <div className={cls}>
       <span className="kb-flag">{slot.team.flag}</span>
       <span className="kb-name">{slot.team.name}</span>
+      {slot.pens != null && (
+        <span className="kb-pens" title="Penalty shootout">
+          ({slot.pens})
+        </span>
+      )}
       <span className="kb-score">{slot.score ?? ""}</span>
     </div>
   );

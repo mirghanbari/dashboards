@@ -47,6 +47,7 @@ const live = matches
       // Carry the detail-page fields too (omit if absent to keep it tight).
       if (m.timeline) slim.timeline = m.timeline;
       if (m.stats) slim.stats = m.stats;
+      if (m.shootout) slim.shootout = m.shootout;
     }
     return slim;
   });

@@ -73,6 +73,22 @@ export interface Match {
   // Per-match detail, populated for live/finished games (from the ESPN summary).
   timeline?: MatchEvent[]; // goals + cards, in order, with minute & scorer
   stats?: MatchStats; // home/away team comparison stats
+  shootout?: Shootout; // penalty shootout, for knockout games that finished level
+}
+
+// A penalty shootout. `home`/`away` list each side's kicks in taking order —
+// possibly uneven (a shootout ends mid-round once decided, or runs past 5
+// kicks into sudden death).
+export interface Shootout {
+  homeScore: number;
+  awayScore: number;
+  home: ShootoutKick[];
+  away: ShootoutKick[];
+}
+
+export interface ShootoutKick {
+  player: string;
+  scored: boolean; // false = saved or missed
 }
 
 export interface Broadcast {

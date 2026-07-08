@@ -8,6 +8,8 @@ export interface BracketSlot {
   team: Team | null;
   slotLabel: string | null;
   score: number | null;
+  /** Penalty-shootout score, when the game finished level and went to kicks. */
+  pens: number | null;
   isWinner: boolean;
 }
 
@@ -86,7 +88,10 @@ export function knockoutBracket(matches: Match[]): Knockout {
     if (m.status !== "finished") return null;
     const { homeTeamId: h, awayTeamId: a, homeScore: hs, awayScore: as_ } = m;
     if (hs != null && as_ != null && hs !== as_) return hs > as_ ? h : a;
-    // Level on aggregate (penalty shootout): the survivor plays on next round.
+    // Level after extra time: the shootout result decides it directly.
+    if (m.shootout && m.shootout.homeScore !== m.shootout.awayScore)
+      return m.shootout.homeScore > m.shootout.awayScore ? h : a;
+    // No shootout data (yet): the survivor plays on next round.
     const later = teamsFromIndex[stageIdx + 1];
     if (later) {
       if (isReal(h) && later.has(h)) return h;
@@ -150,10 +155,10 @@ export function knockoutBracket(matches: Match[]): Knockout {
   for (let i = 0; i < ROUNDS.length; i++)
     for (const m of stageMatches.get(ROUNDS[i].stage)!) if (!pos.has(m.id)) assign(m);
 
-  const slotFor = (teamId: string, score: number | null, slot: string | undefined, won: string | null): BracketSlot =>
+  const slotFor = (teamId: string, score: number | null, pens: number | null, slot: string | undefined, won: string | null): BracketSlot =>
     isReal(teamId)
-      ? { team: getTeam(teamId), slotLabel: null, score, isWinner: won === teamId }
-      : { team: null, slotLabel: slot ?? "To be decided", score: null, isWinner: false };
+      ? { team: getTeam(teamId), slotLabel: null, score, pens, isWinner: won === teamId }
+      : { team: null, slotLabel: slot ?? "To be decided", score: null, pens: null, isWinner: false };
 
   const toBracket = (m: Match, stageIdx: number): BracketMatch => {
     const won = winnerOf(m, stageIdx);
@@ -162,8 +167,8 @@ export function knockoutBracket(matches: Match[]): Knockout {
       stage: m.stage,
       status: m.status,
       date: m.date,
-      home: slotFor(m.homeTeamId, m.homeScore, m.homeSlot, won),
-      away: slotFor(m.awayTeamId, m.awayScore, m.awaySlot, won),
+      home: slotFor(m.homeTeamId, m.homeScore, m.shootout?.homeScore ?? null, m.homeSlot, won),
+      away: slotFor(m.awayTeamId, m.awayScore, m.shootout?.awayScore ?? null, m.awaySlot, won),
       pos: pos.get(m.id) ?? 0,
     };
   };

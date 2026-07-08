@@ -13,11 +13,12 @@ import type { Match, Team } from "../types";
 
 /**
  * The fields live.json carries. Every entry has the slim card fields; live and
- * recently-finished matches also carry `timeline`/`stats` for the detail page.
+ * recently-finished matches also carry `timeline`/`stats`/`shootout` for the
+ * detail page.
  */
 export type LiveMatch = Pick<
   Match,
-  "id" | "status" | "homeScore" | "awayScore" | "minute" | "timeline" | "stats"
+  "id" | "status" | "homeScore" | "awayScore" | "minute" | "timeline" | "stats" | "shootout"
 >;
 
 const LIVE_URL = `${import.meta.env.BASE_URL}live.json`;

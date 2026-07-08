@@ -233,16 +233,20 @@ export function MatchCard({ match }: { match: Match }) {
     minute: "2-digit",
   });
 
+  // A level knockout game is decided by its penalty shootout.
+  const pens = match.shootout;
   const homeWin =
     match.status === "finished" &&
     match.homeScore !== null &&
     match.awayScore !== null &&
-    match.homeScore > match.awayScore;
+    (match.homeScore > match.awayScore ||
+      (match.homeScore === match.awayScore && !!pens && pens.homeScore > pens.awayScore));
   const awayWin =
     match.status === "finished" &&
     match.homeScore !== null &&
     match.awayScore !== null &&
-    match.awayScore > match.homeScore;
+    (match.awayScore > match.homeScore ||
+      (match.homeScore === match.awayScore && !!pens && pens.awayScore > pens.homeScore));
 
   const open = () => navigate(`/matches/${match.id}`);
 
@@ -276,6 +280,13 @@ export function MatchCard({ match }: { match: Match }) {
         <TeamLine teamId={match.homeTeamId} slot={match.homeSlot} score={match.homeScore} winner={homeWin} />
         <TeamLine teamId={match.awayTeamId} slot={match.awaySlot} score={match.awayScore} winner={awayWin} />
       </div>
+      {pens && (
+        <div className="match-pens">
+          {getTeam(pens.homeScore > pens.awayScore ? match.homeTeamId : match.awayTeamId).name} win{" "}
+          {Math.max(pens.homeScore, pens.awayScore)}–{Math.min(pens.homeScore, pens.awayScore)} on
+          penalties
+        </div>
+      )}
       {match.status === "scheduled" && <MatchPrediction match={match} />}
       {match.status !== "scheduled" && <FieldTilt match={match} />}
       {match.status !== "finished" && match.broadcasts && match.broadcasts.length > 0 && (

@@ -481,6 +481,13 @@ a.team-name:hover {
 .match-team.is-winner .match-score {
   color: var(--pitch-1);
 }
+/* Shootout result line, under the two team rows of a pens-decided game. */
+.match-pens {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--pitch-1);
+}
 .match-foot {
   margin-top: 12px;
   padding-top: 10px;
@@ -1329,6 +1336,16 @@ tr.qualifies {
   color: var(--ink-soft);
   min-width: 12px;
   text-align: right;
+}
+/* Penalty-shootout score, shown beside the (level) full-time score. */
+.kb-pens {
+  flex: none;
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-faint);
+}
+.kb-side.is-winner .kb-pens {
+  color: var(--pitch-1);
 }
 .kb-side.is-winner .kb-name {
   color: var(--pitch-1);
@@ -2443,6 +2460,13 @@ tr.is-me .player-name {
   color: var(--ink-faint);
   font-weight: 600;
 }
+.md-pens {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
 .md-venue {
   text-align: center;
   color: var(--ink-faint);
@@ -2513,6 +2537,72 @@ tr.is-me .player-name {
 .md-event-assist {
   color: var(--ink-faint);
   font-size: 0.78rem;
+}
+
+/* penalty shootout — one row per round: home kick | round no. | away kick */
+.md-shootout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  margin-top: 14px;
+}
+.so-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.so-row.so-head .so-kick {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+.so-num {
+  flex: none;
+  min-width: 26px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--ink-faint);
+}
+.so-kick {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+/* Both sides anchor toward the centre round number, mirrored. */
+.so-kick.so-home {
+  justify-content: flex-end;
+  text-align: right;
+}
+.so-kick.so-away {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: left;
+}
+.so-taker {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.so-mark {
+  flex: none;
+  font-size: 0.95rem;
+}
+.so-kick.is-missed .so-mark {
+  color: var(--red);
+  font-weight: 800;
+}
+.so-kick.is-missed .so-taker {
+  color: var(--ink-faint);
 }
 
 /* team-comparison stat bars */

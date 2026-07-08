@@ -465,6 +465,36 @@ async function main() {
         }
       }
 
+      // Penalty shootout (live + finished): per-kick takers in taking order,
+      // from the summary's top-level `shootout` (one entry per team, `id` =
+      // ESPN team id). Per-side totals come from the header competitors'
+      // shootoutScore when present, else counted off the kicks.
+      const soTeams = Array.isArray(sum.shootout) ? sum.shootout : [];
+      if (soTeams.length) {
+        const kicksFor = (teamId) => {
+          const entry = soTeams.find((t) => espnTeamToId.get(String(t.id)) === teamId);
+          return (entry?.shots ?? [])
+            .slice()
+            .sort((a, b) => (a.shotNumber ?? 0) - (b.shotNumber ?? 0))
+            .map((s) => ({ player: s.player ?? "", scored: s.didScore === true }));
+        };
+        const soHome = kicksFor(m.homeTeamId);
+        const soAway = kicksFor(m.awayTeamId);
+        const comps = sum.header?.competitions?.[0]?.competitors ?? [];
+        const soScore = (side, kicks) => {
+          const n = comps.find((c) => c.homeAway === side)?.shootoutScore;
+          return Number.isFinite(n) ? n : kicks.filter((k) => k.scored).length;
+        };
+        if (soHome.length || soAway.length) {
+          m.shootout = {
+            homeScore: soScore("home", soHome),
+            awayScore: soScore("away", soAway),
+            home: soHome,
+            away: soAway,
+          };
+        }
+      }
+
       // Season aggregation: finished matches only.
       if (m.status !== "finished") continue;
       // Per-player stats from the match rosters.
