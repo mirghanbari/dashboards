@@ -10211,10 +10211,10 @@
     "city": "Foxborough, Massachusetts",
     "homeTeamId": "fra",
     "awayTeamId": "mar",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "scheduled",
-    "minute": null,
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "live",
+    "minute": "2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10228,7 +10228,35 @@
         "name": "FOX One",
         "type": "stream"
       }
-    ]
+    ],
+    "stats": {
+      "home": {
+        "possession": 60.7,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 88.2,
+        "accuratePasses": 15,
+        "fouls": 0,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0.01,
+        "duelsWon": 2
+      },
+      "away": {
+        "possession": 39.3,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passAccuracy": 81.8,
+        "accuratePasses": 9,
+        "fouls": 1,
+        "corners": 0,
+        "offsides": 0,
+        "saves": 0,
+        "xg": 0,
+        "duelsWon": 3
+      }
+    }
   },
   {
     "id": "M098",
