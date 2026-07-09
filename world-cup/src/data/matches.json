@@ -10214,7 +10214,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "61",
+    "minute": "63",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10237,35 +10237,42 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Goal",
         "assist": "Désiré Doué"
+      },
+      {
+        "type": "yellow",
+        "minute": "63'",
+        "teamId": "mar",
+        "player": "Issa Diop",
+        "text": "Issa Diop Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.5,
+        "possession": 50.4,
         "shots": 16,
         "shotsOnTarget": 5,
-        "passAccuracy": 89,
-        "accuratePasses": 333,
+        "passAccuracy": 89.1,
+        "accuratePasses": 334,
         "fouls": 7,
         "corners": 3,
         "offsides": 0,
         "saves": 0,
         "xg": 2.39,
-        "duelsWon": 27,
+        "duelsWon": 29,
         "boxTouches": 20
       },
       "away": {
-        "possession": 48.5,
+        "possession": 49.6,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 83.1,
-        "accuratePasses": 294,
-        "fouls": 7,
+        "passAccuracy": 83.3,
+        "accuratePasses": 309,
+        "fouls": 8,
         "corners": 2,
         "offsides": 0,
         "saves": 4,
         "xg": 0.08,
-        "duelsWon": 24,
+        "duelsWon": 25,
         "boxTouches": 2
       }
     }
