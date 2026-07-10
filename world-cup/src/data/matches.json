@@ -10378,9 +10378,9 @@
         "corners": 5,
         "offsides": 3,
         "saves": 1,
-        "xg": 2.04,
+        "xg": 2.08,
         "duelsWon": 42,
-        "boxTouches": 41
+        "boxTouches": 42
       },
       "away": {
         "possession": 32.2,
@@ -10392,8 +10392,8 @@
         "corners": 1,
         "offsides": 1,
         "saves": 6,
-        "xg": 0.38,
-        "duelsWon": 39,
+        "xg": 0.37,
+        "duelsWon": 40,
         "boxTouches": 11
       }
     }
@@ -10468,8 +10468,7 @@
     "venue": "AT&T Stadium",
     "city": "Arlington, Texas",
     "homeTeamId": "fra",
-    "awayTeamId": "tbd",
-    "awaySlot": "Quarterfinal 2 Winner",
+    "awayTeamId": "esp",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
