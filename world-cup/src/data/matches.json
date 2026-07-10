@@ -10299,7 +10299,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "43",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10330,35 +10330,42 @@
         "text": "Charles De Ketelaere Goal - Head",
         "goalType": "header",
         "assist": "Timothy Castagne"
+      },
+      {
+        "type": "yellow",
+        "minute": "43'",
+        "teamId": "esp",
+        "player": "Pau Cubarsí",
+        "text": "Pau Cubarsí Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64.7,
+        "possession": 63.6,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.1,
-        "accuratePasses": 238,
-        "fouls": 4,
+        "passAccuracy": 88.2,
+        "accuratePasses": 246,
+        "fouls": 5,
         "corners": 1,
         "offsides": 1,
         "saves": 0,
         "xg": 0.98,
-        "duelsWon": 18,
+        "duelsWon": 19,
         "boxTouches": 14
       },
       "away": {
-        "possession": 35.3,
+        "possession": 36.4,
         "shots": 2,
         "shotsOnTarget": 1,
-        "passAccuracy": 81.3,
-        "accuratePasses": 117,
+        "passAccuracy": 82.1,
+        "accuratePasses": 128,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 2,
         "xg": 0.18,
-        "duelsWon": 13,
+        "duelsWon": 14,
         "boxTouches": 3
       }
     }
