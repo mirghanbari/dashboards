@@ -10297,9 +10297,9 @@
     "homeTeamId": "esp",
     "awayTeamId": "bel",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "40",
+    "minute": "42",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10321,11 +10321,20 @@
         "teamId": "esp",
         "player": "Fabián Ruiz",
         "text": "Fabián Ruiz Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "41'",
+        "teamId": "bel",
+        "player": "Charles De Ketelaere",
+        "text": "Charles De Ketelaere Goal - Head",
+        "goalType": "header",
+        "assist": "Timothy Castagne"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.2,
+        "possession": 64.7,
         "shots": 7,
         "shotsOnTarget": 3,
         "passAccuracy": 88.1,
@@ -10339,18 +10348,18 @@
         "boxTouches": 14
       },
       "away": {
-        "possession": 33.8,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 81,
-        "accuratePasses": 111,
+        "possession": 35.3,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 81.3,
+        "accuratePasses": 117,
         "fouls": 5,
         "corners": 0,
         "offsides": 1,
         "saves": 2,
-        "xg": 0.04,
+        "xg": 0.18,
         "duelsWon": 12,
-        "boxTouches": 2
+        "boxTouches": 3
       }
     }
   },
