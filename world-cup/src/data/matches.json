@@ -10299,7 +10299,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+2",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10351,14 +10351,21 @@
         "teamId": "esp",
         "player": "Mikel Merino",
         "text": "Mikel Merino Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+3'",
+        "teamId": "esp",
+        "player": "Aymeric Laporte",
+        "text": "Aymeric Laporte Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 68.2,
+        "possession": 67.7,
         "shots": 16,
         "shotsOnTarget": 7,
-        "passAccuracy": 90.8,
+        "passAccuracy": 90.6,
         "accuratePasses": 579,
         "fouls": 12,
         "corners": 5,
@@ -10369,18 +10376,18 @@
         "boxTouches": 41
       },
       "away": {
-        "possession": 31.8,
+        "possession": 32.3,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 78.8,
-        "accuratePasses": 234,
-        "fouls": 14,
+        "passAccuracy": 78.7,
+        "accuratePasses": 240,
+        "fouls": 15,
         "corners": 1,
         "offsides": 1,
         "saves": 5,
         "xg": 0.38,
-        "duelsWon": 34,
-        "boxTouches": 9
+        "duelsWon": 37,
+        "boxTouches": 11
       }
     }
   },
