@@ -10296,10 +10296,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "esp",
     "awayTeamId": "bel",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "29",
+    "minute": "30",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10314,31 +10314,40 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "goal",
+        "minute": "30'",
+        "teamId": "esp",
+        "player": "Fabián Ruiz",
+        "text": "Fabián Ruiz Goal"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 65,
-        "shots": 3,
-        "shotsOnTarget": 0,
-        "passAccuracy": 87.8,
-        "accuratePasses": 173,
+        "possession": 62.4,
+        "shots": 5,
+        "shotsOnTarget": 2,
+        "passAccuracy": 88.1,
+        "accuratePasses": 178,
         "fouls": 3,
         "corners": 0,
         "offsides": 1,
         "saves": 0,
         "xg": 0.33,
         "duelsWon": 13,
-        "boxTouches": 7
+        "boxTouches": 9
       },
       "away": {
-        "possession": 35,
+        "possession": 37.6,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 80,
-        "accuratePasses": 84,
+        "passAccuracy": 81.8,
+        "accuratePasses": 99,
         "fouls": 4,
         "corners": 0,
         "offsides": 0,
-        "saves": 0,
+        "saves": 1,
         "xg": 0.04,
         "duelsWon": 8,
         "boxTouches": 1
