@@ -10296,10 +10296,10 @@
     "city": "Inglewood, California",
     "homeTeamId": "esp",
     "awayTeamId": "bel",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "87",
+    "minute": "89",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10344,25 +10344,32 @@
         "teamId": "bel",
         "player": "Kevin De Bruyne",
         "text": "Kevin De Bruyne Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "88'",
+        "teamId": "esp",
+        "player": "Mikel Merino",
+        "text": "Mikel Merino Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 67.7,
-        "shots": 14,
-        "shotsOnTarget": 5,
-        "passAccuracy": 90.5,
-        "accuratePasses": 546,
+        "possession": 68.6,
+        "shots": 16,
+        "shotsOnTarget": 7,
+        "passAccuracy": 90.9,
+        "accuratePasses": 570,
         "fouls": 11,
         "corners": 5,
         "offsides": 3,
         "saves": 1,
         "xg": 1.34,
         "duelsWon": 33,
-        "boxTouches": 40
+        "boxTouches": 41
       },
       "away": {
-        "possession": 32.3,
+        "possession": 31.4,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 79,
@@ -10370,7 +10377,7 @@
         "fouls": 14,
         "corners": 1,
         "offsides": 1,
-        "saves": 4,
+        "saves": 5,
         "xg": 0.38,
         "duelsWon": 33,
         "boxTouches": 9
