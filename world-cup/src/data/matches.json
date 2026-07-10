@@ -10299,7 +10299,7 @@
     "homeScore": 2,
     "awayScore": 1,
     "status": "live",
-    "minute": "90+4",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10358,6 +10358,13 @@
         "teamId": "esp",
         "player": "Aymeric Laporte",
         "text": "Aymeric Laporte Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+5'",
+        "teamId": "bel",
+        "player": "Axel Witsel",
+        "text": "Axel Witsel Yellow Card"
       }
     ],
     "stats": {
