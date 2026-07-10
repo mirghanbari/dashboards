@@ -10299,7 +10299,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "84",
+    "minute": "86",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10337,34 +10337,41 @@
         "teamId": "esp",
         "player": "Pau Cubarsí",
         "text": "Pau Cubarsí Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "85'",
+        "teamId": "bel",
+        "player": "Kevin De Bruyne",
+        "text": "Kevin De Bruyne Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 68.2,
+        "possession": 68.5,
         "shots": 14,
         "shotsOnTarget": 5,
-        "passAccuracy": 90.5,
-        "accuratePasses": 526,
+        "passAccuracy": 90.4,
+        "accuratePasses": 538,
         "fouls": 11,
         "corners": 5,
         "offsides": 3,
         "saves": 1,
         "xg": 1.34,
-        "duelsWon": 32,
+        "duelsWon": 33,
         "boxTouches": 37
       },
       "away": {
-        "possession": 31.8,
+        "possession": 31.5,
         "shots": 4,
         "shotsOnTarget": 2,
-        "passAccuracy": 78.4,
-        "accuratePasses": 211,
+        "passAccuracy": 77.9,
+        "accuratePasses": 212,
         "fouls": 13,
         "corners": 1,
         "offsides": 1,
         "saves": 4,
-        "xg": 0.34,
+        "xg": 0.35,
         "duelsWon": 33,
         "boxTouches": 9
       }
