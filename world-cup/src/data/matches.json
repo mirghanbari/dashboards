@@ -10450,35 +10450,42 @@
         "teamId": "eng",
         "player": "Jude Bellingham",
         "text": "Jude Bellingham Goal"
+      },
+      {
+        "type": "yellow",
+        "minute": "117'",
+        "teamId": "nor",
+        "player": "Kristoffer Ajer",
+        "text": "Kristoffer Ajer Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.7,
+        "possession": 47.2,
         "shots": 13,
         "shotsOnTarget": 4,
         "passAccuracy": 86.1,
-        "accuratePasses": 464,
+        "accuratePasses": 476,
         "fouls": 10,
         "corners": 7,
         "offsides": 1,
         "saves": 6,
         "xg": 0.77,
-        "duelsWon": 43,
+        "duelsWon": 44,
         "boxTouches": 31
       },
       "away": {
-        "possession": 53.3,
+        "possession": 52.8,
         "shots": 14,
         "shotsOnTarget": 8,
-        "passAccuracy": 91.5,
+        "passAccuracy": 91,
         "accuratePasses": 558,
-        "fouls": 6,
+        "fouls": 8,
         "corners": 4,
         "offsides": 5,
         "saves": 3,
         "xg": 1.09,
-        "duelsWon": 50,
+        "duelsWon": 51,
         "boxTouches": 31
       }
     }
