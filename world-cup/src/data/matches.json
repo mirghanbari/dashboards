@@ -10410,9 +10410,9 @@
     "homeTeamId": "nor",
     "awayTeamId": "eng",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "45+1",
+    "minute": "45+2",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10435,6 +10435,13 @@
         "player": "Andreas Schjelderup",
         "text": "Andreas Schjelderup Goal",
         "assist": "Martin Ødegaard"
+      },
+      {
+        "type": "goal",
+        "minute": "45'+2'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal"
       }
     ],
     "stats": {
@@ -10442,7 +10449,7 @@
         "possession": 32.8,
         "shots": 5,
         "shotsOnTarget": 3,
-        "passAccuracy": 85.3,
+        "passAccuracy": 84.8,
         "accuratePasses": 145,
         "fouls": 5,
         "corners": 0,
@@ -10454,17 +10461,17 @@
       },
       "away": {
         "possession": 67.2,
-        "shots": 2,
-        "shotsOnTarget": 0,
+        "shots": 3,
+        "shotsOnTarget": 1,
         "passAccuracy": 95,
-        "accuratePasses": 322,
+        "accuratePasses": 324,
         "fouls": 3,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
         "xg": 0.09,
-        "duelsWon": 14,
-        "boxTouches": 8
+        "duelsWon": 15,
+        "boxTouches": 9
       }
     }
   },
