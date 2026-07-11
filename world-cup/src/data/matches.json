@@ -10412,7 +10412,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10433,7 +10433,8 @@
         "minute": "36'",
         "teamId": "nor",
         "player": "Andreas Schjelderup",
-        "text": "Andreas Schjelderup Goal"
+        "text": "Andreas Schjelderup Goal",
+        "assist": "Martin Ødegaard"
       }
     ],
     "stats": {
@@ -10447,7 +10448,7 @@
         "corners": 0,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.08,
+        "xg": 0.11,
         "duelsWon": 15,
         "boxTouches": 5
       },
