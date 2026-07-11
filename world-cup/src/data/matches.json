@@ -10410,7 +10410,7 @@
     "homeTeamId": "nor",
     "awayTeamId": "eng",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "finished",
     "minute": null,
     "broadcasts": [
@@ -10443,35 +10443,42 @@
         "player": "Jude Bellingham",
         "text": "Jude Bellingham Goal",
         "assist": "Anthony Gordon"
+      },
+      {
+        "type": "goal",
+        "minute": "93'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 42.1,
+        "possession": 41.5,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.7,
-        "accuratePasses": 327,
+        "passAccuracy": 84.5,
+        "accuratePasses": 328,
         "fouls": 8,
         "corners": 5,
         "offsides": 1,
-        "saves": 1,
+        "saves": 3,
         "xg": 0.52,
         "duelsWon": 35,
         "boxTouches": 27
       },
       "away": {
-        "possession": 57.9,
-        "shots": 7,
-        "shotsOnTarget": 2,
-        "passAccuracy": 92.4,
-        "accuratePasses": 485,
+        "possession": 58.5,
+        "shots": 10,
+        "shotsOnTarget": 5,
+        "passAccuracy": 92.6,
+        "accuratePasses": 499,
         "fouls": 5,
-        "corners": 3,
+        "corners": 4,
         "offsides": 3,
         "saves": 3,
-        "xg": 0.32,
-        "duelsWon": 38,
+        "xg": 0.78,
+        "duelsWon": 40,
         "boxTouches": 25
       }
     }
