@@ -10411,8 +10411,8 @@
     "awayTeamId": "eng",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "live",
-    "minute": "90+8",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -10450,7 +10450,7 @@
         "possession": 42.3,
         "shots": 9,
         "shotsOnTarget": 4,
-        "passAccuracy": 84.9,
+        "passAccuracy": 84.7,
         "accuratePasses": 327,
         "fouls": 8,
         "corners": 5,
