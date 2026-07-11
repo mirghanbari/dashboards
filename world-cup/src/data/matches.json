@@ -10409,7 +10409,7 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "nor",
     "awayTeamId": "eng",
-    "homeScore": 2,
+    "homeScore": 1,
     "awayScore": 1,
     "status": "live",
     "minute": "58",
@@ -10448,8 +10448,8 @@
     "stats": {
       "home": {
         "possession": 36.2,
-        "shots": 8,
-        "shotsOnTarget": 5,
+        "shots": 7,
+        "shotsOnTarget": 4,
         "passAccuracy": 83.8,
         "accuratePasses": 181,
         "fouls": 6,
@@ -10457,8 +10457,8 @@
         "offsides": 0,
         "saves": 1,
         "xg": 0.37,
-        "duelsWon": 19,
-        "boxTouches": 11
+        "duelsWon": 20,
+        "boxTouches": 10
       },
       "away": {
         "possession": 63.8,
@@ -10469,9 +10469,9 @@
         "fouls": 3,
         "corners": 2,
         "offsides": 3,
-        "saves": 4,
+        "saves": 2,
         "xg": 0.28,
-        "duelsWon": 21,
+        "duelsWon": 22,
         "boxTouches": 12
       }
     }
