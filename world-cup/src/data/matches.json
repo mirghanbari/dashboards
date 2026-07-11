@@ -10459,11 +10459,11 @@
         "shotsOnTarget": 4,
         "passAccuracy": 85.6,
         "accuratePasses": 376,
-        "fouls": 9,
+        "fouls": 8,
         "corners": 5,
         "offsides": 1,
         "saves": 3,
-        "xg": 0.52,
+        "xg": 0.64,
         "duelsWon": 35,
         "boxTouches": 27
       },
@@ -10479,7 +10479,7 @@
         "saves": 3,
         "xg": 0.78,
         "duelsWon": 41,
-        "boxTouches": 26
+        "boxTouches": 27
       }
     }
   },
