@@ -10568,30 +10568,30 @@
     ],
     "stats": {
       "home": {
-        "possession": 58.1,
-        "shots": 14,
+        "possession": 58.6,
+        "shots": 15,
         "shotsOnTarget": 3,
-        "passAccuracy": 88.5,
-        "accuratePasses": 531,
+        "passAccuracy": 88.8,
+        "accuratePasses": 548,
         "fouls": 12,
         "corners": 6,
         "offsides": 3,
         "saves": 4,
-        "xg": 1.11,
-        "duelsWon": 44,
-        "boxTouches": 24
+        "xg": 1.23,
+        "duelsWon": 48,
+        "boxTouches": 26
       },
       "away": {
-        "possession": 41.9,
-        "shots": 10,
+        "possession": 41.4,
+        "shots": 11,
         "shotsOnTarget": 5,
-        "passAccuracy": 86,
-        "accuratePasses": 368,
+        "passAccuracy": 86.1,
+        "accuratePasses": 372,
         "fouls": 17,
         "corners": 2,
         "offsides": 2,
         "saves": 2,
-        "xg": 0.51,
+        "xg": 0.53,
         "duelsWon": 37,
         "boxTouches": 18
       }
