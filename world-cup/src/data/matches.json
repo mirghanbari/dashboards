@@ -10504,7 +10504,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "69",
+    "minute": "70",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10543,16 +10543,23 @@
         "player": "Dan Ndoye",
         "text": "Dan Ndoye Goal",
         "assist": "Ricardo Rodríguez"
+      },
+      {
+        "type": "yellow",
+        "minute": "69'",
+        "teamId": "arg",
+        "player": "Leandro Paredes",
+        "text": "Leandro Paredes Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.1,
+        "possession": 46.6,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.2,
-        "accuratePasses": 257,
-        "fouls": 8,
+        "passAccuracy": 83.3,
+        "accuratePasses": 265,
+        "fouls": 9,
         "corners": 3,
         "offsides": 1,
         "saves": 4,
@@ -10561,17 +10568,17 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 53.9,
+        "possession": 53.4,
         "shots": 9,
         "shotsOnTarget": 5,
-        "passAccuracy": 89.3,
-        "accuratePasses": 318,
+        "passAccuracy": 89.1,
+        "accuratePasses": 320,
         "fouls": 14,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
         "xg": 0.5,
-        "duelsWon": 23,
+        "duelsWon": 24,
         "boxTouches": 18
       }
     }
