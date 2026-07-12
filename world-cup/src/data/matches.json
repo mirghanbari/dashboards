@@ -10461,11 +10461,11 @@
     ],
     "stats": {
       "home": {
-        "possession": 47.3,
+        "possession": 47.7,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.8,
-        "accuratePasses": 483,
+        "passAccuracy": 85.4,
+        "accuratePasses": 492,
         "fouls": 10,
         "corners": 7,
         "offsides": 1,
@@ -10475,16 +10475,16 @@
         "boxTouches": 31
       },
       "away": {
-        "possession": 52.7,
+        "possession": 52.3,
         "shots": 14,
         "shotsOnTarget": 8,
-        "passAccuracy": 90.7,
-        "accuratePasses": 563,
+        "passAccuracy": 90.6,
+        "accuratePasses": 567,
         "fouls": 8,
         "corners": 4,
         "offsides": 5,
         "saves": 3,
-        "xg": 1.06,
+        "xg": 0.96,
         "duelsWon": 54,
         "boxTouches": 31
       }
@@ -10559,9 +10559,8 @@
     "date": "2026-07-15T19:00Z",
     "venue": "Mercedes-Benz Stadium",
     "city": "Atlanta, Georgia",
-    "homeTeamId": "tbd",
+    "homeTeamId": "eng",
     "awayTeamId": "tbd",
-    "homeSlot": "Quarterfinal 3 Winner",
     "awaySlot": "Quarterfinal 4 Winner",
     "homeScore": null,
     "awayScore": null,

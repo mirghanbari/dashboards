@@ -752,11 +752,11 @@
     "goalsAgainst": 7,
     "points": 6,
     "possession": 52.2,
-    "ppda": 13.4,
+    "ppda": 13.7,
     "cleanSheets": 0,
     "passCompletion": 85.7,
-    "xgFor": 9.37,
-    "xgAgainst": 8.13
+    "xgFor": 10.14,
+    "xgAgainst": 9.1
   },
   {
     "id": "fra",
@@ -1027,12 +1027,12 @@
     "goalsFor": 6,
     "goalsAgainst": 2,
     "points": 7,
-    "possession": 57.2,
-    "ppda": 11.5,
+    "possession": 57.1,
+    "ppda": 12.8,
     "cleanSheets": 2,
-    "passCompletion": 87.9,
-    "xgFor": 10.13,
-    "xgAgainst": 4.18
+    "passCompletion": 87.8,
+    "xgFor": 11.1,
+    "xgAgainst": 4.95
   },
   {
     "id": "cro",
