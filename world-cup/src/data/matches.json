@@ -10502,9 +10502,9 @@
     "homeTeamId": "arg",
     "awayTeamId": "sui",
     "homeScore": 1,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "67",
+    "minute": "68",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10535,14 +10535,21 @@
         "teamId": "sui",
         "player": "Breel Embolo",
         "text": "Breel Embolo Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "67'",
+        "teamId": "sui",
+        "player": "Dan Ndoye",
+        "text": "Dan Ndoye Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.5,
+        "possession": 46,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.4,
+        "passAccuracy": 83.1,
         "accuratePasses": 256,
         "fouls": 8,
         "corners": 3,
@@ -10553,18 +10560,18 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 53.5,
-        "shots": 8,
-        "shotsOnTarget": 4,
-        "passAccuracy": 89,
-        "accuratePasses": 309,
+        "possession": 54,
+        "shots": 9,
+        "shotsOnTarget": 5,
+        "passAccuracy": 89.3,
+        "accuratePasses": 318,
         "fouls": 14,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.32,
+        "xg": 0.3,
         "duelsWon": 23,
-        "boxTouches": 17
+        "boxTouches": 18
       }
     }
   },
