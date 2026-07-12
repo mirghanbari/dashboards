@@ -10504,7 +10504,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "73",
+    "minute": "74",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10559,7 +10559,7 @@
         "shotsOnTarget": 1,
         "passAccuracy": 83.3,
         "accuratePasses": 265,
-        "fouls": 9,
+        "fouls": 8,
         "corners": 3,
         "offsides": 1,
         "saves": 4,
@@ -10573,7 +10573,7 @@
         "shotsOnTarget": 5,
         "passAccuracy": 89.1,
         "accuratePasses": 320,
-        "fouls": 14,
+        "fouls": 15,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
