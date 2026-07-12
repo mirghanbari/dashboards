@@ -10504,7 +10504,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "71",
+    "minute": "73",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10545,11 +10545,11 @@
         "assist": "Ricardo Rodríguez"
       },
       {
-        "type": "yellow",
-        "minute": "69'",
-        "teamId": "arg",
-        "player": "Leandro Paredes",
-        "text": "Leandro Paredes Yellow Card"
+        "type": "red",
+        "minute": "72'",
+        "teamId": "sui",
+        "player": "Breel Embolo",
+        "text": "Breel Embolo Red Card"
       }
     ],
     "stats": {
@@ -10578,7 +10578,7 @@
         "offsides": 2,
         "saves": 0,
         "xg": 0.5,
-        "duelsWon": 24,
+        "duelsWon": 23,
         "boxTouches": 18
       }
     }
