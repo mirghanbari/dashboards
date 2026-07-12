@@ -10572,35 +10572,42 @@
         "player": "Julián Álvarez",
         "text": "Julián Álvarez Goal",
         "assist": "José Manuel López"
+      },
+      {
+        "type": "yellow",
+        "minute": "114'",
+        "teamId": "arg",
+        "player": "José Manuel López",
+        "text": "José Manuel López Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 59.7,
+        "possession": 59.2,
         "shots": 19,
         "shotsOnTarget": 5,
         "passAccuracy": 89,
-        "accuratePasses": 596,
+        "accuratePasses": 597,
         "fouls": 13,
         "corners": 7,
         "offsides": 3,
         "saves": 4,
         "xg": 1.31,
-        "duelsWon": 53,
+        "duelsWon": 54,
         "boxTouches": 29
       },
       "away": {
-        "possession": 40.3,
+        "possession": 40.8,
         "shots": 11,
         "shotsOnTarget": 5,
-        "passAccuracy": 85.3,
-        "accuratePasses": 383,
+        "passAccuracy": 84.9,
+        "accuratePasses": 389,
         "fouls": 18,
         "corners": 2,
         "offsides": 2,
         "saves": 3,
         "xg": 0.53,
-        "duelsWon": 42,
+        "duelsWon": 43,
         "boxTouches": 19
       }
     }
