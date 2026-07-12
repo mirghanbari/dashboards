@@ -10464,28 +10464,28 @@
         "possession": 47.6,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 85.4,
-        "accuratePasses": 492,
+        "passAccuracy": 85.6,
+        "accuratePasses": 494,
         "fouls": 10,
         "corners": 7,
         "offsides": 1,
         "saves": 6,
-        "xg": 0.77,
-        "duelsWon": 47,
-        "boxTouches": 31
+        "xg": 0.68,
+        "duelsWon": 49,
+        "boxTouches": 28
       },
       "away": {
         "possession": 52.4,
         "shots": 14,
         "shotsOnTarget": 8,
-        "passAccuracy": 90.6,
-        "accuratePasses": 569,
+        "passAccuracy": 90.4,
+        "accuratePasses": 568,
         "fouls": 8,
         "corners": 4,
         "offsides": 5,
         "saves": 3,
-        "xg": 0.96,
-        "duelsWon": 54,
+        "xg": 1.04,
+        "duelsWon": 53,
         "boxTouches": 31
       }
     }
@@ -10501,7 +10501,7 @@
     "city": "Kansas City, Missouri",
     "homeTeamId": "arg",
     "awayTeamId": "sui",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
     "status": "finished",
     "minute": null,
@@ -10564,36 +10564,44 @@
         "teamId": "arg",
         "player": "Lautaro Martínez",
         "text": "Lautaro Martínez Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "112'",
+        "teamId": "arg",
+        "player": "Julián Álvarez",
+        "text": "Julián Álvarez Goal",
+        "assist": "José Manuel López"
       }
     ],
     "stats": {
       "home": {
-        "possession": 59.5,
-        "shots": 17,
-        "shotsOnTarget": 3,
-        "passAccuracy": 88.7,
-        "accuratePasses": 582,
+        "possession": 59.7,
+        "shots": 19,
+        "shotsOnTarget": 5,
+        "passAccuracy": 89,
+        "accuratePasses": 596,
         "fouls": 13,
         "corners": 7,
         "offsides": 3,
         "saves": 4,
         "xg": 1.31,
-        "duelsWon": 52,
+        "duelsWon": 53,
         "boxTouches": 29
       },
       "away": {
-        "possession": 40.5,
+        "possession": 40.3,
         "shots": 11,
         "shotsOnTarget": 5,
-        "passAccuracy": 85.8,
-        "accuratePasses": 381,
-        "fouls": 17,
+        "passAccuracy": 85.3,
+        "accuratePasses": 383,
+        "fouls": 18,
         "corners": 2,
         "offsides": 2,
-        "saves": 2,
+        "saves": 3,
         "xg": 0.53,
-        "duelsWon": 41,
-        "boxTouches": 18
+        "duelsWon": 42,
+        "boxTouches": 19
       }
     }
   },
