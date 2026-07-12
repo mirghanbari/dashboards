@@ -10504,7 +10504,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "43",
+    "minute": "44",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10528,6 +10528,13 @@
         "text": "Alexis Mac Allister Goal - Heade",
         "goalType": "header",
         "assist": "Lionel Messi"
+      },
+      {
+        "type": "yellow",
+        "minute": "44'",
+        "teamId": "sui",
+        "player": "Breel Embolo",
+        "text": "Breel Embolo Yellow Card"
       }
     ],
     "stats": {
@@ -10542,7 +10549,7 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.32,
-        "duelsWon": 15,
+        "duelsWon": 16,
         "boxTouches": 2
       },
       "away": {
@@ -10555,7 +10562,7 @@
         "corners": 1,
         "offsides": 0,
         "saves": 0,
-        "xg": 0.06,
+        "xg": 0.1,
         "duelsWon": 15,
         "boxTouches": 9
       }
