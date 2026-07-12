@@ -10504,7 +10504,7 @@
     "homeScore": 1,
     "awayScore": 1,
     "status": "live",
-    "minute": "68",
+    "minute": "69",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10541,16 +10541,17 @@
         "minute": "67'",
         "teamId": "sui",
         "player": "Dan Ndoye",
-        "text": "Dan Ndoye Goal"
+        "text": "Dan Ndoye Goal",
+        "assist": "Ricardo Rodríguez"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46,
+        "possession": 46.1,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 83.1,
-        "accuratePasses": 256,
+        "passAccuracy": 83.2,
+        "accuratePasses": 257,
         "fouls": 8,
         "corners": 3,
         "offsides": 1,
@@ -10560,7 +10561,7 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 54,
+        "possession": 53.9,
         "shots": 9,
         "shotsOnTarget": 5,
         "passAccuracy": 89.3,
@@ -10569,7 +10570,7 @@
         "corners": 2,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.3,
+        "xg": 0.5,
         "duelsWon": 23,
         "boxTouches": 18
       }
