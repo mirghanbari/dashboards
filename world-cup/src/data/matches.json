@@ -10698,16 +10698,16 @@
         "corners": 7,
         "offsides": 4,
         "saves": 0,
-        "xg": 0.3,
-        "duelsWon": 43,
-        "boxTouches": 20
+        "xg": 0.31,
+        "duelsWon": 44,
+        "boxTouches": 19
       },
       "away": {
         "possession": 50.9,
         "shots": 10,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.6,
-        "accuratePasses": 428,
+        "passAccuracy": 85.1,
+        "accuratePasses": 427,
         "fouls": 12,
         "corners": 1,
         "offsides": 5,
