@@ -33,6 +33,7 @@ export function StatDetail() {
           {def.asc ? " · lower is better" : ""}
           {def.qualifier ? ` · ${def.qualifier}` : ""}
         </p>
+        {def.blurb && <p className="stat-blurb">{def.blurb}</p>}
         <span className={"src-badge src-" + def.source} title={meta.hint}>
           {meta.label}
         </span>

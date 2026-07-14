@@ -41,13 +41,23 @@ export const MIN_PASSES_FOR_COMPLETION = avgAttempts("passes");
 
 export const STAT_CATALOG: StatDef[] = [
   // ---------------- BASIC ----------------
-  { key: "goals", label: "Goals", tier: "basic", scope: "player", source: "espn" },
-  { key: "assists", label: "Assists", tier: "basic", scope: "player", source: "espn" },
-  { key: "shotsOnTarget", label: "Shots on target", tier: "basic", scope: "player", source: "espn" },
+  {
+    key: "goals", label: "Goals", tier: "basic", scope: "player", source: "espn",
+    blurb: "Shots that found the net — the most direct measure of attacking output. It says nothing about the quality of the chances that produced it, so a team's real attacking threat is best read alongside xG.",
+  },
+  {
+    key: "assists", label: "Assists", tier: "basic", scope: "player", source: "espn",
+    blurb: "The final pass before a goal. It rewards buildup play as much as finishing, so a player can lead the tournament in assists without scoring themselves — pair it with chances created to see who's really driving an attack.",
+  },
+  {
+    key: "shotsOnTarget", label: "Shots on target", tier: "basic", scope: "player", source: "espn",
+    blurb: "Shots that forced a save or went in, as opposed to ones blocked, wide, or never dangerous. A better read on real shooting output than raw shot count — 10 wild efforts aren't more threatening than 3 on frame.",
+  },
   {
     key: "shotAccuracy", label: "Shot accuracy", tier: "basic", scope: "player",
     source: "derived", unit: "%", decimals: 1,
     qualifier: `min ${MIN_SHOTS_FOR_ACCURACY} att`,
+    blurb: "The share of a player's shots that are on target — shot selection and technique, not just volume. Most meaningful alongside the minimum-attempts gate shown here, which filters out small samples that would otherwise read as a false 100%.",
     // Real on-target % — but returns 0 below the shot minimum so leaders()
     // (which filters value > 0) drops small-sample players whose 100% isn't yet
     // meaningful.
@@ -58,18 +68,37 @@ export const STAT_CATALOG: StatDef[] = [
     key: "passCompletion", label: "Pass completion", tier: "basic", scope: "player",
     source: "fotmob", unit: "%", decimals: 1,
     qualifier: `min ${MIN_PASSES_FOR_COMPLETION} att`,
+    blurb: "The share of a player's attempted passes that reach a teammate. A high number can mean excellent distribution, or it can mean a conservative game that never risks a difficult ball forward — progressive passes tells those two apart.",
     // Returns 0 below the pass minimum so leaders() (which filters value > 0)
     // drops low-volume passers from the leaderboard; profiles never show this
     // stat raw, so gating here has no other effect.
     derive: (p) =>
       p.passes >= MIN_PASSES_FOR_COMPLETION ? p.passCompletion : 0,
   },
-  { key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1 },
-  { key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fotmob" },
-  { key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fotmob" },
-  { key: "interceptions", label: "Interceptions", tier: "basic", scope: "player", source: "fotmob" },
-  { key: "clearances", label: "Clearances", tier: "basic", scope: "player", source: "fotmob" },
-  { key: "cleanSheets", label: "Clean sheets", tier: "basic", scope: "team", source: "espn" },
+  {
+    key: "possession", label: "Possession", tier: "basic", scope: "team", source: "espn", unit: "%", decimals: 1,
+    blurb: "The share of match time a team spends on the ball. It measures control of tempo, not control of the game — a team that sits deep and counters can dominate the scoreboard with far less of the ball.",
+  },
+  {
+    key: "chancesCreated", label: "Chances created", tier: "basic", scope: "player", source: "fotmob",
+    blurb: "Passes that lead directly to a shot, whether or not that shot goes in. It isolates a player's creative output from a teammate's finishing, so a playmaker's true influence shows even in a low-scoring match.",
+  },
+  {
+    key: "tackles", label: "Tackles", tier: "basic", scope: "player", source: "fotmob",
+    blurb: "Attempts to win the ball from an opponent in a physical duel. A high count can mean elite defending, or it can mean a team spends a lot of time chasing the game without the ball — interceptions round out the picture.",
+  },
+  {
+    key: "interceptions", label: "Interceptions", tier: "basic", scope: "player", source: "fotmob",
+    blurb: "Opponent passes read and cut out before they reach their target. Unlike a tackle, it needs no physical duel — it rewards positioning and anticipation, the quieter side of defending.",
+  },
+  {
+    key: "clearances", label: "Clearances", tier: "basic", scope: "player", source: "fotmob",
+    blurb: "The ball hoofed clear of danger, usually from inside or near the box. It's an unglamorous stat with no attacking value of its own, but it's a direct measure of shots and goals prevented under pressure.",
+  },
+  {
+    key: "cleanSheets", label: "Clean sheets", tier: "basic", scope: "team", source: "espn",
+    blurb: "Full matches finished without conceding a goal — the simplest possible defensive result. It says nothing about how close a team came to conceding, which is where clean sheets and xG against can tell different stories.",
+  },
 
   // ---------------- ADVANCED ----------------
   {
@@ -78,42 +107,108 @@ export const STAT_CATALOG: StatDef[] = [
     // short tournament. = 0.7·(xGF − xGA) + 0.3·(GF − GA).
     key: "adjGoalDiff", label: "Adjusted goal difference", tier: "advanced", scope: "team",
     source: "derived", decimals: 1,
+    blurb: "Blends actual and expected goal difference (70% xG, 30% real goals) so a single lucky or unlucky match — a stoppage-time screamer, a string of missed sitters — doesn't distort a team's underlying level over a short tournament.",
     deriveTeam: (t) =>
       0.7 * (t.xgFor - t.xgAgainst) + 0.3 * (t.goalsFor - t.goalsAgainst),
   },
-  { key: "xg", label: "xG (expected goals)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
-  { key: "xa", label: "xA (expected assists)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
+  {
+    key: "xg", label: "xG (expected goals)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2,
+    blurb: "The combined quality of every shot a player takes, based on how often shots from that position and situation go in historically. It shows who should be scoring based on their chances, independent of whether they actually put them away.",
+  },
+  {
+    key: "xa", label: "xA (expected assists)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2,
+    blurb: "The combined quality of the chances a player creates for teammates, valued the same way as xG. It credits the pass, not the finish — a creator can lead the tournament in xA even if the players they set up are missing chances.",
+  },
+  {
+    // Expected goal involvement: xG + xA, a single number for a player's total
+    // expected attacking output (shots + chances created), same idea as the
+    // "G+A" combined stat but on expected values instead of actual outcomes.
+    key: "xgi", label: "xGI (expected goal involvement)", tier: "advanced", scope: "player",
+    source: "derived", decimals: 2,
+    blurb: "Combines a player's own chances (xG) and the ones they create for others (xA) into one number for total expected attacking output — the expected-value equivalent of the classic goals-plus-assists stat.",
+    derive: (p) => p.xg + p.xa,
+  },
   {
     key: "xgOver", label: "xG overperformance", tier: "advanced", scope: "player",
     source: "derived", decimals: 2,
+    blurb: "Goals scored minus xG. A positive number means a player is finishing above what their chances were worth — elite technique, or a hot streak that may not last; a negative number usually means the reverse, or just bad luck.",
     derive: (p) => p.goals - p.xg,
   },
-  { key: "xgot", label: "xGot (xG on target)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2 },
+  {
+    key: "xgot", label: "xGot (xG on target)", tier: "advanced", scope: "player", source: "fotmob", decimals: 2,
+    blurb: "xG recalculated using only the shots that were actually on target, removing the ones a keeper was never asked to save. It isolates how much genuine danger a player's on-target shots carried.",
+  },
   {
     // Placement value added: how much better a player's on-target shots end up
     // than the chance was worth (xGOT lifts above xG only via shot placement).
     // Distinct from xgOver (goals − xg): this isolates finishing technique, not luck.
     key: "xgPlacement", label: "Shot placement (xGOT−xG)", tier: "advanced", scope: "player",
     source: "derived", decimals: 2,
+    blurb: "How far a player's on-target shots outperform the underlying chance quality (xGOT minus xG) — the part of finishing that's about picking a corner the keeper can't reach, distinct from xG overperformance, which also folds in shots that missed entirely.",
     derive: (p) => p.xgot - p.xg,
   },
-  { key: "ppda", label: "PPDA (pressing, approx)", tier: "advanced", scope: "team", source: "fotmob", decimals: 1, asc: true },
-  { key: "pressSuccess", label: "Press success", tier: "advanced", scope: "player", source: "provider", unit: "%", decimals: 1 },
-  { key: "highTurnovers", label: "High turnovers", tier: "advanced", scope: "player", source: "fbref" },
-  { key: "progressivePasses", label: "Progressive passes", tier: "advanced", scope: "player", source: "fbref" },
-  { key: "progressiveCarries", label: "Progressive carries", tier: "advanced", scope: "player", source: "fbref" },
-  { key: "finalThirdEntries", label: "Final-third entries", tier: "advanced", scope: "player", source: "fotmob" },
-  { key: "lineBreakingPasses", label: "Line-breaking passes", tier: "advanced", scope: "player", source: "provider" },
+  {
+    key: "ppda", label: "PPDA (pressing, approx)", tier: "advanced", scope: "team", source: "fotmob", decimals: 1, asc: true,
+    blurb: "Passes the opposition is allowed per defensive action — how many times they can pass the ball before a team tackles, intercepts, or fouls. A lower number means a more aggressive, higher-intensity press; a high number can mean a patient, settled defensive block instead.",
+  },
+  {
+    key: "pressSuccess", label: "Press success", tier: "advanced", scope: "player", source: "provider", unit: "%", decimals: 1,
+    blurb: "The share of a player's pressing actions that actually win the ball back, rather than just applying pressure. It separates effective pressers from players who chase the ball a lot without winning it.",
+  },
+  {
+    key: "highTurnovers", label: "High turnovers", tier: "advanced", scope: "player", source: "fbref",
+    blurb: "Possessions won inside the attacking third of the pitch. Because the opponent is already deep in their own end, these turnovers convert into shots and goals far more often than one won in a team's own half.",
+  },
+  {
+    key: "progressivePasses", label: "Progressive passes", tier: "advanced", scope: "player", source: "fbref",
+    blurb: "Passes that move the ball meaningfully closer to the opponent's goal, not just sideways or backward. A better read on buildup contribution than a raw pass count, which treats a 5-yard sideways ball the same as a 40-yard through pass.",
+  },
+  {
+    key: "progressiveCarries", label: "Progressive carries", tier: "advanced", scope: "player", source: "fbref",
+    blurb: "Ball carries that significantly advance play upfield. It credits players who move the ball themselves by dribbling or running with it — a different skill from progressive passing, more common among wide players and ball-carrying midfielders.",
+  },
+  {
+    key: "finalThirdEntries", label: "Final-third entries", tier: "advanced", scope: "player", source: "fotmob",
+    blurb: "The number of times a player brings the ball into the attacking third, by pass or by carry. A measure of territorial pressure — building the platform for a chance — that happens before a shot or even a key pass is ever recorded.",
+  },
+  {
+    key: "lineBreakingPasses", label: "Line-breaking passes", tier: "advanced", scope: "player", source: "provider",
+    blurb: "Passes that go through or beyond a line of opposition defenders, rather than around them. It measures how often a player breaks down a defensive shape outright, as opposed to simply circulating possession in front of it.",
+  },
 
   // ---------------- ELITE / TRACKING ----------------
-  { key: "obv", label: "OBV (on-ball value)", tier: "elite", scope: "player", source: "provider", decimals: 2 },
-  { key: "offBallRuns", label: "Off-ball runs", tier: "elite", scope: "player", source: "provider" },
-  { key: "xt", label: "xT (expected threat)", tier: "elite", scope: "player", source: "model", decimals: 2 },
-  { key: "vaep", label: "VAEP", tier: "elite", scope: "player", source: "model", decimals: 2 },
-  { key: "highSpeedRunning", label: "High-speed running", tier: "elite", scope: "player", source: "provider", unit: " m" },
-  { key: "sprintCount", label: "Sprint count", tier: "elite", scope: "player", source: "provider" },
-  { key: "spaceCreation", label: "Space creation", tier: "elite", scope: "player", source: "provider", decimals: 2 },
-  { key: "setPieceXg", label: "Set-piece xG", tier: "elite", scope: "player", source: "fotmob", decimals: 2 },
+  {
+    key: "obv", label: "OBV (on-ball value)", tier: "elite", scope: "player", source: "provider", decimals: 2,
+    blurb: "A single number for how much every pass, carry, shot, and defensive action shifted a team's chances of scoring or conceding, weighted by the situation on the pitch. The most complete on-ball rating available, but it needs event data with a possession-value model behind it.",
+  },
+  {
+    key: "offBallRuns", label: "Off-ball runs", tier: "elite", scope: "player", source: "provider",
+    blurb: "Runs a player makes without the ball that open space or drag defenders out of position. Drawn purely from tracking data — a player can rank highly while barely touching the ball, since the value is in the movement itself.",
+  },
+  {
+    key: "xt", label: "xT (expected threat)", tier: "elite", scope: "player", source: "model", decimals: 2,
+    blurb: "The expected threat gained by moving the ball into a more dangerous zone of the pitch, valuing every pass and carry along the way to a chance — not just the final ball. It credits buildup play that xA alone misses.",
+  },
+  {
+    key: "vaep", label: "VAEP", tier: "elite", scope: "player", source: "model", decimals: 2,
+    blurb: "Values every action in a possession — pass, carry, shot, defensive action — by how much it changed the odds of a goal being scored or conceded soon after. A possession-value model of the entire game, not just the moments that end in a shot.",
+  },
+  {
+    key: "highSpeedRunning", label: "High-speed running", tier: "elite", scope: "player", source: "provider", unit: " m",
+    blurb: "Total distance covered above a set speed threshold, from player-tracking data. A pure physical-output number — it says nothing about whether that running was used well, only how much of it there was.",
+  },
+  {
+    key: "sprintCount", label: "Sprint count", tier: "elite", scope: "player", source: "provider",
+    blurb: "The number of sprints a player makes in a match. A proxy for explosive effort and match intensity, useful for spotting fatigue over a long tournament or comparing work-rate between players in similar positions.",
+  },
+  {
+    key: "spaceCreation", label: "Space creation", tier: "elite", scope: "player", source: "provider", decimals: 2,
+    blurb: "How much open space a player generates for teammates through their own movement, from tracking data. It's the teammate-facing counterpart to off-ball runs — value created for others rather than for the player themselves.",
+  },
+  {
+    key: "setPieceXg", label: "Set-piece xG", tier: "elite", scope: "player", source: "fotmob", decimals: 2,
+    blurb: "Expected goals generated specifically from corners and free kicks, separated out from open-play xG. It isolates how dangerous a team or player is from a dead ball — a skill set that doesn't always track with open-play threat.",
+  },
 ];
 
 export const SOURCE_META: Record<StatDef["source"], { label: string; hint: string }> = {
