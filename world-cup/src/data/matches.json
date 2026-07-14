@@ -10631,9 +10631,9 @@
     "homeTeamId": "fra",
     "awayTeamId": "esp",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "57",
+    "minute": "59",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10670,15 +10670,23 @@
         "teamId": "esp",
         "player": "Marc Cucurella",
         "text": "Marc Cucurella Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "58'",
+        "teamId": "esp",
+        "player": "Pedro Porro",
+        "text": "Pedro Porro Goal",
+        "assist": "Dani Olmo"
       }
     ],
     "stats": {
       "home": {
-        "possession": 47.2,
+        "possession": 46,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 84.2,
-        "accuratePasses": 229,
+        "passAccuracy": 84,
+        "accuratePasses": 231,
         "fouls": 6,
         "corners": 3,
         "offsides": 3,
@@ -10688,18 +10696,18 @@
         "boxTouches": 10
       },
       "away": {
-        "possession": 52.8,
-        "shots": 6,
-        "shotsOnTarget": 1,
-        "passAccuracy": 85.1,
-        "accuratePasses": 262,
+        "possession": 54,
+        "shots": 8,
+        "shotsOnTarget": 2,
+        "passAccuracy": 85.6,
+        "accuratePasses": 280,
         "fouls": 6,
         "corners": 1,
         "offsides": 3,
         "saves": 0,
-        "xg": 1,
+        "xg": 1.02,
         "duelsWon": 31,
-        "boxTouches": 8
+        "boxTouches": 9
       }
     }
   },
