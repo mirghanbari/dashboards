@@ -10631,9 +10631,9 @@
     "homeTeamId": "fra",
     "awayTeamId": "esp",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "live",
-    "minute": "21",
+    "minute": "22",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10655,6 +10655,14 @@
         "teamId": "fra",
         "player": "Adrien Rabiot",
         "text": "Adrien Rabiot Yellow Card"
+      },
+      {
+        "type": "goal",
+        "minute": "22'",
+        "teamId": "esp",
+        "player": "Mikel Oyarzabal",
+        "text": "Mikel Oyarzabal Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
@@ -10664,7 +10672,7 @@
         "shotsOnTarget": 0,
         "passAccuracy": 86.3,
         "accuratePasses": 82,
-        "fouls": 2,
+        "fouls": 3,
         "corners": 2,
         "offsides": 0,
         "saves": 0,
@@ -10684,7 +10692,7 @@
         "saves": 0,
         "xg": 0.06,
         "duelsWon": 9,
-        "boxTouches": 2
+        "boxTouches": 3
       }
     }
   },
