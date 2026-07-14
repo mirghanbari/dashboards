@@ -10633,7 +10633,7 @@
     "homeScore": 0,
     "awayScore": 1,
     "status": "live",
-    "minute": "30",
+    "minute": "31",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10663,6 +10663,13 @@
         "player": "Mikel Oyarzabal",
         "text": "Mikel Oyarzabal Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "yellow",
+        "minute": "31'",
+        "teamId": "esp",
+        "player": "Marc Cucurella",
+        "text": "Marc Cucurella Yellow Card"
       }
     ],
     "stats": {
