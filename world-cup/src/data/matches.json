@@ -10632,8 +10632,8 @@
     "awayTeamId": "esp",
     "homeScore": 0,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+7",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -10690,7 +10690,7 @@
     "stats": {
       "home": {
         "possession": 49.2,
-        "shots": 9,
+        "shots": 10,
         "shotsOnTarget": 3,
         "passAccuracy": 83.7,
         "accuratePasses": 396,
@@ -10706,7 +10706,7 @@
         "possession": 50.8,
         "shots": 10,
         "shotsOnTarget": 2,
-        "passAccuracy": 85.8,
+        "passAccuracy": 85.6,
         "accuratePasses": 428,
         "fouls": 12,
         "corners": 1,
