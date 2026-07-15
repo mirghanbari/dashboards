@@ -10732,7 +10732,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "55",
+    "minute": "56",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10774,30 +10774,31 @@
         "minute": "55'",
         "teamId": "eng",
         "player": "Anthony Gordon",
-        "text": "Anthony Gordon Goal"
+        "text": "Anthony Gordon Goal",
+        "assist": "Morgan Rogers"
       }
     ],
     "stats": {
       "home": {
-        "possession": 44.6,
-        "shots": 1,
-        "shotsOnTarget": 0,
-        "passAccuracy": 88.7,
-        "accuratePasses": 219,
+        "possession": 45,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passAccuracy": 88.5,
+        "accuratePasses": 224,
         "fouls": 8,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.05,
+        "xg": 0.44,
         "duelsWon": 31,
         "boxTouches": 5
       },
       "away": {
-        "possession": 55.4,
-        "shots": 4,
+        "possession": 55,
+        "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 90,
-        "accuratePasses": 280,
+        "passAccuracy": 90.1,
+        "accuratePasses": 283,
         "fouls": 13,
         "corners": 2,
         "offsides": 2,
