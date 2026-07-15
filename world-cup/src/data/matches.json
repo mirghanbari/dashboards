@@ -10732,7 +10732,7 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "live",
-    "minute": "56",
+    "minute": "57",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10774,13 +10774,14 @@
         "minute": "55'",
         "teamId": "eng",
         "player": "Anthony Gordon",
-        "text": "Anthony Gordon Goal",
+        "text": "Anthony Gordon Goal - Volley",
+        "goalType": "volley",
         "assist": "Morgan Rogers"
       }
     ],
     "stats": {
       "home": {
-        "possession": 45,
+        "possession": 44.5,
         "shots": 2,
         "shotsOnTarget": 1,
         "passAccuracy": 88.5,
@@ -10790,22 +10791,22 @@
         "offsides": 1,
         "saves": 1,
         "xg": 0.44,
-        "duelsWon": 31,
+        "duelsWon": 32,
         "boxTouches": 5
       },
       "away": {
-        "possession": 55,
+        "possession": 55.5,
         "shots": 5,
         "shotsOnTarget": 1,
-        "passAccuracy": 90.1,
-        "accuratePasses": 283,
+        "passAccuracy": 90,
+        "accuratePasses": 289,
         "fouls": 13,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
         "xg": 0.16,
-        "duelsWon": 35,
-        "boxTouches": 10
+        "duelsWon": 36,
+        "boxTouches": 11
       }
     }
   },
