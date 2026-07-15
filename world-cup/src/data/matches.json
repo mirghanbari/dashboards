@@ -10731,8 +10731,8 @@
     "awayTeamId": "arg",
     "homeScore": 1,
     "awayScore": 2,
-    "status": "live",
-    "minute": "90+12",
+    "status": "finished",
+    "minute": null,
     "broadcasts": [
       {
         "name": "FOX",
@@ -10804,7 +10804,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 35.7,
+        "possession": 35.6,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 84,
@@ -10818,10 +10818,10 @@
         "boxTouches": 7
       },
       "away": {
-        "possession": 64.3,
+        "possession": 64.4,
         "shots": 15,
         "shotsOnTarget": 5,
-        "passAccuracy": 91.2,
+        "passAccuracy": 91,
         "accuratePasses": 537,
         "fouls": 15,
         "corners": 6,
@@ -10843,8 +10843,7 @@
     "venue": "Hard Rock Stadium",
     "city": "Miami Gardens, Florida",
     "homeTeamId": "fra",
-    "awayTeamId": "tbd",
-    "awaySlot": "Semifinal 2 Loser",
+    "awayTeamId": "eng",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
@@ -10874,8 +10873,7 @@
     "venue": "MetLife Stadium",
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "esp",
-    "awayTeamId": "tbd",
-    "awaySlot": "Semifinal 2 Winner",
+    "awayTeamId": "arg",
     "homeScore": null,
     "awayScore": null,
     "status": "scheduled",
