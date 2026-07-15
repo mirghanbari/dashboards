@@ -10732,7 +10732,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10747,14 +10747,23 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "37'",
+        "teamId": "eng",
+        "player": "Elliot Anderson",
+        "text": "Elliot Anderson Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 41.4,
+        "possession": 41.7,
         "shots": 1,
         "shotsOnTarget": 0,
-        "passAccuracy": 92.2,
-        "accuratePasses": 118,
-        "fouls": 6,
+        "passAccuracy": 91.5,
+        "accuratePasses": 119,
+        "fouls": 7,
         "corners": 1,
         "offsides": 0,
         "saves": 0,
@@ -10763,17 +10772,17 @@
         "boxTouches": 4
       },
       "away": {
-        "possession": 58.6,
+        "possession": 58.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 88.5,
-        "accuratePasses": 162,
+        "passAccuracy": 88.6,
+        "accuratePasses": 164,
         "fouls": 9,
         "corners": 1,
         "offsides": 2,
         "saves": 0,
         "xg": 0,
-        "duelsWon": 19,
+        "duelsWon": 20,
         "boxTouches": 4
       }
     }
