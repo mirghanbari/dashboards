@@ -10730,9 +10730,9 @@
     "homeTeamId": "eng",
     "awayTeamId": "arg",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
-    "minute": "90+1",
+    "minute": "90+3",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10784,15 +10784,23 @@
         "player": "Enzo Fernández",
         "text": "Enzo Fernández Goal",
         "assist": "Lionel Messi"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+2'",
+        "teamId": "arg",
+        "player": "Lautaro Martínez",
+        "text": "Lautaro Martínez Goal - Header",
+        "goalType": "header"
       }
     ],
     "stats": {
       "home": {
-        "possession": 33.7,
+        "possession": 33.3,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 86.5,
-        "accuratePasses": 249,
+        "passAccuracy": 86.2,
+        "accuratePasses": 250,
         "fouls": 9,
         "corners": 2,
         "offsides": 1,
@@ -10802,18 +10810,18 @@
         "boxTouches": 5
       },
       "away": {
-        "possession": 66.3,
+        "possession": 66.7,
         "shots": 13,
         "shotsOnTarget": 4,
-        "passAccuracy": 91.5,
-        "accuratePasses": 518,
+        "passAccuracy": 91.6,
+        "accuratePasses": 531,
         "fouls": 15,
         "corners": 6,
         "offsides": 3,
         "saves": 1,
         "xg": 1.01,
         "duelsWon": 45,
-        "boxTouches": 27
+        "boxTouches": 28
       }
     }
   },
