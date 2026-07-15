@@ -10732,7 +10732,7 @@
     "homeScore": 1,
     "awayScore": 2,
     "status": "live",
-    "minute": "90+3",
+    "minute": "90+5",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10793,6 +10793,13 @@
         "text": "Lautaro Martínez Goal - Header",
         "goalType": "header",
         "assist": "Lionel Messi"
+      },
+      {
+        "type": "yellow",
+        "minute": "90'+4'",
+        "teamId": "arg",
+        "player": "Rodrigo De Paul",
+        "text": "Rodrigo De Paul Yellow Card"
       }
     ],
     "stats": {
