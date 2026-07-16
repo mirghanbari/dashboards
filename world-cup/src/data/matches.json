@@ -10774,7 +10774,8 @@
         "minute": "55'",
         "teamId": "eng",
         "player": "Anthony Gordon",
-        "text": "Anthony Gordon Goal",
+        "text": "Anthony Gordon Goal - Volley",
+        "goalType": "volley",
         "assist": "Morgan Rogers"
       },
       {
@@ -10804,7 +10805,7 @@
     ],
     "stats": {
       "home": {
-        "possession": 35.7,
+        "possession": 35.8,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 84,
@@ -10814,21 +10815,21 @@
         "offsides": 1,
         "saves": 3,
         "xg": 0.53,
-        "duelsWon": 48,
+        "duelsWon": 50,
         "boxTouches": 7
       },
       "away": {
-        "possession": 64.3,
+        "possession": 64.2,
         "shots": 15,
         "shotsOnTarget": 5,
-        "passAccuracy": 91,
+        "passAccuracy": 91.3,
         "accuratePasses": 537,
         "fouls": 15,
         "corners": 6,
         "offsides": 3,
         "saves": 1,
-        "xg": 1.84,
-        "duelsWon": 51,
+        "xg": 1.59,
+        "duelsWon": 52,
         "boxTouches": 28
       }
     }
