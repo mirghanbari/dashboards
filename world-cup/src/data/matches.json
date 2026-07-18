@@ -10844,10 +10844,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "fra",
     "awayTeamId": "eng",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 4,
     "status": "live",
-    "minute": "53",
+    "minute": "55",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10902,35 +10902,42 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Goal",
         "assist": "Michael Olise"
+      },
+      {
+        "type": "goal",
+        "minute": "54'",
+        "teamId": "fra",
+        "player": "Bradley Barcola",
+        "text": "Bradley Barcola Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 43.5,
+        "possession": 44.1,
         "shots": 7,
         "shotsOnTarget": 3,
-        "passAccuracy": 89.7,
-        "accuratePasses": 244,
+        "passAccuracy": 89.4,
+        "accuratePasses": 252,
         "fouls": 5,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
-        "xg": 1.21,
+        "xg": 1.2,
         "duelsWon": 21,
-        "boxTouches": 19
+        "boxTouches": 20
       },
       "away": {
-        "possession": 56.5,
-        "shots": 12,
+        "possession": 55.9,
+        "shots": 13,
         "shotsOnTarget": 7,
-        "passAccuracy": 93.1,
-        "accuratePasses": 324,
+        "passAccuracy": 92.9,
+        "accuratePasses": 326,
         "fouls": 6,
         "corners": 3,
         "offsides": 3,
         "saves": 2,
-        "xg": 1.45,
-        "duelsWon": 26,
+        "xg": 1.48,
+        "duelsWon": 29,
         "boxTouches": 19
       }
     }
