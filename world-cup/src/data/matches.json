@@ -10847,7 +10847,7 @@
     "homeScore": 0,
     "awayScore": 3,
     "status": "live",
-    "minute": "37",
+    "minute": "38",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10884,12 +10884,13 @@
         "minute": "37'",
         "teamId": "eng",
         "player": "Bukayo Saka",
-        "text": "Bukayo Saka Goal"
+        "text": "Bukayo Saka Goal",
+        "assist": "Marcus Rashford"
       }
     ],
     "stats": {
       "home": {
-        "possession": 48.5,
+        "possession": 48.4,
         "shots": 5,
         "shotsOnTarget": 2,
         "passAccuracy": 90.4,
@@ -10897,24 +10898,24 @@
         "fouls": 4,
         "corners": 2,
         "offsides": 1,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.29,
-        "duelsWon": 12,
+        "duelsWon": 13,
         "boxTouches": 13
       },
       "away": {
-        "possession": 51.5,
-        "shots": 6,
-        "shotsOnTarget": 3,
-        "passAccuracy": 93.9,
+        "possession": 51.6,
+        "shots": 8,
+        "shotsOnTarget": 5,
+        "passAccuracy": 93.4,
         "accuratePasses": 185,
         "fouls": 3,
         "corners": 2,
         "offsides": 3,
         "saves": 2,
-        "xg": 0.44,
+        "xg": 1.29,
         "duelsWon": 16,
-        "boxTouches": 13
+        "boxTouches": 14
       }
     }
   },
