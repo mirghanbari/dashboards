@@ -10845,9 +10845,9 @@
     "homeTeamId": "fra",
     "awayTeamId": "eng",
     "homeScore": 3,
-    "awayScore": 4,
+    "awayScore": 5,
     "status": "live",
-    "minute": "86",
+    "minute": "88",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10918,6 +10918,14 @@
         "player": "Kylian Mbappé",
         "text": "Kylian Mbappé Goal",
         "assist": "Michael Olise"
+      },
+      {
+        "type": "goal",
+        "minute": "87'",
+        "teamId": "eng",
+        "player": "Bukayo Saka",
+        "text": "Bukayo Saka Penalty - Scored",
+        "goalType": "penalty"
       }
     ],
     "stats": {
@@ -10937,8 +10945,8 @@
       },
       "away": {
         "possession": 54.2,
-        "shots": 17,
-        "shotsOnTarget": 9,
+        "shots": 18,
+        "shotsOnTarget": 10,
         "passAccuracy": 91.7,
         "accuratePasses": 429,
         "fouls": 8,
@@ -10947,7 +10955,7 @@
         "saves": 5,
         "xg": 1.79,
         "duelsWon": 52,
-        "boxTouches": 31
+        "boxTouches": 32
       }
     }
   },
