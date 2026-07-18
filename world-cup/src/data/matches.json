@@ -10847,7 +10847,7 @@
     "homeScore": 4,
     "awayScore": 6,
     "status": "live",
-    "minute": "90+8",
+    "minute": "90+9",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10934,6 +10934,13 @@
         "player": "Ousmane Dembélé",
         "text": "Ousmane Dembélé Goal",
         "assist": "Dayot Upamecano"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+8'",
+        "teamId": "eng",
+        "player": "Jude Bellingham",
+        "text": "Jude Bellingham Goal"
       }
     ],
     "stats": {
@@ -10953,8 +10960,8 @@
       },
       "away": {
         "possession": 54.1,
-        "shots": 18,
-        "shotsOnTarget": 10,
+        "shots": 19,
+        "shotsOnTarget": 11,
         "passAccuracy": 90.7,
         "accuratePasses": 467,
         "fouls": 8,
