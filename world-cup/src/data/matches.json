@@ -10845,9 +10845,9 @@
     "homeTeamId": "fra",
     "awayTeamId": "eng",
     "homeScore": 4,
-    "awayScore": 5,
+    "awayScore": 6,
     "status": "live",
-    "minute": "90+7",
+    "minute": "90+8",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10938,31 +10938,31 @@
     ],
     "stats": {
       "home": {
-        "possession": 46.4,
-        "shots": 20,
+        "possession": 45.9,
+        "shots": 19,
         "shotsOnTarget": 9,
-        "passAccuracy": 90.9,
-        "accuratePasses": 401,
+        "passAccuracy": 91,
+        "accuratePasses": 402,
         "fouls": 14,
         "corners": 3,
         "offsides": 3,
         "saves": 4,
-        "xg": 2.57,
-        "duelsWon": 38,
+        "xg": 2.87,
+        "duelsWon": 40,
         "boxTouches": 53
       },
       "away": {
-        "possession": 53.6,
+        "possession": 54.1,
         "shots": 18,
         "shotsOnTarget": 10,
-        "passAccuracy": 90.9,
-        "accuratePasses": 457,
+        "passAccuracy": 90.7,
+        "accuratePasses": 467,
         "fouls": 8,
         "corners": 4,
         "offsides": 3,
         "saves": 5,
         "xg": 2.58,
-        "duelsWon": 59,
+        "duelsWon": 64,
         "boxTouches": 32
       }
     }
