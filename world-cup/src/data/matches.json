@@ -10845,9 +10845,9 @@
     "homeTeamId": "fra",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 2,
+    "awayScore": 3,
     "status": "live",
-    "minute": "36",
+    "minute": "37",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10878,17 +10878,24 @@
         "text": "Ezri Konsa Goal - Header",
         "goalType": "header",
         "assist": "Declan Rice"
+      },
+      {
+        "type": "goal",
+        "minute": "37'",
+        "teamId": "eng",
+        "player": "Bukayo Saka",
+        "text": "Bukayo Saka Goal"
       }
     ],
     "stats": {
       "home": {
-        "possession": 47.6,
+        "possession": 48.5,
         "shots": 5,
         "shotsOnTarget": 2,
-        "passAccuracy": 90.3,
-        "accuratePasses": 158,
+        "passAccuracy": 90.4,
+        "accuratePasses": 170,
         "fouls": 4,
-        "corners": 1,
+        "corners": 2,
         "offsides": 1,
         "saves": 1,
         "xg": 0.29,
@@ -10896,18 +10903,18 @@
         "boxTouches": 13
       },
       "away": {
-        "possession": 52.4,
+        "possession": 51.5,
         "shots": 6,
         "shotsOnTarget": 3,
-        "passAccuracy": 93.7,
-        "accuratePasses": 177,
+        "passAccuracy": 93.9,
+        "accuratePasses": 185,
         "fouls": 3,
         "corners": 2,
         "offsides": 3,
-        "saves": 1,
+        "saves": 2,
         "xg": 0.44,
         "duelsWon": 16,
-        "boxTouches": 9
+        "boxTouches": 13
       }
     }
   },
