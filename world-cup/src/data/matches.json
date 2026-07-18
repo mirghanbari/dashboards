@@ -10954,8 +10954,8 @@
         "corners": 3,
         "offsides": 3,
         "saves": 4,
-        "xg": 2.87,
-        "duelsWon": 40,
+        "xg": 2.8,
+        "duelsWon": 39,
         "boxTouches": 53
       },
       "away": {
@@ -10968,9 +10968,9 @@
         "corners": 4,
         "offsides": 3,
         "saves": 5,
-        "xg": 2.58,
+        "xg": 2.89,
         "duelsWon": 64,
-        "boxTouches": 32
+        "boxTouches": 33
       }
     }
   },
