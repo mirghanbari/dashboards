@@ -10916,7 +10916,8 @@
         "minute": "66'",
         "teamId": "fra",
         "player": "Kylian Mbappé",
-        "text": "Kylian Mbappé Goal"
+        "text": "Kylian Mbappé Goal",
+        "assist": "Michael Olise"
       }
     ],
     "stats": {
@@ -10930,7 +10931,7 @@
         "corners": 2,
         "offsides": 2,
         "saves": 3,
-        "xg": 1.87,
+        "xg": 1.95,
         "duelsWon": 24,
         "boxTouches": 29
       },
