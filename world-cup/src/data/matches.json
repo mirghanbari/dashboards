@@ -10845,7 +10845,7 @@
     "homeTeamId": "fra",
     "awayTeamId": "eng",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "live",
     "minute": "19",
     "broadcasts": [
@@ -10869,11 +10869,20 @@
         "teamId": "eng",
         "player": "Declan Rice",
         "text": "Declan Rice Goal"
+      },
+      {
+        "type": "goal",
+        "minute": "18'",
+        "teamId": "eng",
+        "player": "Ezri Konsa",
+        "text": "Ezri Konsa Goal - Header",
+        "goalType": "header",
+        "assist": "Declan Rice"
       }
     ],
     "stats": {
       "home": {
-        "possession": 51.2,
+        "possession": 50.7,
         "shots": 3,
         "shotsOnTarget": 1,
         "passAccuracy": 90.5,
@@ -10887,18 +10896,18 @@
         "boxTouches": 6
       },
       "away": {
-        "possession": 48.8,
-        "shots": 3,
-        "shotsOnTarget": 1,
-        "passAccuracy": 91.8,
-        "accuratePasses": 90,
+        "possession": 49.3,
+        "shots": 5,
+        "shotsOnTarget": 2,
+        "passAccuracy": 91.9,
+        "accuratePasses": 91,
         "fouls": 1,
         "corners": 2,
         "offsides": 1,
         "saves": 1,
-        "xg": 0.32,
+        "xg": 0.41,
         "duelsWon": 8,
-        "boxTouches": 6
+        "boxTouches": 7
       }
     }
   },
