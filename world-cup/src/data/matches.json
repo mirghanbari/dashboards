@@ -10844,10 +10844,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "fra",
     "awayTeamId": "eng",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 5,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+7",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10926,29 +10926,37 @@
         "player": "Bukayo Saka",
         "text": "Bukayo Saka Penalty - Scored",
         "goalType": "penalty"
+      },
+      {
+        "type": "goal",
+        "minute": "90'+6'",
+        "teamId": "fra",
+        "player": "Ousmane Dembélé",
+        "text": "Ousmane Dembélé Goal",
+        "assist": "Dayot Upamecano"
       }
     ],
     "stats": {
       "home": {
-        "possession": 46.5,
-        "shots": 19,
-        "shotsOnTarget": 8,
-        "passAccuracy": 91.1,
-        "accuratePasses": 399,
+        "possession": 46.4,
+        "shots": 20,
+        "shotsOnTarget": 9,
+        "passAccuracy": 90.9,
+        "accuratePasses": 401,
         "fouls": 14,
         "corners": 3,
         "offsides": 3,
         "saves": 4,
-        "xg": 2.59,
-        "duelsWon": 37,
-        "boxTouches": 51
+        "xg": 2.57,
+        "duelsWon": 38,
+        "boxTouches": 53
       },
       "away": {
-        "possession": 53.5,
+        "possession": 53.6,
         "shots": 18,
         "shotsOnTarget": 10,
-        "passAccuracy": 91.1,
-        "accuratePasses": 453,
+        "passAccuracy": 90.9,
+        "accuratePasses": 457,
         "fouls": 8,
         "corners": 4,
         "offsides": 3,
