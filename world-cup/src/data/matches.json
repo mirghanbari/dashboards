@@ -10844,10 +10844,10 @@
     "city": "Miami Gardens, Florida",
     "homeTeamId": "fra",
     "awayTeamId": "eng",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 4,
     "status": "live",
-    "minute": "48",
+    "minute": "49",
     "broadcasts": [
       {
         "name": "FOX",
@@ -10894,35 +10894,43 @@
         "player": "Bukayo Saka",
         "text": "Bukayo Saka Goal",
         "assist": "Eberechi Eze"
+      },
+      {
+        "type": "goal",
+        "minute": "48'",
+        "teamId": "fra",
+        "player": "Kylian Mbappé",
+        "text": "Kylian Mbappé Goal",
+        "assist": "Michael Olise"
       }
     ],
     "stats": {
       "home": {
-        "possession": 44,
-        "shots": 5,
-        "shotsOnTarget": 2,
-        "passAccuracy": 90.4,
-        "accuratePasses": 216,
+        "possession": 43.5,
+        "shots": 6,
+        "shotsOnTarget": 3,
+        "passAccuracy": 89.8,
+        "accuratePasses": 221,
         "fouls": 5,
         "corners": 2,
         "offsides": 1,
         "saves": 2,
-        "xg": 0.5,
-        "duelsWon": 18,
-        "boxTouches": 15
+        "xg": 1.14,
+        "duelsWon": 19,
+        "boxTouches": 16
       },
       "away": {
-        "possession": 56,
+        "possession": 56.5,
         "shots": 11,
         "shotsOnTarget": 7,
-        "passAccuracy": 93.6,
-        "accuratePasses": 280,
+        "passAccuracy": 93.3,
+        "accuratePasses": 294,
         "fouls": 6,
         "corners": 3,
         "offsides": 3,
         "saves": 2,
         "xg": 1.4,
-        "duelsWon": 22,
+        "duelsWon": 24,
         "boxTouches": 18
       }
     }
