@@ -10988,7 +10988,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "90+5",
+    "minute": "90+6",
     "broadcasts": [
       {
         "name": "FOX",
@@ -11026,37 +11026,37 @@
         "text": "Enzo Fernández Yellow Card"
       },
       {
-        "type": "red",
-        "minute": "90'+3'",
-        "teamId": "arg",
-        "player": "Enzo Fernández",
-        "text": "Enzo Fernández Red Card"
-      },
-      {
         "type": "yellow",
         "minute": "90'+2'",
         "teamId": "arg",
         "player": "Cristian Romero",
         "text": "Cristian Romero Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "90'+3'",
+        "teamId": "arg",
+        "player": "Enzo Fernández",
+        "text": "Enzo Fernández Red Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 65.9,
+        "possession": 66.1,
         "shots": 14,
         "shotsOnTarget": 9,
-        "passAccuracy": 89.7,
-        "accuratePasses": 569,
+        "passAccuracy": 90,
+        "accuratePasses": 575,
         "fouls": 13,
         "corners": 8,
         "offsides": 2,
         "saves": 0,
         "xg": 1.12,
-        "duelsWon": 46,
+        "duelsWon": 47,
         "boxTouches": 23
       },
       "away": {
-        "possession": 34.1,
+        "possession": 33.9,
         "shots": 0,
         "shotsOnTarget": 0,
         "passAccuracy": 79.8,
