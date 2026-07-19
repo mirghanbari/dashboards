@@ -10988,7 +10988,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "51",
+    "minute": "52",
     "broadcasts": [
       {
         "name": "FOX",
@@ -11010,6 +11010,13 @@
         "teamId": "arg",
         "player": "Lisandro Martínez",
         "text": "Lisandro Martínez Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "52'",
+        "teamId": "arg",
+        "player": "Leandro Paredes",
+        "text": "Leandro Paredes Yellow Card"
       }
     ],
     "stats": {
@@ -11024,7 +11031,7 @@
         "offsides": 2,
         "saves": 0,
         "xg": 0.31,
-        "duelsWon": 25,
+        "duelsWon": 28,
         "boxTouches": 7
       },
       "away": {
