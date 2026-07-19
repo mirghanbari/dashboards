@@ -11024,36 +11024,43 @@
         "teamId": "arg",
         "player": "Enzo Fernández",
         "text": "Enzo Fernández Yellow Card"
+      },
+      {
+        "type": "red",
+        "minute": "90'+3'",
+        "teamId": "arg",
+        "player": "Enzo Fernández",
+        "text": "Enzo Fernández Red Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 66.3,
-        "shots": 13,
-        "shotsOnTarget": 8,
-        "passAccuracy": 90.2,
-        "accuratePasses": 568,
+        "possession": 65.9,
+        "shots": 14,
+        "shotsOnTarget": 9,
+        "passAccuracy": 89.9,
+        "accuratePasses": 569,
         "fouls": 13,
         "corners": 8,
         "offsides": 2,
         "saves": 0,
         "xg": 1.07,
-        "duelsWon": 44,
-        "boxTouches": 22
+        "duelsWon": 47,
+        "boxTouches": 23
       },
       "away": {
-        "possession": 33.7,
+        "possession": 34.1,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.6,
-        "accuratePasses": 261,
-        "fouls": 17,
+        "passAccuracy": 79.7,
+        "accuratePasses": 267,
+        "fouls": 18,
         "corners": 1,
         "offsides": 1,
         "saves": 8,
         "xg": 0,
         "duelsWon": 38,
-        "boxTouches": 1
+        "boxTouches": 2
       }
     }
   }
