@@ -11047,36 +11047,43 @@
         "text": "Ferran Torres Goal - Volley",
         "goalType": "volley",
         "assist": "Nico Williams"
+      },
+      {
+        "type": "yellow",
+        "minute": "111'",
+        "teamId": "arg",
+        "player": "Alexis Mac Allister",
+        "text": "Alexis Mac Allister Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 67.3,
+        "possession": 65.4,
         "shots": 20,
         "shotsOnTarget": 12,
-        "passAccuracy": 90.3,
-        "accuratePasses": 718,
-        "fouls": 17,
+        "passAccuracy": 89.8,
+        "accuratePasses": 755,
+        "fouls": 19,
         "corners": 9,
-        "offsides": 2,
+        "offsides": 4,
         "saves": 0,
         "xg": 1.94,
-        "duelsWon": 56,
-        "boxTouches": 30
+        "duelsWon": 61,
+        "boxTouches": 31
       },
       "away": {
-        "possession": 32.7,
-        "shots": 0,
+        "possession": 34.6,
+        "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 77.6,
-        "accuratePasses": 308,
-        "fouls": 22,
-        "corners": 1,
+        "passAccuracy": 77.2,
+        "accuratePasses": 348,
+        "fouls": 24,
+        "corners": 4,
         "offsides": 1,
         "saves": 11,
-        "xg": 0,
-        "duelsWon": 52,
-        "boxTouches": 3
+        "xg": 0.2,
+        "duelsWon": 59,
+        "boxTouches": 6
       }
     }
   }
