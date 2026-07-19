@@ -660,11 +660,11 @@
     "goalsAgainst": 0,
     "points": 7,
     "possession": 64,
-    "ppda": 10.3,
+    "ppda": 10.2,
     "cleanSheets": 7,
     "passCompletion": 89.5,
-    "xgFor": 13.46,
-    "xgAgainst": 2.15
+    "xgFor": 15.4,
+    "xgAgainst": 2.33
   },
   {
     "id": "uru",
@@ -844,11 +844,11 @@
     "goalsAgainst": 1,
     "points": 9,
     "possession": 57.5,
-    "ppda": 10.2,
+    "ppda": 10.9,
     "cleanSheets": 2,
     "passCompletion": 88.7,
-    "xgFor": 14.6,
-    "xgAgainst": 3.98
+    "xgFor": 14.78,
+    "xgAgainst": 5.92
   },
   {
     "id": "aut",
