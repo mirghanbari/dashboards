@@ -10988,7 +10988,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "39",
+    "minute": "40",
     "broadcasts": [
       {
         "name": "FOX",
@@ -11003,32 +11003,41 @@
         "type": "stream"
       }
     ],
+    "timeline": [
+      {
+        "type": "yellow",
+        "minute": "41'",
+        "teamId": "arg",
+        "player": "Lisandro Martínez",
+        "text": "Lisandro Martínez Yellow Card"
+      }
+    ],
     "stats": {
       "home": {
-        "possession": 64.9,
+        "possession": 62.7,
         "shots": 2,
         "shotsOnTarget": 2,
-        "passAccuracy": 89.8,
-        "accuratePasses": 237,
+        "passAccuracy": 89.7,
+        "accuratePasses": 243,
         "fouls": 6,
         "corners": 2,
         "offsides": 2,
         "saves": 0,
-        "xg": 0.1,
-        "duelsWon": 20
+        "xg": 0.2,
+        "duelsWon": 22
       },
       "away": {
-        "possession": 35.1,
+        "possession": 37.3,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 79.7,
-        "accuratePasses": 118,
-        "fouls": 8,
+        "passAccuracy": 80.1,
+        "accuratePasses": 133,
+        "fouls": 9,
         "corners": 0,
         "offsides": 1,
         "saves": 2,
         "xg": 0,
-        "duelsWon": 18
+        "duelsWon": 19
       }
     }
   }
