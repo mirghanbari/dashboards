@@ -10988,7 +10988,7 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "live",
-    "minute": "82",
+    "minute": "83",
     "broadcasts": [
       {
         "name": "FOX",
@@ -11017,15 +11017,22 @@
         "teamId": "arg",
         "player": "Leandro Paredes",
         "text": "Leandro Paredes Yellow Card"
+      },
+      {
+        "type": "yellow",
+        "minute": "82'",
+        "teamId": "arg",
+        "player": "Enzo Fernández",
+        "text": "Enzo Fernández Yellow Card"
       }
     ],
     "stats": {
       "home": {
-        "possession": 64,
-        "shots": 10,
-        "shotsOnTarget": 7,
-        "passAccuracy": 89.6,
-        "accuratePasses": 475,
+        "possession": 64.8,
+        "shots": 11,
+        "shotsOnTarget": 8,
+        "passAccuracy": 89.9,
+        "accuratePasses": 496,
         "fouls": 11,
         "corners": 8,
         "offsides": 2,
@@ -11035,15 +11042,15 @@
         "boxTouches": 19
       },
       "away": {
-        "possession": 36,
+        "possession": 35.2,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 81.1,
+        "passAccuracy": 80.6,
         "accuratePasses": 249,
-        "fouls": 14,
+        "fouls": 15,
         "corners": 1,
         "offsides": 1,
-        "saves": 7,
+        "saves": 8,
         "xg": 0,
         "duelsWon": 32,
         "boxTouches": 1
