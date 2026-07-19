@@ -10985,7 +10985,7 @@
     "city": "East Rutherford, New Jersey",
     "homeTeamId": "esp",
     "awayTeamId": "arg",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "finished",
     "minute": null,
@@ -11038,36 +11038,45 @@
         "teamId": "arg",
         "player": "Enzo Fernández",
         "text": "Enzo Fernández Red Card"
+      },
+      {
+        "type": "goal",
+        "minute": "106'",
+        "teamId": "esp",
+        "player": "Ferran Torres",
+        "text": "Ferran Torres Goal - Volley",
+        "goalType": "volley",
+        "assist": "Nico Williams"
       }
     ],
     "stats": {
       "home": {
-        "possession": 67.3,
-        "shots": 19,
-        "shotsOnTarget": 11,
-        "passAccuracy": 90.5,
-        "accuratePasses": 698,
+        "possession": 67.4,
+        "shots": 20,
+        "shotsOnTarget": 12,
+        "passAccuracy": 90.6,
+        "accuratePasses": 704,
         "fouls": 16,
         "corners": 9,
         "offsides": 2,
         "saves": 0,
-        "xg": 1.72,
+        "xg": 1.94,
         "duelsWon": 53,
         "boxTouches": 30
       },
       "away": {
-        "possession": 32.7,
+        "possession": 32.6,
         "shots": 0,
         "shotsOnTarget": 0,
-        "passAccuracy": 78.4,
-        "accuratePasses": 301,
+        "passAccuracy": 78.2,
+        "accuratePasses": 302,
         "fouls": 22,
         "corners": 1,
         "offsides": 1,
         "saves": 11,
         "xg": 0,
-        "duelsWon": 49,
-        "boxTouches": 2
+        "duelsWon": 51,
+        "boxTouches": 3
       }
     }
   }
