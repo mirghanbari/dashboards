@@ -11044,8 +11044,7 @@
         "minute": "106'",
         "teamId": "esp",
         "player": "Ferran Torres",
-        "text": "Ferran Torres Goal - Volley",
-        "goalType": "volley",
+        "text": "Ferran Torres Goal",
         "assist": "Nico Williams"
       },
       {
@@ -11062,27 +11061,27 @@
         "shots": 20,
         "shotsOnTarget": 12,
         "passAccuracy": 89.4,
-        "accuratePasses": 762,
+        "accuratePasses": 763,
         "fouls": 21,
         "corners": 9,
         "offsides": 4,
         "saves": 0,
-        "xg": 1.94,
-        "duelsWon": 61,
-        "boxTouches": 31
+        "xg": 2.29,
+        "duelsWon": 64,
+        "boxTouches": 32
       },
       "away": {
         "possession": 34.9,
         "shots": 2,
         "shotsOnTarget": 0,
-        "passAccuracy": 77.2,
-        "accuratePasses": 358,
+        "passAccuracy": 76.9,
+        "accuratePasses": 357,
         "fouls": 25,
         "corners": 4,
         "offsides": 1,
         "saves": 11,
-        "xg": 0.17,
-        "duelsWon": 59,
+        "xg": 0.22,
+        "duelsWon": 60,
         "boxTouches": 8
       }
     }
