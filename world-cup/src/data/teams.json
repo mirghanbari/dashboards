@@ -200,11 +200,11 @@
     "goalsAgainst": 1,
     "points": 7,
     "possession": 52.9,
-    "ppda": 12.4,
+    "ppda": 12.2,
     "cleanSheets": 2,
     "passCompletion": 88.9,
-    "xgFor": 12.12,
-    "xgAgainst": 4.03
+    "xgFor": 7.78,
+    "xgAgainst": 2.99
   },
   {
     "id": "sco",
@@ -223,11 +223,11 @@
     "goalsAgainst": 4,
     "points": 3,
     "possession": 44.5,
-    "ppda": 16.6,
+    "ppda": 13.9,
     "cleanSheets": 1,
     "passCompletion": 85.7,
-    "xgFor": 2.68,
-    "xgAgainst": 6.38
+    "xgFor": 1.64,
+    "xgAgainst": 2.04
   },
   {
     "id": "hai",
